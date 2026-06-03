@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 import json
-import platform
 import subprocess
 import time
 
 from app_automate.accessibility.models import UIElement
+from app_automate.platform_utils import is_macos
 
 ACTIONABLE_CLASSES = {
     "button",
@@ -265,5 +265,5 @@ def _parse_bool(value: str | None) -> bool | None:
 
 
 def _ensure_macos() -> None:
-    if platform.system() != "Darwin":
+    if not is_macos():
         raise RuntimeError("macOS accessibility inspection is only available on macOS")

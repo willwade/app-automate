@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-import platform
 from dataclasses import dataclass
 from typing import Any
 
 from app_automate.accessibility.models import UIElement
+from app_automate.platform_utils import is_windows
 
 ACTIONABLE_CONTROL_TYPES = {
     "ButtonControl",
@@ -459,5 +459,5 @@ def _safe_bool(value: object) -> bool | None:
 
 
 def _ensure_windows() -> None:
-    if platform.system() != "Windows":
+    if not is_windows():
         raise RuntimeError("Windows UIA inspection is only available on Windows")

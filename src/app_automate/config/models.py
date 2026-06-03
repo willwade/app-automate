@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-import platform
 from enum import Enum
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
+
+from app_automate.platform_utils import default_platform_hint
 
 
 class LayoutMode(str, Enum):
@@ -112,7 +113,7 @@ class AppProfile(BaseModel):
     app_name: str
     type: Literal["visual", "semantic"] = "visual"
     backend: str | None = None
-    platform_hint: str = "windows" if platform.system() == "Windows" else "macos"
+    platform_hint: str = default_platform_hint()
     notes: str = ""
     baseline: Baseline | None = None
     anchors: Anchors | None = None

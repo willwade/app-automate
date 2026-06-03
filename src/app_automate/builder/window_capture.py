@@ -1,10 +1,17 @@
 from __future__ import annotations
 
-import platform
 import time
 from pathlib import Path
 
 from PIL import Image
+
+from app_automate.platform_utils import (
+    current_platform,
+    ensure_dpi_aware,
+    is_linux,
+    is_macos,
+    is_windows,
+)
 
 
 def capture_app_window(app_name: str, output_path: Path) -> Path:
@@ -23,22 +30,26 @@ def capture_app_window(app_name: str, output_path: Path) -> Path:
 
 
 def front_window_bounds(app_name: str) -> tuple[int, int, int, int]:
-    system = platform.system()
-    if system == "Darwin":
+    if is_macos():
         return _front_window_bounds_macos(app_name)
-    if system == "Windows":
+    if is_windows():
         return _front_window_bounds_windows(app_name)
-    raise RuntimeError(f"automatic app-window capture is not supported on {system}")
+    if is_linux():
+        return _front_window_bounds_linux(app_name)
+    raise RuntimeError(
+        f"automatic app-window capture is not supported on {current_platform()}"
+    )
 
 
 def _activate_app(app_name: str) -> None:
-    system = platform.system()
-    if system == "Darwin":
+    if is_macos():
         _activate_app_macos(app_name)
-    elif system == "Windows":
+    elif is_windows():
         _activate_app_windows(app_name)
+    elif is_linux():
+        _activate_app_linux(app_name)
     else:
-        raise RuntimeError(f"app activation is not supported on {system}")
+        raise RuntimeError(f"app activation is not supported on {current_platform()}")
 
 
 # --- macOS -----------------------------------------------------------------
@@ -86,20 +97,8 @@ def _parse_pair(value: str) -> tuple[int, int]:
 # --- Windows ---------------------------------------------------------------
 
 
-def _ensure_dpi_aware() -> None:
-    import ctypes
-
-    try:
-        ctypes.windll.shcore.SetProcessDpiAwareness(2)
-    except Exception:
-        try:
-            ctypes.windll.user32.SetProcessDPIAware()
-        except Exception:
-            pass
-
-
 def _front_window_bounds_windows(app_name: str) -> tuple[int, int, int, int]:
-    _ensure_dpi_aware()
+    ensure_dpi_aware()
     hwnds = _find_windows_by_title(app_name)
     if not hwnds:
         raise RuntimeError(f'no visible window found matching "{app_name}"')
@@ -109,8 +108,10 @@ def _front_window_bounds_windows(app_name: str) -> tuple[int, int, int, int]:
 
 
 def activate_app(app_name: str) -> None:
-    if platform.system() == "Windows":
+    if is_windows():
         _activate_app_windows(app_name)
+    elif is_linux():
+        _activate_app_linux(app_name)
     else:
         import subprocess
 
@@ -119,10 +120,42 @@ def activate_app(app_name: str) -> None:
         )
 
 
+def _activate_app_linux(app_name: str) -> None:
+    import subprocess
+
+    subprocess.run(["wmctrl", "-a", app_name], check=False, capture_output=True)
+
+
+def _front_window_bounds_linux(app_name: str) -> tuple[int, int, int, int]:
+    import subprocess
+
+    result = subprocess.run(
+        ["xdotool", "search", "--name", app_name],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0 or not result.stdout.strip():
+        raise RuntimeError(f'no visible window found matching "{app_name}"')
+
+    window_id = result.stdout.strip().split("\n")[0]
+    geom = subprocess.run(
+        ["xdotool", "getwindowgeometry", "--shell", window_id],
+        capture_output=True,
+        text=True,
+    )
+    geo = {}
+    for line in geom.stdout.strip().split("\n"):
+        if "=" in line:
+            k, v = line.split("=", 1)
+            geo[k.strip()] = int(v.strip())
+
+    return geo.get("X", 0), geo.get("Y", 0), geo.get("WIDTH", 0), geo.get("HEIGHT", 0)
+
+
 def _activate_app_windows(app_name: str) -> None:
     import ctypes
 
-    _ensure_dpi_aware()
+    ensure_dpi_aware()
     hwnds = _find_windows_by_title(app_name)
     if not hwnds:
         raise RuntimeError(f'no visible window found matching "{app_name}"')

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import platform
 from pathlib import Path
 from typing import Annotated, Any, Literal
 
@@ -10,6 +9,7 @@ import typer
 from app_automate.accessibility.models import UIElement
 from app_automate.adapters.base import ActionAdapter
 from app_automate.config.validation import load_profile
+from app_automate.platform_utils import is_windows
 
 app = typer.Typer(
     help=(
@@ -68,7 +68,7 @@ def _runtime_context(
 
 
 def _create_action_adapter() -> ActionAdapter:
-    if platform.system() == "Windows":
+    if is_windows():
         from app_automate.adapters.windows_input import WindowsInputAdapter
 
         return WindowsInputAdapter()
@@ -1535,6 +1535,8 @@ def whats_here(
 
 
 def _foreground_app_name() -> str | None:
+    if not is_windows():
+        return None
     import ctypes
 
     hwnd = ctypes.windll.user32.GetForegroundWindow()

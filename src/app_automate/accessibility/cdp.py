@@ -1,13 +1,13 @@
 from __future__ import annotations
 
 import json
-import platform
 import subprocess
 import urllib.request
 from dataclasses import dataclass
 from typing import Any
 
 from app_automate.accessibility.models import UIElement
+from app_automate.platform_utils import is_windows
 
 CDP_INTERACTIVE_ROLES = {
     "button",
@@ -603,5 +603,5 @@ def _find_app_exe(app_name: str) -> str | None:
 
 
 def _ensure_windows() -> None:
-    if platform.system() != "Windows":
+    if not is_windows():
         raise RuntimeError("CDP WebView2 support is only available on Windows")
