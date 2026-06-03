@@ -473,13 +473,9 @@ def _cdp_locate(element: Any) -> tuple[float | None, float | None]:
 
 
 def _cdp_locate_by_selector(selector: str) -> tuple[float | None, float | None]:
-    from playwright.sync_api import sync_playwright
+    from app_automate.accessibility.cdp import cdp_session
 
-    pw = sync_playwright().start()
-    browser = None
-    try:
-        browser = pw.chromium.connect_over_cdp("http://localhost:9222")
-        page = browser.contexts[0].pages[0]
+    with cdp_session() as page:
         locator = page.locator(selector)
         if locator.count() == 0:
             raise RuntimeError(f"CDP selector matched nothing: {selector}")
@@ -487,16 +483,6 @@ def _cdp_locate_by_selector(selector: str) -> tuple[float | None, float | None]:
         if box is None:
             return None, None
         return box["x"] + box["width"] / 2.0, box["y"] + box["height"] / 2.0
-    finally:
-        try:
-            if browser:
-                browser.close()
-        except Exception:
-            pass
-        try:
-            pw.stop()
-        except Exception:
-            pass
 
 
 def _cdp_execute(
@@ -507,28 +493,14 @@ def _cdp_execute(
     action = element.action.value
 
     if action in ("hotkey", "wait"):
-        from playwright.sync_api import sync_playwright
+        from app_automate.accessibility.cdp import cdp_session
 
-        pw = sync_playwright().start()
-        browser = None
-        try:
-            browser = pw.chromium.connect_over_cdp("http://localhost:9222")
-            page = browser.contexts[0].pages[0]
+        with cdp_session() as page:
             if action == "hotkey":
                 keys = (element.hotkey or "").split("+")
                 page.keyboard.press("+".join(keys))
             elif action == "wait":
                 page.wait_for_timeout(element.wait_ms or 500)
-        finally:
-            try:
-                if browser:
-                    browser.close()
-            except Exception:
-                pass
-            try:
-                pw.stop()
-            except Exception:
-                pass
         return None, None
 
     if action == "click":
@@ -553,13 +525,9 @@ def _cdp_execute(
             raise RuntimeError(
                 f"CDP could not locate element for {action}: {element.label}"
             )
-        from playwright.sync_api import sync_playwright
+        from app_automate.accessibility.cdp import cdp_session
 
-        pw = sync_playwright().start()
-        browser = None
-        try:
-            browser = pw.chromium.connect_over_cdp("http://localhost:9222")
-            page = browser.contexts[0].pages[0]
+        with cdp_session() as page:
             if action == "drag":
                 dx = element.drag_dx or 0
                 dy = element.drag_dy or 0
@@ -573,16 +541,6 @@ def _cdp_execute(
                 page.mouse.click(x, y, button="right")
             elif action == "scroll":
                 page.mouse.wheel(0, element.scroll_clicks or 0)
-        finally:
-            try:
-                if browser:
-                    browser.close()
-            except Exception:
-                pass
-            try:
-                pw.stop()
-            except Exception:
-                pass
         return x, y
     else:
         return _cdp_locate(element)

@@ -3,8 +3,9 @@ from __future__ import annotations
 import json
 import subprocess
 import urllib.request
+from contextlib import contextmanager
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, Generator
 
 from app_automate.accessibility.models import UIElement
 from app_automate.platform_utils import is_windows
@@ -64,7 +65,7 @@ def list_cdp_elements(
     exact: bool = False,
 ) -> list[UIElement]:
     _ensure_windows()
-    with _playwright_session(port) as page:
+    with cdp_session(port) as page:
         elements = _collect_elements(page)
     if actionable_only:
         elements = [e for e in elements if e.actionable and e.has_bounds]
@@ -117,7 +118,7 @@ def click_cdp_element(
     exact: bool = False,
     selector: str | None = None,
 ) -> UIElement:
-    with _playwright_session(port) as page:
+    with cdp_session(port) as page:
         if selector:
             locator = page.locator(selector)
             if locator.count() > 0:
@@ -209,7 +210,7 @@ def type_into_cdp_element(
     exact: bool = False,
     selector: str | None = None,
 ) -> UIElement:
-    with _playwright_session(port) as page:
+    with cdp_session(port) as page:
         if selector:
             locator = page.locator(selector)
             if locator.count() > 0:
@@ -326,29 +327,26 @@ def _type_into_page_element_direct(
         page.keyboard.type(text, delay=10)
 
 
-def _playwright_session(port: int):
-    from contextlib import contextmanager
+@contextmanager
+def cdp_session(
+    port: int = CDP_DEFAULT_PORT,
+) -> Generator[Any, None, None]:
+    from playwright.sync_api import sync_playwright
 
-    @contextmanager
-    def _ctx():
-        from playwright.sync_api import sync_playwright
-
-        pw = sync_playwright().start()
-        browser = pw.chromium.connect_over_cdp(f"http://localhost:{port}")
-        page = browser.contexts[0].pages[0]
+    pw = sync_playwright().start()
+    browser = pw.chromium.connect_over_cdp(f"http://localhost:{port}")
+    page = browser.contexts[0].pages[0]
+    try:
+        yield page
+    finally:
         try:
-            yield page
-        finally:
-            try:
-                browser.close()
-            except Exception:
-                pass
-            try:
-                pw.stop()
-            except Exception:
-                pass
-
-    return _ctx()
+            browser.close()
+        except Exception:
+            pass
+        try:
+            pw.stop()
+        except Exception:
+            pass
 
 
 def _collect_elements(page: Any) -> list[UIElement]:
