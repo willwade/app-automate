@@ -1,0 +1,94 @@
+{
+  "profile_id": "vscode",
+  "app_name": "Code",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "VS Code profile using keyboard shortcuts. Works cross-platform. On macOS, ctrl maps to cmd.",
+  "shortcuts": {
+    "new_file": {"keys": "ctrl+n", "description": "New file"},
+    "open_file": {"keys": "ctrl+o", "description": "Open file"},
+    "save": {"keys": "ctrl+s", "description": "Save file"},
+    "close_editor": {"keys": "ctrl+w", "description": "Close editor"},
+    "find": {"keys": "ctrl+f", "description": "Find in file"},
+    "find_replace": {"keys": "ctrl+h", "description": "Find and replace"},
+    "find_in_files": {"keys": "ctrl+shift+f", "description": "Find in all files"},
+    "goto_line": {"keys": "ctrl+g", "description": "Go to line"},
+    "goto_file": {"keys": "ctrl+p", "description": "Quick open file"},
+    "toggle_sidebar": {"keys": "ctrl+b", "description": "Toggle sidebar"},
+    "toggle_terminal": {"keys": "ctrl+`", "description": "Toggle terminal"},
+    "toggle_comments": {"keys": "ctrl+/", "description": "Toggle line comment"},
+    "command_palette": {"keys": "ctrl+shift+p", "description": "Command palette"},
+    "undo": {"keys": "ctrl+z", "description": "Undo"},
+    "redo": {"keys": "ctrl+shift+z", "description": "Redo"},
+    "quit": {"keys": "ctrl+q", "description": "Quit VS Code"}
+  },
+  "semantic_elements": {
+    "new_file": {
+      "label": "new_file",
+      "aliases": ["new file", "create file"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+n", "description": "New file"}
+    },
+    "open_file": {
+      "label": "open_file",
+      "aliases": ["open", "open file"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+o", "description": "Open file"}
+    },
+    "save": {
+      "label": "save",
+      "aliases": ["save file"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+s", "description": "Save file"}
+    },
+    "find": {
+      "label": "find",
+      "aliases": ["search", "find in file"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+f", "description": "Find in file"}
+    },
+    "find_in_files": {
+      "label": "find_in_files",
+      "aliases": ["search everywhere", "global search", "find across files"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+shift+f", "description": "Find in all files"}
+    },
+    "goto_line": {
+      "label": "goto_line",
+      "aliases": ["go to line", "jump to line"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+g", "description": "Go to line"}
+    },
+    "goto_file": {
+      "label": "goto_file",
+      "aliases": ["quick open", "open file by name", "go to file"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+p", "description": "Quick open file"}
+    },
+    "command_palette": {
+      "label": "command_palette",
+      "aliases": ["commands", "command palette", "palette"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+shift+p", "description": "Command palette"}
+    },
+    "toggle_terminal": {
+      "label": "toggle_terminal",
+      "aliases": ["terminal", "open terminal", "console"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+`", "description": "Toggle terminal"}
+    },
+    "toggle_sidebar": {
+      "label": "toggle_sidebar",
+      "aliases": ["sidebar", "explorer"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+b", "description": "Toggle sidebar"}
+    },
+    "quit": {
+      "label": "quit",
+      "aliases": ["exit", "close vscode"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+q", "description": "Quit VS Code"}
+    }
+  }
+}

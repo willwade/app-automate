@@ -1,0 +1,96 @@
+{
+  "profile_id": "libreoffice-writer",
+  "app_name": "libreoffice-writer",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "LibreOffice Writer profile using keyboard shortcuts. Works cross-platform. AT-SPI elements can be added for Linux-specific UI.",
+  "shortcuts": {
+    "new_doc": {"keys": "ctrl+n", "description": "New document"},
+    "open": {"keys": "ctrl+o", "description": "Open document"},
+    "save": {"keys": "ctrl+s", "description": "Save document"},
+    "print": {"keys": "ctrl+p", "description": "Print"},
+    "close_doc": {"keys": "ctrl+w", "description": "Close document"},
+    "quit": {"keys": "ctrl+q", "description": "Quit LibreOffice"},
+    "undo": {"keys": "ctrl+z", "description": "Undo"},
+    "redo": {"keys": "ctrl+y", "description": "Redo"},
+    "bold": {"keys": "ctrl+b", "description": "Toggle bold"},
+    "italic": {"keys": "ctrl+i", "description": "Toggle italic"},
+    "underline": {"keys": "ctrl+u", "description": "Toggle underline"},
+    "find": {"keys": "ctrl+f", "description": "Find"},
+    "find_replace": {"keys": "ctrl+h", "description": "Find and replace"},
+    "select_all": {"keys": "ctrl+a", "description": "Select all"},
+    "insert_link": {"keys": "ctrl+k", "description": "Insert hyperlink"},
+    "align_left": {"keys": "ctrl+l", "description": "Align left"},
+    "align_center": {"keys": "ctrl+e", "description": "Align center"},
+    "spellcheck": {"keys": "f7", "description": "Spell check"}
+  },
+  "semantic_elements": {
+    "new_doc": {
+      "label": "new_doc",
+      "aliases": ["new document", "create document"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+n", "description": "New document"}
+    },
+    "open": {
+      "label": "open",
+      "aliases": ["open file", "open document"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+o", "description": "Open document"}
+    },
+    "save": {
+      "label": "save",
+      "aliases": ["save file", "save document"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+s", "description": "Save document"}
+    },
+    "bold": {
+      "label": "bold",
+      "aliases": ["make bold", "bold text"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+b", "description": "Toggle bold"}
+    },
+    "italic": {
+      "label": "italic",
+      "aliases": ["make italic", "italicize"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+i", "description": "Toggle italic"}
+    },
+    "underline": {
+      "label": "underline",
+      "aliases": ["make underline", "underline text"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+u", "description": "Toggle underline"}
+    },
+    "find": {
+      "label": "find",
+      "aliases": ["search", "find text"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+f", "description": "Find"}
+    },
+    "find_replace": {
+      "label": "find_replace",
+      "aliases": ["replace", "find and replace"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+h", "description": "Find and replace"}
+    },
+    "insert_link": {
+      "label": "insert_link",
+      "aliases": ["hyperlink", "link", "insert link"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+k", "description": "Insert hyperlink"}
+    },
+    "spellcheck": {
+      "label": "spellcheck",
+      "aliases": ["spell check", "check spelling"],
+      "action": "shortcut",
+      "shortcut": {"keys": "f7", "description": "Spell check"}
+    },
+    "quit": {
+      "label": "quit",
+      "aliases": ["exit", "close writer"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+q", "description": "Quit LibreOffice"}
+    }
+  }
+}

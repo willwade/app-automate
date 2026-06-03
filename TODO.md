@@ -7,10 +7,7 @@ Things to do when you have access to a macOS or Linux desktop for hands-on testi
 ### High priority
 
 - [ ] **Test AT-SPI on a real desktop session.** The AT-SPI backend is written but untested against a running app. Boot a GNOME/XFCE session, run `atspi-list --app "Calculator" --actionable-only`, and verify element output.
-- [ ] **Fix virtualenv gi bindings.** `uv run` uses its own Python, but `gi.repository.Atspi` is in the system Python. Either:
-  - Use `--system-site-packages` in the venv
-  - Set `PYTHONPATH=/usr/lib/python3/dist-packages` before running
-  - Or document the workaround clearly
+- [x] **Fix virtualenv gi bindings.** `uv run` uses its own Python, but `gi.repository.Atspi` is in the system Python. Fixed with `_ensure_gi_atspi()` helper that adds `/usr/lib/python3/dist-packages` to `sys.path` as fallback.
 - [ ] **Train and test a real AT-SPI profile.** Run `train --backend atspi --app "Calculator"` on a desktop, then execute `click "5" --profile examples/profiles/calc/profile.json`.
 - [ ] **Test Wayland compatibility.** Try `xdotool` and `pyautogui` on a Wayland session. If they fail, add `ydotool` support to `adapters/linux.py`.
 - [ ] **GNOME Calculator profile.** Replace the Galculator profile with GNOME Calculator (the default on Ubuntu). Build it with `train --backend atspi`.

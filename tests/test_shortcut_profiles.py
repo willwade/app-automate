@@ -63,3 +63,80 @@ def test_galculator_all_digits_present() -> None:
     profile = load_profile(Path("examples/profiles/galculator/profile.json"))
     for digit in range(10):
         assert f"digit_{digit}" in profile.semantic_elements
+
+
+def test_chrome_profile_loads() -> None:
+    profile = load_profile(Path("examples/profiles/chrome/profile.json"))
+    assert profile.profile_id == "chrome"
+    assert profile.backend == "shortcut"
+    assert profile.platform_hint is None
+    assert "url_bar" in profile.semantic_elements
+    assert "reopen_tab" in profile.shortcuts
+    assert len(profile.shortcuts) >= 15
+
+
+def test_chrome_shortcuts_file_valid() -> None:
+    import json
+
+    data = json.loads(
+        Path("examples/profiles/chrome/chrome-shortcuts.json").read_text()
+    )
+    assert "new_tab" in data
+    assert "view_source" in data
+    assert data["url_bar"]["keys"] == "ctrl+l"
+
+
+def test_vscode_profile_loads() -> None:
+    profile = load_profile(Path("examples/profiles/vscode/profile.json"))
+    assert profile.profile_id == "vscode"
+    assert profile.backend == "shortcut"
+    assert "command_palette" in profile.semantic_elements
+    assert "toggle_terminal" in profile.shortcuts
+
+
+def test_vscode_shortcuts_file_valid() -> None:
+    import json
+
+    data = json.loads(
+        Path("examples/profiles/vscode/vscode-shortcuts.json").read_text()
+    )
+    assert "command_palette" in data
+    assert "toggle_terminal" in data
+    assert "delete_line" in data
+
+
+def test_libreoffice_writer_profile_loads() -> None:
+    profile = load_profile(Path("examples/profiles/libreoffice-writer/profile.json"))
+    assert profile.profile_id == "libreoffice-writer"
+    assert profile.backend == "shortcut"
+    assert "bold" in profile.semantic_elements
+    assert "spellcheck" in profile.semantic_elements
+    assert "find_replace" in profile.shortcuts
+
+
+def test_libreoffice_writer_shortcuts_file_valid() -> None:
+    import json
+
+    data = json.loads(
+        Path(
+            "examples/profiles/libreoffice-writer/libreoffice-writer-shortcuts.json"
+        ).read_text()
+    )
+    assert "bold" in data
+    assert "export_pdf" in data
+    assert data["save"]["keys"] == "ctrl+s"
+
+
+def test_all_profiles_have_quit() -> None:
+    for name in ["firefox", "chrome", "vscode", "libreoffice-writer"]:
+        profile = load_profile(Path(f"examples/profiles/{name}/profile.json"))
+        assert "quit" in profile.shortcuts, f"{name} missing quit shortcut"
+    for name in ["chrome", "vscode", "libreoffice-writer"]:
+        profile = load_profile(Path(f"examples/profiles/{name}/profile.json"))
+        assert "quit" in profile.semantic_elements, (
+            f"{name} missing quit semantic element"
+        )
+    profile = load_profile(Path("examples/profiles/firefox/profile.json"))
+    assert any(k.startswith("quit") for k in profile.semantic_elements), (
+        "firefox missing quit semantic element"
+    )

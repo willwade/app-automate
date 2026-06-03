@@ -121,7 +121,7 @@ class AppProfile(BaseModel):
     app_name: str
     type: Literal["visual", "semantic"] = "visual"
     backend: str | None = None
-    platform_hint: str = default_platform_hint()
+    platform_hint: str | None = default_platform_hint()
     notes: str = ""
     baseline: Baseline | None = None
     anchors: Anchors | None = None
