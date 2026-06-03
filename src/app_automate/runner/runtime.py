@@ -297,6 +297,20 @@ def dry_run_semantic_command(
 ) -> SemanticResolvedCommand:
     element_id = resolve_semantic_element_id(command, profile)
     element = profile.semantic_elements[element_id]
+
+    if element.action.value == "shortcut" and element.shortcut:
+        return SemanticResolvedCommand(
+            element_id=element_id,
+            label=element.label,
+            action=element.action.value,
+            backend="shortcut",
+            selector=element.selector,
+            automation_id=element.automation_id,
+            role=element.role,
+            x=None,
+            y=None,
+        )
+
     backend = profile.backend or "uia"
 
     x: float | None = None
@@ -327,6 +341,24 @@ def execute_semantic_command(
 ) -> SemanticResolvedCommand:
     element_id = resolve_semantic_element_id(command, profile)
     element = profile.semantic_elements[element_id]
+
+    if element.action.value == "shortcut" and element.shortcut:
+        import pyautogui
+
+        keys = element.shortcut.keys.split("+")
+        pyautogui.hotkey(*keys)
+        return SemanticResolvedCommand(
+            element_id=element_id,
+            label=element.label,
+            action=element.action.value,
+            backend="shortcut",
+            selector=element.selector,
+            automation_id=element.automation_id,
+            role=element.role,
+            x=None,
+            y=None,
+        )
+
     backend = profile.backend or "uia"
 
     x: float | None = None

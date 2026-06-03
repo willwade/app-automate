@@ -1,0 +1,126 @@
+{
+  "profile_id": "galculator",
+  "app_name": "galculator",
+  "type": "semantic",
+  "backend": "atspi",
+  "platform_hint": "linux",
+  "notes": "Galculator profile. Keyboard shortcuts work cross-platform; AT-SPI buttons for Linux.",
+  "shortcuts": {
+    "digit_0": {"keys": "0", "description": "Type digit 0"},
+    "digit_1": {"keys": "1", "description": "Type digit 1"},
+    "digit_2": {"keys": "2", "description": "Type digit 2"},
+    "digit_3": {"keys": "3", "description": "Type digit 3"},
+    "digit_4": {"keys": "4", "description": "Type digit 4"},
+    "digit_5": {"keys": "5", "description": "Type digit 5"},
+    "digit_6": {"keys": "6", "description": "Type digit 6"},
+    "digit_7": {"keys": "7", "description": "Type digit 7"},
+    "digit_8": {"keys": "8", "description": "Type digit 8"},
+    "digit_9": {"keys": "9", "description": "Type digit 9"},
+    "add": {"keys": "+", "description": "Addition"},
+    "subtract": {"keys": "-", "description": "Subtraction"},
+    "multiply": {"keys": "*", "description": "Multiplication"},
+    "divide": {"keys": "/", "description": "Division"},
+    "equals": {"keys": "enter", "description": "Calculate result"},
+    "clear": {"keys": "escape", "description": "Clear"},
+    "decimal": {"keys": ".", "description": "Decimal point"},
+    "backspace": {"keys": "backspace", "description": "Delete last digit"}
+  },
+  "semantic_elements": {
+    "digit_0": {
+      "label": "0",
+      "aliases": ["zero"],
+      "action": "shortcut",
+      "shortcut": {"keys": "0", "description": "Type 0"}
+    },
+    "digit_1": {
+      "label": "1",
+      "aliases": ["one"],
+      "action": "shortcut",
+      "shortcut": {"keys": "1", "description": "Type 1"}
+    },
+    "digit_2": {
+      "label": "2",
+      "aliases": ["two"],
+      "action": "shortcut",
+      "shortcut": {"keys": "2", "description": "Type 2"}
+    },
+    "digit_3": {
+      "label": "3",
+      "aliases": ["three"],
+      "action": "shortcut",
+      "shortcut": {"keys": "3", "description": "Type 3"}
+    },
+    "digit_4": {
+      "label": "4",
+      "aliases": ["four"],
+      "action": "shortcut",
+      "shortcut": {"keys": "4", "description": "Type 4"}
+    },
+    "digit_5": {
+      "label": "5",
+      "aliases": ["five"],
+      "action": "shortcut",
+      "shortcut": {"keys": "5", "description": "Type 5"}
+    },
+    "digit_6": {
+      "label": "6",
+      "aliases": ["six"],
+      "action": "shortcut",
+      "shortcut": {"keys": "6", "description": "Type 6"}
+    },
+    "digit_7": {
+      "label": "7",
+      "aliases": ["seven"],
+      "action": "shortcut",
+      "shortcut": {"keys": "7", "description": "Type 7"}
+    },
+    "digit_8": {
+      "label": "8",
+      "aliases": ["eight"],
+      "action": "shortcut",
+      "shortcut": {"keys": "8", "description": "Type 8"}
+    },
+    "digit_9": {
+      "label": "9",
+      "aliases": ["nine"],
+      "action": "shortcut",
+      "shortcut": {"keys": "9", "description": "Type 9"}
+    },
+    "add": {
+      "label": "+",
+      "aliases": ["plus", "add"],
+      "action": "shortcut",
+      "shortcut": {"keys": "+", "description": "Addition"}
+    },
+    "subtract": {
+      "label": "-",
+      "aliases": ["minus", "subtract"],
+      "action": "shortcut",
+      "shortcut": {"keys": "-", "description": "Subtraction"}
+    },
+    "multiply": {
+      "label": "*",
+      "aliases": ["times", "multiply"],
+      "action": "shortcut",
+      "shortcut": {"keys": "*", "description": "Multiplication"}
+    },
+    "divide": {
+      "label": "/",
+      "aliases": ["divide"],
+      "action": "shortcut",
+      "shortcut": {"keys": "/", "description": "Division"}
+    },
+    "equals": {
+      "label": "=",
+      "aliases": ["equals", "result", "calculate", "enter"],
+      "action": "shortcut",
+      "shortcut": {"keys": "enter", "description": "Calculate result"}
+    },
+    "clear": {
+      "label": "C",
+      "aliases": ["clear", "reset"],
+      "action": "shortcut",
+      "shortcut": {"keys": "escape", "description": "Clear display"}
+    }
+  }
+}

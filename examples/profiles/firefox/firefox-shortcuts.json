@@ -1,0 +1,18 @@
+{
+  "new_tab": {"keys": "ctrl+t", "description": "Open new tab", "platform": null},
+  "close_tab": {"keys": "ctrl+w", "description": "Close current tab"},
+  "new_window": {"keys": "ctrl+n", "description": "Open new window"},
+  "open_file": {"keys": "ctrl+o", "description": "Open file"},
+  "save_page": {"keys": "ctrl+s", "description": "Save current page"},
+  "find": {"keys": "ctrl+f", "description": "Find in page"},
+  "url_bar": {"keys": "ctrl+l", "description": "Focus URL bar"},
+  "reload": {"keys": "f5", "description": "Reload page"},
+  "back": {"keys": "alt+left", "description": "Go back"},
+  "forward": {"keys": "alt+right", "description": "Go forward"},
+  "zoom_in": {"keys": "ctrl+plus", "description": "Zoom in"},
+  "zoom_out": {"keys": "ctrl+minus", "description": "Zoom out"},
+  "bookmark": {"keys": "ctrl+d", "description": "Bookmark current page"},
+  "history": {"keys": "ctrl+h", "description": "Show history"},
+  "downloads": {"keys": "ctrl+j", "description": "Show downloads"},
+  "quit": {"keys": "ctrl+q", "description": "Quit Firefox"}
+}

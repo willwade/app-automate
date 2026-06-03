@@ -24,6 +24,7 @@ class ActionType(str, Enum):
     SCROLL = "scroll"
     HOTKEY = "hotkey"
     WAIT = "wait"
+    SHORTCUT = "shortcut"
 
 
 class Baseline(BaseModel):
@@ -53,6 +54,12 @@ class ElementDefinition(BaseModel):
     action: ActionType = ActionType.CLICK
 
 
+class ShortcutDefinition(BaseModel):
+    keys: str
+    description: str = ""
+    platform: str | None = None
+
+
 class SemanticElement(BaseModel):
     label: str
     aliases: list[str] = Field(default_factory=list)
@@ -63,6 +70,7 @@ class SemanticElement(BaseModel):
     drag_dx: float | None = None
     drag_dy: float | None = None
     hotkey: str | None = None
+    shortcut: ShortcutDefinition | None = None
     text: str | None = None
     scroll_clicks: int | None = None
     wait_ms: int | None = None
@@ -121,6 +129,7 @@ class AppProfile(BaseModel):
     states: dict[str, AppState] = Field(default_factory=dict)
     default_state: str = "default"
     semantic_elements: dict[str, SemanticElement] = Field(default_factory=dict)
+    shortcuts: dict[str, ShortcutDefinition] = Field(default_factory=dict)
 
     @model_validator(mode="after")
     def validate_profile_structure(self) -> "AppProfile":
