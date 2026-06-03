@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://smartbox.github.io/app-automate/schemas/profile.json",
+  "title": "App Automate Profile",
+  "description": "An app automation profile that defines UI elements and actions for controlling an application.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile_id", "app_name", "type"],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "description": "Unique identifier for this profile."
+    },
+    "app_name": {
+      "type": "string",
+      "description": "Name of the target application (used to find the running process/window)."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["visual", "semantic"],
+      "description": "Profile type. 'visual' uses screenshot anchors and relative coordinates. 'semantic' uses accessibility backends and keyboard shortcuts."
+    },
+    "backend": {
+      "type": ["string", "null"],
+      "enum": ["uia", "cdp", "atspi", "shortcut", "ax", null],
+      "description": "Accessibility backend for semantic profiles. Required when type is 'semantic'."
+    },
+    "platform_hint": {
+      "type": ["string", "null"],
+      "description": "Target platform: 'windows', 'linux', 'macos', or null for cross-platform."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Human-readable notes about this profile."
+    },
+    "baseline": {
+      "$ref": "#/$defs/Baseline",
+      "description": "Reference screen resolution for visual profiles."
+    },
+    "anchors": {
+      "$ref": "#/$defs/Anchors",
+      "description": "Visual anchor points for coordinate transformation."
+    },
+    "elements": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/ElementDefinition"},
+      "description": "Named UI elements with relative positions (visual profiles)."
+    },
+    "states": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/AppState"},
+      "description": "Named application states, each with their own anchors and elements."
+    },
+    "default_state": {
+      "type": "string",
+      "default": "default",
+      "description": "The state ID to use when no state is specified."
+    },
+    "semantic_elements": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/SemanticElement"},
+      "description": "Named semantic elements for accessibility-based automation."
+    },
+    "shortcuts": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/ShortcutDefinition"},
+      "description": "Named keyboard shortcuts. Keys use '+' notation: 'ctrl+t', 'alt+left', 'f5'."
+    }
+  },
+  "$defs": {
+    "Baseline": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": {"type": "integer", "exclusiveMinimum": 0},
+        "height": {"type": "integer", "exclusiveMinimum": 0}
+      }
+    },
+    "ShortcutDefinition": {
+      "type": "object",
+      "required": ["keys"],
+      "properties": {
+        "keys": {
+          "type": "string",
+          "description": "Key combination using '+' notation. Examples: 'ctrl+t', 'alt+left', 'f5', 'ctrl+shift+n'."
+        },
+        "description": {
+          "type": "string",
+          "description": "What this shortcut does."
+        },
+        "platform": {
+          "type": ["string", "null"],
+          "description": "Platform override: 'windows', 'linux', 'macos', or null for all platforms."
+        }
+      }
+    },
+    "SemanticElement": {
+      "type": "object",
+      "required": ["label", "action"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "Display label for this element."
+        },
+        "aliases": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Alternative names for lookup by natural language command."
+        },
+        "role": {
+          "type": ["string", "null"],
+          "description": "Accessibility role (e.g., 'button', 'entry', 'menu_item')."
+        },
+        "automation_id": {
+          "type": ["string", "null"],
+          "description": "UIA AutomationId for Windows elements."
+        },
+        "selector": {
+          "type": ["string", "null"],
+          "description": "CSS selector for CDP/web elements."
+        },
+        "action": {
+          "type": "string",
+          "enum": ["click", "double_click", "right_click", "type", "drag", "scroll", "hotkey", "wait", "shortcut"],
+          "description": "The action to perform on this element."
+        },
+        "drag_dx": {"type": ["number", "null"]},
+        "drag_dy": {"type": ["number", "null"]},
+        "hotkey": {
+          "type": ["string", "null"],
+          "description": "Key combination for hotkey actions."
+        },
+        "shortcut": {
+          "$ref": "#/$defs/ShortcutDefinition",
+          "description": "Shortcut definition for shortcut actions."
+        },
+        "text": {
+          "type": ["string", "null"],
+          "description": "Text to type for type actions."
+        },
+        "scroll_clicks": {"type": ["integer", "null"]},
+        "wait_ms": {"type": ["integer", "null"]}
+      }
+    },
+    "AnchorDefinition": {
+      "type": "object",
+      "required": ["id", "path", "x", "y"],
+      "properties": {
+        "id": {"type": "string"},
+        "path": {"type": "string", "description": "Path to the anchor screenshot image."},
+        "x": {"type": "number"},
+        "y": {"type": "number"},
+        "confidence_threshold": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.85}
+      }
+    },
+    "Anchors": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": {"$ref": "#/$defs/AnchorDefinition"},
+        "secondary": {"$ref": "#/$defs/AnchorDefinition"}
+      }
+    },
+    "LayoutMode": {
+      "type": "string",
+      "enum": ["fixed_from_primary", "top_right", "bottom_right", "center_scaled"]
+    },
+    "ElementDefinition": {
+      "type": "object",
+      "required": ["label", "rel_x", "rel_y", "layout"],
+      "properties": {
+        "label": {"type": "string"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "rel_x": {"type": "number"},
+        "rel_y": {"type": "number"},
+        "layout": {"$ref": "#/$defs/LayoutMode"},
+        "action": {
+          "type": "string",
+          "enum": ["click", "double_click", "right_click", "type", "drag", "scroll", "hotkey", "wait", "shortcut"],
+          "default": "click"
+        }
+      }
+    },
+    "CheckRegion": {
+      "type": "object",
+      "required": ["path", "x", "y"],
+      "properties": {
+        "path": {"type": "string"},
+        "x": {"type": "number"},
+        "y": {"type": "number"},
+        "confidence_threshold": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.9},
+        "required": {"type": "boolean", "default": true}
+      }
+    },
+    "StateSignature": {
+      "type": "object",
+      "properties": {
+        "check_regions": {"type": "array", "items": {"$ref": "#/$defs/CheckRegion"}},
+        "description": {"type": "string"}
+      }
+    },
+    "AppState": {
+      "type": "object",
+      "required": ["id", "anchors", "elements"],
+      "properties": {
+        "id": {"type": "string"},
+        "signature": {"$ref": "#/$defs/StateSignature"},
+        "anchors": {"$ref": "#/$defs/Anchors"},
+        "elements": {"type": "object", "additionalProperties": {"$ref": "#/$defs/ElementDefinition"}}
+      }
+    }
+  }
+}
