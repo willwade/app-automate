@@ -314,3 +314,5 @@ uv run pytest
 - [MVP Roadmap](docs/mvp-roadmap.md)
 - [New App Guide](docs/new-app-guide.md)
 - [Windows Integration](docs/windows-integration.md)
+- [Linux Integration](docs/linux-integration.md)
+- [Development TODO](TODO.md)

@@ -67,19 +67,43 @@ Common failure causes:
 
 The simplest fix is usually to retrain from a cleaner screen state with fewer repeated controls visible.
 
-## Try Accessibility First On macOS
+## Try Accessibility First
 
 For apps that expose useful accessibility metadata, a simpler first step is:
 
+**macOS:**
 ```bash
-uv run app-automate ax-list --app "Pages"
 uv run app-automate ax-list --app "Pages" --actionable-only
 uv run app-automate ax-click --app "Pages" --contains "Insert" --max-depth 2 --dry-run
 ```
 
+**Linux:**
+```bash
+uv run app-automate atspi-list --app "Calculator" --actionable-only
+uv run app-automate atspi-click --app "Calculator" --contains "5" --dry-run
+```
+
+**Windows:**
+```bash
+uv run app-automate uia-list --app "Calculator" --actionable-only
+uv run app-automate uia-click --app "Calculator" --contains "5" --dry-run
+```
+
 If that returns useful labels and bounds for the controls you care about, the app is a good candidate for a semantic accessibility backend instead of a pure screenshot/profile flow.
 
-If `ax-list` returns very little or only generic controls, fall back to the visual profile workflow.
+If accessibility returns very little or only generic controls, fall back to the visual profile workflow.
+
+## Try Keyboard Shortcuts First
+
+Before any of the above, check if the app has documented keyboard shortcuts. This is the most reliable and cross-platform approach:
+
+```bash
+uv run app-automate extract-shortcuts "Firefox" --source file --shortcuts-file my-shortcuts.json
+uv run app-automate extract-shortcuts "Firefox" --source desktop
+uv run app-automate extract-shortcuts "" --source gnome-wm
+```
+
+See `examples/profiles/firefox/profile.json` for a shortcut-based profile example.
 
 ## Manual Review
 
@@ -106,14 +130,12 @@ Avoid:
 - galleries of repeated thumbnails
 - temporary menus unless the menu itself is the target workflow
 
-## Windows Note
+## Platform Notes
 
-When the Windows adapter work starts, the process should stay similar:
-- try semantic accessibility/UI Automation first when the app exposes usable controls
-- fall back to the visual profile flow when UIA is missing, incomplete, or badly labelled
+**Linux:** Try AT-SPI first (`atspi-list`), then keyboard shortcuts, then the visual profile flow. See `docs/linux-integration.md` for setup.
 
-That means this training guide should still matter on Windows, especially for non-UIA apps.
+**Windows:** Try UIA first (`uia-list`), then keyboard shortcuts, then the visual profile flow. See `docs/windows-integration.md`.
 
-For a live semantic Windows example, see:
+**macOS:** Try AX first (`ax-list`), then keyboard shortcuts, then the visual profile flow.
 
-- `examples/profiles/outlook-windows-classic/README.md`
+**Keyboard shortcuts** work on all platforms and are the most reliable approach when available.
