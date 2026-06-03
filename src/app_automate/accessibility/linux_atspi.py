@@ -37,6 +37,39 @@ def _ensure_linux() -> None:
         raise RuntimeError("AT-SPI inspection is only available on Linux")
 
 
+def _ensure_gi_atspi():
+    try:
+        import gi
+
+        gi.require_version("Atspi", "2.0")
+        from gi.repository import Atspi
+
+        return Atspi
+    except (ImportError, ValueError):
+        pass
+
+    import sys
+
+    system_site = "/usr/lib/python3/dist-packages"
+    if system_site not in sys.path:
+        sys.path.insert(0, system_site)
+
+    try:
+        import gi
+
+        gi.require_version("Atspi", "2.0")
+        from gi.repository import Atspi
+
+        return Atspi
+    except (ImportError, ValueError) as exc:
+        raise RuntimeError(
+            "AT-SPI bindings not available. Install: "
+            "sudo apt install python3-gi gir1.2-atspi-2.0. "
+            "If using uv, you may need: "
+            "uv run --with /usr/lib/python3/dist-packages app-automate ..."
+        ) from exc
+
+
 def list_app_ui_elements(
     app_name: str,
     *,
@@ -44,16 +77,7 @@ def list_app_ui_elements(
     actionable_only: bool = False,
 ) -> list[UIElement]:
     _ensure_linux()
-    try:
-        import gi
-
-        gi.require_version("Atspi", "2.0")
-        from gi.repository import Atspi
-    except (ImportError, ValueError) as exc:
-        raise RuntimeError(
-            "AT-SPI bindings not available. Install: "
-            "sudo apt install python3-gi gir1.2-atspi-2.0"
-        ) from exc
+    Atspi = _ensure_gi_atspi()
 
     desktop = Atspi.get_desktop(0)
     elements: list[UIElement] = []
@@ -173,10 +197,7 @@ def type_into_matching_element(
 
 def _do_action(element: UIElement, action_name: str) -> None:
     try:
-        import gi
-
-        gi.require_version("Atspi", "2.0")
-        from gi.repository import Atspi
+        Atspi = _ensure_gi_atspi()
     except (ImportError, ValueError):
         from app_automate.adapters.pyautogui_adapter import PyAutoGuiAdapter
 
@@ -260,8 +281,7 @@ def _walk_atspi(
         state_set = acc.get_state_set()
         if state_set:
             raw = state_set.get_states()
-            from gi.repository import Atspi
-
+            Atspi = _ensure_gi_atspi()
             state_names = [Atspi.StateType.get_name(s) for s in raw]
             states = {n.lower() for n in state_names if n}
     except Exception:

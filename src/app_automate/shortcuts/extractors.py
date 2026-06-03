@@ -91,10 +91,9 @@ def extract_from_gnome_wm() -> list[ExtractedShortcut]:
 def extract_from_atspi_menus(app_name: str) -> list[ExtractedShortcut]:
     shortcuts: list[ExtractedShortcut] = []
     try:
-        import gi
+        from app_automate.accessibility.linux_atspi import _ensure_gi_atspi
 
-        gi.require_version("Atspi", "2.0")
-        from gi.repository import Atspi
+        Atspi = _ensure_gi_atspi()
 
         desktop = Atspi.get_desktop(0)
         for i in range(desktop.get_child_count()):
