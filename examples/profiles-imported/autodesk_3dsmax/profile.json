@@ -1,0 +1,7794 @@
+{
+  "profile_id": "autodesk_3dsmax",
+  "app_name": "Autodesk 3dsMax",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "Auto-generated from ShortcutMapper. 517 shortcuts.",
+  "shortcuts": {
+    "render": {
+      "keys": "r",
+      "description": "Render"
+    },
+    "toggle_toolbar_docked": {
+      "keys": "space",
+      "description": "Toggle Toolbar (Docked)"
+    },
+    "draw_region": {
+      "keys": "d",
+      "description": "Draw Region"
+    },
+    "update": {
+      "keys": "u",
+      "description": "Update"
+    },
+    "initialize": {
+      "keys": "p",
+      "description": "Initialize"
+    },
+    "select_object": {
+      "keys": "s",
+      "description": "Select Object"
+    },
+    "close": {
+      "keys": "q",
+      "description": "Close"
+    },
+    "copy_paste_paste": {
+      "keys": "alt+v",
+      "description": "Copy/Paste - Paste"
+    },
+    "trackbar_toggle_biped_keys": {
+      "keys": "alt+t",
+      "description": "Trackbar - Toggle Biped Keys"
+    },
+    "tv_select_start_of_foosteps": {
+      "keys": "alt+a",
+      "description": "TV Select start of foosteps"
+    },
+    "tv_select_entire_foostep": {
+      "keys": "alt+s",
+      "description": "TV Select entire foostep"
+    },
+    "scale_in_transform": {
+      "keys": "alt+ctrl+e",
+      "description": "Scale In Transform"
+    },
+    "copy_paste_copy": {
+      "keys": "alt+c",
+      "description": "Copy/Paste - Copy"
+    },
+    "set_key": {
+      "keys": "0",
+      "description": "Set Key"
+    },
+    "tv_select_end_of_footsteps": {
+      "keys": "alt+d",
+      "description": "TV Select end of footsteps"
+    },
+    "play_biped": {
+      "keys": "v",
+      "description": "Play Biped"
+    },
+    "reset_all_limb_keys": {
+      "keys": "alt+k",
+      "description": "Reset All Limb Keys"
+    },
+    "fix_graphs": {
+      "keys": "alt+ctrl+f",
+      "description": "Fix Graphs"
+    },
+    "move_all_collapse": {
+      "keys": "alt+m",
+      "description": "Move All - Collapse"
+    },
+    "copy_paste_paste_opposite": {
+      "keys": "alt+b",
+      "description": "Copy/Paste - Paste Opposite"
+    },
+    "set_animation_range": {
+      "keys": "alt+r",
+      "description": "Set Animation Range"
+    },
+    "solve": {
+      "keys": "s",
+      "description": "Solve"
+    },
+    "edit_soft_selection": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "face_level": {
+      "keys": "ctrl+4",
+      "description": "Face Level"
+    },
+    "reset_normals": {
+      "keys": "r",
+      "description": "Reset Normals"
+    },
+    "unify_normals": {
+      "keys": "u",
+      "description": "Unify Normals"
+    },
+    "copy_normal": {
+      "keys": "ctrl+c",
+      "description": "Copy Normal"
+    },
+    "make_explicit": {
+      "keys": "e",
+      "description": "Make Explicit"
+    },
+    "specify_normals": {
+      "keys": "s",
+      "description": "Specify Normals"
+    },
+    "object_level": {
+      "keys": "ctrl+0",
+      "description": "Object Level"
+    },
+    "break_normals": {
+      "keys": "b",
+      "description": "Break Normals"
+    },
+    "paste_normal": {
+      "keys": "ctrl+v",
+      "description": "Paste Normal"
+    },
+    "normal_level": {
+      "keys": "ctrl+1",
+      "description": "Normal Level"
+    },
+    "vertex_level": {
+      "keys": "ctrl+2",
+      "description": "Vertex Level"
+    },
+    "edge_level": {
+      "keys": "ctrl+3",
+      "description": "Edge Level"
+    },
+    "edit_soft_selection_edit_patch": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "cut": {
+      "keys": "alt+c",
+      "description": "Cut"
+    },
+    "hide": {
+      "keys": "alt+h",
+      "description": "Hide"
+    },
+    "repeat_last_operation": {
+      "keys": ";",
+      "description": "Repeat Last Operation"
+    },
+    "vertex_level_edit_poly": {
+      "keys": "1",
+      "description": "Vertex Level"
+    },
+    "bevel_mode": {
+      "keys": "shift+ctrl+b",
+      "description": "Bevel Mode"
+    },
+    "target_weld_mode": {
+      "keys": "shift+ctrl+w",
+      "description": "Target Weld Mode"
+    },
+    "constrain_to_edges": {
+      "keys": "shift+x",
+      "description": "Constrain to Edges"
+    },
+    "element_level": {
+      "keys": "5",
+      "description": "Element Level"
+    },
+    "polygon_level": {
+      "keys": "4",
+      "description": "Polygon Level"
+    },
+    "shrink_selection": {
+      "keys": "ctrl+pagedown",
+      "description": "Shrink Selection"
+    },
+    "break": {
+      "keys": "shift+b",
+      "description": "Break"
+    },
+    "object_level_edit_poly": {
+      "keys": "6",
+      "description": "Object Level"
+    },
+    "border_level": {
+      "keys": "3",
+      "description": "Border Level"
+    },
+    "connect": {
+      "keys": "shift+ctrl+e",
+      "description": "Connect"
+    },
+    "hide_unselected": {
+      "keys": "alt+i",
+      "description": "Hide Unselected"
+    },
+    "unhide_all": {
+      "keys": "alt+u",
+      "description": "Unhide All"
+    },
+    "extrude_mode": {
+      "keys": "shift+e",
+      "description": "Extrude Mode"
+    },
+    "quickslice_mode": {
+      "keys": "shift+ctrl+q",
+      "description": "Quickslice Mode"
+    },
+    "edge_level_edit_poly": {
+      "keys": "2",
+      "description": "Edge Level"
+    },
+    "grow_selection": {
+      "keys": "ctrl+pageup",
+      "description": "Grow Selection"
+    },
+    "chamfer_mode": {
+      "keys": "shift+ctrl+c",
+      "description": "Chamfer Mode"
+    },
+    "edit_soft_selection_edit_spline": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "detach": {
+      "keys": "ctrl+d",
+      "description": "Detach"
+    },
+    "vertex_level_edit_editable_mesh": {
+      "keys": "1",
+      "description": "Vertex Level"
+    },
+    "bevel_mode_edit_editable_mesh": {
+      "keys": "ctrl+v / ctrl+b",
+      "description": "Bevel Mode"
+    },
+    "weld_target_mode": {
+      "keys": "alt+w",
+      "description": "Weld Target Mode"
+    },
+    "element_level_edit_editable_mesh": {
+      "keys": "5",
+      "description": "Element Level"
+    },
+    "polygon_level_edit_editable_mesh": {
+      "keys": "4",
+      "description": "Polygon Level"
+    },
+    "weld_selected": {
+      "keys": "ctrl+w",
+      "description": "Weld Selected"
+    },
+    "extrude_mode_edit_editable_mesh": {
+      "keys": "ctrl+e",
+      "description": "Extrude Mode"
+    },
+    "face_level_edit_editable_mesh": {
+      "keys": "3",
+      "description": "Face Level"
+    },
+    "cut_mode": {
+      "keys": "alt+c",
+      "description": "Cut Mode"
+    },
+    "chamfer_mode_edit_editable_mesh": {
+      "keys": "ctrl+c",
+      "description": "Chamfer Mode"
+    },
+    "edge_invisible": {
+      "keys": "ctrl+i",
+      "description": "Edge Invisible"
+    },
+    "edge_turn": {
+      "keys": "ctrl+t",
+      "description": "Edge Turn"
+    },
+    "edge_level_edit_editable_mesh": {
+      "keys": "2",
+      "description": "Edge Level"
+    },
+    "cut_editable_poly": {
+      "keys": "alt+c",
+      "description": "Cut"
+    },
+    "hide_editable_poly": {
+      "keys": "alt+h",
+      "description": "Hide"
+    },
+    "repeat_last_operation_editable_poly": {
+      "keys": ";",
+      "description": "Repeat Last Operation"
+    },
+    "vertex_level_editable_poly": {
+      "keys": "1",
+      "description": "Vertex Level"
+    },
+    "bevel_mode_editable_poly": {
+      "keys": "shift+ctrl+b",
+      "description": "Bevel Mode"
+    },
+    "target_weld_mode_editable_poly": {
+      "keys": "shift+ctrl+w",
+      "description": "Target Weld Mode"
+    },
+    "constrain_to_edges_editable_poly": {
+      "keys": "shift+x",
+      "description": "Constrain to Edges"
+    },
+    "element_level_editable_poly": {
+      "keys": "5",
+      "description": "Element Level"
+    },
+    "shrink_selection_editable_poly": {
+      "keys": "ctrl+pagedown",
+      "description": "Shrink Selection"
+    },
+    "grow_selection_editable_poly": {
+      "keys": "ctrl+pageup",
+      "description": "Grow Selection"
+    },
+    "object_level_editable_poly": {
+      "keys": "6",
+      "description": "Object Level"
+    },
+    "border_level_editable_poly": {
+      "keys": "3",
+      "description": "Border Level"
+    },
+    "connect_editable_poly": {
+      "keys": "shift+ctrl+e",
+      "description": "Connect"
+    },
+    "hide_unselected_editable_poly": {
+      "keys": "alt+i",
+      "description": "Hide Unselected"
+    },
+    "unhide_all_editable_poly": {
+      "keys": "alt+u",
+      "description": "Unhide All"
+    },
+    "extrude_mode_editable_poly": {
+      "keys": "shift+e",
+      "description": "Extrude Mode"
+    },
+    "quickslice_mode_editable_poly": {
+      "keys": "shift+ctrl+q",
+      "description": "Quickslice Mode"
+    },
+    "edge_level_editable_poly": {
+      "keys": "2",
+      "description": "Edge Level"
+    },
+    "face_level_editable_poly": {
+      "keys": "4",
+      "description": "Face Level"
+    },
+    "chamfer_mode_editable_poly": {
+      "keys": "shift+ctrl+c",
+      "description": "Chamfer Mode"
+    },
+    "switch_to_lattice_level": {
+      "keys": "alt+shift+l",
+      "description": "Switch To Lattice Level"
+    },
+    "switch_to_top_level": {
+      "keys": "alt+shift+t",
+      "description": "Switch To Top Level"
+    },
+    "switch_to_set_volume_level": {
+      "keys": "alt+shift+s",
+      "description": "Switch To Set Volume Level"
+    },
+    "switch_to_control_point_level": {
+      "keys": "alt+shift+c",
+      "description": "Switch To Control Point Level"
+    },
+    "edit_soft_selection_hsds": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "cut_hair_styling": {
+      "keys": "ctrl+c",
+      "description": "Cut"
+    },
+    "tip": {
+      "keys": "ctrl+1",
+      "description": "Tip"
+    },
+    "recomb": {
+      "keys": "shift+ctrl+m",
+      "description": "Recomb"
+    },
+    "invert_selection": {
+      "keys": "shift+ctrl+n",
+      "description": "Invert Selection"
+    },
+    "brush_rotate": {
+      "keys": "shift+ctrl+5",
+      "description": "Brush Rotate"
+    },
+    "translate": {
+      "keys": "ctrl+t",
+      "description": "Translate"
+    },
+    "toggle_collisions": {
+      "keys": "shift+ctrl+c",
+      "description": "Toggle Collisions"
+    },
+    "split_hairgroups": {
+      "keys": "shift+ctrl+-",
+      "description": "Split Hairgroups"
+    },
+    "root": {
+      "keys": "ctrl+4",
+      "description": "Root"
+    },
+    "unlock": {
+      "keys": "shift+ctrl+u",
+      "description": "Unlock"
+    },
+    "undo": {
+      "keys": "ctrl+z",
+      "description": "Undo"
+    },
+    "toggle_hairs": {
+      "keys": "shift+ctrl+i",
+      "description": "Toggle Hairs"
+    },
+    "scale": {
+      "keys": "ctrl+e",
+      "description": "Scale "
+    },
+    "pop_zerosized": {
+      "keys": "shift+ctrl+z",
+      "description": "Pop Zerosized"
+    },
+    "soft_falloff": {
+      "keys": "shift+ctrl+f",
+      "description": "Soft Falloff"
+    },
+    "pop_selected": {
+      "keys": "shift+ctrl+p",
+      "description": "Pop Selected"
+    },
+    "rotate": {
+      "keys": "ctrl+r",
+      "description": "Rotate"
+    },
+    "brush_puff": {
+      "keys": "shift+ctrl+3",
+      "description": "Brush Puff"
+    },
+    "attenuate": {
+      "keys": "shift+ctrl+a",
+      "description": "Attenuate"
+    },
+    "show_hidden": {
+      "keys": "shift+ctrl+w",
+      "description": "Show Hidden"
+    },
+    "verts": {
+      "keys": "ctrl+3",
+      "description": "Verts"
+    },
+    "stand": {
+      "keys": "ctrl+n",
+      "description": "Stand"
+    },
+    "puff": {
+      "keys": "ctrl+p",
+      "description": "Puff"
+    },
+    "clump": {
+      "keys": "ctrl+m",
+      "description": "Clump"
+    },
+    "guide": {
+      "keys": "ctrl+2",
+      "description": "Guide"
+    },
+    "brush_clump": {
+      "keys": "shift+ctrl+4",
+      "description": "Brush Clump"
+    },
+    "lock": {
+      "keys": "shift+ctrl+l",
+      "description": "Lock"
+    },
+    "brush_stand": {
+      "keys": "shift+ctrl+2",
+      "description": "Brush Stand"
+    },
+    "ignore_back": {
+      "keys": "shift+ctrl+b",
+      "description": "Ignore Back"
+    },
+    "brush_translate": {
+      "keys": "shift+ctrl+1",
+      "description": "Brush Translate"
+    },
+    "hide_selected": {
+      "keys": "shift+ctrl+h",
+      "description": "Hide Selected"
+    },
+    "reset_rest": {
+      "keys": "shift+ctrl+t",
+      "description": "Reset Rest"
+    },
+    "merge_hairgroups": {
+      "keys": "shift+ctrl+=",
+      "description": "Merge Hairgroups"
+    },
+    "expand_selection": {
+      "keys": "shift+ctrl+e",
+      "description": "Expand Selection"
+    },
+    "brush": {
+      "keys": "ctrl+b",
+      "description": "Brush"
+    },
+    "brush_scale": {
+      "keys": "shift+ctrl+6",
+      "description": "Brush Scale"
+    },
+    "select": {
+      "keys": "ctrl+s",
+      "description": "Select"
+    },
+    "rotate_selection": {
+      "keys": "shift+ctrl+r",
+      "description": "Rotate Selection"
+    },
+    "parameter_editor": {
+      "keys": "alt+1",
+      "description": "Parameter Editor"
+    },
+    "hide_unselected_poly": {
+      "keys": "alt+i",
+      "description": "Hide Unselected (Poly)"
+    },
+    "hide_poly": {
+      "keys": "alt+h",
+      "description": "Hide (Poly)"
+    },
+    "cut_poly": {
+      "keys": "alt+c",
+      "description": "Cut (Poly)"
+    },
+    "select_sub_object_ring": {
+      "keys": "alt+r",
+      "description": "Select Sub-object Ring"
+    },
+    "smart_select": {
+      "keys": "q",
+      "description": "Smart Select"
+    },
+    "grow_selection_poly": {
+      "keys": "ctrl+pageup",
+      "description": "Grow Selection (Poly)"
+    },
+    "sub_object_level_5": {
+      "keys": "5",
+      "description": "Sub-object Level 5"
+    },
+    "edge_constraint_toggle_poly": {
+      "keys": "shift+x",
+      "description": "Edge Constraint Toggle (Poly)"
+    },
+    "create_camera_from_view": {
+      "keys": "ctrl+c",
+      "description": "Create Camera From View"
+    },
+    "collect_parameters_tv": {
+      "keys": "alt+4",
+      "description": "Collect Parameters TV"
+    },
+    "smart_scale": {
+      "keys": "r",
+      "description": "Smart Scale"
+    },
+    "extrude_along_spline_poly": {
+      "keys": "alt+e",
+      "description": "Extrude along Spline (Poly)"
+    },
+    "walkthrough_view_mode": {
+      "keys": "up",
+      "description": "WalkThrough View Mode"
+    },
+    "ignore_backfacing_toggle_poly": {
+      "keys": "shift+ctrl+i",
+      "description": "Ignore Backfacing Toggle (Poly)"
+    },
+    "meshsmooth_poly": {
+      "keys": "ctrl+m",
+      "description": "Meshsmooth (Poly)"
+    },
+    "weld_poly": {
+      "keys": "shift+ctrl+w",
+      "description": "Weld (Poly)"
+    },
+    "asset_tracking": {
+      "keys": "shift+t",
+      "description": "Asset Tracking..."
+    },
+    "chamfer_poly": {
+      "keys": "shift+ctrl+c",
+      "description": "Chamfer (Poly)"
+    },
+    "slice_poly": {
+      "keys": "shift+ctrl+q",
+      "description": "Slice (Poly)"
+    },
+    "add_edit_parameters_tv": {
+      "keys": "ctrl+1",
+      "description": "Add/Edit Parameters... (TV)"
+    },
+    "parameter_wiring_dialog": {
+      "keys": "alt+5",
+      "description": "Parameter Wiring Dialog..."
+    },
+    "start_parameter_wiring": {
+      "keys": "ctrl+5",
+      "description": "Start Parameter Wiring..."
+    },
+    "render_to_texture_dialog_toggle": {
+      "keys": "0",
+      "description": "Render to Texture Dialog Toggle"
+    },
+    "extrude_face_poly": {
+      "keys": "shift+e",
+      "description": "Extrude Face (Poly)"
+    },
+    "collapse_poly": {
+      "keys": "alt+ctrl+c",
+      "description": "Collapse (Poly)"
+    },
+    "cap_poly": {
+      "keys": "alt+p",
+      "description": "Cap (Poly)"
+    },
+    "geometry_selection_visibility_toggle": {
+      "keys": "alt+g",
+      "description": "Geometry Selection Visibility Toggle"
+    },
+    "collect_parameters_sv": {
+      "keys": "alt+3",
+      "description": "Collect Parameters SV"
+    },
+    "parameter_collector": {
+      "keys": "alt+2",
+      "description": "Parameter Collector"
+    },
+    "repeat_last_poly": {
+      "keys": ";",
+      "description": "Repeat Last (Poly)"
+    },
+    "unhide_all_poly": {
+      "keys": "alt+u",
+      "description": "Unhide All (Poly)"
+    },
+    "sub_object_level_3": {
+      "keys": "3",
+      "description": "Sub-Object Level 3"
+    },
+    "bevel_poly": {
+      "keys": "shift+ctrl+b",
+      "description": "Bevel (Poly)"
+    },
+    "sub_object_level_4": {
+      "keys": "4",
+      "description": "Sub-Object Level 4"
+    },
+    "connect_no_dialog_poly": {
+      "keys": "shift+ctrl+e",
+      "description": "Connect (no dialog) (Poly)"
+    },
+    "sub_object_level_2": {
+      "keys": "2",
+      "description": "Sub-Object Level 2"
+    },
+    "select_sub_object_loop": {
+      "keys": "alt+l",
+      "description": "Select Sub-object Loop"
+    },
+    "sub_object_level_1": {
+      "keys": "1",
+      "description": "Sub-Object Level 1"
+    },
+    "home_view": {
+      "keys": "alt+home",
+      "description": "Home View"
+    },
+    "wireframe_smooth_highlights_toggle": {
+      "keys": "f3",
+      "description": "Wireframe / Smooth+Highlights Toggle"
+    },
+    "delete_objects": {
+      "keys": ".",
+      "description": "Delete Objects"
+    },
+    "sub_object_selection_toggle": {
+      "keys": "ctrl+b",
+      "description": "Sub-object Selection Toggle"
+    },
+    "fetch": {
+      "keys": "alt+ctrl+f",
+      "description": "Fetch"
+    },
+    "select_ancestor": {
+      "keys": "pageup",
+      "description": "Select Ancestor"
+    },
+    "perspective_user_view": {
+      "keys": "p",
+      "description": "Perspective User View"
+    },
+    "select_by_name": {
+      "keys": "h",
+      "description": "Select By Name"
+    },
+    "redo_scene_operation": {
+      "keys": "ctrl+y",
+      "description": "Redo Scene Operation"
+    },
+    "orthographic_user_view": {
+      "keys": "u",
+      "description": "Orthographic User View"
+    },
+    "sound_toggle": {
+      "keys": "\\",
+      "description": "Sound Toggle"
+    },
+    "redraw_all_views": {
+      "keys": "`",
+      "description": "Redraw All Views"
+    },
+    "adaptive_degradation_toggle": {
+      "keys": "o",
+      "description": "Adaptive Degradation Toggle"
+    },
+    "set_key_mode": {
+      "keys": "'",
+      "description": "Set Key Mode"
+    },
+    "hide_particle_systems_toggle": {
+      "keys": "shift+p",
+      "description": "Hide Particle Systems Toggle"
+    },
+    "render_main_ui": {
+      "keys": "shift+q",
+      "description": "Render"
+    },
+    "virtual_viewport_pan_down": {
+      "keys": "num2",
+      "description": "Virtual Viewport Pan Down"
+    },
+    "transform_gizmo_size_down": {
+      "keys": "-",
+      "description": "Transform Gizmo Size Down"
+    },
+    "maxscript_listener": {
+      "keys": "f11",
+      "description": "MAXScript Listener"
+    },
+    "zoom_region_mode": {
+      "keys": "ctrl+w",
+      "description": "Zoom Region Mode"
+    },
+    "normal_align": {
+      "keys": "alt+n",
+      "description": "Normal Align "
+    },
+    "show_floating_dialogs": {
+      "keys": "ctrl+`",
+      "description": "Show Floating Dialogs"
+    },
+    "go_to_start_frame": {
+      "keys": "home",
+      "description": "Go to Start Frame"
+    },
+    "hide_helpers_toggle": {
+      "keys": "shift+h",
+      "description": "Hide Helpers Toggle"
+    },
+    "zoom_extents_selected": {
+      "keys": "z",
+      "description": "Zoom Extents Selected"
+    },
+    "transform_type_in_dialog_toggle": {
+      "keys": "f12",
+      "description": "Transform Type-In Dialog Toggle"
+    },
+    "enable_axis_constraints_in_snaps_toggle": {
+      "keys": "alt+d / alt+f3",
+      "description": "Enable Axis Constraints in Snaps Toggle"
+    },
+    "background_lock_toggle": {
+      "keys": "alt+ctrl+b",
+      "description": "Background Lock Toggle"
+    },
+    "hide_geometry_toggle": {
+      "keys": "shift+g",
+      "description": "Hide Geometry Toggle"
+    },
+    "save_file": {
+      "keys": "ctrl+s",
+      "description": "Save File"
+    },
+    "backup_time_one_unit": {
+      "keys": ",",
+      "description": "Backup Time One Unit"
+    },
+    "virtual_viewport_pan_left": {
+      "keys": "num4",
+      "description": "Virtual Viewport Pan Left"
+    },
+    "update_background_image": {
+      "keys": "alt+shift+ctrl+b",
+      "description": "Update Background Image"
+    },
+    "bottom_view": {
+      "keys": "b",
+      "description": "Bottom View"
+    },
+    "transform_gizmo_y_constraint": {
+      "keys": "f6",
+      "description": "Transform Gizmo Y Constraint"
+    },
+    "hold": {
+      "keys": "ctrl+h",
+      "description": "Hold"
+    },
+    "transform_gizmo_z_constraint": {
+      "keys": "f7",
+      "description": "Transform Gizmo Z Constraint"
+    },
+    "auto_key_mode_toggle": {
+      "keys": "n",
+      "description": "Auto Key Mode Toggle"
+    },
+    "disable_viewport": {
+      "keys": "d",
+      "description": "Disable Viewport"
+    },
+    "hide_cameras_toggle": {
+      "keys": "shift+c",
+      "description": "Hide Cameras Toggle"
+    },
+    "select_children": {
+      "keys": "ctrl+pagedown",
+      "description": "Select Children"
+    },
+    "cycle_snap_hit": {
+      "keys": "alt+shift+s",
+      "description": "Cycle Snap Hit"
+    },
+    "undo_viewport_operation": {
+      "keys": "shift+z",
+      "description": "Undo Viewport Operation"
+    },
+    "material_editor_toggle": {
+      "keys": "m",
+      "description": "Material Editor Toggle"
+    },
+    "select_and_move": {
+      "keys": "w",
+      "description": "Select and Move"
+    },
+    "show_statistics_toggle": {
+      "keys": "7",
+      "description": "Show Statistics Toggle"
+    },
+    "angle_snap_toggle": {
+      "keys": "a",
+      "description": "Angle Snap Toggle"
+    },
+    "transform_gizmo_toggle": {
+      "keys": "shift+ctrl+x",
+      "description": "Transform Gizmo Toggle"
+    },
+    "render_setup": {
+      "keys": "f10",
+      "description": "Render SetUp..."
+    },
+    "redo_viewport_operation": {
+      "keys": "shift+y",
+      "description": "Redo Viewport Operation"
+    },
+    "pan_viewport": {
+      "keys": "i",
+      "description": "Pan Viewport"
+    },
+    "zoom_in_2x": {
+      "keys": "alt+shift+ctrl+z",
+      "description": "Zoom In 2X"
+    },
+    "lock_user_interface_toggle": {
+      "keys": "alt+0",
+      "description": "Lock User Interface Toggle"
+    },
+    "maximize_viewport_toggle": {
+      "keys": "alt+w",
+      "description": "Maximize Viewport Toggle"
+    },
+    "viewport_lighting_illuminate_with_default_scene_lights_toggle": {
+      "keys": "ctrl+l",
+      "description": "Viewport Lighting Illuminate with Default / Scene Lights Toggle"
+    },
+    "zoom_out_2x": {
+      "keys": "alt+shift+z",
+      "description": "Zoom Out 2X"
+    },
+    "virtual_viewport_zoom_out": {
+      "keys": "num-",
+      "description": "Virtual Viewport Zoom Out"
+    },
+    "zoom_extents": {
+      "keys": "alt+ctrl+z",
+      "description": "Zoom Extents"
+    },
+    "view_edged_faces_toggle": {
+      "keys": "f4",
+      "description": "View Edged Faces Toggle"
+    },
+    "display_as_see_through_toggle": {
+      "keys": "alt+x",
+      "description": "Display as See-Through Toggle"
+    },
+    "create_animated_sequence_file": {
+      "keys": "shift+v",
+      "description": "Create Animated Sequence File..."
+    },
+    "virtual_viewport_zoom_in": {
+      "keys": "numpad+",
+      "description": "Virtual Viewport Zoom In"
+    },
+    "top_view": {
+      "keys": "t",
+      "description": "Top View"
+    },
+    "zoom_mode": {
+      "keys": "alt+z",
+      "description": "Zoom Mode"
+    },
+    "selection_lock_toggle": {
+      "keys": "space",
+      "description": "Selection Lock Toggle"
+    },
+    "camera_view": {
+      "keys": "c",
+      "description": "Camera View"
+    },
+    "left_view": {
+      "keys": "l",
+      "description": "Left View"
+    },
+    "percent_snap_toggle": {
+      "keys": "shift+ctrl+p",
+      "description": "Percent Snap Toggle"
+    },
+    "align": {
+      "keys": "alt+a",
+      "description": "Align"
+    },
+    "render_last": {
+      "keys": "f9",
+      "description": "Render Last"
+    },
+    "sub_object_level_cycle": {
+      "keys": "insert",
+      "description": "Sub-object Level Cycle"
+    },
+    "select_none": {
+      "keys": "ctrl+d",
+      "description": "Select None"
+    },
+    "viewport_safeframes_toggle": {
+      "keys": "shift+f",
+      "description": "Viewport Safeframes Toggle"
+    },
+    "isolate_selection": {
+      "keys": "alt+q",
+      "description": "Isolate Selection"
+    },
+    "select_similar": {
+      "keys": "ctrl+q",
+      "description": "Select Similar"
+    },
+    "pan_view": {
+      "keys": "ctrl+p",
+      "description": "Pan View"
+    },
+    "viewport_selection_show_selection_bracket_toggle": {
+      "keys": "j",
+      "description": "Viewport Selection Show Selection Bracket Toggle"
+    },
+    "forward_time_one_unit": {
+      "keys": ".",
+      "description": "Forward Time One Unit"
+    },
+    "quick_align": {
+      "keys": "shift+a",
+      "description": "Quick Align"
+    },
+    "go_to_end_frame": {
+      "keys": "end",
+      "description": "Go to End Frame"
+    },
+    "scale_cycle": {
+      "keys": "ctrl+e",
+      "description": "Scale Cycle"
+    },
+    "transform_gizmo_plane_constraint_cycle": {
+      "keys": "f8",
+      "description": "Transform Gizmo Plane Constraint Cycle"
+    },
+    "show_main_toolbar_toggle": {
+      "keys": "alt+6",
+      "description": "Show Main Toolbar Toggle"
+    },
+    "orbit_view_mode": {
+      "keys": "ctrl+r",
+      "description": "Orbit View Mode"
+    },
+    "virtual_viewport_pan_up": {
+      "keys": "num8",
+      "description": "Virtual Viewport Pan Up"
+    },
+    "new_scene": {
+      "keys": "ctrl+n",
+      "description": "New Scene"
+    },
+    "snaps_toggle": {
+      "keys": "s",
+      "description": "Snaps Toggle"
+    },
+    "expert_mode_toggle": {
+      "keys": "ctrl+x",
+      "description": "Expert Mode Toggle"
+    },
+    "select_all": {
+      "keys": "ctrl+a",
+      "description": "Select All"
+    },
+    "undo_scene_operation": {
+      "keys": "ctrl+z",
+      "description": "Undo Scene Operation"
+    },
+    "select_child": {
+      "keys": "pagedown",
+      "description": "Select Child"
+    },
+    "virtual_viewport_toggle": {
+      "keys": "num/",
+      "description": "Virtual Viewport Toggle"
+    },
+    "set_keys": {
+      "keys": "k",
+      "description": "Set Keys"
+    },
+    "clone": {
+      "keys": "ctrl+v",
+      "description": "Clone"
+    },
+    "spot_directional_light_view": {
+      "keys": "shift+4",
+      "description": "Spot/Directional Light View"
+    },
+    "viewport_selection_shade_selected_faces_toggle": {
+      "keys": "f2",
+      "description": "Viewport Selection Shade Selected Faces Toggle"
+    },
+    "virtual_viewport_pan_right": {
+      "keys": "num6",
+      "description": "Virtual Viewport Pan Right"
+    },
+    "select_and_rotate": {
+      "keys": "e",
+      "description": "Select and Rotate"
+    },
+    "open_file": {
+      "keys": "ctrl+o",
+      "description": "Open File"
+    },
+    "hide_grids_toggle": {
+      "keys": "g",
+      "description": "Hide Grids Toggle"
+    },
+    "viewport_background": {
+      "keys": "alt+b",
+      "description": "Viewport Background"
+    },
+    "cycle_active_snap_type": {
+      "keys": "alt+s",
+      "description": "Cycle Active Snap Type"
+    },
+    "front_view": {
+      "keys": "f",
+      "description": "Front View"
+    },
+    "hide_lights_toggle": {
+      "keys": "shift+l",
+      "description": "Hide Lights Toggle"
+    },
+    "environment_dialog_toggle": {
+      "keys": "8",
+      "description": "Environment Dialog Toggle"
+    },
+    "play_animation": {
+      "keys": "/",
+      "description": "Play Animation"
+    },
+    "transform_gizmo_size_up": {
+      "keys": "=",
+      "description": "Transform Gizmo Size Up"
+    },
+    "select_invert": {
+      "keys": "ctrl+i",
+      "description": "Select Invert"
+    },
+    "hide_space_warps_toggle": {
+      "keys": "shift+ctrl+w",
+      "description": "Hide Space Warps Toggle"
+    },
+    "zoom_extents_all": {
+      "keys": "shift+ctrl+z",
+      "description": "Zoom Extents All"
+    },
+    "transform_gizmo_x_constraint": {
+      "keys": "f5",
+      "description": "Transform Gizmo X Constraint"
+    },
+    "snap_to_frozen_objects_toggle": {
+      "keys": "alt+f2",
+      "description": "Snap To Frozen Objects Toggle"
+    },
+    "spacing_tool": {
+      "keys": "shift+i",
+      "description": "Spacing Tool"
+    },
+    "hide_shapes_toggle": {
+      "keys": "shift+s",
+      "description": "Hide Shapes Toggle"
+    },
+    "cycle_selection_method": {
+      "keys": "ctrl+f",
+      "description": "Cycle Selection Method"
+    },
+    "go_backward_to_sibling": {
+      "keys": "left",
+      "description": "Go Backward to Sibling"
+    },
+    "go_forward_to_sibling": {
+      "keys": "right",
+      "description": "Go Forward to Sibling"
+    },
+    "get_material": {
+      "keys": "g",
+      "description": "Get Material "
+    },
+    "background": {
+      "keys": "b",
+      "description": "Background"
+    },
+    "cycle_3x2_5x3_6x4_sample_slots": {
+      "keys": "x",
+      "description": "Cycle 3X2, 5X3, 6X4 Sample Slots"
+    },
+    "make_preview": {
+      "keys": "p",
+      "description": "Make Preview"
+    },
+    "go_to_parent": {
+      "keys": "up",
+      "description": "Go to Parent"
+    },
+    "options": {
+      "keys": "o",
+      "description": "Options"
+    },
+    "backlight": {
+      "keys": "l",
+      "description": "Backlight"
+    },
+    "edit_soft_selection_mesh_select": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "edit_soft_selection_mode": {
+      "keys": "7",
+      "description": "Edit Soft Selection Mode"
+    },
+    "cv_constrained_normal_move": {
+      "keys": "alt+n",
+      "description": "CV Constrained Normal Move"
+    },
+    "switch_to_top_level_nurbs": {
+      "keys": "alt+shift+t",
+      "description": "Switch To Top Level"
+    },
+    "select_previous_in_v": {
+      "keys": "ctrl+down",
+      "description": "Select Previous in V"
+    },
+    "switch_to_imports_level": {
+      "keys": "alt+shift+i",
+      "description": "Switch To Imports Level"
+    },
+    "cv_constrained_v_move": {
+      "keys": "alt+v",
+      "description": "CV Constrained V Move"
+    },
+    "display_lattices": {
+      "keys": "ctrl+l",
+      "description": "Display Lattices"
+    },
+    "lock_2d_selection": {
+      "keys": "space",
+      "description": "Lock 2D Selection"
+    },
+    "switch_to_curve_cv_level": {
+      "keys": "alt+shift+z",
+      "description": "Switch To Curve CV Level"
+    },
+    "cv_constrained_u_move": {
+      "keys": "alt+u",
+      "description": "CV Constrained U Move"
+    },
+    "switch_to_curve_level": {
+      "keys": "alt+shift+c",
+      "description": "Switch To Curve Level"
+    },
+    "select_sub_object_by_name": {
+      "keys": "h",
+      "description": "Select Sub-Object By Name"
+    },
+    "select_next_in_u": {
+      "keys": "ctrl+right",
+      "description": "Select Next in U"
+    },
+    "select_next_in_v": {
+      "keys": "ctrl+up",
+      "description": "Select Next in V"
+    },
+    "display_dependents": {
+      "keys": "ctrl+d",
+      "description": "Display Dependents"
+    },
+    "display_curves": {
+      "keys": "shift+ctrl+c",
+      "description": "Display Curves"
+    },
+    "soft_selection": {
+      "keys": "ctrl+s",
+      "description": "Soft Selection"
+    },
+    "local_select_sub_object_by_name": {
+      "keys": "ctrl+h",
+      "description": "Local Select Sub-Object By Name"
+    },
+    "set_tessellation_preset_1": {
+      "keys": "alt+1",
+      "description": "Set Tessellation Preset 1"
+    },
+    "select_previous_in_u": {
+      "keys": "ctrl+left",
+      "description": "Select Previous in U"
+    },
+    "set_tessellation_preset_3": {
+      "keys": "alt+3",
+      "description": "Set Tessellation Preset 3"
+    },
+    "set_tessellation_preset_2": {
+      "keys": "alt+2",
+      "description": "Set Tessellation Preset 2"
+    },
+    "switch_to_surface_cv_level": {
+      "keys": "alt+shift+v",
+      "description": "Switch To Surface CV Level"
+    },
+    "switch_to_surface_level": {
+      "keys": "alt+shift+s",
+      "description": "Switch To Surface Level"
+    },
+    "transform_degrade": {
+      "keys": "ctrl+x",
+      "description": "Transform Degrade"
+    },
+    "display_trims": {
+      "keys": "shift+ctrl+t",
+      "description": "Display Trims"
+    },
+    "display_shaded_lattice": {
+      "keys": "alt+l",
+      "description": "Display Shaded Lattice"
+    },
+    "display_toolbox": {
+      "keys": "ctrl+t",
+      "description": "Display Toolbox"
+    },
+    "switch_to_point_level": {
+      "keys": "alt+shift+p",
+      "description": "Switch To Point Level"
+    },
+    "display_surfaces": {
+      "keys": "shift+ctrl+s",
+      "description": "Display Surfaces"
+    },
+    "reset_particle_view": {
+      "keys": "alt+ctrl+r",
+      "description": "Reset Particle View"
+    },
+    "paste_in_particle_view": {
+      "keys": "ctrl+v",
+      "description": "Paste In Particle View"
+    },
+    "select_all_in_particle_view": {
+      "keys": "ctrl+a",
+      "description": "Select All In Particle View"
+    },
+    "particle_emission_toggle": {
+      "keys": ";",
+      "description": "Particle Emission Toggle"
+    },
+    "clean_up_particle_flow": {
+      "keys": "alt+ctrl+p",
+      "description": "Clean Up Particle Flow"
+    },
+    "copy_selected_in_particle_view": {
+      "keys": "ctrl+c",
+      "description": "Copy Selected In Particle View"
+    },
+    "selected_particle_emission_toggle": {
+      "keys": "shift+;",
+      "description": "Selected Particle Emission Toggle"
+    },
+    "repair_pflow_cache_system": {
+      "keys": "alt+ctrl+c",
+      "description": "Repair PFlow Cache System"
+    },
+    "open_pflow_preset_manager_dialog": {
+      "keys": "alt+ctrl+m",
+      "description": "Open PFlow Preset Manager dialog"
+    },
+    "particle_view_toggle": {
+      "keys": "6",
+      "description": "Particle View Toggle"
+    },
+    "synchronize_particle_flow_layers": {
+      "keys": "alt+ctrl+l",
+      "description": "Synchronize Particle Flow Layers"
+    },
+    "move_selected_up_in_data_view": {
+      "keys": "w",
+      "description": "Move Selected Up In Data View"
+    },
+    "cut_selected_in_data_view": {
+      "keys": "ctrl+x",
+      "description": "Cut Selected In Data View"
+    },
+    "move_selected_down_in_data_view": {
+      "keys": "s",
+      "description": "Move Selected Down In Data View"
+    },
+    "rename_suboperator_in_data_view": {
+      "keys": "f2",
+      "description": "Rename Suboperator In Data View"
+    },
+    "move_selected_right_in_data_view": {
+      "keys": "d",
+      "description": "Move Selected Right In Data View"
+    },
+    "copy_selected_in_data_view": {
+      "keys": "ctrl+c",
+      "description": "Copy Selected In Data View"
+    },
+    "move_selected_left_in_data_view": {
+      "keys": "a",
+      "description": "Move Selected Left In Data View"
+    },
+    "move_selected_right_x10_in_data_view": {
+      "keys": "shift+d",
+      "description": "Move Selected Right x10 In Data View"
+    },
+    "move_selected_up_x10_in_data_view": {
+      "keys": "shift+w",
+      "description": "Move Selected Up x10 In Data View"
+    },
+    "move_selected_down_x10_in_data_view": {
+      "keys": "shift+s",
+      "description": "Move Selected Down x10 In Data View"
+    },
+    "move_selected_left_x10_in_data_view": {
+      "keys": "shift+a",
+      "description": "Move Selected Left x10 In Data View"
+    },
+    "select_none_in_data_view": {
+      "keys": "ctrl+d",
+      "description": "Select None In Data View"
+    },
+    "select_all_in_data_view": {
+      "keys": "ctrl+a",
+      "description": "Select All In Data View"
+    },
+    "paste_in_data_view": {
+      "keys": "ctrl+v",
+      "description": "Paste In Data View"
+    },
+    "edit_soft_selection_patch_select": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "reset_envelopes": {
+      "keys": "ctrl+e",
+      "description": "Reset Envelopes"
+    },
+    "previous_selection_level": {
+      "keys": "shift+tab",
+      "description": "Previous Selection Level"
+    },
+    "copy_envelope": {
+      "keys": "ctrl+c",
+      "description": "Copy Envelope"
+    },
+    "next_selection_level": {
+      "keys": "tab",
+      "description": "Next Selection Level"
+    },
+    "next": {
+      "keys": "pagedown",
+      "description": "Next"
+    },
+    "delete": {
+      "keys": "ctrl+d",
+      "description": "Delete"
+    },
+    "paste_envelope": {
+      "keys": "ctrl+v",
+      "description": "Paste Envelope"
+    },
+    "previous": {
+      "keys": "pageup",
+      "description": "Previous"
+    },
+    "rotation_toggle": {
+      "keys": "e",
+      "description": "Rotation Toggle"
+    },
+    "placement": {
+      "keys": "y",
+      "description": "Placement"
+    },
+    "edit_soft_selection_mode_poly_select": {
+      "keys": "7",
+      "description": "Edit Soft Selection Mode"
+    },
+    "edit_soft_selection_projection_modifier": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "viewports": {
+      "keys": "v",
+      "description": "Viewports"
+    },
+    "set_min_influence": {
+      "keys": "alt+i",
+      "description": "Set Min Influence"
+    },
+    "set_max_influence": {
+      "keys": "ctrl+i",
+      "description": "Set Max Influence"
+    },
+    "parameter_editor_sme": {
+      "keys": "p",
+      "description": "Parameter Editor"
+    },
+    "zoom_extents_selected_sme": {
+      "keys": "z",
+      "description": "Zoom Extents Selected"
+    },
+    "select_tool": {
+      "keys": "s",
+      "description": "Select Tool"
+    },
+    "material_map_browser": {
+      "keys": "o",
+      "description": "Material/Map Browser"
+    },
+    "zoom_extents_sme": {
+      "keys": "alt+ctrl+z",
+      "description": "Zoom Extents"
+    },
+    "select_all_sme": {
+      "keys": "ctrl+a",
+      "description": "Select All"
+    },
+    "enable_global_rendering": {
+      "keys": "alt+ctrl+u",
+      "description": "Enable Global Rendering"
+    },
+    "select_tree": {
+      "keys": "ctrl+t",
+      "description": "Select Tree"
+    },
+    "lay_out_children": {
+      "keys": "c",
+      "description": "Lay Out Children"
+    },
+    "lay_out_all": {
+      "keys": "l",
+      "description": "Lay Out All"
+    },
+    "zoom_region_tool": {
+      "keys": "ctrl+w",
+      "description": "Zoom Region Tool"
+    },
+    "zoom_tool": {
+      "keys": "alt+z",
+      "description": "Zoom Tool"
+    },
+    "move_children": {
+      "keys": "alt+c",
+      "description": "Move Children"
+    },
+    "update_selected_previews": {
+      "keys": "u",
+      "description": "Update Selected Previews"
+    },
+    "pan_tool": {
+      "keys": "ctrl+p",
+      "description": "Pan Tool"
+    },
+    "show_grid": {
+      "keys": "g",
+      "description": "Show Grid"
+    },
+    "pan_to_selected": {
+      "keys": "alt+p",
+      "description": "Pan to Selected"
+    },
+    "select_children_sme": {
+      "keys": "ctrl+c",
+      "description": "Select Children"
+    },
+    "select_none_sme": {
+      "keys": "ctrl+d",
+      "description": "Select None"
+    },
+    "auto_update_selected_previews": {
+      "keys": "alt+u",
+      "description": "Auto Update Selected Previews"
+    },
+    "select_invert_sme": {
+      "keys": "ctrl+i",
+      "description": "Select Invert"
+    },
+    "delete_selected": {
+      "keys": ".",
+      "description": "Delete Selected"
+    },
+    "rename": {
+      "keys": "f2",
+      "description": "Rename"
+    },
+    "assign_material_to_selection": {
+      "keys": "a",
+      "description": "Assign Material to Selection"
+    },
+    "hide_unused_nodeslots": {
+      "keys": "h",
+      "description": "Hide Unused Nodeslots"
+    },
+    "navigator": {
+      "keys": "n",
+      "description": "Navigator"
+    },
+    "open_explorer_last_used": {
+      "keys": "alt+ctrl+o",
+      "description": "Open Explorer: [Last Used]"
+    },
+    "close_last_activated_explorer": {
+      "keys": "alt+ctrl+p",
+      "description": "Close Last Activated Explorer"
+    },
+    "zoom_extents_schematic_view": {
+      "keys": "alt+ctrl+z",
+      "description": "Zoom Extents"
+    },
+    "free_all": {
+      "keys": "alt+f",
+      "description": "Free All"
+    },
+    "use_select_tool": {
+      "keys": "s / q",
+      "description": "Use Select Tool"
+    },
+    "previous_bookmark": {
+      "keys": "left",
+      "description": "Previous Bookmark"
+    },
+    "move_children_schematic_view": {
+      "keys": "alt+c",
+      "description": "Move Children"
+    },
+    "use_zoom_region_tool": {
+      "keys": "ctrl+w",
+      "description": "Use Zoom Region Tool"
+    },
+    "rename_object": {
+      "keys": "r",
+      "description": "Rename Object"
+    },
+    "show_grid_schematic_view": {
+      "keys": "g",
+      "description": "Show Grid"
+    },
+    "zoom_selected_extents": {
+      "keys": "z",
+      "description": "Zoom Selected Extents"
+    },
+    "next_bookmark": {
+      "keys": "right",
+      "description": "Next Bookmark"
+    },
+    "invert_selected_nodes": {
+      "keys": "ctrl+i",
+      "description": "Invert Selected Nodes"
+    },
+    "add_bookmark": {
+      "keys": "b",
+      "description": "Add Bookmark"
+    },
+    "toggle_shrink": {
+      "keys": "ctrl+s",
+      "description": "Toggle Shrink"
+    },
+    "select_none_schematic_view": {
+      "keys": "ctrl+d",
+      "description": "Select None"
+    },
+    "display_floater": {
+      "keys": "d",
+      "description": "Display Floater"
+    },
+    "use_zoom_tool": {
+      "keys": "alt+z",
+      "description": "Use Zoom Tool"
+    },
+    "refresh_view": {
+      "keys": "ctrl+u",
+      "description": "Refresh View"
+    },
+    "free_selected": {
+      "keys": "alt+s",
+      "description": "Free Selected"
+    },
+    "select_all_nodes": {
+      "keys": "ctrl+a",
+      "description": "Select All Nodes"
+    },
+    "select_children_schematic_view": {
+      "keys": "ctrl+c",
+      "description": "Select Children"
+    },
+    "use_pan_tool": {
+      "keys": "ctrl+p",
+      "description": "Use Pan Tool"
+    },
+    "filters": {
+      "keys": "p",
+      "description": "Filters"
+    },
+    "use_connect_tool": {
+      "keys": "c",
+      "description": "Use Connect Tool"
+    },
+    "snap_to_perpendicular_toggle": {
+      "keys": "alt+f11",
+      "description": "Snap To Perpendicular Toggle"
+    },
+    "snap_to_curve_edge_toggle": {
+      "keys": "alt+f5",
+      "description": "Snap To Curve Edge Toggle"
+    },
+    "snap_to_surf_center_toggle": {
+      "keys": "alt+f6",
+      "description": "Snap To Surf Center Toggle"
+    },
+    "snap_to_bounding_box_toggle": {
+      "keys": "alt+f9",
+      "description": "Snap To Bounding Box Toggle"
+    },
+    "snap_to_grid_lines_toggle": {
+      "keys": "alt+f8",
+      "description": "Snap To Grid Lines Toggle"
+    },
+    "increase_walk_speed": {
+      "keys": "shift+ctrl+.",
+      "description": "Increase Walk Speed"
+    },
+    "toggle_steeringwheels": {
+      "keys": "shift+w",
+      "description": "Toggle SteeringWheels"
+    },
+    "decrease_walk_speed": {
+      "keys": "shift+ctrl+,",
+      "description": "Decrease Walk Speed"
+    },
+    "tour_building_wheel": {
+      "keys": "shift+ctrl+j",
+      "description": "Tour Building Wheel"
+    },
+    "advanced_lighting_panel": {
+      "keys": "9",
+      "description": "Advanced Lighting Panel"
+    },
+    "snap_frames": {
+      "keys": "s",
+      "description": "Snap Frames"
+    },
+    "paste_controller": {
+      "keys": "ctrl+v",
+      "description": "Paste Controller"
+    },
+    "zoom_region": {
+      "keys": "ctrl+w",
+      "description": "Zoom Region"
+    },
+    "move_keys": {
+      "keys": "m",
+      "description": "Move Keys"
+    },
+    "nudge_keys_right": {
+      "keys": "right",
+      "description": "Nudge Keys Right"
+    },
+    "copy_controller": {
+      "keys": "ctrl+c",
+      "description": "Copy Controller"
+    },
+    "add_keys": {
+      "keys": "a",
+      "description": "Add Keys"
+    },
+    "expand_track_toggle": {
+      "keys": "enter / t",
+      "description": "Expand Track Toggle"
+    },
+    "pan": {
+      "keys": "ctrl+p",
+      "description": "Pan"
+    },
+    "move_highlight_down": {
+      "keys": "down",
+      "description": "Move Highlight Down"
+    },
+    "scroll_up": {
+      "keys": "ctrl+up",
+      "description": "Scroll Up"
+    },
+    "frame_horizontal_extents_keys": {
+      "keys": "alt+x",
+      "description": "Frame Horizontal Extents Keys"
+    },
+    "apply_ease_curve": {
+      "keys": "ctrl+e",
+      "description": "Apply Ease Curve"
+    },
+    "scroll_down": {
+      "keys": "ctrl+down",
+      "description": "Scroll Down"
+    },
+    "lock_tangents_toggle": {
+      "keys": "l",
+      "description": "Lock Tangents Toggle"
+    },
+    "retime_move_left": {
+      "keys": "ctrl+left",
+      "description": "Retime Move Left"
+    },
+    "zoom": {
+      "keys": "alt+z",
+      "description": "Zoom"
+    },
+    "retime_move_right": {
+      "keys": "ctrl+right",
+      "description": "Retime Move Right"
+    },
+    "make_controller_unique": {
+      "keys": "u",
+      "description": "Make Controller Unique"
+    },
+    "frame_horizontal_extents": {
+      "keys": "alt+ctrl+z",
+      "description": "Frame Horizontal Extents"
+    },
+    "assign_controller": {
+      "keys": "c",
+      "description": "Assign Controller"
+    },
+    "nudge_keys_left": {
+      "keys": "left",
+      "description": "Nudge Keys Left"
+    },
+    "move_highlight_up": {
+      "keys": "up",
+      "description": "Move Highlight Up"
+    },
+    "filters_track_view": {
+      "keys": "q",
+      "description": "Filters"
+    },
+    "lock_selection": {
+      "keys": "space",
+      "description": "Lock Selection"
+    },
+    "expand_object_toggle": {
+      "keys": "o",
+      "description": "Expand Object Toggle"
+    },
+    "apply_multiplier_curve": {
+      "keys": "ctrl+m",
+      "description": "Apply Multiplier Curve"
+    },
+    "break_selected_vertices": {
+      "keys": "ctrl+b",
+      "description": "Break Selected Vertices"
+    },
+    "get_selection_from_polygons": {
+      "keys": "alt+shift+ctrl+p",
+      "description": "Get Selection From Polygons"
+    },
+    "get_polygon_selection_from_stack": {
+      "keys": "alt+shift+ctrl+f",
+      "description": "Get Polygon Selection From Stack"
+    },
+    "zoom_extents_unwrap_uvw": {
+      "keys": "alt+ctrl+z",
+      "description": "Zoom Extents"
+    },
+    "texture_vertex_expand_selection": {
+      "keys": "numpad_plus / =",
+      "description": "Texture Vertex Expand Selection"
+    },
+    "zoom_to_gizmo": {
+      "keys": "shift+space",
+      "description": "Zoom To Gizmo"
+    },
+    "snap": {
+      "keys": "ctrl+s",
+      "description": "Snap"
+    },
+    "pan_unwrap_uvw": {
+      "keys": "ctrl+p",
+      "description": "Pan"
+    },
+    "texture_vertex_rotate_mode": {
+      "keys": "e",
+      "description": "Texture Vertex Rotate Mode"
+    },
+    "texture_vertex_scale_mode": {
+      "keys": "r",
+      "description": "Texture Vertex Scale Mode"
+    },
+    "filter_selected_polygons": {
+      "keys": "alt+f",
+      "description": "Filter Selected Polygons"
+    },
+    "zoom_extents_selected_unwrap_uvw": {
+      "keys": "z",
+      "description": "Zoom Extents Selected"
+    },
+    "texture_vertex_contract_selection": {
+      "keys": "-",
+      "description": "Texture Vertex Contract Selection"
+    },
+    "zoom_region_unwrap_uvw": {
+      "keys": "ctrl+x",
+      "description": "Zoom Region"
+    },
+    "lock_selected_vertices": {
+      "keys": "space",
+      "description": "Lock selected vertices"
+    },
+    "texture_vertex_move_mode": {
+      "keys": "w",
+      "description": "Texture Vertex Move Mode"
+    },
+    "planar_map_faces_patches": {
+      "keys": "enter",
+      "description": "Planar map faces/patches"
+    },
+    "mirror_horizontal": {
+      "keys": "alt+shift+ctrl+n",
+      "description": "Mirror Horizontal"
+    },
+    "texture_vertextarget_weld": {
+      "keys": "ctrl+t",
+      "description": "Texture VertexTarget Weld "
+    },
+    "edit_uvw_s": {
+      "keys": "ctrl+e",
+      "description": "Edit UVW's"
+    },
+    "zoom_unwrap_uvw": {
+      "keys": "alt+z",
+      "description": "Zoom"
+    },
+    "move_vertical": {
+      "keys": "alt+shift+ctrl+k",
+      "description": "Move Vertical"
+    },
+    "freeze_selected": {
+      "keys": "ctrl+f",
+      "description": "Freeze Selected"
+    },
+    "load_uvw": {
+      "keys": "alt+shift+ctrl+l",
+      "description": "Load UVW"
+    },
+    "unwrap_options": {
+      "keys": "ctrl+o",
+      "description": "Unwrap Options"
+    },
+    "detach_edge_verts": {
+      "keys": "d / ctrl+d",
+      "description": "Detach Edge Verts"
+    },
+    "show_seams_in_viewport": {
+      "keys": "alt+e",
+      "description": "Show Seams In Viewport"
+    },
+    "hide_selected_unwrap_uvw": {
+      "keys": "ctrl+h",
+      "description": "Hide Selected"
+    },
+    "move_horizontal": {
+      "keys": "alt+shift+ctrl+j",
+      "description": "Move Horizontal"
+    },
+    "texture_vertex_weld_selected": {
+      "keys": "ctrl+w",
+      "description": "Texture Vertex Weld Selected"
+    },
+    "mirror_vertical": {
+      "keys": "alt+shift+ctrl+m",
+      "description": "Mirror Vertical"
+    },
+    "update_map": {
+      "keys": "ctrl+u",
+      "description": "Update Map"
+    },
+    "launch_global_search": {
+      "keys": "x",
+      "description": "Launch Global Search"
+    },
+    "add_image_layer_event": {
+      "keys": "ctrl+l",
+      "description": "Add Image Layer Event"
+    },
+    "edit_current_event": {
+      "keys": "ctrl+e",
+      "description": "Edit Current Event"
+    },
+    "add_image_input_event": {
+      "keys": "ctrl+i",
+      "description": "Add Image Input Event"
+    },
+    "execute_sequence": {
+      "keys": "ctrl+r",
+      "description": "Execute Sequence"
+    },
+    "new_sequence": {
+      "keys": "ctrl+n",
+      "description": "New Sequence"
+    },
+    "add_new_event": {
+      "keys": "ctrl+a",
+      "description": "Add New Event"
+    },
+    "add_image_filter_event": {
+      "keys": "ctrl+f",
+      "description": "Add Image Filter Event"
+    },
+    "add_scene_event": {
+      "keys": "ctrl+s",
+      "description": "Add Scene Event"
+    },
+    "add_image_output_event": {
+      "keys": "ctrl+o",
+      "description": "Add Image Output Event"
+    },
+    "home": {
+      "keys": "alt+ctrl+h",
+      "description": "Home"
+    },
+    "toggle_viewcube_visibility": {
+      "keys": "alt+ctrl+v",
+      "description": "Toggle ViewCube Visibility"
+    },
+    "viewport_visual_style_realistic": {
+      "keys": "shift+f3",
+      "description": "Viewport Visual Style Realistic"
+    },
+    "edit_soft_selection_vol_select": {
+      "keys": "7",
+      "description": "Edit Soft Selection"
+    },
+    "decelerate_toggle": {
+      "keys": "z",
+      "description": "Decelerate Toggle"
+    },
+    "lock_vertical_rotation": {
+      "keys": "space",
+      "description": "Lock Vertical Rotation"
+    },
+    "level": {
+      "keys": "shift+space",
+      "description": "Level"
+    },
+    "back": {
+      "keys": "s / down arrow",
+      "description": "Back"
+    },
+    "up": {
+      "keys": "e / shift+up",
+      "description": "Up"
+    },
+    "down": {
+      "keys": "c / shift+down",
+      "description": "Down"
+    },
+    "forward": {
+      "keys": "w / up arrow",
+      "description": "Forward"
+    },
+    "right": {
+      "keys": "d / right arrow",
+      "description": "Right"
+    },
+    "accelerate_toggle": {
+      "keys": "q",
+      "description": "Accelerate Toggle"
+    },
+    "left": {
+      "keys": "a / left arrow",
+      "description": "Left"
+    },
+    "select_invert_weighttable": {
+      "keys": "ctrl+i",
+      "description": "Select Invert"
+    },
+    "select_all_weighttable": {
+      "keys": "ctrl+a",
+      "description": "Select All"
+    },
+    "select_none_weighttable": {
+      "keys": "ctrl+d",
+      "description": "Select None"
+    }
+  },
+  "semantic_elements": {
+    "render": {
+      "label": "Render",
+      "aliases": [
+        "render"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Render"
+      }
+    },
+    "toggle_toolbar_docked": {
+      "label": "Toggle Toolbar (Docked)",
+      "aliases": [
+        "toggle toolbar (docked)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Toggle Toolbar (Docked)"
+      }
+    },
+    "draw_region": {
+      "label": "Draw Region",
+      "aliases": [
+        "draw region"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d",
+        "description": "Draw Region"
+      }
+    },
+    "update": {
+      "label": "Update",
+      "aliases": [
+        "update"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Update"
+      }
+    },
+    "initialize": {
+      "label": "Initialize",
+      "aliases": [
+        "initialize"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Initialize"
+      }
+    },
+    "select_object": {
+      "label": "Select Object",
+      "aliases": [
+        "select object"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Select Object"
+      }
+    },
+    "close": {
+      "label": "Close",
+      "aliases": [
+        "close"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "q",
+        "description": "Close"
+      }
+    },
+    "copy_paste_paste": {
+      "label": "Copy/Paste - Paste",
+      "aliases": [
+        "copy/paste - paste",
+        "copy",
+        "paste - paste",
+        "copy/paste",
+        "paste"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+v",
+        "description": "Copy/Paste - Paste"
+      }
+    },
+    "trackbar_toggle_biped_keys": {
+      "label": "Trackbar - Toggle Biped Keys",
+      "aliases": [
+        "trackbar - toggle biped keys",
+        "trackbar",
+        "toggle biped keys"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+t",
+        "description": "Trackbar - Toggle Biped Keys"
+      }
+    },
+    "tv_select_start_of_foosteps": {
+      "label": "TV Select start of foosteps",
+      "aliases": [
+        "tv select start of foosteps"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+a",
+        "description": "TV Select start of foosteps"
+      }
+    },
+    "tv_select_entire_foostep": {
+      "label": "TV Select entire foostep",
+      "aliases": [
+        "tv select entire foostep"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+s",
+        "description": "TV Select entire foostep"
+      }
+    },
+    "scale_in_transform": {
+      "label": "Scale In Transform",
+      "aliases": [
+        "scale in transform"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+e",
+        "description": "Scale In Transform"
+      }
+    },
+    "copy_paste_copy": {
+      "label": "Copy/Paste - Copy",
+      "aliases": [
+        "copy/paste - copy",
+        "copy",
+        "paste - copy",
+        "copy/paste"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Copy/Paste - Copy"
+      }
+    },
+    "set_key": {
+      "label": "Set Key",
+      "aliases": [
+        "set key"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "0",
+        "description": "Set Key"
+      }
+    },
+    "tv_select_end_of_footsteps": {
+      "label": "TV Select end of footsteps",
+      "aliases": [
+        "tv select end of footsteps"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+d",
+        "description": "TV Select end of footsteps"
+      }
+    },
+    "play_biped": {
+      "label": "Play Biped",
+      "aliases": [
+        "play biped"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "v",
+        "description": "Play Biped"
+      }
+    },
+    "reset_all_limb_keys": {
+      "label": "Reset All Limb Keys",
+      "aliases": [
+        "reset all limb keys"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+k",
+        "description": "Reset All Limb Keys"
+      }
+    },
+    "fix_graphs": {
+      "label": "Fix Graphs",
+      "aliases": [
+        "fix graphs"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+f",
+        "description": "Fix Graphs"
+      }
+    },
+    "move_all_collapse": {
+      "label": "Move All - Collapse",
+      "aliases": [
+        "move all - collapse",
+        "move all",
+        "collapse"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+m",
+        "description": "Move All - Collapse"
+      }
+    },
+    "copy_paste_paste_opposite": {
+      "label": "Copy/Paste - Paste Opposite",
+      "aliases": [
+        "copy/paste - paste opposite",
+        "copy",
+        "paste - paste opposite",
+        "copy/paste",
+        "paste opposite"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+b",
+        "description": "Copy/Paste - Paste Opposite"
+      }
+    },
+    "set_animation_range": {
+      "label": "Set Animation Range",
+      "aliases": [
+        "set animation range"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+r",
+        "description": "Set Animation Range"
+      }
+    },
+    "solve": {
+      "label": "Solve",
+      "aliases": [
+        "solve"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Solve"
+      }
+    },
+    "edit_soft_selection": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "face_level": {
+      "label": "Face Level",
+      "aliases": [
+        "face level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+4",
+        "description": "Face Level"
+      }
+    },
+    "reset_normals": {
+      "label": "Reset Normals",
+      "aliases": [
+        "reset normals"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Reset Normals"
+      }
+    },
+    "unify_normals": {
+      "label": "Unify Normals",
+      "aliases": [
+        "unify normals"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Unify Normals"
+      }
+    },
+    "copy_normal": {
+      "label": "Copy Normal",
+      "aliases": [
+        "copy normal"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Copy Normal"
+      }
+    },
+    "make_explicit": {
+      "label": "Make Explicit",
+      "aliases": [
+        "make explicit"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e",
+        "description": "Make Explicit"
+      }
+    },
+    "specify_normals": {
+      "label": "Specify Normals",
+      "aliases": [
+        "specify normals"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Specify Normals"
+      }
+    },
+    "object_level": {
+      "label": "Object Level",
+      "aliases": [
+        "object level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+0",
+        "description": "Object Level"
+      }
+    },
+    "break_normals": {
+      "label": "Break Normals",
+      "aliases": [
+        "break normals"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "b",
+        "description": "Break Normals"
+      }
+    },
+    "paste_normal": {
+      "label": "Paste Normal",
+      "aliases": [
+        "paste normal"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Paste Normal"
+      }
+    },
+    "normal_level": {
+      "label": "Normal Level",
+      "aliases": [
+        "normal level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+1",
+        "description": "Normal Level"
+      }
+    },
+    "vertex_level": {
+      "label": "Vertex Level",
+      "aliases": [
+        "vertex level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+2",
+        "description": "Vertex Level"
+      }
+    },
+    "edge_level": {
+      "label": "Edge Level",
+      "aliases": [
+        "edge level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+3",
+        "description": "Edge Level"
+      }
+    },
+    "edit_soft_selection_edit_patch": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "cut": {
+      "label": "Cut",
+      "aliases": [
+        "cut"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Cut"
+      }
+    },
+    "hide": {
+      "label": "Hide",
+      "aliases": [
+        "hide"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+h",
+        "description": "Hide"
+      }
+    },
+    "repeat_last_operation": {
+      "label": "Repeat Last Operation",
+      "aliases": [
+        "repeat last operation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ";",
+        "description": "Repeat Last Operation"
+      }
+    },
+    "vertex_level_edit_poly": {
+      "label": "Vertex Level",
+      "aliases": [
+        "vertex level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "1",
+        "description": "Vertex Level"
+      }
+    },
+    "bevel_mode": {
+      "label": "Bevel Mode",
+      "aliases": [
+        "bevel mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+b",
+        "description": "Bevel Mode"
+      }
+    },
+    "target_weld_mode": {
+      "label": "Target Weld Mode",
+      "aliases": [
+        "target weld mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+w",
+        "description": "Target Weld Mode"
+      }
+    },
+    "constrain_to_edges": {
+      "label": "Constrain to Edges",
+      "aliases": [
+        "constrain to edges"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+x",
+        "description": "Constrain to Edges"
+      }
+    },
+    "element_level": {
+      "label": "Element Level",
+      "aliases": [
+        "element level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "5",
+        "description": "Element Level"
+      }
+    },
+    "polygon_level": {
+      "label": "Polygon Level",
+      "aliases": [
+        "polygon level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "4",
+        "description": "Polygon Level"
+      }
+    },
+    "shrink_selection": {
+      "label": "Shrink Selection",
+      "aliases": [
+        "shrink selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+pagedown",
+        "description": "Shrink Selection"
+      }
+    },
+    "break": {
+      "label": "Break",
+      "aliases": [
+        "break"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+b",
+        "description": "Break"
+      }
+    },
+    "object_level_edit_poly": {
+      "label": "Object Level",
+      "aliases": [
+        "object level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "6",
+        "description": "Object Level"
+      }
+    },
+    "border_level": {
+      "label": "Border Level",
+      "aliases": [
+        "border level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "3",
+        "description": "Border Level"
+      }
+    },
+    "connect": {
+      "label": "Connect",
+      "aliases": [
+        "connect"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+e",
+        "description": "Connect"
+      }
+    },
+    "hide_unselected": {
+      "label": "Hide Unselected",
+      "aliases": [
+        "hide unselected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+i",
+        "description": "Hide Unselected"
+      }
+    },
+    "unhide_all": {
+      "label": "Unhide All",
+      "aliases": [
+        "unhide all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+u",
+        "description": "Unhide All"
+      }
+    },
+    "extrude_mode": {
+      "label": "Extrude Mode",
+      "aliases": [
+        "extrude mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+e",
+        "description": "Extrude Mode"
+      }
+    },
+    "quickslice_mode": {
+      "label": "Quickslice Mode",
+      "aliases": [
+        "quickslice mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+q",
+        "description": "Quickslice Mode"
+      }
+    },
+    "edge_level_edit_poly": {
+      "label": "Edge Level",
+      "aliases": [
+        "edge level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "2",
+        "description": "Edge Level"
+      }
+    },
+    "grow_selection": {
+      "label": "Grow Selection",
+      "aliases": [
+        "grow selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+pageup",
+        "description": "Grow Selection"
+      }
+    },
+    "chamfer_mode": {
+      "label": "Chamfer Mode",
+      "aliases": [
+        "chamfer mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+c",
+        "description": "Chamfer Mode"
+      }
+    },
+    "edit_soft_selection_edit_spline": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "detach": {
+      "label": "Detach",
+      "aliases": [
+        "detach"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Detach"
+      }
+    },
+    "vertex_level_edit_editable_mesh": {
+      "label": "Vertex Level",
+      "aliases": [
+        "vertex level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "1",
+        "description": "Vertex Level"
+      }
+    },
+    "bevel_mode_edit_editable_mesh": {
+      "label": "Bevel Mode",
+      "aliases": [
+        "bevel mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v / ctrl+b",
+        "description": "Bevel Mode"
+      }
+    },
+    "weld_target_mode": {
+      "label": "Weld Target Mode",
+      "aliases": [
+        "weld target mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+w",
+        "description": "Weld Target Mode"
+      }
+    },
+    "element_level_edit_editable_mesh": {
+      "label": "Element Level",
+      "aliases": [
+        "element level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "5",
+        "description": "Element Level"
+      }
+    },
+    "polygon_level_edit_editable_mesh": {
+      "label": "Polygon Level",
+      "aliases": [
+        "polygon level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "4",
+        "description": "Polygon Level"
+      }
+    },
+    "weld_selected": {
+      "label": "Weld Selected",
+      "aliases": [
+        "weld selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Weld Selected"
+      }
+    },
+    "extrude_mode_edit_editable_mesh": {
+      "label": "Extrude Mode",
+      "aliases": [
+        "extrude mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Extrude Mode"
+      }
+    },
+    "face_level_edit_editable_mesh": {
+      "label": "Face Level",
+      "aliases": [
+        "face level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "3",
+        "description": "Face Level"
+      }
+    },
+    "cut_mode": {
+      "label": "Cut Mode",
+      "aliases": [
+        "cut mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Cut Mode"
+      }
+    },
+    "chamfer_mode_edit_editable_mesh": {
+      "label": "Chamfer Mode",
+      "aliases": [
+        "chamfer mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Chamfer Mode"
+      }
+    },
+    "edge_invisible": {
+      "label": "Edge Invisible",
+      "aliases": [
+        "edge invisible"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Edge Invisible"
+      }
+    },
+    "edge_turn": {
+      "label": "Edge Turn",
+      "aliases": [
+        "edge turn"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "description": "Edge Turn"
+      }
+    },
+    "edge_level_edit_editable_mesh": {
+      "label": "Edge Level",
+      "aliases": [
+        "edge level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "2",
+        "description": "Edge Level"
+      }
+    },
+    "cut_editable_poly": {
+      "label": "Cut",
+      "aliases": [
+        "cut"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Cut"
+      }
+    },
+    "hide_editable_poly": {
+      "label": "Hide",
+      "aliases": [
+        "hide"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+h",
+        "description": "Hide"
+      }
+    },
+    "repeat_last_operation_editable_poly": {
+      "label": "Repeat Last Operation",
+      "aliases": [
+        "repeat last operation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ";",
+        "description": "Repeat Last Operation"
+      }
+    },
+    "vertex_level_editable_poly": {
+      "label": "Vertex Level",
+      "aliases": [
+        "vertex level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "1",
+        "description": "Vertex Level"
+      }
+    },
+    "bevel_mode_editable_poly": {
+      "label": "Bevel Mode",
+      "aliases": [
+        "bevel mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+b",
+        "description": "Bevel Mode"
+      }
+    },
+    "target_weld_mode_editable_poly": {
+      "label": "Target Weld Mode",
+      "aliases": [
+        "target weld mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+w",
+        "description": "Target Weld Mode"
+      }
+    },
+    "constrain_to_edges_editable_poly": {
+      "label": "Constrain to Edges",
+      "aliases": [
+        "constrain to edges"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+x",
+        "description": "Constrain to Edges"
+      }
+    },
+    "element_level_editable_poly": {
+      "label": "Element Level",
+      "aliases": [
+        "element level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "5",
+        "description": "Element Level"
+      }
+    },
+    "shrink_selection_editable_poly": {
+      "label": "Shrink Selection",
+      "aliases": [
+        "shrink selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+pagedown",
+        "description": "Shrink Selection"
+      }
+    },
+    "grow_selection_editable_poly": {
+      "label": "Grow Selection",
+      "aliases": [
+        "grow selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+pageup",
+        "description": "Grow Selection"
+      }
+    },
+    "object_level_editable_poly": {
+      "label": "Object Level",
+      "aliases": [
+        "object level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "6",
+        "description": "Object Level"
+      }
+    },
+    "border_level_editable_poly": {
+      "label": "Border Level",
+      "aliases": [
+        "border level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "3",
+        "description": "Border Level"
+      }
+    },
+    "connect_editable_poly": {
+      "label": "Connect",
+      "aliases": [
+        "connect"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+e",
+        "description": "Connect"
+      }
+    },
+    "hide_unselected_editable_poly": {
+      "label": "Hide Unselected",
+      "aliases": [
+        "hide unselected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+i",
+        "description": "Hide Unselected"
+      }
+    },
+    "unhide_all_editable_poly": {
+      "label": "Unhide All",
+      "aliases": [
+        "unhide all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+u",
+        "description": "Unhide All"
+      }
+    },
+    "extrude_mode_editable_poly": {
+      "label": "Extrude Mode",
+      "aliases": [
+        "extrude mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+e",
+        "description": "Extrude Mode"
+      }
+    },
+    "quickslice_mode_editable_poly": {
+      "label": "Quickslice Mode",
+      "aliases": [
+        "quickslice mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+q",
+        "description": "Quickslice Mode"
+      }
+    },
+    "edge_level_editable_poly": {
+      "label": "Edge Level",
+      "aliases": [
+        "edge level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "2",
+        "description": "Edge Level"
+      }
+    },
+    "face_level_editable_poly": {
+      "label": "Face Level",
+      "aliases": [
+        "face level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "4",
+        "description": "Face Level"
+      }
+    },
+    "chamfer_mode_editable_poly": {
+      "label": "Chamfer Mode",
+      "aliases": [
+        "chamfer mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+c",
+        "description": "Chamfer Mode"
+      }
+    },
+    "switch_to_lattice_level": {
+      "label": "Switch To Lattice Level",
+      "aliases": [
+        "switch to lattice level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+l",
+        "description": "Switch To Lattice Level"
+      }
+    },
+    "switch_to_top_level": {
+      "label": "Switch To Top Level",
+      "aliases": [
+        "switch to top level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+t",
+        "description": "Switch To Top Level"
+      }
+    },
+    "switch_to_set_volume_level": {
+      "label": "Switch To Set Volume Level",
+      "aliases": [
+        "switch to set volume level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+s",
+        "description": "Switch To Set Volume Level"
+      }
+    },
+    "switch_to_control_point_level": {
+      "label": "Switch To Control Point Level",
+      "aliases": [
+        "switch to control point level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+c",
+        "description": "Switch To Control Point Level"
+      }
+    },
+    "edit_soft_selection_hsds": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "cut_hair_styling": {
+      "label": "Cut",
+      "aliases": [
+        "cut"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Cut"
+      }
+    },
+    "tip": {
+      "label": "Tip",
+      "aliases": [
+        "tip"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+1",
+        "description": "Tip"
+      }
+    },
+    "recomb": {
+      "label": "Recomb",
+      "aliases": [
+        "recomb"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+m",
+        "description": "Recomb"
+      }
+    },
+    "invert_selection": {
+      "label": "Invert Selection",
+      "aliases": [
+        "invert selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+n",
+        "description": "Invert Selection"
+      }
+    },
+    "brush_rotate": {
+      "label": "Brush Rotate",
+      "aliases": [
+        "brush rotate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+5",
+        "description": "Brush Rotate"
+      }
+    },
+    "translate": {
+      "label": "Translate",
+      "aliases": [
+        "translate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "description": "Translate"
+      }
+    },
+    "toggle_collisions": {
+      "label": "Toggle Collisions",
+      "aliases": [
+        "toggle collisions"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+c",
+        "description": "Toggle Collisions"
+      }
+    },
+    "split_hairgroups": {
+      "label": "Split Hairgroups",
+      "aliases": [
+        "split hairgroups"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+-",
+        "description": "Split Hairgroups"
+      }
+    },
+    "root": {
+      "label": "Root",
+      "aliases": [
+        "root"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+4",
+        "description": "Root"
+      }
+    },
+    "unlock": {
+      "label": "Unlock",
+      "aliases": [
+        "unlock"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+u",
+        "description": "Unlock"
+      }
+    },
+    "undo": {
+      "label": "Undo",
+      "aliases": [
+        "undo"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+z",
+        "description": "Undo"
+      }
+    },
+    "toggle_hairs": {
+      "label": "Toggle Hairs",
+      "aliases": [
+        "toggle hairs"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+i",
+        "description": "Toggle Hairs"
+      }
+    },
+    "scale": {
+      "label": "Scale ",
+      "aliases": [
+        "scale "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Scale "
+      }
+    },
+    "pop_zerosized": {
+      "label": "Pop Zerosized",
+      "aliases": [
+        "pop zerosized"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+z",
+        "description": "Pop Zerosized"
+      }
+    },
+    "soft_falloff": {
+      "label": "Soft Falloff",
+      "aliases": [
+        "soft falloff"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+f",
+        "description": "Soft Falloff"
+      }
+    },
+    "pop_selected": {
+      "label": "Pop Selected",
+      "aliases": [
+        "pop selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+p",
+        "description": "Pop Selected"
+      }
+    },
+    "rotate": {
+      "label": "Rotate",
+      "aliases": [
+        "rotate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+r",
+        "description": "Rotate"
+      }
+    },
+    "brush_puff": {
+      "label": "Brush Puff",
+      "aliases": [
+        "brush puff"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+3",
+        "description": "Brush Puff"
+      }
+    },
+    "attenuate": {
+      "label": "Attenuate",
+      "aliases": [
+        "attenuate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+a",
+        "description": "Attenuate"
+      }
+    },
+    "show_hidden": {
+      "label": "Show Hidden",
+      "aliases": [
+        "show hidden"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+w",
+        "description": "Show Hidden"
+      }
+    },
+    "verts": {
+      "label": "Verts",
+      "aliases": [
+        "verts"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+3",
+        "description": "Verts"
+      }
+    },
+    "stand": {
+      "label": "Stand",
+      "aliases": [
+        "stand"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+n",
+        "description": "Stand"
+      }
+    },
+    "puff": {
+      "label": "Puff",
+      "aliases": [
+        "puff"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Puff"
+      }
+    },
+    "clump": {
+      "label": "Clump",
+      "aliases": [
+        "clump"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+m",
+        "description": "Clump"
+      }
+    },
+    "guide": {
+      "label": "Guide",
+      "aliases": [
+        "guide"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+2",
+        "description": "Guide"
+      }
+    },
+    "brush_clump": {
+      "label": "Brush Clump",
+      "aliases": [
+        "brush clump"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+4",
+        "description": "Brush Clump"
+      }
+    },
+    "lock": {
+      "label": "Lock",
+      "aliases": [
+        "lock"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+l",
+        "description": "Lock"
+      }
+    },
+    "brush_stand": {
+      "label": "Brush Stand",
+      "aliases": [
+        "brush stand"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+2",
+        "description": "Brush Stand"
+      }
+    },
+    "ignore_back": {
+      "label": "Ignore Back",
+      "aliases": [
+        "ignore back"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+b",
+        "description": "Ignore Back"
+      }
+    },
+    "brush_translate": {
+      "label": "Brush Translate",
+      "aliases": [
+        "brush translate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+1",
+        "description": "Brush Translate"
+      }
+    },
+    "hide_selected": {
+      "label": "Hide Selected",
+      "aliases": [
+        "hide selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+h",
+        "description": "Hide Selected"
+      }
+    },
+    "reset_rest": {
+      "label": "Reset Rest",
+      "aliases": [
+        "reset rest"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+t",
+        "description": "Reset Rest"
+      }
+    },
+    "merge_hairgroups": {
+      "label": "Merge Hairgroups",
+      "aliases": [
+        "merge hairgroups"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+=",
+        "description": "Merge Hairgroups"
+      }
+    },
+    "expand_selection": {
+      "label": "Expand Selection",
+      "aliases": [
+        "expand selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+e",
+        "description": "Expand Selection"
+      }
+    },
+    "brush": {
+      "label": "Brush",
+      "aliases": [
+        "brush"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+b",
+        "description": "Brush"
+      }
+    },
+    "brush_scale": {
+      "label": "Brush Scale",
+      "aliases": [
+        "brush scale"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+6",
+        "description": "Brush Scale"
+      }
+    },
+    "select": {
+      "label": "Select",
+      "aliases": [
+        "select"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Select"
+      }
+    },
+    "rotate_selection": {
+      "label": "Rotate Selection",
+      "aliases": [
+        "rotate selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+r",
+        "description": "Rotate Selection"
+      }
+    },
+    "parameter_editor": {
+      "label": "Parameter Editor",
+      "aliases": [
+        "parameter editor"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+1",
+        "description": "Parameter Editor"
+      }
+    },
+    "hide_unselected_poly": {
+      "label": "Hide Unselected (Poly)",
+      "aliases": [
+        "hide unselected (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+i",
+        "description": "Hide Unselected (Poly)"
+      }
+    },
+    "hide_poly": {
+      "label": "Hide (Poly)",
+      "aliases": [
+        "hide (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+h",
+        "description": "Hide (Poly)"
+      }
+    },
+    "cut_poly": {
+      "label": "Cut (Poly)",
+      "aliases": [
+        "cut (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Cut (Poly)"
+      }
+    },
+    "select_sub_object_ring": {
+      "label": "Select Sub-object Ring",
+      "aliases": [
+        "select sub-object ring"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+r",
+        "description": "Select Sub-object Ring"
+      }
+    },
+    "smart_select": {
+      "label": "Smart Select",
+      "aliases": [
+        "smart select"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "q",
+        "description": "Smart Select"
+      }
+    },
+    "grow_selection_poly": {
+      "label": "Grow Selection (Poly)",
+      "aliases": [
+        "grow selection (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+pageup",
+        "description": "Grow Selection (Poly)"
+      }
+    },
+    "sub_object_level_5": {
+      "label": "Sub-object Level 5",
+      "aliases": [
+        "sub-object level 5"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "5",
+        "description": "Sub-object Level 5"
+      }
+    },
+    "edge_constraint_toggle_poly": {
+      "label": "Edge Constraint Toggle (Poly)",
+      "aliases": [
+        "edge constraint toggle (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+x",
+        "description": "Edge Constraint Toggle (Poly)"
+      }
+    },
+    "create_camera_from_view": {
+      "label": "Create Camera From View",
+      "aliases": [
+        "create camera from view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Create Camera From View"
+      }
+    },
+    "collect_parameters_tv": {
+      "label": "Collect Parameters TV",
+      "aliases": [
+        "collect parameters tv"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+4",
+        "description": "Collect Parameters TV"
+      }
+    },
+    "smart_scale": {
+      "label": "Smart Scale",
+      "aliases": [
+        "smart scale"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Smart Scale"
+      }
+    },
+    "extrude_along_spline_poly": {
+      "label": "Extrude along Spline (Poly)",
+      "aliases": [
+        "extrude along spline (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+e",
+        "description": "Extrude along Spline (Poly)"
+      }
+    },
+    "walkthrough_view_mode": {
+      "label": "WalkThrough View Mode",
+      "aliases": [
+        "walkthrough view mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "WalkThrough View Mode"
+      }
+    },
+    "ignore_backfacing_toggle_poly": {
+      "label": "Ignore Backfacing Toggle (Poly)",
+      "aliases": [
+        "ignore backfacing toggle (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+i",
+        "description": "Ignore Backfacing Toggle (Poly)"
+      }
+    },
+    "meshsmooth_poly": {
+      "label": "Meshsmooth (Poly)",
+      "aliases": [
+        "meshsmooth (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+m",
+        "description": "Meshsmooth (Poly)"
+      }
+    },
+    "weld_poly": {
+      "label": "Weld (Poly)",
+      "aliases": [
+        "weld (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+w",
+        "description": "Weld (Poly)"
+      }
+    },
+    "asset_tracking": {
+      "label": "Asset Tracking...",
+      "aliases": [
+        "asset tracking..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+t",
+        "description": "Asset Tracking..."
+      }
+    },
+    "chamfer_poly": {
+      "label": "Chamfer (Poly)",
+      "aliases": [
+        "chamfer (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+c",
+        "description": "Chamfer (Poly)"
+      }
+    },
+    "slice_poly": {
+      "label": "Slice (Poly)",
+      "aliases": [
+        "slice (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+q",
+        "description": "Slice (Poly)"
+      }
+    },
+    "add_edit_parameters_tv": {
+      "label": "Add/Edit Parameters... (TV)",
+      "aliases": [
+        "add/edit parameters... (tv)",
+        "add",
+        "edit parameters... (tv)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+1",
+        "description": "Add/Edit Parameters... (TV)"
+      }
+    },
+    "parameter_wiring_dialog": {
+      "label": "Parameter Wiring Dialog...",
+      "aliases": [
+        "parameter wiring dialog..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+5",
+        "description": "Parameter Wiring Dialog..."
+      }
+    },
+    "start_parameter_wiring": {
+      "label": "Start Parameter Wiring...",
+      "aliases": [
+        "start parameter wiring..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+5",
+        "description": "Start Parameter Wiring..."
+      }
+    },
+    "render_to_texture_dialog_toggle": {
+      "label": "Render to Texture Dialog Toggle",
+      "aliases": [
+        "render to texture dialog toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "0",
+        "description": "Render to Texture Dialog Toggle"
+      }
+    },
+    "extrude_face_poly": {
+      "label": "Extrude Face (Poly)",
+      "aliases": [
+        "extrude face (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+e",
+        "description": "Extrude Face (Poly)"
+      }
+    },
+    "collapse_poly": {
+      "label": "Collapse (Poly)",
+      "aliases": [
+        "collapse (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+c",
+        "description": "Collapse (Poly)"
+      }
+    },
+    "cap_poly": {
+      "label": "Cap (Poly)",
+      "aliases": [
+        "cap (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+p",
+        "description": "Cap (Poly)"
+      }
+    },
+    "geometry_selection_visibility_toggle": {
+      "label": "Geometry Selection Visibility Toggle",
+      "aliases": [
+        "geometry selection visibility toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+g",
+        "description": "Geometry Selection Visibility Toggle"
+      }
+    },
+    "collect_parameters_sv": {
+      "label": "Collect Parameters SV",
+      "aliases": [
+        "collect parameters sv"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+3",
+        "description": "Collect Parameters SV"
+      }
+    },
+    "parameter_collector": {
+      "label": "Parameter Collector",
+      "aliases": [
+        "parameter collector"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+2",
+        "description": "Parameter Collector"
+      }
+    },
+    "repeat_last_poly": {
+      "label": "Repeat Last (Poly)",
+      "aliases": [
+        "repeat last (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ";",
+        "description": "Repeat Last (Poly)"
+      }
+    },
+    "unhide_all_poly": {
+      "label": "Unhide All (Poly)",
+      "aliases": [
+        "unhide all (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+u",
+        "description": "Unhide All (Poly)"
+      }
+    },
+    "sub_object_level_3": {
+      "label": "Sub-Object Level 3",
+      "aliases": [
+        "sub-object level 3"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "3",
+        "description": "Sub-Object Level 3"
+      }
+    },
+    "bevel_poly": {
+      "label": "Bevel (Poly)",
+      "aliases": [
+        "bevel (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+b",
+        "description": "Bevel (Poly)"
+      }
+    },
+    "sub_object_level_4": {
+      "label": "Sub-Object Level 4",
+      "aliases": [
+        "sub-object level 4"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "4",
+        "description": "Sub-Object Level 4"
+      }
+    },
+    "connect_no_dialog_poly": {
+      "label": "Connect (no dialog) (Poly)",
+      "aliases": [
+        "connect (no dialog) (poly)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+e",
+        "description": "Connect (no dialog) (Poly)"
+      }
+    },
+    "sub_object_level_2": {
+      "label": "Sub-Object Level 2",
+      "aliases": [
+        "sub-object level 2"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "2",
+        "description": "Sub-Object Level 2"
+      }
+    },
+    "select_sub_object_loop": {
+      "label": "Select Sub-object Loop",
+      "aliases": [
+        "select sub-object loop"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+l",
+        "description": "Select Sub-object Loop"
+      }
+    },
+    "sub_object_level_1": {
+      "label": "Sub-Object Level 1",
+      "aliases": [
+        "sub-object level 1"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "1",
+        "description": "Sub-Object Level 1"
+      }
+    },
+    "home_view": {
+      "label": "Home View",
+      "aliases": [
+        "home view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+home",
+        "description": "Home View"
+      }
+    },
+    "wireframe_smooth_highlights_toggle": {
+      "label": "Wireframe / Smooth+Highlights Toggle",
+      "aliases": [
+        "wireframe / smooth+highlights toggle",
+        "wireframe",
+        "smooth+highlights toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f3",
+        "description": "Wireframe / Smooth+Highlights Toggle"
+      }
+    },
+    "delete_objects": {
+      "label": "Delete Objects",
+      "aliases": [
+        "delete objects"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ".",
+        "description": "Delete Objects"
+      }
+    },
+    "sub_object_selection_toggle": {
+      "label": "Sub-object Selection Toggle",
+      "aliases": [
+        "sub-object selection toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+b",
+        "description": "Sub-object Selection Toggle"
+      }
+    },
+    "fetch": {
+      "label": "Fetch",
+      "aliases": [
+        "fetch"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+f",
+        "description": "Fetch"
+      }
+    },
+    "select_ancestor": {
+      "label": "Select Ancestor",
+      "aliases": [
+        "select ancestor"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "pageup",
+        "description": "Select Ancestor"
+      }
+    },
+    "perspective_user_view": {
+      "label": "Perspective User View",
+      "aliases": [
+        "perspective user view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Perspective User View"
+      }
+    },
+    "select_by_name": {
+      "label": "Select By Name",
+      "aliases": [
+        "select by name"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "h",
+        "description": "Select By Name"
+      }
+    },
+    "redo_scene_operation": {
+      "label": "Redo Scene Operation",
+      "aliases": [
+        "redo scene operation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+y",
+        "description": "Redo Scene Operation"
+      }
+    },
+    "orthographic_user_view": {
+      "label": "Orthographic User View",
+      "aliases": [
+        "orthographic user view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Orthographic User View"
+      }
+    },
+    "sound_toggle": {
+      "label": "Sound Toggle",
+      "aliases": [
+        "sound toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "\\",
+        "description": "Sound Toggle"
+      }
+    },
+    "redraw_all_views": {
+      "label": "Redraw All Views",
+      "aliases": [
+        "redraw all views"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "`",
+        "description": "Redraw All Views"
+      }
+    },
+    "adaptive_degradation_toggle": {
+      "label": "Adaptive Degradation Toggle",
+      "aliases": [
+        "adaptive degradation toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "o",
+        "description": "Adaptive Degradation Toggle"
+      }
+    },
+    "set_key_mode": {
+      "label": "Set Key Mode",
+      "aliases": [
+        "set key mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "'",
+        "description": "Set Key Mode"
+      }
+    },
+    "hide_particle_systems_toggle": {
+      "label": "Hide Particle Systems Toggle",
+      "aliases": [
+        "hide particle systems toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+p",
+        "description": "Hide Particle Systems Toggle"
+      }
+    },
+    "render_main_ui": {
+      "label": "Render",
+      "aliases": [
+        "render"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+q",
+        "description": "Render"
+      }
+    },
+    "virtual_viewport_pan_down": {
+      "label": "Virtual Viewport Pan Down",
+      "aliases": [
+        "virtual viewport pan down"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num2",
+        "description": "Virtual Viewport Pan Down"
+      }
+    },
+    "transform_gizmo_size_down": {
+      "label": "Transform Gizmo Size Down",
+      "aliases": [
+        "transform gizmo size down"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "-",
+        "description": "Transform Gizmo Size Down"
+      }
+    },
+    "maxscript_listener": {
+      "label": "MAXScript Listener",
+      "aliases": [
+        "maxscript listener"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f11",
+        "description": "MAXScript Listener"
+      }
+    },
+    "zoom_region_mode": {
+      "label": "Zoom Region Mode",
+      "aliases": [
+        "zoom region mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Zoom Region Mode"
+      }
+    },
+    "normal_align": {
+      "label": "Normal Align ",
+      "aliases": [
+        "normal align "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+n",
+        "description": "Normal Align "
+      }
+    },
+    "show_floating_dialogs": {
+      "label": "Show Floating Dialogs",
+      "aliases": [
+        "show floating dialogs"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+`",
+        "description": "Show Floating Dialogs"
+      }
+    },
+    "go_to_start_frame": {
+      "label": "Go to Start Frame",
+      "aliases": [
+        "go to start frame"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "home",
+        "description": "Go to Start Frame"
+      }
+    },
+    "hide_helpers_toggle": {
+      "label": "Hide Helpers Toggle",
+      "aliases": [
+        "hide helpers toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+h",
+        "description": "Hide Helpers Toggle"
+      }
+    },
+    "zoom_extents_selected": {
+      "label": "Zoom Extents Selected",
+      "aliases": [
+        "zoom extents selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "z",
+        "description": "Zoom Extents Selected"
+      }
+    },
+    "transform_type_in_dialog_toggle": {
+      "label": "Transform Type-In Dialog Toggle",
+      "aliases": [
+        "transform type-in dialog toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f12",
+        "description": "Transform Type-In Dialog Toggle"
+      }
+    },
+    "enable_axis_constraints_in_snaps_toggle": {
+      "label": "Enable Axis Constraints in Snaps Toggle",
+      "aliases": [
+        "enable axis constraints in snaps toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+d / alt+f3",
+        "description": "Enable Axis Constraints in Snaps Toggle"
+      }
+    },
+    "background_lock_toggle": {
+      "label": "Background Lock Toggle",
+      "aliases": [
+        "background lock toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+b",
+        "description": "Background Lock Toggle"
+      }
+    },
+    "hide_geometry_toggle": {
+      "label": "Hide Geometry Toggle",
+      "aliases": [
+        "hide geometry toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+g",
+        "description": "Hide Geometry Toggle"
+      }
+    },
+    "save_file": {
+      "label": "Save File",
+      "aliases": [
+        "save file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Save File"
+      }
+    },
+    "backup_time_one_unit": {
+      "label": "Backup Time One Unit",
+      "aliases": [
+        "backup time one unit"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ",",
+        "description": "Backup Time One Unit"
+      }
+    },
+    "virtual_viewport_pan_left": {
+      "label": "Virtual Viewport Pan Left",
+      "aliases": [
+        "virtual viewport pan left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num4",
+        "description": "Virtual Viewport Pan Left"
+      }
+    },
+    "update_background_image": {
+      "label": "Update Background Image",
+      "aliases": [
+        "update background image"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+b",
+        "description": "Update Background Image"
+      }
+    },
+    "bottom_view": {
+      "label": "Bottom View",
+      "aliases": [
+        "bottom view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "b",
+        "description": "Bottom View"
+      }
+    },
+    "transform_gizmo_y_constraint": {
+      "label": "Transform Gizmo Y Constraint",
+      "aliases": [
+        "transform gizmo y constraint"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f6",
+        "description": "Transform Gizmo Y Constraint"
+      }
+    },
+    "hold": {
+      "label": "Hold",
+      "aliases": [
+        "hold"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+h",
+        "description": "Hold"
+      }
+    },
+    "transform_gizmo_z_constraint": {
+      "label": "Transform Gizmo Z Constraint",
+      "aliases": [
+        "transform gizmo z constraint"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f7",
+        "description": "Transform Gizmo Z Constraint"
+      }
+    },
+    "auto_key_mode_toggle": {
+      "label": "Auto Key Mode Toggle",
+      "aliases": [
+        "auto key mode toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "n",
+        "description": "Auto Key Mode Toggle"
+      }
+    },
+    "disable_viewport": {
+      "label": "Disable Viewport",
+      "aliases": [
+        "disable viewport"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d",
+        "description": "Disable Viewport"
+      }
+    },
+    "hide_cameras_toggle": {
+      "label": "Hide Cameras Toggle",
+      "aliases": [
+        "hide cameras toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+c",
+        "description": "Hide Cameras Toggle"
+      }
+    },
+    "select_children": {
+      "label": "Select Children",
+      "aliases": [
+        "select children"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+pagedown",
+        "description": "Select Children"
+      }
+    },
+    "cycle_snap_hit": {
+      "label": "Cycle Snap Hit",
+      "aliases": [
+        "cycle snap hit"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+s",
+        "description": "Cycle Snap Hit"
+      }
+    },
+    "undo_viewport_operation": {
+      "label": "Undo Viewport Operation",
+      "aliases": [
+        "undo viewport operation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+z",
+        "description": "Undo Viewport Operation"
+      }
+    },
+    "material_editor_toggle": {
+      "label": "Material Editor Toggle",
+      "aliases": [
+        "material editor toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "m",
+        "description": "Material Editor Toggle"
+      }
+    },
+    "select_and_move": {
+      "label": "Select and Move",
+      "aliases": [
+        "select and move"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "w",
+        "description": "Select and Move"
+      }
+    },
+    "show_statistics_toggle": {
+      "label": "Show Statistics Toggle",
+      "aliases": [
+        "show statistics toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Show Statistics Toggle"
+      }
+    },
+    "angle_snap_toggle": {
+      "label": "Angle Snap Toggle",
+      "aliases": [
+        "angle snap toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a",
+        "description": "Angle Snap Toggle"
+      }
+    },
+    "transform_gizmo_toggle": {
+      "label": "Transform Gizmo Toggle",
+      "aliases": [
+        "transform gizmo toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+x",
+        "description": "Transform Gizmo Toggle"
+      }
+    },
+    "render_setup": {
+      "label": "Render SetUp...",
+      "aliases": [
+        "render setup..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f10",
+        "description": "Render SetUp..."
+      }
+    },
+    "redo_viewport_operation": {
+      "label": "Redo Viewport Operation",
+      "aliases": [
+        "redo viewport operation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+y",
+        "description": "Redo Viewport Operation"
+      }
+    },
+    "pan_viewport": {
+      "label": "Pan Viewport",
+      "aliases": [
+        "pan viewport"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "i",
+        "description": "Pan Viewport"
+      }
+    },
+    "zoom_in_2x": {
+      "label": "Zoom In 2X",
+      "aliases": [
+        "zoom in 2x"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+z",
+        "description": "Zoom In 2X"
+      }
+    },
+    "lock_user_interface_toggle": {
+      "label": "Lock User Interface Toggle",
+      "aliases": [
+        "lock user interface toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+0",
+        "description": "Lock User Interface Toggle"
+      }
+    },
+    "maximize_viewport_toggle": {
+      "label": "Maximize Viewport Toggle",
+      "aliases": [
+        "maximize viewport toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+w",
+        "description": "Maximize Viewport Toggle"
+      }
+    },
+    "viewport_lighting_illuminate_with_default_scene_lights_toggle": {
+      "label": "Viewport Lighting Illuminate with Default / Scene Lights Toggle",
+      "aliases": [
+        "viewport lighting illuminate with default / scene lights toggle",
+        "viewport lighting illuminate with default",
+        "scene lights toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+l",
+        "description": "Viewport Lighting Illuminate with Default / Scene Lights Toggle"
+      }
+    },
+    "zoom_out_2x": {
+      "label": "Zoom Out 2X",
+      "aliases": [
+        "zoom out 2x"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+z",
+        "description": "Zoom Out 2X"
+      }
+    },
+    "virtual_viewport_zoom_out": {
+      "label": "Virtual Viewport Zoom Out",
+      "aliases": [
+        "virtual viewport zoom out"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num-",
+        "description": "Virtual Viewport Zoom Out"
+      }
+    },
+    "zoom_extents": {
+      "label": "Zoom Extents",
+      "aliases": [
+        "zoom extents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+z",
+        "description": "Zoom Extents"
+      }
+    },
+    "view_edged_faces_toggle": {
+      "label": "View Edged Faces Toggle",
+      "aliases": [
+        "view edged faces toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f4",
+        "description": "View Edged Faces Toggle"
+      }
+    },
+    "display_as_see_through_toggle": {
+      "label": "Display as See-Through Toggle",
+      "aliases": [
+        "display as see-through toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+x",
+        "description": "Display as See-Through Toggle"
+      }
+    },
+    "create_animated_sequence_file": {
+      "label": "Create Animated Sequence File...",
+      "aliases": [
+        "create animated sequence file..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+v",
+        "description": "Create Animated Sequence File..."
+      }
+    },
+    "virtual_viewport_zoom_in": {
+      "label": "Virtual Viewport Zoom In",
+      "aliases": [
+        "virtual viewport zoom in"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "numpad+",
+        "description": "Virtual Viewport Zoom In"
+      }
+    },
+    "top_view": {
+      "label": "Top View",
+      "aliases": [
+        "top view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "t",
+        "description": "Top View"
+      }
+    },
+    "zoom_mode": {
+      "label": "Zoom Mode",
+      "aliases": [
+        "zoom mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+z",
+        "description": "Zoom Mode"
+      }
+    },
+    "selection_lock_toggle": {
+      "label": "Selection Lock Toggle",
+      "aliases": [
+        "selection lock toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Selection Lock Toggle"
+      }
+    },
+    "camera_view": {
+      "label": "Camera View",
+      "aliases": [
+        "camera view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c",
+        "description": "Camera View"
+      }
+    },
+    "left_view": {
+      "label": "Left View",
+      "aliases": [
+        "left view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "l",
+        "description": "Left View"
+      }
+    },
+    "percent_snap_toggle": {
+      "label": "Percent Snap Toggle",
+      "aliases": [
+        "percent snap toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+p",
+        "description": "Percent Snap Toggle"
+      }
+    },
+    "align": {
+      "label": "Align",
+      "aliases": [
+        "align"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+a",
+        "description": "Align"
+      }
+    },
+    "render_last": {
+      "label": "Render Last",
+      "aliases": [
+        "render last"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f9",
+        "description": "Render Last"
+      }
+    },
+    "sub_object_level_cycle": {
+      "label": "Sub-object Level Cycle",
+      "aliases": [
+        "sub-object level cycle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "insert",
+        "description": "Sub-object Level Cycle"
+      }
+    },
+    "select_none": {
+      "label": "Select None",
+      "aliases": [
+        "select none"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Select None"
+      }
+    },
+    "viewport_safeframes_toggle": {
+      "label": "Viewport Safeframes Toggle",
+      "aliases": [
+        "viewport safeframes toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+f",
+        "description": "Viewport Safeframes Toggle"
+      }
+    },
+    "isolate_selection": {
+      "label": "Isolate Selection",
+      "aliases": [
+        "isolate selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+q",
+        "description": "Isolate Selection"
+      }
+    },
+    "select_similar": {
+      "label": "Select Similar",
+      "aliases": [
+        "select similar"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+q",
+        "description": "Select Similar"
+      }
+    },
+    "pan_view": {
+      "label": "Pan View",
+      "aliases": [
+        "pan view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Pan View"
+      }
+    },
+    "viewport_selection_show_selection_bracket_toggle": {
+      "label": "Viewport Selection Show Selection Bracket Toggle",
+      "aliases": [
+        "viewport selection show selection bracket toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "j",
+        "description": "Viewport Selection Show Selection Bracket Toggle"
+      }
+    },
+    "forward_time_one_unit": {
+      "label": "Forward Time One Unit",
+      "aliases": [
+        "forward time one unit"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ".",
+        "description": "Forward Time One Unit"
+      }
+    },
+    "quick_align": {
+      "label": "Quick Align",
+      "aliases": [
+        "quick align"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+a",
+        "description": "Quick Align"
+      }
+    },
+    "go_to_end_frame": {
+      "label": "Go to End Frame",
+      "aliases": [
+        "go to end frame"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "end",
+        "description": "Go to End Frame"
+      }
+    },
+    "scale_cycle": {
+      "label": "Scale Cycle",
+      "aliases": [
+        "scale cycle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Scale Cycle"
+      }
+    },
+    "transform_gizmo_plane_constraint_cycle": {
+      "label": "Transform Gizmo Plane Constraint Cycle",
+      "aliases": [
+        "transform gizmo plane constraint cycle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f8",
+        "description": "Transform Gizmo Plane Constraint Cycle"
+      }
+    },
+    "show_main_toolbar_toggle": {
+      "label": "Show Main Toolbar Toggle",
+      "aliases": [
+        "show main toolbar toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+6",
+        "description": "Show Main Toolbar Toggle"
+      }
+    },
+    "orbit_view_mode": {
+      "label": "Orbit View Mode",
+      "aliases": [
+        "orbit view mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+r",
+        "description": "Orbit View Mode"
+      }
+    },
+    "virtual_viewport_pan_up": {
+      "label": "Virtual Viewport Pan Up",
+      "aliases": [
+        "virtual viewport pan up"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num8",
+        "description": "Virtual Viewport Pan Up"
+      }
+    },
+    "new_scene": {
+      "label": "New Scene",
+      "aliases": [
+        "new scene"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+n",
+        "description": "New Scene"
+      }
+    },
+    "snaps_toggle": {
+      "label": "Snaps Toggle",
+      "aliases": [
+        "snaps toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Snaps Toggle"
+      }
+    },
+    "expert_mode_toggle": {
+      "label": "Expert Mode Toggle",
+      "aliases": [
+        "expert mode toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+x",
+        "description": "Expert Mode Toggle"
+      }
+    },
+    "select_all": {
+      "label": "Select All",
+      "aliases": [
+        "select all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All"
+      }
+    },
+    "undo_scene_operation": {
+      "label": "Undo Scene Operation",
+      "aliases": [
+        "undo scene operation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+z",
+        "description": "Undo Scene Operation"
+      }
+    },
+    "select_child": {
+      "label": "Select Child",
+      "aliases": [
+        "select child"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "pagedown",
+        "description": "Select Child"
+      }
+    },
+    "virtual_viewport_toggle": {
+      "label": "Virtual Viewport Toggle",
+      "aliases": [
+        "virtual viewport toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num/",
+        "description": "Virtual Viewport Toggle"
+      }
+    },
+    "set_keys": {
+      "label": "Set Keys",
+      "aliases": [
+        "set keys"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "k",
+        "description": "Set Keys"
+      }
+    },
+    "clone": {
+      "label": "Clone",
+      "aliases": [
+        "clone"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Clone"
+      }
+    },
+    "spot_directional_light_view": {
+      "label": "Spot/Directional Light View",
+      "aliases": [
+        "spot/directional light view",
+        "spot",
+        "directional light view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+4",
+        "description": "Spot/Directional Light View"
+      }
+    },
+    "viewport_selection_shade_selected_faces_toggle": {
+      "label": "Viewport Selection Shade Selected Faces Toggle",
+      "aliases": [
+        "viewport selection shade selected faces toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f2",
+        "description": "Viewport Selection Shade Selected Faces Toggle"
+      }
+    },
+    "virtual_viewport_pan_right": {
+      "label": "Virtual Viewport Pan Right",
+      "aliases": [
+        "virtual viewport pan right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num6",
+        "description": "Virtual Viewport Pan Right"
+      }
+    },
+    "select_and_rotate": {
+      "label": "Select and Rotate",
+      "aliases": [
+        "select and rotate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e",
+        "description": "Select and Rotate"
+      }
+    },
+    "open_file": {
+      "label": "Open File",
+      "aliases": [
+        "open file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+o",
+        "description": "Open File"
+      }
+    },
+    "hide_grids_toggle": {
+      "label": "Hide Grids Toggle",
+      "aliases": [
+        "hide grids toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "g",
+        "description": "Hide Grids Toggle"
+      }
+    },
+    "viewport_background": {
+      "label": "Viewport Background",
+      "aliases": [
+        "viewport background"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+b",
+        "description": "Viewport Background"
+      }
+    },
+    "cycle_active_snap_type": {
+      "label": "Cycle Active Snap Type",
+      "aliases": [
+        "cycle active snap type"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+s",
+        "description": "Cycle Active Snap Type"
+      }
+    },
+    "front_view": {
+      "label": "Front View",
+      "aliases": [
+        "front view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f",
+        "description": "Front View"
+      }
+    },
+    "hide_lights_toggle": {
+      "label": "Hide Lights Toggle",
+      "aliases": [
+        "hide lights toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+l",
+        "description": "Hide Lights Toggle"
+      }
+    },
+    "environment_dialog_toggle": {
+      "label": "Environment Dialog Toggle",
+      "aliases": [
+        "environment dialog toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "8",
+        "description": "Environment Dialog Toggle"
+      }
+    },
+    "play_animation": {
+      "label": "Play Animation",
+      "aliases": [
+        "play animation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "/",
+        "description": "Play Animation"
+      }
+    },
+    "transform_gizmo_size_up": {
+      "label": "Transform Gizmo Size Up",
+      "aliases": [
+        "transform gizmo size up"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "=",
+        "description": "Transform Gizmo Size Up"
+      }
+    },
+    "select_invert": {
+      "label": "Select Invert",
+      "aliases": [
+        "select invert"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Select Invert"
+      }
+    },
+    "hide_space_warps_toggle": {
+      "label": "Hide Space Warps Toggle",
+      "aliases": [
+        "hide space warps toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+w",
+        "description": "Hide Space Warps Toggle"
+      }
+    },
+    "zoom_extents_all": {
+      "label": "Zoom Extents All",
+      "aliases": [
+        "zoom extents all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+z",
+        "description": "Zoom Extents All"
+      }
+    },
+    "transform_gizmo_x_constraint": {
+      "label": "Transform Gizmo X Constraint",
+      "aliases": [
+        "transform gizmo x constraint"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f5",
+        "description": "Transform Gizmo X Constraint"
+      }
+    },
+    "snap_to_frozen_objects_toggle": {
+      "label": "Snap To Frozen Objects Toggle",
+      "aliases": [
+        "snap to frozen objects toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f2",
+        "description": "Snap To Frozen Objects Toggle"
+      }
+    },
+    "spacing_tool": {
+      "label": "Spacing Tool",
+      "aliases": [
+        "spacing tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+i",
+        "description": "Spacing Tool"
+      }
+    },
+    "hide_shapes_toggle": {
+      "label": "Hide Shapes Toggle",
+      "aliases": [
+        "hide shapes toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+s",
+        "description": "Hide Shapes Toggle"
+      }
+    },
+    "cycle_selection_method": {
+      "label": "Cycle Selection Method",
+      "aliases": [
+        "cycle selection method"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f",
+        "description": "Cycle Selection Method"
+      }
+    },
+    "go_backward_to_sibling": {
+      "label": "Go Backward to Sibling",
+      "aliases": [
+        "go backward to sibling"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "left",
+        "description": "Go Backward to Sibling"
+      }
+    },
+    "go_forward_to_sibling": {
+      "label": "Go Forward to Sibling",
+      "aliases": [
+        "go forward to sibling"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "right",
+        "description": "Go Forward to Sibling"
+      }
+    },
+    "get_material": {
+      "label": "Get Material ",
+      "aliases": [
+        "get material "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "g",
+        "description": "Get Material "
+      }
+    },
+    "background": {
+      "label": "Background",
+      "aliases": [
+        "background"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "b",
+        "description": "Background"
+      }
+    },
+    "cycle_3x2_5x3_6x4_sample_slots": {
+      "label": "Cycle 3X2, 5X3, 6X4 Sample Slots",
+      "aliases": [
+        "cycle 3x2, 5x3, 6x4 sample slots"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "x",
+        "description": "Cycle 3X2, 5X3, 6X4 Sample Slots"
+      }
+    },
+    "make_preview": {
+      "label": "Make Preview",
+      "aliases": [
+        "make preview"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Make Preview"
+      }
+    },
+    "go_to_parent": {
+      "label": "Go to Parent",
+      "aliases": [
+        "go to parent"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "Go to Parent"
+      }
+    },
+    "options": {
+      "label": "Options",
+      "aliases": [
+        "options"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "o",
+        "description": "Options"
+      }
+    },
+    "backlight": {
+      "label": "Backlight",
+      "aliases": [
+        "backlight"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "l",
+        "description": "Backlight"
+      }
+    },
+    "edit_soft_selection_mesh_select": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "edit_soft_selection_mode": {
+      "label": "Edit Soft Selection Mode",
+      "aliases": [
+        "edit soft selection mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection Mode"
+      }
+    },
+    "cv_constrained_normal_move": {
+      "label": "CV Constrained Normal Move",
+      "aliases": [
+        "cv constrained normal move"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+n",
+        "description": "CV Constrained Normal Move"
+      }
+    },
+    "switch_to_top_level_nurbs": {
+      "label": "Switch To Top Level",
+      "aliases": [
+        "switch to top level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+t",
+        "description": "Switch To Top Level"
+      }
+    },
+    "select_previous_in_v": {
+      "label": "Select Previous in V",
+      "aliases": [
+        "select previous in v"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+down",
+        "description": "Select Previous in V"
+      }
+    },
+    "switch_to_imports_level": {
+      "label": "Switch To Imports Level",
+      "aliases": [
+        "switch to imports level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+i",
+        "description": "Switch To Imports Level"
+      }
+    },
+    "cv_constrained_v_move": {
+      "label": "CV Constrained V Move",
+      "aliases": [
+        "cv constrained v move"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+v",
+        "description": "CV Constrained V Move"
+      }
+    },
+    "display_lattices": {
+      "label": "Display Lattices",
+      "aliases": [
+        "display lattices"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+l",
+        "description": "Display Lattices"
+      }
+    },
+    "lock_2d_selection": {
+      "label": "Lock 2D Selection",
+      "aliases": [
+        "lock 2d selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Lock 2D Selection"
+      }
+    },
+    "switch_to_curve_cv_level": {
+      "label": "Switch To Curve CV Level",
+      "aliases": [
+        "switch to curve cv level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+z",
+        "description": "Switch To Curve CV Level"
+      }
+    },
+    "cv_constrained_u_move": {
+      "label": "CV Constrained U Move",
+      "aliases": [
+        "cv constrained u move"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+u",
+        "description": "CV Constrained U Move"
+      }
+    },
+    "switch_to_curve_level": {
+      "label": "Switch To Curve Level",
+      "aliases": [
+        "switch to curve level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+c",
+        "description": "Switch To Curve Level"
+      }
+    },
+    "select_sub_object_by_name": {
+      "label": "Select Sub-Object By Name",
+      "aliases": [
+        "select sub-object by name"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "h",
+        "description": "Select Sub-Object By Name"
+      }
+    },
+    "select_next_in_u": {
+      "label": "Select Next in U",
+      "aliases": [
+        "select next in u"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+right",
+        "description": "Select Next in U"
+      }
+    },
+    "select_next_in_v": {
+      "label": "Select Next in V",
+      "aliases": [
+        "select next in v"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+up",
+        "description": "Select Next in V"
+      }
+    },
+    "display_dependents": {
+      "label": "Display Dependents",
+      "aliases": [
+        "display dependents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Display Dependents"
+      }
+    },
+    "display_curves": {
+      "label": "Display Curves",
+      "aliases": [
+        "display curves"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+c",
+        "description": "Display Curves"
+      }
+    },
+    "soft_selection": {
+      "label": "Soft Selection",
+      "aliases": [
+        "soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Soft Selection"
+      }
+    },
+    "local_select_sub_object_by_name": {
+      "label": "Local Select Sub-Object By Name",
+      "aliases": [
+        "local select sub-object by name"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+h",
+        "description": "Local Select Sub-Object By Name"
+      }
+    },
+    "set_tessellation_preset_1": {
+      "label": "Set Tessellation Preset 1",
+      "aliases": [
+        "set tessellation preset 1"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+1",
+        "description": "Set Tessellation Preset 1"
+      }
+    },
+    "select_previous_in_u": {
+      "label": "Select Previous in U",
+      "aliases": [
+        "select previous in u"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+left",
+        "description": "Select Previous in U"
+      }
+    },
+    "set_tessellation_preset_3": {
+      "label": "Set Tessellation Preset 3",
+      "aliases": [
+        "set tessellation preset 3"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+3",
+        "description": "Set Tessellation Preset 3"
+      }
+    },
+    "set_tessellation_preset_2": {
+      "label": "Set Tessellation Preset 2",
+      "aliases": [
+        "set tessellation preset 2"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+2",
+        "description": "Set Tessellation Preset 2"
+      }
+    },
+    "switch_to_surface_cv_level": {
+      "label": "Switch To Surface CV Level",
+      "aliases": [
+        "switch to surface cv level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+v",
+        "description": "Switch To Surface CV Level"
+      }
+    },
+    "switch_to_surface_level": {
+      "label": "Switch To Surface Level",
+      "aliases": [
+        "switch to surface level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+s",
+        "description": "Switch To Surface Level"
+      }
+    },
+    "transform_degrade": {
+      "label": "Transform Degrade",
+      "aliases": [
+        "transform degrade"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+x",
+        "description": "Transform Degrade"
+      }
+    },
+    "display_trims": {
+      "label": "Display Trims",
+      "aliases": [
+        "display trims"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+t",
+        "description": "Display Trims"
+      }
+    },
+    "display_shaded_lattice": {
+      "label": "Display Shaded Lattice",
+      "aliases": [
+        "display shaded lattice"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+l",
+        "description": "Display Shaded Lattice"
+      }
+    },
+    "display_toolbox": {
+      "label": "Display Toolbox",
+      "aliases": [
+        "display toolbox"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "description": "Display Toolbox"
+      }
+    },
+    "switch_to_point_level": {
+      "label": "Switch To Point Level",
+      "aliases": [
+        "switch to point level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+p",
+        "description": "Switch To Point Level"
+      }
+    },
+    "display_surfaces": {
+      "label": "Display Surfaces",
+      "aliases": [
+        "display surfaces"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+s",
+        "description": "Display Surfaces"
+      }
+    },
+    "reset_particle_view": {
+      "label": "Reset Particle View",
+      "aliases": [
+        "reset particle view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+r",
+        "description": "Reset Particle View"
+      }
+    },
+    "paste_in_particle_view": {
+      "label": "Paste In Particle View",
+      "aliases": [
+        "paste in particle view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Paste In Particle View"
+      }
+    },
+    "select_all_in_particle_view": {
+      "label": "Select All In Particle View",
+      "aliases": [
+        "select all in particle view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All In Particle View"
+      }
+    },
+    "particle_emission_toggle": {
+      "label": "Particle Emission Toggle",
+      "aliases": [
+        "particle emission toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ";",
+        "description": "Particle Emission Toggle"
+      }
+    },
+    "clean_up_particle_flow": {
+      "label": "Clean Up Particle Flow",
+      "aliases": [
+        "clean up particle flow"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+p",
+        "description": "Clean Up Particle Flow"
+      }
+    },
+    "copy_selected_in_particle_view": {
+      "label": "Copy Selected In Particle View",
+      "aliases": [
+        "copy selected in particle view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Copy Selected In Particle View"
+      }
+    },
+    "selected_particle_emission_toggle": {
+      "label": "Selected Particle Emission Toggle",
+      "aliases": [
+        "selected particle emission toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+;",
+        "description": "Selected Particle Emission Toggle"
+      }
+    },
+    "repair_pflow_cache_system": {
+      "label": "Repair PFlow Cache System",
+      "aliases": [
+        "repair pflow cache system"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+c",
+        "description": "Repair PFlow Cache System"
+      }
+    },
+    "open_pflow_preset_manager_dialog": {
+      "label": "Open PFlow Preset Manager dialog",
+      "aliases": [
+        "open pflow preset manager dialog"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+m",
+        "description": "Open PFlow Preset Manager dialog"
+      }
+    },
+    "particle_view_toggle": {
+      "label": "Particle View Toggle",
+      "aliases": [
+        "particle view toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "6",
+        "description": "Particle View Toggle"
+      }
+    },
+    "synchronize_particle_flow_layers": {
+      "label": "Synchronize Particle Flow Layers",
+      "aliases": [
+        "synchronize particle flow layers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+l",
+        "description": "Synchronize Particle Flow Layers"
+      }
+    },
+    "move_selected_up_in_data_view": {
+      "label": "Move Selected Up In Data View",
+      "aliases": [
+        "move selected up in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "w",
+        "description": "Move Selected Up In Data View"
+      }
+    },
+    "cut_selected_in_data_view": {
+      "label": "Cut Selected In Data View",
+      "aliases": [
+        "cut selected in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+x",
+        "description": "Cut Selected In Data View"
+      }
+    },
+    "move_selected_down_in_data_view": {
+      "label": "Move Selected Down In Data View",
+      "aliases": [
+        "move selected down in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Move Selected Down In Data View"
+      }
+    },
+    "rename_suboperator_in_data_view": {
+      "label": "Rename Suboperator In Data View",
+      "aliases": [
+        "rename suboperator in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f2",
+        "description": "Rename Suboperator In Data View"
+      }
+    },
+    "move_selected_right_in_data_view": {
+      "label": "Move Selected Right In Data View",
+      "aliases": [
+        "move selected right in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d",
+        "description": "Move Selected Right In Data View"
+      }
+    },
+    "copy_selected_in_data_view": {
+      "label": "Copy Selected In Data View",
+      "aliases": [
+        "copy selected in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Copy Selected In Data View"
+      }
+    },
+    "move_selected_left_in_data_view": {
+      "label": "Move Selected Left In Data View",
+      "aliases": [
+        "move selected left in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a",
+        "description": "Move Selected Left In Data View"
+      }
+    },
+    "move_selected_right_x10_in_data_view": {
+      "label": "Move Selected Right x10 In Data View",
+      "aliases": [
+        "move selected right x10 in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+d",
+        "description": "Move Selected Right x10 In Data View"
+      }
+    },
+    "move_selected_up_x10_in_data_view": {
+      "label": "Move Selected Up x10 In Data View",
+      "aliases": [
+        "move selected up x10 in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+w",
+        "description": "Move Selected Up x10 In Data View"
+      }
+    },
+    "move_selected_down_x10_in_data_view": {
+      "label": "Move Selected Down x10 In Data View",
+      "aliases": [
+        "move selected down x10 in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+s",
+        "description": "Move Selected Down x10 In Data View"
+      }
+    },
+    "move_selected_left_x10_in_data_view": {
+      "label": "Move Selected Left x10 In Data View",
+      "aliases": [
+        "move selected left x10 in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+a",
+        "description": "Move Selected Left x10 In Data View"
+      }
+    },
+    "select_none_in_data_view": {
+      "label": "Select None In Data View",
+      "aliases": [
+        "select none in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Select None In Data View"
+      }
+    },
+    "select_all_in_data_view": {
+      "label": "Select All In Data View",
+      "aliases": [
+        "select all in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All In Data View"
+      }
+    },
+    "paste_in_data_view": {
+      "label": "Paste In Data View",
+      "aliases": [
+        "paste in data view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Paste In Data View"
+      }
+    },
+    "edit_soft_selection_patch_select": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "reset_envelopes": {
+      "label": "Reset Envelopes",
+      "aliases": [
+        "reset envelopes"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Reset Envelopes"
+      }
+    },
+    "previous_selection_level": {
+      "label": "Previous Selection Level",
+      "aliases": [
+        "previous selection level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+tab",
+        "description": "Previous Selection Level"
+      }
+    },
+    "copy_envelope": {
+      "label": "Copy Envelope",
+      "aliases": [
+        "copy envelope"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Copy Envelope"
+      }
+    },
+    "next_selection_level": {
+      "label": "Next Selection Level",
+      "aliases": [
+        "next selection level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "tab",
+        "description": "Next Selection Level"
+      }
+    },
+    "next": {
+      "label": "Next",
+      "aliases": [
+        "next"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "pagedown",
+        "description": "Next"
+      }
+    },
+    "delete": {
+      "label": "Delete",
+      "aliases": [
+        "delete"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Delete"
+      }
+    },
+    "paste_envelope": {
+      "label": "Paste Envelope",
+      "aliases": [
+        "paste envelope"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Paste Envelope"
+      }
+    },
+    "previous": {
+      "label": "Previous",
+      "aliases": [
+        "previous"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "pageup",
+        "description": "Previous"
+      }
+    },
+    "rotation_toggle": {
+      "label": "Rotation Toggle",
+      "aliases": [
+        "rotation toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e",
+        "description": "Rotation Toggle"
+      }
+    },
+    "placement": {
+      "label": "Placement",
+      "aliases": [
+        "placement"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "y",
+        "description": "Placement"
+      }
+    },
+    "edit_soft_selection_mode_poly_select": {
+      "label": "Edit Soft Selection Mode",
+      "aliases": [
+        "edit soft selection mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection Mode"
+      }
+    },
+    "edit_soft_selection_projection_modifier": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "viewports": {
+      "label": "Viewports",
+      "aliases": [
+        "viewports"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "v",
+        "description": "Viewports"
+      }
+    },
+    "set_min_influence": {
+      "label": "Set Min Influence",
+      "aliases": [
+        "set min influence"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+i",
+        "description": "Set Min Influence"
+      }
+    },
+    "set_max_influence": {
+      "label": "Set Max Influence",
+      "aliases": [
+        "set max influence"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Set Max Influence"
+      }
+    },
+    "parameter_editor_sme": {
+      "label": "Parameter Editor",
+      "aliases": [
+        "parameter editor"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Parameter Editor"
+      }
+    },
+    "zoom_extents_selected_sme": {
+      "label": "Zoom Extents Selected",
+      "aliases": [
+        "zoom extents selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "z",
+        "description": "Zoom Extents Selected"
+      }
+    },
+    "select_tool": {
+      "label": "Select Tool",
+      "aliases": [
+        "select tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Select Tool"
+      }
+    },
+    "material_map_browser": {
+      "label": "Material/Map Browser",
+      "aliases": [
+        "material/map browser",
+        "material",
+        "map browser"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "o",
+        "description": "Material/Map Browser"
+      }
+    },
+    "zoom_extents_sme": {
+      "label": "Zoom Extents",
+      "aliases": [
+        "zoom extents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+z",
+        "description": "Zoom Extents"
+      }
+    },
+    "select_all_sme": {
+      "label": "Select All",
+      "aliases": [
+        "select all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All"
+      }
+    },
+    "enable_global_rendering": {
+      "label": "Enable Global Rendering",
+      "aliases": [
+        "enable global rendering"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+u",
+        "description": "Enable Global Rendering"
+      }
+    },
+    "select_tree": {
+      "label": "Select Tree",
+      "aliases": [
+        "select tree"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "description": "Select Tree"
+      }
+    },
+    "lay_out_children": {
+      "label": "Lay Out Children",
+      "aliases": [
+        "lay out children"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c",
+        "description": "Lay Out Children"
+      }
+    },
+    "lay_out_all": {
+      "label": "Lay Out All",
+      "aliases": [
+        "lay out all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "l",
+        "description": "Lay Out All"
+      }
+    },
+    "zoom_region_tool": {
+      "label": "Zoom Region Tool",
+      "aliases": [
+        "zoom region tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Zoom Region Tool"
+      }
+    },
+    "zoom_tool": {
+      "label": "Zoom Tool",
+      "aliases": [
+        "zoom tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+z",
+        "description": "Zoom Tool"
+      }
+    },
+    "move_children": {
+      "label": "Move Children",
+      "aliases": [
+        "move children"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Move Children"
+      }
+    },
+    "update_selected_previews": {
+      "label": "Update Selected Previews",
+      "aliases": [
+        "update selected previews"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Update Selected Previews"
+      }
+    },
+    "pan_tool": {
+      "label": "Pan Tool",
+      "aliases": [
+        "pan tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Pan Tool"
+      }
+    },
+    "show_grid": {
+      "label": "Show Grid",
+      "aliases": [
+        "show grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "g",
+        "description": "Show Grid"
+      }
+    },
+    "pan_to_selected": {
+      "label": "Pan to Selected",
+      "aliases": [
+        "pan to selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+p",
+        "description": "Pan to Selected"
+      }
+    },
+    "select_children_sme": {
+      "label": "Select Children",
+      "aliases": [
+        "select children"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Select Children"
+      }
+    },
+    "select_none_sme": {
+      "label": "Select None",
+      "aliases": [
+        "select none"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Select None"
+      }
+    },
+    "auto_update_selected_previews": {
+      "label": "Auto Update Selected Previews",
+      "aliases": [
+        "auto update selected previews"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+u",
+        "description": "Auto Update Selected Previews"
+      }
+    },
+    "select_invert_sme": {
+      "label": "Select Invert",
+      "aliases": [
+        "select invert"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Select Invert"
+      }
+    },
+    "delete_selected": {
+      "label": "Delete Selected",
+      "aliases": [
+        "delete selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ".",
+        "description": "Delete Selected"
+      }
+    },
+    "rename": {
+      "label": "Rename",
+      "aliases": [
+        "rename"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f2",
+        "description": "Rename"
+      }
+    },
+    "assign_material_to_selection": {
+      "label": "Assign Material to Selection",
+      "aliases": [
+        "assign material to selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a",
+        "description": "Assign Material to Selection"
+      }
+    },
+    "hide_unused_nodeslots": {
+      "label": "Hide Unused Nodeslots",
+      "aliases": [
+        "hide unused nodeslots"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "h",
+        "description": "Hide Unused Nodeslots"
+      }
+    },
+    "navigator": {
+      "label": "Navigator",
+      "aliases": [
+        "navigator"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "n",
+        "description": "Navigator"
+      }
+    },
+    "open_explorer_last_used": {
+      "label": "Open Explorer: [Last Used]",
+      "aliases": [
+        "open explorer: [last used]"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+o",
+        "description": "Open Explorer: [Last Used]"
+      }
+    },
+    "close_last_activated_explorer": {
+      "label": "Close Last Activated Explorer",
+      "aliases": [
+        "close last activated explorer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+p",
+        "description": "Close Last Activated Explorer"
+      }
+    },
+    "zoom_extents_schematic_view": {
+      "label": "Zoom Extents",
+      "aliases": [
+        "zoom extents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+z",
+        "description": "Zoom Extents"
+      }
+    },
+    "free_all": {
+      "label": "Free All",
+      "aliases": [
+        "free all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f",
+        "description": "Free All"
+      }
+    },
+    "use_select_tool": {
+      "label": "Use Select Tool",
+      "aliases": [
+        "use select tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s / q",
+        "description": "Use Select Tool"
+      }
+    },
+    "previous_bookmark": {
+      "label": "Previous Bookmark",
+      "aliases": [
+        "previous bookmark"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "left",
+        "description": "Previous Bookmark"
+      }
+    },
+    "move_children_schematic_view": {
+      "label": "Move Children",
+      "aliases": [
+        "move children"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+c",
+        "description": "Move Children"
+      }
+    },
+    "use_zoom_region_tool": {
+      "label": "Use Zoom Region Tool",
+      "aliases": [
+        "use zoom region tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Use Zoom Region Tool"
+      }
+    },
+    "rename_object": {
+      "label": "Rename Object",
+      "aliases": [
+        "rename object"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Rename Object"
+      }
+    },
+    "show_grid_schematic_view": {
+      "label": "Show Grid",
+      "aliases": [
+        "show grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "g",
+        "description": "Show Grid"
+      }
+    },
+    "zoom_selected_extents": {
+      "label": "Zoom Selected Extents",
+      "aliases": [
+        "zoom selected extents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "z",
+        "description": "Zoom Selected Extents"
+      }
+    },
+    "next_bookmark": {
+      "label": "Next Bookmark",
+      "aliases": [
+        "next bookmark"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "right",
+        "description": "Next Bookmark"
+      }
+    },
+    "invert_selected_nodes": {
+      "label": "Invert Selected Nodes",
+      "aliases": [
+        "invert selected nodes"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Invert Selected Nodes"
+      }
+    },
+    "add_bookmark": {
+      "label": "Add Bookmark",
+      "aliases": [
+        "add bookmark"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "b",
+        "description": "Add Bookmark"
+      }
+    },
+    "toggle_shrink": {
+      "label": "Toggle Shrink",
+      "aliases": [
+        "toggle shrink"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Toggle Shrink"
+      }
+    },
+    "select_none_schematic_view": {
+      "label": "Select None",
+      "aliases": [
+        "select none"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Select None"
+      }
+    },
+    "display_floater": {
+      "label": "Display Floater",
+      "aliases": [
+        "display floater"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d",
+        "description": "Display Floater"
+      }
+    },
+    "use_zoom_tool": {
+      "label": "Use Zoom Tool",
+      "aliases": [
+        "use zoom tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+z",
+        "description": "Use Zoom Tool"
+      }
+    },
+    "refresh_view": {
+      "label": "Refresh View",
+      "aliases": [
+        "refresh view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+u",
+        "description": "Refresh View"
+      }
+    },
+    "free_selected": {
+      "label": "Free Selected",
+      "aliases": [
+        "free selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+s",
+        "description": "Free Selected"
+      }
+    },
+    "select_all_nodes": {
+      "label": "Select All Nodes",
+      "aliases": [
+        "select all nodes"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All Nodes"
+      }
+    },
+    "select_children_schematic_view": {
+      "label": "Select Children",
+      "aliases": [
+        "select children"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Select Children"
+      }
+    },
+    "use_pan_tool": {
+      "label": "Use Pan Tool",
+      "aliases": [
+        "use pan tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Use Pan Tool"
+      }
+    },
+    "filters": {
+      "label": "Filters",
+      "aliases": [
+        "filters"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Filters"
+      }
+    },
+    "use_connect_tool": {
+      "label": "Use Connect Tool",
+      "aliases": [
+        "use connect tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c",
+        "description": "Use Connect Tool"
+      }
+    },
+    "snap_to_perpendicular_toggle": {
+      "label": "Snap To Perpendicular Toggle",
+      "aliases": [
+        "snap to perpendicular toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f11",
+        "description": "Snap To Perpendicular Toggle"
+      }
+    },
+    "snap_to_curve_edge_toggle": {
+      "label": "Snap To Curve Edge Toggle",
+      "aliases": [
+        "snap to curve edge toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f5",
+        "description": "Snap To Curve Edge Toggle"
+      }
+    },
+    "snap_to_surf_center_toggle": {
+      "label": "Snap To Surf Center Toggle",
+      "aliases": [
+        "snap to surf center toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f6",
+        "description": "Snap To Surf Center Toggle"
+      }
+    },
+    "snap_to_bounding_box_toggle": {
+      "label": "Snap To Bounding Box Toggle",
+      "aliases": [
+        "snap to bounding box toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f9",
+        "description": "Snap To Bounding Box Toggle"
+      }
+    },
+    "snap_to_grid_lines_toggle": {
+      "label": "Snap To Grid Lines Toggle",
+      "aliases": [
+        "snap to grid lines toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f8",
+        "description": "Snap To Grid Lines Toggle"
+      }
+    },
+    "increase_walk_speed": {
+      "label": "Increase Walk Speed",
+      "aliases": [
+        "increase walk speed"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+.",
+        "description": "Increase Walk Speed"
+      }
+    },
+    "toggle_steeringwheels": {
+      "label": "Toggle SteeringWheels",
+      "aliases": [
+        "toggle steeringwheels"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+w",
+        "description": "Toggle SteeringWheels"
+      }
+    },
+    "decrease_walk_speed": {
+      "label": "Decrease Walk Speed",
+      "aliases": [
+        "decrease walk speed"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+,",
+        "description": "Decrease Walk Speed"
+      }
+    },
+    "tour_building_wheel": {
+      "label": "Tour Building Wheel",
+      "aliases": [
+        "tour building wheel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+j",
+        "description": "Tour Building Wheel"
+      }
+    },
+    "advanced_lighting_panel": {
+      "label": "Advanced Lighting Panel",
+      "aliases": [
+        "advanced lighting panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "9",
+        "description": "Advanced Lighting Panel"
+      }
+    },
+    "snap_frames": {
+      "label": "Snap Frames",
+      "aliases": [
+        "snap frames"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Snap Frames"
+      }
+    },
+    "paste_controller": {
+      "label": "Paste Controller",
+      "aliases": [
+        "paste controller"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Paste Controller"
+      }
+    },
+    "zoom_region": {
+      "label": "Zoom Region",
+      "aliases": [
+        "zoom region"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Zoom Region"
+      }
+    },
+    "move_keys": {
+      "label": "Move Keys",
+      "aliases": [
+        "move keys"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "m",
+        "description": "Move Keys"
+      }
+    },
+    "nudge_keys_right": {
+      "label": "Nudge Keys Right",
+      "aliases": [
+        "nudge keys right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "right",
+        "description": "Nudge Keys Right"
+      }
+    },
+    "copy_controller": {
+      "label": "Copy Controller",
+      "aliases": [
+        "copy controller"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Copy Controller"
+      }
+    },
+    "add_keys": {
+      "label": "Add Keys",
+      "aliases": [
+        "add keys"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a",
+        "description": "Add Keys"
+      }
+    },
+    "expand_track_toggle": {
+      "label": "Expand Track Toggle",
+      "aliases": [
+        "expand track toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "enter / t",
+        "description": "Expand Track Toggle"
+      }
+    },
+    "pan": {
+      "label": "Pan",
+      "aliases": [
+        "pan"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Pan"
+      }
+    },
+    "move_highlight_down": {
+      "label": "Move Highlight Down",
+      "aliases": [
+        "move highlight down"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "down",
+        "description": "Move Highlight Down"
+      }
+    },
+    "scroll_up": {
+      "label": "Scroll Up",
+      "aliases": [
+        "scroll up"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+up",
+        "description": "Scroll Up"
+      }
+    },
+    "frame_horizontal_extents_keys": {
+      "label": "Frame Horizontal Extents Keys",
+      "aliases": [
+        "frame horizontal extents keys"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+x",
+        "description": "Frame Horizontal Extents Keys"
+      }
+    },
+    "apply_ease_curve": {
+      "label": "Apply Ease Curve",
+      "aliases": [
+        "apply ease curve"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Apply Ease Curve"
+      }
+    },
+    "scroll_down": {
+      "label": "Scroll Down",
+      "aliases": [
+        "scroll down"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+down",
+        "description": "Scroll Down"
+      }
+    },
+    "lock_tangents_toggle": {
+      "label": "Lock Tangents Toggle",
+      "aliases": [
+        "lock tangents toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "l",
+        "description": "Lock Tangents Toggle"
+      }
+    },
+    "retime_move_left": {
+      "label": "Retime Move Left",
+      "aliases": [
+        "retime move left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+left",
+        "description": "Retime Move Left"
+      }
+    },
+    "zoom": {
+      "label": "Zoom",
+      "aliases": [
+        "zoom"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+z",
+        "description": "Zoom"
+      }
+    },
+    "retime_move_right": {
+      "label": "Retime Move Right",
+      "aliases": [
+        "retime move right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+right",
+        "description": "Retime Move Right"
+      }
+    },
+    "make_controller_unique": {
+      "label": "Make Controller Unique",
+      "aliases": [
+        "make controller unique"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Make Controller Unique"
+      }
+    },
+    "frame_horizontal_extents": {
+      "label": "Frame Horizontal Extents",
+      "aliases": [
+        "frame horizontal extents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+z",
+        "description": "Frame Horizontal Extents"
+      }
+    },
+    "assign_controller": {
+      "label": "Assign Controller",
+      "aliases": [
+        "assign controller"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c",
+        "description": "Assign Controller"
+      }
+    },
+    "nudge_keys_left": {
+      "label": "Nudge Keys Left",
+      "aliases": [
+        "nudge keys left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "left",
+        "description": "Nudge Keys Left"
+      }
+    },
+    "move_highlight_up": {
+      "label": "Move Highlight Up",
+      "aliases": [
+        "move highlight up"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "Move Highlight Up"
+      }
+    },
+    "filters_track_view": {
+      "label": "Filters",
+      "aliases": [
+        "filters"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "q",
+        "description": "Filters"
+      }
+    },
+    "lock_selection": {
+      "label": "Lock Selection",
+      "aliases": [
+        "lock selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Lock Selection"
+      }
+    },
+    "expand_object_toggle": {
+      "label": "Expand Object Toggle",
+      "aliases": [
+        "expand object toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "o",
+        "description": "Expand Object Toggle"
+      }
+    },
+    "apply_multiplier_curve": {
+      "label": "Apply Multiplier Curve",
+      "aliases": [
+        "apply multiplier curve"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+m",
+        "description": "Apply Multiplier Curve"
+      }
+    },
+    "break_selected_vertices": {
+      "label": "Break Selected Vertices",
+      "aliases": [
+        "break selected vertices"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+b",
+        "description": "Break Selected Vertices"
+      }
+    },
+    "get_selection_from_polygons": {
+      "label": "Get Selection From Polygons",
+      "aliases": [
+        "get selection from polygons"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+p",
+        "description": "Get Selection From Polygons"
+      }
+    },
+    "get_polygon_selection_from_stack": {
+      "label": "Get Polygon Selection From Stack",
+      "aliases": [
+        "get polygon selection from stack"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+f",
+        "description": "Get Polygon Selection From Stack"
+      }
+    },
+    "zoom_extents_unwrap_uvw": {
+      "label": "Zoom Extents",
+      "aliases": [
+        "zoom extents"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+z",
+        "description": "Zoom Extents"
+      }
+    },
+    "texture_vertex_expand_selection": {
+      "label": "Texture Vertex Expand Selection",
+      "aliases": [
+        "texture vertex expand selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "numpad_plus / =",
+        "description": "Texture Vertex Expand Selection"
+      }
+    },
+    "zoom_to_gizmo": {
+      "label": "Zoom To Gizmo",
+      "aliases": [
+        "zoom to gizmo"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+space",
+        "description": "Zoom To Gizmo"
+      }
+    },
+    "snap": {
+      "label": "Snap",
+      "aliases": [
+        "snap"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Snap"
+      }
+    },
+    "pan_unwrap_uvw": {
+      "label": "Pan",
+      "aliases": [
+        "pan"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Pan"
+      }
+    },
+    "texture_vertex_rotate_mode": {
+      "label": "Texture Vertex Rotate Mode",
+      "aliases": [
+        "texture vertex rotate mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e",
+        "description": "Texture Vertex Rotate Mode"
+      }
+    },
+    "texture_vertex_scale_mode": {
+      "label": "Texture Vertex Scale Mode",
+      "aliases": [
+        "texture vertex scale mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Texture Vertex Scale Mode"
+      }
+    },
+    "filter_selected_polygons": {
+      "label": "Filter Selected Polygons",
+      "aliases": [
+        "filter selected polygons"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+f",
+        "description": "Filter Selected Polygons"
+      }
+    },
+    "zoom_extents_selected_unwrap_uvw": {
+      "label": "Zoom Extents Selected",
+      "aliases": [
+        "zoom extents selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "z",
+        "description": "Zoom Extents Selected"
+      }
+    },
+    "texture_vertex_contract_selection": {
+      "label": "Texture Vertex Contract Selection",
+      "aliases": [
+        "texture vertex contract selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "-",
+        "description": "Texture Vertex Contract Selection"
+      }
+    },
+    "zoom_region_unwrap_uvw": {
+      "label": "Zoom Region",
+      "aliases": [
+        "zoom region"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+x",
+        "description": "Zoom Region"
+      }
+    },
+    "lock_selected_vertices": {
+      "label": "Lock selected vertices",
+      "aliases": [
+        "lock selected vertices"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Lock selected vertices"
+      }
+    },
+    "texture_vertex_move_mode": {
+      "label": "Texture Vertex Move Mode",
+      "aliases": [
+        "texture vertex move mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "w",
+        "description": "Texture Vertex Move Mode"
+      }
+    },
+    "planar_map_faces_patches": {
+      "label": "Planar map faces/patches",
+      "aliases": [
+        "planar map faces/patches",
+        "planar map faces",
+        "patches"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "enter",
+        "description": "Planar map faces/patches"
+      }
+    },
+    "mirror_horizontal": {
+      "label": "Mirror Horizontal",
+      "aliases": [
+        "mirror horizontal"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+n",
+        "description": "Mirror Horizontal"
+      }
+    },
+    "texture_vertextarget_weld": {
+      "label": "Texture VertexTarget Weld ",
+      "aliases": [
+        "texture vertextarget weld "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "description": "Texture VertexTarget Weld "
+      }
+    },
+    "edit_uvw_s": {
+      "label": "Edit UVW's",
+      "aliases": [
+        "edit uvw's"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Edit UVW's"
+      }
+    },
+    "zoom_unwrap_uvw": {
+      "label": "Zoom",
+      "aliases": [
+        "zoom"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+z",
+        "description": "Zoom"
+      }
+    },
+    "move_vertical": {
+      "label": "Move Vertical",
+      "aliases": [
+        "move vertical"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+k",
+        "description": "Move Vertical"
+      }
+    },
+    "freeze_selected": {
+      "label": "Freeze Selected",
+      "aliases": [
+        "freeze selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f",
+        "description": "Freeze Selected"
+      }
+    },
+    "load_uvw": {
+      "label": "Load UVW",
+      "aliases": [
+        "load uvw"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+l",
+        "description": "Load UVW"
+      }
+    },
+    "unwrap_options": {
+      "label": "Unwrap Options",
+      "aliases": [
+        "unwrap options"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+o",
+        "description": "Unwrap Options"
+      }
+    },
+    "detach_edge_verts": {
+      "label": "Detach Edge Verts",
+      "aliases": [
+        "detach edge verts"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d / ctrl+d",
+        "description": "Detach Edge Verts"
+      }
+    },
+    "show_seams_in_viewport": {
+      "label": "Show Seams In Viewport",
+      "aliases": [
+        "show seams in viewport"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+e",
+        "description": "Show Seams In Viewport"
+      }
+    },
+    "hide_selected_unwrap_uvw": {
+      "label": "Hide Selected",
+      "aliases": [
+        "hide selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+h",
+        "description": "Hide Selected"
+      }
+    },
+    "move_horizontal": {
+      "label": "Move Horizontal",
+      "aliases": [
+        "move horizontal"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+j",
+        "description": "Move Horizontal"
+      }
+    },
+    "texture_vertex_weld_selected": {
+      "label": "Texture Vertex Weld Selected",
+      "aliases": [
+        "texture vertex weld selected"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Texture Vertex Weld Selected"
+      }
+    },
+    "mirror_vertical": {
+      "label": "Mirror Vertical",
+      "aliases": [
+        "mirror vertical"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+ctrl+m",
+        "description": "Mirror Vertical"
+      }
+    },
+    "update_map": {
+      "label": "Update Map",
+      "aliases": [
+        "update map"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+u",
+        "description": "Update Map"
+      }
+    },
+    "launch_global_search": {
+      "label": "Launch Global Search",
+      "aliases": [
+        "launch global search"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "x",
+        "description": "Launch Global Search"
+      }
+    },
+    "add_image_layer_event": {
+      "label": "Add Image Layer Event",
+      "aliases": [
+        "add image layer event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+l",
+        "description": "Add Image Layer Event"
+      }
+    },
+    "edit_current_event": {
+      "label": "Edit Current Event",
+      "aliases": [
+        "edit current event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+e",
+        "description": "Edit Current Event"
+      }
+    },
+    "add_image_input_event": {
+      "label": "Add Image Input Event",
+      "aliases": [
+        "add image input event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Add Image Input Event"
+      }
+    },
+    "execute_sequence": {
+      "label": "Execute Sequence",
+      "aliases": [
+        "execute sequence"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+r",
+        "description": "Execute Sequence"
+      }
+    },
+    "new_sequence": {
+      "label": "New Sequence",
+      "aliases": [
+        "new sequence"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+n",
+        "description": "New Sequence"
+      }
+    },
+    "add_new_event": {
+      "label": "Add New Event",
+      "aliases": [
+        "add new event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Add New Event"
+      }
+    },
+    "add_image_filter_event": {
+      "label": "Add Image Filter Event",
+      "aliases": [
+        "add image filter event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f",
+        "description": "Add Image Filter Event"
+      }
+    },
+    "add_scene_event": {
+      "label": "Add Scene Event",
+      "aliases": [
+        "add scene event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Add Scene Event"
+      }
+    },
+    "add_image_output_event": {
+      "label": "Add Image Output Event",
+      "aliases": [
+        "add image output event"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+o",
+        "description": "Add Image Output Event"
+      }
+    },
+    "home": {
+      "label": "Home",
+      "aliases": [
+        "home"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+h",
+        "description": "Home"
+      }
+    },
+    "toggle_viewcube_visibility": {
+      "label": "Toggle ViewCube Visibility",
+      "aliases": [
+        "toggle viewcube visibility"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+ctrl+v",
+        "description": "Toggle ViewCube Visibility"
+      }
+    },
+    "viewport_visual_style_realistic": {
+      "label": "Viewport Visual Style Realistic",
+      "aliases": [
+        "viewport visual style realistic"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+f3",
+        "description": "Viewport Visual Style Realistic"
+      }
+    },
+    "edit_soft_selection_vol_select": {
+      "label": "Edit Soft Selection",
+      "aliases": [
+        "edit soft selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "Edit Soft Selection"
+      }
+    },
+    "decelerate_toggle": {
+      "label": "Decelerate Toggle",
+      "aliases": [
+        "decelerate toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "z",
+        "description": "Decelerate Toggle"
+      }
+    },
+    "lock_vertical_rotation": {
+      "label": "Lock Vertical Rotation",
+      "aliases": [
+        "lock vertical rotation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Lock Vertical Rotation"
+      }
+    },
+    "level": {
+      "label": "Level",
+      "aliases": [
+        "level"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+space",
+        "description": "Level"
+      }
+    },
+    "back": {
+      "label": "Back",
+      "aliases": [
+        "back"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s / down arrow",
+        "description": "Back"
+      }
+    },
+    "up": {
+      "label": "Up",
+      "aliases": [
+        "up"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e / shift+up",
+        "description": "Up"
+      }
+    },
+    "down": {
+      "label": "Down",
+      "aliases": [
+        "down"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c / shift+down",
+        "description": "Down"
+      }
+    },
+    "forward": {
+      "label": "Forward",
+      "aliases": [
+        "forward"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "w / up arrow",
+        "description": "Forward"
+      }
+    },
+    "right": {
+      "label": "Right",
+      "aliases": [
+        "right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d / right arrow",
+        "description": "Right"
+      }
+    },
+    "accelerate_toggle": {
+      "label": "Accelerate Toggle",
+      "aliases": [
+        "accelerate toggle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "q",
+        "description": "Accelerate Toggle"
+      }
+    },
+    "left": {
+      "label": "Left",
+      "aliases": [
+        "left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a / left arrow",
+        "description": "Left"
+      }
+    },
+    "select_invert_weighttable": {
+      "label": "Select Invert",
+      "aliases": [
+        "select invert"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Select Invert"
+      }
+    },
+    "select_all_weighttable": {
+      "label": "Select All",
+      "aliases": [
+        "select all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All"
+      }
+    },
+    "select_none_weighttable": {
+      "label": "Select None",
+      "aliases": [
+        "select none"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Select None"
+      }
+    }
+  }
+}

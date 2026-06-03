@@ -1,0 +1,5277 @@
+{
+  "profile_id": "adobe_illustrator",
+  "app_name": "Adobe Illustrator",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "Auto-generated from ShortcutMapper. 445 shortcuts.",
+  "shortcuts": {
+    "help": {
+      "keys": "f1",
+      "description": "Help"
+    },
+    "cut_mac": {
+      "keys": "cmd+x",
+      "description": "Cut",
+      "platform": "macos"
+    },
+    "cut": {
+      "keys": "ctrl+x",
+      "description": "Cut"
+    },
+    "copy_mac": {
+      "keys": "cmd+c",
+      "description": "Copy",
+      "platform": "macos"
+    },
+    "copy": {
+      "keys": "ctrl+c",
+      "description": "Copy"
+    },
+    "toggle_color_panel": {
+      "keys": "f6",
+      "description": "Toggle Color panel"
+    },
+    "paste_mac": {
+      "keys": "cmd+v",
+      "description": "Paste",
+      "platform": "macos"
+    },
+    "paste": {
+      "keys": "ctrl+v",
+      "description": "Paste"
+    },
+    "toggle_brushes_panel": {
+      "keys": "f5",
+      "description": "Toggle Brushes panel"
+    },
+    "next_document_mac": {
+      "keys": "cmd+f6",
+      "description": "Next document",
+      "platform": "macos"
+    },
+    "next_document": {
+      "keys": "ctrl+f6",
+      "description": "Next document"
+    },
+    "previous_document_mac": {
+      "keys": "cmd+shift+f6",
+      "description": "Previous document",
+      "platform": "macos"
+    },
+    "previous_document": {
+      "keys": "ctrl+shift+f6",
+      "description": "Previous document"
+    },
+    "toggle_layers_panel": {
+      "keys": "f7",
+      "description": "Toggle Layers panel"
+    },
+    "create_new_symbol": {
+      "keys": "f8",
+      "description": "Create new symbol"
+    },
+    "toggle_info_panel_mac": {
+      "keys": "cmd+f8",
+      "description": "Toggle Info panel",
+      "platform": "macos"
+    },
+    "toggle_info_panel": {
+      "keys": "ctrl+f8",
+      "description": "Toggle Info panel"
+    },
+    "toggle_gradient_panel_mac": {
+      "keys": "cmd+f9",
+      "description": "Toggle Gradient panel",
+      "platform": "macos"
+    },
+    "toggle_gradient_panel": {
+      "keys": "ctrl+f9",
+      "description": "Toggle Gradient panel"
+    },
+    "toggle_stroke_panel_mac": {
+      "keys": "cmd+f10",
+      "description": "Toggle Stroke panel",
+      "platform": "macos"
+    },
+    "toggle_stroke_panel": {
+      "keys": "ctrl+f10",
+      "description": "Toggle Stroke panel"
+    },
+    "toggle_attributes_panel_mac": {
+      "keys": "cmd+f11",
+      "description": "Toggle Attributes panel",
+      "platform": "macos"
+    },
+    "toggle_attributes_panel": {
+      "keys": "ctrl+f11",
+      "description": "Toggle Attributes panel"
+    },
+    "revert_mac": {
+      "keys": "cmd+alt+z",
+      "description": "Revert",
+      "platform": "macos"
+    },
+    "revert": {
+      "keys": "ctrl+alt+z",
+      "description": "Revert"
+    },
+    "other_script_mac": {
+      "keys": "cmd+f12",
+      "description": "Other script...",
+      "platform": "macos"
+    },
+    "other_script": {
+      "keys": "ctrl+f12",
+      "description": "Other script..."
+    },
+    "toggle_graphic_styles_panel": {
+      "keys": "shift+f5",
+      "description": "Toggle Graphic Styles panel"
+    },
+    "toggle_appearance_panel": {
+      "keys": "shift+f6",
+      "description": "Toggle Appearance panel"
+    },
+    "toggle_align_panel": {
+      "keys": "shift+f7",
+      "description": "Toggle Align panel"
+    },
+    "toggle_transform_panel": {
+      "keys": "shift+f8",
+      "description": "Toggle Transform panel"
+    },
+    "toggle_pathfinder_panel_mac": {
+      "keys": "cmd+shift+f9",
+      "description": "Toggle Pathfinder panel",
+      "platform": "macos"
+    },
+    "toggle_pathfinder_panel": {
+      "keys": "ctrl+shift+f9",
+      "description": "Toggle Pathfinder panel"
+    },
+    "toggle_transparency_panel_mac": {
+      "keys": "cmd+shift+f10",
+      "description": "Toggle Transparency panel",
+      "platform": "macos"
+    },
+    "toggle_transparency_panel": {
+      "keys": "ctrl+shift+f10",
+      "description": "Toggle Transparency panel"
+    },
+    "toggle_symbols_panel_mac": {
+      "keys": "cmd+shift+f11",
+      "description": "Toggle Symbols panel",
+      "platform": "macos"
+    },
+    "toggle_symbols_panel": {
+      "keys": "ctrl+shift+f11",
+      "description": "Toggle Symbols panel"
+    },
+    "toggle_perspective_grid_mac": {
+      "keys": "cmd+shift+l",
+      "description": "Toggle perspective grid",
+      "platform": "macos"
+    },
+    "toggle_perspective_grid": {
+      "keys": "ctrl+shift+l",
+      "description": "Toggle perspective grid"
+    },
+    "cycle_screen_modes": {
+      "keys": "f",
+      "description": "Cycle screen modes"
+    },
+    "artboard_tool": {
+      "keys": "shift+o",
+      "description": "Artboard tool"
+    },
+    "selection_tool": {
+      "keys": "v",
+      "description": "Selection tool"
+    },
+    "direct_selection_tool": {
+      "keys": "a",
+      "description": "Direct Selection tool"
+    },
+    "magic_wand_tool": {
+      "keys": "y",
+      "description": "Magic Wand tool"
+    },
+    "lasso_tool": {
+      "keys": "q",
+      "description": "Lasso tool"
+    },
+    "pen_tool": {
+      "keys": "p",
+      "description": "Pen tool"
+    },
+    "blob_brush_tool": {
+      "keys": "shift+b",
+      "description": "Blob Brush tool"
+    },
+    "add_anchor_point_tool": {
+      "keys": "+",
+      "description": "Add Anchor Point tool"
+    },
+    "delete_anchor_point_tool": {
+      "keys": "-",
+      "description": "Delete Anchor Point tool"
+    },
+    "convert_anchor_point_tool": {
+      "keys": "shift+c",
+      "description": "Convert Anchor Point tool"
+    },
+    "type_tool": {
+      "keys": "t",
+      "description": "Type tool"
+    },
+    "cycle_type_tools": {
+      "keys": "shift+t",
+      "description": "Cycle Type tools"
+    },
+    "line_segment_tool": {
+      "keys": "\\",
+      "description": "Line Segment tool"
+    },
+    "rectangle_tool": {
+      "keys": "m",
+      "description": "Rectangle tool"
+    },
+    "ellipse_tool": {
+      "keys": "l",
+      "description": "Ellipse tool"
+    },
+    "paintbrush_tool": {
+      "keys": "b",
+      "description": "Paintbrush tool"
+    },
+    "pencil_tool": {
+      "keys": "n",
+      "description": "Pencil tool"
+    },
+    "rotate_tool": {
+      "keys": "r",
+      "description": "Rotate tool"
+    },
+    "reflect_tool": {
+      "keys": "o",
+      "description": "Reflect tool"
+    },
+    "scale_tool": {
+      "keys": "s",
+      "description": "Scale tool"
+    },
+    "warp_tool": {
+      "keys": "shift+r",
+      "description": "Warp tool"
+    },
+    "width_tool": {
+      "keys": "shift+w",
+      "description": "Width Tool"
+    },
+    "free_transform_tool": {
+      "keys": "e",
+      "description": "Free Transform tool"
+    },
+    "shape_builder_tool": {
+      "keys": "shift+m",
+      "description": "Shape Builder Tool"
+    },
+    "perspective_grid_tool": {
+      "keys": "shift+p",
+      "description": "Perspective Grid Tool"
+    },
+    "perspective_selection_tool": {
+      "keys": "shift+v",
+      "description": "Perspective Selection Tool"
+    },
+    "symbol_sprayer_tool": {
+      "keys": "shift+s",
+      "description": "Symbol Sprayer tool"
+    },
+    "column_graph_tool": {
+      "keys": "j",
+      "description": "Column Graph tool"
+    },
+    "mesh_tool": {
+      "keys": "u",
+      "description": "Mesh tool"
+    },
+    "gradient_tool": {
+      "keys": "g",
+      "description": "Gradient tool"
+    },
+    "eyedropper_tool": {
+      "keys": "i",
+      "description": "Eyedropper tool"
+    },
+    "blend_tool": {
+      "keys": "w",
+      "description": "Blend tool"
+    },
+    "live_paint_bucket_tool": {
+      "keys": "k",
+      "description": "Live Paint Bucket tool"
+    },
+    "live_paint_selection_tool": {
+      "keys": "shift+l",
+      "description": "Live Paint Selection tool"
+    },
+    "slice_tool": {
+      "keys": "shift+k",
+      "description": "Slice tool"
+    },
+    "eraser_tool": {
+      "keys": "shift+e",
+      "description": "Eraser tool"
+    },
+    "scissors_tool": {
+      "keys": "c",
+      "description": "Scissors tool"
+    },
+    "hand_tool": {
+      "keys": "h",
+      "description": "Hand tool"
+    },
+    "zoom_tool": {
+      "keys": "z",
+      "description": "Zoom tool"
+    },
+    "cycle_drawing_modes_normal_behind_inside": {
+      "keys": "shift+d",
+      "description": "Cycle drawing modes (Normal, Behind, Inside)"
+    },
+    "quit": {
+      "keys": "cmd+q",
+      "description": "Quit"
+    },
+    "new_document_mac": {
+      "keys": "cmd+n",
+      "description": "New Document",
+      "platform": "macos"
+    },
+    "new_document": {
+      "keys": "ctrl+n",
+      "description": "New Document"
+    },
+    "close_document_mac": {
+      "keys": "cmd+w",
+      "description": "Close Document",
+      "platform": "macos"
+    },
+    "close_document": {
+      "keys": "ctrl+w",
+      "description": "Close Document"
+    },
+    "save_mac": {
+      "keys": "cmd+s",
+      "description": "Save",
+      "platform": "macos"
+    },
+    "save": {
+      "keys": "ctrl+s",
+      "description": "Save"
+    },
+    "select_all_mac": {
+      "keys": "cmd+a",
+      "description": "Select All",
+      "platform": "macos"
+    },
+    "select_all": {
+      "keys": "ctrl+a",
+      "description": "Select All"
+    },
+    "transform_again_mac": {
+      "keys": "cmd+d",
+      "description": "Transform again",
+      "platform": "macos"
+    },
+    "transform_again": {
+      "keys": "ctrl+d",
+      "description": "Transform again"
+    },
+    "toggle_rulers_mac": {
+      "keys": "cmd+r",
+      "description": "Toggle Rulers",
+      "platform": "macos"
+    },
+    "toggle_rulers": {
+      "keys": "ctrl+r",
+      "description": "Toggle Rulers"
+    },
+    "toggle_character_panel_mac": {
+      "keys": "cmd+t",
+      "description": "Toggle Character Panel",
+      "platform": "macos"
+    },
+    "toggle_character_panel": {
+      "keys": "ctrl+t",
+      "description": "Toggle Character Panel"
+    },
+    "toggle_outline_preview_mac": {
+      "keys": "cmd+y",
+      "description": "Toggle Outline/Preview",
+      "platform": "macos"
+    },
+    "toggle_outline_preview": {
+      "keys": "ctrl+y",
+      "description": "Toggle Outline/Preview"
+    },
+    "smart_guides_mac": {
+      "keys": "cmd+u",
+      "description": "Smart guides",
+      "platform": "macos"
+    },
+    "smart_guides": {
+      "keys": "ctrl+u",
+      "description": "Smart guides"
+    },
+    "check_spelling_mac": {
+      "keys": "cmd+i",
+      "description": "Check spelling",
+      "platform": "macos"
+    },
+    "check_spelling": {
+      "keys": "ctrl+i",
+      "description": "Check spelling"
+    },
+    "open_document_mac": {
+      "keys": "cmd+o",
+      "description": "Open document",
+      "platform": "macos"
+    },
+    "open_document": {
+      "keys": "ctrl+o",
+      "description": "Open document"
+    },
+    "print_mac": {
+      "keys": "cmd+p",
+      "description": "Print...",
+      "platform": "macos"
+    },
+    "print": {
+      "keys": "ctrl+p",
+      "description": "Print..."
+    },
+    "undo_mac": {
+      "keys": "cmd+z",
+      "description": "Undo",
+      "platform": "macos"
+    },
+    "undo": {
+      "keys": "ctrl+z",
+      "description": "Undo"
+    },
+    "paste_in_front_mac": {
+      "keys": "cmd+f",
+      "description": "Paste in front",
+      "platform": "macos"
+    },
+    "paste_in_front": {
+      "keys": "ctrl+f",
+      "description": "Paste in front"
+    },
+    "paste_in_back_mac": {
+      "keys": "cmd+b",
+      "description": "Paste in back",
+      "platform": "macos"
+    },
+    "paste_in_back": {
+      "keys": "ctrl+b",
+      "description": "Paste in back"
+    },
+    "group_mac": {
+      "keys": "cmd+g",
+      "description": "Group",
+      "platform": "macos"
+    },
+    "group": {
+      "keys": "ctrl+g",
+      "description": "Group"
+    },
+    "hide_edges_mac": {
+      "keys": "cmd+h",
+      "description": "Hide edges",
+      "platform": "macos"
+    },
+    "hide_edges": {
+      "keys": "ctrl+h",
+      "description": "Hide edges"
+    },
+    "join_selected_paths_mac": {
+      "keys": "cmd+j",
+      "description": "Join selected paths",
+      "platform": "macos"
+    },
+    "join_selected_paths": {
+      "keys": "ctrl+j",
+      "description": "Join selected paths"
+    },
+    "create_corner_or_smooth_join_select_anchor_mac": {
+      "keys": "shift+cmd+alt+j",
+      "description": "Create corner or smooth join (Select anchor)",
+      "platform": "macos"
+    },
+    "create_corner_or_smooth_join_select_anchor": {
+      "keys": "shift+ctrl+alt+j",
+      "description": "Create corner or smooth join (Select anchor)"
+    },
+    "open_preferences_mac": {
+      "keys": "cmd+k",
+      "description": "Open Preferences",
+      "platform": "macos"
+    },
+    "open_preferences": {
+      "keys": "ctrl+k",
+      "description": "Open Preferences"
+    },
+    "toggle_guides_mac": {
+      "keys": "cmd+;",
+      "description": "Toggle Guides",
+      "platform": "macos"
+    },
+    "toggle_guides": {
+      "keys": "ctrl+;",
+      "description": "Toggle Guides"
+    },
+    "toggle_grid_mac": {
+      "keys": "cmd+'",
+      "description": "Toggle Grid",
+      "platform": "macos"
+    },
+    "toggle_grid": {
+      "keys": "ctrl+'",
+      "description": "Toggle Grid"
+    },
+    "minimize_window_mac": {
+      "keys": "cmd+m",
+      "description": "Minimize window",
+      "platform": "macos"
+    },
+    "minimize_window": {
+      "keys": "ctrl+m",
+      "description": "Minimize window"
+    },
+    "unit_preferences_mac": {
+      "keys": "cmd+,",
+      "description": "Unit preferences",
+      "platform": "macos"
+    },
+    "unit_preferences": {
+      "keys": "ctrl+,",
+      "description": "Unit preferences"
+    },
+    "zoom_to_actual_size_mac": {
+      "keys": "cmd+1",
+      "description": "Zoom to actual size",
+      "platform": "macos"
+    },
+    "zoom_to_actual_size": {
+      "keys": "ctrl+1",
+      "description": "Zoom to actual size"
+    },
+    "zoom_out_mac": {
+      "keys": "cmd+-",
+      "description": "Zoom out",
+      "platform": "macos"
+    },
+    "zoom_out": {
+      "keys": "ctrl+-",
+      "description": "Zoom out"
+    },
+    "zoom_in_mac": {
+      "keys": "cmd++",
+      "description": "Zoom in",
+      "platform": "macos"
+    },
+    "zoom_in": {
+      "keys": "ctrl++",
+      "description": "Zoom in"
+    },
+    "zoom_fit_arboard_mac": {
+      "keys": "cmd+0",
+      "description": "Zoom fit arboard",
+      "platform": "macos"
+    },
+    "zoom_fit_arboard": {
+      "keys": "ctrl+0",
+      "description": "Zoom fit arboard"
+    },
+    "hide_selection_mac": {
+      "keys": "cmd+2",
+      "description": "Hide selection",
+      "platform": "macos"
+    },
+    "hide_selection": {
+      "keys": "ctrl+2",
+      "description": "Hide selection"
+    },
+    "lock_selection_mac": {
+      "keys": "cmd+3",
+      "description": "Lock selection",
+      "platform": "macos"
+    },
+    "lock_selection": {
+      "keys": "ctrl+3",
+      "description": "Lock selection"
+    },
+    "make_guides_mac": {
+      "keys": "cmd+5",
+      "description": "Make guides",
+      "platform": "macos"
+    },
+    "make_guides": {
+      "keys": "ctrl+5",
+      "description": "Make guides"
+    },
+    "reselect_mac": {
+      "keys": "cmd+6",
+      "description": "Reselect",
+      "platform": "macos"
+    },
+    "reselect": {
+      "keys": "ctrl+6",
+      "description": "Reselect"
+    },
+    "make_clipping_mask_mac": {
+      "keys": "cmd+7",
+      "description": "Make clipping mask",
+      "platform": "macos"
+    },
+    "make_clipping_mask": {
+      "keys": "ctrl+7",
+      "description": "Make clipping mask"
+    },
+    "make_compound_path_mac": {
+      "keys": "cmd+8",
+      "description": "Make compound path",
+      "platform": "macos"
+    },
+    "make_compound_path": {
+      "keys": "ctrl+8",
+      "description": "Make compound path"
+    },
+    "edit_pattern_mac": {
+      "keys": "cmd+shift+f8",
+      "description": "Edit pattern",
+      "platform": "macos"
+    },
+    "edit_pattern": {
+      "keys": "ctrl+shift+f8",
+      "description": "Edit pattern"
+    },
+    "hide_template_mac": {
+      "keys": "cmd+shift+w",
+      "description": "Hide Template",
+      "platform": "macos"
+    },
+    "hide_template": {
+      "keys": "ctrl+shift+w",
+      "description": "Hide Template"
+    },
+    "apply_last_effect_mac": {
+      "keys": "cmd+shift+e",
+      "description": "Apply last effect",
+      "platform": "macos"
+    },
+    "apply_last_effect": {
+      "keys": "ctrl+shift+e",
+      "description": "Apply last effect"
+    },
+    "toggle_tabs_panel_mac": {
+      "keys": "cmd+shift+t",
+      "description": "Toggle Tabs Panel",
+      "platform": "macos"
+    },
+    "toggle_tabs_panel": {
+      "keys": "ctrl+shift+t",
+      "description": "Toggle Tabs Panel"
+    },
+    "toggle_text_threads_mac": {
+      "keys": "cmd+shift+y",
+      "description": "Toggle Text Threads",
+      "platform": "macos"
+    },
+    "toggle_text_threads": {
+      "keys": "ctrl+shift+y",
+      "description": "Toggle Text Threads"
+    },
+    "toggle_perspective_tool_mac": {
+      "keys": "cmd+shift+i",
+      "description": "Toggle Perspective tool",
+      "platform": "macos"
+    },
+    "toggle_perspective_tool": {
+      "keys": "ctrl+shift+i",
+      "description": "Toggle Perspective tool"
+    },
+    "place_mac": {
+      "keys": "cmd+shift+p",
+      "description": "Place...",
+      "platform": "macos"
+    },
+    "place": {
+      "keys": "ctrl+shift+p",
+      "description": "Place..."
+    },
+    "deselect_mac": {
+      "keys": "cmd+shift+a",
+      "description": "Deselect",
+      "platform": "macos"
+    },
+    "deselect": {
+      "keys": "ctrl+shift+a",
+      "description": "Deselect"
+    },
+    "save_as_mac": {
+      "keys": "cmd+shift+s",
+      "description": "Save as...",
+      "platform": "macos"
+    },
+    "save_as": {
+      "keys": "ctrl+shift+s",
+      "description": "Save as..."
+    },
+    "toggle_transparency_grid_mac": {
+      "keys": "cmd+shift+d",
+      "description": "Toggle transparency grid",
+      "platform": "macos"
+    },
+    "toggle_transparency_grid": {
+      "keys": "ctrl+shift+d",
+      "description": "Toggle transparency grid"
+    },
+    "ungroup_mac": {
+      "keys": "cmd+shift+g",
+      "description": "Ungroup",
+      "platform": "macos"
+    },
+    "ungroup": {
+      "keys": "ctrl+shift+g",
+      "description": "Ungroup"
+    },
+    "hide_other_application_windows_mac": {
+      "keys": "cmd+alt+h",
+      "description": "Hide other application windows",
+      "platform": "macos"
+    },
+    "hide_other_application_windows": {
+      "keys": "ctrl+alt+h",
+      "description": "Hide other application windows"
+    },
+    "toggle_artboards": {
+      "keys": "ctrl+shift+h",
+      "description": "Toggle artboards"
+    },
+    "color_settings_mac": {
+      "keys": "cmd+shift+k",
+      "description": "Color Settings...",
+      "platform": "macos"
+    },
+    "color_settings": {
+      "keys": "ctrl+shift+k",
+      "description": "Color Settings..."
+    },
+    "snap_to_grid_mac": {
+      "keys": "cmd+shift+'",
+      "description": "Snap to grid",
+      "platform": "macos"
+    },
+    "snap_to_grid": {
+      "keys": "ctrl+shift+'",
+      "description": "Snap to grid"
+    },
+    "redo_mac": {
+      "keys": "cmd+shift+z",
+      "description": "Redo",
+      "platform": "macos"
+    },
+    "redo": {
+      "keys": "ctrl+shift+z",
+      "description": "Redo"
+    },
+    "paste_in_place_mac": {
+      "keys": "cmd+shift+v",
+      "description": "Paste in place",
+      "platform": "macos"
+    },
+    "paste_in_place": {
+      "keys": "ctrl+shift+v",
+      "description": "Paste in place"
+    },
+    "hide_bounding_box_mac": {
+      "keys": "cmd+shift+b",
+      "description": "Hide bounding box",
+      "platform": "macos"
+    },
+    "hide_bounding_box": {
+      "keys": "ctrl+shift+b",
+      "description": "Hide bounding box"
+    },
+    "open_new_from_template_mac": {
+      "keys": "cmd+shift+n",
+      "description": "Open new from template",
+      "platform": "macos"
+    },
+    "open_new_from_template": {
+      "keys": "ctrl+shift+n",
+      "description": "Open new from template"
+    },
+    "move_mac": {
+      "keys": "cmd+shift+m",
+      "description": "Move...",
+      "platform": "macos"
+    },
+    "move": {
+      "keys": "ctrl+shift+m",
+      "description": "Move..."
+    },
+    "navigate_to_next_document_group_mac": {
+      "keys": "cmd+alt+f6",
+      "description": "Navigate to next document group",
+      "platform": "macos"
+    },
+    "navigate_to_next_document_group": {
+      "keys": "ctrl+alt+f6",
+      "description": "Navigate to next document group"
+    },
+    "unlock_all_mac": {
+      "keys": "cmd+alt+2",
+      "description": "Unlock all",
+      "platform": "macos"
+    },
+    "unlock_all": {
+      "keys": "ctrl+alt+2",
+      "description": "Unlock all"
+    },
+    "release_guides_mac": {
+      "keys": "cmd+alt+5",
+      "description": "Release guides",
+      "platform": "macos"
+    },
+    "release_guides": {
+      "keys": "ctrl+alt+5",
+      "description": "Release guides"
+    },
+    "release_clipping_mask_mac": {
+      "keys": "cmd+alt+7",
+      "description": "Release clipping mask",
+      "platform": "macos"
+    },
+    "release_clipping_mask": {
+      "keys": "ctrl+alt+7",
+      "description": "Release clipping mask"
+    },
+    "zoom_fit_all_in_window_mac": {
+      "keys": "cmd+alt+0",
+      "description": "Zoom fit all in window",
+      "platform": "macos"
+    },
+    "zoom_fit_all_in_window": {
+      "keys": "ctrl+alt+0",
+      "description": "Zoom fit all in window"
+    },
+    "toggle_artboard_rulers_mac": {
+      "keys": "cmd+alt+r",
+      "description": "Toggle artboard rulers",
+      "platform": "macos"
+    },
+    "toggle_artboard_rulers": {
+      "keys": "ctrl+alt+r",
+      "description": "Toggle artboard rulers"
+    },
+    "toggle_paragraph_panel_mac": {
+      "keys": "cmd+alt+t",
+      "description": "Toggle Paragraph panel",
+      "platform": "macos"
+    },
+    "toggle_paragraph_panel": {
+      "keys": "ctrl+alt+t",
+      "description": "Toggle Paragraph panel"
+    },
+    "toggle_pixel_preview_view_mac": {
+      "keys": "cmd+alt+y",
+      "description": "Toggle Pixel preview view",
+      "platform": "macos"
+    },
+    "toggle_pixel_preview_view": {
+      "keys": "ctrl+alt+y",
+      "description": "Toggle Pixel preview view"
+    },
+    "show_hidden_characters_mac": {
+      "keys": "cmd+alt+i",
+      "description": "Show hidden characters",
+      "platform": "macos"
+    },
+    "show_hidden_characters": {
+      "keys": "ctrl+alt+i",
+      "description": "Show hidden characters"
+    },
+    "browse_in_bridge_mac": {
+      "keys": "cmd+alt+o",
+      "description": "Browse in Bridge",
+      "platform": "macos"
+    },
+    "browse_in_bridge": {
+      "keys": "ctrl+alt+o",
+      "description": "Browse in Bridge"
+    },
+    "document_setup_mac": {
+      "keys": "cmd+alt+p",
+      "description": "Document setup...",
+      "platform": "macos"
+    },
+    "document_setup": {
+      "keys": "ctrl+alt+p",
+      "description": "Document setup..."
+    },
+    "save_as_copy_mac": {
+      "keys": "cmd+alt+s",
+      "description": "Save as copy...",
+      "platform": "macos"
+    },
+    "save_as_copy": {
+      "keys": "ctrl+alt+s",
+      "description": "Save as copy..."
+    },
+    "toggle_gradient_annotator_mac": {
+      "keys": "cmd+alt+g",
+      "description": "Toggle gradient annotator",
+      "platform": "macos"
+    },
+    "toggle_gradient_annotator": {
+      "keys": "ctrl+alt+g",
+      "description": "Toggle gradient annotator"
+    },
+    "average_mac": {
+      "keys": "cmd+alt+j",
+      "description": "Average",
+      "platform": "macos"
+    },
+    "average": {
+      "keys": "ctrl+alt+j",
+      "description": "Average"
+    },
+    "snap_to_point_mac": {
+      "keys": "cmd+alt+;",
+      "description": "Snap to point",
+      "platform": "macos"
+    },
+    "snap_to_point": {
+      "keys": "ctrl+alt+;",
+      "description": "Snap to point"
+    },
+    "lock_unlock_guides_mac": {
+      "keys": "cmd+alt+'",
+      "description": "Lock/Unlock guides",
+      "platform": "macos"
+    },
+    "lock_unlock_guides": {
+      "keys": "ctrl+alt+'",
+      "description": "Lock/Unlock guides"
+    },
+    "make_live_paint_mac": {
+      "keys": "cmd+alt+x",
+      "description": "Make live paint",
+      "platform": "macos"
+    },
+    "make_live_paint": {
+      "keys": "ctrl+alt+x",
+      "description": "Make live paint"
+    },
+    "envelope_distort_make_with_top_object_mac": {
+      "keys": "cmd+alt+c",
+      "description": "Envelope Distort: Make with Top Object",
+      "platform": "macos"
+    },
+    "envelope_distort_make_with_top_object": {
+      "keys": "ctrl+alt+c",
+      "description": "Envelope Distort: Make with Top Object"
+    },
+    "envelope_distort_make_with_mesh_mac": {
+      "keys": "cmd+alt+m",
+      "description": "Envelope Distort: Make with Mesh",
+      "platform": "macos"
+    },
+    "envelope_distort_make_with_mesh": {
+      "keys": "ctrl+alt+m",
+      "description": "Envelope Distort: Make with Mesh"
+    },
+    "make_blend_mac": {
+      "keys": "cmd+alt+b",
+      "description": "Make blend",
+      "platform": "macos"
+    },
+    "make_blend": {
+      "keys": "ctrl+alt+b",
+      "description": "Make blend"
+    },
+    "toggle_between_fill_and_stroke": {
+      "keys": "x",
+      "description": "Toggle between fill and stroke"
+    },
+    "set_fill_and_stroke_to_default": {
+      "keys": "d",
+      "description": "Set fill and stroke to default"
+    },
+    "swap_fill_and_stroke": {
+      "keys": "shift+x",
+      "description": "Swap fill and stroke"
+    },
+    "select_no_stroke_fill_mode": {
+      "keys": "/",
+      "description": "Select no stroke/fill mode"
+    },
+    "add_new_fill_mac": {
+      "keys": "cmd+/",
+      "description": "Add new fill",
+      "platform": "macos"
+    },
+    "add_new_fill": {
+      "keys": "ctrl+/",
+      "description": "Add new fill"
+    },
+    "add_new_stroke_mac": {
+      "keys": "cmd+alt+/",
+      "description": "Add new stroke",
+      "platform": "macos"
+    },
+    "add_new_stroke": {
+      "keys": "ctrl+alt+/",
+      "description": "Add new stroke"
+    },
+    "set_bristle_brush_opacity": {
+      "keys": "0-9",
+      "description": "Set Bristle brush opacity"
+    },
+    "last_used_selection_tool_mac": {
+      "keys": "cmd",
+      "description": "Last-used selection tool",
+      "platform": "macos"
+    },
+    "last_used_selection_tool": {
+      "keys": "ctrl",
+      "description": "Last-used selection tool"
+    },
+    "direct_group_selection_tool": {
+      "keys": "alt",
+      "description": "Direct/Group Selection tool"
+    },
+    "add_to_selection": {
+      "keys": "shift+click",
+      "description": "Add to selection"
+    },
+    "subtract_from_selection": {
+      "keys": "shift+click",
+      "description": "Subtract from selection"
+    },
+    "select_artwork_in_active_artboard_mac": {
+      "keys": "cmd+alt+a",
+      "description": "Select artwork in active artboard",
+      "platform": "macos"
+    },
+    "select_artwork_in_active_artboard": {
+      "keys": "ctrl+alt+a",
+      "description": "Select artwork in active artboard"
+    },
+    "select_behind_an_object_mac": {
+      "keys": "press command+click twice",
+      "description": "Select behind an object",
+      "platform": "macos"
+    },
+    "select_behind_an_object": {
+      "keys": "press ctrl+click twice",
+      "description": "Select behind an object"
+    },
+    "select_behind_in_isolation_mode_mac": {
+      "keys": "cmd+click twice",
+      "description": "Select behind in isolation mode",
+      "platform": "macos"
+    },
+    "select_behind_in_isolation_mode": {
+      "keys": "ctrl+click twice",
+      "description": "Select behind in isolation mode"
+    },
+    "set_origin_point_and_open_dialog_box_when_using_rotate_tool_scale_tool_reflect_tool_or_shear_tool": {
+      "keys": "alt+click",
+      "description": "Set origin point and open dialog box when using Rotate tool, Scale tool, Reflect tool, or Shear tool"
+    },
+    "duplicate_and_transform_selection_when_using_selection_tool_scale_tool_reflect_tool_or_shear_tool": {
+      "keys": "alt+drag",
+      "description": "Duplicate and transform selection when using Selection tool, Scale tool, Reflect tool, or Shear tool"
+    },
+    "transform_pattern_when_using_selection_tool_scale_tool_reflect_tool_or_shear_tool": {
+      "keys": "tilde+drag",
+      "description": "Transform pattern when using Selection tool, Scale tool, Reflect tool, or Shear tool"
+    },
+    "set_options": {
+      "keys": "alt+click new button",
+      "description": "Set options"
+    },
+    "delete_without_confirmation": {
+      "keys": "alt+click delete button",
+      "description": "Delete without confirmation"
+    },
+    "apply_value_and_keep_text_box_active": {
+      "keys": "shift+enter",
+      "description": "Apply value and keep text box active"
+    },
+    "select_range_of_actions_brushes_layers_links_styles_or_swatches": {
+      "keys": "shift+click",
+      "description": "Select range of actions, brushes, layers, links, styles, or swatches"
+    },
+    "select_noncontiguous_actions_brushes_layers_links_styles_or_swatches_mac": {
+      "keys": "cmd+click",
+      "description": "Select noncontiguous actions, brushes, layers , links, styles, or swatches",
+      "platform": "macos"
+    },
+    "select_noncontiguous_actions_brushes_layers_links_styles_or_swatches": {
+      "keys": "ctrl+click",
+      "description": "Select noncontiguous actions, brushes, layers , links, styles, or swatches"
+    },
+    "show_hide_all_panels": {
+      "keys": "tab",
+      "description": "Show/Hide all panels"
+    },
+    "show_hide_all_panels_except_the_tools_panel_and_control_panel": {
+      "keys": "shift+tab",
+      "description": "Show/Hide all panels except the Tools panel and Control panel"
+    },
+    "move_selection": {
+      "keys": "arrows",
+      "description": "Move Selection"
+    },
+    "move_selection_10x": {
+      "keys": "shift+arrows",
+      "description": "Move Selection 10x"
+    },
+    "lock_all_deselected_artwork_mac": {
+      "keys": "cmd+alt+shift+2",
+      "description": "Lock all deselected artwork",
+      "platform": "macos"
+    },
+    "lock_all_deselected_artwork": {
+      "keys": "ctrl+alt+shift+2",
+      "description": "Lock all deselected artwork"
+    },
+    "hold_constrain_to_45": {
+      "keys": "shift",
+      "description": "(Hold) Constrain to 45\u00b0"
+    },
+    "constrain_a_shape_s_proportions_or_orientation_to": {
+      "keys": "shift+drag",
+      "description": "Constrain a shape\u2019s proportions or orientation to:"
+    },
+    "move_a_shape_while_drawing_it": {
+      "keys": "spacebar+drag",
+      "description": "Move a shape while drawing it"
+    },
+    "draw_from_the_center_of_a_shape": {
+      "keys": "alt+drag",
+      "description": "Draw from the center of a shape"
+    },
+    "keep_the_inner_radius_of_a_star_constant_mac": {
+      "keys": "start dragging, then hold down command",
+      "description": "Keep the inner radius of a star constant",
+      "platform": "macos"
+    },
+    "keep_the_inner_radius_of_a_star_constant": {
+      "keys": "start dragging, then hold down ctrl",
+      "description": "Keep the inner radius of a star constant"
+    },
+    "keep_the_sides_of_a_star_straight": {
+      "keys": "alt+drag",
+      "description": "Keep the sides of a star straight"
+    },
+    "switch_between_an_open_and_closed_arc": {
+      "keys": "start dragging, then hold down c",
+      "description": "Switch between an open and closed arc"
+    },
+    "flip_an_arc_keeping_the_reference_point_constant_mac": {
+      "keys": "start dragging, then hold down sf",
+      "description": "Flip an arc, keeping the reference point constant",
+      "platform": "macos"
+    },
+    "flip_an_arc_keeping_the_reference_point_constant": {
+      "keys": "start dragging, then hold down f",
+      "description": "Flip an arc, keeping the reference point constant"
+    },
+    "add_or_subtract_winds_from_a_spiral_while_increasing_the_length_of_the_spiral_mac": {
+      "keys": "start dragging then option+drag",
+      "description": "Add or subtract winds from a spiral while increasing the length of the spiral",
+      "platform": "macos"
+    },
+    "add_or_subtract_winds_from_a_spiral_while_increasing_the_length_of_the_spiral": {
+      "keys": "start dragging, then alt+drag",
+      "description": "Add or subtract winds from a spiral while increasing the length of the spiral"
+    },
+    "change_the_decay_rate_of_a_spiral_mac": {
+      "keys": "start dragging then command+drag",
+      "description": "Change the decay rate of a spiral",
+      "platform": "macos"
+    },
+    "change_the_decay_rate_of_a_spiral": {
+      "keys": "start dragging then ctrl+drag",
+      "description": "Change the decay rate of a spiral"
+    },
+    "add_or_remove_horizontal_lines_from_a_rectangular_grid_or_concentric_lines_from_a_polar_grid": {
+      "keys": "start dragging, then press the up arrow",
+      "description": "Add or remove horizontal lines from a rectangular grid or concentric lines from a polar grid"
+    },
+    "decrease_the_skew_value_for_horizontal_dividers_in_a_rectangular_grid_or_radial_dividers_in_a_polar_grid_by_10": {
+      "keys": "start dragging, then press f",
+      "description": "Decrease the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%"
+    },
+    "increase_the_skew_value_for_horizontal_dividers_in_a_rectangular_grid_or_radial_dividers_in_a_polar_grid_by_10": {
+      "keys": "start dragging, then press v",
+      "description": "Increase the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%"
+    },
+    "decrease_the_skew_value_for_vertical_dividers_in_a_rectangular_grid_or_concentric_dividers_in_a_polar_grid_by_10": {
+      "keys": "start dragging, then press x",
+      "description": "Decrease the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%"
+    },
+    "increase_the_skew_value_for_vertical_dividers_in_a_rectangular_grid_or_concentric_dividers_in_a_polar_grid_by_10": {
+      "keys": "start dragging, then press c",
+      "description": "Increase the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%"
+    },
+    "subtract_from_selection_tool_magic_wand": {
+      "keys": "alt+click",
+      "description": "Subtract from selection"
+    },
+    "add_to_selection_tool_lasso": {
+      "keys": "shift+drag",
+      "description": "Add to selection"
+    },
+    "change_pointer_to_cross_hair": {
+      "keys": "capslock",
+      "description": "Change pointer to cross hair"
+    },
+    "hold_convert_anchor_point_tool": {
+      "keys": "alt",
+      "description": "(Hold) Convert Anchor Point tool"
+    },
+    "drag_move_current_anchor_point_while_drawing_with_pen_tool": {
+      "keys": "spacebar",
+      "description": "(Drag) Move current anchor point while drawing with Pen tool"
+    },
+    "hold_smooth_tool": {
+      "keys": "alt",
+      "description": "(Hold) Smooth Tool"
+    },
+    "constrain_horizontally_vertically": {
+      "keys": "shift",
+      "description": "Constrain horizontally/vertically"
+    },
+    "cut_a_straight_line": {
+      "keys": "alt",
+      "description": "Cut a straight line"
+    },
+    "cut_at_45_or_90": {
+      "keys": "shift+alt+drag",
+      "description": "Cut at 45\u00b0 or 90\u00b0"
+    },
+    "hold_smooth_tool_tool_pencil": {
+      "keys": "alt",
+      "description": "(Hold) Smooth Tool"
+    },
+    "hold_add_anchor_point_tool": {
+      "keys": "alt",
+      "description": "(Hold) Add Anchor Point tool"
+    },
+    "sample_color": {
+      "keys": "shift",
+      "description": "Sample color"
+    },
+    "sample_style_and_append_appearance_of_currently_selected_item": {
+      "keys": "alt+shift+click",
+      "description": "Sample style and append appearance of currently selected item"
+    },
+    "exit_type_edit_mode_mac": {
+      "keys": "cmd+enter",
+      "description": "Exit type edit mode",
+      "platform": "macos"
+    },
+    "exit_type_edit_mode": {
+      "keys": "ctrl+enter",
+      "description": "Exit type edit mode"
+    },
+    "move_one_character_right": {
+      "keys": "right",
+      "description": "Move one character right"
+    },
+    "move_one_character_left": {
+      "keys": "left",
+      "description": "Move one character left"
+    },
+    "move_up_one_line": {
+      "keys": "up",
+      "description": "Move up one line"
+    },
+    "move_down_one_line": {
+      "keys": "down",
+      "description": "Move down one line"
+    },
+    "move_one_word_right_mac": {
+      "keys": "cmd+right",
+      "description": "Move one word right",
+      "platform": "macos"
+    },
+    "move_one_word_right": {
+      "keys": "ctrl+right",
+      "description": "Move one word right"
+    },
+    "move_one_word_left_mac": {
+      "keys": "cmd+left",
+      "description": "Move one word left",
+      "platform": "macos"
+    },
+    "move_one_word_left": {
+      "keys": "ctrl+left",
+      "description": "Move one word left"
+    },
+    "move_up_one_paragraph_mac": {
+      "keys": "cmd+up",
+      "description": "Move up one paragraph",
+      "platform": "macos"
+    },
+    "move_up_one_paragraph": {
+      "keys": "ctrl+up",
+      "description": "Move up one paragraph"
+    },
+    "move_down_one_paragraph_mac": {
+      "keys": "cmd+down",
+      "description": "Move down one paragraph",
+      "platform": "macos"
+    },
+    "move_down_one_paragraph": {
+      "keys": "ctrl+down",
+      "description": "Move down one paragraph"
+    },
+    "select_one_word_right_mac": {
+      "keys": "shift+cmd+right",
+      "description": "Select one word right",
+      "platform": "macos"
+    },
+    "select_one_word_right": {
+      "keys": "shift+ctrl+right",
+      "description": "Select one word right"
+    },
+    "select_one_word_left_mac": {
+      "keys": "shift+cmd+left",
+      "description": "Select one word left",
+      "platform": "macos"
+    },
+    "select_one_word_left": {
+      "keys": "shift+ctrl+left",
+      "description": "Select one word left"
+    },
+    "select_one_paragraph_before_mac": {
+      "keys": "shift+cmd+up",
+      "description": "Select one paragraph before",
+      "platform": "macos"
+    },
+    "select_one_paragraph_before": {
+      "keys": "shift+ctrl+up",
+      "description": "Select one paragraph before"
+    },
+    "select_one_paragraph_after_mac": {
+      "keys": "shift+cmd+down",
+      "description": "Select one paragraph after",
+      "platform": "macos"
+    },
+    "select_one_paragraph_after": {
+      "keys": "shift+ctrl+down",
+      "description": "Select one paragraph after"
+    },
+    "extend_existing_selection": {
+      "keys": "shift+click",
+      "description": "Extend existing selection"
+    },
+    "align_paragraph_left_mac": {
+      "keys": "cmd+shift+l",
+      "description": "Align paragraph left",
+      "platform": "macos"
+    },
+    "align_paragraph_left": {
+      "keys": "ctrl+shift+l",
+      "description": "Align paragraph left"
+    },
+    "align_paragraph_right_mac": {
+      "keys": "cmd+shift+r",
+      "description": "Align paragraph right",
+      "platform": "macos"
+    },
+    "align_paragraph_right": {
+      "keys": "ctrl+shift+r",
+      "description": "Align paragraph right"
+    },
+    "align_paragraph_center_mac": {
+      "keys": "cmd+shift+c",
+      "description": "Align paragraph center",
+      "platform": "macos"
+    },
+    "align_paragraph_center": {
+      "keys": "ctrl+shift+c",
+      "description": "Align paragraph center"
+    },
+    "justify_paragraph_mac": {
+      "keys": "cmd+shift+j",
+      "description": "Justify paragraph",
+      "platform": "macos"
+    },
+    "justify_paragraph": {
+      "keys": "ctrl+shift+j",
+      "description": "Justify paragraph"
+    },
+    "insert_soft_return": {
+      "keys": "shift+enter",
+      "description": "Insert soft return"
+    },
+    "highlight_kerning_mac": {
+      "keys": "cmd+alt+k",
+      "description": "Highlight kerning",
+      "platform": "macos"
+    },
+    "highlight_kerning": {
+      "keys": "ctrl+alt+k",
+      "description": "Highlight kerning"
+    },
+    "reset_horizontal_scale_to_100_mac": {
+      "keys": "cmd+shift+x",
+      "description": "Reset horizontal scale to 100%",
+      "platform": "macos"
+    },
+    "reset_horizontal_scale_to_100": {
+      "keys": "ctrl+shift+x",
+      "description": "Reset horizontal scale to 100%"
+    },
+    "increase_leading": {
+      "keys": "alt+up",
+      "description": "Increase leading"
+    },
+    "decrease_leading": {
+      "keys": "alt+down",
+      "description": "Decrease leading"
+    },
+    "reset_tracking_kerning_to_0_mac": {
+      "keys": "cmd+alt+q",
+      "description": "Reset tracking/kerning to 0",
+      "platform": "macos"
+    },
+    "reset_tracking_kerning_to_0": {
+      "keys": "ctrl+alt+q",
+      "description": "Reset tracking/kerning to 0"
+    },
+    "increase_kerning": {
+      "keys": "alt+right",
+      "description": "Increase kerning"
+    },
+    "decrease_kerning": {
+      "keys": "alt+left",
+      "description": "Decrease kerning"
+    },
+    "5x_increase_kerning_mac": {
+      "keys": "cmd+alt+right",
+      "description": "5x Increase kerning",
+      "platform": "macos"
+    },
+    "5x_increase_kerning": {
+      "keys": "ctrl+alt+right",
+      "description": "5x Increase kerning"
+    },
+    "5x_decrease_kerning_mac": {
+      "keys": "cmd+alt+left",
+      "description": "5x Decrease kerning",
+      "platform": "macos"
+    },
+    "5x_decrease_kerning": {
+      "keys": "ctrl+alt+left",
+      "description": "5x Decrease kerning"
+    },
+    "increase_baseline_shift": {
+      "keys": "alt+shift+right",
+      "description": "Increase baseline shift"
+    },
+    "decrease_baseline_shift": {
+      "keys": "alt+shift+left",
+      "description": "Decrease baseline shift"
+    },
+    "switch_type_tools": {
+      "keys": "alt",
+      "description": "Switch Type Tools"
+    },
+    "expand_collapse_entire_hierarchy_for_action_set": {
+      "keys": "alt+click expansion triangle",
+      "description": "Expand/Collapse entire hierarchy for action set"
+    },
+    "set_options_for_action_set": {
+      "keys": "double+click folder icon",
+      "description": "Set options for action set"
+    },
+    "play_a_single_command_mac": {
+      "keys": "cmd+click play current selection button",
+      "description": "Play a single command",
+      "platform": "macos"
+    },
+    "play_a_single_command": {
+      "keys": "ctrl+click play current selection button",
+      "description": "Play a single command"
+    },
+    "begin_recording_actions_without_confirmation": {
+      "keys": "alt+click new action button",
+      "description": "Begin recording actions without confirmation"
+    },
+    "open_brush_options_dialog_box": {
+      "keys": "double+click brush",
+      "description": "Open Brush Options dialog box"
+    },
+    "duplicate_brush": {
+      "keys": "drag brush to new brush button",
+      "description": "Duplicate brush"
+    },
+    "increase_value": {
+      "keys": "up",
+      "description": "Increase value"
+    },
+    "decrease_value": {
+      "keys": "down",
+      "description": "Decrease value"
+    },
+    "increase_value_large": {
+      "keys": "shift+up",
+      "description": "Increase value large"
+    },
+    "decrease_value_large": {
+      "keys": "shift+down",
+      "description": "Decrease value large"
+    },
+    "highlight_font_field_mac": {
+      "keys": "cmd+alt+shift+f",
+      "description": "Highlight font field",
+      "platform": "macos"
+    },
+    "highlight_font_field": {
+      "keys": "ctrl+alt+shift+f",
+      "description": "Highlight font field"
+    },
+    "color_bar_select_compliment_color_mac": {
+      "keys": "cmd+click",
+      "description": "Color Bar: select compliment color",
+      "platform": "macos"
+    },
+    "color_bar_select_compliment_color": {
+      "keys": "ctrl+click",
+      "description": "Color Bar: select compliment color"
+    },
+    "color_bar_change_the_nonactive_fill_stroke": {
+      "keys": "alt+click",
+      "description": "Color Bar: change the nonactive fill/stroke"
+    },
+    "color_bar_select_compliment_for_nonactive_color_mac": {
+      "keys": "cmd+alt+click",
+      "description": "Color Bar: select compliment for nonactive color",
+      "platform": "macos"
+    },
+    "color_bar_select_compliment_for_nonactive_color": {
+      "keys": "ctrl+alt+click",
+      "description": "Color Bar: select compliment for nonactive color"
+    },
+    "color_bar_invert_color_mac": {
+      "keys": "cmd+shift+click",
+      "description": "Color Bar: invert color",
+      "platform": "macos"
+    },
+    "color_bar_invert_color": {
+      "keys": "ctrl+shift+click",
+      "description": "Color Bar: invert color"
+    },
+    "color_bar_invert_nonactive_color_mac": {
+      "keys": "cmd+shift+alt+click",
+      "description": "Color Bar: invert nonactive color",
+      "platform": "macos"
+    },
+    "color_bar_invert_nonactive_color": {
+      "keys": "ctrl+shift+alt+click",
+      "description": "Color Bar: invert nonactive color"
+    },
+    "color_bar_change_the_color_mode": {
+      "keys": "shift+click",
+      "description": "Color Bar: change the color mode"
+    },
+    "color_slider_move_color_sliders_in_tandem": {
+      "keys": "shift+drag",
+      "description": "Color Slider: move color sliders in tandem"
+    },
+    "numerical_field_right_toggle_between_and_0_255_values_for_rgb": {
+      "keys": "double+click",
+      "description": "Numerical Field Right: Toggle between % and 0-255 values for RGB"
+    },
+    "select_all_objects_on_the_layer": {
+      "keys": "alt+click layer name",
+      "description": "Select all objects on the layer"
+    },
+    "show_hide_all_layers_but_the_selected_one": {
+      "keys": "alt+click eye icon",
+      "description": "Show/hide all layers but the selected one"
+    },
+    "select_outline_preview_view_for_the_selected_layer_mac": {
+      "keys": "cmd+click eye icon",
+      "description": "Select Outline/Preview view for the selected layer",
+      "platform": "macos"
+    },
+    "select_outline_preview_view_for_the_selected_layer": {
+      "keys": "ctrl+click eye icon",
+      "description": "Select Outline/Preview view for the selected layer"
+    },
+    "selects_outline_preview_view_for_all_other_layers_mac": {
+      "keys": "cmd+alt+click eye icon",
+      "description": "Selects Outline/Preview view for all other layers",
+      "platform": "macos"
+    },
+    "selects_outline_preview_view_for_all_other_layers": {
+      "keys": "ctrl+alt+click eye icon",
+      "description": "Selects Outline/Preview view for all other layers"
+    },
+    "lock_unlock_all_other_layers": {
+      "keys": "alt+click lock icon",
+      "description": "Lock/unlock all other layers"
+    },
+    "expand_all_sublayers_to_display_entire_hierarchy": {
+      "keys": "alt+click expansion triangle",
+      "description": "Expand all sublayers to display entire hierarchy"
+    },
+    "set_options_as_you_create_new_layer": {
+      "keys": "alt+click new layer button",
+      "description": "Set options as you create new layer"
+    },
+    "set_options_as_you_create_new_sublayer": {
+      "keys": "alt+click new sublayer button",
+      "description": "Set options as you create new sublayer"
+    },
+    "place_new_sublayer_at_bottom_of_layer_list_mac": {
+      "keys": "cmd+alt+click new sublayer button",
+      "description": "Place new sublayer at bottom of layer list",
+      "platform": "macos"
+    },
+    "place_new_sublayer_at_bottom_of_layer_list": {
+      "keys": "ctrl+alt+click new sublayer button",
+      "description": "Place new sublayer at bottom of layer list"
+    },
+    "place_layer_at_top_of_layer_list_mac": {
+      "keys": "cmd+click new layer button",
+      "description": "Place layer at top of layer list",
+      "platform": "macos"
+    },
+    "place_layer_at_top_of_layer_list": {
+      "keys": "ctrl+click new layer button",
+      "description": "Place layer at top of layer list"
+    },
+    "place_layer_below_selected_layer_mac": {
+      "keys": "cmd+alt+click new layer button",
+      "description": "Place layer below selected layer",
+      "platform": "macos"
+    },
+    "place_layer_below_selected_layer": {
+      "keys": "ctrl+alt+click new layer button",
+      "description": "Place layer below selected layer"
+    },
+    "copy_the_selection_to_a_layer_sublayer_or_group": {
+      "keys": "alt+drag selection",
+      "description": "Copy the selection to a layer, sublayer, or group"
+    },
+    "create_new_spot_color_mac": {
+      "keys": "cmd+click new swatch button",
+      "description": "Create new spot color",
+      "platform": "macos"
+    },
+    "create_new_spot_color": {
+      "keys": "ctrl+click new swatch button",
+      "description": "Create new spot color"
+    },
+    "create_new_global_process_color_mac": {
+      "keys": "cmd+shift+click new swatch button",
+      "description": "Create new global process color",
+      "platform": "macos"
+    },
+    "create_new_global_process_color": {
+      "keys": "ctrl+shift+click new swatch button",
+      "description": "Create new global process color"
+    },
+    "replace_swatch_with_another": {
+      "keys": "alt+drag a swatch over another",
+      "description": "Replace swatch with another"
+    },
+    "apply_and_keep_focus_in_edit_field": {
+      "keys": "shift+enter",
+      "description": "Apply and keep focus in edit field"
+    },
+    "apply_and_copy_object": {
+      "keys": "alt+enter",
+      "description": "Apply and copy object"
+    },
+    "apply_and_scale_option_proportionately_for_width_or_height_mac": {
+      "keys": "cmd+enter",
+      "description": "Apply and scale option proportionately for width or height",
+      "platform": "macos"
+    },
+    "apply_and_scale_option_proportionately_for_width_or_height": {
+      "keys": "ctrl+enter",
+      "description": "Apply and scale option proportionately for width or height"
+    },
+    "mask_thumbnail_change_mask_to_grayscale_image_for_editing": {
+      "keys": "alt+click",
+      "description": "Mask Thumbnail: Change mask to grayscale image for editing"
+    },
+    "mask_thumbnail_disable_opacity_mask": {
+      "keys": "shift+click",
+      "description": "Mask Thumbnail: Disable opacity mask"
+    },
+    "disabled_mask_thumbnail_re_enable_opacity_mask": {
+      "keys": "shift+click",
+      "description": "Disabled Mask Thumbnail: Re-enable opacity mask"
+    },
+    "opacity_field_increase_by_1": {
+      "keys": "up",
+      "description": "Opacity Field: Increase by 1"
+    },
+    "opacity_field_decrease_by_1": {
+      "keys": "down",
+      "description": "Opacity Field: Decrease by 1"
+    },
+    "opacity_field_increase_by_10": {
+      "keys": "shift+up",
+      "description": "Opacity Field: Increase by 10"
+    },
+    "opacity_field_decrease_by_10": {
+      "keys": "shift+down",
+      "description": "Opacity Field: Decrease by 10"
+    },
+    "use_shape_mode_buttons_in_pathfinder_panel_to_create_compound_paths": {
+      "keys": "alt+shape mode",
+      "description": "Use shape mode buttons in Pathfinder panel to create compound paths"
+    },
+    "erase_unwanted_closed_regions_created_using_shape_builder_tool": {
+      "keys": "alt+click the closed region",
+      "description": "Erase unwanted closed regions created using Shape Builder tool"
+    },
+    "display_rectangular_marquee_to_easily_merge_multiple_paths": {
+      "keys": "shift+click+drag",
+      "description": "Display rectangular marquee to easily merge multiple paths"
+    },
+    "toggle_between_screen_modes_normal_screen_mode_full_screen_mode_with_menu_bar_full_screen_mode": {
+      "keys": "f",
+      "description": "Toggle between screen modes: Normal Screen Mode, Full Screen Mode with Menu Bar, Full Screen Mode"
+    },
+    "fit_imageable_area_in_window": {
+      "keys": "double+click hand tool",
+      "description": "Fit imageable area in window"
+    },
+    "magnify_100": {
+      "keys": "double+click zoom tool",
+      "description": "Magnify 100%"
+    },
+    "switch_to_hand_tool": {
+      "keys": "spacebar",
+      "description": "Switch to Hand tool"
+    },
+    "switch_to_zoom_tool_in_magnify_mode_mac": {
+      "keys": "cmd+spacebar",
+      "description": "Switch to Zoom tool in magnify mode",
+      "platform": "macos"
+    },
+    "switch_to_zoom_tool_in_magnify_mode": {
+      "keys": "ctrl+spacebar",
+      "description": "Switch to Zoom tool in magnify mode"
+    },
+    "switch_to_zoom_tool_in_reduce_mode_mac": {
+      "keys": "cmd+alt+spacebar",
+      "description": "Switch to Zoom tool in reduce mode",
+      "platform": "macos"
+    },
+    "switch_to_zoom_tool_in_reduce_mode": {
+      "keys": "ctrl+alt+spacebar",
+      "description": "Switch to Zoom tool in reduce mode"
+    },
+    "hide_unselected_artwork_mac": {
+      "keys": "cmd+alt+shift+3",
+      "description": "Hide unselected artwork",
+      "platform": "macos"
+    },
+    "hide_unselected_artwork": {
+      "keys": "ctrl+alt+shift+3",
+      "description": "Hide unselected artwork"
+    },
+    "convert_between_horizontal_and_vertical_guide": {
+      "keys": "alt+drag guide",
+      "description": "Convert between horizontal and vertical guide"
+    },
+    "release_guide_mac": {
+      "keys": "cmd+shift-double+click guide",
+      "description": "Release guide",
+      "platform": "macos"
+    },
+    "release_guide": {
+      "keys": "ctrl+shift-double+click guide",
+      "description": "Release guide"
+    },
+    "show_hide_artboards_mac": {
+      "keys": "cmd+shift+h",
+      "description": "Show/Hide artboards",
+      "platform": "macos"
+    },
+    "show_hide_artboards": {
+      "keys": "ctrl+shift+h",
+      "description": "Show/Hide artboards"
+    },
+    "show_hide_artboard_rulers_mac": {
+      "keys": "cmd+alt+r",
+      "description": "Show/Hide artboard rulers",
+      "platform": "macos"
+    },
+    "show_hide_artboard_rulers": {
+      "keys": "ctrl+alt+r",
+      "description": "Show/Hide artboard rulers"
+    },
+    "view_all_artboards_in_window_mac": {
+      "keys": "cmd+alt+0",
+      "description": "View all artboards in window",
+      "platform": "macos"
+    },
+    "view_all_artboards_in_window": {
+      "keys": "ctrl+alt+0",
+      "description": "View all artboards in window"
+    },
+    "paste_in_place_on_the_active_artboard_mac": {
+      "keys": "cmd+shift+v",
+      "description": "Paste in place on the active artboard",
+      "platform": "macos"
+    },
+    "paste_in_place_on_the_active_artboard": {
+      "keys": "ctrl+shift+v",
+      "description": "Paste in place on the active artboard"
+    },
+    "exit_artboard_tool_mode": {
+      "keys": "esc",
+      "description": "Exit Artboard tool mode"
+    },
+    "create_artboard_inside_another_artboard": {
+      "keys": "shift+drag",
+      "description": "Create artboard inside another artboard"
+    },
+    "select_multiple_artboards_in_the_artboards_panel_mac": {
+      "keys": "cmd+click",
+      "description": "Select multiple artboards in the Artboards panel",
+      "platform": "macos"
+    },
+    "select_multiple_artboards_in_the_artboards_panel": {
+      "keys": "ctrl+click",
+      "description": "Select multiple artboards in the Artboards panel"
+    },
+    "navigate_to_next_document_mac": {
+      "keys": "cmd+f6",
+      "description": "Navigate to next document",
+      "platform": "macos"
+    },
+    "navigate_to_next_document": {
+      "keys": "ctrl+f6",
+      "description": "Navigate to next document"
+    },
+    "navigate_to_previous_document_mac": {
+      "keys": "cmd+shift+f6",
+      "description": "Navigate to previous document",
+      "platform": "macos"
+    },
+    "navigate_to_previous_document": {
+      "keys": "ctrl+shift+f6",
+      "description": "Navigate to previous document"
+    },
+    "navigate_to_next_document_group_view_artwork_mac": {
+      "keys": "cmd+alt+f6",
+      "description": "Navigate to next document group",
+      "platform": "macos"
+    },
+    "navigate_to_next_document_group_view_artwork": {
+      "keys": "ctrl+alt+f6",
+      "description": "Navigate to next document group"
+    },
+    "navigate_to_previous_document_group_mac": {
+      "keys": "cmd+alt+shift+f6",
+      "description": "Navigate to previous document group",
+      "platform": "macos"
+    },
+    "navigate_to_previous_document_group": {
+      "keys": "ctrl+alt+shift+f6",
+      "description": "Navigate to previous document group"
+    },
+    "save_multiple_artboards_to_illustrator_cs3_or_earlier_format": {
+      "keys": "alt+v",
+      "description": "Save multiple artboards to Illustrator CS3 or earlier format"
+    },
+    "select_opposite_live_paint_bucket_tool_options": {
+      "keys": "shift+live paint bucket tool",
+      "description": "Select opposite Live Paint Bucket tool options"
+    },
+    "fill_across_unstroked_edges_into_adjacent_faces": {
+      "keys": "double+click+live paint bucket tool",
+      "description": "Fill across unstroked edges into adjacent faces"
+    },
+    "fill_all_faces_that_have_same_fill_and_stroke_all_edges_that_have_same_stroke": {
+      "keys": "triple+click+live paint bucket tool",
+      "description": "Fill all faces that have same fill and stroke all edges that have same stroke"
+    },
+    "add_to_subtract_from_a_selection": {
+      "keys": "shift+click+live paint selection tool",
+      "description": "Add to/subtract from a selection"
+    },
+    "select_all_connected_faces_edges_with_same_fill_stroke": {
+      "keys": "double+click+live paint selection tool",
+      "description": "Select all connected faces /edges with same fill/stroke"
+    },
+    "select_all_faces_edges_with_same_fill_stroke": {
+      "keys": "triple+click+live paint selection tool",
+      "description": "Select all faces/edges with same fill/stroke"
+    }
+  },
+  "semantic_elements": {
+    "help": {
+      "label": "Help",
+      "aliases": [
+        "help"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f1",
+        "description": "Help"
+      }
+    },
+    "cut": {
+      "label": "Cut",
+      "aliases": [
+        "cut"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+x",
+        "description": "Cut"
+      }
+    },
+    "copy": {
+      "label": "Copy",
+      "aliases": [
+        "copy"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+c",
+        "description": "Copy"
+      }
+    },
+    "toggle_color_panel": {
+      "label": "Toggle Color panel",
+      "aliases": [
+        "toggle color panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f6",
+        "description": "Toggle Color panel"
+      }
+    },
+    "paste": {
+      "label": "Paste",
+      "aliases": [
+        "paste"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+v",
+        "description": "Paste"
+      }
+    },
+    "toggle_brushes_panel": {
+      "label": "Toggle Brushes panel",
+      "aliases": [
+        "toggle brushes panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f5",
+        "description": "Toggle Brushes panel"
+      }
+    },
+    "next_document": {
+      "label": "Next document",
+      "aliases": [
+        "next document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f6",
+        "description": "Next document"
+      }
+    },
+    "previous_document": {
+      "label": "Previous document",
+      "aliases": [
+        "previous document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f6",
+        "description": "Previous document"
+      }
+    },
+    "toggle_layers_panel": {
+      "label": "Toggle Layers panel",
+      "aliases": [
+        "toggle layers panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f7",
+        "description": "Toggle Layers panel"
+      }
+    },
+    "create_new_symbol": {
+      "label": "Create new symbol",
+      "aliases": [
+        "create new symbol"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f8",
+        "description": "Create new symbol"
+      }
+    },
+    "toggle_info_panel": {
+      "label": "Toggle Info panel",
+      "aliases": [
+        "toggle info panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f8",
+        "description": "Toggle Info panel"
+      }
+    },
+    "toggle_gradient_panel": {
+      "label": "Toggle Gradient panel",
+      "aliases": [
+        "toggle gradient panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f9",
+        "description": "Toggle Gradient panel"
+      }
+    },
+    "toggle_stroke_panel": {
+      "label": "Toggle Stroke panel",
+      "aliases": [
+        "toggle stroke panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f10",
+        "description": "Toggle Stroke panel"
+      }
+    },
+    "toggle_attributes_panel": {
+      "label": "Toggle Attributes panel",
+      "aliases": [
+        "toggle attributes panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f11",
+        "description": "Toggle Attributes panel"
+      }
+    },
+    "revert": {
+      "label": "Revert",
+      "aliases": [
+        "revert"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+z",
+        "description": "Revert"
+      }
+    },
+    "other_script": {
+      "label": "Other script...",
+      "aliases": [
+        "other script..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f12",
+        "description": "Other script..."
+      }
+    },
+    "toggle_graphic_styles_panel": {
+      "label": "Toggle Graphic Styles panel",
+      "aliases": [
+        "toggle graphic styles panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+f5",
+        "description": "Toggle Graphic Styles panel"
+      }
+    },
+    "toggle_appearance_panel": {
+      "label": "Toggle Appearance panel",
+      "aliases": [
+        "toggle appearance panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+f6",
+        "description": "Toggle Appearance panel"
+      }
+    },
+    "toggle_align_panel": {
+      "label": "Toggle Align panel",
+      "aliases": [
+        "toggle align panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+f7",
+        "description": "Toggle Align panel"
+      }
+    },
+    "toggle_transform_panel": {
+      "label": "Toggle Transform panel",
+      "aliases": [
+        "toggle transform panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+f8",
+        "description": "Toggle Transform panel"
+      }
+    },
+    "toggle_pathfinder_panel": {
+      "label": "Toggle Pathfinder panel",
+      "aliases": [
+        "toggle pathfinder panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f9",
+        "description": "Toggle Pathfinder panel"
+      }
+    },
+    "toggle_transparency_panel": {
+      "label": "Toggle Transparency panel",
+      "aliases": [
+        "toggle transparency panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f10",
+        "description": "Toggle Transparency panel"
+      }
+    },
+    "toggle_symbols_panel": {
+      "label": "Toggle Symbols panel",
+      "aliases": [
+        "toggle symbols panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f11",
+        "description": "Toggle Symbols panel"
+      }
+    },
+    "toggle_perspective_grid": {
+      "label": "Toggle perspective grid",
+      "aliases": [
+        "toggle perspective grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+l",
+        "description": "Toggle perspective grid"
+      }
+    },
+    "cycle_screen_modes": {
+      "label": "Cycle screen modes",
+      "aliases": [
+        "cycle screen modes"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f",
+        "description": "Cycle screen modes"
+      }
+    },
+    "artboard_tool": {
+      "label": "Artboard tool",
+      "aliases": [
+        "artboard tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+o",
+        "description": "Artboard tool"
+      }
+    },
+    "selection_tool": {
+      "label": "Selection tool",
+      "aliases": [
+        "selection tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "v",
+        "description": "Selection tool"
+      }
+    },
+    "direct_selection_tool": {
+      "label": "Direct Selection tool",
+      "aliases": [
+        "direct selection tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a",
+        "description": "Direct Selection tool"
+      }
+    },
+    "magic_wand_tool": {
+      "label": "Magic Wand tool",
+      "aliases": [
+        "magic wand tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "y",
+        "description": "Magic Wand tool"
+      }
+    },
+    "lasso_tool": {
+      "label": "Lasso tool",
+      "aliases": [
+        "lasso tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "q",
+        "description": "Lasso tool"
+      }
+    },
+    "pen_tool": {
+      "label": "Pen tool",
+      "aliases": [
+        "pen tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Pen tool"
+      }
+    },
+    "blob_brush_tool": {
+      "label": "Blob Brush tool",
+      "aliases": [
+        "blob brush tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+b",
+        "description": "Blob Brush tool"
+      }
+    },
+    "add_anchor_point_tool": {
+      "label": "Add Anchor Point tool",
+      "aliases": [
+        "add anchor point tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "+",
+        "description": "Add Anchor Point tool"
+      }
+    },
+    "delete_anchor_point_tool": {
+      "label": "Delete Anchor Point tool",
+      "aliases": [
+        "delete anchor point tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "-",
+        "description": "Delete Anchor Point tool"
+      }
+    },
+    "convert_anchor_point_tool": {
+      "label": "Convert Anchor Point tool",
+      "aliases": [
+        "convert anchor point tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+c",
+        "description": "Convert Anchor Point tool"
+      }
+    },
+    "type_tool": {
+      "label": "Type tool",
+      "aliases": [
+        "type tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "t",
+        "description": "Type tool"
+      }
+    },
+    "cycle_type_tools": {
+      "label": "Cycle Type tools",
+      "aliases": [
+        "cycle type tools"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+t",
+        "description": "Cycle Type tools"
+      }
+    },
+    "line_segment_tool": {
+      "label": "Line Segment tool",
+      "aliases": [
+        "line segment tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "\\",
+        "description": "Line Segment tool"
+      }
+    },
+    "rectangle_tool": {
+      "label": "Rectangle tool",
+      "aliases": [
+        "rectangle tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "m",
+        "description": "Rectangle tool"
+      }
+    },
+    "ellipse_tool": {
+      "label": "Ellipse tool",
+      "aliases": [
+        "ellipse tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "l",
+        "description": "Ellipse tool"
+      }
+    },
+    "paintbrush_tool": {
+      "label": "Paintbrush tool",
+      "aliases": [
+        "paintbrush tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "b",
+        "description": "Paintbrush tool"
+      }
+    },
+    "pencil_tool": {
+      "label": "Pencil tool",
+      "aliases": [
+        "pencil tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "n",
+        "description": "Pencil tool"
+      }
+    },
+    "rotate_tool": {
+      "label": "Rotate tool",
+      "aliases": [
+        "rotate tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Rotate tool"
+      }
+    },
+    "reflect_tool": {
+      "label": "Reflect tool",
+      "aliases": [
+        "reflect tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "o",
+        "description": "Reflect tool"
+      }
+    },
+    "scale_tool": {
+      "label": "Scale tool",
+      "aliases": [
+        "scale tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Scale tool"
+      }
+    },
+    "warp_tool": {
+      "label": "Warp tool",
+      "aliases": [
+        "warp tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+r",
+        "description": "Warp tool"
+      }
+    },
+    "width_tool": {
+      "label": "Width Tool",
+      "aliases": [
+        "width tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+w",
+        "description": "Width Tool"
+      }
+    },
+    "free_transform_tool": {
+      "label": "Free Transform tool",
+      "aliases": [
+        "free transform tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e",
+        "description": "Free Transform tool"
+      }
+    },
+    "shape_builder_tool": {
+      "label": "Shape Builder Tool",
+      "aliases": [
+        "shape builder tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+m",
+        "description": "Shape Builder Tool"
+      }
+    },
+    "perspective_grid_tool": {
+      "label": "Perspective Grid Tool",
+      "aliases": [
+        "perspective grid tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+p",
+        "description": "Perspective Grid Tool"
+      }
+    },
+    "perspective_selection_tool": {
+      "label": "Perspective Selection Tool",
+      "aliases": [
+        "perspective selection tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+v",
+        "description": "Perspective Selection Tool"
+      }
+    },
+    "symbol_sprayer_tool": {
+      "label": "Symbol Sprayer tool",
+      "aliases": [
+        "symbol sprayer tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+s",
+        "description": "Symbol Sprayer tool"
+      }
+    },
+    "column_graph_tool": {
+      "label": "Column Graph tool",
+      "aliases": [
+        "column graph tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "j",
+        "description": "Column Graph tool"
+      }
+    },
+    "mesh_tool": {
+      "label": "Mesh tool",
+      "aliases": [
+        "mesh tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Mesh tool"
+      }
+    },
+    "gradient_tool": {
+      "label": "Gradient tool",
+      "aliases": [
+        "gradient tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "g",
+        "description": "Gradient tool"
+      }
+    },
+    "eyedropper_tool": {
+      "label": "Eyedropper tool",
+      "aliases": [
+        "eyedropper tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "i",
+        "description": "Eyedropper tool"
+      }
+    },
+    "blend_tool": {
+      "label": "Blend tool",
+      "aliases": [
+        "blend tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "w",
+        "description": "Blend tool"
+      }
+    },
+    "live_paint_bucket_tool": {
+      "label": "Live Paint Bucket tool",
+      "aliases": [
+        "live paint bucket tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "k",
+        "description": "Live Paint Bucket tool"
+      }
+    },
+    "live_paint_selection_tool": {
+      "label": "Live Paint Selection tool",
+      "aliases": [
+        "live paint selection tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+l",
+        "description": "Live Paint Selection tool"
+      }
+    },
+    "slice_tool": {
+      "label": "Slice tool",
+      "aliases": [
+        "slice tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+k",
+        "description": "Slice tool"
+      }
+    },
+    "eraser_tool": {
+      "label": "Eraser tool",
+      "aliases": [
+        "eraser tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+e",
+        "description": "Eraser tool"
+      }
+    },
+    "scissors_tool": {
+      "label": "Scissors tool",
+      "aliases": [
+        "scissors tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c",
+        "description": "Scissors tool"
+      }
+    },
+    "hand_tool": {
+      "label": "Hand tool",
+      "aliases": [
+        "hand tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "h",
+        "description": "Hand tool"
+      }
+    },
+    "zoom_tool": {
+      "label": "Zoom tool",
+      "aliases": [
+        "zoom tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "z",
+        "description": "Zoom tool"
+      }
+    },
+    "cycle_drawing_modes_normal_behind_inside": {
+      "label": "Cycle drawing modes (Normal, Behind, Inside)",
+      "aliases": [
+        "cycle drawing modes (normal, behind, inside)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+d",
+        "description": "Cycle drawing modes (Normal, Behind, Inside)"
+      }
+    },
+    "quit": {
+      "label": "Quit",
+      "aliases": [
+        "quit"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "cmd+q",
+        "description": "Quit"
+      }
+    },
+    "new_document": {
+      "label": "New Document",
+      "aliases": [
+        "new document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+n",
+        "description": "New Document"
+      }
+    },
+    "close_document": {
+      "label": "Close Document",
+      "aliases": [
+        "close document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "description": "Close Document"
+      }
+    },
+    "save": {
+      "label": "Save",
+      "aliases": [
+        "save"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "description": "Save"
+      }
+    },
+    "select_all": {
+      "label": "Select All",
+      "aliases": [
+        "select all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+a",
+        "description": "Select All"
+      }
+    },
+    "transform_again": {
+      "label": "Transform again",
+      "aliases": [
+        "transform again"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "description": "Transform again"
+      }
+    },
+    "toggle_rulers": {
+      "label": "Toggle Rulers",
+      "aliases": [
+        "toggle rulers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+r",
+        "description": "Toggle Rulers"
+      }
+    },
+    "toggle_character_panel": {
+      "label": "Toggle Character Panel",
+      "aliases": [
+        "toggle character panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "description": "Toggle Character Panel"
+      }
+    },
+    "toggle_outline_preview": {
+      "label": "Toggle Outline/Preview",
+      "aliases": [
+        "toggle outline/preview",
+        "toggle outline",
+        "preview"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+y",
+        "description": "Toggle Outline/Preview"
+      }
+    },
+    "smart_guides": {
+      "label": "Smart guides",
+      "aliases": [
+        "smart guides"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+u",
+        "description": "Smart guides"
+      }
+    },
+    "check_spelling": {
+      "label": "Check spelling",
+      "aliases": [
+        "check spelling"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+i",
+        "description": "Check spelling"
+      }
+    },
+    "open_document": {
+      "label": "Open document",
+      "aliases": [
+        "open document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+o",
+        "description": "Open document"
+      }
+    },
+    "print": {
+      "label": "Print...",
+      "aliases": [
+        "print..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "description": "Print..."
+      }
+    },
+    "undo": {
+      "label": "Undo",
+      "aliases": [
+        "undo"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+z",
+        "description": "Undo"
+      }
+    },
+    "paste_in_front": {
+      "label": "Paste in front",
+      "aliases": [
+        "paste in front"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f",
+        "description": "Paste in front"
+      }
+    },
+    "paste_in_back": {
+      "label": "Paste in back",
+      "aliases": [
+        "paste in back"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+b",
+        "description": "Paste in back"
+      }
+    },
+    "group": {
+      "label": "Group",
+      "aliases": [
+        "group"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+g",
+        "description": "Group"
+      }
+    },
+    "hide_edges": {
+      "label": "Hide edges",
+      "aliases": [
+        "hide edges"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+h",
+        "description": "Hide edges"
+      }
+    },
+    "join_selected_paths": {
+      "label": "Join selected paths",
+      "aliases": [
+        "join selected paths"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+j",
+        "description": "Join selected paths"
+      }
+    },
+    "create_corner_or_smooth_join_select_anchor": {
+      "label": "Create corner or smooth join (Select anchor)",
+      "aliases": [
+        "create corner or smooth join (select anchor)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+alt+j",
+        "description": "Create corner or smooth join (Select anchor)"
+      }
+    },
+    "open_preferences": {
+      "label": "Open Preferences",
+      "aliases": [
+        "open preferences"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+k",
+        "description": "Open Preferences"
+      }
+    },
+    "toggle_guides": {
+      "label": "Toggle Guides",
+      "aliases": [
+        "toggle guides"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+;",
+        "description": "Toggle Guides"
+      }
+    },
+    "toggle_grid": {
+      "label": "Toggle Grid",
+      "aliases": [
+        "toggle grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+'",
+        "description": "Toggle Grid"
+      }
+    },
+    "minimize_window": {
+      "label": "Minimize window",
+      "aliases": [
+        "minimize window"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+m",
+        "description": "Minimize window"
+      }
+    },
+    "unit_preferences": {
+      "label": "Unit preferences",
+      "aliases": [
+        "unit preferences"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+,",
+        "description": "Unit preferences"
+      }
+    },
+    "zoom_to_actual_size": {
+      "label": "Zoom to actual size",
+      "aliases": [
+        "zoom to actual size"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+1",
+        "description": "Zoom to actual size"
+      }
+    },
+    "zoom_out": {
+      "label": "Zoom out",
+      "aliases": [
+        "zoom out"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+-",
+        "description": "Zoom out"
+      }
+    },
+    "zoom_in": {
+      "label": "Zoom in",
+      "aliases": [
+        "zoom in"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl++",
+        "description": "Zoom in"
+      }
+    },
+    "zoom_fit_arboard": {
+      "label": "Zoom fit arboard",
+      "aliases": [
+        "zoom fit arboard"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+0",
+        "description": "Zoom fit arboard"
+      }
+    },
+    "hide_selection": {
+      "label": "Hide selection",
+      "aliases": [
+        "hide selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+2",
+        "description": "Hide selection"
+      }
+    },
+    "lock_selection": {
+      "label": "Lock selection",
+      "aliases": [
+        "lock selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+3",
+        "description": "Lock selection"
+      }
+    },
+    "make_guides": {
+      "label": "Make guides",
+      "aliases": [
+        "make guides"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+5",
+        "description": "Make guides"
+      }
+    },
+    "reselect": {
+      "label": "Reselect",
+      "aliases": [
+        "reselect"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+6",
+        "description": "Reselect"
+      }
+    },
+    "make_clipping_mask": {
+      "label": "Make clipping mask",
+      "aliases": [
+        "make clipping mask"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+7",
+        "description": "Make clipping mask"
+      }
+    },
+    "make_compound_path": {
+      "label": "Make compound path",
+      "aliases": [
+        "make compound path"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+8",
+        "description": "Make compound path"
+      }
+    },
+    "edit_pattern": {
+      "label": "Edit pattern",
+      "aliases": [
+        "edit pattern"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f8",
+        "description": "Edit pattern"
+      }
+    },
+    "hide_template": {
+      "label": "Hide Template",
+      "aliases": [
+        "hide template"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+w",
+        "description": "Hide Template"
+      }
+    },
+    "apply_last_effect": {
+      "label": "Apply last effect",
+      "aliases": [
+        "apply last effect"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+e",
+        "description": "Apply last effect"
+      }
+    },
+    "toggle_tabs_panel": {
+      "label": "Toggle Tabs Panel",
+      "aliases": [
+        "toggle tabs panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+t",
+        "description": "Toggle Tabs Panel"
+      }
+    },
+    "toggle_text_threads": {
+      "label": "Toggle Text Threads",
+      "aliases": [
+        "toggle text threads"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+y",
+        "description": "Toggle Text Threads"
+      }
+    },
+    "toggle_perspective_tool": {
+      "label": "Toggle Perspective tool",
+      "aliases": [
+        "toggle perspective tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+i",
+        "description": "Toggle Perspective tool"
+      }
+    },
+    "place": {
+      "label": "Place...",
+      "aliases": [
+        "place..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+p",
+        "description": "Place..."
+      }
+    },
+    "deselect": {
+      "label": "Deselect",
+      "aliases": [
+        "deselect"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+a",
+        "description": "Deselect"
+      }
+    },
+    "save_as": {
+      "label": "Save as...",
+      "aliases": [
+        "save as..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+s",
+        "description": "Save as..."
+      }
+    },
+    "toggle_transparency_grid": {
+      "label": "Toggle transparency grid",
+      "aliases": [
+        "toggle transparency grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+d",
+        "description": "Toggle transparency grid"
+      }
+    },
+    "ungroup": {
+      "label": "Ungroup",
+      "aliases": [
+        "ungroup"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+g",
+        "description": "Ungroup"
+      }
+    },
+    "hide_other_application_windows": {
+      "label": "Hide other application windows",
+      "aliases": [
+        "hide other application windows"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+h",
+        "description": "Hide other application windows"
+      }
+    },
+    "toggle_artboards": {
+      "label": "Toggle artboards",
+      "aliases": [
+        "toggle artboards"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+h",
+        "description": "Toggle artboards"
+      }
+    },
+    "color_settings": {
+      "label": "Color Settings...",
+      "aliases": [
+        "color settings..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+k",
+        "description": "Color Settings..."
+      }
+    },
+    "snap_to_grid": {
+      "label": "Snap to grid",
+      "aliases": [
+        "snap to grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+'",
+        "description": "Snap to grid"
+      }
+    },
+    "redo": {
+      "label": "Redo",
+      "aliases": [
+        "redo"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+z",
+        "description": "Redo"
+      }
+    },
+    "paste_in_place": {
+      "label": "Paste in place",
+      "aliases": [
+        "paste in place"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+v",
+        "description": "Paste in place"
+      }
+    },
+    "hide_bounding_box": {
+      "label": "Hide bounding box",
+      "aliases": [
+        "hide bounding box"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+b",
+        "description": "Hide bounding box"
+      }
+    },
+    "open_new_from_template": {
+      "label": "Open new from template",
+      "aliases": [
+        "open new from template"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+n",
+        "description": "Open new from template"
+      }
+    },
+    "move": {
+      "label": "Move...",
+      "aliases": [
+        "move..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+m",
+        "description": "Move..."
+      }
+    },
+    "navigate_to_next_document_group": {
+      "label": "Navigate to next document group",
+      "aliases": [
+        "navigate to next document group"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+f6",
+        "description": "Navigate to next document group"
+      }
+    },
+    "unlock_all": {
+      "label": "Unlock all",
+      "aliases": [
+        "unlock all"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+2",
+        "description": "Unlock all"
+      }
+    },
+    "release_guides": {
+      "label": "Release guides",
+      "aliases": [
+        "release guides"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+5",
+        "description": "Release guides"
+      }
+    },
+    "release_clipping_mask": {
+      "label": "Release clipping mask",
+      "aliases": [
+        "release clipping mask"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+7",
+        "description": "Release clipping mask"
+      }
+    },
+    "zoom_fit_all_in_window": {
+      "label": "Zoom fit all in window",
+      "aliases": [
+        "zoom fit all in window"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+0",
+        "description": "Zoom fit all in window"
+      }
+    },
+    "toggle_artboard_rulers": {
+      "label": "Toggle artboard rulers",
+      "aliases": [
+        "toggle artboard rulers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+r",
+        "description": "Toggle artboard rulers"
+      }
+    },
+    "toggle_paragraph_panel": {
+      "label": "Toggle Paragraph panel",
+      "aliases": [
+        "toggle paragraph panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+t",
+        "description": "Toggle Paragraph panel"
+      }
+    },
+    "toggle_pixel_preview_view": {
+      "label": "Toggle Pixel preview view",
+      "aliases": [
+        "toggle pixel preview view"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+y",
+        "description": "Toggle Pixel preview view"
+      }
+    },
+    "show_hidden_characters": {
+      "label": "Show hidden characters",
+      "aliases": [
+        "show hidden characters"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+i",
+        "description": "Show hidden characters"
+      }
+    },
+    "browse_in_bridge": {
+      "label": "Browse in Bridge",
+      "aliases": [
+        "browse in bridge"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+o",
+        "description": "Browse in Bridge"
+      }
+    },
+    "document_setup": {
+      "label": "Document setup...",
+      "aliases": [
+        "document setup..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+p",
+        "description": "Document setup..."
+      }
+    },
+    "save_as_copy": {
+      "label": "Save as copy...",
+      "aliases": [
+        "save as copy..."
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+s",
+        "description": "Save as copy..."
+      }
+    },
+    "toggle_gradient_annotator": {
+      "label": "Toggle gradient annotator",
+      "aliases": [
+        "toggle gradient annotator"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+g",
+        "description": "Toggle gradient annotator"
+      }
+    },
+    "average": {
+      "label": "Average",
+      "aliases": [
+        "average"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+j",
+        "description": "Average"
+      }
+    },
+    "snap_to_point": {
+      "label": "Snap to point",
+      "aliases": [
+        "snap to point"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+;",
+        "description": "Snap to point"
+      }
+    },
+    "lock_unlock_guides": {
+      "label": "Lock/Unlock guides",
+      "aliases": [
+        "lock/unlock guides",
+        "lock",
+        "unlock guides"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+'",
+        "description": "Lock/Unlock guides"
+      }
+    },
+    "make_live_paint": {
+      "label": "Make live paint",
+      "aliases": [
+        "make live paint"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+x",
+        "description": "Make live paint"
+      }
+    },
+    "envelope_distort_make_with_top_object": {
+      "label": "Envelope Distort: Make with Top Object",
+      "aliases": [
+        "envelope distort: make with top object"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+c",
+        "description": "Envelope Distort: Make with Top Object"
+      }
+    },
+    "envelope_distort_make_with_mesh": {
+      "label": "Envelope Distort: Make with Mesh",
+      "aliases": [
+        "envelope distort: make with mesh"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+m",
+        "description": "Envelope Distort: Make with Mesh"
+      }
+    },
+    "make_blend": {
+      "label": "Make blend",
+      "aliases": [
+        "make blend"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+b",
+        "description": "Make blend"
+      }
+    },
+    "toggle_between_fill_and_stroke": {
+      "label": "Toggle between fill and stroke",
+      "aliases": [
+        "toggle between fill and stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "x",
+        "description": "Toggle between fill and stroke"
+      }
+    },
+    "set_fill_and_stroke_to_default": {
+      "label": "Set fill and stroke to default",
+      "aliases": [
+        "set fill and stroke to default"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d",
+        "description": "Set fill and stroke to default"
+      }
+    },
+    "swap_fill_and_stroke": {
+      "label": "Swap fill and stroke",
+      "aliases": [
+        "swap fill and stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+x",
+        "description": "Swap fill and stroke"
+      }
+    },
+    "select_no_stroke_fill_mode": {
+      "label": "Select no stroke/fill mode",
+      "aliases": [
+        "select no stroke/fill mode",
+        "select no stroke",
+        "fill mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "/",
+        "description": "Select no stroke/fill mode"
+      }
+    },
+    "add_new_fill": {
+      "label": "Add new fill",
+      "aliases": [
+        "add new fill"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+/",
+        "description": "Add new fill"
+      }
+    },
+    "add_new_stroke": {
+      "label": "Add new stroke",
+      "aliases": [
+        "add new stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+/",
+        "description": "Add new stroke"
+      }
+    },
+    "set_bristle_brush_opacity": {
+      "label": "Set Bristle brush opacity",
+      "aliases": [
+        "set bristle brush opacity"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "0-9",
+        "description": "Set Bristle brush opacity"
+      }
+    },
+    "last_used_selection_tool": {
+      "label": "Last-used selection tool",
+      "aliases": [
+        "last-used selection tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl",
+        "description": "Last-used selection tool"
+      }
+    },
+    "direct_group_selection_tool": {
+      "label": "Direct/Group Selection tool",
+      "aliases": [
+        "direct/group selection tool",
+        "direct",
+        "group selection tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "Direct/Group Selection tool"
+      }
+    },
+    "add_to_selection": {
+      "label": "Add to selection",
+      "aliases": [
+        "add to selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Add to selection"
+      }
+    },
+    "subtract_from_selection": {
+      "label": "Subtract from selection",
+      "aliases": [
+        "subtract from selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Subtract from selection"
+      }
+    },
+    "select_artwork_in_active_artboard": {
+      "label": "Select artwork in active artboard",
+      "aliases": [
+        "select artwork in active artboard"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+a",
+        "description": "Select artwork in active artboard"
+      }
+    },
+    "select_behind_an_object": {
+      "label": "Select behind an object",
+      "aliases": [
+        "select behind an object"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "press ctrl+click twice",
+        "description": "Select behind an object"
+      }
+    },
+    "select_behind_in_isolation_mode": {
+      "label": "Select behind in isolation mode",
+      "aliases": [
+        "select behind in isolation mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click twice",
+        "description": "Select behind in isolation mode"
+      }
+    },
+    "set_origin_point_and_open_dialog_box_when_using_rotate_tool_scale_tool_reflect_tool_or_shear_tool": {
+      "label": "Set origin point and open dialog box when using Rotate tool, Scale tool, Reflect tool, or Shear tool",
+      "aliases": [
+        "set origin point and open dialog box when using rotate tool, scale tool, reflect tool, or shear tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click",
+        "description": "Set origin point and open dialog box when using Rotate tool, Scale tool, Reflect tool, or Shear tool"
+      }
+    },
+    "duplicate_and_transform_selection_when_using_selection_tool_scale_tool_reflect_tool_or_shear_tool": {
+      "label": "Duplicate and transform selection when using Selection tool, Scale tool, Reflect tool, or Shear tool",
+      "aliases": [
+        "duplicate and transform selection when using selection tool, scale tool, reflect tool, or shear tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+drag",
+        "description": "Duplicate and transform selection when using Selection tool, Scale tool, Reflect tool, or Shear tool"
+      }
+    },
+    "transform_pattern_when_using_selection_tool_scale_tool_reflect_tool_or_shear_tool": {
+      "label": "Transform pattern when using Selection tool, Scale tool, Reflect tool, or Shear tool",
+      "aliases": [
+        "transform pattern when using selection tool, scale tool, reflect tool, or shear tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "tilde+drag",
+        "description": "Transform pattern when using Selection tool, Scale tool, Reflect tool, or Shear tool"
+      }
+    },
+    "set_options": {
+      "label": "Set options",
+      "aliases": [
+        "set options"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click new button",
+        "description": "Set options"
+      }
+    },
+    "delete_without_confirmation": {
+      "label": "Delete without confirmation",
+      "aliases": [
+        "delete without confirmation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click delete button",
+        "description": "Delete without confirmation"
+      }
+    },
+    "apply_value_and_keep_text_box_active": {
+      "label": "Apply value and keep text box active",
+      "aliases": [
+        "apply value and keep text box active"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+enter",
+        "description": "Apply value and keep text box active"
+      }
+    },
+    "select_range_of_actions_brushes_layers_links_styles_or_swatches": {
+      "label": "Select range of actions, brushes, layers, links, styles, or swatches",
+      "aliases": [
+        "select range of actions, brushes, layers, links, styles, or swatches"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Select range of actions, brushes, layers, links, styles, or swatches"
+      }
+    },
+    "select_noncontiguous_actions_brushes_layers_links_styles_or_swatches": {
+      "label": "Select noncontiguous actions, brushes, layers , links, styles, or swatches",
+      "aliases": [
+        "select noncontiguous actions, brushes, layers , links, styles, or swatches"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click",
+        "description": "Select noncontiguous actions, brushes, layers , links, styles, or swatches"
+      }
+    },
+    "show_hide_all_panels": {
+      "label": "Show/Hide all panels",
+      "aliases": [
+        "show/hide all panels",
+        "show",
+        "hide all panels"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "tab",
+        "description": "Show/Hide all panels"
+      }
+    },
+    "show_hide_all_panels_except_the_tools_panel_and_control_panel": {
+      "label": "Show/Hide all panels except the Tools panel and Control panel",
+      "aliases": [
+        "show/hide all panels except the tools panel and control panel",
+        "show",
+        "hide all panels except the tools panel and control panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+tab",
+        "description": "Show/Hide all panels except the Tools panel and Control panel"
+      }
+    },
+    "move_selection": {
+      "label": "Move Selection",
+      "aliases": [
+        "move selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "arrows",
+        "description": "Move Selection"
+      }
+    },
+    "move_selection_10x": {
+      "label": "Move Selection 10x",
+      "aliases": [
+        "move selection 10x"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+arrows",
+        "description": "Move Selection 10x"
+      }
+    },
+    "lock_all_deselected_artwork": {
+      "label": "Lock all deselected artwork",
+      "aliases": [
+        "lock all deselected artwork"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+shift+2",
+        "description": "Lock all deselected artwork"
+      }
+    },
+    "hold_constrain_to_45": {
+      "label": "(Hold) Constrain to 45\u00b0",
+      "aliases": [
+        "(hold) constrain to 45\u00b0"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift",
+        "description": "(Hold) Constrain to 45\u00b0"
+      }
+    },
+    "constrain_a_shape_s_proportions_or_orientation_to": {
+      "label": "Constrain a shape\u2019s proportions or orientation to:",
+      "aliases": [
+        "constrain a shape\u2019s proportions or orientation to:"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+drag",
+        "description": "Constrain a shape\u2019s proportions or orientation to:"
+      }
+    },
+    "move_a_shape_while_drawing_it": {
+      "label": "Move a shape while drawing it",
+      "aliases": [
+        "move a shape while drawing it"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "spacebar+drag",
+        "description": "Move a shape while drawing it"
+      }
+    },
+    "draw_from_the_center_of_a_shape": {
+      "label": "Draw from the center of a shape",
+      "aliases": [
+        "draw from the center of a shape"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+drag",
+        "description": "Draw from the center of a shape"
+      }
+    },
+    "keep_the_inner_radius_of_a_star_constant": {
+      "label": "Keep the inner radius of a star constant",
+      "aliases": [
+        "keep the inner radius of a star constant"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then hold down ctrl",
+        "description": "Keep the inner radius of a star constant"
+      }
+    },
+    "keep_the_sides_of_a_star_straight": {
+      "label": "Keep the sides of a star straight",
+      "aliases": [
+        "keep the sides of a star straight"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+drag",
+        "description": "Keep the sides of a star straight"
+      }
+    },
+    "switch_between_an_open_and_closed_arc": {
+      "label": "Switch between an open and closed arc",
+      "aliases": [
+        "switch between an open and closed arc"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then hold down c",
+        "description": "Switch between an open and closed arc"
+      }
+    },
+    "flip_an_arc_keeping_the_reference_point_constant": {
+      "label": "Flip an arc, keeping the reference point constant",
+      "aliases": [
+        "flip an arc, keeping the reference point constant"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then hold down f",
+        "description": "Flip an arc, keeping the reference point constant"
+      }
+    },
+    "add_or_subtract_winds_from_a_spiral_while_increasing_the_length_of_the_spiral": {
+      "label": "Add or subtract winds from a spiral while increasing the length of the spiral",
+      "aliases": [
+        "add or subtract winds from a spiral while increasing the length of the spiral"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then alt+drag",
+        "description": "Add or subtract winds from a spiral while increasing the length of the spiral"
+      }
+    },
+    "change_the_decay_rate_of_a_spiral": {
+      "label": "Change the decay rate of a spiral",
+      "aliases": [
+        "change the decay rate of a spiral"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging then ctrl+drag",
+        "description": "Change the decay rate of a spiral"
+      }
+    },
+    "add_or_remove_horizontal_lines_from_a_rectangular_grid_or_concentric_lines_from_a_polar_grid": {
+      "label": "Add or remove horizontal lines from a rectangular grid or concentric lines from a polar grid",
+      "aliases": [
+        "add or remove horizontal lines from a rectangular grid or concentric lines from a polar grid"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then press the up arrow",
+        "description": "Add or remove horizontal lines from a rectangular grid or concentric lines from a polar grid"
+      }
+    },
+    "decrease_the_skew_value_for_horizontal_dividers_in_a_rectangular_grid_or_radial_dividers_in_a_polar_grid_by_10": {
+      "label": "Decrease the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%",
+      "aliases": [
+        "decrease the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then press f",
+        "description": "Decrease the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%"
+      }
+    },
+    "increase_the_skew_value_for_horizontal_dividers_in_a_rectangular_grid_or_radial_dividers_in_a_polar_grid_by_10": {
+      "label": "Increase the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%",
+      "aliases": [
+        "increase the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then press v",
+        "description": "Increase the skew value for horizontal dividers in a rectangular grid or radial dividers in a polar grid by 10%"
+      }
+    },
+    "decrease_the_skew_value_for_vertical_dividers_in_a_rectangular_grid_or_concentric_dividers_in_a_polar_grid_by_10": {
+      "label": "Decrease the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%",
+      "aliases": [
+        "decrease the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then press x",
+        "description": "Decrease the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%"
+      }
+    },
+    "increase_the_skew_value_for_vertical_dividers_in_a_rectangular_grid_or_concentric_dividers_in_a_polar_grid_by_10": {
+      "label": "Increase the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%",
+      "aliases": [
+        "increase the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "start dragging, then press c",
+        "description": "Increase the skew value for vertical dividers in a rectangular grid or concentric dividers in a polar grid by 10%"
+      }
+    },
+    "subtract_from_selection_tool_magic_wand": {
+      "label": "Subtract from selection",
+      "aliases": [
+        "subtract from selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click",
+        "description": "Subtract from selection"
+      }
+    },
+    "add_to_selection_tool_lasso": {
+      "label": "Add to selection",
+      "aliases": [
+        "add to selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+drag",
+        "description": "Add to selection"
+      }
+    },
+    "change_pointer_to_cross_hair": {
+      "label": "Change pointer to cross hair",
+      "aliases": [
+        "change pointer to cross hair"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "capslock",
+        "description": "Change pointer to cross hair"
+      }
+    },
+    "hold_convert_anchor_point_tool": {
+      "label": "(Hold) Convert Anchor Point tool",
+      "aliases": [
+        "(hold) convert anchor point tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "(Hold) Convert Anchor Point tool"
+      }
+    },
+    "drag_move_current_anchor_point_while_drawing_with_pen_tool": {
+      "label": "(Drag) Move current anchor point while drawing with Pen tool",
+      "aliases": [
+        "(drag) move current anchor point while drawing with pen tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "spacebar",
+        "description": "(Drag) Move current anchor point while drawing with Pen tool"
+      }
+    },
+    "hold_smooth_tool": {
+      "label": "(Hold) Smooth Tool",
+      "aliases": [
+        "(hold) smooth tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "(Hold) Smooth Tool"
+      }
+    },
+    "constrain_horizontally_vertically": {
+      "label": "Constrain horizontally/vertically",
+      "aliases": [
+        "constrain horizontally/vertically",
+        "constrain horizontally",
+        "vertically"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift",
+        "description": "Constrain horizontally/vertically"
+      }
+    },
+    "cut_a_straight_line": {
+      "label": "Cut a straight line",
+      "aliases": [
+        "cut a straight line"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "Cut a straight line"
+      }
+    },
+    "cut_at_45_or_90": {
+      "label": "Cut at 45\u00b0 or 90\u00b0",
+      "aliases": [
+        "cut at 45\u00b0 or 90\u00b0"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+alt+drag",
+        "description": "Cut at 45\u00b0 or 90\u00b0"
+      }
+    },
+    "hold_smooth_tool_tool_pencil": {
+      "label": "(Hold) Smooth Tool",
+      "aliases": [
+        "(hold) smooth tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "(Hold) Smooth Tool"
+      }
+    },
+    "hold_add_anchor_point_tool": {
+      "label": "(Hold) Add Anchor Point tool",
+      "aliases": [
+        "(hold) add anchor point tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "(Hold) Add Anchor Point tool"
+      }
+    },
+    "sample_color": {
+      "label": "Sample color",
+      "aliases": [
+        "sample color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift",
+        "description": "Sample color"
+      }
+    },
+    "sample_style_and_append_appearance_of_currently_selected_item": {
+      "label": "Sample style and append appearance of currently selected item",
+      "aliases": [
+        "sample style and append appearance of currently selected item"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+click",
+        "description": "Sample style and append appearance of currently selected item"
+      }
+    },
+    "exit_type_edit_mode": {
+      "label": "Exit type edit mode",
+      "aliases": [
+        "exit type edit mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+enter",
+        "description": "Exit type edit mode"
+      }
+    },
+    "move_one_character_right": {
+      "label": "Move one character right",
+      "aliases": [
+        "move one character right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "right",
+        "description": "Move one character right"
+      }
+    },
+    "move_one_character_left": {
+      "label": "Move one character left",
+      "aliases": [
+        "move one character left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "left",
+        "description": "Move one character left"
+      }
+    },
+    "move_up_one_line": {
+      "label": "Move up one line",
+      "aliases": [
+        "move up one line"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "Move up one line"
+      }
+    },
+    "move_down_one_line": {
+      "label": "Move down one line",
+      "aliases": [
+        "move down one line"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "down",
+        "description": "Move down one line"
+      }
+    },
+    "move_one_word_right": {
+      "label": "Move one word right",
+      "aliases": [
+        "move one word right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+right",
+        "description": "Move one word right"
+      }
+    },
+    "move_one_word_left": {
+      "label": "Move one word left",
+      "aliases": [
+        "move one word left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+left",
+        "description": "Move one word left"
+      }
+    },
+    "move_up_one_paragraph": {
+      "label": "Move up one paragraph",
+      "aliases": [
+        "move up one paragraph"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+up",
+        "description": "Move up one paragraph"
+      }
+    },
+    "move_down_one_paragraph": {
+      "label": "Move down one paragraph",
+      "aliases": [
+        "move down one paragraph"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+down",
+        "description": "Move down one paragraph"
+      }
+    },
+    "select_one_word_right": {
+      "label": "Select one word right",
+      "aliases": [
+        "select one word right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+right",
+        "description": "Select one word right"
+      }
+    },
+    "select_one_word_left": {
+      "label": "Select one word left",
+      "aliases": [
+        "select one word left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+left",
+        "description": "Select one word left"
+      }
+    },
+    "select_one_paragraph_before": {
+      "label": "Select one paragraph before",
+      "aliases": [
+        "select one paragraph before"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+up",
+        "description": "Select one paragraph before"
+      }
+    },
+    "select_one_paragraph_after": {
+      "label": "Select one paragraph after",
+      "aliases": [
+        "select one paragraph after"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+ctrl+down",
+        "description": "Select one paragraph after"
+      }
+    },
+    "extend_existing_selection": {
+      "label": "Extend existing selection",
+      "aliases": [
+        "extend existing selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Extend existing selection"
+      }
+    },
+    "align_paragraph_left": {
+      "label": "Align paragraph left",
+      "aliases": [
+        "align paragraph left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+l",
+        "description": "Align paragraph left"
+      }
+    },
+    "align_paragraph_right": {
+      "label": "Align paragraph right",
+      "aliases": [
+        "align paragraph right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+r",
+        "description": "Align paragraph right"
+      }
+    },
+    "align_paragraph_center": {
+      "label": "Align paragraph center",
+      "aliases": [
+        "align paragraph center"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+c",
+        "description": "Align paragraph center"
+      }
+    },
+    "justify_paragraph": {
+      "label": "Justify paragraph",
+      "aliases": [
+        "justify paragraph"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+j",
+        "description": "Justify paragraph"
+      }
+    },
+    "insert_soft_return": {
+      "label": "Insert soft return",
+      "aliases": [
+        "insert soft return"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+enter",
+        "description": "Insert soft return"
+      }
+    },
+    "highlight_kerning": {
+      "label": "Highlight kerning",
+      "aliases": [
+        "highlight kerning"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+k",
+        "description": "Highlight kerning"
+      }
+    },
+    "reset_horizontal_scale_to_100": {
+      "label": "Reset horizontal scale to 100%",
+      "aliases": [
+        "reset horizontal scale to 100%"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+x",
+        "description": "Reset horizontal scale to 100%"
+      }
+    },
+    "increase_leading": {
+      "label": "Increase leading",
+      "aliases": [
+        "increase leading"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+up",
+        "description": "Increase leading"
+      }
+    },
+    "decrease_leading": {
+      "label": "Decrease leading",
+      "aliases": [
+        "decrease leading"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+down",
+        "description": "Decrease leading"
+      }
+    },
+    "reset_tracking_kerning_to_0": {
+      "label": "Reset tracking/kerning to 0",
+      "aliases": [
+        "reset tracking/kerning to 0",
+        "reset tracking",
+        "kerning to 0"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+q",
+        "description": "Reset tracking/kerning to 0"
+      }
+    },
+    "increase_kerning": {
+      "label": "Increase kerning",
+      "aliases": [
+        "increase kerning"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+right",
+        "description": "Increase kerning"
+      }
+    },
+    "decrease_kerning": {
+      "label": "Decrease kerning",
+      "aliases": [
+        "decrease kerning"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+left",
+        "description": "Decrease kerning"
+      }
+    },
+    "5x_increase_kerning": {
+      "label": "5x Increase kerning",
+      "aliases": [
+        "5x increase kerning"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+right",
+        "description": "5x Increase kerning"
+      }
+    },
+    "5x_decrease_kerning": {
+      "label": "5x Decrease kerning",
+      "aliases": [
+        "5x decrease kerning"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+left",
+        "description": "5x Decrease kerning"
+      }
+    },
+    "increase_baseline_shift": {
+      "label": "Increase baseline shift",
+      "aliases": [
+        "increase baseline shift"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+right",
+        "description": "Increase baseline shift"
+      }
+    },
+    "decrease_baseline_shift": {
+      "label": "Decrease baseline shift",
+      "aliases": [
+        "decrease baseline shift"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shift+left",
+        "description": "Decrease baseline shift"
+      }
+    },
+    "switch_type_tools": {
+      "label": "Switch Type Tools",
+      "aliases": [
+        "switch type tools"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt",
+        "description": "Switch Type Tools"
+      }
+    },
+    "expand_collapse_entire_hierarchy_for_action_set": {
+      "label": "Expand/Collapse entire hierarchy for action set",
+      "aliases": [
+        "expand/collapse entire hierarchy for action set",
+        "expand",
+        "collapse entire hierarchy for action set"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click expansion triangle",
+        "description": "Expand/Collapse entire hierarchy for action set"
+      }
+    },
+    "set_options_for_action_set": {
+      "label": "Set options for action set",
+      "aliases": [
+        "set options for action set"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click folder icon",
+        "description": "Set options for action set"
+      }
+    },
+    "play_a_single_command": {
+      "label": "Play a single command",
+      "aliases": [
+        "play a single command"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click play current selection button",
+        "description": "Play a single command"
+      }
+    },
+    "begin_recording_actions_without_confirmation": {
+      "label": "Begin recording actions without confirmation",
+      "aliases": [
+        "begin recording actions without confirmation"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click new action button",
+        "description": "Begin recording actions without confirmation"
+      }
+    },
+    "open_brush_options_dialog_box": {
+      "label": "Open Brush Options dialog box",
+      "aliases": [
+        "open brush options dialog box"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click brush",
+        "description": "Open Brush Options dialog box"
+      }
+    },
+    "duplicate_brush": {
+      "label": "Duplicate brush",
+      "aliases": [
+        "duplicate brush"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "drag brush to new brush button",
+        "description": "Duplicate brush"
+      }
+    },
+    "increase_value": {
+      "label": "Increase value",
+      "aliases": [
+        "increase value"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "Increase value"
+      }
+    },
+    "decrease_value": {
+      "label": "Decrease value",
+      "aliases": [
+        "decrease value"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "down",
+        "description": "Decrease value"
+      }
+    },
+    "increase_value_large": {
+      "label": "Increase value large",
+      "aliases": [
+        "increase value large"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+up",
+        "description": "Increase value large"
+      }
+    },
+    "decrease_value_large": {
+      "label": "Decrease value large",
+      "aliases": [
+        "decrease value large"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+down",
+        "description": "Decrease value large"
+      }
+    },
+    "highlight_font_field": {
+      "label": "Highlight font field",
+      "aliases": [
+        "highlight font field"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+shift+f",
+        "description": "Highlight font field"
+      }
+    },
+    "color_bar_select_compliment_color": {
+      "label": "Color Bar: select compliment color",
+      "aliases": [
+        "color bar: select compliment color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click",
+        "description": "Color Bar: select compliment color"
+      }
+    },
+    "color_bar_change_the_nonactive_fill_stroke": {
+      "label": "Color Bar: change the nonactive fill/stroke",
+      "aliases": [
+        "color bar: change the nonactive fill/stroke",
+        "color bar: change the nonactive fill",
+        "stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click",
+        "description": "Color Bar: change the nonactive fill/stroke"
+      }
+    },
+    "color_bar_select_compliment_for_nonactive_color": {
+      "label": "Color Bar: select compliment for nonactive color",
+      "aliases": [
+        "color bar: select compliment for nonactive color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+click",
+        "description": "Color Bar: select compliment for nonactive color"
+      }
+    },
+    "color_bar_invert_color": {
+      "label": "Color Bar: invert color",
+      "aliases": [
+        "color bar: invert color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+click",
+        "description": "Color Bar: invert color"
+      }
+    },
+    "color_bar_invert_nonactive_color": {
+      "label": "Color Bar: invert nonactive color",
+      "aliases": [
+        "color bar: invert nonactive color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+alt+click",
+        "description": "Color Bar: invert nonactive color"
+      }
+    },
+    "color_bar_change_the_color_mode": {
+      "label": "Color Bar: change the color mode",
+      "aliases": [
+        "color bar: change the color mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Color Bar: change the color mode"
+      }
+    },
+    "color_slider_move_color_sliders_in_tandem": {
+      "label": "Color Slider: move color sliders in tandem",
+      "aliases": [
+        "color slider: move color sliders in tandem"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+drag",
+        "description": "Color Slider: move color sliders in tandem"
+      }
+    },
+    "numerical_field_right_toggle_between_and_0_255_values_for_rgb": {
+      "label": "Numerical Field Right: Toggle between % and 0-255 values for RGB",
+      "aliases": [
+        "numerical field right: toggle between % and 0-255 values for rgb"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click",
+        "description": "Numerical Field Right: Toggle between % and 0-255 values for RGB"
+      }
+    },
+    "select_all_objects_on_the_layer": {
+      "label": "Select all objects on the layer",
+      "aliases": [
+        "select all objects on the layer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click layer name",
+        "description": "Select all objects on the layer"
+      }
+    },
+    "show_hide_all_layers_but_the_selected_one": {
+      "label": "Show/hide all layers but the selected one",
+      "aliases": [
+        "show/hide all layers but the selected one",
+        "show",
+        "hide all layers but the selected one"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click eye icon",
+        "description": "Show/hide all layers but the selected one"
+      }
+    },
+    "select_outline_preview_view_for_the_selected_layer": {
+      "label": "Select Outline/Preview view for the selected layer",
+      "aliases": [
+        "select outline/preview view for the selected layer",
+        "select outline",
+        "preview view for the selected layer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click eye icon",
+        "description": "Select Outline/Preview view for the selected layer"
+      }
+    },
+    "selects_outline_preview_view_for_all_other_layers": {
+      "label": "Selects Outline/Preview view for all other layers",
+      "aliases": [
+        "selects outline/preview view for all other layers",
+        "selects outline",
+        "preview view for all other layers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+click eye icon",
+        "description": "Selects Outline/Preview view for all other layers"
+      }
+    },
+    "lock_unlock_all_other_layers": {
+      "label": "Lock/unlock all other layers",
+      "aliases": [
+        "lock/unlock all other layers",
+        "lock",
+        "unlock all other layers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click lock icon",
+        "description": "Lock/unlock all other layers"
+      }
+    },
+    "expand_all_sublayers_to_display_entire_hierarchy": {
+      "label": "Expand all sublayers to display entire hierarchy",
+      "aliases": [
+        "expand all sublayers to display entire hierarchy"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click expansion triangle",
+        "description": "Expand all sublayers to display entire hierarchy"
+      }
+    },
+    "set_options_as_you_create_new_layer": {
+      "label": "Set options as you create new layer",
+      "aliases": [
+        "set options as you create new layer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click new layer button",
+        "description": "Set options as you create new layer"
+      }
+    },
+    "set_options_as_you_create_new_sublayer": {
+      "label": "Set options as you create new sublayer",
+      "aliases": [
+        "set options as you create new sublayer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click new sublayer button",
+        "description": "Set options as you create new sublayer"
+      }
+    },
+    "place_new_sublayer_at_bottom_of_layer_list": {
+      "label": "Place new sublayer at bottom of layer list",
+      "aliases": [
+        "place new sublayer at bottom of layer list"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+click new sublayer button",
+        "description": "Place new sublayer at bottom of layer list"
+      }
+    },
+    "place_layer_at_top_of_layer_list": {
+      "label": "Place layer at top of layer list",
+      "aliases": [
+        "place layer at top of layer list"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click new layer button",
+        "description": "Place layer at top of layer list"
+      }
+    },
+    "place_layer_below_selected_layer": {
+      "label": "Place layer below selected layer",
+      "aliases": [
+        "place layer below selected layer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+click new layer button",
+        "description": "Place layer below selected layer"
+      }
+    },
+    "copy_the_selection_to_a_layer_sublayer_or_group": {
+      "label": "Copy the selection to a layer, sublayer, or group",
+      "aliases": [
+        "copy the selection to a layer, sublayer, or group"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+drag selection",
+        "description": "Copy the selection to a layer, sublayer, or group"
+      }
+    },
+    "create_new_spot_color": {
+      "label": "Create new spot color",
+      "aliases": [
+        "create new spot color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click new swatch button",
+        "description": "Create new spot color"
+      }
+    },
+    "create_new_global_process_color": {
+      "label": "Create new global process color",
+      "aliases": [
+        "create new global process color"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+click new swatch button",
+        "description": "Create new global process color"
+      }
+    },
+    "replace_swatch_with_another": {
+      "label": "Replace swatch with another",
+      "aliases": [
+        "replace swatch with another"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+drag a swatch over another",
+        "description": "Replace swatch with another"
+      }
+    },
+    "apply_and_keep_focus_in_edit_field": {
+      "label": "Apply and keep focus in edit field",
+      "aliases": [
+        "apply and keep focus in edit field"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+enter",
+        "description": "Apply and keep focus in edit field"
+      }
+    },
+    "apply_and_copy_object": {
+      "label": "Apply and copy object",
+      "aliases": [
+        "apply and copy object"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+enter",
+        "description": "Apply and copy object"
+      }
+    },
+    "apply_and_scale_option_proportionately_for_width_or_height": {
+      "label": "Apply and scale option proportionately for width or height",
+      "aliases": [
+        "apply and scale option proportionately for width or height"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+enter",
+        "description": "Apply and scale option proportionately for width or height"
+      }
+    },
+    "mask_thumbnail_change_mask_to_grayscale_image_for_editing": {
+      "label": "Mask Thumbnail: Change mask to grayscale image for editing",
+      "aliases": [
+        "mask thumbnail: change mask to grayscale image for editing"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click",
+        "description": "Mask Thumbnail: Change mask to grayscale image for editing"
+      }
+    },
+    "mask_thumbnail_disable_opacity_mask": {
+      "label": "Mask Thumbnail: Disable opacity mask",
+      "aliases": [
+        "mask thumbnail: disable opacity mask"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Mask Thumbnail: Disable opacity mask"
+      }
+    },
+    "disabled_mask_thumbnail_re_enable_opacity_mask": {
+      "label": "Disabled Mask Thumbnail: Re-enable opacity mask",
+      "aliases": [
+        "disabled mask thumbnail: re-enable opacity mask"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click",
+        "description": "Disabled Mask Thumbnail: Re-enable opacity mask"
+      }
+    },
+    "opacity_field_increase_by_1": {
+      "label": "Opacity Field: Increase by 1",
+      "aliases": [
+        "opacity field: increase by 1"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "Opacity Field: Increase by 1"
+      }
+    },
+    "opacity_field_decrease_by_1": {
+      "label": "Opacity Field: Decrease by 1",
+      "aliases": [
+        "opacity field: decrease by 1"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "down",
+        "description": "Opacity Field: Decrease by 1"
+      }
+    },
+    "opacity_field_increase_by_10": {
+      "label": "Opacity Field: Increase by 10",
+      "aliases": [
+        "opacity field: increase by 10"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+up",
+        "description": "Opacity Field: Increase by 10"
+      }
+    },
+    "opacity_field_decrease_by_10": {
+      "label": "Opacity Field: Decrease by 10",
+      "aliases": [
+        "opacity field: decrease by 10"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+down",
+        "description": "Opacity Field: Decrease by 10"
+      }
+    },
+    "use_shape_mode_buttons_in_pathfinder_panel_to_create_compound_paths": {
+      "label": "Use shape mode buttons in Pathfinder panel to create compound paths",
+      "aliases": [
+        "use shape mode buttons in pathfinder panel to create compound paths"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+shape mode",
+        "description": "Use shape mode buttons in Pathfinder panel to create compound paths"
+      }
+    },
+    "erase_unwanted_closed_regions_created_using_shape_builder_tool": {
+      "label": "Erase unwanted closed regions created using Shape Builder tool",
+      "aliases": [
+        "erase unwanted closed regions created using shape builder tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+click the closed region",
+        "description": "Erase unwanted closed regions created using Shape Builder tool"
+      }
+    },
+    "display_rectangular_marquee_to_easily_merge_multiple_paths": {
+      "label": "Display rectangular marquee to easily merge multiple paths",
+      "aliases": [
+        "display rectangular marquee to easily merge multiple paths"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click+drag",
+        "description": "Display rectangular marquee to easily merge multiple paths"
+      }
+    },
+    "toggle_between_screen_modes_normal_screen_mode_full_screen_mode_with_menu_bar_full_screen_mode": {
+      "label": "Toggle between screen modes: Normal Screen Mode, Full Screen Mode with Menu Bar, Full Screen Mode",
+      "aliases": [
+        "toggle between screen modes: normal screen mode, full screen mode with menu bar, full screen mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f",
+        "description": "Toggle between screen modes: Normal Screen Mode, Full Screen Mode with Menu Bar, Full Screen Mode"
+      }
+    },
+    "fit_imageable_area_in_window": {
+      "label": "Fit imageable area in window",
+      "aliases": [
+        "fit imageable area in window"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click hand tool",
+        "description": "Fit imageable area in window"
+      }
+    },
+    "magnify_100": {
+      "label": "Magnify 100%",
+      "aliases": [
+        "magnify 100%"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click zoom tool",
+        "description": "Magnify 100%"
+      }
+    },
+    "switch_to_hand_tool": {
+      "label": "Switch to Hand tool",
+      "aliases": [
+        "switch to hand tool"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "spacebar",
+        "description": "Switch to Hand tool"
+      }
+    },
+    "switch_to_zoom_tool_in_magnify_mode": {
+      "label": "Switch to Zoom tool in magnify mode",
+      "aliases": [
+        "switch to zoom tool in magnify mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+spacebar",
+        "description": "Switch to Zoom tool in magnify mode"
+      }
+    },
+    "switch_to_zoom_tool_in_reduce_mode": {
+      "label": "Switch to Zoom tool in reduce mode",
+      "aliases": [
+        "switch to zoom tool in reduce mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+spacebar",
+        "description": "Switch to Zoom tool in reduce mode"
+      }
+    },
+    "hide_unselected_artwork": {
+      "label": "Hide unselected artwork",
+      "aliases": [
+        "hide unselected artwork"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+shift+3",
+        "description": "Hide unselected artwork"
+      }
+    },
+    "convert_between_horizontal_and_vertical_guide": {
+      "label": "Convert between horizontal and vertical guide",
+      "aliases": [
+        "convert between horizontal and vertical guide"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+drag guide",
+        "description": "Convert between horizontal and vertical guide"
+      }
+    },
+    "release_guide": {
+      "label": "Release guide",
+      "aliases": [
+        "release guide"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift-double+click guide",
+        "description": "Release guide"
+      }
+    },
+    "show_hide_artboards": {
+      "label": "Show/Hide artboards",
+      "aliases": [
+        "show/hide artboards",
+        "show",
+        "hide artboards"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+h",
+        "description": "Show/Hide artboards"
+      }
+    },
+    "show_hide_artboard_rulers": {
+      "label": "Show/Hide artboard rulers",
+      "aliases": [
+        "show/hide artboard rulers",
+        "show",
+        "hide artboard rulers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+r",
+        "description": "Show/Hide artboard rulers"
+      }
+    },
+    "view_all_artboards_in_window": {
+      "label": "View all artboards in window",
+      "aliases": [
+        "view all artboards in window"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+0",
+        "description": "View all artboards in window"
+      }
+    },
+    "paste_in_place_on_the_active_artboard": {
+      "label": "Paste in place on the active artboard",
+      "aliases": [
+        "paste in place on the active artboard"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+v",
+        "description": "Paste in place on the active artboard"
+      }
+    },
+    "exit_artboard_tool_mode": {
+      "label": "Exit Artboard tool mode",
+      "aliases": [
+        "exit artboard tool mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "esc",
+        "description": "Exit Artboard tool mode"
+      }
+    },
+    "create_artboard_inside_another_artboard": {
+      "label": "Create artboard inside another artboard",
+      "aliases": [
+        "create artboard inside another artboard"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+drag",
+        "description": "Create artboard inside another artboard"
+      }
+    },
+    "select_multiple_artboards_in_the_artboards_panel": {
+      "label": "Select multiple artboards in the Artboards panel",
+      "aliases": [
+        "select multiple artboards in the artboards panel"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+click",
+        "description": "Select multiple artboards in the Artboards panel"
+      }
+    },
+    "navigate_to_next_document": {
+      "label": "Navigate to next document",
+      "aliases": [
+        "navigate to next document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f6",
+        "description": "Navigate to next document"
+      }
+    },
+    "navigate_to_previous_document": {
+      "label": "Navigate to previous document",
+      "aliases": [
+        "navigate to previous document"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f6",
+        "description": "Navigate to previous document"
+      }
+    },
+    "navigate_to_next_document_group_view_artwork": {
+      "label": "Navigate to next document group",
+      "aliases": [
+        "navigate to next document group"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+f6",
+        "description": "Navigate to next document group"
+      }
+    },
+    "navigate_to_previous_document_group": {
+      "label": "Navigate to previous document group",
+      "aliases": [
+        "navigate to previous document group"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+alt+shift+f6",
+        "description": "Navigate to previous document group"
+      }
+    },
+    "save_multiple_artboards_to_illustrator_cs3_or_earlier_format": {
+      "label": "Save multiple artboards to Illustrator CS3 or earlier format",
+      "aliases": [
+        "save multiple artboards to illustrator cs3 or earlier format"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+v",
+        "description": "Save multiple artboards to Illustrator CS3 or earlier format"
+      }
+    },
+    "select_opposite_live_paint_bucket_tool_options": {
+      "label": "Select opposite Live Paint Bucket tool options",
+      "aliases": [
+        "select opposite live paint bucket tool options"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+live paint bucket tool",
+        "description": "Select opposite Live Paint Bucket tool options"
+      }
+    },
+    "fill_across_unstroked_edges_into_adjacent_faces": {
+      "label": "Fill across unstroked edges into adjacent faces",
+      "aliases": [
+        "fill across unstroked edges into adjacent faces"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click+live paint bucket tool",
+        "description": "Fill across unstroked edges into adjacent faces"
+      }
+    },
+    "fill_all_faces_that_have_same_fill_and_stroke_all_edges_that_have_same_stroke": {
+      "label": "Fill all faces that have same fill and stroke all edges that have same stroke",
+      "aliases": [
+        "fill all faces that have same fill and stroke all edges that have same stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "triple+click+live paint bucket tool",
+        "description": "Fill all faces that have same fill and stroke all edges that have same stroke"
+      }
+    },
+    "add_to_subtract_from_a_selection": {
+      "label": "Add to/subtract from a selection",
+      "aliases": [
+        "add to/subtract from a selection",
+        "add to",
+        "subtract from a selection"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift+click+live paint selection tool",
+        "description": "Add to/subtract from a selection"
+      }
+    },
+    "select_all_connected_faces_edges_with_same_fill_stroke": {
+      "label": "Select all connected faces /edges with same fill/stroke",
+      "aliases": [
+        "select all connected faces /edges with same fill/stroke",
+        "select all connected faces",
+        "edges with same fill",
+        "stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "double+click+live paint selection tool",
+        "description": "Select all connected faces /edges with same fill/stroke"
+      }
+    },
+    "select_all_faces_edges_with_same_fill_stroke": {
+      "label": "Select all faces/edges with same fill/stroke",
+      "aliases": [
+        "select all faces/edges with same fill/stroke",
+        "select all faces",
+        "edges with same fill",
+        "stroke"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "triple+click+live paint selection tool",
+        "description": "Select all faces/edges with same fill/stroke"
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "update_image_size": {
+    "keys": "ctrl+u",
+    "description": "Update Image Size"
+  },
+  "increment_by_1": {
+    "keys": "ctrl+up",
+    "description": "Increment by 1"
+  },
+  "encode_decode_image_to_data_url": {
+    "keys": "ctrl+'",
+    "description": "Encode/Decode Image to data:URL"
+  },
+  "increment_by_0_1": {
+    "keys": "alt+up",
+    "description": "Increment by 0.1"
+  },
+  "go_to_edit_point": {
+    "keys": "ctrl+alt+right",
+    "description": "Go to Edit Point"
+  },
+  "split_join_tag": {
+    "keys": "shift+ctrl+`",
+    "description": "Split/Join Tag"
+  },
+  "toggle_comment": {
+    "keys": "shift+ctrl+/",
+    "description": "Toggle Comment"
+  },
+  "decrement_by_0_1": {
+    "keys": "alt+down",
+    "description": "Decrement by 0.1"
+  },
+  "interactive_expand_abbreviation": {
+    "keys": "ctrl+alt+enter",
+    "description": "Interactive \u201cExpand Abbreviation\u201d"
+  },
+  "reflect_css_value": {
+    "keys": "shift+ctrl+r",
+    "description": "Reflect CSS Value"
+  },
+  "wrap_with_abbreviation": {
+    "keys": "shift+ctrl+g",
+    "description": "Wrap With Abbreviation"
+  },
+  "go_to_matching_pair": {
+    "keys": "ctrl+alt+j",
+    "description": "Go to Matching Pair"
+  },
+  "remove_tag": {
+    "keys": "shift+ctrl+;",
+    "description": "Remove Tag"
+  },
+  "decrement_by_10": {
+    "keys": "shift+alt+down",
+    "description": "Decrement by 10"
+  },
+  "expand_abbreviation": {
+    "keys": "tab",
+    "description": "Expand Abbreviation"
+  },
+  "evaluate_math_expression": {
+    "keys": "shift+ctrl+y",
+    "description": "Evaluate Math Expression"
+  },
+  "match_tag_pair_inward": {
+    "keys": "shift+ctrl+0",
+    "description": "Match Tag Pair Inward"
+  },
+  "increment_by_10": {
+    "keys": "shift+alt+up",
+    "description": "Increment by 10"
+  },
+  "decrement_by_1": {
+    "keys": "ctrl+down",
+    "description": "Decrement by 1"
+  },
+  "select_item": {
+    "keys": "shift+ctrl+.",
+    "description": "Select Item"
+  },
+  "rename_tag": {
+    "keys": "shift+ctrl+'",
+    "description": "Rename Tag"
+  },
+  "match_tag_pair_outward": {
+    "keys": "ctrl+,",
+    "description": "Match Tag Pair Outward"
+  }
+}

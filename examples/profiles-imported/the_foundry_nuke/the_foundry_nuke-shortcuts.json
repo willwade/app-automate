@@ -1,0 +1,842 @@
+{
+  "scrub_the_value_up_or_down_fast": {
+    "keys": "left_arrow",
+    "description": "Scrub the value up or down fast"
+  },
+  "select_all_curves": {
+    "keys": "ctrl+a",
+    "description": "Select all curves"
+  },
+  "change_interpolation_of_selected_control_points_to_cubic": {
+    "keys": "c",
+    "description": "Change interpolation of selected control points to Cubic"
+  },
+  "copy_selected_curves": {
+    "keys": "ctrl+shift+c",
+    "description": "Copy selected curves"
+  },
+  "copy_selected_keys": {
+    "keys": "ctrl+c",
+    "description": "Copy selected keys"
+  },
+  "toggle_the_always_in_the_dope_sheet_box_on_the_node_s_properties_panel_when_active_the_node_always_displays_in_the_dope_sheet_instead_of_just_displaying_when_its_properties_panel_is_open": {
+    "keys": "alt+d",
+    "description": "Toggle the always in the Dope Sheet box on the node\u2019s properties panel. When active, the node always displays in the Dope Sheet, instead of just displaying when its properties panel is open"
+  },
+  "copy_expressions": {
+    "keys": "ctrl+e",
+    "description": "Copy expressions"
+  },
+  "fit_selection_in_the_window": {
+    "keys": "f",
+    "description": "Fit selection in the window"
+  },
+  "change_interpolation_of_selected_control_points_to_horizontal": {
+    "keys": "h",
+    "description": "Change interpolation of selected control points to Horizontal"
+  },
+  "change_interpolation_of_selected_control_points_to_constant": {
+    "keys": "k",
+    "description": "Change interpolation of selected control points to Constant"
+  },
+  "change_interpolation_of_selected_control_points_to_linear": {
+    "keys": "l",
+    "description": "Change interpolation of selected control points to Linear"
+  },
+  "copy_links": {
+    "keys": "ctrl+l",
+    "description": "Copy links"
+  },
+  "change_interpolation_of_selected_control_points_to_catmull_rom": {
+    "keys": "r",
+    "description": "Change interpolation of selected control points to Catmull-Rom"
+  },
+  "paste_curve": {
+    "keys": "ctrl+v",
+    "description": "Paste curve"
+  },
+  "break_selected_control_points_handles": {
+    "keys": "x",
+    "description": "Break selected control points\u2019 handles"
+  },
+  "cut_selected_keys": {
+    "keys": "ctrl+x",
+    "description": "Cut selected keys"
+  },
+  "change_interpolation_of_selected_control_points_to_smooth": {
+    "keys": "z",
+    "description": "Change interpolation of selected control points to Smooth "
+  },
+  "left_justify_selected_text": {
+    "keys": "ctrl+b",
+    "description": "Left justify selected text"
+  },
+  "erase_or_delete_left": {
+    "keys": "backspace",
+    "description": "Erase or Delete Left"
+  },
+  "copy": {
+    "keys": "ctrl+c",
+    "description": "Copy"
+  },
+  "move_cursor_to_end_of_selected_text": {
+    "keys": "ctrl+e",
+    "description": "Move cursor to end of selected text"
+  },
+  "right_justify_selected_text": {
+    "keys": "ctrl+f",
+    "description": "Right justify selected text"
+  },
+  "delete_text_from_the_cursor_to_the_next_space": {
+    "keys": "ctrl+k",
+    "description": "Delete text from the cursor to the next space"
+  },
+  "bottom_justify_selected_text": {
+    "keys": "ctrl+n",
+    "description": "Bottom justify selected text"
+  },
+  "top_justify_selected_text": {
+    "keys": "ctrl+p",
+    "description": "Top justify selected text"
+  },
+  "paste": {
+    "keys": "ctrl+shift+v",
+    "description": "Paste "
+  },
+  "paste_knob_values": {
+    "keys": "alt+ctrl+v",
+    "description": "Paste knob values"
+  },
+  "paste_editing": {
+    "keys": "ctrl+v",
+    "description": "Paste"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "description": "Cut"
+  },
+  "3d_view_bottom_orthographic": {
+    "keys": "shift+c",
+    "description": "3D view, bottom orthographic"
+  },
+  "go_to_a_specific_frame": {
+    "keys": "alt+g",
+    "description": "Go to a specific frame"
+  },
+  "display_script_information_such_as_the_node_count_channel_count_cache_usage_and_whether_the_script_is_in_full_res_or_proxy_mode": {
+    "keys": "alt+i",
+    "description": "Display script information, such as the node count, channel count, cache usage, and whether the script is in full-res or proxy mode"
+  },
+  "open_new_viewer_window": {
+    "keys": "ctrl+i",
+    "description": "Open new Viewer window"
+  },
+  "toggle_between_unlocked_and_locked_3d_view_mode_for_selected_camera_or_light": {
+    "keys": "ctrl+l",
+    "description": "Toggle between Unlocked and Locked 3D view mode for selected Camera or Light"
+  },
+  "launch_a_new_project_window_in_a_new_instance_of_nuke": {
+    "keys": "ctrl+n",
+    "description": "Launch a new project window in a new instance of Nuke"
+  },
+  "search_by_node_name_or_class": {
+    "keys": "numslash",
+    "description": "Search by node name or class"
+  },
+  "open_a_script_file": {
+    "keys": "ctrl+o",
+    "description": "Open a script file"
+  },
+  "exit_nuke": {
+    "keys": "ctrl+q",
+    "description": "Exit Nuke"
+  },
+  "make_the_active_window_fullscreen": {
+    "keys": "alt+s",
+    "description": "Make the active  window fullscreen"
+  },
+  "open_the_nuke_preferences_dialog": {
+    "keys": "shift+s",
+    "description": "Open the Nuke Preferences dialog"
+  },
+  "save_script_and_increment_version_number": {
+    "keys": "alt+shift+s",
+    "description": "Save script and increment version number"
+  },
+  "save_script_and_specify_name": {
+    "keys": "ctrl+shift+s",
+    "description": "Save script and specify name "
+  },
+  "search_by_node_name_or_class_global_context": {
+    "keys": "slash",
+    "description": "Search by node name or class"
+  },
+  "cycle_through_tabs_in_the_current_pane_note_that_this_does_not_work_if_the_focus_is_on_the_input_pane_of_the_script_editor": {
+    "keys": "ctrl+t",
+    "description": "Cycle through tabs in the current pane. Note that this does not work if the focus is on the input pane of the Script Editor"
+  },
+  "3d_2d_view_toggle": {
+    "keys": "tab",
+    "description": "3D / 2D view toggle"
+  },
+  "enable_or_disable_previewing_output_on_an_external_broadcast_video_monitor": {
+    "keys": "ctrl+u",
+    "description": "Enable or disable previewing output on an external broadcast video monitor"
+  },
+  "3d_view_perspective": {
+    "keys": "v",
+    "description": "3D view, perspective"
+  },
+  "3d_view_left_side_orthographic": {
+    "keys": "shift+x",
+    "description": "3D view, left-side orthographic"
+  },
+  "3d_view_right_side_orthographic": {
+    "keys": "x",
+    "description": "3D view, right-side orthographic"
+  },
+  "redo_last_action": {
+    "keys": "ctrl+y",
+    "description": "Redo last action"
+  },
+  "3d_view_back_orthographic": {
+    "keys": "shift+z",
+    "description": "3D view, back orthographic"
+  },
+  "3d_view_front_side_orthographic": {
+    "keys": "z",
+    "description": "3D view, front-side orthographic"
+  },
+  "undo_last_action": {
+    "keys": "ctrl+z",
+    "description": "Undo last action"
+  },
+  "insert_an_addmix_node": {
+    "keys": "shift+a",
+    "description": "Insert an AddMix node"
+  },
+  "select_all_nodes_in_the_node_graph_or_group_window": {
+    "keys": "ctrl+a",
+    "description": "Select all nodes in the Node Graph or group window"
+  },
+  "duplicate_and_branch_selected_nodes": {
+    "keys": "alt+b",
+    "description": "Duplicate and branch selected nodes"
+  },
+  "insert_filter_blur_node": {
+    "keys": "b",
+    "description": "Insert Filter Blur node"
+  },
+  "node_buffer_toggle_when_this_is_on_the_output_from_the_node_is_cached_or_kept_in_memory_so_that_it_can_be_read_quickly_a_yellow_line_displays_under_the_node_to_indicate_that_the_caching_is_on": {
+    "keys": "ctrl+b",
+    "description": "Node buffer toggle. When this is on, the output from the node is cached or kept in memory, so that it can be read quickly. A yellow line displays under the node to indicate that the caching is on"
+  },
+  "snaps_all_nodes_to_the_grid": {
+    "keys": "backslash",
+    "description": "Snaps all nodes to the grid. "
+  },
+  "snaps_selected_node_to_the_grid": {
+    "keys": "shift+backslash",
+    "description": "Snaps selected node to the grid"
+  },
+  "copy_selected_nodes": {
+    "keys": "ctrl+c",
+    "description": "Copy selected nodes"
+  },
+  "duplicate_selected_nodes": {
+    "keys": "alt+c",
+    "description": "Duplicate selected nodes"
+  },
+  "insert_a_colorcorrect_node": {
+    "keys": "c",
+    "description": "Insert a ColorCorrect node"
+  },
+  "set_color_for_selected_nodes": {
+    "keys": "ctrl+shift+c",
+    "description": "Set color for selected nodes"
+  },
+  "display_connector_dots_drag_one_to_set_a_dot_and_create_an_elbow": {
+    "keys": "control",
+    "description": "Display connector dots. Drag one to set a dot and create an \u201celbow.\u201d"
+  },
+  "disable_enable_selected_node": {
+    "keys": "d",
+    "description": "Disable / enable selected node"
+  },
+  "disconnect_upstream_node_from_selected_node": {
+    "keys": "ctrl+d",
+    "description": "Disconnect upstream node from selected node"
+  },
+  "remove_selected_nodes": {
+    "keys": "delete",
+    "description": "Remove selected nodes"
+  },
+  "decrement_the_version_number_in_the_selected_node_s_file_name": {
+    "keys": "alt+down_arrow",
+    "description": "Decrement the version number in the selected node\u2019s file name"
+  },
+  "move_selected_node_downstream": {
+    "keys": "ctrl+down_arrow",
+    "description": "Move selected node downstream"
+  },
+  "selects_the_previous_or_next_node_in_the_tree": {
+    "keys": "down_arrow",
+    "description": "Selects the previous or next node in the tree"
+  },
+  "open_panel_for_selected_node": {
+    "keys": "enter",
+    "description": "Open panel for selected node"
+  },
+  "open_window_for_selected_group_node": {
+    "keys": "ctrl+enter",
+    "description": "Open window for selected group node"
+  },
+  "fit_the_selected_nodes_to_the_node_graph_panel_or_group_window": {
+    "keys": "f",
+    "description": "Fit the selected nodes  to the Node Graph panel or group window"
+  },
+  "generate_flipbook_for_selected_node_using_framecycler": {
+    "keys": "alt+f",
+    "description": "Generate flipbook for selected node using FrameCycler"
+  },
+  "clear_buffers": {
+    "keys": "f12",
+    "description": "Clear buffers"
+  },
+  "nest_selected_nodes_inside_a_group_node_keeping_the_original_nodes_in_the_layout_ctrl_enter_opens_the_new_group_node": {
+    "keys": "alt+ctrl+shift+g",
+    "description": "Nest selected nodes inside a Group node, keeping the original nodes in the layout. Ctrl+Enter opens the new Group node"
+  },
+  "nest_selected_nodes_inside_a_group_node_replacing_the_original_nodes_with_the_group": {
+    "keys": "ctrl+g",
+    "description": "Nest selected nodes inside a Group node, replacing the original nodes with the Group"
+  },
+  "replace_selected_group_node_with_the_nodes_nested_inside_it": {
+    "keys": "alt+ctrl+g",
+    "description": "Replace selected Group node with the nodes nested inside it"
+  },
+  "insert_a_grade_node": {
+    "keys": "g",
+    "description": "insert a Grade node"
+  },
+  "opens_a_new_viewer_window_with_representing_the_number_of_the_connection_you_want_to_establish_between_the_new_viewer_and_the_selected_node": {
+    "keys": "hash",
+    "description": "Opens a new Viewer window with # representing the number of the connection  you want to establish between the new Viewer and the selected node"
+  },
+  "zoom_in_by_a_specific_percentage_the_represents_a_number_between_0_and_9_with_0_1000_1_100_2_200_3_300_4_400_5_500_6_600_7_700_8_800_and_9_900": {
+    "keys": "ctrl+hash",
+    "description": "Zoom-in by a specific percentage. The # represents a number between 0 and 9, with 0=1000%, 1=100%, 2=200%, 3=300%, 4=400%, 5=500%, 6=600%, 7=700%, 8=800%, and 9=900%"
+  },
+  "zoom_out_by_a_specific_percentage_the_represents_a_number_between_0_and_9_with_0_10_1_100_2_50_3_30_4_25_5_20_6_16_7_14_8_12_and_9_11": {
+    "keys": "alt+hash",
+    "description": "Zoom-out by a specific percentage. The # represents a number between 0 and 9, with 0=10%, 1=100%, 2=50%, 3=30%, 4=25%, 5=20%, 6=16%, 7=14%, 8=12%, and 9=11%"
+  },
+  "display_information_for_selected_node": {
+    "keys": "i",
+    "description": "Display information for selected node"
+  },
+  "clone_selected_nodes": {
+    "keys": "alt+k",
+    "description": "Clone selected nodes"
+  },
+  "insert_copy_node_note_that_for_this_to_work_you_first_need_to_click_on_the_node_graph_to_select_it_if_you_have_selected_the_viewer_pressing_k_stops_playback": {
+    "keys": "k",
+    "description": "Insert Copy node. Note that for this to work, you first need to click on the Node Graph to select it. If you have selected the Viewer, pressing K stops playback"
+  },
+  "remove_selected_nodes_from_clone_group": {
+    "keys": "alt+shift+k",
+    "description": "Remove selected nodes from clone group "
+  },
+  "insert_merge_node": {
+    "keys": "m",
+    "description": "Insert Merge node"
+  },
+  "zoom_out": {
+    "keys": "minus",
+    "description": "Zoom-out"
+  },
+  "rename_the_selected_node": {
+    "keys": "n",
+    "description": "Rename the selected node"
+  },
+  "zoom_out_node_graph": {
+    "keys": "numminus",
+    "description": "Zoom-out"
+  },
+  "inserts_dot_node": {
+    "keys": "numperiod",
+    "description": "Inserts Dot node"
+  },
+  "zoom_in_see_also_lmb_mmb": {
+    "keys": "numplus",
+    "description": "Zoom-in . See also LMB+MMB"
+  },
+  "insert_roto_node": {
+    "keys": "o",
+    "description": "Insert Roto node"
+  },
+  "insert_rotopaint_node": {
+    "keys": "p",
+    "description": "Insert RotoPaint node"
+  },
+  "toggle_proxy_resolution_as_defined_on_the_settings_properties_panel": {
+    "keys": "ctrl+p",
+    "description": "Toggle proxy resolution, as defined on the Settings properties panel"
+  },
+  "inserts_dot_node_node_graph": {
+    "keys": "period",
+    "description": "Inserts Dot node"
+  },
+  "zoom_in_see_also_lmb_mmb_node_graph": {
+    "keys": "plus",
+    "description": "Zoom-in . See also LMB+MMB"
+  },
+  "insert_a_read_node_note_pressing_r_with_an_existing_read_node_selected_opens_the_file_browser_at_the_location_specified_by_that_node": {
+    "keys": "r",
+    "description": "Insert a Read node. NOTE:  Pressing R with an existing Read node selected, opens the file browser at the location specified by that node"
+  },
+  "insert_a_transform_node": {
+    "keys": "t",
+    "description": "Insert a Transform node"
+  },
+  "open_a_text_field_where_you_can_enter_the_first_letters_of_a_node_name_to_bring_up_a_list_of_matches_press_return_to_insert_a_node_from_the_list": {
+    "keys": "tab",
+    "description": "Open a text field where you can enter the first letters of a node name to bring up a list of matches. Press Return to insert a node from the list"
+  },
+  "splay_first_selected_node_to_input_a": {
+    "keys": "alt+u",
+    "description": "Splay first selected node to input A"
+  },
+  "splay_last_selected_node_to_input_a": {
+    "keys": "alt+shift+u",
+    "description": "Splay last selected node to input A"
+  },
+  "splay_selected_nodes_to_first_selected_node": {
+    "keys": "u",
+    "description": "Splay selected nodes to first selected node"
+  },
+  "splay_selected_nodes_to_last_selected_node": {
+    "keys": "shift+u",
+    "description": "Splay selected nodes to last selected node"
+  },
+  "increment_the_version_number_in_the_selected_node_s_file_name": {
+    "keys": "alt+up_arrow",
+    "description": "Increment the version number in the selected node\u2019s file name"
+  },
+  "move_selected_node_upstream": {
+    "keys": "ctrl+up_arrow",
+    "description": "Move selected node upstream"
+  },
+  "selects_the_previous_or_next_node_in_the_tree_node_graph": {
+    "keys": "up_arrow",
+    "description": "Selects the previous or next node in the tree"
+  },
+  "close_current_script_file": {
+    "keys": "ctrl+w",
+    "description": "Close current script file"
+  },
+  "insert_a_write_node": {
+    "keys": "w",
+    "description": "Insert a Write node"
+  },
+  "extract_selected_nodes": {
+    "keys": "ctrl+shift+x",
+    "description": "Extract selected nodes"
+  },
+  "swap_a_b_inputs_on_selected_node": {
+    "keys": "shift+x",
+    "description": "Swap A/B inputs on selected node"
+  },
+  "connect_first_selected_node_to_the_output_of_the_second_selected_node": {
+    "keys": "y",
+    "description": "Connect first selected node to the output of the second selected node"
+  },
+  "connect_second_selected_node_to_the_output_of_the_first_selected_node": {
+    "keys": "shift+y",
+    "description": "Connect second selected node to the output of the first selected node"
+  },
+  "close_all_open_properties_panels": {
+    "keys": "ctrl+shift+a",
+    "description": "Close all open properties panels"
+  },
+  "select_all_nodes_in_the_properties_bin": {
+    "keys": "ctrl+a",
+    "description": "Select all nodes in the Properties Bin"
+  },
+  "increment_or_decrement_the_value_in_a_parameter_field_click_first_on_the_field_or_press_tab_to_move_focus_to_the_parameter": {
+    "keys": "down_arrow",
+    "description": "Increment  or decrement  the value in a parameter field. Click first on the field or press Tab to move focus to the parameter"
+  },
+  "chooses_selected_ui_control": {
+    "keys": "enter",
+    "description": "Chooses selected UI control "
+  },
+  "close_the_current_panel": {
+    "keys": "ctrl+enter",
+    "description": "Close the current panel"
+  },
+  "fit_properties_bin_to_open_panels": {
+    "keys": "alt+r",
+    "description": "Fit Properties Bin to open panels"
+  },
+  "fit_properties_bin_to_open_panels_properties_panels": {
+    "keys": "ctrl+r",
+    "description": "Fit Properties Bin to open panels"
+  },
+  "move_focus_to_next_or_previous_parameter_may_need_to_click_on_a_parameter_first_to_establish_the_focus_inside_the_properties_panel": {
+    "keys": "shift+tab",
+    "description": "Move focus to next  or previous  parameter. May need to click on a parameter first, to establish the focus inside the properties panel"
+  },
+  "move_focus_to_next_or_previous_parameter_may_need_to_click_on_a_parameter_first_to_establish_the_focus_inside_the_properties_panel_properties_panels": {
+    "keys": "tab",
+    "description": "Move focus to next  or previous  parameter. May need to click on a parameter first, to establish the focus inside the properties panel"
+  },
+  "move_to_next_tabbed_page_or_the_previous_tabbed_page_in_the_properties_panel": {
+    "keys": "ctrl+shift+tab",
+    "description": "Move to next tabbed page  or the previous tabbed page  in the properties panel"
+  },
+  "move_to_next_tabbed_page_or_the_previous_tabbed_page_in_the_properties_panel_properties_panels": {
+    "keys": "ctrl+tab",
+    "description": "Move to next tabbed page  or the previous tabbed page  in the properties panel"
+  },
+  "increment_or_decrement_the_value_in_a_parameter_field_click_first_on_the_field_or_press_tab_to_move_focus_to_the_parameter_properties_panels": {
+    "keys": "up_arrow",
+    "description": "Increment  or decrement  the value in a parameter field. Click first on the field or press Tab to move focus to the parameter"
+  },
+  "select_all_points": {
+    "keys": "ctrl+a",
+    "description": "Select all points"
+  },
+  "delete_an_item_from_the_stroke_shape_list_note_that_if_the_rotopaint_node_is_selected_in_the_node_graph_pressing_backspace_deletes_the_entire_node": {
+    "keys": "backspace",
+    "description": "Delete an item from the stroke/shape list. Note that if the RotoPaint node is selected in the Node Graph, pressing Backspace deletes the entire node"
+  },
+  "toggle_between_clone_and_reveal_tools": {
+    "keys": "c",
+    "description": "Toggle between Clone and Reveal tools"
+  },
+  "toggle_between_dodge_and_burn_tools": {
+    "keys": "d",
+    "description": "Toggle between Dodge and Burn tools"
+  },
+  "remove_selected_points": {
+    "keys": "delete",
+    "description": "Remove selected points"
+  },
+  "increase_feather_for_selected_points": {
+    "keys": "e",
+    "description": "Increase feather for selected points"
+  },
+  "remove_feather_outline_from_selected_points": {
+    "keys": "shift+e",
+    "description": "Remove feather outline from selected points"
+  },
+  "close_shape": {
+    "keys": "enter",
+    "description": "Close shape"
+  },
+  "pick_color": {
+    "keys": "i",
+    "description": "Pick color"
+  },
+  "toggle_between_brush_and_eraser_tools": {
+    "keys": "n",
+    "description": "Toggle between Brush and Eraser tools"
+  },
+  "toggle_between_select_all_select_curves_and_select_points_tools": {
+    "keys": "q",
+    "description": "Toggle between Select All, Select Curves and Select Points tools"
+  },
+  "drag_the_transform_box_points_to_move_them": {
+    "keys": "ctrl+shift",
+    "description": "Drag the transform box points to move them"
+  },
+  "show_hide_source_as_onion_skin_with_transform_box_jack": {
+    "keys": "t",
+    "description": "Show/hide source as onion skin with transform box/jack"
+  },
+  "toggle_between_bezier_b_spline_ellipse_and_rectangle_tools": {
+    "keys": "v",
+    "description": "Toggle between Bezier, B-Spline, Ellipse and Rectangle tools"
+  },
+  "toggle_between_blur_sharpen_and_smear_tools": {
+    "keys": "x",
+    "description": "Toggle between Blur, Sharpen, and Smear tools"
+  },
+  "make_selected_points_linear": {
+    "keys": "shift+z",
+    "description": "Make selected points linear "
+  },
+  "make_tangent_handles_horizontal_on_selected_points": {
+    "keys": "z",
+    "description": "Make tangent handles horizontal on selected points "
+  },
+  "clear_output_pane": {
+    "keys": "ctrl+backspace",
+    "description": "Clear output pane"
+  },
+  "run_the_script_in_the_editor": {
+    "keys": "ctrl+enter",
+    "description": "Run the script in the Editor"
+  },
+  "decrease_the_indentation_level_of_selected_text": {
+    "keys": "ctrl+shift+left_bracket",
+    "description": "Decrease the indentation level of selected text"
+  },
+  "step_back_to_the_previous_statement": {
+    "keys": "ctrl+left_bracket",
+    "description": "Step back to the previous statement"
+  },
+  "increase_the_indentation_level_of_selected_text": {
+    "keys": "ctrl+shift+right_bracket",
+    "description": "Increase the indentation level of selected text"
+  },
+  "step_forward_to_the_next_statement": {
+    "keys": "ctrl+right_bracket",
+    "description": "Step forward to the next statement"
+  },
+  "decrease_the_indentation_level": {
+    "keys": "shift+tab",
+    "description": "Decrease the indentation level"
+  },
+  "increase_the_indentation_level": {
+    "keys": "tab",
+    "description": "Increase the indentation level"
+  },
+  "display_the_alpha_channel_or_the_channel_displayed_in_the_list_at_the_top_of_the_viewer": {
+    "keys": "a",
+    "description": "Display the alpha channel or the channel displayed in the list at the top of the Viewer"
+  },
+  "display_other_channel_rgb_toggle_current_input_only": {
+    "keys": "shift+a",
+    "description": "Display \u201cother\u201d channel / RGB toggle. Current input only. "
+  },
+  "display_blue_channel_rgb_toggle_current_input_only": {
+    "keys": "shift+b",
+    "description": "Display Blue channel / RGB toggle. Current input only"
+  },
+  "display_blue_channel_rgb_toggle": {
+    "keys": "b",
+    "description": "Display blue channel / RGB toggle"
+  },
+  "activate_wipe_cycle_images_on_right_side": {
+    "keys": "shift+backspace",
+    "description": "Activate Wipe. Cycle images on right side"
+  },
+  "cycle_through_viewer_inputs_in_reverse_order_if_wipe_is_active_cycles_through_inputs_on_the_left_hand_side": {
+    "keys": "backspace",
+    "description": "Cycle through Viewer inputs in reverse order. If wipe is active, cycles through inputs on the left-hand side"
+  },
+  "gain_display_decrease": {
+    "keys": "comma",
+    "description": "Gain display, decrease"
+  },
+  "go_to_last_frame": {
+    "keys": "end",
+    "description": "Go to last frame"
+  },
+  "close_viewer": {
+    "keys": "escape",
+    "description": "Close Viewer"
+  },
+  "turn_on_viewer_blend_split_screen_display": {
+    "keys": "exclamation",
+    "description": "Turn on Viewer \u201cblend,\u201d split-screen display. "
+  },
+  "fit_image_to_viewer": {
+    "keys": "f",
+    "description": "Fit image to Viewer"
+  },
+  "maximum_viewer_window_toggle": {
+    "keys": "shift+f",
+    "description": "Maximum Viewer window toggle"
+  },
+  "display_green_channel_rgb_toggle_current_input_only": {
+    "keys": "shift+g",
+    "description": "Display Green channel / RGB toggle. Current input only"
+  },
+  "display_green_channel_rgb_toggle": {
+    "keys": "g",
+    "description": "Display green channel / RGB toggle"
+  },
+  "go_to_specific_frame": {
+    "keys": "alt+g",
+    "description": "Go to specific frame"
+  },
+  "fill_image_in_viewer": {
+    "keys": "h",
+    "description": "Fill image in Viewer"
+  },
+  "zoom_in_by_a_specific_percentage_the_represents_a_number_between_0_and_9_with_0_1000_1_100_2_200_3_300_4_400_5_500_6_600_7_700_8_800_and_9_900_viewers": {
+    "keys": "ctrl+hash",
+    "description": "Zoom-in by a specific percentage. The # represents a number between 0 and 9, with 0=1000%, 1=100%, 2=200%, 3=300%, 4=400%, 5=500%, 6=600%, 7=700%, 8=800%, and 9=900%"
+  },
+  "zoom_out_by_a_specific_percentage_the_represents_a_number_between_0_and_9_with_0_10_1_100_2_50_3_30_4_25_5_20_6_16_7_14_8_12_and_9_11_viewers": {
+    "keys": "alt+hash",
+    "description": "Zoom-out by a specific percentage. The # represents a number between 0 and 9, with 0=10%, 1=100%, 2=50%, 3=30%, 4=25%, 5=20%, 6=16%, 7=14%, 8=12%, and 9=11%"
+  },
+  "play_backward": {
+    "keys": "j",
+    "description": "Play backward"
+  },
+  "stop_playback_note_that_for_this_to_work_you_first_need_to_click_on_the_viewer_to_select_it_if_you_have_selected_the_node_graph_pressing_k_inserts_a_copy_node": {
+    "keys": "k",
+    "description": "Stop playback. Note that for this to work, you first need to click on the Viewer to select it. If you have selected the Node Graph, pressing K inserts a Copy node"
+  },
+  "display_luminance_rgb_toggle_current_input_only": {
+    "keys": "shift+l",
+    "description": "Display Luminance / RGB toggle. Current input only"
+  },
+  "play_forward": {
+    "keys": "l",
+    "description": "Play forward"
+  },
+  "move_left_on_the_timeline_by_the_specified_increment_amount": {
+    "keys": "shift+left_arrow",
+    "description": "Move left on the timeline by the specified increment amount"
+  },
+  "move_to_midpoint_between_current_frame_and_previous_keyframe_first_frame": {
+    "keys": "ctrl+left_arrow",
+    "description": "Move to midpoint between current frame and previous keyframe/first frame"
+  },
+  "previous_keyframe": {
+    "keys": "alt+left_arrow",
+    "description": "Previous keyframe"
+  },
+  "step_back_one_frame": {
+    "keys": "left_arrow",
+    "description": "Step back one frame"
+  },
+  "show_hide_top_toolbar": {
+    "keys": "left_brace",
+    "description": "Show / hide top toolbar"
+  },
+  "display_matte_rgb_toggle_current_input_only": {
+    "keys": "shift+m",
+    "description": "Display Matte / RGB toggle. Current input only"
+  },
+  "display_matte_or_alpha_channel_as_transparent_overlay": {
+    "keys": "m",
+    "description": "Display Matte, or alpha channel as transparent overlay"
+  },
+  "zoom_out_viewers": {
+    "keys": "numminus",
+    "description": "Zoom-out"
+  },
+  "gain_display_increase": {
+    "keys": "numperiod",
+    "description": "Gain display, increase"
+  },
+  "zoom_in": {
+    "keys": "numplus",
+    "description": "Zoom-in "
+  },
+  "show_hide_overlays": {
+    "keys": "o",
+    "description": "Show / hide overlays"
+  },
+  "disable_the_display_refresh_of_the_viewer": {
+    "keys": "p",
+    "description": "Disable  the display refresh of the Viewer"
+  },
+  "open_the_controls_of_the_currently_active_viewer_process": {
+    "keys": "alt+p",
+    "description": "Open the controls of the currently active Viewer process"
+  },
+  "with_the_mouse_pointer_over_the_viewer_this_keystroke_toggles_pixel_aspect_ratio_between_square_and_non_square_according_to_the_setting_of_the_default_format_under_the_settings_properties_panel_this_is_not_the_same_as_toggling_proxy_resolution": {
+    "keys": "ctrl+p",
+    "description": "With the mouse pointer over the Viewer, this keystroke toggles pixel aspect ratio between square and non-square, according to the setting of the default format under the Settings properties panel. This is not the same as toggling proxy resolution "
+  },
+  "gain_display_increase_viewers": {
+    "keys": "period",
+    "description": "Gain display, increase"
+  },
+  "zoom_in_viewers": {
+    "keys": "plus",
+    "description": "Zoom-in "
+  },
+  "display_red_channel_rgb_toggle_current_input_only": {
+    "keys": "shift+r",
+    "description": "Display Red channel / RGB toggle. Current input only"
+  },
+  "display_red_channel_rgb_toggle": {
+    "keys": "r",
+    "description": "Display red channel / RGB toggle"
+  },
+  "resize_viewer_and_image_to_fit_frame": {
+    "keys": "alt+shift+r",
+    "description": "Resize Viewer and image to fit frame"
+  },
+  "resize_viewer_to_image": {
+    "keys": "alt+r",
+    "description": "Resize Viewer to image "
+  },
+  "resize_viewer_to_maximum_and_fit_image": {
+    "keys": "ctrl+shift+r",
+    "description": "Resize Viewer to maximum and fit image"
+  },
+  "resize_viewer_window_to_image": {
+    "keys": "ctrl+r",
+    "description": "Resize Viewer window to image "
+  },
+  "move_right_on_the_timeline_by_the_specified_increment_amount": {
+    "keys": "shift+right_arrow",
+    "description": "Move right on the timeline by the specified increment amount"
+  },
+  "move_to_midpoint_between_current_frame_and_next_keyframe_last_frame": {
+    "keys": "ctrl+right_arrow",
+    "description": "Move to midpoint between current frame and next keyframe/last frame"
+  },
+  "next_keyframe": {
+    "keys": "alt+right_arrow",
+    "description": "Next keyframe"
+  },
+  "step_forward_one_frame": {
+    "keys": "right_arrow",
+    "description": "Step forward one frame"
+  },
+  "show_hide_bottom_toolbar": {
+    "keys": "right_brace",
+    "description": "Show / hide bottom toolbar"
+  },
+  "display_viewer_settings_dialog": {
+    "keys": "s",
+    "description": "Display Viewer Settings dialog"
+  },
+  "switch_to_the_previous_view_in_a_multi_view_project": {
+    "keys": "semicolon",
+    "description": "Switch to the previous view in a multi-view project"
+  },
+  "show_hide_all_viewers": {
+    "keys": "single_quote",
+    "description": "Show / hide all Viewers"
+  },
+  "2d_3d_view_toggle": {
+    "keys": "tab",
+    "description": "2D / 3D view toggle"
+  },
+  "enable_or_disable_previewing_output_on_an_external_broadcast_video_monitor_viewers": {
+    "keys": "ctrl+u",
+    "description": "Enable or disable previewing output on an external broadcast video monitor"
+  },
+  "update_viewer_display_used_when_pause_is_active": {
+    "keys": "u",
+    "description": "Update Viewer display. Used when Pause is active "
+  },
+  "activate_the_roi_feature_or_if_a_roi_exists_clear_the_current_roi_drag_to_define_a_new_roi": {
+    "keys": "alt+w",
+    "description": "Activate the ROI feature, or if a ROI exists, clear the current ROI. Drag to define a new ROI"
+  },
+  "region_of_interest_toggle": {
+    "keys": "shift+w",
+    "description": "Region of interest  toggle"
+  },
+  "toggles_viewer_blend_split_screen_display_on_off_this_was_previously_called_the_wipe_mode": {
+    "keys": "w",
+    "description": "Toggles Viewer \u201cblend,\u201d split-screen display, on/off. This was previously called the \u201cwipe\u201d mode. "
+  },
+  "toggle_lock_unlock_the_viewer_to_a_specified_zoom_level_for_all_inputs": {
+    "keys": "alt+z",
+    "description": "Toggle lock/unlock the Viewer to a specified zoom level for all inputs"
+  }
+}

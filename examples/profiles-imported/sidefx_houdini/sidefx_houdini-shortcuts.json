@@ -1,0 +1,2798 @@
+{
+  "new": {
+    "keys": "alt+n / n",
+    "description": "New"
+  },
+  "add": {
+    "keys": "alt+d / d",
+    "description": "Add"
+  },
+  "save": {
+    "keys": "alt+s / s",
+    "description": "Save"
+  },
+  "cancel": {
+    "keys": "esc",
+    "description": "Cancel"
+  },
+  "up": {
+    "keys": "k / uparrow",
+    "description": "Up"
+  },
+  "down": {
+    "keys": "j / downarrow",
+    "description": "Down"
+  },
+  "delete": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "textport": {
+    "keys": "alt+shift+t",
+    "description": "Textport"
+  },
+  "open": {
+    "keys": "alt+o / ctrl+o",
+    "description": "Open"
+  },
+  "quit": {
+    "keys": "alt+q / ctrl+q",
+    "description": "Quit"
+  },
+  "geometry_info": {
+    "keys": "alt+i",
+    "description": "Geometry Info"
+  },
+  "unpack_geometry": {
+    "keys": "alt+u",
+    "description": "Unpack Geometry"
+  },
+  "geometry_spreadsheet": {
+    "keys": "alt+s",
+    "description": "Geometry Spreadsheet"
+  },
+  "flipbook_current_viewport": {
+    "keys": "alt+f",
+    "description": "Flipbook Current Viewport"
+  },
+  "help_menu": {
+    "keys": "alt+h",
+    "description": "Help Menu"
+  },
+  "quick_quit": {
+    "keys": "q",
+    "description": "Quick Quit"
+  },
+  "next_geometry": {
+    "keys": "n",
+    "description": "Next Geometry"
+  },
+  "previous_geometry": {
+    "keys": "p",
+    "description": "Previous Geometry"
+  },
+  "stop_play": {
+    "keys": "space",
+    "description": "Stop Play"
+  },
+  "save_generic_preference_list_controls": {
+    "keys": "alt+s",
+    "description": "Save"
+  },
+  "delete_item": {
+    "keys": "del",
+    "description": "Delete Item"
+  },
+  "move_up": {
+    "keys": "uparrow",
+    "description": "Move Up"
+  },
+  "move_down": {
+    "keys": "downarrow",
+    "description": "Move Down"
+  },
+  "move_left": {
+    "keys": "leftarrow",
+    "description": "Move Left"
+  },
+  "move_right": {
+    "keys": "rightarrow",
+    "description": "Move Right"
+  },
+  "page_up": {
+    "keys": "pageup / ctrl+b",
+    "description": "Page Up"
+  },
+  "page_down": {
+    "keys": "pagedown / ctrl+f",
+    "description": "Page Down"
+  },
+  "delete_generic_tree_controls": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "duplicate": {
+    "keys": "d",
+    "description": "Duplicate"
+  },
+  "default_action": {
+    "keys": "enter",
+    "description": "Default Action"
+  },
+  "sort_ascending": {
+    "keys": "shift+a",
+    "description": "Sort Ascending"
+  },
+  "sort_descending": {
+    "keys": "shift+d",
+    "description": "Sort Descending"
+  },
+  "sort_none": {
+    "keys": "shift+n",
+    "description": "Sort None"
+  },
+  "sort_custom": {
+    "keys": "shift+c",
+    "description": "Sort Custom"
+  },
+  "search": {
+    "keys": "alt+s",
+    "description": "Search"
+  },
+  "cancel_hotkey_manager": {
+    "keys": "esc",
+    "description": "Cancel"
+  },
+  "new_houdini": {
+    "keys": "alt+n",
+    "description": "New"
+  },
+  "open_houdini": {
+    "keys": "alt+o / ctrl+o",
+    "description": "Open"
+  },
+  "save_houdini": {
+    "keys": "alt+s / ctrl+s",
+    "description": "Save"
+  },
+  "save_as": {
+    "keys": "alt+shift+s / ctrl+shift+s",
+    "description": "Save As"
+  },
+  "merge": {
+    "keys": "alt+m",
+    "description": "Merge"
+  },
+  "quit_houdini": {
+    "keys": "alt+q / ctrl+q",
+    "description": "Quit"
+  },
+  "undo": {
+    "keys": "alt+u / ctrl+z",
+    "description": "Undo"
+  },
+  "redo": {
+    "keys": "alt+r / ctrl+y / ctrl+shift+z",
+    "description": "Redo"
+  },
+  "cut": {
+    "keys": "alt+x / ctrl+x",
+    "description": "Cut"
+  },
+  "copy": {
+    "keys": "alt+c / ctrl+c",
+    "description": "Copy"
+  },
+  "paste": {
+    "keys": "alt+v / ctrl+v",
+    "description": "Paste"
+  },
+  "ui_preferences": {
+    "keys": "ctrl+,",
+    "description": "UI Preferences"
+  },
+  "aliases_variables": {
+    "keys": "alt+shift+a",
+    "description": "Aliases/Variables"
+  },
+  "composite_project": {
+    "keys": "alt+shift+i",
+    "description": "Composite Project"
+  },
+  "clear_all_cop_caches": {
+    "keys": "alt+shift+r",
+    "description": "Clear All COP Caches"
+  },
+  "live_parameter_display_during_playback": {
+    "keys": "pause",
+    "description": "Live Parameter Display during Playback"
+  },
+  "floating_panel": {
+    "keys": "alt+shift+w",
+    "description": "Floating Panel"
+  },
+  "animation_editor": {
+    "keys": "alt+shift+f / alt+6",
+    "description": "Animation Editor"
+  },
+  "textport_houdini": {
+    "keys": "alt+shift+t / alt+5",
+    "description": "Textport"
+  },
+  "python_shell": {
+    "keys": "alt+shift+p",
+    "description": "Python Shell"
+  },
+  "shader_palette": {
+    "keys": "alt+g",
+    "description": "Shader Palette"
+  },
+  "performance_monitor": {
+    "keys": "alt+y",
+    "description": "Performance Monitor"
+  },
+  "audio_panel": {
+    "keys": "alt+i",
+    "description": "Audio Panel"
+  },
+  "cache_manager": {
+    "keys": "alt+shift+m",
+    "description": "Cache Manager"
+  },
+  "desktop_manager": {
+    "keys": "alt+shift+d",
+    "description": "Desktop Manager"
+  },
+  "version": {
+    "keys": "alt+shift+v",
+    "description": "Version"
+  },
+  "play_forward": {
+    "keys": "uparrow",
+    "description": "Play Forward"
+  },
+  "play_backward": {
+    "keys": "downarrow",
+    "description": "Play Backward"
+  },
+  "step_forward_one_frame": {
+    "keys": "rightarrow",
+    "description": "Step Forward One Frame"
+  },
+  "step_backward_one_frame": {
+    "keys": "leftarrow",
+    "description": "Step Backward One Frame"
+  },
+  "jump_to_next_keyframe": {
+    "keys": "ctrl+rightarrow",
+    "description": "Jump To Next Keyframe"
+  },
+  "jump_to_previous_keyframe": {
+    "keys": "ctrl+leftarrow",
+    "description": "Jump To Previous Keyframe"
+  },
+  "jump_to_start_of_range": {
+    "keys": "ctrl+uparrow /",
+    "description": "Jump To Start Of Range"
+  },
+  "add_keyframe": {
+    "keys": "k",
+    "description": "Add Keyframe"
+  },
+  "auto_key": {
+    "keys": "alt+k",
+    "description": "Auto-Key"
+  },
+  "clear_scope": {
+    "keys": "alt+0",
+    "description": "Clear Scope"
+  },
+  "debug": {
+    "keys": "alt+shift+z",
+    "description": "Debug"
+  },
+  "find_operator": {
+    "keys": "alt+f / ctrl+f",
+    "description": "Find Operator"
+  },
+  "rename_selected_nodes": {
+    "keys": "alt+w",
+    "description": "Rename Selected Nodes"
+  },
+  "context_help": {
+    "keys": "f1",
+    "description": "Context Help"
+  },
+  "previous_tab": {
+    "keys": "ctrl+pageup / ctrl+shift+tab",
+    "description": "Previous Tab"
+  },
+  "next_tab": {
+    "keys": "ctrl+pagedown / ctrl+tab",
+    "description": "Next Tab"
+  },
+  "close_tab": {
+    "keys": "ctrl+w",
+    "description": "Close Tab"
+  },
+  "copy_tab": {
+    "keys": "ctrl+t",
+    "description": "Copy Tab"
+  },
+  "clone": {
+    "keys": "alt+shift+c",
+    "description": "Clone"
+  },
+  "move_playbar_here": {
+    "keys": "alt+p",
+    "description": "Move Playbar Here"
+  },
+  "edit_bookmarks": {
+    "keys": "alt+b",
+    "description": "Edit Bookmarks"
+  },
+  "add_bookmark": {
+    "keys": "alt+shift+k",
+    "description": "Add Bookmark"
+  },
+  "maximize": {
+    "keys": "alt+' / ctrl+b",
+    "description": "Maximize"
+  },
+  "maximize_in_split_direction": {
+    "keys": "alt+\\",
+    "description": "Maximize in Split Direction"
+  },
+  "close": {
+    "keys": "alt+/ /  /  /  /  /  /  /",
+    "description": "Close"
+  },
+  "increment_link": {
+    "keys": "alt++",
+    "description": "Increment Link"
+  },
+  "decrement_link": {
+    "keys": "alt+-",
+    "description": "Decrement Link"
+  },
+  "jump_back": {
+    "keys": "alt+leftarrow",
+    "description": "Jump Back"
+  },
+  "jump_forward": {
+    "keys": "alt+rightarrow",
+    "description": "Jump Forward"
+  },
+  "scene_view": {
+    "keys": "alt+1",
+    "description": "Scene View"
+  },
+  "context_view": {
+    "keys": "alt+9",
+    "description": "Context View"
+  },
+  "material_palette": {
+    "keys": "alt+7",
+    "description": "Material Palette"
+  },
+  "network_editor": {
+    "keys": "alt+2",
+    "description": "Network Editor"
+  },
+  "parameters": {
+    "keys": "alt+3",
+    "description": "Parameters"
+  },
+  "geometry_spreadsheet_houdini": {
+    "keys": "alt+8",
+    "description": "Geometry Spreadsheet"
+  },
+  "tree_view": {
+    "keys": "alt+4",
+    "description": "Tree View"
+  },
+  "edit_path_as_text": {
+    "keys": "ctrl+l",
+    "description": "Edit Path As Text"
+  },
+  "show_range_slider": {
+    "keys": "alt+t",
+    "description": "Show Range Slider"
+  },
+  "open_editor": {
+    "keys": "ctrl+e / alt+e",
+    "description": "Open Editor"
+  },
+  "undo_input_fields": {
+    "keys": "ctrl+z / alt+z",
+    "description": "Undo"
+  },
+  "home": {
+    "keys": "home",
+    "description": "Home"
+  },
+  "up_input_fields": {
+    "keys": "uparrow",
+    "description": "Up"
+  },
+  "end": {
+    "keys": "end",
+    "description": "End"
+  },
+  "down_input_fields": {
+    "keys": "downarrow",
+    "description": "Down"
+  },
+  "previous": {
+    "keys": "leftarrow",
+    "description": "Previous"
+  },
+  "next": {
+    "keys": "rightarrow",
+    "description": "Next"
+  },
+  "select_to_beginning": {
+    "keys": "shift+home",
+    "description": "Select To Beginning"
+  },
+  "select_to_previous_line": {
+    "keys": "shift+uparrow",
+    "description": "Select To Previous Line"
+  },
+  "select_to_end": {
+    "keys": "shift+end",
+    "description": "Select To End"
+  },
+  "select_to_next_line": {
+    "keys": "shift+downarrow",
+    "description": "Select To Next Line"
+  },
+  "select_to_previous": {
+    "keys": "shift+leftarrow",
+    "description": "Select To Previous"
+  },
+  "select_to_next": {
+    "keys": "shift+rightarrow",
+    "description": "Select To Next"
+  },
+  "select_all": {
+    "keys": "alt+a / ctrl+a",
+    "description": "Select All"
+  },
+  "back_tab": {
+    "keys": "shift+tab",
+    "description": "Back TAB"
+  },
+  "jump_to_matching_character": {
+    "keys": "ctrl+m",
+    "description": "Jump to Matching Character"
+  },
+  "popup_context_help": {
+    "keys": "f1",
+    "description": "Popup Context Help"
+  },
+  "previous_word": {
+    "keys": "ctrl+leftarrow",
+    "description": "Previous Word"
+  },
+  "next_word": {
+    "keys": "ctrl+rightarrow",
+    "description": "Next Word"
+  },
+  "select_previous_word": {
+    "keys": "shift+ctrl+leftarrow",
+    "description": "Select Previous Word"
+  },
+  "select_next_word": {
+    "keys": "shift+ctrl+rightarrow",
+    "description": "Select Next Word"
+  },
+  "auto_complete_word": {
+    "keys": "ctrl+space",
+    "description": "Auto-complete Word"
+  },
+  "open_mplay_image_player": {
+    "keys": "alt+o / ctrl+o",
+    "description": "Open"
+  },
+  "merge_mplay_image_player": {
+    "keys": "alt+m",
+    "description": "Merge"
+  },
+  "save_current_frame": {
+    "keys": "alt+f",
+    "description": "Save Current Frame"
+  },
+  "save_current_sequence": {
+    "keys": "alt+s",
+    "description": "Save Current Sequence"
+  },
+  "save_preview": {
+    "keys": "alt+p",
+    "description": "Save Preview"
+  },
+  "load_audio": {
+    "keys": "alt+a",
+    "description": "Load Audio"
+  },
+  "sequence_list": {
+    "keys": "alt+l",
+    "description": "Sequence List"
+  },
+  "new_2d_view": {
+    "keys": "alt+n",
+    "description": "New 2D View"
+  },
+  "new_timeline": {
+    "keys": "alt+t",
+    "description": "New Timeline"
+  },
+  "new_histogram": {
+    "keys": "alt+g",
+    "description": "New Histogram"
+  },
+  "load_background_sequence": {
+    "keys": "alt+shift+b",
+    "description": "Load Background Sequence"
+  },
+  "quit_mplay_image_player": {
+    "keys": "alt+q / ctrl+q",
+    "description": "Quit"
+  },
+  "settings": {
+    "keys": "alt+shift+s",
+    "description": "Settings"
+  },
+  "profiles": {
+    "keys": "alt+shift+p",
+    "description": "Profiles"
+  },
+  "dialog_options": {
+    "keys": "d",
+    "description": "Dialog Options"
+  },
+  "textport_mplay_image_player": {
+    "keys": "alt+shift+t",
+    "description": "Textport"
+  },
+  "help_browser": {
+    "keys": "alt+h",
+    "description": "Help Browser"
+  },
+  "double_buffer": {
+    "keys": "alt+b",
+    "description": "Double Buffer"
+  },
+  "hide_ui": {
+    "keys": "u",
+    "description": "Hide UI"
+  },
+  "toggle_realtime": {
+    "keys": "p",
+    "description": "Toggle Realtime"
+  },
+  "half_window_size": {
+    "keys": "alt+-",
+    "description": "Half Window Size"
+  },
+  "double_window_size": {
+    "keys": "alt+=",
+    "description": "Double Window Size"
+  },
+  "fit_viewer_to_image": {
+    "keys": "f",
+    "description": "Fit Viewer to Image"
+  },
+  "fullscreen": {
+    "keys": "ctrl+f / f11",
+    "description": "Fullscreen"
+  },
+  "halt_current_render": {
+    "keys": "esc",
+    "description": "Halt Current Render"
+  },
+  "halt_all_renders": {
+    "keys": "alt+k",
+    "description": "Halt All Renders"
+  },
+  "disconnect": {
+    "keys": "alt+shift+i",
+    "description": "Disconnect"
+  },
+  "set_houdini_frame": {
+    "keys": "ctrl+k",
+    "description": "Set Houdini Frame"
+  },
+  "export_channel_blocking": {
+    "keys": "ctrl+b",
+    "description": "Export Channel Blocking"
+  },
+  "add_image_comment": {
+    "keys": "alt+c",
+    "description": "Add Image Comment"
+  },
+  "remove_sequence": {
+    "keys": "alt+del",
+    "description": "Remove Sequence"
+  },
+  "remove_frame": {
+    "keys": "del",
+    "description": "Remove Frame"
+  },
+  "reload_sequence": {
+    "keys": "alt+r",
+    "description": "Reload Sequence"
+  },
+  "delete_keys": {
+    "keys": "del",
+    "description": "Delete Keys"
+  },
+  "box_handle": {
+    "keys": "y",
+    "description": "Box Handle"
+  },
+  "box_pivot_handle": {
+    "keys": "shift+y",
+    "description": "Box Pivot Handle"
+  },
+  "home_channels_current": {
+    "keys": "g",
+    "description": "Home Channels (Current)"
+  },
+  "home_channels_all": {
+    "keys": "h",
+    "description": "Home Channels (All)"
+  },
+  "home_playback_range_all": {
+    "keys": "j",
+    "description": "Home Playback Range (All)"
+  },
+  "home_global_range_all": {
+    "keys": "shift+j",
+    "description": "Home Global Range (All)"
+  },
+  "frame_selected": {
+    "keys": "f",
+    "description": "Frame Selected"
+  },
+  "switch_to_graph": {
+    "keys": "1",
+    "description": "Switch To Graph"
+  },
+  "switch_to_table": {
+    "keys": "2",
+    "description": "Switch To Table"
+  },
+  "switch_to_dopesheet": {
+    "keys": "3",
+    "description": "Switch To Dopesheet"
+  },
+  "toggle_channel_list": {
+    "keys": "tab / backspace",
+    "description": "Toggle Channel List"
+  },
+  "swap_snapshots": {
+    "keys": "shift+x",
+    "description": "Swap Snapshots"
+  },
+  "clear_snapshots": {
+    "keys": "enter",
+    "description": "Clear Snapshots"
+  },
+  "open_channel_chooser": {
+    "keys": "ctrl+1",
+    "description": "Open Channel Chooser"
+  },
+  "open_group_list": {
+    "keys": "ctrl+2 / x",
+    "description": "Open Group List"
+  },
+  "open_layer_list": {
+    "keys": "ctrl+3",
+    "description": "Open Layer List"
+  },
+  "open_parameter_list": {
+    "keys": "ctrl+4",
+    "description": "Open Parameter List"
+  },
+  "edit_displayed_channels_properties": {
+    "keys": "alt+e",
+    "description": "Edit Displayed Channels Properties..."
+  },
+  "add_keyframes_at_selected_cells": {
+    "keys": "ctrl+k",
+    "description": "Add Keyframes at Selected Cells"
+  },
+  "paste_pane_animation_editor_animation_dopesheet": {
+    "keys": "v",
+    "description": "Paste"
+  },
+  "stretch_paste": {
+    "keys": "z",
+    "description": "Stretch/Paste"
+  },
+  "cycle_paste": {
+    "keys": "b",
+    "description": "Cycle/Paste"
+  },
+  "cycle_with_offset_paste": {
+    "keys": "c",
+    "description": "Cycle with Offset/Paste"
+  },
+  "replace": {
+    "keys": "r",
+    "description": "Replace"
+  },
+  "visual_paste": {
+    "keys": "shift+v",
+    "description": "Visual Paste"
+  },
+  "visual_stretch_paste": {
+    "keys": "shift+z",
+    "description": "Visual Stretch/Paste"
+  },
+  "visual_cycle_paste": {
+    "keys": "shift+b",
+    "description": "Visual Cycle/Paste"
+  },
+  "visual_cycle_with_offset_paste": {
+    "keys": "shift+c",
+    "description": "Visual Cycle with Offset/Paste"
+  },
+  "visual_replace": {
+    "keys": "shift+r",
+    "description": "Visual Replace"
+  },
+  "enable_keys": {
+    "keys": "ctrl+e",
+    "description": "Enable Keys"
+  },
+  "disable_keys": {
+    "keys": "shift+e",
+    "description": "Disable Keys"
+  },
+  "snap_selection_to_keys": {
+    "keys": "e",
+    "description": "Snap Selection to Keys"
+  },
+  "select_rows": {
+    "keys": "shift+a",
+    "description": "Select Rows"
+  },
+  "clear_selection": {
+    "keys": "q",
+    "description": "Clear Selection"
+  },
+  "select_columns": {
+    "keys": "a",
+    "description": "Select Columns"
+  },
+  "escape": {
+    "keys": "esc",
+    "description": "Escape"
+  },
+  "full_channel_names": {
+    "keys": "n",
+    "description": "Full Channel Names"
+  },
+  "one_line_per_group": {
+    "keys": "shift+l",
+    "description": "One Line Per Group"
+  },
+  "one_line_per_channel": {
+    "keys": "l",
+    "description": "One Line Per Channel"
+  },
+  "select_tool": {
+    "keys": "s",
+    "description": "Select Tool"
+  },
+  "region_tool": {
+    "keys": "shift+s",
+    "description": "Region Tool"
+  },
+  "ripple_tool": {
+    "keys": "w",
+    "description": "Ripple Tool"
+  },
+  "long_channel_names": {
+    "keys": "n",
+    "description": "Long Channel Names"
+  },
+  "show_channel_names": {
+    "keys": "shift+n",
+    "description": "Show Channel Names"
+  },
+  "enable_channel_snapshots": {
+    "keys": "shift+enter",
+    "description": "Enable Channel Snapshots"
+  },
+  "create_time_group_on_selected_keys": {
+    "keys": "q",
+    "description": "Create Time Group on Selected Keys"
+  },
+  "attach_detach_time_group": {
+    "keys": "a",
+    "description": "Attach/Detach Time Group"
+  },
+  "vertical_adapt": {
+    "keys": "v",
+    "description": "Vertical Adapt"
+  },
+  "add_keyframe_to_displayed_channels": {
+    "keys": "ctrl+k",
+    "description": "Add Keyframe to Displayed Channels"
+  },
+  "set_selected_keys_slopes_to_default_value": {
+    "keys": "b",
+    "description": "Set Selected Keys/Slopes to Default Value"
+  },
+  "set_selected_slopes_to_zero": {
+    "keys": "0",
+    "description": "Set Selected Slopes To Zero"
+  },
+  "set_selected_slopes_to_manual": {
+    "keys": "-",
+    "description": "Set Selected Slopes To Manual"
+  },
+  "set_selected_slopes_to_automatic": {
+    "keys": "=",
+    "description": "Set Selected Slopes To Automatic"
+  },
+  "toggle_automatic_slope_mode_preference": {
+    "keys": "shift+=",
+    "description": "Toggle Automatic Slope Mode Preference"
+  },
+  "smooth_selected_slopes": {
+    "keys": "9",
+    "description": "Smooth Selected Slopes"
+  },
+  "tie_untie_selection": {
+    "keys": "t",
+    "description": "Tie/Untie Selection"
+  },
+  "toggle_multigraph": {
+    "keys": "m",
+    "description": "Toggle Multigraph"
+  },
+  "toggle_minimum_detail": {
+    "keys": "w",
+    "description": "Toggle Minimum Detail"
+  },
+  "isolate_channels": {
+    "keys": "i",
+    "description": "Isolate Channels"
+  },
+  "unisolate_channels": {
+    "keys": "shift+i",
+    "description": "Unisolate Channels"
+  },
+  "select_all_handles": {
+    "keys": "ctrl+a",
+    "description": "Select All Handles"
+  },
+  "select_no_handles": {
+    "keys": "ctrl+shift+a",
+    "description": "Select No Handles"
+  },
+  "invert_handle_selection": {
+    "keys": "ctrl+i",
+    "description": "Invert Handle Selection"
+  },
+  "show_bottom_values_toolbar": {
+    "keys": "shift+v",
+    "description": "Show Bottom Values Toolbar"
+  },
+  "add_keyframes_at_selected_cells_pane_animation_editor_animation_table": {
+    "keys": "ctrl+k",
+    "description": "Add Keyframes at Selected Cells"
+  },
+  "full_channel_names_pane_animation_editor_animation_table": {
+    "keys": "n",
+    "description": "Full Channel Names"
+  },
+  "add_bundle": {
+    "keys": "shift+b",
+    "description": "Add Bundle"
+  },
+  "duplicate_bundle": {
+    "keys": "shift+d",
+    "description": "Duplicate Bundle"
+  },
+  "delete_bundle": {
+    "keys": "del",
+    "description": "Delete Bundle"
+  },
+  "show_full_paths_for_bundle_nodes": {
+    "keys": "f",
+    "description": "Show full paths for bundle nodes"
+  },
+  "home_pane_chop_viewer": {
+    "keys": "h",
+    "description": "Home"
+  },
+  "horizontal_adapt": {
+    "keys": "shift+h",
+    "description": "Horizontal Adapt"
+  },
+  "vertical_adapt_pane_chop_viewer": {
+    "keys": "shift+v",
+    "description": "Vertical Adapt"
+  },
+  "timebar": {
+    "keys": "t",
+    "description": "Timebar"
+  },
+  "labels": {
+    "keys": "l",
+    "description": "Labels"
+  },
+  "dots": {
+    "keys": "d",
+    "description": "Dots"
+  },
+  "extend_regions": {
+    "keys": "x",
+    "description": "Extend Regions"
+  },
+  "raw_edit_tools": {
+    "keys": "e",
+    "description": "Raw Edit Tools"
+  },
+  "scope_tools": {
+    "keys": "w",
+    "description": "Scope Tools"
+  },
+  "units": {
+    "keys": "shift+u",
+    "description": "Units"
+  },
+  "grid_detail": {
+    "keys": "g",
+    "description": "Grid Detail"
+  },
+  "handles": {
+    "keys": "tab / y",
+    "description": "Handles"
+  },
+  "escape_pane_chop_viewer": {
+    "keys": "esc",
+    "description": "Escape"
+  },
+  "open_channel_chooser_pane_channel_list": {
+    "keys": "ctrl+1",
+    "description": "Open Channel Chooser"
+  },
+  "open_group_list_pane_channel_list": {
+    "keys": "ctrl+2 / x",
+    "description": "Open Group List"
+  },
+  "open_layer_list_pane_channel_list": {
+    "keys": "ctrl+3",
+    "description": "Open Layer List"
+  },
+  "open_parameter_list_pane_channel_list": {
+    "keys": "ctrl+4",
+    "description": "Open Parameter List"
+  },
+  "toggle_mode": {
+    "keys": "m",
+    "description": "Toggle Mode"
+  },
+  "show_pin_status_column": {
+    "keys": "ctrl+p",
+    "description": "Show Pin Status Column"
+  },
+  "show_value_column": {
+    "keys": "v",
+    "description": "Show Value Column"
+  },
+  "use_parm_labels": {
+    "keys": "l",
+    "description": "Use Parm Labels"
+  },
+  "show_node_headers": {
+    "keys": "h",
+    "description": "Show Node Headers"
+  },
+  "select_all_pane_channel_list_parameter_box": {
+    "keys": "a / ctrl+a",
+    "description": "Select All"
+  },
+  "select_none": {
+    "keys": "ctrl+shift+a",
+    "description": "Select None"
+  },
+  "display_all": {
+    "keys": "d / ctrl+d",
+    "description": "Display All"
+  },
+  "display_none": {
+    "keys": "shift+d",
+    "description": "Display None"
+  },
+  "key_selected": {
+    "keys": "ctrl+k",
+    "description": "Key Selected"
+  },
+  "toggle_expand_on_all": {
+    "keys": "shift+e",
+    "description": "Toggle Expand on All"
+  },
+  "toggle_expand_on_all_node_headers": {
+    "keys": "shift+h",
+    "description": "Toggle Expand on All Node Headers"
+  },
+  "toggle_expand_on_channel_s": {
+    "keys": "e",
+    "description": "Toggle Expand on Channel(s)"
+  },
+  "toggle_pinning_on_all": {
+    "keys": "shift+p",
+    "description": "Toggle Pinning on All"
+  },
+  "toggle_pinning_on_channel_s": {
+    "keys": "p",
+    "description": "Toggle Pinning on Channel(s)"
+  },
+  "unscope_all": {
+    "keys": "c",
+    "description": "Unscope All"
+  },
+  "displayed_channels_properties": {
+    "keys": "alt+e",
+    "description": "Displayed Channels Properties..."
+  },
+  "scoped_channels_properties": {
+    "keys": "ctrl+e",
+    "description": "Scoped Channels Properties..."
+  },
+  "delete_node": {
+    "keys": "del",
+    "description": "Delete Node"
+  },
+  "rename_node": {
+    "keys": "f2",
+    "description": "Rename Node"
+  },
+  "add_style_sheet_parameter": {
+    "keys": "+",
+    "description": "Add Style Sheet Parameter"
+  },
+  "create_style_sheet_fromexisting_overrides": {
+    "keys": "shift+c",
+    "description": "Create Style Sheet fromExisting Overrides"
+  },
+  "add_override": {
+    "keys": "+",
+    "description": "Add Override"
+  },
+  "add_override_script": {
+    "keys": "ctrl++",
+    "description": "Add Override Script"
+  },
+  "add_style_sheet_reference": {
+    "keys": "+",
+    "description": "Add Style Sheet Reference"
+  },
+  "add_script_binding": {
+    "keys": "+",
+    "description": "Add Script Binding"
+  },
+  "add_shared_override_set": {
+    "keys": "+",
+    "description": "Add Shared Override Set"
+  },
+  "add_shared_script": {
+    "keys": "+",
+    "description": "Add Shared Script"
+  },
+  "add_override_set_reference": {
+    "keys": "shift+s",
+    "description": "Add Override Set Reference"
+  },
+  "add_style_entry": {
+    "keys": "+",
+    "description": "Add Style Entry"
+  },
+  "view_json": {
+    "keys": "shift+v",
+    "description": "View JSON"
+  },
+  "add_target": {
+    "keys": "shift+t",
+    "description": "Add Target"
+  },
+  "add_condition": {
+    "keys": "shift+c",
+    "description": "Add Condition"
+  },
+  "add_pre_binding": {
+    "keys": "shift+b",
+    "description": "Add Pre-Binding"
+  },
+  "set_target_from_viewport": {
+    "keys": "shift+v",
+    "description": "Set Target From Viewport"
+  },
+  "set_object_target_from_viewport": {
+    "keys": "shift+o",
+    "description": "Set Object Target From Viewport"
+  },
+  "set_component_target_from_viewport": {
+    "keys": "shift+g",
+    "description": "Set Component Target From Viewport"
+  },
+  "accept": {
+    "keys": "enter",
+    "description": "Accept"
+  },
+  "delete_pane_geometry_viewers": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "toggle_object_geometry_mode": {
+    "keys": "f8",
+    "description": "Toggle Object/Geometry Mode"
+  },
+  "layout_single_view": {
+    "keys": "ctrl+1",
+    "description": "Layout: Single View"
+  },
+  "layout_four_views": {
+    "keys": "ctrl+2",
+    "description": "Layout: Four Views"
+  },
+  "layout_two_views_stacked": {
+    "keys": "ctrl+3",
+    "description": "Layout: Two Views Stacked"
+  },
+  "layout_two_views_side_by_side": {
+    "keys": "ctrl+4",
+    "description": "Layout: Two Views Side by Side"
+  },
+  "layout_three_views_split_bottom": {
+    "keys": "ctrl+5",
+    "description": "Layout: Three Views Split Bottom"
+  },
+  "layout_three_views_split_left": {
+    "keys": "ctrl+6",
+    "description": "Layout: Three Views Split Left"
+  },
+  "layout_four_views_split_bottom": {
+    "keys": "ctrl+7",
+    "description": "Layout: Four Views Split Bottom"
+  },
+  "layout_four_views_split_left": {
+    "keys": "ctrl+8",
+    "description": "Layout: Four Views Split Left"
+  },
+  "toggle_dispay_of_all_huds": {
+    "keys": ";",
+    "description": "Toggle Dispay of All HUDs"
+  },
+  "operation_parameters": {
+    "keys": "p",
+    "description": "Operation Parameters"
+  },
+  "toggle_wireframe_shaded": {
+    "keys": "w",
+    "description": "Toggle Wireframe/Shaded"
+  },
+  "toggle_shaded_wire_over_shaded": {
+    "keys": "shift+w",
+    "description": "Toggle Shaded/Wire-over-shaded"
+  },
+  "display_options": {
+    "keys": "d",
+    "description": "Display Options"
+  },
+  "toggle_grid_snapping": {
+    "keys": "x",
+    "description": "Toggle Grid Snapping"
+  },
+  "toggle_primitive_snapping": {
+    "keys": "c",
+    "description": "Toggle Primitive Snapping"
+  },
+  "toggle_point_snapping": {
+    "keys": "v",
+    "description": "Toggle Point Snapping"
+  },
+  "toggle_multi_snapping": {
+    "keys": "ctrl+j",
+    "description": "Toggle Multi-Snapping"
+  },
+  "edit_multi_snap_options": {
+    "keys": "ctrl+shift+j",
+    "description": "Edit Multi-Snap Options"
+  },
+  "increase_handle_size": {
+    "keys": "*",
+    "description": "Increase Handle Size"
+  },
+  "decrease_handle_size": {
+    "keys": "/",
+    "description": "Decrease Handle Size"
+  },
+  "toolbar_menu": {
+    "keys": "tab / backspace",
+    "description": "Toolbar Menu"
+  },
+  "branch_off_new_operation": {
+    "keys": "shift+tab",
+    "description": "Branch Off New Operation"
+  },
+  "repeat_current_operation": {
+    "keys": "q",
+    "description": "Repeat Current Operation"
+  },
+  "repeat_current_operation_branched": {
+    "keys": "shift+q",
+    "description": "Repeat Current Operation Branched"
+  },
+  "move_to_previous_operation": {
+    "keys": "pageup",
+    "description": "Move To Previous Operation"
+  },
+  "move_to_next_operation": {
+    "keys": "pagedown",
+    "description": "Move To Next Operation"
+  },
+  "move_to_left_sibling": {
+    "keys": "shift+pageup / ,",
+    "description": "Move To Left Sibling"
+  },
+  "move_to_right_sibling": {
+    "keys": "shift+pagedown / .",
+    "description": "Move To Right Sibling"
+  },
+  "move_to_first_operation": {
+    "keys": "home",
+    "description": "Move To First Operation"
+  },
+  "move_to_last_operation": {
+    "keys": "end",
+    "description": "Move To Last Operation"
+  },
+  "select_output_operation": {
+    "keys": "shift+end",
+    "description": "Select Output Operation"
+  },
+  "turn_off_viewport_subdivision": {
+    "keys": "-",
+    "description": "Turn Off Viewport Subdivision"
+  },
+  "turn_on_viewport_subdivision": {
+    "keys": "+/ =",
+    "description": "Turn On Viewport Subdivision"
+  },
+  "box_selection": {
+    "keys": "f2",
+    "description": "Box Selection"
+  },
+  "lasso_selection": {
+    "keys": "f3",
+    "description": "Lasso Selection"
+  },
+  "brush_selection": {
+    "keys": "f4",
+    "description": "Brush Selection"
+  },
+  "laser_selection": {
+    "keys": "f5",
+    "description": "Laser Selection"
+  },
+  "secure_selection": {
+    "keys": "~",
+    "description": "Secure Selection"
+  },
+  "restart_selecting": {
+    "keys": "`",
+    "description": "Restart Selecting"
+  },
+  "box_handle_pane_geometry_viewers_agent_collision_layer_handle": {
+    "keys": "b",
+    "description": "Box Handle"
+  },
+  "orientation_handle": {
+    "keys": "o",
+    "description": "Orientation Handle"
+  },
+  "cycle_collision_shape": {
+    "keys": "z",
+    "description": "Cycle Collision Shape"
+  },
+  "cone_rotation_handle": {
+    "keys": "o",
+    "description": "Cone Rotation Handle"
+  },
+  "child_rotation_handle": {
+    "keys": "shift+o",
+    "description": "Child Rotation Handle"
+  },
+  "cone_handle": {
+    "keys": "f",
+    "description": "Cone Handle"
+  },
+  "twist_handle": {
+    "keys": "z",
+    "description": "Twist Handle"
+  },
+  "initialize_joint_limits": {
+    "keys": "shift+c",
+    "description": "Initialize Joint Limits"
+  },
+  "no_kinematics": {
+    "keys": "n",
+    "description": "No Kinematics"
+  },
+  "forward_kinematics": {
+    "keys": "f",
+    "description": "Forward Kinematics"
+  },
+  "inverse_kinematics": {
+    "keys": "i",
+    "description": "Inverse Kinematics"
+  },
+  "ik_with_constraints": {
+    "keys": "shift+i",
+    "description": "IK With Constraints"
+  },
+  "fk_with_constraints": {
+    "keys": "shift+f",
+    "description": "FK With Constraints"
+  },
+  "follow_curve_kinematics": {
+    "keys": "shift+k",
+    "description": "Follow-Curve Kinematics"
+  },
+  "orient_handle": {
+    "keys": "o",
+    "description": "Orient Handle"
+  },
+  "focus_handle": {
+    "keys": "z",
+    "description": "Focus Handle"
+  },
+  "frustum_handle": {
+    "keys": "f",
+    "description": "Frustum Handle"
+  },
+  "convert_to_point_selection": {
+    "keys": "ctrl+shift+2",
+    "description": "Convert to Point Selection"
+  },
+  "convert_to_edge_selection": {
+    "keys": "ctrl+shift+3",
+    "description": "Convert to Edge Selection"
+  },
+  "convert_to_primitive_selection": {
+    "keys": "ctrl+shift+4",
+    "description": "Convert to Primitive Selection"
+  },
+  "convert_to_vertex_selection": {
+    "keys": "ctrl+shift+5",
+    "description": "Convert to Vertex Selection"
+  },
+  "flip_c_plane_normal": {
+    "keys": "n",
+    "description": "Flip C-Plane Normal"
+  },
+  "align_normal_with_world_x_axis": {
+    "keys": "shift+x",
+    "description": "Align Normal With World X Axis"
+  },
+  "align_normal_with_world_y_axis": {
+    "keys": "shift+y",
+    "description": "Align Normal With World Y Axis"
+  },
+  "align_normal_with_world_z_axis": {
+    "keys": "shift+z",
+    "description": "Align Normal With World Z Axis"
+  },
+  "align_up_vector_with_c_plane_normal": {
+    "keys": "shift+n",
+    "description": "Align Up-Vector With C-Plane Normal"
+  },
+  "center_c_plane_around_world_y_axis": {
+    "keys": "y",
+    "description": "Center C-Plane Around World Y Axis"
+  },
+  "center_c_plane_around_world_z_axis": {
+    "keys": "z",
+    "description": "Center C-Plane Around World Z Axis"
+  },
+  "home_on_geometry": {
+    "keys": "a",
+    "description": "Home On Geometry"
+  },
+  "spreadsheet": {
+    "keys": "shift+s",
+    "description": "Spreadsheet..."
+  },
+  "toggle_peak_handle": {
+    "keys": "h",
+    "description": "Toggle Peak Handle"
+  },
+  "brush_handle": {
+    "keys": "b",
+    "description": "Brush Handle"
+  },
+  "toggle_sliding": {
+    "keys": "l",
+    "description": "Toggle Sliding"
+  },
+  "make_circle": {
+    "keys": "shift+c",
+    "description": "Make circle"
+  },
+  "space_selection": {
+    "keys": "shift+e",
+    "description": "Space selection"
+  },
+  "straighten_selection": {
+    "keys": "shift+s",
+    "description": "Straighten selection"
+  },
+  "add_keyframe_pane_geometry_viewers_handles": {
+    "keys": "ctrl+k",
+    "description": "Add Keyframe"
+  },
+  "remove_keyframe": {
+    "keys": "ctrl+shift+k",
+    "description": "Remove Keyframe"
+  },
+  "cycle_handle_mode": {
+    "keys": "y",
+    "description": "Cycle Handle Mode"
+  },
+  "reverse_cycle_handle_mode": {
+    "keys": "shift+y",
+    "description": "Reverse Cycle Handle Mode"
+  },
+  "select_loops": {
+    "keys": "a / ctrl+a / shift+a / ctrl+shift+a",
+    "description": "Select Loops"
+  },
+  "orient_handle_pane_geometry_viewers_light_handle": {
+    "keys": "o",
+    "description": "Orient Handle"
+  },
+  "cone_handle_pane_geometry_viewers_light_handle": {
+    "keys": "z",
+    "description": "Cone Handle"
+  },
+  "frustum_handle_pane_geometry_viewers_light_handle": {
+    "keys": "f",
+    "description": "Frustum Handle"
+  },
+  "mirror_on_xy_plane": {
+    "keys": "shift+a",
+    "description": "Mirror on XY Plane"
+  },
+  "mirror_on_yz_plane": {
+    "keys": "shift+s",
+    "description": "Mirror on YZ Plane"
+  },
+  "mirror_on_zx_plane": {
+    "keys": "shift+d",
+    "description": "Mirror on ZX Plane"
+  },
+  "select_points": {
+    "keys": "2",
+    "description": "Select Points"
+  },
+  "select_edges": {
+    "keys": "3",
+    "description": "Select Edges"
+  },
+  "select_primitives": {
+    "keys": "4",
+    "description": "Select Primitives"
+  },
+  "select_vertices": {
+    "keys": "5",
+    "description": "Select Vertices"
+  },
+  "select_groups": {
+    "keys": "9",
+    "description": "Select Groups"
+  },
+  "select_all_pane_geometry_viewers_modeling_viewer": {
+    "keys": "n",
+    "description": "Select All"
+  },
+  "invert_selection": {
+    "keys": "ctrl+i",
+    "description": "Invert Selection"
+  },
+  "select_boundary": {
+    "keys": "shift+b",
+    "description": "Select Boundary"
+  },
+  "shrink_selection": {
+    "keys": "shift+s",
+    "description": "Shrink Selection"
+  },
+  "grow_selection": {
+    "keys": "shift+g",
+    "description": "Grow Selection"
+  },
+  "select_none_pane_geometry_viewers_modeling_viewer": {
+    "keys": "shift+n",
+    "description": "Select None"
+  },
+  "area_select_visible_geometry_only": {
+    "keys": "shift+v",
+    "description": "Area Select Visible Geometry Only"
+  },
+  "pick_front_back_cycle": {
+    "keys": "ctrl+shift+b",
+    "description": "Pick Front/Back Cycle"
+  },
+  "previous_group": {
+    "keys": "f",
+    "description": "Previous Group"
+  },
+  "next_group": {
+    "keys": "g",
+    "description": "Next Group"
+  },
+  "select_tool_pane_geometry_viewers_operations": {
+    "keys": "s",
+    "description": "Select Tool"
+  },
+  "view_tool": {
+    "keys": "esc",
+    "description": "View Tool"
+  },
+  "volatile_modify_channels_operation": {
+    "keys": "j",
+    "description": "Volatile Modify Channels Operation"
+  },
+  "volatile_view_operation": {
+    "keys": "space",
+    "description": "Volatile View Operation"
+  },
+  "visualize_pelted_mesh": {
+    "keys": "g",
+    "description": "Visualize Pelted Mesh"
+  },
+  "toggle_opaque_display": {
+    "keys": "shift+o",
+    "description": "Toggle Opaque Display"
+  },
+  "toggle_front_transform": {
+    "keys": "f",
+    "description": "Toggle Front Transform"
+  },
+  "toggle_extrusion_mode": {
+    "keys": "m",
+    "description": "Toggle Extrusion Mode"
+  },
+  "global_transform_handle": {
+    "keys": "a",
+    "description": "Global Transform Handle"
+  },
+  "select_all_pane_geometry_viewers_select_and_transform_operation": {
+    "keys": "a / ctrl+a",
+    "description": "Select All"
+  },
+  "invert_selection_pane_geometry_viewers_select_and_transform_operation": {
+    "keys": "ctrl+i",
+    "description": "Invert Selection"
+  },
+  "clear_selection_pane_geometry_viewers_select_and_transform_operation": {
+    "keys": "n",
+    "description": "Clear Selection"
+  },
+  "select_points_pane_geometry_viewers_select_operation": {
+    "keys": "1",
+    "description": "Select Points"
+  },
+  "select_edges_pane_geometry_viewers_select_operation": {
+    "keys": "2",
+    "description": "Select Edges"
+  },
+  "select_breakpoints": {
+    "keys": "3",
+    "description": "Select Breakpoints"
+  },
+  "select_primitives_pane_geometry_viewers_select_operation": {
+    "keys": "4",
+    "description": "Select Primitives"
+  },
+  "select_point_groups": {
+    "keys": "5",
+    "description": "Select Point Groups"
+  },
+  "select_primitive_groups": {
+    "keys": "6",
+    "description": "Select Primitive Groups"
+  },
+  "select_connected_primitives": {
+    "keys": "7",
+    "description": "Select Connected Primitives"
+  },
+  "select_connected_points": {
+    "keys": "8",
+    "description": "Select Connected Points"
+  },
+  "select_connected_edges": {
+    "keys": "9",
+    "description": "Select Connected Edges"
+  },
+  "select_connected_breakpoints": {
+    "keys": "0",
+    "description": "Select Connected Breakpoints"
+  },
+  "move_tool": {
+    "keys": "t",
+    "description": "Move Tool"
+  },
+  "rotate_tool": {
+    "keys": "r",
+    "description": "Rotate Tool"
+  },
+  "scale_tool": {
+    "keys": "e",
+    "description": "Scale Tool"
+  },
+  "object_select_mode": {
+    "keys": "1",
+    "description": "Object Select Mode"
+  },
+  "particle_select_mode": {
+    "keys": "6",
+    "description": "Particle Select Mode"
+  },
+  "dynamics_select_mode": {
+    "keys": "7",
+    "description": "Dynamics Select Mode"
+  },
+  "build_mode": {
+    "keys": "shift+1",
+    "description": "Build Mode"
+  },
+  "split_mode": {
+    "keys": "shift+2",
+    "description": "Split Mode"
+  },
+  "brush_mode": {
+    "keys": "shift+3",
+    "description": "Brush Mode"
+  },
+  "smooth_mode": {
+    "keys": "shift+4",
+    "description": "Smooth Mode"
+  },
+  "make_circle_pane_geometry_viewers_topobuild_operation": {
+    "keys": "shift+c",
+    "description": "Make circle"
+  },
+  "space_selection_pane_geometry_viewers_topobuild_operation": {
+    "keys": "shift+e",
+    "description": "Space selection"
+  },
+  "straighten_selection_pane_geometry_viewers_topobuild_operation": {
+    "keys": "shift+s",
+    "description": "Straighten selection"
+  },
+  "toggle_handle_geometry_detachment": {
+    "keys": "'",
+    "description": "Toggle Handle-Geometry Detachment"
+  },
+  "cycle_handle_alignment": {
+    "keys": "m",
+    "description": "Cycle Handle Alignment"
+  },
+  "reverse_cycle_handle_alignment": {
+    "keys": "shift+m",
+    "description": "Reverse Cycle Handle Alignment"
+  },
+  "pivot_mode": {
+    "keys": "\\\" / insert",
+    "description": "Pivot Mode"
+  },
+  "key_translates": {
+    "keys": "shift+t",
+    "description": "Key Translates"
+  },
+  "key_rotates": {
+    "keys": "shift+r",
+    "description": "Key Rotates"
+  },
+  "key_scales": {
+    "keys": "shift+e",
+    "description": "Key Scales"
+  },
+  "home_all": {
+    "keys": "shift+a",
+    "description": "Home All"
+  },
+  "home_selected": {
+    "keys": "shift+h / g",
+    "description": "Home Selected"
+  },
+  "home_c_plane": {
+    "keys": "h",
+    "description": "Home C-Plane"
+  },
+  "home_non_templated": {
+    "keys": "shift+m",
+    "description": "Home Non-Templated"
+  },
+  "frame_all": {
+    "keys": "a",
+    "description": "Frame All"
+  },
+  "frame_selected_pane_geometry_viewers_view_operation": {
+    "keys": "f",
+    "description": "Frame Selected"
+  },
+  "frame_c_plane": {
+    "keys": "shift+f",
+    "description": "Frame C-Plane"
+  },
+  "frame_non_templated": {
+    "keys": "m",
+    "description": "Frame Non-Templated"
+  },
+  "set_pivot": {
+    "keys": "shift+z",
+    "description": "Set Pivot"
+  },
+  "set_pivot_and_center": {
+    "keys": "z",
+    "description": "Set Pivot And Center"
+  },
+  "toggle_ortho_perspective": {
+    "keys": "o",
+    "description": "Toggle Ortho/Perspective"
+  },
+  "toggle_local_world_view_context": {
+    "keys": "y",
+    "description": "Toggle Local/World View Context"
+  },
+  "top_viewport": {
+    "keys": "2",
+    "description": "Top Viewport"
+  },
+  "front_viewport": {
+    "keys": "3",
+    "description": "Front Viewport"
+  },
+  "right_viewport": {
+    "keys": "4",
+    "description": "Right Viewport"
+  },
+  "perspective_viewport": {
+    "keys": "1",
+    "description": "Perspective Viewport"
+  },
+  "uv_viewport": {
+    "keys": "5",
+    "description": "UV Viewport"
+  },
+  "toggle_single_quad": {
+    "keys": "b",
+    "description": "Toggle Single/Quad"
+  },
+  "select_viewport": {
+    "keys": "n",
+    "description": "Select Viewport"
+  },
+  "select_child_objects": {
+    "keys": "9",
+    "description": "Select Child Objects"
+  },
+  "select_parent_objects": {
+    "keys": "0",
+    "description": "Select Parent Objects"
+  },
+  "select_all_objects": {
+    "keys": "a / ctrl+a",
+    "description": "Select All Objects"
+  },
+  "invert_object_selection": {
+    "keys": "ctrl+i",
+    "description": "Invert Object Selection"
+  },
+  "select_no_objects": {
+    "keys": "n",
+    "description": "Select No Objects"
+  },
+  "delete_pane_groups": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "select_all_pane_groups": {
+    "keys": "a / ctrl+a",
+    "description": "Select All"
+  },
+  "select_none_pane_groups": {
+    "keys": "ctrl+shift+a",
+    "description": "Select None"
+  },
+  "toggle_pinning_on_all_groups": {
+    "keys": "shift+p",
+    "description": "Toggle Pinning on All Groups"
+  },
+  "toggle_pinning_on_groups": {
+    "keys": "p",
+    "description": "Toggle Pinning on Groups"
+  },
+  "add_group": {
+    "keys": "g",
+    "description": "Add Group"
+  },
+  "add_group_from_scoped": {
+    "keys": "shift+g",
+    "description": "Add Group From Scoped"
+  },
+  "add_group_from_selected": {
+    "keys": "ctrl+g",
+    "description": "Add Group From Selected"
+  },
+  "add_selection_to_group": {
+    "keys": "+",
+    "description": "Add Selection To Group"
+  },
+  "remove_selection_from_group": {
+    "keys": "-",
+    "description": "Remove Selection From Group"
+  },
+  "replace_group_with_selection": {
+    "keys": "=",
+    "description": "Replace Group With Selection"
+  },
+  "scope_selected_group_s": {
+    "keys": "v",
+    "description": "Scope Selected Group(s)"
+  },
+  "scope_all_groups": {
+    "keys": "shift+v",
+    "description": "Scope All Groups"
+  },
+  "set_key_on_selected_group_s": {
+    "keys": "ctrl+k",
+    "description": "Set Key on Selected Group(s)"
+  },
+  "remove_key_on_selected_group_s": {
+    "keys": "ctrl+shift+k",
+    "description": "Remove Key on Selected Group(s)"
+  },
+  "collapse_children_into_group_s": {
+    "keys": "c",
+    "description": "Collapse Children into Group(s)"
+  },
+  "merge_selected_group_s": {
+    "keys": "m",
+    "description": "Merge Selected Group(s)"
+  },
+  "display_related_operators": {
+    "keys": "d",
+    "description": "Display Related Operators"
+  },
+  "select_related_operators": {
+    "keys": "s",
+    "description": "Select Related Operators"
+  },
+  "select_terminal_operators": {
+    "keys": "shift+s",
+    "description": "Select Terminal Operators"
+  },
+  "delete_selected_groups": {
+    "keys": "del",
+    "description": "Delete Selected Groups"
+  },
+  "add_group_pane_handle_list": {
+    "keys": "shift+g",
+    "description": "Add Group"
+  },
+  "add_selection_to_groups": {
+    "keys": "+",
+    "description": "Add Selection To Groups"
+  },
+  "remove_selection_from_groups": {
+    "keys": "-",
+    "description": "Remove Selection From Groups"
+  },
+  "set_groups_equal_to_selection": {
+    "keys": "=",
+    "description": "Set Groups Equal To Selection"
+  },
+  "clear_groups": {
+    "keys": "shift+c",
+    "description": "Clear Groups"
+  },
+  "expose_selected_handles": {
+    "keys": "e",
+    "description": "Expose Selected Handles"
+  },
+  "hide_selected_handles": {
+    "keys": "h",
+    "description": "Hide Selected Handles"
+  },
+  "set_colors_to_default_values": {
+    "keys": "d",
+    "description": "Set Colors To Default Values"
+  },
+  "open_group_list_pane_handle_list": {
+    "keys": "x",
+    "description": "Open Group List"
+  },
+  "open_handle_list": {
+    "keys": "m",
+    "description": "Open Handle List"
+  },
+  "add_image_to_history": {
+    "keys": "enter",
+    "description": "Add Image to History"
+  },
+  "remove_image_from_history": {
+    "keys": "del",
+    "description": "Remove Image from History"
+  },
+  "home_pane_image_viewer": {
+    "keys": "h",
+    "description": "Home"
+  },
+  "home_selected_pane_image_viewer": {
+    "keys": "g",
+    "description": "Home Selected"
+  },
+  "home_selected_full": {
+    "keys": "shift+g",
+    "description": "Home Selected Full"
+  },
+  "home_full": {
+    "keys": "shift+h",
+    "description": "Home Full"
+  },
+  "zoom_in": {
+    "keys": "= /+",
+    "description": "Zoom In"
+  },
+  "zoom_out": {
+    "keys": "-",
+    "description": "Zoom Out"
+  },
+  "fast_interactive_cooking_toggle": {
+    "keys": "f",
+    "description": "Fast Interactive Cooking Toggle"
+  },
+  "display_options_pane_image_viewer": {
+    "keys": "d",
+    "description": "Display Options"
+  },
+  "inspect": {
+    "keys": "i",
+    "description": "Inspect"
+  },
+  "compare": {
+    "keys": "ctrl+d",
+    "description": "Compare"
+  },
+  "enable_view": {
+    "keys": "ctrl+e",
+    "description": "Enable View"
+  },
+  "show_preview": {
+    "keys": "ctrl+p",
+    "description": "Show Preview"
+  },
+  "show_labels": {
+    "keys": "ctrl+shift+l",
+    "description": "Show Labels"
+  },
+  "show_guides": {
+    "keys": "ctrl+g",
+    "description": "Show Guides"
+  },
+  "show_handles": {
+    "keys": "ctrl+h",
+    "description": "Show Handles"
+  },
+  "enable_lut": {
+    "keys": "ctrl+u",
+    "description": "Enable LUT"
+  },
+  "load_lut": {
+    "keys": "ctrl+shift+u",
+    "description": "Load LUT"
+  },
+  "image": {
+    "keys": "ctrl+1",
+    "description": "Image"
+  },
+  "timeline": {
+    "keys": "ctrl+2",
+    "description": "TimeLine"
+  },
+  "graph": {
+    "keys": "ctrl+3",
+    "description": "Graph"
+  },
+  "enter_color_pick_state": {
+    "keys": "q",
+    "description": "Enter Color Pick State"
+  },
+  "magnify": {
+    "keys": "m",
+    "description": "Magnify"
+  },
+  "exact_pixel_size": {
+    "keys": "/",
+    "description": "Exact Pixel Size"
+  },
+  "size_adapt": {
+    "keys": "?",
+    "description": "Size Adapt"
+  },
+  "clear_selection_pane_image_viewer_2d_image_viewer": {
+    "keys": "shift+s",
+    "description": "Clear Selection"
+  },
+  "reset_color": {
+    "keys": "r",
+    "description": "Reset Color"
+  },
+  "adapt_to_full_pixel_range": {
+    "keys": "shift+r",
+    "description": "Adapt To Full Pixel Range"
+  },
+  "toggle_rulers": {
+    "keys": "ctrl+r",
+    "description": "Toggle Rulers"
+  },
+  "toggle_transparency": {
+    "keys": "ctrl+shift+t",
+    "description": "Toggle Transparency"
+  },
+  "toggle_background_image": {
+    "keys": "shift+b",
+    "description": "Toggle Background Image"
+  },
+  "toggle_pixel_aspect_ratio": {
+    "keys": "ctrl+a",
+    "description": "Toggle Pixel Aspect Ratio"
+  },
+  "all_components": {
+    "keys": "`",
+    "description": "All Components"
+  },
+  "view_color_plane": {
+    "keys": "c",
+    "description": "View Color Plane"
+  },
+  "view_alpha_plane": {
+    "keys": "a",
+    "description": "View Alpha Plane"
+  },
+  "view_red_component": {
+    "keys": "1",
+    "description": "View Red Component"
+  },
+  "view_green_component": {
+    "keys": "2",
+    "description": "View Green Component"
+  },
+  "view_blue_component": {
+    "keys": "3",
+    "description": "View Blue Component"
+  },
+  "view_fourth_component": {
+    "keys": "4",
+    "description": "View Fourth Component"
+  },
+  "compare_images": {
+    "keys": "ctrl+shift+c",
+    "description": "Compare Images"
+  },
+  "subtract_images": {
+    "keys": "ctrl+shift+x",
+    "description": "Subtract Images"
+  },
+  "horizontal_wipe": {
+    "keys": "ctrl+shift+w",
+    "description": "Horizontal Wipe"
+  },
+  "vertical_wipe": {
+    "keys": "ctrl+shift+v",
+    "description": "Vertical Wipe"
+  },
+  "blend_images": {
+    "keys": "ctrl+shift+b",
+    "description": "Blend Images"
+  },
+  "highlight_differences": {
+    "keys": "ctrl+shift+n",
+    "description": "Highlight Differences"
+  },
+  "remove_curve_point": {
+    "keys": "del",
+    "description": "Remove Curve Point"
+  },
+  "complete_current_operation": {
+    "keys": "enter",
+    "description": "Complete Current Operation"
+  },
+  "delete_last_point": {
+    "keys": "del",
+    "description": "Delete Last Point"
+  },
+  "delete_last_stroke": {
+    "keys": "shift+del",
+    "description": "Delete Last Stroke"
+  },
+  "create_new_curve": {
+    "keys": "n",
+    "description": "Create New Curve"
+  },
+  "cancel_new_curve": {
+    "keys": "esc",
+    "description": "Cancel New Curve"
+  },
+  "show_current_all_curve_handles": {
+    "keys": "b",
+    "description": "Show Current/All Curve Handles"
+  },
+  "select_key_color": {
+    "keys": "o",
+    "description": "Select Key Color"
+  },
+  "add_to_key_color": {
+    "keys": "shift+o",
+    "description": "Add To Key Color"
+  },
+  "select_spill_color": {
+    "keys": "l",
+    "description": "Select Spill Color"
+  },
+  "add_to_spill_color": {
+    "keys": "shift+l",
+    "description": "Add To Spill Color"
+  },
+  "edit_unpin": {
+    "keys": "e",
+    "description": "Edit Unpin"
+  },
+  "ignore_graph_spikes_during_adapt": {
+    "keys": "shift+s",
+    "description": "Ignore Graph Spikes During Adapt"
+  },
+  "all_components_pane_image_viewer_histogram_viewer": {
+    "keys": "`",
+    "description": "All Components"
+  },
+  "view_color_plane_pane_image_viewer_histogram_viewer": {
+    "keys": "c",
+    "description": "View Color Plane"
+  },
+  "view_alpha_plane_pane_image_viewer_histogram_viewer": {
+    "keys": "a",
+    "description": "View Alpha Plane"
+  },
+  "view_red_component_pane_image_viewer_histogram_viewer": {
+    "keys": "1",
+    "description": "View Red Component"
+  },
+  "view_green_component_pane_image_viewer_histogram_viewer": {
+    "keys": "2",
+    "description": "View Green Component"
+  },
+  "view_blue_component_pane_image_viewer_histogram_viewer": {
+    "keys": "3",
+    "description": "View Blue Component"
+  },
+  "view_fourth_component_pane_image_viewer_histogram_viewer": {
+    "keys": "4",
+    "description": "View Fourth Component"
+  },
+  "toggle_h_v_adapts": {
+    "keys": "?",
+    "description": "Toggle H/V Adapts"
+  },
+  "finish_incomplete_cook": {
+    "keys": "shift+f",
+    "description": "Finish Incomplete Cook"
+  },
+  "cancel_selector": {
+    "keys": "esc",
+    "description": "Cancel Selector"
+  },
+  "apply_changes_to_all_views": {
+    "keys": "v",
+    "description": "Apply Changes To All Views"
+  },
+  "link_scrolling_to_all_views": {
+    "keys": "s",
+    "description": "Link Scrolling To All Views"
+  },
+  "zoom_current_viewport": {
+    "keys": "b",
+    "description": "Zoom Current Viewport"
+  },
+  "set_current": {
+    "keys": "x",
+    "description": "Set Current"
+  },
+  "remove_point_from_ramp": {
+    "keys": "del",
+    "description": "Remove Point From Ramp"
+  },
+  "show_slope_handles": {
+    "keys": "s",
+    "description": "Show Slope Handles"
+  },
+  "show_feather_handle": {
+    "keys": "w",
+    "description": "Show Feather Handle"
+  },
+  "remove_roto_point": {
+    "keys": "del",
+    "description": "Remove Roto Point"
+  },
+  "show_extend_regions": {
+    "keys": "e",
+    "description": "Show Extend Regions"
+  },
+  "show_frames_boxes": {
+    "keys": "shift+f",
+    "description": "Show Frames Boxes"
+  },
+  "show_timebar": {
+    "keys": "shift+b",
+    "description": "Show Timebar"
+  },
+  "toggle_h_v_adapts_pane_image_viewer_timeline_viewer": {
+    "keys": "?",
+    "description": "Toggle H/V Adapts"
+  },
+  "open_parameter_sheet": {
+    "keys": "w",
+    "description": "Open Parameter Sheet"
+  },
+  "volatile_select": {
+    "keys": "space",
+    "description": "Volatile Select"
+  },
+  "select_none_pane_link_editor_link_editor_sheet": {
+    "keys": "c",
+    "description": "Select None"
+  },
+  "delete_pane_material_palette": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "add_operator": {
+    "keys": "tab / backspace",
+    "description": "Add Operator"
+  },
+  "color_palette": {
+    "keys": "c",
+    "description": "Color Palette"
+  },
+  "net_overview": {
+    "keys": "o",
+    "description": "Net Overview"
+  },
+  "show_implicit_operators": {
+    "keys": "shift+i",
+    "description": "Show Implicit Operators"
+  },
+  "frame_selected_pane_network_editor": {
+    "keys": "f / shift+f",
+    "description": "Frame Selected"
+  },
+  "home_all_pane_network_editor": {
+    "keys": "h",
+    "description": "Home All"
+  },
+  "home_selected_pane_network_editor": {
+    "keys": "shift+h / g",
+    "description": "Home Selected"
+  },
+  "set_current_below": {
+    "keys": "pagedown",
+    "description": "Set Current Below"
+  },
+  "set_current_above": {
+    "keys": "pageup",
+    "description": "Set Current Above"
+  },
+  "set_current_right": {
+    "keys": "shift+pagedown / .",
+    "description": "Set Current Right"
+  },
+  "set_current_left": {
+    "keys": "shift+pageup / ,",
+    "description": "Set Current Left"
+  },
+  "layout_all": {
+    "keys": "ctrl+shift+l / l",
+    "description": "Layout All"
+  },
+  "layout_selected": {
+    "keys": "shift+l",
+    "description": "Layout Selected"
+  },
+  "open_parameters": {
+    "keys": "p",
+    "description": "Open Parameters"
+  },
+  "switch_to_worksheet_list": {
+    "keys": "shift+t",
+    "description": "Switch To Worksheet/List"
+  },
+  "jump_up": {
+    "keys": "u",
+    "description": "Jump Up"
+  },
+  "scope_channels": {
+    "keys": "v /",
+    "description": "Scope Channels"
+  },
+  "open_tree_viewer": {
+    "keys": "shift+w",
+    "description": "Open Tree Viewer"
+  },
+  "add_file_operator": {
+    "keys": "` / =",
+    "description": "Add File Operator"
+  },
+  "reorder_selected_node_inputs": {
+    "keys": "shift+r",
+    "description": "Reorder Selected Node Inputs"
+  },
+  "cancel_pane_network_editor": {
+    "keys": "esc",
+    "description": "Cancel"
+  },
+  "delete_pane_network_editor": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "jump_down": {
+    "keys": "i / enter /",
+    "description": "Jump Down"
+  },
+  "select_all_pane_network_editor": {
+    "keys": "ctrl+a",
+    "description": "Select All"
+  },
+  "collapse_selected": {
+    "keys": "shift+c",
+    "description": "Collapse Selected"
+  },
+  "expose_all": {
+    "keys": "shift+e",
+    "description": "Expose All"
+  },
+  "find_operator_pane_network_editor": {
+    "keys": "/",
+    "description": "Find Operator"
+  },
+  "open_display_options": {
+    "keys": "d",
+    "description": "Open Display Options"
+  },
+  "add_sticky_note": {
+    "keys": "ctrl+p",
+    "description": "Add Sticky Note"
+  },
+  "create_network_box_from_selected": {
+    "keys": "ctrl+n",
+    "description": "Create Network Box From Selected"
+  },
+  "minimize_selected_network_boxes": {
+    "keys": "ctrl+m",
+    "description": "Minimize Selected Network Boxes"
+  },
+  "maximize_selected_sticky_notes": {
+    "keys": "shift+k",
+    "description": "Maximize Selected Sticky Notes"
+  },
+  "minimize_selected_sticky_notes": {
+    "keys": "ctrl+k",
+    "description": "Minimize Selected Sticky Notes"
+  },
+  "snap_borders_to_bounds": {
+    "keys": "ctrl+alt+s",
+    "description": "Snap Borders To Bounds"
+  },
+  "delete_network_box_and_contents": {
+    "keys": "shift+del",
+    "description": "Delete Network Box and Contents"
+  },
+  "display_performance_data": {
+    "keys": "ctrl+alt+p",
+    "description": "Display Performance Data"
+  },
+  "toggle_display": {
+    "keys": "1",
+    "description": "Toggle Display"
+  },
+  "toggle_render": {
+    "keys": "2",
+    "description": "Toggle Render"
+  },
+  "toggle_bypass": {
+    "keys": "shift+b",
+    "description": "Toggle Bypass"
+  },
+  "toggle_debug_mode": {
+    "keys": "ctrl+d",
+    "description": "Toggle Debug Mode"
+  },
+  "visualize_output": {
+    "keys": "x",
+    "description": "Visualize Output"
+  },
+  "move_to_next_error": {
+    "keys": "e",
+    "description": "Move To Next Error"
+  },
+  "move_to_prev_error": {
+    "keys": "shift+e",
+    "description": "Move To Prev Error"
+  },
+  "select_all_pane_operator_type_properties": {
+    "keys": "ctrl+a",
+    "description": "Select All"
+  },
+  "delete_pane_operator_type_properties": {
+    "keys": "del",
+    "description": "Delete"
+  },
+  "put_in_folder": {
+    "keys": "shift+c",
+    "description": "Put in Folder"
+  },
+  "delete_folder": {
+    "keys": "del",
+    "description": "Delete Folder"
+  },
+  "add_new_folder": {
+    "keys": "insert",
+    "description": "Add New Folder"
+  },
+  "suspend_all": {
+    "keys": "s",
+    "description": "Suspend All"
+  },
+  "restart_all": {
+    "keys": "r",
+    "description": "Restart All"
+  },
+  "kill_all": {
+    "keys": "shift+k",
+    "description": "Kill All"
+  },
+  "automatically_clear_completed_jobs": {
+    "keys": "c",
+    "description": "Automatically Clear Completed Jobs"
+  },
+  "paste_copied_expressions": {
+    "keys": "ctrl+e",
+    "description": "Paste Copied Expressions"
+  },
+  "paste_copied_references": {
+    "keys": "ctrl+r",
+    "description": "Paste Copied References"
+  },
+  "paste_copied_relative_references": {
+    "keys": "ctrl+shift+r",
+    "description": "Paste Copied Relative References"
+  },
+  "paste_copied_channels": {
+    "keys": "ctrl+shift+v",
+    "description": "Paste Copied Channels"
+  },
+  "full_node_paths": {
+    "keys": "n",
+    "description": "Full Node Paths"
+  },
+  "load_scope": {
+    "keys": "l",
+    "description": "Load Scope"
+  },
+  "open_operator_tree": {
+    "keys": "shift+w / w",
+    "description": "Open Operator Tree"
+  },
+  "select_none_pane_parameter_spreadsheet": {
+    "keys": "q",
+    "description": "Select None"
+  },
+  "volatile_select_pane_parameter_spreadsheet": {
+    "keys": "space",
+    "description": "Volatile Select"
+  },
+  "open_profile": {
+    "keys": "ctrl+alt+o",
+    "description": "Open Profile"
+  },
+  "save_profile_as": {
+    "keys": "ctrl+alt+shift+s",
+    "description": "Save Profile As"
+  },
+  "export_profile_as": {
+    "keys": "ctrl+alt+shift+e",
+    "description": "Export Profile As"
+  },
+  "compare_profiles": {
+    "keys": "ctrl+alt+c",
+    "description": "Compare Profiles"
+  },
+  "open_preferences": {
+    "keys": "ctrl+alt+p",
+    "description": "Open Preferences"
+  },
+  "delete_profile": {
+    "keys": "ctrl+alt+shift+d",
+    "description": "Delete Profile"
+  },
+  "toggle_node_cook_stats": {
+    "keys": "shift+c",
+    "description": "Toggle Node Cook Stats"
+  },
+  "toggle_dop_solve_stats": {
+    "keys": "shift+s",
+    "description": "Toggle DOP Solve Stats"
+  },
+  "toggle_node_draw_cpu_stats": {
+    "keys": "shift+d",
+    "description": "Toggle Node Draw CPU Stats"
+  },
+  "toggle_node_draw_gpu_stats": {
+    "keys": "shift+g",
+    "description": "Toggle Node Draw GPU Stats"
+  },
+  "toggle_viewport_stats": {
+    "keys": "shift+v",
+    "description": "Toggle Viewport Stats"
+  },
+  "toggle_script_stats": {
+    "keys": "shift+i /",
+    "description": "Toggle Script Stats"
+  },
+  "toggle_render_stats": {
+    "keys": "shift+r /",
+    "description": "Toggle Render Stats"
+  },
+  "toggle_thread_stats": {
+    "keys": "shift+t",
+    "description": "Toggle Thread Stats"
+  },
+  "toggle_frame_stats": {
+    "keys": "shift+f",
+    "description": "Toggle Frame Stats"
+  },
+  "toggle_memory": {
+    "keys": "shift+m",
+    "description": "Toggle Memory"
+  },
+  "toggle_errors": {
+    "keys": "shift+e",
+    "description": "Toggle Errors"
+  },
+  "sample_all": {
+    "keys": "shift+a",
+    "description": "Sample All"
+  },
+  "sample_none": {
+    "keys": "shift+n",
+    "description": "Sample None"
+  },
+  "toggle_live_updates": {
+    "keys": "shift+l",
+    "description": "Toggle Live Updates"
+  },
+  "toggle_time_format": {
+    "keys": "p",
+    "description": "Toggle Time Format"
+  },
+  "toggle_statistics_view": {
+    "keys": "t",
+    "description": "Toggle Statistics View"
+  },
+  "toggle_event_log": {
+    "keys": "l",
+    "description": "Toggle Event Log"
+  },
+  "toggle_record": {
+    "keys": "r",
+    "description": "Toggle Record"
+  },
+  "clear_statistics": {
+    "keys": "c",
+    "description": "Clear Statistics"
+  },
+  "copy_pane_python_shell": {
+    "keys": "ctrl+shift+c",
+    "description": "Copy"
+  },
+  "paste_pane_python_shell": {
+    "keys": "ctrl+shift+v",
+    "description": "Paste"
+  },
+  "home_pane_shader_viewer": {
+    "keys": "h",
+    "description": "Home"
+  },
+  "mode": {
+    "keys": "m",
+    "description": "Mode"
+  },
+  "level_of_detail": {
+    "keys": "l",
+    "description": "Level Of Detail"
+  },
+  "transparency": {
+    "keys": "a",
+    "description": "Transparency"
+  },
+  "reload_shader": {
+    "keys": "v",
+    "description": "Reload Shader"
+  },
+  "exclude_from_take": {
+    "keys": "del",
+    "description": "Exclude From Take"
+  },
+  "delete_take": {
+    "keys": "del",
+    "description": "Delete Take"
+  },
+  "insert_new_take": {
+    "keys": "insert",
+    "description": "Insert New Take"
+  },
+  "append_new_take": {
+    "keys": "shift+t",
+    "description": "Append New Take"
+  },
+  "show_take_contents": {
+    "keys": "w",
+    "description": "Show Take Contents"
+  },
+  "page_up_pane_textport": {
+    "keys": "shift+pageup",
+    "description": "Page Up"
+  },
+  "page_down_pane_textport": {
+    "keys": "shift+pagedown",
+    "description": "Page Down"
+  },
+  "select_home": {
+    "keys": "shift+home",
+    "description": "Select Home"
+  },
+  "select_end": {
+    "keys": "shift+end",
+    "description": "Select End"
+  },
+  "select_first_line": {
+    "keys": "shift+ctrl+home",
+    "description": "Select First Line"
+  },
+  "select_last_line": {
+    "keys": "shift+ctrl+end",
+    "description": "Select Last Line"
+  },
+  "home_pane_textport": {
+    "keys": "home",
+    "description": "Home"
+  },
+  "end_pane_textport": {
+    "keys": "end",
+    "description": "End"
+  },
+  "first_line": {
+    "keys": "ctrl+home",
+    "description": "First Line"
+  },
+  "last_line": {
+    "keys": "ctrl+end",
+    "description": "Last Line"
+  },
+  "open_editor_pane_textport": {
+    "keys": "alt+e",
+    "description": "Open Editor"
+  },
+  "match_parenthesis_quotes": {
+    "keys": "ctrl+m",
+    "description": "Match Parenthesis/Quotes"
+  },
+  "search_and_replace": {
+    "keys": "ctrl+h",
+    "description": "Search and Replace"
+  },
+  "jump_to_line": {
+    "keys": "ctrl+g",
+    "description": "Jump to Line"
+  },
+  "display_only_channels": {
+    "keys": "d",
+    "description": "Display Only Channels"
+  },
+  "display_only_scoped_channels": {
+    "keys": "b",
+    "description": "Display Only Scoped Channels"
+  },
+  "scope_all_channels": {
+    "keys": "a / ctrl+a",
+    "description": "Scope All Channels"
+  },
+  "toggle_channel_scope": {
+    "keys": "t",
+    "description": "Toggle Channel Scope"
+  },
+  "set_keyframe_on_all": {
+    "keys": "k",
+    "description": "Set Keyframe on All"
+  },
+  "remove_keyframe_on_all": {
+    "keys": "shift+k",
+    "description": "Remove Keyframe on All"
+  },
+  "set_keyframe_on_scoped": {
+    "keys": "j",
+    "description": "Set Keyframe on Scoped"
+  },
+  "remove_keyframe_on_scoped": {
+    "keys": "shift+j",
+    "description": "Remove Keyframe on Scoped"
+  },
+  "navigate_up": {
+    "keys": "uparrow",
+    "description": "Navigate Up"
+  },
+  "navigate_down": {
+    "keys": "downarrow",
+    "description": "Navigate Down"
+  },
+  "navigate_left": {
+    "keys": "leftarrow",
+    "description": "Navigate Left"
+  },
+  "navigate_right": {
+    "keys": "rightarrow",
+    "description": "Navigate Right"
+  },
+  "remove_last_character": {
+    "keys": "backspace",
+    "description": "Remove Last Character"
+  },
+  "select": {
+    "keys": "enter",
+    "description": "Select"
+  },
+  "delete_point": {
+    "keys": "del",
+    "description": "Delete Point"
+  },
+  "select_previous_point": {
+    "keys": "pageup",
+    "description": "Select Previous Point"
+  },
+  "select_next_point": {
+    "keys": "pagedown",
+    "description": "Select Next Point"
+  },
+  "add_toolbar": {
+    "keys": "alt+n",
+    "description": "Add Toolbar"
+  },
+  "save_toolbar": {
+    "keys": "alt+s",
+    "description": "Save Toolbar"
+  },
+  "cancel_toolbar_manager": {
+    "keys": "esc",
+    "description": "Cancel"
+  }
+}

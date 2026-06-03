@@ -1,0 +1,1570 @@
+{
+  "select_all": {
+    "keys": "ctrl+a",
+    "description": "Select all"
+  },
+  "deselect_all": {
+    "keys": "f2",
+    "description": "Deselect all"
+  },
+  "rename": {
+    "keys": "enter",
+    "description": "Rename"
+  },
+  "open_selected_layer_composition_footage": {
+    "keys": "numenter",
+    "description": "Open selected layer/composition/footage"
+  },
+  "move_layer_mask_effect_to_top": {
+    "keys": "ctrl+alt+up",
+    "description": "Move layer/mask/effect to top"
+  },
+  "move_layer_mask_effect_to_bottom": {
+    "keys": "ctrl+alt+down",
+    "description": "Move layer/mask/effect to bottom"
+  },
+  "duplicate_selected_layers_masks_effects_text_selectors_animators_puppet_meshes_shapes_render_items_output_modules_or_compositions": {
+    "keys": "ctrl+d",
+    "description": "Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)"
+  },
+  "quit": {
+    "keys": "ctrl+q",
+    "description": "Quit"
+  },
+  "undo": {
+    "keys": "ctrl+z",
+    "description": "Undo"
+  },
+  "redo": {
+    "keys": "ctrl+shift+z",
+    "description": "Redo"
+  },
+  "purge_all_memory": {
+    "keys": "ctrl+alt+/",
+    "description": "Purge All Memory"
+  },
+  "return_exit_interrupt": {
+    "keys": "esc",
+    "description": "Return/Exit/Interrupt"
+  },
+  "display_filename_corresponding_to_the_frame_at_the_current_time_in_the_info_panel": {
+    "keys": "ctrl+alt+e",
+    "description": "Display filename corresponding to the frame at the current time in the Info panel"
+  },
+  "cycle_through_tools": {
+    "keys": "alt-click tool button in tools panel",
+    "description": "Cycle through tools"
+  },
+  "selection_tool": {
+    "keys": "v",
+    "description": "Selection tool"
+  },
+  "hand_tool": {
+    "keys": "h",
+    "description": "Hand tool"
+  },
+  "temporarily_activate_hand_tool": {
+    "keys": "middle mouse",
+    "description": "Temporarily activate Hand tool"
+  },
+  "zoom_in_tool": {
+    "keys": "z",
+    "description": "Zoom In tool"
+  },
+  "zoom_out_tool": {
+    "keys": "alt",
+    "description": "Zoom Out tool"
+  },
+  "rotation_tool": {
+    "keys": "w",
+    "description": "Rotation tool"
+  },
+  "roto_brush_tool": {
+    "keys": "alt+w",
+    "description": "Roto Brush tool"
+  },
+  "cycle_camera_tools": {
+    "keys": "c",
+    "description": "Cycle Camera tools"
+  },
+  "pan_behind_tool": {
+    "keys": "y",
+    "description": "Pan Behind tool"
+  },
+  "cycle_mask_and_shape_tools": {
+    "keys": "q",
+    "description": "Cycle mask and shape tools"
+  },
+  "cycle_type_tools": {
+    "keys": "ctrl+t",
+    "description": "Cycle Type tools"
+  },
+  "cycle_pen_and_mask_feather_tools": {
+    "keys": "g",
+    "description": "Cycle Pen and Mask Feather tools"
+  },
+  "cycle_brush_clone_stamp_eraser": {
+    "keys": "ctrl+b",
+    "description": "Cycle Brush, Clone Stamp, Eraser"
+  },
+  "cycle_puppet_tools": {
+    "keys": "ctrl+p",
+    "description": "Cycle Puppet tools"
+  },
+  "zoom_in": {
+    "keys": "ctrl+=",
+    "description": "Zoom in"
+  },
+  "zoom_out": {
+    "keys": "ctrl+-",
+    "description": "Zoom out"
+  },
+  "new_composition": {
+    "keys": "ctrl+n",
+    "description": "New composition"
+  },
+  "composition_settings": {
+    "keys": "ctrl+k",
+    "description": "Composition Settings"
+  },
+  "set_beginning_of_work_area_to_current_time": {
+    "keys": "b",
+    "description": "Set beginning of work area to current time"
+  },
+  "set_end_of_work_area_to_current_time": {
+    "keys": "n",
+    "description": "Set end of work area to current time"
+  },
+  "set_work_area_to_duration_of_selected_layers_or_if_no_layers_are_selected_set_work_area_to_composition_duration": {
+    "keys": "ctrl+alt+b",
+    "description": "Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration"
+  },
+  "open_composition_mini_flowchart_for_active_composition": {
+    "keys": "tab",
+    "description": "Open Composition Mini-Flowchart for active composition"
+  },
+  "activate_the_most_recently_active_composition_that_is_in_the_same_composition_hierarchy_as_the_currently_active_composition": {
+    "keys": "shift+esc",
+    "description": "Activate the most recently active composition that is in the same composition hierarchy as the currently active composition"
+  },
+  "delete_all_effects_from_selected_layers": {
+    "keys": "ctrl+shift+e",
+    "description": "Delete all effects from selected layers"
+  },
+  "apply_most_recently_applied_effect_to_selected_layers": {
+    "keys": "ctrl+alt+shift+e",
+    "description": "Apply most recently applied effect to selected layers"
+  },
+  "apply_most_recently_applied_animation_preset_to_selected_layers": {
+    "keys": "ctrl+alt+shift+f",
+    "description": "Apply most recently applied animation preset to selected layers"
+  },
+  "import_one_file_or_image_sequence": {
+    "keys": "ctrl+i",
+    "description": "Import one file or image sequence"
+  },
+  "import_multiple_files_or_image_sequences": {
+    "keys": "ctrl+alt+i",
+    "description": "Import multiple files or image sequences"
+  },
+  "add_selected_items_to_most_recently_activated_composition": {
+    "keys": "ctrl+/",
+    "description": "Add selected items to most recently activated composition"
+  },
+  "replace_selected_source_footage_for_selected_layers_with_footage_item_selected_in_project_panel": {
+    "keys": "ctrl+alt+/",
+    "description": "Replace selected source footage for selected layers with footage item selected in Project panel"
+  },
+  "delete_a_footage_item_without_a_warning": {
+    "keys": "ctrl+backspace",
+    "description": "Delete a footage item without a warning"
+  },
+  "open_interpret_footage_dialog_box_for_selected_footage_item": {
+    "keys": "ctrl+alt+g",
+    "description": "Open Interpret Footage dialog box for selected footage item"
+  },
+  "remember_footage_interpretation": {
+    "keys": "ctrl+alt+c",
+    "description": "Remember footage interpretation"
+  },
+  "edit_selected_footage_item_in_application_with_which_it_s_associated": {
+    "keys": "ctrl+e",
+    "description": "Edit selected footage item in application with which it\u2019s associated"
+  },
+  "replace_selected_footage_item": {
+    "keys": "ctrl+h",
+    "description": "Replace selected footage item"
+  },
+  "reload_selected_footage_items": {
+    "keys": "ctrl+alt+l",
+    "description": "Reload selected footage items"
+  },
+  "set_proxy_for_selected_footage_item": {
+    "keys": "ctrl+alt+p",
+    "description": "Set proxy for selected footage item"
+  },
+  "toggle_graph_editor_layer_bar_modes": {
+    "keys": "shift+f3",
+    "description": "Toggle Graph Editor/Layer Bar modes"
+  },
+  "select_all_keyframes_for_a_property": {
+    "keys": "click property name",
+    "description": "Select all keyframes for a property"
+  },
+  "select_all_visible_keyframes_and_properties": {
+    "keys": "ctrl+alt+a",
+    "description": "Select all visible keyframes and properties"
+  },
+  "deselect_all_keyframes_properties_and_property_groups": {
+    "keys": "shift+f2",
+    "description": "Deselect all keyframes, properties, and property groups"
+  },
+  "move_keyframe_1_frame_later": {
+    "keys": "alt+right",
+    "description": "Move keyframe 1 frame later"
+  },
+  "move_keyframe_1_frame_earlier": {
+    "keys": "alt+left",
+    "description": "Move keyframe 1 frame earlier"
+  },
+  "move_keyframe_10_frames_later": {
+    "keys": "alt+shift+right",
+    "description": "Move keyframe 10 frames later"
+  },
+  "move_keyframe_10_frames_earlier": {
+    "keys": "alt+shift+left",
+    "description": "Move keyframe 10 frames earlier"
+  },
+  "set_interpolation_for_selected_keyframes": {
+    "keys": "ctrl+alt+k",
+    "description": "Set interpolation for selected keyframes"
+  },
+  "set_keyframe_interpolation_hold_or_auto_bezier": {
+    "keys": "ctrl+alt+h",
+    "description": "Set keyframe interpolation: hold or Auto Bezier"
+  },
+  "set_keyframe_interpolation_linear_or_auto_bezier": {
+    "keys": "ctrl-click in layer bar mode",
+    "description": "Set keyframe interpolation: linear or Auto Bezier"
+  },
+  "set_keyframe_interpolation_linear_or_hold": {
+    "keys": "ctrl+alt-click in layer bar mode",
+    "description": "Set keyframe interpolation: linear or hold"
+  },
+  "easy_ease_selected_keyframes": {
+    "keys": "f9",
+    "description": "Easy ease selected keyframes"
+  },
+  "easy_ease_selected_keyframes_in": {
+    "keys": "shift+f9",
+    "description": "Easy ease selected keyframes in"
+  },
+  "easy_ease_selected_keyframes_out": {
+    "keys": "ctrl+shift+f9",
+    "description": "Easy ease selected keyframes out"
+  },
+  "set_velocity_for_selected_keyframes": {
+    "keys": "ctrl+shift+k",
+    "description": "Set velocity for selected keyframes"
+  },
+  "add_or_remove_keyframe_at_current_time_for_property_shortcuts_see_showing_properties_and_groups_in_the_timeline_panel": {
+    "keys": "alt+shift+property shortcut",
+    "description": "Add or remove keyframe at current time. For property shortcuts, see Showing properties and groups in the Timeline panel ."
+  },
+  "new_text_layer": {
+    "keys": "ctrl+alt+shift+t",
+    "description": "New text layer"
+  },
+  "new_solid_layer": {
+    "keys": "ctrl+y",
+    "description": "New solid layer"
+  },
+  "new_null_layer": {
+    "keys": "ctrl+alt+shift+y",
+    "description": "New null layer"
+  },
+  "new_adjustment_layer": {
+    "keys": "ctrl+alt+y",
+    "description": "New adjustment layer"
+  },
+  "select_layer_by_its_number": {
+    "keys": "num1-9",
+    "description": "Select layer by its number"
+  },
+  "select_next_layer_in_stacking_order": {
+    "keys": "ctrl+down",
+    "description": "Select next layer in stacking order"
+  },
+  "select_previous_layer_in_stacking_order": {
+    "keys": "ctrl+up",
+    "description": "Select previous layer in stacking order"
+  },
+  "extend_selection_to_next_layer_in_stacking_order": {
+    "keys": "ctrl+shift+down",
+    "description": "Extend selection to next layer in stacking order"
+  },
+  "extend_selection_to_previous_layer_in_stacking_order": {
+    "keys": "ctrl+shift+up",
+    "description": "Extend selection to previous layer in stacking order"
+  },
+  "toggle_parent_column": {
+    "keys": "shift+f4",
+    "description": "Toggle Parent column"
+  },
+  "toggle_layer_switches_and_modes_columns": {
+    "keys": "f4",
+    "description": "Toggle Layer Switches and Modes columns"
+  },
+  "setting_the_sampling_method_for_selected_layers": {
+    "keys": "alt+b / alt+shift+b",
+    "description": "Setting the sampling method for selected layers"
+  },
+  "turn_off_all_other_solo_switches": {
+    "keys": "alt-click solo switch",
+    "description": "Turn off all other solo switches"
+  },
+  "turn_video_switch_on_or_off_for_selected_layers": {
+    "keys": "ctrl+alt+shift+v",
+    "description": "Turn Video switch on or off for selected layers"
+  },
+  "turn_off_video_switch_for_all_video_layers_other_than_selected_layers": {
+    "keys": "ctrl+shift+v",
+    "description": "Turn off Video switch for all video layers other than selected layers"
+  },
+  "open_settings_dialog_box_for_selected_solid_light_camera_null_or_adjustment_layer": {
+    "keys": "ctrl+shift+y",
+    "description": "Open settings dialog box for selected solid, light, camera, null, or adjustment layer"
+  },
+  "paste_layers_at_current_time": {
+    "keys": "ctrl+alt+v",
+    "description": "Paste layers at current time"
+  },
+  "split_selected_layers": {
+    "keys": "ctrl+shift+d",
+    "description": "Split selected layers"
+  },
+  "precompose_selected_layers": {
+    "keys": "ctrl+shift+c",
+    "description": "Precompose selected layers"
+  },
+  "open_layer_in_layer_panel": {
+    "keys": "double-click a layer",
+    "description": "Open layer in Layer panel"
+  },
+  "open_source_of_a_layer_in_footage_panel": {
+    "keys": "alt-double-click a layer",
+    "description": "Open source of a layer in Footage panel"
+  },
+  "reverse_selected_layers_in_time": {
+    "keys": "ctrl+alt+r",
+    "description": "Reverse selected layers in time"
+  },
+  "enable_time_remapping_for_selected_layers": {
+    "keys": "ctrl+alt+t",
+    "description": "Enable time remapping for selected layers"
+  },
+  "add_or_remove_expression_for_a_property": {
+    "keys": "alt-click stopwatch",
+    "description": "Add or remove expression for a property"
+  },
+  "set_in_point_by_time_stretching": {
+    "keys": "ctrl+shift+,",
+    "description": "Set In point by time-stretching"
+  },
+  "set_out_point_by_time_stretching": {
+    "keys": "ctrl+alt+,",
+    "description": "Set Out point by time-stretching"
+  },
+  "with_selected_layers_move_in_point_to_beginning_of_composition": {
+    "keys": "alt+home",
+    "description": "With selected layers: move In Point to beginning of composition"
+  },
+  "with_selected_layers_move_out_point_to_end_of_composition": {
+    "keys": "alt+end",
+    "description": "With selected layers: move Out point to end of composition"
+  },
+  "lock_selected_layers": {
+    "keys": "ctrl+l",
+    "description": "Lock selected layers"
+  },
+  "unlock_all_layers": {
+    "keys": "ctrl+shift+l",
+    "description": "Unlock all layers"
+  },
+  "set_quality_to_best_for_selected_layers": {
+    "keys": "ctrl+u",
+    "description": "Set Quality to Best for selected layers"
+  },
+  "set_quality_to_draft_for_selected_layers": {
+    "keys": "ctrl+shift+u",
+    "description": "Set Quality to Draft for selected layers"
+  },
+  "set_quality_to_wireframe_for_selected_layers": {
+    "keys": "ctrl+alt+shift+u",
+    "description": "Set Quality to Wireframe for selected layers"
+  },
+  "cycle_forward_through_blending_modes_for_selected_layers": {
+    "keys": "shift+-",
+    "description": "Cycle forward through blending modes for selected layers"
+  },
+  "cycle_backward_through_blending_modes_for_selected_layers": {
+    "keys": "shift++",
+    "description": "Cycle backward through blending modes for selected layers"
+  },
+  "set_marker_at_current_time": {
+    "keys": "num*",
+    "description": "Set marker at current time"
+  },
+  "set_marker_at_current_time_and_open_marker_dialog_box": {
+    "keys": "alt+num*",
+    "description": "Set marker at current time and open marker dialog box"
+  },
+  "set_and_number_a_composition_marker_at_the_current_time": {
+    "keys": "shift+0-9",
+    "description": "Set and number a composition marker at the current time"
+  },
+  "go_to_a_composition_marker": {
+    "keys": "0-9",
+    "description": "Go to a composition marker"
+  },
+  "display_the_duration_between_two_layer_markers_or_keyframes_in_the_info_panel": {
+    "keys": "alt-click the markers",
+    "description": "Display the duration between two layer markers or keyframes in the Info panel"
+  },
+  "remove_marker": {
+    "keys": "ctrl-click marker",
+    "description": "Remove marker"
+  },
+  "new_mask": {
+    "keys": "ctrl+shift+n",
+    "description": "New mask"
+  },
+  "select_all_points_in_a_mask": {
+    "keys": "alt-click mask",
+    "description": "Select all points in a mask"
+  },
+  "select_next_mask": {
+    "keys": "alt+`",
+    "description": "Select next mask"
+  },
+  "select_previous_mask": {
+    "keys": "alt+shift+`",
+    "description": "Select previous mask"
+  },
+  "enter_free_transform_mask_editing_mode": {
+    "keys": "double-click mask with selection tool",
+    "description": "Enter free-transform mask editing mode"
+  },
+  "scale_around_center_point_in_free_transform_mode": {
+    "keys": "ctrl-drag",
+    "description": "Scale around center point in Free Transform mode"
+  },
+  "toggle_between_smooth_and_corner_points": {
+    "keys": "ctrl+alt-click vertex",
+    "description": "Toggle between smooth and corner points"
+  },
+  "redraw_bezier_handles": {
+    "keys": "ctrl+alt-drag vertex",
+    "description": "Redraw Bezier handles"
+  },
+  "invert_selected_mask": {
+    "keys": "ctrl+shift+i",
+    "description": "Invert selected mask"
+  },
+  "open_mask_feather_dialog_box_for_selected_mask": {
+    "keys": "ctrl+shift+f",
+    "description": "Open Mask Feather dialog box for selected mask"
+  },
+  "open_mask_shape_dialog_box_for_selected_mask": {
+    "keys": "ctrl+shift+m",
+    "description": "Open Mask Shape dialog box for selected mask"
+  },
+  "move_selection_1_pixel_at_current_zoom": {
+    "keys": "arrow keys",
+    "description": "Move selection 1 pixel at current zoom"
+  },
+  "move_selection_points_10_pixels_at_current_zoom": {
+    "keys": "shift+arrow keys",
+    "description": "Move selection points 10 pixels at current zoom"
+  },
+  "switch_to_3d_view_1": {
+    "keys": "f10",
+    "description": "Switch to 3D view 1"
+  },
+  "switch_to_3d_view_2": {
+    "keys": "f11",
+    "description": "Switch to 3D view 2"
+  },
+  "switch_to_3d_view_3": {
+    "keys": "f12",
+    "description": "Switch to 3D view 3"
+  },
+  "new_light": {
+    "keys": "ctrl+alt+shift+l",
+    "description": "New light"
+  },
+  "new_camera": {
+    "keys": "ctrl+alt+shift+c",
+    "description": "New camera"
+  },
+  "move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers": {
+    "keys": "ctrl+alt+shift+\\",
+    "description": "Move the camera and its point of interest to look at selected 3D layers"
+  },
+  "with_a_camera_tool_selected_move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers": {
+    "keys": "f",
+    "description": "With a camera tool selected, move the camera and its point of interest to look at selected 3D layers"
+  },
+  "turn_casts_shadows_property_on_or_off_for_selected_3d_layers": {
+    "keys": "alt+shift+c",
+    "description": "Turn Casts Shadows property on or off for selected 3D layers"
+  },
+  "modify_property_value_by_default_increments": {
+    "keys": "drag property value",
+    "description": "Modify property value by default increments"
+  },
+  "modify_property_value_by_10x_default_increments": {
+    "keys": "shift-drag property value",
+    "description": "Modify property value by 10x default increments"
+  },
+  "modify_property_value_by_1_10_default_increments": {
+    "keys": "ctrl-drag property value",
+    "description": "Modify property value by 1/10 default increments"
+  },
+  "open_auto_orientation_dialog_box_for_selected_layers": {
+    "keys": "ctrl+alt+o",
+    "description": "Open Auto-Orientation dialog box for selected layers"
+  },
+  "open_opacity_dialog_box_for_selected_layers": {
+    "keys": "ctrl+shift+o",
+    "description": "Open Opacity dialog box for selected layers"
+  },
+  "open_rotation_dialog_box_for_selected_layers": {
+    "keys": "ctrl+shift+r",
+    "description": "Open Rotation dialog box for selected layers"
+  },
+  "open_position_dialog_box_for_selected_layers": {
+    "keys": "ctrl+shift+p",
+    "description": "Open Position dialog box for selected layers"
+  },
+  "center_selected_layers_in_view": {
+    "keys": "ctrl+home",
+    "description": "Center selected layers in view"
+  },
+  "move_selected_layers_1_frame_earlier": {
+    "keys": "alt+pageup",
+    "description": "Move selected layers 1 frame earlier"
+  },
+  "move_selected_layers_1_frame_later": {
+    "keys": "alt+pagedown",
+    "description": "Move selected layers 1 frame later"
+  },
+  "move_selected_layers_10_frames_earlier": {
+    "keys": "alt+shift+pageup",
+    "description": "Move selected layers 10 frames earlier"
+  },
+  "move_selected_layers_10_frames_later": {
+    "keys": "alt+shift+pagedown",
+    "description": "Move selected layers 10 frames later"
+  },
+  "increase_rotation_of_selected_layers_by_1": {
+    "keys": "numpad+",
+    "description": "Increase Rotation of selected layers by 1\u00b0"
+  },
+  "decrease_rotation_of_selected_layers_by_1": {
+    "keys": "num-",
+    "description": "Decrease Rotation of selected layers by 1\u00b0"
+  },
+  "increase_rotation_of_selected_layers_by_10": {
+    "keys": "shift+numpad+",
+    "description": "Increase Rotation of selected layers by 10\u00b0"
+  },
+  "decrease_rotation_of_selected_layers_by_10": {
+    "keys": "shift+num-",
+    "description": "Decrease Rotation of selected layers by 10\u00b0"
+  },
+  "increase_opacity_of_selected_layers_by_1": {
+    "keys": "ctrl+alt+numpad+",
+    "description": "Increase Opacity of selected layers by 1%"
+  },
+  "decrease_opacity_of_selected_layers_by_1": {
+    "keys": "ctrl+alt+num-",
+    "description": "Decrease Opacity of selected layers by 1%"
+  },
+  "increase_opacity_of_selected_layers_by_10": {
+    "keys": "ctrl+alt+shift+numpad+",
+    "description": "Increase Opacity of selected layers by 10%"
+  },
+  "decrease_opacity_of_selected_layers_by_10": {
+    "keys": "ctrl+alt+shift+num-",
+    "description": "Decrease Opacity of selected layers by 10%"
+  },
+  "increase_scale_of_selected_layers_by_1": {
+    "keys": "ctrl+numpad+or alt+numpad+",
+    "description": "Increase Scale of selected layers by 1%"
+  },
+  "decrease_scale_of_selected_layers_by_1": {
+    "keys": "ctrl+num-",
+    "description": "Decrease Scale of selected layers by 1%"
+  },
+  "increase_scale_of_selected_layers_by_10": {
+    "keys": "ctrl+shift+numpad+",
+    "description": "Increase Scale of selected layers by 10%"
+  },
+  "decrease_scale_of_selected_layers_by_10": {
+    "keys": "ctrl+shift+num-",
+    "description": "Decrease Scale of selected layers by 10%"
+  },
+  "modify_rotation_or_orientation_in_45_increments": {
+    "keys": "shift-drag with rotation tool",
+    "description": "Modify Rotation or Orientation in 45\u00b0 increments"
+  },
+  "reset_rotation_to_0": {
+    "keys": "double-click rotation tool",
+    "description": "Reset Rotation to 0\u00b0"
+  },
+  "reset_scale_to_100": {
+    "keys": "double-click selection tool",
+    "description": "Reset Scale to 100%"
+  },
+  "scale_and_reposition_selected_layers_to_fit_composition": {
+    "keys": "ctrl+alt+f",
+    "description": "Scale and reposition selected layers to fit composition"
+  },
+  "scale_and_reposition_selected_layers_to_fit_composition_width_preserving_image_aspect_ratio_for_each_layer": {
+    "keys": "ctrl+alt+shift+h",
+    "description": "Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer"
+  },
+  "scale_and_reposition_selected_layers_to_fit_composition_height_preserving_image_aspect_ratio_for_each_layer": {
+    "keys": "ctrl+alt+shift+g",
+    "description": "Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer"
+  },
+  "swap_color_background_foreground": {
+    "keys": "x",
+    "description": "Swap color Background/Foreground"
+  },
+  "reset_background_foreground_to_black_white": {
+    "keys": "d",
+    "description": "Reset Background/Foreground to black white"
+  },
+  "set_foreground_color_to_the_color_currently_under_any_paint_tool_pointer": {
+    "keys": "alt-click",
+    "description": "Set foreground color to the color currently under any paint tool pointer"
+  },
+  "set_foreground_color_to_the_average_color_of_a_4_pixel_x_4_pixel_area_under_any_paint_tool_pointer": {
+    "keys": "ctrl+alt-click",
+    "description": "Set foreground color to the average color of a 4-pixel x 4-pixel area under any paint tool pointer"
+  },
+  "set_brush_size_for_a_paint_tool": {
+    "keys": "ctrl-drag",
+    "description": "Set brush size for a paint tool"
+  },
+  "join_current_paint_stroke_to_the_previous_stroke": {
+    "keys": "hold shift while beginning stroke",
+    "description": "Join current paint stroke to the previous stroke"
+  },
+  "set_starting_sample_point_to_point_currently_under_clone_stamp_tool_pointer": {
+    "keys": "alt-click",
+    "description": "Set starting sample point to point currently under Clone Stamp tool pointer"
+  },
+  "hold_eraser_tool_with_last_stroke_only_option": {
+    "keys": "ctrl+shift",
+    "description": "(Hold) Eraser tool with Last Stroke Only option"
+  },
+  "show_and_move_overlay": {
+    "keys": "alt+shift-drag with clone stamp tool",
+    "description": "Show and move overlay"
+  },
+  "duplicate_a_clone_stamp_tool_preset_in_paint_panel": {
+    "keys": "alt-click the button for the preset",
+    "description": "Duplicate a Clone Stamp tool preset in Paint panel"
+  },
+  "move_earlier_or_later_by_number_of_frames_specified_for_stroke_duration": {
+    "keys": "ctrl+pageup",
+    "description": "Move earlier or later by number of frames specified for stroke Duration"
+  },
+  "maximize_or_restore_panel_under_pointer": {
+    "keys": "`",
+    "description": "Maximize or restore panel under pointer"
+  },
+  "toggle_project_panel": {
+    "keys": "ctrl+0",
+    "description": "Toggle Project panel"
+  },
+  "toggle_render_queue_panel": {
+    "keys": "ctrl+alt+0",
+    "description": "Toggle Render Queue panel"
+  },
+  "toggle_tools_panel": {
+    "keys": "ctrl+1",
+    "description": "Toggle Tools panel"
+  },
+  "toggle_info_panel": {
+    "keys": "ctrl+2",
+    "description": "Toggle Info panel"
+  },
+  "toggle_preview_panel": {
+    "keys": "ctrl+3",
+    "description": "Toggle Preview panel"
+  },
+  "toggle_audio_panel": {
+    "keys": "ctrl+4",
+    "description": "Toggle Audio panel"
+  },
+  "toggle_effects_presets_panel": {
+    "keys": "ctrl+5",
+    "description": "Toggle Effects & Presets panel"
+  },
+  "toggle_character_panel": {
+    "keys": "ctrl+6",
+    "description": "Toggle Character panel"
+  },
+  "toggle_paragraph_panel": {
+    "keys": "ctrl+7",
+    "description": "Toggle Paragraph panel"
+  },
+  "toggle_paint_panel": {
+    "keys": "ctrl+8",
+    "description": "Toggle Paint panel"
+  },
+  "toggle_brushes_panel": {
+    "keys": "ctrl+9",
+    "description": "Toggle Brushes panel"
+  },
+  "toggle_effect_controls_panel_for_selected_layer": {
+    "keys": "f3",
+    "description": "Toggle Effect Controls panel for selected layer"
+  },
+  "open_flowchart_panel_for_project_flowchart": {
+    "keys": "ctrl+f11",
+    "description": "Open Flowchart panel for project flowchart"
+  },
+  "switch_to_workspace": {
+    "keys": "shift+f10/shift+f11/shift+f12",
+    "description": "Switch to workspace"
+  },
+  "close_active_viewer_or_panel": {
+    "keys": "ctrl+w",
+    "description": "Close active viewer or panel"
+  },
+  "close_active_panel_or_all_viewers_of_type_of_active_viewer": {
+    "keys": "ctrl+shift+w",
+    "description": "Close active panel or all viewers of type of active viewer"
+  },
+  "split_the_frame_containing_the_active_viewer_and_create_a_new_viewer_with_opposite_locked_unlocked_state": {
+    "keys": "ctrl+alt+shift+n",
+    "description": "Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state"
+  },
+  "resize_application_window_or_floating_window_to_fit_screen": {
+    "keys": "ctrl+\\",
+    "description": "Resize application window or floating window to fit screen."
+  },
+  "move_application_window_or_floating_window_to_main_monitor_resize_window_to_fit_screen": {
+    "keys": "ctrl+alt+\\",
+    "description": "Move application window or floating window to main monitor; resize window to fit screen."
+  },
+  "toggle_activation_between_composition_panel_and_timeline_panel_for_current_composition": {
+    "keys": "\\",
+    "description": "Toggle activation between Composition panel and Timeline panel for current composition"
+  },
+  "cycle_to_previous_or_next_item_in_active_viewer": {
+    "keys": "shift+,",
+    "description": "Cycle to previous or next item in active viewer"
+  },
+  "cycle_to_previous_or_next_panel_in_active_frame": {
+    "keys": "alt+shift+,",
+    "description": "Cycle to previous or next panel in active frame"
+  },
+  "activate_a_view_in_a_multi_view_layout_in_the_composition_panel_without_affecting_layer_selection": {
+    "keys": "click with middle mouse button",
+    "description": "Activate a view in a multi-view layout in the Composition panel without affecting layer selection"
+  },
+  "open_preferences_dialog_box": {
+    "keys": "ctrl+alt+;",
+    "description": "Open Preferences dialog box"
+  },
+  "start_or_stop_standard_preview": {
+    "keys": "spacebar",
+    "description": "Start or stop standard preview"
+  },
+  "ram_preview": {
+    "keys": "num0",
+    "description": "RAM preview"
+  },
+  "ram_preview_with_alternate_settings": {
+    "keys": "shift+num0",
+    "description": "RAM preview with alternate settings"
+  },
+  "save_ram_preview": {
+    "keys": "ctrl-click ram preview button",
+    "description": "Save RAM preview"
+  },
+  "save_ram_preview_with_alternate_settings": {
+    "keys": "ctrl+shift-click ram preview button",
+    "description": "Save RAM preview with alternate settings"
+  },
+  "preview_only_audio_from_current_time": {
+    "keys": "num.",
+    "description": "Preview only audio from current time"
+  },
+  "preview_only_audio_in_work_area": {
+    "keys": "alt+num.",
+    "description": "Preview only audio in work area"
+  },
+  "manually_preview_video": {
+    "keys": "drag",
+    "description": "Manually preview  video"
+  },
+  "manually_preview_audio": {
+    "keys": "ctrl-drag current-time indicator",
+    "description": "Manually preview  audio"
+  },
+  "ram_preview_number_of_frames_specified_by_alternate_ram_preview_preference": {
+    "keys": "alt+num0",
+    "description": "RAM preview number of frames specified by Alternate RAM Preview preference"
+  },
+  "take_snapshot": {
+    "keys": "shift+f5/shift+f6/shift+f7/shift+f8",
+    "description": "Take snapshot"
+  },
+  "display_snapshot_in_active_viewer": {
+    "keys": "f5/f6/f7/f8",
+    "description": "Display snapshot in active viewer"
+  },
+  "purge_snapshot": {
+    "keys": "ctrl+shift+f5",
+    "description": "Purge snapshot"
+  },
+  "fast_previews_off": {
+    "keys": "ctrl+alt+1",
+    "description": "Fast Previews > Off"
+  },
+  "fast_previews_adaptive_resolution": {
+    "keys": "ctrl+alt+2",
+    "description": "Fast Previews > Adaptive Resolution"
+  },
+  "fast_previews_draft": {
+    "keys": "ctrl+alt+3",
+    "description": "Fast Previews > Draft"
+  },
+  "fast_previews_fast_draft": {
+    "keys": "ctrl+alt+4",
+    "description": "Fast Previews > Fast Draft"
+  },
+  "fast_previews_wireframe": {
+    "keys": "ctrl+alt+5",
+    "description": "Fast Previews > Wireframe"
+  },
+  "new_project": {
+    "keys": "ctrl+alt+n",
+    "description": "New project"
+  },
+  "open_project": {
+    "keys": "ctrl+o",
+    "description": "Open project"
+  },
+  "open_most_recent_project": {
+    "keys": "ctrl+alt+shift+p",
+    "description": "Open most recent project"
+  },
+  "find_in_project_panel": {
+    "keys": "ctrl+f",
+    "description": "Find in Project panel"
+  },
+  "save_project": {
+    "keys": "ctrl+s",
+    "description": "Save project"
+  },
+  "increment_and_save_project": {
+    "keys": "ctrl+alt+shift+s",
+    "description": "Increment and save project"
+  },
+  "save_as": {
+    "keys": "ctrl+shift+s",
+    "description": "Save As"
+  },
+  "add_active_composition_or_selected_items_to_render_queue": {
+    "keys": "ctrl+shift+/",
+    "description": "Add active composition or selected items to render queue"
+  },
+  "add_current_frame_to_render_queue": {
+    "keys": "ctrl+alt+s",
+    "description": "Add current frame to render queue"
+  },
+  "group_selected_shapes": {
+    "keys": "ctrl+g",
+    "description": "Group selected shapes"
+  },
+  "ungroup_selected_shapes": {
+    "keys": "ctrl+shift+g",
+    "description": "Ungroup selected shapes"
+  },
+  "increase_star_inner_roundness": {
+    "keys": "page up when dragging to create shape",
+    "description": "Increase star inner roundness"
+  },
+  "decrease_star_inner_roundness": {
+    "keys": "page down when dragging to create shape",
+    "description": "Decrease star inner roundness"
+  },
+  "increase_number_of_points_for_star_or_polygon_increase_roundness_for_rounded_rectangle": {
+    "keys": "up arrow when dragging to create shape",
+    "description": "Increase number of points for star or polygon; increase roundness for rounded rectangle"
+  },
+  "decrease_number_of_points_for_star_or_polygon_decrease_roundness_for_rounded_rectangle": {
+    "keys": "down arrow when dragging to create shape",
+    "description": "Decrease number of points for star or polygon; decrease roundness for rounded rectangle"
+  },
+  "set_rounded_rectangle_roundness_to_0_decrease_polygon_and_star_outer_roundness": {
+    "keys": "left arrow when dragging to create shape",
+    "description": "Set rounded rectangle roundness to 0 ; decrease polygon and star outer roundness"
+  },
+  "constrain_rectangles_to_squares_constrain_ellipses_to_circles_constrain_polygons_and_stars_to_zero_rotation": {
+    "keys": "shift when dragging to create shape",
+    "description": "Constrain rectangles to squares; constrain ellipses to circles; constrain polygons and stars to zero rotation"
+  },
+  "change_outer_radius_of_star": {
+    "keys": "ctrl when dragging to create shape",
+    "description": "Change outer radius of star"
+  },
+  "go_to_specific_time": {
+    "keys": "alt+shift+j",
+    "description": "Go to specific time"
+  },
+  "go_to_beginning_of_work_area": {
+    "keys": "shift+home",
+    "description": "Go to beginning of work area"
+  },
+  "go_to_end_of_work_area": {
+    "keys": "shift+end",
+    "description": "Go to end of work area"
+  },
+  "go_to_previous_visible_item_in_time_ruler": {
+    "keys": "j",
+    "description": "Go to previous visible item in time ruler"
+  },
+  "go_to_next_visible_item_in_time_ruler": {
+    "keys": "k",
+    "description": "Go to next visible item in time ruler"
+  },
+  "go_to_beginning_of_composition_layer_or_footage_item": {
+    "keys": "home",
+    "description": "Go to beginning of composition, layer, or footage item"
+  },
+  "go_to_end_of_composition_layer_or_footage_item": {
+    "keys": "end",
+    "description": "Go to end of composition, layer, or footage item"
+  },
+  "go_forward_1_frame": {
+    "keys": "pagedown",
+    "description": "Go forward 1 frame"
+  },
+  "go_forward_10_frames": {
+    "keys": "shift+pagedown",
+    "description": "Go forward 10 frames"
+  },
+  "go_backward_1_frame": {
+    "keys": "pageup",
+    "description": "Go backward 1 frame"
+  },
+  "go_backward_10_frames": {
+    "keys": "shift+pageup",
+    "description": "Go backward 10 frames"
+  },
+  "go_to_layer_in_point": {
+    "keys": "i",
+    "description": "Go to layer In point"
+  },
+  "go_to_layer_out_point": {
+    "keys": "o",
+    "description": "Go to layer Out point"
+  },
+  "go_to_previous_in_point_or_out_point": {
+    "keys": "ctrl+alt+shift+left",
+    "description": "Go to previous In point or Out point"
+  },
+  "go_to_next_in_point_or_out_point": {
+    "keys": "ctrl+alt+shift+right",
+    "description": "Go to next In point or Out point"
+  },
+  "turn_display_color_management_on_or_off_for_active_view": {
+    "keys": "shift+/",
+    "description": "Turn display color management on or off for active view"
+  },
+  "show_red_channel_as_grayscale": {
+    "keys": "alt+1",
+    "description": "Show red channel as grayscale"
+  },
+  "show_green_channel_as_grayscale": {
+    "keys": "alt+2",
+    "description": "Show green channel as grayscale"
+  },
+  "show_blue_channel_as_grayscale": {
+    "keys": "alt+3",
+    "description": "Show blue channel as grayscale"
+  },
+  "show_alpha_channel_as_grayscale": {
+    "keys": "alt+4",
+    "description": "Show alpha channel as grayscale"
+  },
+  "show_colorized_red_channel": {
+    "keys": "alt+shift+1",
+    "description": "Show colorized red channel"
+  },
+  "show_colorized_green_channel": {
+    "keys": "alt+shift+2",
+    "description": "Show colorized green channel"
+  },
+  "show_colorized_blue_channel": {
+    "keys": "alt+shift+3",
+    "description": "Show colorized blue channel"
+  },
+  "toggle_showing_straight_rgb_color": {
+    "keys": "alt+shift+4",
+    "description": "Toggle showing straight RGB color"
+  },
+  "show_alpha_boundary_in_layer_panel": {
+    "keys": "alt+5",
+    "description": "Show alpha boundary  in Layer panel"
+  },
+  "show_alpha_overlay_in_layer_panel": {
+    "keys": "alt+6",
+    "description": "Show alpha overlay  in Layer panel"
+  },
+  "show_refine_edge_x_ray": {
+    "keys": "alt+x",
+    "description": "Show Refine Edge X-ray"
+  },
+  "center_composition_in_the_panel": {
+    "keys": "double-click hand tool",
+    "description": "Center composition in the panel"
+  },
+  "zoom_in_in_composition_layer_or_footage_panel": {
+    "keys": ".",
+    "description": "Zoom in in Composition, Layer, or Footage panel"
+  },
+  "zoom_out_in_composition_layer_or_footage_panel": {
+    "keys": ",",
+    "description": "Zoom out in Composition, Layer, or Footage panel"
+  },
+  "zoom_to_100_in_composition_layer_or_footage_panel": {
+    "keys": "/",
+    "description": "Zoom to 100% in Composition, Layer, or Footage panel"
+  },
+  "zoom_to_fit_in_composition_layer_or_footage_panel": {
+    "keys": "shift+/",
+    "description": "Zoom to fit in Composition, Layer, or Footage panel"
+  },
+  "zoom_up_to_100_to_fit_in_composition_layer_or_footage_panel": {
+    "keys": "alt+/",
+    "description": "Zoom up to 100% to fit in Composition, Layer, or Footage panel"
+  },
+  "set_resolution_to_full_in_composition_panel": {
+    "keys": "ctrl+j",
+    "description": "Set resolution to Full in Composition panel"
+  },
+  "set_resolution_to_half_in_composition_panel": {
+    "keys": "ctrl+shift+j",
+    "description": "Set resolution to Half in Composition panel"
+  },
+  "set_resolution_to_custom_in_composition_panel": {
+    "keys": "ctrl+alt+j",
+    "description": "Set resolution to Custom in Composition panel"
+  },
+  "open_view_options_dialog_box_for_active_composition_panel": {
+    "keys": "ctrl+alt+u",
+    "description": "Open View Options dialog box for active Composition panel"
+  },
+  "zoom_in_time": {
+    "keys": "=",
+    "description": "Zoom in time"
+  },
+  "zoom_out_time": {
+    "keys": "-",
+    "description": "Zoom out time"
+  },
+  "zoom_in_timeline_panel_to_single_frame_units": {
+    "keys": ";",
+    "description": "Zoom in Timeline panel to single-frame units"
+  },
+  "zoom_out_in_timeline_panel_to_show_the_entire_composition_duration": {
+    "keys": "shift+;",
+    "description": "Zoom out in Timeline panel to show the entire composition duration"
+  },
+  "prevent_images_from_being_rendered_for_previews_in_viewer_panels": {
+    "keys": "capslock",
+    "description": "Prevent images from being rendered for previews in viewer panels"
+  },
+  "toggle_safe_zones": {
+    "keys": "'",
+    "description": "Toggle safe zones"
+  },
+  "toggle_grid": {
+    "keys": "ctrl+'",
+    "description": "Toggle grid"
+  },
+  "toggle_proportional_grid": {
+    "keys": "alt+'",
+    "description": "Toggle proportional grid"
+  },
+  "toggle_rulers": {
+    "keys": "ctrl+r",
+    "description": "Toggle rulers"
+  },
+  "toggle_guides": {
+    "keys": "ctrl+;",
+    "description": "Toggle guides"
+  },
+  "turn_snapping_to_grid_on_or_off": {
+    "keys": "ctrl+shift+'",
+    "description": "Turn snapping to grid on or off"
+  },
+  "turn_snapping_to_guides_on_or_off": {
+    "keys": "ctrl+shift+;",
+    "description": "Turn snapping to guides on or off"
+  },
+  "lock_or_unlock_guides": {
+    "keys": "ctrl+alt+shift+;",
+    "description": "Lock or unlock guides"
+  },
+  "toggle_layer_controls": {
+    "keys": "ctrl+shift+h",
+    "description": "Toggle layer controls"
+  },
+  "hold_selection_tool": {
+    "keys": "ctrl",
+    "description": "(Hold) Selection tool"
+  },
+  "set_opacity_for_a_paint_tool": {
+    "keys": "num0-9",
+    "description": "Set opacity for a paint tool"
+  },
+  "set_opacity_for_a_paint_tool_to_100": {
+    "keys": "num.",
+    "description": "Set opacity for a paint tool to 100%"
+  },
+  "set_flow_for_a_paint_tool": {
+    "keys": "shift+num0-9",
+    "description": "Set flow for a paint tool"
+  },
+  "set_flow_for_a_paint_tool_to_100": {
+    "keys": "shift+num.",
+    "description": "Set flow for a paint tool to 100%"
+  },
+  "hold_shape_duplication_tool": {
+    "keys": "alt",
+    "description": "(Hold) Shape Duplication tool"
+  },
+  "hold_direct_selection_tool": {
+    "keys": "ctrl",
+    "description": "(Hold) Direct Selection tool"
+  },
+  "activate_a_clone_stamp_tool_preset": {
+    "keys": "3-7",
+    "description": "Activate a Clone Stamp tool preset"
+  },
+  "move_the_camera_and_its_point_of_interest_to_look_at_all_3d_layers": {
+    "keys": "ctrl+shift+f",
+    "description": "Move the camera and its point of interest to look at all 3D layers"
+  },
+  "move_1px_feature_region_search_region_and_attach_point": {
+    "keys": "arrow keys",
+    "description": "Move 1px: feature region, search region, and attach point"
+  },
+  "move_10px_feature_region_search_region_and_attach_point": {
+    "keys": "shift+arrow keys",
+    "description": "Move 10px: feature region, search region, and attach point"
+  },
+  "move_1px_feature_region_and_search_region": {
+    "keys": "alt+arrow keys",
+    "description": "Move 1px: feature region and search region"
+  },
+  "move_10px_feature_region_and_search_region": {
+    "keys": "alt+shift+arrow keys",
+    "description": "Move 10px: feature region and search region"
+  },
+  "toggle_mercury_transmit_video_preview": {
+    "keys": "/",
+    "description": "Toggle Mercury Transmit video preview"
+  },
+  "new_folder_in_project_panel": {
+    "keys": "ctrl+alt+shift+n",
+    "description": "New folder in Project panel"
+  },
+  "extend_selection_to_next_item": {
+    "keys": "shift+down",
+    "description": "Extend selection to next item"
+  },
+  "extend_selection_to_previous_item": {
+    "keys": "shift+up",
+    "description": "Extend selection to previous item"
+  },
+  "duplicate_render_item_with_same_output_filename_as_original": {
+    "keys": "ctrl+shift+d",
+    "description": "Duplicate render item with same output filename as original"
+  },
+  "extend_selection_to_next_item_panel_renderqueue": {
+    "keys": "shift+down",
+    "description": "Extend selection to next item"
+  },
+  "extend_selection_to_previous_item_panel_renderqueue": {
+    "keys": "shift+up",
+    "description": "Extend selection to previous item"
+  },
+  "find": {
+    "keys": "ctrl+f",
+    "description": "Find"
+  },
+  "scroll_topmost_selected_layer_to_top_of_timeline_panel": {
+    "keys": "x",
+    "description": "Scroll topmost selected layer to top of Timeline panel"
+  },
+  "enter_free_transform_path_editing_mode": {
+    "keys": "ctrl+t",
+    "description": "Enter free-transform path editing mode"
+  },
+  "toggle_selection_of_layer_by_its_number": {
+    "keys": "shift+num0-9",
+    "description": "Toggle selection of layer  by its number"
+  },
+  "toggle_expansion_of_selected_layers_to_show_all_properties": {
+    "keys": "ctrl+`",
+    "description": "Toggle expansion of selected layers to show all properties"
+  },
+  "scroll_to_current_time": {
+    "keys": "d",
+    "description": "Scroll to current time"
+  },
+  "show_only_anchor_point_property": {
+    "keys": "a",
+    "description": "Show only Anchor Point property"
+  },
+  "show_only_audio_levels_property": {
+    "keys": "l",
+    "description": "Show only Audio Levels property"
+  },
+  "show_only_mask_feather_property": {
+    "keys": "f",
+    "description": "Show only Mask Feather property"
+  },
+  "show_only_mask_path_property": {
+    "keys": "m",
+    "description": "Show only Mask Path property"
+  },
+  "show_only_mask_opacity_property": {
+    "keys": "tt",
+    "description": "Show only Mask Opacity property"
+  },
+  "show_only_opacity_property": {
+    "keys": "t",
+    "description": "Show only Opacity property"
+  },
+  "show_only_position_property": {
+    "keys": "p",
+    "description": "Show only Position property"
+  },
+  "show_only_rotation_and_orientation_properties": {
+    "keys": "r",
+    "description": "Show only Rotation and Orientation properties"
+  },
+  "show_only_scale_property": {
+    "keys": "s",
+    "description": "Show only Scale property"
+  },
+  "show_only_time_remap_property": {
+    "keys": "rr",
+    "description": "Show only Time Remap property"
+  },
+  "show_only_instances_of_missing_effects": {
+    "keys": "ff",
+    "description": "Show only instances of missing effects"
+  },
+  "show_only_effects_property_group": {
+    "keys": "e",
+    "description": "Show only Effects property group"
+  },
+  "show_only_mask_property_groups": {
+    "keys": "mm",
+    "description": "Show only mask property groups"
+  },
+  "show_only_material_options_property_group": {
+    "keys": "aa",
+    "description": "Show only Material Options property group"
+  },
+  "show_only_expressions": {
+    "keys": "ee",
+    "description": "Show only expressions"
+  },
+  "show_only_modified_properties": {
+    "keys": "uu",
+    "description": "Show only modified properties"
+  },
+  "show_only_paint_strokes_roto_brush_strokes_and_puppet_pins": {
+    "keys": "pp",
+    "description": "Show only paint strokes, Roto Brush strokes, and Puppet pins"
+  },
+  "show_only_audio_waveform": {
+    "keys": "ll",
+    "description": "Show only audio waveform"
+  },
+  "show_only_properties_with_keyframes_or_expressions": {
+    "keys": "u",
+    "description": "Show only properties with keyframes or expressions"
+  },
+  "show_only_selected_properties_and_groups": {
+    "keys": "ss",
+    "description": "Show only selected properties and groups"
+  },
+  "hide_property_or_group": {
+    "keys": "alt+shift-click property",
+    "description": "Hide property or group"
+  },
+  "add_or_remove_property_or_group_from_set_that_is_shown": {
+    "keys": "shift+property",
+    "description": "Add or remove property or group from set that is shown"
+  },
+  "add_or_remove_keyframe_at_current_time": {
+    "keys": "alt+shift+property shortcut",
+    "description": "Add or remove keyframe at current time"
+  },
+  "toggle_expansion_of_selected_effects_to_show_all_properties": {
+    "keys": "ctrl+`",
+    "description": "Toggle expansion of selected effects to show all properties"
+  },
+  "extend_selection_to_next_item_panel_effect_controls": {
+    "keys": "shift+down",
+    "description": "Extend selection to next item"
+  },
+  "extend_selection_to_previous_item_panel_effect_controls": {
+    "keys": "shift+up",
+    "description": "Extend selection to previous item"
+  },
+  "align_text_left_top": {
+    "keys": "ctrl+shift+l",
+    "description": "Align text left/top"
+  },
+  "align_text_center": {
+    "keys": "ctrl+shift+c",
+    "description": "Align text center"
+  },
+  "align_text_right_bottom": {
+    "keys": "ctrl+shift+r",
+    "description": "Align text right/bottom"
+  },
+  "extend_or_reduce_selection": {
+    "keys": "ctrl+shift+down / ctrl+shift+up",
+    "description": "Extend or reduce selection"
+  },
+  "select_text_to_beginning_of_line": {
+    "keys": "shift+home",
+    "description": "Select text to beginning of line"
+  },
+  "select_text_to_end_of_line": {
+    "keys": "shift+end",
+    "description": "Select text to end of line"
+  },
+  "move_cursor_to_beginning_of_line": {
+    "keys": "home",
+    "description": "Move cursor to beginning of line"
+  },
+  "move_cursor_to_end_of_line": {
+    "keys": "end",
+    "description": "Move cursor to end of line"
+  },
+  "select_all_text": {
+    "keys": "ctrl+a",
+    "description": "Select all text"
+  },
+  "select_text_to_beginning_of_text_frame": {
+    "keys": "ctrl+shift+home",
+    "description": "Select text to beginning of text frame"
+  },
+  "select_text_to_end_of_text_frame": {
+    "keys": "ctrl+shift+end",
+    "description": "Select text to end of text frame"
+  },
+  "select_text_from_insertion_point_to_mouse_click_point": {
+    "keys": "shift-click",
+    "description": "Select text from insertion point to mouse click point"
+  },
+  "move_text_caret": {
+    "keys": "arrows",
+    "description": "Move text caret"
+  },
+  "turn_all_caps_on_or_off_for_selected_text": {
+    "keys": "ctrl+shift+k",
+    "description": "Turn All Caps on or off for selected text"
+  },
+  "turn_small_caps_on_or_off_for_selected_text": {
+    "keys": "ctrl+alt+shift+k",
+    "description": "Turn Small Caps on or off for selected text"
+  },
+  "turn_superscript_on_or_off_for_selected_text": {
+    "keys": "ctrl+shift+=",
+    "description": "Turn Superscript on or off for selected text"
+  },
+  "turn_subscript_on_or_off_for_selected_text": {
+    "keys": "ctrl+alt+shift+=",
+    "description": "Turn Subscript on or off for selected text"
+  },
+  "set_horizontal_scale_to_100_for_selected_text": {
+    "keys": "ctrl+shift+x",
+    "description": "Set horizontal scale to 100% for selected text"
+  },
+  "set_vertical_scale_to_100_for_selected_text": {
+    "keys": "ctrl+alt+shift+x",
+    "description": "Set vertical scale to 100% for selected text"
+  },
+  "auto_leading_for_selected_text": {
+    "keys": "ctrl+alt+shift+a",
+    "description": "Auto leading for selected text"
+  },
+  "reset_tracking_to_0_for_selected_text": {
+    "keys": "ctrl+shift+q",
+    "description": "Reset tracking to 0 for selected text"
+  },
+  "justify_paragraph_left_align_last_line": {
+    "keys": "ctrl+shift+j",
+    "description": "Justify paragraph; left align last line"
+  },
+  "justify_paragraph_right_align_last_line": {
+    "keys": "ctrl+alt+shift+j",
+    "description": "Justify paragraph; right align last line"
+  },
+  "justify_paragraph_force_last_line": {
+    "keys": "ctrl+shift+f",
+    "description": "Justify paragraph; force last line"
+  },
+  "decrease_font_size_by_2_units": {
+    "keys": "ctrl+shift+,",
+    "description": "Decrease font size by 2 units"
+  },
+  "increase_font_size_by_2_units": {
+    "keys": "ctrl+shift+.",
+    "description": "Increase font size by 2 units"
+  },
+  "decrease_font_size_by_10_units": {
+    "keys": "ctrl+alt+shift+,",
+    "description": "Decrease font size by 10 units"
+  },
+  "increase_font_size_by_10_units": {
+    "keys": "ctrl+alt+shift+.",
+    "description": "Increase font size by 10 units"
+  },
+  "increase_leading_by_2_units": {
+    "keys": "alt+up",
+    "description": "Increase leading by 2 units"
+  },
+  "decrease_leading_by_2_units": {
+    "keys": "alt+down",
+    "description": "Decrease leading by 2 units"
+  },
+  "increase_leading_by_10_units": {
+    "keys": "ctrl+alt+up",
+    "description": "Increase leading by 10 units"
+  },
+  "decrease_leading_by_10_units": {
+    "keys": "ctrl+alt+down",
+    "description": "Decrease leading by 10 units"
+  },
+  "decrease_baseline_shift_by_2_units": {
+    "keys": "alt+shift+down",
+    "description": "Decrease baseline shift by 2 units"
+  },
+  "increase_baseline_shift_by_2_units": {
+    "keys": "alt+shift+up",
+    "description": "Increase baseline shift by 2 units"
+  },
+  "decrease_baseline_shift_by_10_units": {
+    "keys": "ctrl+alt+shift+down",
+    "description": "Decrease baseline shift by 10 units"
+  },
+  "increase_baseline_shift_by_10_units": {
+    "keys": "ctrl+alt+shift+up",
+    "description": "Increase baseline shift by 10 units"
+  },
+  "decrease_kerning_or_tracking_20_units": {
+    "keys": "alt+left",
+    "description": "Decrease kerning or tracking 20 units"
+  },
+  "increase_kerning_or_tracking_20_units": {
+    "keys": "alt+right",
+    "description": "Increase kerning or tracking 20 units"
+  },
+  "decrease_kerning_or_tracking_100_units": {
+    "keys": "ctrl+alt+left",
+    "description": "Decrease kerning or tracking 100 units"
+  },
+  "increase_kerning_or_tracking_100_units": {
+    "keys": "ctrl+alt+right",
+    "description": "Increase kerning or tracking 100 units"
+  },
+  "toggle_paragraph_composer": {
+    "keys": "ctrl+alt+shift+t",
+    "description": "Toggle paragraph composer"
+  },
+  "go_to_specific_time_time_navigation": {
+    "keys": "alt+shift+j",
+    "description": "Go to specific time"
+  },
+  "go_to_beginning_of_work_area_time_navigation": {
+    "keys": "shift+home",
+    "description": "Go to beginning of work area"
+  },
+  "go_to_end_of_work_area_time_navigation": {
+    "keys": "shift+end",
+    "description": "Go to end of work area"
+  },
+  "go_to_previous_visible_item_in_time_ruler_time_navigation": {
+    "keys": "j",
+    "description": "Go to previous visible item in time ruler"
+  },
+  "go_to_next_visible_item_in_time_ruler_time_navigation": {
+    "keys": "k",
+    "description": "Go to next visible item in time ruler"
+  },
+  "go_to_beginning_of_composition_layer_or_footage_item_time_navigation": {
+    "keys": "home",
+    "description": "Go to beginning of composition, layer, or footage item"
+  },
+  "go_to_end_of_composition_layer_or_footage_item_time_navigation": {
+    "keys": "end",
+    "description": "Go to end of composition, layer, or footage item"
+  },
+  "go_forward_1_frame_time_navigation": {
+    "keys": "pagedown",
+    "description": "Go forward 1 frame"
+  },
+  "go_forward_10_frames_time_navigation": {
+    "keys": "shift+pagedown",
+    "description": "Go forward 10 frames"
+  },
+  "go_backward_1_frame_time_navigation": {
+    "keys": "pageup",
+    "description": "Go backward 1 frame"
+  },
+  "go_backward_10_frames_time_navigation": {
+    "keys": "shift+pageup",
+    "description": "Go backward 10 frames"
+  },
+  "go_to_layer_in_point_time_navigation": {
+    "keys": "i",
+    "description": "Go to layer In point"
+  },
+  "go_to_layer_out_point_time_navigation": {
+    "keys": "o",
+    "description": "Go to layer Out point"
+  },
+  "go_to_previous_in_point_or_out_point_time_navigation": {
+    "keys": "ctrl+alt+shift+left",
+    "description": "Go to previous In point or Out point"
+  },
+  "go_to_next_in_point_or_out_point_time_navigation": {
+    "keys": "ctrl+alt+shift+right",
+    "description": "Go to next In point or Out point"
+  },
+  "scroll_to_current_time_in_timeline_panel": {
+    "keys": "d",
+    "description": "Scroll to current time in Timeline panel"
+  }
+}

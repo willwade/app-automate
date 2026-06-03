@@ -1,0 +1,1018 @@
+{
+  "print_selected_photo": {
+    "keys": "ctrl+p",
+    "description": "Print Selected Photo"
+  },
+  "go_to_web_module": {
+    "keys": "ctrl+alt+5",
+    "description": "Go to Web module"
+  },
+  "export_selected_photo": {
+    "keys": "ctrl+shift+e",
+    "description": "Export Selected Photo"
+  },
+  "find_photo_in_library_module": {
+    "keys": "ctrl+f",
+    "description": "Find Photo in Library Module"
+  },
+  "hide_current_module_shortcuts": {
+    "keys": "click",
+    "description": "Hide current module shortcuts"
+  },
+  "set_star_rating": {
+    "keys": "1 - 5",
+    "description": "Set Star Rating"
+  },
+  "go_to_print_module": {
+    "keys": "ctrl+alt+4",
+    "description": "Go to Print module"
+  },
+  "assign_a_red_label": {
+    "keys": "6",
+    "description": "Assign a red label"
+  },
+  "remove_star_rating": {
+    "keys": "0",
+    "description": "Remove Star Rating"
+  },
+  "assign_a_blue_label": {
+    "keys": "9",
+    "description": "Assign a blue label"
+  },
+  "spot_removal_tool": {
+    "keys": "q",
+    "description": "Spot Removal Tool"
+  },
+  "assign_a_yellow_label": {
+    "keys": "7",
+    "description": "Assign a yellow label"
+  },
+  "show_hide_right_panels": {
+    "keys": "f8",
+    "description": "Show/hide right panels"
+  },
+  "toggle_filters_on_off": {
+    "keys": "ctrl+l",
+    "description": "Toggle filters on/off"
+  },
+  "import_photos": {
+    "keys": "ctrl+shift+i",
+    "description": "Import Photos"
+  },
+  "go_back_to_previous_module": {
+    "keys": "ctrl+alt+up",
+    "description": "Go back to previous module"
+  },
+  "cycle_lights_out_modes_backward": {
+    "keys": "shift+l",
+    "description": "Cycle Lights-Out Modes Backward"
+  },
+  "save_quick_collection": {
+    "keys": "ctrl+alt+b",
+    "description": "Save Quick Collection"
+  },
+  "open_catalog_settings": {
+    "keys": "ctrl+alt+,",
+    "description": "Open Catalog Settings"
+  },
+  "clear_quick_collection": {
+    "keys": "ctrl+shift+b",
+    "description": "Clear Quick Collection"
+  },
+  "new_collection_in_library_module": {
+    "keys": "ctrl+n",
+    "description": "New Collection in Library module"
+  },
+  "refine_photos": {
+    "keys": "ctrl+alt+r",
+    "description": "Refine photos"
+  },
+  "cycle_lights_out_modes_forward": {
+    "keys": "l",
+    "description": "Cycle Lights-Out Modes Forward"
+  },
+  "show_hide_all_panels": {
+    "keys": "shift+tab",
+    "description": "Show/hide all panels"
+  },
+  "flag_photo_as_a_reject_and_go_to_next_photo": {
+    "keys": "shift+x",
+    "description": "Flag photo as a reject and go to next photo"
+  },
+  "decrease_flag_status": {
+    "keys": "ctrl+down",
+    "description": "Decrease Flag Status"
+  },
+  "show_hide_filmstrip": {
+    "keys": "f6",
+    "description": "Show/hide Filmstrip"
+  },
+  "previous_photo_in_filmstrip": {
+    "keys": "left",
+    "description": "Previous Photo in Filmstrip"
+  },
+  "new_folder_in_library_module": {
+    "keys": "ctrl+shift+n",
+    "description": "New folder in Library module"
+  },
+  "open_community_help": {
+    "keys": "f1",
+    "description": "Open Community Help"
+  },
+  "enter_library_survey_view": {
+    "keys": "n",
+    "description": "Enter Library Survey view"
+  },
+  "show_quick_collection": {
+    "keys": "ctrl+b",
+    "description": "Show Quick Collection"
+  },
+  "switch_between_normal_and_full_screen_mode": {
+    "keys": "ctrl+shift+f",
+    "description": "Switch between normal and full screen mode"
+  },
+  "go_to_normal_screen_mode": {
+    "keys": "ctrl+alt+f",
+    "description": "Go to Normal screen mode"
+  },
+  "set_as_target_collection": {
+    "keys": "ctrl+alt+shift+b",
+    "description": "Set as target collection"
+  },
+  "enter_library_compare_view": {
+    "keys": "c",
+    "description": "Enter Library Compare view"
+  },
+  "set_star_rating_and_go_to_next_photo": {
+    "keys": "shift+1 - 5",
+    "description": "Set Star Rating and go to Next Photo"
+  },
+  "go_back": {
+    "keys": "ctrl+alt+left",
+    "description": "Go back"
+  },
+  "open_close_right_panels_top_to_bottom": {
+    "keys": "ctrl+0 - 8",
+    "description": "Open/close right panels top to bottom"
+  },
+  "open_preferences": {
+    "keys": "ctrl+,",
+    "description": "Open Preferences"
+  },
+  "open_in_other_editor": {
+    "keys": "ctrl+alt+e",
+    "description": "Open in Other Editor"
+  },
+  "show_hide_info_overlay": {
+    "keys": "ctrl+i",
+    "description": "Show/hide info overlay"
+  },
+  "assign_a_color_label_and_go_to_next_photo": {
+    "keys": "shift+6 - 9",
+    "description": "Assign a color label and go to next photo"
+  },
+  "edit_in_photoshop": {
+    "keys": "ctrl+e",
+    "description": "Edit in Photoshop"
+  },
+  "white_balance_tool": {
+    "keys": "w",
+    "description": "White Balance Tool"
+  },
+  "select_multiple_folders_or_collections": {
+    "keys": "shift-click",
+    "description": "Select multiple folders or collections"
+  },
+  "add_to_quick_collection": {
+    "keys": "b",
+    "description": "Add to Quick Collection"
+  },
+  "remove_selected_photo_from_catalog": {
+    "keys": "alt+backspace",
+    "description": "Remove Selected Photo from Catalog"
+  },
+  "enter_library_loupe_view": {
+    "keys": "e",
+    "description": "Enter Library Loupe view"
+  },
+  "add_to_quick_collection_and_goto_next": {
+    "keys": "shift+b",
+    "description": "Add to Quick Collection and goto Next"
+  },
+  "flag_photo_as_a_pick": {
+    "keys": "p",
+    "description": "Flag photo as a pick"
+  },
+  "toggle_left_panels_top_to_bottom": {
+    "keys": "ctrl+shift+0 - 5",
+    "description": "Toggle left panels, top to bottom"
+  },
+  "show_hide_toolbar": {
+    "keys": "t",
+    "description": "Show/hide toolbar"
+  },
+  "open_multiple_filters_in_the_filter_bar": {
+    "keys": "shift-click filter labels",
+    "description": "Open multiple filters in the Filter bar"
+  },
+  "open_plug_in_manager": {
+    "keys": "ctrl+alt+shift+,",
+    "description": "Open Plug-In Manager"
+  },
+  "create_virtual_copy": {
+    "keys": "ctrl+'",
+    "description": "Create Virtual Copy"
+  },
+  "open_develop_module": {
+    "keys": "d",
+    "description": "Open Develop module"
+  },
+  "assign_a_green_label": {
+    "keys": "8",
+    "description": "Assign a green label"
+  },
+  "delete_rejected_photos": {
+    "keys": "ctrl+backspace",
+    "description": "Delete Rejected Photos"
+  },
+  "toggle_library_filter_bar": {
+    "keys": "\\",
+    "description": "Toggle Library Filter Bar"
+  },
+  "remove_star_rating_and_go_to_next_photo": {
+    "keys": "shift+0",
+    "description": "Remove Star Rating and go to Next Photo"
+  },
+  "crop_tool": {
+    "keys": "r",
+    "description": "Crop Tool"
+  },
+  "cycle_screen_modes": {
+    "keys": "shift+f",
+    "description": "Cycle Screen Modes"
+  },
+  "create_new_subfolder": {
+    "keys": "ctrl+shift+t",
+    "description": "Create new Subfolder"
+  },
+  "cycle_info_overlay": {
+    "keys": "i",
+    "description": "Cycle info overlay"
+  },
+  "unflag_photo_and_go_to_next_photo": {
+    "keys": "shift+u",
+    "description": "Unflag photo and go to next photo"
+  },
+  "increase_flag_status": {
+    "keys": "ctrl+up",
+    "description": "Increase Flag Status"
+  },
+  "go_to_current_module_help": {
+    "keys": "ctrl+alt+/",
+    "description": "Go to current module Help"
+  },
+  "cycle_flag_settings": {
+    "keys": "`",
+    "description": "Cycle flag settings"
+  },
+  "go_to_slideshow_module": {
+    "keys": "ctrl+alt+3",
+    "description": "Go to Slideshow module"
+  },
+  "show_hide_side_panels": {
+    "keys": "tab",
+    "description": "Show/hide side panels"
+  },
+  "next_photo_in_filmstrip": {
+    "keys": "right",
+    "description": "Next Photo in Filmstrip"
+  },
+  "go_to_library_module": {
+    "keys": "ctrl+alt+1",
+    "description": "Go to Library module"
+  },
+  "open_page_setup_dialog_box": {
+    "keys": "ctrl+shift+p",
+    "description": "Open Page Setup dialog box"
+  },
+  "delete_selected_photo_to_trash": {
+    "keys": "ctrl+alt+shift+backspace",
+    "description": "Delete Selected Photo to Trash"
+  },
+  "go_forward": {
+    "keys": "ctrl+alt+right",
+    "description": "Go forward"
+  },
+  "enter_library_grid_view": {
+    "keys": "g",
+    "description": "Enter Library Grid view"
+  },
+  "toggle_lights_dim_mode": {
+    "keys": "ctrl+shift+l",
+    "description": "Toggle Lights Dim mode"
+  },
+  "export_with_previous_settings": {
+    "keys": "ctrl+alt+shift+e",
+    "description": "Export With Previous Settings"
+  },
+  "open_close_all_panels": {
+    "keys": "ctrl-click a panel",
+    "description": "Open/close all panels"
+  },
+  "flag_photo_as_a_pick_and_go_to_next_photo": {
+    "keys": "shift+p",
+    "description": "Flag photo as a pick and go to next photo"
+  },
+  "open_catalog": {
+    "keys": "ctrl+o",
+    "description": "Open Catalog"
+  },
+  "toggle_tether_capture_bar": {
+    "keys": "ctrl+t",
+    "description": "Toggle Tether Capture Bar"
+  },
+  "rename_photo": {
+    "keys": "f2",
+    "description": "Rename photo"
+  },
+  "delete_selected_photo": {
+    "keys": "backspace",
+    "description": "Delete Selected Photo"
+  },
+  "toggle_full_screen_preview": {
+    "keys": "f",
+    "description": "Toggle Full Screen Preview"
+  },
+  "adjustment_brush_tool": {
+    "keys": "k",
+    "description": "Adjustment Brush Tool"
+  },
+  "show_in_finder": {
+    "keys": "cmd+r",
+    "description": "Show in Finder"
+  },
+  "open_a_new_panel_without_closing_soloed_panel": {
+    "keys": "shift-click a panel",
+    "description": "Open a new panel without closing soloed panel"
+  },
+  "show_hide_module_picker": {
+    "keys": "f5",
+    "description": "Show/hide Module Picker"
+  },
+  "toggle_solo_mode": {
+    "keys": "alt-click a panel",
+    "description": "Toggle solo mode"
+  },
+  "unflag_photo": {
+    "keys": "u",
+    "description": "Unflag photo"
+  },
+  "show_hide_left_panels": {
+    "keys": "f7",
+    "description": "Show/hide left panels"
+  },
+  "display_current_module_shortcuts": {
+    "keys": "ctrl+/",
+    "description": "Display current module shortcuts"
+  },
+  "go_to_develop_module": {
+    "keys": "ctrl+alt+2",
+    "description": "Go to Develop module"
+  },
+  "flag_photo_as_a_reject": {
+    "keys": "x",
+    "description": "Flag photo as a reject"
+  },
+  "show_in_explorer": {
+    "keys": "ctrl+r",
+    "description": "Show in Explorer"
+  },
+  "zoom_out": {
+    "keys": "ctrl+-",
+    "description": "Zoom Out"
+  },
+  "adjustment_tool_apply_tone_curve_adjustment": {
+    "keys": "ctrl+alt+shift+t",
+    "description": "Adjustment tool: apply Tone Curve adjustment"
+  },
+  "toggle_soft_proofing": {
+    "keys": "s",
+    "description": "Toggle soft proofing"
+  },
+  "zoom_in": {
+    "keys": "ctrl+=",
+    "description": "Zoom In"
+  },
+  "switch_between_adjustment_brush_a_b": {
+    "keys": "/",
+    "description": "Switch between adjustment brush A/B"
+  },
+  "open_develop_view_options": {
+    "keys": "ctrl+j",
+    "description": "Open Develop view options"
+  },
+  "select_white_balance_tool": {
+    "keys": "w",
+    "description": "Select White Balance tool"
+  },
+  "reset_crop": {
+    "keys": "ctrl+alt+r",
+    "description": "Reset Crop"
+  },
+  "copy_paste_develop_settings": {
+    "keys": "ctrl+shift+c / ctrl+shift+v",
+    "description": "Copy/paste Develop settings"
+  },
+  "increase_selected_slider_larger_increments": {
+    "keys": "shift+up",
+    "description": "Increase selected slider larger increments"
+  },
+  "cycle_crop_grid_overlay": {
+    "keys": "o",
+    "description": "Cycle Crop grid overlay"
+  },
+  "swap_before_and_after_settings": {
+    "keys": "ctrl+alt+shift+up",
+    "description": "Swap Before and After settings"
+  },
+  "create_a_new_preset": {
+    "keys": "ctrl+shift+n",
+    "description": "Create a new preset"
+  },
+  "switch_crop_between_portrait_landscape": {
+    "keys": "x",
+    "description": "Switch Crop between Portrait/Landscape"
+  },
+  "adjustment_tool_apply_saturation_adjustment": {
+    "keys": "ctrl+alt+shift+s",
+    "description": "Adjustment tool: apply Saturation adjustment"
+  },
+  "cycle_through_basic_panel_settings": {
+    "keys": ".  / ,",
+    "description": "Cycle through Basic panel settings"
+  },
+  "adjustment_tool_apply_luminance_adjustment": {
+    "keys": "ctrl+alt+shift+l",
+    "description": "Adjustment tool: apply Luminance adjustment"
+  },
+  "show_clipping": {
+    "keys": "j",
+    "description": "Show clipping"
+  },
+  "crop_to_same_aspect_ratio": {
+    "keys": "shift+a",
+    "description": "Crop to same aspect ratio"
+  },
+  "decrease_selected_slider_small_increments": {
+    "keys": "down",
+    "description": "Decrease selected slider small increments"
+  },
+  "constrain_aspect_ratio_when_crop_tool_is_selected": {
+    "keys": "a",
+    "description": "Constrain aspect ratio when Crop tool is selected"
+  },
+  "show_hide_local_adjustment_pin": {
+    "keys": "h",
+    "description": "Show/hide local adjustment pin"
+  },
+  "sync_settings_bypassing_sync_settings_dialog": {
+    "keys": "ctrl+alt+s",
+    "description": "Sync settings bypassing Sync-Settings dialog"
+  },
+  "create_a_new_snapshot": {
+    "keys": "ctrl+n",
+    "description": "Create a new snapshot"
+  },
+  "paste_settings_from_previous_photo": {
+    "keys": "ctrl+alt+v",
+    "description": "Paste settings from previous photo"
+  },
+  "cycle_crop_grid_overlay_orientation": {
+    "keys": "shift+o",
+    "description": "Cycle Crop grid overlay orientation"
+  },
+  "view_before_only": {
+    "keys": "\\",
+    "description": "View Before only"
+  },
+  "select_the_crop_tool": {
+    "keys": "r",
+    "description": "Select the Crop tool"
+  },
+  "reset_a_group_of_sliders": {
+    "keys": "alt-click group name",
+    "description": "Reset a group of sliders"
+  },
+  "adjustment_tool_apply_hue_adjustment": {
+    "keys": "ctrl+alt+shift+h",
+    "description": "Adjustment tool: apply Hue adjustment"
+  },
+  "auto_white_balance": {
+    "keys": "ctrl+shift+u",
+    "description": "Auto white balance"
+  },
+  "reset_all_settings": {
+    "keys": "ctrl+shift+r",
+    "description": "Reset all settings"
+  },
+  "match_total_exposures": {
+    "keys": "ctrl+alt+shift+m",
+    "description": "Match total exposures"
+  },
+  "view_before_after_in_split_screen": {
+    "keys": "shift+y",
+    "description": "View Before/After in split screen"
+  },
+  "adjustment_tool_apply_grayscale_mix_adjustment": {
+    "keys": "ctrl+alt+shift+g",
+    "description": "Adjustment tool: apply Grayscale Mix adjustment"
+  },
+  "select_the_graduated_filter_tool": {
+    "keys": "m",
+    "description": "Select the Graduated Filter tool"
+  },
+  "reset_a_slider": {
+    "keys": "double-click slider name",
+    "description": "Reset a slider"
+  },
+  "view_before_and_after_left_right": {
+    "keys": "y",
+    "description": "View Before and After left/right"
+  },
+  "create_a_new_preset_folder": {
+    "keys": "ctrl+alt+n",
+    "description": "Create a new preset folder"
+  },
+  "paint_a_horizontal_or_vertical_line": {
+    "keys": "shift-drag",
+    "description": "Paint a horizontal or vertical line"
+  },
+  "auto_tone": {
+    "keys": "ctrl+u",
+    "description": "Auto tone"
+  },
+  "decrease_selected_slider_larger_increments": {
+    "keys": "shift+down",
+    "description": "Decrease selected slider larger increments"
+  },
+  "sync_settings": {
+    "keys": "ctrl+shift+s",
+    "description": "Sync settings"
+  },
+  "enable_auto_sync": {
+    "keys": "ctrl+alt+shift+a",
+    "description": "Enable Auto Sync"
+  },
+  "toggle_between_loupe_and_1_1_zoom_preview": {
+    "keys": "spacebar",
+    "description": "Toggle between Loupe and 1:1 Zoom preview"
+  },
+  "toggle_auto_sync": {
+    "keys": "ctrl-click sync button",
+    "description": "Toggle Auto Sync"
+  },
+  "deselect_targeted_adjustment_tool": {
+    "keys": "ctrl+alt+shift+n",
+    "description": "Deselect Targeted Adjustment tool"
+  },
+  "convert_to_grayscale": {
+    "keys": "v",
+    "description": "Convert to grayscale"
+  },
+  "play_impromptu_slide_show": {
+    "keys": "ctrl+enter",
+    "description": "Play impromptu slide show"
+  },
+  "edit_in_photoshop_module_develop": {
+    "keys": "ctrl+e",
+    "description": "Edit in Photoshop"
+  },
+  "copy_before_settings_to_after": {
+    "keys": "ctrl+alt+shift+right",
+    "description": "Copy Before settings to After"
+  },
+  "select_the_spot_removal_tool": {
+    "keys": "q",
+    "description": "Select the Spot Removal tool"
+  },
+  "view_before_and_after_top_bottom": {
+    "keys": "alt+y",
+    "description": "View Before and After top/bottom"
+  },
+  "copy_after_settings_to_before": {
+    "keys": "ctrl+alt+shift+left",
+    "description": "Copy After settings to Before"
+  },
+  "temporarily_switch_from_brush_to_eraser": {
+    "keys": "alt-drag",
+    "description": "Temporarily switch from Brush to Eraser"
+  },
+  "select_the_adjustment_brush_tool": {
+    "keys": "k",
+    "description": "Select the Adjustment Brush tool"
+  },
+  "increase_selected_slider_small_increments": {
+    "keys": "up arrow or+",
+    "description": "Increase selected slider small increments"
+  },
+  "crop_from_center_of_photo": {
+    "keys": "alt-drag",
+    "description": "Crop from center of photo"
+  },
+  "save_metadata_to_file": {
+    "keys": "ctrl+s",
+    "description": "Save metadata to file"
+  },
+  "copy_metadata": {
+    "keys": "ctrl+alt+shift+c",
+    "description": "Copy metadata"
+  },
+  "cycle_grid_views": {
+    "keys": "j",
+    "description": "Cycle Grid views"
+  },
+  "switch_to_grid_view": {
+    "keys": "g",
+    "description": "Switch to Grid view"
+  },
+  "toggle_zoom_view": {
+    "keys": "z",
+    "description": "Toggle Zoom View"
+  },
+  "toggle_keyword_shortcut_selected_photo": {
+    "keys": "shift+k",
+    "description": "Toggle keyword shortcut selected photo"
+  },
+  "toggle_cell_extras": {
+    "keys": "ctrl+shift+h",
+    "description": "Toggle cell extras"
+  },
+  "unstack": {
+    "keys": "ctrl+shift+g",
+    "description": "Unstack"
+  },
+  "add_previous_photo_to_selection": {
+    "keys": "shift+left",
+    "description": "Add previous photo to selection"
+  },
+  "add_keyword_from_set_to_selected": {
+    "keys": "alt+1-9",
+    "description": "Add keyword from set to selected"
+  },
+  "deselect_active_photo": {
+    "keys": "/",
+    "description": "Deselect active photo"
+  },
+  "select_only_active_photo": {
+    "keys": "ctrl+shift+d",
+    "description": "Select only active photo"
+  },
+  "cycle_backward_through_keyword_sets": {
+    "keys": "alt+shift+0",
+    "description": "Cycle backward through keyword sets"
+  },
+  "switch_to_compare_view": {
+    "keys": "c",
+    "description": "Switch to Compare view"
+  },
+  "move_to_top_of_stack": {
+    "keys": "shift+s",
+    "description": "Move to top of stack"
+  },
+  "go_to_end_of_grid_view": {
+    "keys": "end",
+    "description": "Go to end of Grid view"
+  },
+  "open_character_palette": {
+    "keys": "cmd+alt+t",
+    "description": "Open Character palette"
+  },
+  "deselect_unflagged_photos": {
+    "keys": "ctrl+alt+shift+d",
+    "description": "Deselect unflagged photos"
+  },
+  "scroll_up": {
+    "keys": "pageup",
+    "description": "Scroll Up"
+  },
+  "select_all_photos": {
+    "keys": "ctrl+a",
+    "description": "Select all photos"
+  },
+  "decrease_grid_thumb_size": {
+    "keys": "-",
+    "description": "Decrease Grid Thumb Size"
+  },
+  "enable_painting": {
+    "keys": "ctrl+alt+k",
+    "description": "Enable painting"
+  },
+  "paste_metadata": {
+    "keys": "ctrl+alt+shift+v",
+    "description": "Paste metadata"
+  },
+  "check_spelling": {
+    "keys": "cmd+;",
+    "description": "Check spelling"
+  },
+  "select_multiple_discrete_photos": {
+    "keys": "ctrl-click",
+    "description": "Select multiple discrete photos"
+  },
+  "go_to_start_of_grid_view": {
+    "keys": "home",
+    "description": "Go to start of Grid view"
+  },
+  "switch_to_loupe_view": {
+    "keys": "e",
+    "description": "Switch to Loupe view"
+  },
+  "scroll_down": {
+    "keys": "pagedown",
+    "description": "Scroll Down"
+  },
+  "set_a_keyword_shortcut": {
+    "keys": "ctrl+alt+shift+k",
+    "description": "Set a keyword shortcut"
+  },
+  "zoom_in_module_library": {
+    "keys": "ctrl+=",
+    "description": "Zoom In"
+  },
+  "toggle_stack": {
+    "keys": "s",
+    "description": "Toggle stack"
+  },
+  "edit_keywords": {
+    "keys": "ctrl+shift+k",
+    "description": "Edit keywords"
+  },
+  "increase_grid_thumb_size": {
+    "keys": "=",
+    "description": "Increase Grid Thumb Size"
+  },
+  "open_library_view_options": {
+    "keys": "ctrl+j",
+    "description": "Open Library view options"
+  },
+  "deselect_all_photos": {
+    "keys": "ctrl+d",
+    "description": "Deselect all photos"
+  },
+  "select_multiple_contiguous_photos": {
+    "keys": "shift-click",
+    "description": "Select multiple contiguous photos"
+  },
+  "add_keywords": {
+    "keys": "ctrl+k",
+    "description": "Add keywords"
+  },
+  "open_spelling_dialog_box": {
+    "keys": "cmd+:",
+    "description": "Open Spelling dialog box"
+  },
+  "swap_candidate_photos_in_compare_view": {
+    "keys": "down",
+    "description": "Swap candidate photos in Compare view"
+  },
+  "play_impromptu_slide_show_module_library": {
+    "keys": "ctrl+enter",
+    "description": "Play impromptu slide show"
+  },
+  "zoom_out_module_library": {
+    "keys": "ctrl+-",
+    "description": "Zoom Out"
+  },
+  "cycle_forward_through_keyword_sets": {
+    "keys": "alt+0",
+    "description": "Cycle forward through keyword sets"
+  },
+  "group_into_stack": {
+    "keys": "ctrl+g",
+    "description": "Group into stack"
+  },
+  "show_hide_badges": {
+    "keys": "ctrl+alt+shift+h",
+    "description": "Show/Hide Badges"
+  },
+  "switch_to_survey_view": {
+    "keys": "n",
+    "description": "Switch to Survey view"
+  },
+  "make_next_photos_candidate_in_compare_view": {
+    "keys": "up",
+    "description": "Make next photos candidate in Compare view"
+  },
+  "select_flagged_photos": {
+    "keys": "ctrl+alt+a",
+    "description": "Select flagged photos"
+  },
+  "add_next_photo_to_selection": {
+    "keys": "shift+right",
+    "description": "Add next photo to selection"
+  },
+  "switch_from_grid_to_loupe_view": {
+    "keys": "spacebar",
+    "description": "Switch from Grid to Loupe view"
+  },
+  "go_to_first_page": {
+    "keys": "ctrl+shift+left",
+    "description": "Go to first page"
+  },
+  "show_hide_dimensions": {
+    "keys": "ctrl+shift+u",
+    "description": "Show/hide dimensions"
+  },
+  "create_a_new_print_template": {
+    "keys": "ctrl+n",
+    "description": "Create a new print template"
+  },
+  "play_impromptu_slide_show_module_print": {
+    "keys": "ctrl+enter",
+    "description": "Play impromptu slide show"
+  },
+  "go_to_next_page": {
+    "keys": "ctrl+right",
+    "description": "Go to next page"
+  },
+  "open_page_setup_dialog_box_module_print": {
+    "keys": "ctrl+shift+p",
+    "description": "Open Page Setup dialog box"
+  },
+  "create_a_new_print_template_folder": {
+    "keys": "ctrl+shift+n",
+    "description": "Create a new print template folder"
+  },
+  "go_to_previous_page": {
+    "keys": "ctrl+left",
+    "description": "Go to previous page"
+  },
+  "open_print_settings_dialog_box": {
+    "keys": "ctrl+alt+shift+p",
+    "description": "Open Print Settings dialog box"
+  },
+  "show_hide_page_bleed": {
+    "keys": "ctrl+shift+j",
+    "description": "Show/hide page bleed"
+  },
+  "show_hide_rulers": {
+    "keys": "ctrl+r",
+    "description": "Show/hide rulers"
+  },
+  "go_to_last_page": {
+    "keys": "ctrl+shift+right",
+    "description": "Go to last page"
+  },
+  "print": {
+    "keys": "ctrl+p",
+    "description": "Print"
+  },
+  "print_one_copy": {
+    "keys": "ctrl+alt+p",
+    "description": "Print one copy"
+  },
+  "show_hide_image_cells": {
+    "keys": "ctrl+shift+k",
+    "description": "Show/hide image cells"
+  },
+  "show_hide_guides": {
+    "keys": "ctrl+shift+h",
+    "description": "Show/hide guides"
+  },
+  "save_print_settings": {
+    "keys": "ctrl+s",
+    "description": "Save print settings"
+  },
+  "show_hide_margins_and_gutters": {
+    "keys": "ctrl+shift+m",
+    "description": "Show/hide margins and gutters"
+  },
+  "export_jpeg_slide_show": {
+    "keys": "ctrl+shift+j",
+    "description": "Export JPEG slide show"
+  },
+  "save_slide_show_settings": {
+    "keys": "ctrl+s",
+    "description": "Save slide show settings"
+  },
+  "go_to_previous_slide": {
+    "keys": "left",
+    "description": "Go to previous slide"
+  },
+  "play_impromptu_slide_show_module_slideshow": {
+    "keys": "ctrl+enter",
+    "description": "Play impromptu slide show"
+  },
+  "pause_slide_show": {
+    "keys": "spacebar",
+    "description": "Pause slide show"
+  },
+  "play_slide_show": {
+    "keys": "enter",
+    "description": "Play slide show"
+  },
+  "end_slide_show": {
+    "keys": "esc",
+    "description": "End slide show"
+  },
+  "preview_slide_show": {
+    "keys": "alt+enter",
+    "description": "Preview slide show"
+  },
+  "export_pdf_slide_show": {
+    "keys": "ctrl+j",
+    "description": "Export PDF slide show"
+  },
+  "create_a_new_slide_show_template_folder": {
+    "keys": "ctrl+shift+n",
+    "description": "Create a new slide show template folder"
+  },
+  "go_to_next_slide": {
+    "keys": "right",
+    "description": "Go to next slide"
+  },
+  "export_video_slide_show": {
+    "keys": "ctrl+alt+j",
+    "description": "Export video slide show"
+  },
+  "show_hide_guides_module_slideshow": {
+    "keys": "ctrl+shift+h",
+    "description": "Show/hide guides"
+  },
+  "create_a_new_slide_show_template": {
+    "keys": "ctrl+n",
+    "description": "Create a new slide show template"
+  },
+  "export_web_gallery": {
+    "keys": "ctrl+j",
+    "description": "Export web gallery"
+  },
+  "reload_web_gallery": {
+    "keys": "ctrl+r",
+    "description": "Reload web gallery"
+  },
+  "play_impromptu_slide_show_module_web": {
+    "keys": "ctrl+enter",
+    "description": "Play impromptu slide show"
+  },
+  "save_web_gallery_settings": {
+    "keys": "ctrl+s",
+    "description": "Save web gallery settings"
+  },
+  "preview_in_browser": {
+    "keys": "ctrl+alt+p",
+    "description": "Preview in browser"
+  },
+  "create_a_new_web_gallery_template": {
+    "keys": "ctrl+n",
+    "description": "Create a new web gallery template"
+  },
+  "create_a_new_web_gallery_template_folder": {
+    "keys": "ctrl+shift+n",
+    "description": "Create a new web gallery template folder"
+  },
+  "enter_slideshow_view": {
+    "keys": "ctrl+alt+shift+enter",
+    "description": "Enter Slideshow view"
+  },
+  "enter_normal_loupe_view": {
+    "keys": "shift+e",
+    "description": "Enter normal Loupe view"
+  },
+  "show_hide_filter_bar": {
+    "keys": "shift+\\",
+    "description": "Show/hide Filter bar"
+  },
+  "zoom_in_secondary_window": {
+    "keys": "ctrl+shift+=",
+    "description": "Zoom In"
+  },
+  "enter_grid_view": {
+    "keys": "shift+g",
+    "description": "Enter Grid view"
+  },
+  "enter_full_screen_mode": {
+    "keys": "shift+f11",
+    "description": "Enter full-screen mode"
+  },
+  "zoom_out_secondary_window": {
+    "keys": "ctrl+shift+-",
+    "description": "Zoom Out"
+  },
+  "open_secondary_window": {
+    "keys": "f11",
+    "description": "Open secondary window"
+  },
+  "enter_survey_view": {
+    "keys": "shift+n",
+    "description": "Enter Survey view"
+  },
+  "enter_compare_view": {
+    "keys": "shift+c",
+    "description": "Enter Compare view"
+  },
+  "enter_locked_loupe_view": {
+    "keys": "ctrl+shift+enter",
+    "description": "Enter locked Loupe view"
+  }
+}

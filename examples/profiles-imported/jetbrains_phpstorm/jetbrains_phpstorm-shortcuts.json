@@ -1,0 +1,1106 @@
+{
+  "force_step_over": {
+    "keys": "shift+alt+f8",
+    "description": "Force Step Over"
+  },
+  "add_selection_for_next_occurrence": {
+    "keys": "alt+j",
+    "description": "Add Selection for Next Occurrence"
+  },
+  "previous_method": {
+    "keys": "alt+up",
+    "description": "Previous Method"
+  },
+  "toggle_case": {
+    "keys": "shift+ctrl+u",
+    "description": "Toggle Case"
+  },
+  "choose_lookup_item_replace": {
+    "keys": "tab",
+    "description": "Choose Lookup Item Replace"
+  },
+  "compare_two_files": {
+    "keys": "ctrl+d",
+    "description": "Compare Two Files"
+  },
+  "left_with_selection": {
+    "keys": "shift+left",
+    "description": "Left with Selection"
+  },
+  "move_statement_up": {
+    "keys": "shift+ctrl+up",
+    "description": "Move Statement Up"
+  },
+  "switch_task": {
+    "keys": "shift+alt+t",
+    "description": "Switch Task"
+  },
+  "find_action": {
+    "keys": "shift+ctrl+a",
+    "description": "Find Action"
+  },
+  "escape": {
+    "keys": "esc",
+    "description": "Escape"
+  },
+  "change_view": {
+    "keys": "alt+f1",
+    "description": "Change View"
+  },
+  "paste_simple": {
+    "keys": "shift+ctrl+alt+v",
+    "description": "Paste Simple"
+  },
+  "export_to_text_file": {
+    "keys": "alt+o",
+    "description": "Export to Text File"
+  },
+  "find_previous_move_to_previous_occurrence": {
+    "keys": "shift+f3",
+    "description": "Find Previous / Move to Previous Occurrence"
+  },
+  "inline": {
+    "keys": "ctrl+alt+n",
+    "description": "Inline"
+  },
+  "show_list_of_tabs": {
+    "keys": "alt+down",
+    "description": "Show List of Tabs"
+  },
+  "push": {
+    "keys": "shift+ctrl+k",
+    "description": "Push"
+  },
+  "project": {
+    "keys": "alt+1",
+    "description": "Project"
+  },
+  "fold_selection_remove_region": {
+    "keys": "ctrl+.",
+    "description": "Fold Selection / Remove region"
+  },
+  "move_caret_to_line_start": {
+    "keys": "home",
+    "description": "Move Caret to Line Start"
+  },
+  "cyclic_expand_word_backward": {
+    "keys": "shift+alt+/",
+    "description": "Cyclic Expand Word (Backward)"
+  },
+  "execute_current_statement": {
+    "keys": "enter",
+    "description": "Execute Current Statement"
+  },
+  "rename": {
+    "keys": "shift+f6",
+    "description": "Rename"
+  },
+  "previous_parameter": {
+    "keys": "shift+tab",
+    "description": "Previous Parameter"
+  },
+  "navigate_to_test": {
+    "keys": "shift+ctrl+t",
+    "description": "Navigate to Test"
+  },
+  "upload_to": {
+    "keys": "shift+ctrl+alt+x",
+    "description": "Upload to"
+  },
+  "structure": {
+    "keys": "alt+7",
+    "description": "Structure"
+  },
+  "edit_value": {
+    "keys": "f2",
+    "description": "Edit Value"
+  },
+  "save_all": {
+    "keys": "ctrl+s",
+    "description": "Save All"
+  },
+  "next_page": {
+    "keys": "ctrl+alt+down",
+    "description": "Next Page"
+  },
+  "find_usages_settings": {
+    "keys": "shift+ctrl+alt+f7",
+    "description": "Find Usages Settings"
+  },
+  "unselect_occurrence": {
+    "keys": "shift+alt+j",
+    "description": "Unselect Occurrence"
+  },
+  "debug": {
+    "keys": "shift+f9",
+    "description": "Debug"
+  },
+  "insert_element": {
+    "keys": "insert",
+    "description": "Insert element"
+  },
+  "extract_field": {
+    "keys": "ctrl+alt+f",
+    "description": "Extract Field"
+  },
+  "open_source_in_new_window": {
+    "keys": "shift+f4",
+    "description": "Open source in new window"
+  },
+  "recent_files": {
+    "keys": "ctrl+e",
+    "description": "Recent Files"
+  },
+  "rollback": {
+    "keys": "ctrl+alt+z",
+    "description": "Rollback"
+  },
+  "close": {
+    "keys": "ctrl+f4",
+    "description": "Close"
+  },
+  "quick_definition": {
+    "keys": "shift+ctrl+i",
+    "description": "Quick Definition"
+  },
+  "new": {
+    "keys": "ctrl+n",
+    "description": "New..."
+  },
+  "select_previous_tab_in_multi_editor_file": {
+    "keys": "shift+alt+left",
+    "description": "Select Previous Tab in multi-editor file"
+  },
+  "toggle_bookmark_0": {
+    "keys": "shift+ctrl+0",
+    "description": "Toggle Bookmark 0"
+  },
+  "toggle_bookmark_1": {
+    "keys": "shift+ctrl+1",
+    "description": "Toggle Bookmark 1"
+  },
+  "inspect_code_with_editor_settings": {
+    "keys": "shift+alt+i",
+    "description": "Inspect Code With Editor Settings"
+  },
+  "toggle_bookmark_6": {
+    "keys": "shift+ctrl+6",
+    "description": "Toggle Bookmark 6"
+  },
+  "toggle_bookmark_7": {
+    "keys": "shift+ctrl+7",
+    "description": "Toggle Bookmark 7"
+  },
+  "toggle_bookmark_8": {
+    "keys": "shift+ctrl+8",
+    "description": "Toggle Bookmark 8"
+  },
+  "toggle_bookmark_9": {
+    "keys": "shift+ctrl+9",
+    "description": "Toggle Bookmark 9"
+  },
+  "toggle_bookmark_2": {
+    "keys": "shift+ctrl+2",
+    "description": "Toggle Bookmark 2"
+  },
+  "toggle_bookmark_3": {
+    "keys": "shift+ctrl+3",
+    "description": "Toggle Bookmark 3"
+  },
+  "toggle_bookmark_4": {
+    "keys": "shift+ctrl+4",
+    "description": "Toggle Bookmark 4"
+  },
+  "toggle_bookmark_5": {
+    "keys": "shift+ctrl+5",
+    "description": "Toggle Bookmark 5"
+  },
+  "navigate_to_implementation_s": {
+    "keys": "ctrl+alt+b",
+    "description": "Navigate to Implementation(s)"
+  },
+  "safe_delete": {
+    "keys": "alt+delete",
+    "description": "Safe Delete"
+  },
+  "complete_current_statement": {
+    "keys": "shift+ctrl+enter",
+    "description": "Complete Current Statement"
+  },
+  "run": {
+    "keys": "shift+alt+f10",
+    "description": "Run"
+  },
+  "change_signature": {
+    "keys": "ctrl+f6",
+    "description": "Change Signature"
+  },
+  "run_command": {
+    "keys": "shift+ctrl+x",
+    "description": "Run Command"
+  },
+  "rerun": {
+    "keys": "ctrl+f5",
+    "description": "Rerun"
+  },
+  "unindent_line_or_selection": {
+    "keys": "shift+tab",
+    "description": "Unindent Line or Selection"
+  },
+  "parameter_info": {
+    "keys": "ctrl+p",
+    "description": "Parameter Info"
+  },
+  "start_new_line_before_current": {
+    "keys": "ctrl+alt+enter",
+    "description": "Start New Line Before Current"
+  },
+  "step_into": {
+    "keys": "f7",
+    "description": "Step Into"
+  },
+  "move_to_the_next_difference": {
+    "keys": "f7",
+    "description": "Move to the next difference"
+  },
+  "navigate_to_line": {
+    "keys": "ctrl+g",
+    "description": "Navigate to Line"
+  },
+  "page_down": {
+    "keys": "pageup",
+    "description": "Page Down"
+  },
+  "expand_all": {
+    "keys": "shift+ctrl++or shift+ctrl+=",
+    "description": "Expand All"
+  },
+  "quick_evaluate_expression": {
+    "keys": "ctrl+alt+f8",
+    "description": "Quick Evaluate Expression"
+  },
+  "move_statement_down": {
+    "keys": "shift+ctrl+down",
+    "description": "Move Statement Down"
+  },
+  "previous_project_window": {
+    "keys": "shift+cmd+`",
+    "description": "Previous Project Window"
+  },
+  "class_name_completion": {
+    "keys": "ctrl+alt+space",
+    "description": "Class Name Completion"
+  },
+  "unwrap_remove": {
+    "keys": "shift+ctrl+delete",
+    "description": "Unwrap/Remove"
+  },
+  "navigate_to_previous_table_row": {
+    "keys": "shift+ctrl+alt+up",
+    "description": "Navigate to previous table row"
+  },
+  "navigate_to_previous_table_column": {
+    "keys": "shift+ctrl+alt+left",
+    "description": "Navigate to previous table column"
+  },
+  "refactor_this": {
+    "keys": "shift+ctrl+alt+t",
+    "description": "Refactor This"
+  },
+  "recent_changes": {
+    "keys": "shift+alt+c",
+    "description": "Recent Changes"
+  },
+  "start_new_line": {
+    "keys": "shift+enter",
+    "description": "Start New Line"
+  },
+  "browse_history": {
+    "keys": "ctrl+alt+e",
+    "description": "Browse History"
+  },
+  "select_all_occurrences": {
+    "keys": "shift+ctrl+alt+j",
+    "description": "Select All Occurrences"
+  },
+  "right_with_selection": {
+    "keys": "shift+right",
+    "description": "Right with Selection"
+  },
+  "run_inspection_by_name": {
+    "keys": "shift+ctrl+alt+i",
+    "description": "Run Inspection by Name"
+  },
+  "select_next_tab_in_multi_editor_file": {
+    "keys": "shift+alt+right",
+    "description": "Select Next Tab in multi-editor file"
+  },
+  "surround_with": {
+    "keys": "ctrl+alt+t",
+    "description": "Surround With"
+  },
+  "unsorted": {
+    "keys": "shift+ctrl+alt+backspace",
+    "description": "Unsorted"
+  },
+  "favorites": {
+    "keys": "alt+2",
+    "description": "Favorites"
+  },
+  "navigate_to_class": {
+    "keys": "ctrl+n",
+    "description": "Navigate to Class"
+  },
+  "smart_completion": {
+    "keys": "shift+ctrl+space",
+    "description": "Smart Completion"
+  },
+  "show_uml_diagram": {
+    "keys": "shift+ctrl+alt+u",
+    "description": "Show UML Diagram"
+  },
+  "show_bookmarks": {
+    "keys": "shift+f11",
+    "description": "Show Bookmarks"
+  },
+  "open_in_browser": {
+    "keys": "shift+alt+b",
+    "description": "Open in Browser"
+  },
+  "home_directory": {
+    "keys": "ctrl+1",
+    "description": "Home Directory"
+  },
+  "highlight_usages_in_file": {
+    "keys": "shift+ctrl+f7",
+    "description": "Highlight Usages in File"
+  },
+  "move_caret_to_page_bottom_with_selection": {
+    "keys": "shift+ctrl+pageup",
+    "description": "Move Caret to Page Bottom with Selection"
+  },
+  "shrink_selection": {
+    "keys": "shift+ctrl+w",
+    "description": "Shrink Selection"
+  },
+  "previous_template_variable": {
+    "keys": "shift+tab",
+    "description": "Previous Template Variable"
+  },
+  "show_execution_point": {
+    "keys": "alt+f10",
+    "description": "Show Execution Point"
+  },
+  "collapse_tree_node": {
+    "keys": "-",
+    "description": "Collapse Tree Node"
+  },
+  "synchronize": {
+    "keys": "ctrl+alt+y",
+    "description": "Synchronize"
+  },
+  "navigate_to_next_table_row": {
+    "keys": "shift+ctrl+alt+down",
+    "description": "Navigate to next table row"
+  },
+  "extract_variable": {
+    "keys": "ctrl+alt+v",
+    "description": "Extract Variable"
+  },
+  "method_hierarchy": {
+    "keys": "shift+ctrl+h",
+    "description": "Method Hierarchy"
+  },
+  "optimize_imports": {
+    "keys": "ctrl+alt+o",
+    "description": "Optimize Imports"
+  },
+  "select_next_tab": {
+    "keys": "alt+right",
+    "description": "Select Next Tab"
+  },
+  "terminal": {
+    "keys": "alt+f12",
+    "description": "Terminal"
+  },
+  "next_change": {
+    "keys": "shift+ctrl+alt+down",
+    "description": "Next Change"
+  },
+  "cyclic_expand_word": {
+    "keys": "alt+/",
+    "description": "Cyclic Expand Word"
+  },
+  "choose_lookup_item_and_invoke_complete_statement": {
+    "keys": "shift+ctrl+enter",
+    "description": "Choose Lookup Item and Invoke Complete Statement"
+  },
+  "web_preview": {
+    "keys": "alt+f2",
+    "description": "Web Preview"
+  },
+  "hide_all_tool_windows": {
+    "keys": "shift+ctrl+f12",
+    "description": "Hide All Tool Windows"
+  },
+  "navigate_to_declaration": {
+    "keys": "ctrl+b",
+    "description": "Navigate to Declaration"
+  },
+  "back": {
+    "keys": "ctrl+alt+left",
+    "description": "Back"
+  },
+  "prev_parameter": {
+    "keys": "shift+tab",
+    "description": "Prev Parameter"
+  },
+  "navigate_to_type_declaration": {
+    "keys": "shift+ctrl+b",
+    "description": "Navigate to Type Declaration"
+  },
+  "switcher": {
+    "keys": "ctrl+tab",
+    "description": "Switcher"
+  },
+  "previous_highlighted_error": {
+    "keys": "shift+f2",
+    "description": "Previous Highlighted Error"
+  },
+  "select_all": {
+    "keys": "ctrl+a",
+    "description": "Select All"
+  },
+  "run_script": {
+    "keys": "shift+ctrl+f10",
+    "description": "Run Script"
+  },
+  "add_to_vcs": {
+    "keys": "ctrl+alt+a",
+    "description": "Add to VCS"
+  },
+  "related_navigate_to_symbol": {
+    "keys": "ctrl+alt+home",
+    "description": "Related Navigate to Symbol"
+  },
+  "next_highlighted_error": {
+    "keys": "f2",
+    "description": "Next Highlighted Error"
+  },
+  "console": {
+    "keys": "shift+ctrl+f10",
+    "description": "Console"
+  },
+  "cancel_running_statements": {
+    "keys": "shift+ctrl+alt+delete",
+    "description": "Cancel Running Statements"
+  },
+  "undo": {
+    "keys": "ctrl+z",
+    "description": "Undo"
+  },
+  "preferences": {
+    "keys": "ctrl+alt+s",
+    "description": "Preferences"
+  },
+  "show_image_thumbnails": {
+    "keys": "shift+ctrl+t",
+    "description": "Show Image Thumbnails"
+  },
+  "choose_lookup_item": {
+    "keys": "enter",
+    "description": "Choose Lookup Item"
+  },
+  "previous_change": {
+    "keys": "shift+ctrl+alt+up",
+    "description": "Previous Change"
+  },
+  "redo": {
+    "keys": "shift+ctrl+z",
+    "description": "Redo"
+  },
+  "paste_from_history": {
+    "keys": "shift+ctrl+v",
+    "description": "Paste from History"
+  },
+  "move_caret_to_text_end": {
+    "keys": "ctrl+end",
+    "description": "Move Caret to Text End"
+  },
+  "replace_in_path": {
+    "keys": "shift+ctrl+r",
+    "description": "Replace in Path"
+  },
+  "error_description": {
+    "keys": "ctrl+f1",
+    "description": "Error Description"
+  },
+  "extract_constant": {
+    "keys": "ctrl+alt+c",
+    "description": "Extract Constant"
+  },
+  "execute": {
+    "keys": "ctrl+enter",
+    "description": "Execute"
+  },
+  "collapse_all": {
+    "keys": "shift+ctrl+-",
+    "description": "Collapse All"
+  },
+  "show_usages": {
+    "keys": "ctrl+alt+f7",
+    "description": "Show Usages"
+  },
+  "move_caret_to_next_word_with_selection": {
+    "keys": "shift+ctrl+right",
+    "description": "Move Caret to Next Word with Selection"
+  },
+  "update_project": {
+    "keys": "ctrl+t",
+    "description": "Update Project"
+  },
+  "replace": {
+    "keys": "ctrl+r",
+    "description": "Replace"
+  },
+  "copy": {
+    "keys": "ctrl+c",
+    "description": "Copy"
+  },
+  "revert": {
+    "keys": "ctrl+alt+z",
+    "description": "Revert"
+  },
+  "context_info": {
+    "keys": "alt+q",
+    "description": "Context Info"
+  },
+  "remove_from_favorites": {
+    "keys": "ctrl+delete",
+    "description": "Remove From Favorites"
+  },
+  "check_in_project": {
+    "keys": "ctrl+k",
+    "description": "Check In Project"
+  },
+  "delete_to_word_end": {
+    "keys": "ctrl+delete",
+    "description": "Delete to Word End"
+  },
+  "file_structure": {
+    "keys": "ctrl+f12",
+    "description": "File Structure"
+  },
+  "compare_directories": {
+    "keys": "ctrl+d",
+    "description": "Compare Directories"
+  },
+  "page_up_with_selection": {
+    "keys": "shift+pageup",
+    "description": "Page Up with Selection"
+  },
+  "go_to_bookmark_9": {
+    "keys": "ctrl+9",
+    "description": "Go to Bookmark 9"
+  },
+  "move_caret_to_line_end": {
+    "keys": "end",
+    "description": "Move Caret to Line End"
+  },
+  "toggle_line_breakpoint": {
+    "keys": "ctrl+f8",
+    "description": "Toggle Line Breakpoint"
+  },
+  "show_code_coverage_data": {
+    "keys": "ctrl+alt+f6",
+    "description": "Show Code Coverage Data"
+  },
+  "move_caret_to_text_start": {
+    "keys": "ctrl+home",
+    "description": "Move Caret to Text Start"
+  },
+  "expand_tree_node": {
+    "keys": "+",
+    "description": "Expand Tree Node"
+  },
+  "move": {
+    "keys": "f6",
+    "description": "Move"
+  },
+  "compare_all_classes_from_revision_on_uml": {
+    "keys": "shift+ctrl+d",
+    "description": "Compare all classes from revision on UML"
+  },
+  "open_task": {
+    "keys": "shift+alt+n",
+    "description": "Open Task"
+  },
+  "restore_default_layout": {
+    "keys": "shift+f12",
+    "description": "Restore Default Layout"
+  },
+  "surround_with_live_template": {
+    "keys": "ctrl+alt+j",
+    "description": "Surround with Live Template"
+  },
+  "close_active_task": {
+    "keys": "shift+alt+w",
+    "description": "Close Active Task"
+  },
+  "join_lines": {
+    "keys": "shift+ctrl+j",
+    "description": "Join Lines"
+  },
+  "find_next_move_to_next_occurrence": {
+    "keys": "f3",
+    "description": "Find Next / Move to Next Occurrence"
+  },
+  "move_caret_to_line_end_with_selection": {
+    "keys": "shift+end",
+    "description": "Move Caret to Line End with Selection"
+  },
+  "basic_completion": {
+    "keys": "ctrl+space",
+    "description": "Basic Completion"
+  },
+  "hide_active_tool_window": {
+    "keys": "shift+esc",
+    "description": "Hide Active Tool Window"
+  },
+  "implement_methods": {
+    "keys": "ctrl+i",
+    "description": "Implement Methods"
+  },
+  "search_structurally": {
+    "keys": "shift+ctrl+s",
+    "description": "Search Structurally"
+  },
+  "move_caret_to_page_top": {
+    "keys": "ctrl+pageup",
+    "description": "Move Caret to Page Top"
+  },
+  "changes": {
+    "keys": "alt+9",
+    "description": "Changes"
+  },
+  "insert_live_template": {
+    "keys": "ctrl+j",
+    "description": "Insert Live Template"
+  },
+  "find_usages_in_file": {
+    "keys": "ctrl+f7",
+    "description": "Find Usages in File"
+  },
+  "collapse": {
+    "keys": "ctrl+-",
+    "description": "Collapse"
+  },
+  "view_breakpoints": {
+    "keys": "shift+ctrl+f8",
+    "description": "View Breakpoints"
+  },
+  "move_line_down": {
+    "keys": "shift+alt+down",
+    "description": "Move Line Down"
+  },
+  "recently_changed_files": {
+    "keys": "shift+ctrl+e",
+    "description": "Recently Changed Files"
+  },
+  "previous_occurrence": {
+    "keys": "ctrl+alt+up",
+    "description": "Previous Occurrence"
+  },
+  "copy_paths": {
+    "keys": "shift+ctrl+c",
+    "description": "Copy Paths"
+  },
+  "comment_with_block_comment": {
+    "keys": "shift+ctrl+/",
+    "description": "Comment with Block Comment"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "description": "Cut"
+  },
+  "show_hide_path_text": {
+    "keys": "ctrl+p",
+    "description": "Show/Hide path text"
+  },
+  "move_caret_to_page_bottom": {
+    "keys": "ctrl+pageup",
+    "description": "Move Caret to Page Bottom"
+  },
+  "toggle_temporary_line_breakpoint": {
+    "keys": "shift+ctrl+alt+f8",
+    "description": "Toggle Temporary Line Breakpoint"
+  },
+  "show_changes": {
+    "keys": "shift+ctrl+alt+d",
+    "description": "Show Changes"
+  },
+  "move_caret_to_previous_word_with_selection": {
+    "keys": "shift+ctrl+left",
+    "description": "Move Caret to Previous Word with Selection"
+  },
+  "enter": {
+    "keys": "enter",
+    "description": "Enter"
+  },
+  "move_line_up": {
+    "keys": "shift+alt+up",
+    "description": "Move Line Up"
+  },
+  "move_caret_to_page_top_with_selection": {
+    "keys": "shift+ctrl+pageup",
+    "description": "Move Caret to Page Top with Selection"
+  },
+  "next_occurrence": {
+    "keys": "ctrl+alt+down",
+    "description": "Next Occurrence"
+  },
+  "page_up": {
+    "keys": "pageup",
+    "description": "Page Up"
+  },
+  "go_to_bookmark_0": {
+    "keys": "ctrl+0",
+    "description": "Go to Bookmark 0"
+  },
+  "delete_to_word_start": {
+    "keys": "ctrl+backspace",
+    "description": "Delete to Word Start"
+  },
+  "override_methods": {
+    "keys": "ctrl+o",
+    "description": "Override Methods"
+  },
+  "go_to_bookmark_2": {
+    "keys": "ctrl+2",
+    "description": "Go to Bookmark 2"
+  },
+  "extract_parameter": {
+    "keys": "ctrl+alt+p",
+    "description": "Extract Parameter"
+  },
+  "go_to_bookmark_1": {
+    "keys": "ctrl+1",
+    "description": "Go to Bookmark 1"
+  },
+  "go_to_bookmark_4": {
+    "keys": "ctrl+4",
+    "description": "Go to Bookmark 4"
+  },
+  "find_usages": {
+    "keys": "alt+f7",
+    "description": "Find Usages"
+  },
+  "go_to_bookmark_3": {
+    "keys": "ctrl+3",
+    "description": "Go to Bookmark 3"
+  },
+  "go_to_bookmark_6": {
+    "keys": "ctrl+6",
+    "description": "Go to Bookmark 6"
+  },
+  "go_to_bookmark_5": {
+    "keys": "ctrl+5",
+    "description": "Go to Bookmark 5"
+  },
+  "go_to_bookmark_8": {
+    "keys": "ctrl+8",
+    "description": "Go to Bookmark 8"
+  },
+  "go_to_bookmark_7": {
+    "keys": "ctrl+7",
+    "description": "Go to Bookmark 7"
+  },
+  "navigate_to_super_method": {
+    "keys": "ctrl+u",
+    "description": "Navigate to Super Method"
+  },
+  "comment_with_line_comment": {
+    "keys": "ctrl+/",
+    "description": "Comment with Line Comment"
+  },
+  "clear_context": {
+    "keys": "shift+alt+x",
+    "description": "Clear Context"
+  },
+  "step_over": {
+    "keys": "f8",
+    "description": "Step Over"
+  },
+  "toggle_bookmark_with_mnemonic": {
+    "keys": "ctrl+f11",
+    "description": "Toggle Bookmark with Mnemonic"
+  },
+  "reformat_code": {
+    "keys": "ctrl+alt+l",
+    "description": "Reformat Code"
+  },
+  "auto_indent_lines": {
+    "keys": "ctrl+alt+i",
+    "description": "Auto-Indent Lines"
+  },
+  "force_run_to_cursor": {
+    "keys": "ctrl+alt+f9",
+    "description": "Force Run to Cursor"
+  },
+  "choose_lookup_item_and_insert_dot": {
+    "keys": "ctrl+.",
+    "description": "Choose Lookup Item and Insert Dot"
+  },
+  "evaluate_expression": {
+    "keys": "alt+f8",
+    "description": "Evaluate Expression"
+  },
+  "duplicate_line_or_block": {
+    "keys": "ctrl+d",
+    "description": "Duplicate Line or Block"
+  },
+  "move_caret_to_next_word": {
+    "keys": "ctrl+right",
+    "description": "Move Caret to Next Word"
+  },
+  "todo": {
+    "keys": "alt+6",
+    "description": "TODO"
+  },
+  "dump_lookup_element_weights_to_log": {
+    "keys": "shift+ctrl+alt+w",
+    "description": "Dump lookup element weights to log"
+  },
+  "deselect_all": {
+    "keys": "ctrl+alt+a",
+    "description": "Deselect All"
+  },
+  "quick_documentation": {
+    "keys": "ctrl+q",
+    "description": "Quick Documentation"
+  },
+  "call_hierarchy": {
+    "keys": "ctrl+alt+h",
+    "description": "Call Hierarchy"
+  },
+  "navigate_to_symbol": {
+    "keys": "shift+ctrl+alt+n",
+    "description": "Navigate to Symbol"
+  },
+  "toggle_bookmark": {
+    "keys": "f11",
+    "description": "Toggle Bookmark"
+  },
+  "run_to_cursor": {
+    "keys": "alt+f9",
+    "description": "Run to Cursor"
+  },
+  "copy_reference": {
+    "keys": "shift+ctrl+alt+c",
+    "description": "Copy Reference"
+  },
+  "external_documentation": {
+    "keys": "shift+f1",
+    "description": "External Documentation"
+  },
+  "jump_to_source": {
+    "keys": "f4",
+    "description": "Jump to Source"
+  },
+  "find_in_path": {
+    "keys": "shift+ctrl+f",
+    "description": "Find in Path"
+  },
+  "next_project_window": {
+    "keys": "cmd+`",
+    "description": "Next Project Window"
+  },
+  "stop": {
+    "keys": "ctrl+f2",
+    "description": "Stop"
+  },
+  "resume_program": {
+    "keys": "f9",
+    "description": "Resume Program"
+  },
+  "navigate_to_file": {
+    "keys": "shift+ctrl+n",
+    "description": "Navigate to File"
+  },
+  "add_to_favorites": {
+    "keys": "shift+alt+f",
+    "description": "Add to Favorites"
+  },
+  "replace_structurally": {
+    "keys": "shift+ctrl+m",
+    "description": "Replace Structurally"
+  },
+  "show_intention_actions": {
+    "keys": "alt+enter",
+    "description": "Show Intention Actions"
+  },
+  "last_edit_location": {
+    "keys": "shift+ctrl+backspace",
+    "description": "Last Edit Location"
+  },
+  "move_caret_to_text_start_with_selection": {
+    "keys": "shift+ctrl+home",
+    "description": "Move Caret to Text Start with Selection"
+  },
+  "next_method": {
+    "keys": "alt+down",
+    "description": "Next Method"
+  },
+  "show_uml_popup": {
+    "keys": "ctrl+alt+u",
+    "description": "Show UML Popup"
+  },
+  "extend_selection": {
+    "keys": "ctrl+w",
+    "description": "Extend Selection"
+  },
+  "show_all_affected_files": {
+    "keys": "shift+alt+a",
+    "description": "Show All Affected Files"
+  },
+  "page_down_with_selection": {
+    "keys": "shift+pageup",
+    "description": "Page Down with Selection"
+  },
+  "step_out": {
+    "keys": "shift+f8",
+    "description": "Step Out"
+  },
+  "jump_to_last_tool_window": {
+    "keys": "f12",
+    "description": "Jump to Last Tool Window"
+  },
+  "extract_method": {
+    "keys": "ctrl+alt+m",
+    "description": "Extract Method"
+  },
+  "save_as": {
+    "keys": "shift+ctrl+s",
+    "description": "Save As.."
+  },
+  "type_hierarchy": {
+    "keys": "ctrl+h",
+    "description": "Type Hierarchy"
+  },
+  "delete_line": {
+    "keys": "ctrl+y",
+    "description": "Delete Line"
+  },
+  "forward": {
+    "keys": "ctrl+alt+right",
+    "description": "Forward"
+  },
+  "quick_switch_scheme": {
+    "keys": "ctrl+`",
+    "description": "Quick Switch Scheme"
+  },
+  "file_path": {
+    "keys": "ctrl+alt+f12",
+    "description": "File Path"
+  },
+  "move_caret_to_previous_word": {
+    "keys": "ctrl+left",
+    "description": "Move Caret to Previous Word"
+  },
+  "move_to_the_previous_difference": {
+    "keys": "shift+f7",
+    "description": "Move to the Previous Difference"
+  },
+  "select_in": {
+    "keys": "alt+f1",
+    "description": "Select In"
+  },
+  "find": {
+    "keys": "ctrl+f",
+    "description": "Find"
+  },
+  "down_with_selection": {
+    "keys": "shift+down",
+    "description": "Down with Selection"
+  },
+  "expand": {
+    "keys": "ctrl++or ctrl+=",
+    "description": "Expand"
+  },
+  "navigate_to_next_table_column": {
+    "keys": "shift+ctrl+alt+right",
+    "description": "Navigate to next table column"
+  },
+  "previous_page": {
+    "keys": "ctrl+alt+up",
+    "description": "Previous Page"
+  },
+  "force_step_into": {
+    "keys": "shift+alt+f7",
+    "description": "Force Step Into"
+  },
+  "jump_to_external_editor": {
+    "keys": "ctrl+alt+f4",
+    "description": "Jump to External Editor"
+  },
+  "move_caret_to_text_end_with_selection": {
+    "keys": "shift+ctrl+end",
+    "description": "Move Caret to Text End with Selection"
+  },
+  "up_with_selection": {
+    "keys": "shift+up",
+    "description": "Up with Selection"
+  },
+  "close_active_tab": {
+    "keys": "shift+ctrl+f4",
+    "description": "Close Active Tab"
+  },
+  "select_previous_tab": {
+    "keys": "alt+left",
+    "description": "Select Previous Tab"
+  },
+  "backspace": {
+    "keys": "backspace",
+    "description": "Backspace"
+  },
+  "paste": {
+    "keys": "ctrl+v",
+    "description": "Paste"
+  },
+  "collapse_recursively": {
+    "keys": "ctrl+alt+-",
+    "description": "Collapse Recursively"
+  },
+  "vcs_operations_popup": {
+    "keys": "alt+`",
+    "description": "VCS Operations Popup"
+  },
+  "smart_step_into": {
+    "keys": "shift+f7",
+    "description": "Smart Step Into"
+  },
+  "run_context_configuration": {
+    "keys": "shift+ctrl+f10",
+    "description": "Run context configuration"
+  },
+  "jump_to_navigation_bar": {
+    "keys": "alt+home",
+    "description": "Jump to Navigation Bar"
+  },
+  "expand_recursively": {
+    "keys": "ctrl+alt++or ctrl+alt+=",
+    "description": "Expand Recursively"
+  },
+  "move_caret_to_line_start_with_selection": {
+    "keys": "shift+home",
+    "description": "Move Caret to Line Start with Selection"
+  },
+  "run_gulp_task": {
+    "keys": "alt+f11",
+    "description": "Run Gulp Task"
+  },
+  "rerun_navigate_to_tests": {
+    "keys": "shift+alt+r",
+    "description": "Rerun Navigate to Tests"
+  }
+}

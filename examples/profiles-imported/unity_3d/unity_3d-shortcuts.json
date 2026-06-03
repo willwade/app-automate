@@ -1,0 +1,314 @@
+{
+  "select_all": {
+    "keys": "ctrl+a",
+    "description": "Select All"
+  },
+  "console": {
+    "keys": "ctrl+shift+c",
+    "description": "Console"
+  },
+  "copy": {
+    "keys": "ctrl+c",
+    "description": "Copy"
+  },
+  "snap": {
+    "keys": "control",
+    "description": "Snap"
+  },
+  "duplicate": {
+    "keys": "ctrl+d",
+    "description": "Duplicate"
+  },
+  "delete": {
+    "keys": "shift+delete",
+    "description": "Delete"
+  },
+  "rotate": {
+    "keys": "e",
+    "description": "Rotate"
+  },
+  "load_selection_8": {
+    "keys": "ctrl+shift+eight",
+    "description": "Load Selection 8"
+  },
+  "save_selection_8": {
+    "keys": "alt+ctrl+eight",
+    "description": "Save Selection 8"
+  },
+  "align_with_view": {
+    "keys": "ctrl+shift+f",
+    "description": "Align with view"
+  },
+  "find": {
+    "keys": "ctrl+f",
+    "description": "Find"
+  },
+  "frame_centre_selection": {
+    "keys": "f",
+    "description": "Frame (centre) selection"
+  },
+  "move_to_view": {
+    "keys": "alt+ctrl+f",
+    "description": "Move to view"
+  },
+  "load_selection_5": {
+    "keys": "ctrl+shift+five",
+    "description": "Load Selection 5"
+  },
+  "project": {
+    "keys": "ctrl+five",
+    "description": "Project"
+  },
+  "save_selection_5": {
+    "keys": "alt+ctrl+five",
+    "description": "Save Selection 5"
+  },
+  "hierarchy": {
+    "keys": "ctrl+four",
+    "description": "Hierarchy"
+  },
+  "load_selection_4": {
+    "keys": "ctrl+shift+four",
+    "description": "Load Selection 4"
+  },
+  "save_selection_4": {
+    "keys": "alt+ctrl+four",
+    "description": "Save Selection 4"
+  },
+  "new_game_object": {
+    "keys": "ctrl+shift+n",
+    "description": "New game object"
+  },
+  "asset_store": {
+    "keys": "ctrl+nine",
+    "description": "Asset store"
+  },
+  "load_selection_9": {
+    "keys": "ctrl+shift+nine",
+    "description": "Load Selection 9"
+  },
+  "save_selection_9": {
+    "keys": "alt+ctrl+nine",
+    "description": "Save Selection 9"
+  },
+  "load_selection_8_global_context": {
+    "keys": "ctrl+shift+numeight",
+    "description": "Load Selection 8"
+  },
+  "save_selection_8_global_context": {
+    "keys": "alt+ctrl+numeight",
+    "description": "Save Selection 8"
+  },
+  "load_selection_5_global_context": {
+    "keys": "ctrl+shift+numfive",
+    "description": "Load Selection 5"
+  },
+  "project_global_context": {
+    "keys": "ctrl+numfive",
+    "description": "Project"
+  },
+  "save_selection_5_global_context": {
+    "keys": "alt+ctrl+numfive",
+    "description": "Save Selection 5"
+  },
+  "hierarchy_global_context": {
+    "keys": "ctrl+numfour",
+    "description": "Hierarchy"
+  },
+  "load_selection_4_global_context": {
+    "keys": "ctrl+shift+numfour",
+    "description": "Load Selection 4"
+  },
+  "save_selection_4_global_context": {
+    "keys": "alt+ctrl+numfour",
+    "description": "Save Selection 4"
+  },
+  "asset_store_global_context": {
+    "keys": "ctrl+numnine",
+    "description": "Asset store"
+  },
+  "load_selection_9_global_context": {
+    "keys": "ctrl+shift+numnine",
+    "description": "Load Selection 9"
+  },
+  "save_selection_9_global_context": {
+    "keys": "alt+ctrl+numnine",
+    "description": "Save Selection 9"
+  },
+  "load_selection_1": {
+    "keys": "ctrl+shift+numone",
+    "description": "Load Selection 1"
+  },
+  "save_selection_1": {
+    "keys": "alt+ctrl+numone",
+    "description": "Save Selection 1"
+  },
+  "scene": {
+    "keys": "ctrl+numone",
+    "description": "Scene"
+  },
+  "load_selection_7": {
+    "keys": "ctrl+shift+numseven",
+    "description": "Load Selection 7"
+  },
+  "profiler": {
+    "keys": "ctrl+numseven",
+    "description": "Profiler"
+  },
+  "save_selection_7": {
+    "keys": "alt+ctrl+numseven",
+    "description": "Save Selection 7"
+  },
+  "animation": {
+    "keys": "ctrl+numsix",
+    "description": "Animation"
+  },
+  "load_selection_6": {
+    "keys": "ctrl+shift+numsix",
+    "description": "Load Selection 6"
+  },
+  "save_selection_6": {
+    "keys": "alt+ctrl+numsix",
+    "description": "Save Selection 6"
+  },
+  "inspector": {
+    "keys": "ctrl+numthree",
+    "description": "Inspector"
+  },
+  "load_selection_3": {
+    "keys": "ctrl+shift+numthree",
+    "description": "Load Selection 3"
+  },
+  "save_selection_3": {
+    "keys": "alt+ctrl+numthree",
+    "description": "Save Selection 3"
+  },
+  "game": {
+    "keys": "ctrl+numtwo",
+    "description": "Game"
+  },
+  "load_selection_2": {
+    "keys": "ctrl+shift+numtwo",
+    "description": "Load Selection 2"
+  },
+  "save_selection_2": {
+    "keys": "alt+ctrl+numtwo",
+    "description": "Save Selection 2"
+  },
+  "load_selection_1_global_context": {
+    "keys": "ctrl+shift+one",
+    "description": "Load Selection 1"
+  },
+  "save_selection_1_global_context": {
+    "keys": "alt+ctrl+one",
+    "description": "Save Selection 1"
+  },
+  "scene_global_context": {
+    "keys": "ctrl+one",
+    "description": "Scene"
+  },
+  "pause": {
+    "keys": "ctrl+shift+p",
+    "description": "Pause"
+  },
+  "play": {
+    "keys": "ctrl+p",
+    "description": "Play"
+  },
+  "step": {
+    "keys": "alt+ctrl+p",
+    "description": "Step"
+  },
+  "pan": {
+    "keys": "q",
+    "description": "Pan"
+  },
+  "refresh": {
+    "keys": "ctrl+r",
+    "description": "Refresh"
+  },
+  "scale": {
+    "keys": "r",
+    "description": "Scale"
+  },
+  "load_selection_7_global_context": {
+    "keys": "ctrl+shift+seven",
+    "description": "Load Selection 7"
+  },
+  "profiler_global_context": {
+    "keys": "ctrl+seven",
+    "description": "Profiler"
+  },
+  "save_selection_7_global_context": {
+    "keys": "alt+ctrl+seven",
+    "description": "Save Selection 7"
+  },
+  "animation_global_context": {
+    "keys": "ctrl+six",
+    "description": "Animation"
+  },
+  "load_selection_6_global_context": {
+    "keys": "ctrl+shift+six",
+    "description": "Load Selection 6"
+  },
+  "save_selection_6_global_context": {
+    "keys": "alt+ctrl+six",
+    "description": "Save Selection 6"
+  },
+  "inspector_global_context": {
+    "keys": "ctrl+three",
+    "description": "Inspector"
+  },
+  "load_selection_3_global_context": {
+    "keys": "ctrl+shift+three",
+    "description": "Load Selection 3"
+  },
+  "save_selection_3_global_context": {
+    "keys": "alt+ctrl+three",
+    "description": "Save Selection 3"
+  },
+  "game_global_context": {
+    "keys": "ctrl+two",
+    "description": "Game"
+  },
+  "load_selection_2_global_context": {
+    "keys": "ctrl+shift+two",
+    "description": "Load Selection 2"
+  },
+  "save_selection_2_global_context": {
+    "keys": "alt+ctrl+two",
+    "description": "Save Selection 2"
+  },
+  "paste": {
+    "keys": "ctrl+v",
+    "description": "Paste"
+  },
+  "vertex_snap": {
+    "keys": "v",
+    "description": "Vertex Snap"
+  },
+  "move": {
+    "keys": "w",
+    "description": "Move"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "description": "Cut"
+  },
+  "pivot_rotation_toggle": {
+    "keys": "x",
+    "description": "Pivot Rotation Toggle"
+  },
+  "redo": {
+    "keys": "ctrl+y",
+    "description": "Redo"
+  },
+  "pivot_mode_toggle": {
+    "keys": "z",
+    "description": "Pivot Mode toggle"
+  },
+  "undo": {
+    "keys": "ctrl+z",
+    "description": "Undo"
+  }
+}
