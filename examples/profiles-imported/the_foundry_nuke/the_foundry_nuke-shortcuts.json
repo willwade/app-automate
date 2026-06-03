@@ -720,6 +720,10 @@
     "description": "Display Matte, or alpha channel as transparent overlay"
   },
   "zoom_out_viewers": {
+    "keys": "minus",
+    "description": "Zoom-out"
+  },
+  "zoom_out_viewers_1": {
     "keys": "numminus",
     "description": "Zoom-out"
   },

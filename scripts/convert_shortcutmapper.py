@@ -109,6 +109,21 @@ def is_valid_shortcut(keys: str) -> bool:
     return True
 
 
+def _dedupe_slug(slug: str, ctx_name: str, seen: dict[str, int]) -> str:
+    if slug not in seen:
+        seen[slug] = 1
+        return slug
+    ctx_slug = f"{slug}_{slugify(ctx_name)}"
+    if ctx_slug not in seen:
+        seen[ctx_slug] = 1
+        return ctx_slug
+    n = seen[ctx_slug]
+    seen[ctx_slug] += 1
+    final = f"{ctx_slug}_{n}"
+    seen[final] = 1
+    return final
+
+
 def convert_intermediate(
     data: dict,
     app_id: str,
@@ -116,6 +131,7 @@ def convert_intermediate(
 ) -> tuple[dict, dict]:
     shortcuts: dict[str, dict] = {}
     elements: dict[str, dict] = {}
+    seen_slugs: dict[str, int] = {}
 
     for ctx_name, actions in data.get("contexts", {}).items():
         for action_label, keys_data in actions.items():
@@ -145,8 +161,7 @@ def convert_intermediate(
                 else:
                     continue
 
-            if slug in shortcuts:
-                slug = f"{slug}_{slugify(ctx_name)}"
+            slug = _dedupe_slug(slug, ctx_name, seen_slugs)
 
             entry: dict = {"keys": base_keys, "description": action_label}
             if mac_keys != base_keys and mac_keys and is_valid_shortcut(mac_keys):
@@ -174,6 +189,7 @@ def convert_generated(
 ) -> tuple[dict, dict]:
     shortcuts: dict[str, dict] = {}
     elements: dict[str, dict] = {}
+    seen_slugs: dict[str, int] = {}
 
     for ctx_name, keys_map in data.get("contexts", {}).items():
         for key_name, actions in keys_map.items():
@@ -199,8 +215,7 @@ def convert_generated(
                 if not is_valid_shortcut(keys_str):
                     continue
 
-                if slug in shortcuts:
-                    slug = f"{slug}_{slugify(ctx_name)}"
+                slug = _dedupe_slug(slug, ctx_name, seen_slugs)
 
                 shortcuts[slug] = {"keys": keys_str, "description": label}
                 aliases = make_alias(label)

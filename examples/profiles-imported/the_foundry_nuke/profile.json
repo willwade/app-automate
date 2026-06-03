@@ -4,7 +4,7 @@
   "type": "semantic",
   "backend": "shortcut",
   "platform_hint": null,
-  "notes": "Auto-generated from ShortcutMapper. 210 shortcuts.",
+  "notes": "Auto-generated from ShortcutMapper. 211 shortcuts.",
   "shortcuts": {
     "scrub_the_value_up_or_down_fast": {
       "keys": "left_arrow",
@@ -727,6 +727,10 @@
       "description": "Display Matte, or alpha channel as transparent overlay"
     },
     "zoom_out_viewers": {
+      "keys": "minus",
+      "description": "Zoom-out"
+    },
+    "zoom_out_viewers_1": {
       "keys": "numminus",
       "description": "Zoom-out"
     },
@@ -2858,6 +2862,17 @@
       }
     },
     "zoom_out_viewers": {
+      "label": "Zoom-out",
+      "aliases": [
+        "zoom-out"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "minus",
+        "description": "Zoom-out"
+      }
+    },
+    "zoom_out_viewers_1": {
       "label": "Zoom-out",
       "aliases": [
         "zoom-out"

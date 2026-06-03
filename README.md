@@ -164,44 +164,35 @@ uv run app-automate whats-here --radius 150
 
 ## Profile structure
 
-A profile is a `profile.json` file (plus optional anchor images for CV).
+A profile is a `profile.json` file (plus optional anchor images for CV). A single profile can **mix strategies** — use keyboard shortcuts for common actions, accessibility elements for specific UI targets, or both.
 
-**Shortcut-based profile** (simplest, cross-platform):
+**Hybrid profile** (shortcuts + accessibility in one):
 ```json
 {
-  "profile_id": "my-app",
-  "app_name": "MyApp",
-  "type": "semantic",
-  "backend": "shortcut",
-  "shortcuts": {
-    "save": {"keys": "ctrl+s", "description": "Save"},
-    "quit": {"keys": "ctrl+q", "description": "Quit"}
-  },
-  "semantic_elements": {
-    "save": {
-      "label": "save",
-      "action": "shortcut",
-      "shortcut": {"keys": "ctrl+s"}
-    }
-  }
-}
-```
-
-**Accessibility-based profile** (per-platform, richer):
-```json
-{
-  "profile_id": "calculator",
-  "app_name": "Calculator",
+  "profile_id": "firefox",
+  "app_name": "Firefox",
   "type": "semantic",
   "backend": "atspi",
+  "shortcuts": {
+    "new_tab": {"keys": "ctrl+t", "description": "Open new tab"},
+    "close_tab": {"keys": "ctrl+w", "description": "Close tab"},
+    "url_bar": {"keys": "ctrl+l", "description": "Focus URL bar"}
+  },
   "semantic_elements": {
-    "button_5": {
-      "label": "5",
-      "role": "push button",
-      "action": "click"
+    "new_tab": {
+      "label": "new_tab",
+      "aliases": ["open tab"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+t", "description": "Open new tab"}
     },
-    "display": {
-      "label": "display",
+    "url_bar": {
+      "label": "url_bar",
+      "aliases": ["address bar", "navigate"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+l", "description": "Focus URL bar"}
+    },
+    "search_box": {
+      "label": "Search with Google",
       "role": "entry",
       "action": "type"
     }
@@ -209,11 +200,13 @@ A profile is a `profile.json` file (plus optional anchor images for CV).
 }
 ```
 
+**Why hybrid?** Shortcuts are cross-platform and reliable (`ctrl+t` is always "new tab"). Accessibility elements let you target specific UI that has no shortcut (like typing into a search box). Use shortcuts for the 80%, accessibility for the 20%.
+
 **Actions available:** `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`, `shortcut`.
 
 ## Adding a new app
 
-1. **Check for shortcuts first.** Most apps document their keyboard shortcuts. Drop them in a JSON file and you're done.
+1. **Check for shortcuts first.** Most apps document their keyboard shortcuts. Drop them in a JSON file and you're done. See `examples/profiles/` for hand-crafted profiles and `examples/profiles-imported/` for 20 auto-imported apps.
 
 2. **Probe the app** to see if accessibility works:
    ```bash
@@ -230,16 +223,21 @@ A profile is a `profile.json` file (plus optional anchor images for CV).
    uv run app-automate train --app "AppName" --output-dir examples/profiles/appname
    ```
 
-5. **Combine both.** You can mix shortcut elements (reliable) with accessibility elements (specific) in the same profile.
+5. **Mix strategies.** A single profile can contain shortcut elements AND accessibility elements. Use shortcuts for the reliable cross-platform actions (save, quit, new tab) and accessibility for everything else.
 
 ## Example profiles
 
-| Profile | Strategy | Location |
-|---------|----------|----------|
-| Firefox | Shortcuts + AT-SPI | `examples/profiles/firefox/` |
-| Galculator | Keyboard shortcuts | `examples/profiles/galculator/` |
-| Photo Booth | Visual (CV) | `examples/profiles/photo-booth/` |
-| MS Paint | UIA semantic | `examples/profiles/paint-demo/` |
+**Hand-crafted** (`examples/profiles/`):
+
+| Profile | Strategy | Notes |
+|---------|----------|-------|
+| Firefox | Shortcuts + AT-SPI | Hybrid: shortcuts for navigation, AT-SPI for UI |
+| Chrome | Shortcuts | 34 cross-platform shortcuts |
+| VS Code | Shortcuts | 38 cross-platform shortcuts |
+| LibreOffice Writer | Shortcuts | 40 cross-platform shortcuts |
+| Galculator | Keyboard shortcuts | Linux calculator |
+
+**Auto-imported from ShortcutMapper** (`examples/profiles-imported/`): 20 apps including Blender (1,525), Photoshop (827), IntelliJ IDEA (465), and more. Run `app-automate validate examples/profiles-imported/<app>` to inspect any of them.
 
 ## Platform support
 
