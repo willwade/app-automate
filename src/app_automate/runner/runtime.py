@@ -306,6 +306,8 @@ def dry_run_semantic_command(
         x, y = _uia_locate(profile.app_name, element)
     elif backend == "cdp":
         x, y = _cdp_locate(element)
+    elif backend == "atspi":
+        x, y = _atspi_locate(profile.app_name, element)
 
     return SemanticResolvedCommand(
         element_id=element_id,
@@ -334,6 +336,8 @@ def execute_semantic_command(
         x, y = _uia_execute(profile.app_name, element, text=text)
     elif backend == "cdp":
         x, y = _cdp_execute(element, text=text)
+    elif backend == "atspi":
+        x, y = _atspi_execute(profile.app_name, element, text=text)
 
     return SemanticResolvedCommand(
         element_id=element_id,
@@ -544,6 +548,60 @@ def _cdp_execute(
         return x, y
     else:
         return _cdp_locate(element)
+
+    if target.x is None or target.y is None:
+        return None, None
+    return (
+        target.x + (target.width or 0) / 2.0,
+        target.y + (target.height or 0) / 2.0,
+    )
+
+
+def _atspi_locate(app_name: str, element: Any) -> tuple[float | None, float | None]:
+    from app_automate.accessibility import linux_atspi
+
+    kwargs: dict[str, Any] = {
+        "contains": element.label,
+        "max_depth": 15,
+        "actionable_only": True,
+        "enabled_only": True,
+    }
+    if element.role:
+        kwargs["control_type"] = element.role
+    matches = linux_atspi.find_matching_elements(app_name, **kwargs)
+    if not matches:
+        raise RuntimeError(f"AT-SPI could not find element matching '{element.label}'")
+    target = matches[0]
+    if target.x is None or target.y is None:
+        return None, None
+    return (
+        target.x + (target.width or 0) / 2.0,
+        target.y + (target.height or 0) / 2.0,
+    )
+
+
+def _atspi_execute(
+    app_name: str, element: Any, *, text: str | None = None
+) -> tuple[float | None, float | None]:
+    from app_automate.accessibility import linux_atspi
+
+    action = element.action.value
+
+    if action == "click":
+        target = linux_atspi.click_matching_element(app_name, contains=element.label)
+    elif action == "type":
+        type_text = text or element.text
+        if type_text is None:
+            raise RuntimeError(
+                f"type action requires --text for element '{element.label}'"
+            )
+        target = linux_atspi.type_into_matching_element(
+            app_name,
+            contains=element.label,
+            text=type_text,
+        )
+    else:
+        return _atspi_locate(app_name, element)
 
     if target.x is None or target.y is None:
         return None, None

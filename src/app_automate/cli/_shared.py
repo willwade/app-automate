@@ -9,7 +9,7 @@ import typer
 from app_automate.accessibility.models import UIElement
 from app_automate.adapters.base import ActionAdapter
 from app_automate.config.validation import load_profile
-from app_automate.platform_utils import is_windows
+from app_automate.platform_utils import is_linux, is_windows
 
 app = typer.Typer(
     help=(
@@ -72,9 +72,13 @@ def create_action_adapter() -> ActionAdapter:
         from app_automate.adapters.windows_input import WindowsInputAdapter
 
         return WindowsInputAdapter()
-    from app_automate.adapters.pyautogui_adapter import PyAutoGuiAdapter
+    if is_linux():
+        from app_automate.adapters.linux import LinuxInputAdapter
 
-    return PyAutoGuiAdapter()
+        return LinuxInputAdapter()
+    from app_automate.adapters.macos import MacOSActionAdapter
+
+    return MacOSActionAdapter()
 
 
 def load_macos_accessibility():

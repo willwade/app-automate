@@ -126,7 +126,9 @@ class AppProfile(BaseModel):
     def validate_profile_structure(self) -> "AppProfile":
         if self.type == "semantic":
             if not self.backend:
-                raise ValueError("semantic profile requires 'backend' (uia or cdp)")
+                raise ValueError(
+                    "semantic profile requires 'backend' (uia, cdp, or atspi)"
+                )
             if not self.semantic_elements:
                 raise ValueError("semantic profile must have semantic_elements defined")
             return self

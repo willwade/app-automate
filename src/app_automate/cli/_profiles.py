@@ -79,7 +79,7 @@ def train(
             "--backend",
             help=(
                 "Build a semantic profile from a live accessibility backend "
-                "instead of the visual/LLM path. Use 'uia' or 'cdp'."
+                "instead of the visual/LLM path. Use 'uia', 'cdp', or 'atspi'."
             ),
         ),
     ] = None,

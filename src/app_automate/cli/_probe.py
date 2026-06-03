@@ -183,6 +183,7 @@ def _probe_app(app_name: str) -> dict[str, Any]:
         "app_name": app_name,
         "uia": None,
         "cdp": None,
+        "atspi": None,
         "recommendation": None,
     }
 
@@ -191,6 +192,9 @@ def _probe_app(app_name: str) -> dict[str, Any]:
 
     cdp_info = _probe_cdp()
     result["cdp"] = cdp_info
+
+    atspi_info = _probe_atspi(app_name)
+    result["atspi"] = atspi_info
 
     if (
         uia_elements["interactive_with_bounds"] >= 20
@@ -207,11 +211,16 @@ def _probe_app(app_name: str) -> dict[str, Any]:
             f"CDP available (page: {cdp_info['page_title']}), "
             f"UIA only found {uia_elements['interactive_with_bounds']} elements"
         )
+    elif atspi_info["available"] and atspi_info["interactive_with_bounds"] >= 10:
+        result["recommendation"] = "atspi"
+        result["reason"] = (
+            f"AT-SPI found {atspi_info['interactive_with_bounds']} "
+            "interactive elements with bounds"
+        )
     else:
         result["recommendation"] = "cv"
         result["reason"] = (
-            "UIA coverage is poor and CDP is not available; "
-            "use visual profile with train --app"
+            "UIA/CDP/AT-SPI coverage is poor; use visual profile with train --app"
         )
 
     return result
@@ -266,4 +275,27 @@ def _probe_cdp() -> dict[str, Any]:
                 info["interactive_elements"] = "error"
     except Exception:
         info["available"] = False
+    return info
+
+
+def _probe_atspi(app_name: str) -> dict[str, Any]:
+    info: dict[str, Any] = {
+        "available": False,
+        "interactive_with_bounds": 0,
+    }
+    try:
+        from app_automate.accessibility import linux_atspi
+
+        elements = linux_atspi.list_app_ui_elements(
+            app_name, max_depth=10, actionable_only=True
+        )
+        with_bounds = [e for e in elements if e.has_bounds]
+        info["available"] = True
+        info["interactive_with_bounds"] = len(with_bounds)
+        info["total_elements"] = len(elements)
+        roles = set(e.class_name for e in with_bounds)
+        info["roles"] = sorted(roles)
+    except Exception:
+        info["available"] = False
+        info["error"] = "AT-SPI unavailable or app not found"
     return info

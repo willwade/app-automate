@@ -494,3 +494,243 @@ def uia_type(
         raise typer.Exit(code=1) from exc
 
     typer.echo(json.dumps(payload, indent=2))
+
+
+def _load_atspi_accessibility():
+    from app_automate.accessibility import linux_atspi
+
+    return linux_atspi
+
+
+@app.command("atspi-list")
+def atspi_list(
+    app_name: Annotated[
+        str,
+        typer.Option("--app", help="Linux app name to inspect."),
+    ],
+    max_depth: Annotated[
+        int,
+        typer.Option("--max-depth", min=0, help="Maximum UI tree depth to inspect."),
+    ] = 10,
+    actionable_only: Annotated[
+        bool,
+        typer.Option(
+            "--actionable-only/--all",
+            help="Show only actionable controls such as buttons and fields.",
+        ),
+    ] = False,
+    contains: Annotated[
+        str | None,
+        typer.Option(
+            "--contains",
+            help="Filter by case-insensitive label or role substring.",
+        ),
+    ] = None,
+    as_json: Annotated[
+        bool,
+        typer.Option("--json/--table", help="Emit JSON instead of a text table."),
+    ] = False,
+) -> None:
+    try:
+        atspi = _load_atspi_accessibility()
+        elements = atspi.list_app_ui_elements(
+            app_name,
+            max_depth=max_depth,
+            actionable_only=actionable_only,
+        )
+    except Exception as exc:
+        typer.echo(f"atspi-list failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    if contains is not None:
+        needle = contains.lower()
+        elements = [
+            element
+            for element in elements
+            if needle in element.label.lower() or needle in (element.role or "").lower()
+        ]
+
+    if as_json:
+        typer.echo(json.dumps([element.as_dict() for element in elements], indent=2))
+        return
+
+    typer.echo(format_semantic_elements(elements))
+
+
+@app.command("atspi-click")
+def atspi_click(
+    app_name: Annotated[
+        str,
+        typer.Option("--app", help="Linux app name."),
+    ],
+    contains: Annotated[
+        str,
+        typer.Option("--contains", help="Substring match for the target label."),
+    ],
+    action: Annotated[
+        Literal["click", "right-click", "double-click", "scroll", "drag"],
+        typer.Option(
+            "--action",
+            help="Semantic action to perform on the matched element.",
+        ),
+    ] = "click",
+    max_depth: Annotated[
+        int,
+        typer.Option("--max-depth", min=0, help="Maximum UI tree depth."),
+    ] = 10,
+    index: Annotated[
+        int,
+        typer.Option("--index", min=1, help="1-based match index."),
+    ] = 1,
+    drag_dx: Annotated[
+        float,
+        typer.Option("--drag-dx", help="Drag delta in x for action=drag."),
+    ] = 0.0,
+    drag_dy: Annotated[
+        float,
+        typer.Option("--drag-dy", help="Drag delta in y for action=drag."),
+    ] = 0.0,
+    scroll_clicks: Annotated[
+        int,
+        typer.Option("--scroll-clicks", help="Signed scroll delta for action=scroll."),
+    ] = 0,
+    dry_run: Annotated[
+        bool,
+        typer.Option(
+            "--dry-run/--execute",
+            help="Preview the target without acting.",
+        ),
+    ] = True,
+) -> None:
+    try:
+        atspi = _load_atspi_accessibility()
+        element = select_semantic_element(
+            finder=atspi.find_matching_elements,
+            app_name=app_name,
+            contains=contains,
+            max_depth=max_depth,
+            index=index,
+        )
+        x, y = element_center(element)
+        payload = {
+            "path": element.path,
+            "label": element.label,
+            "class_name": element.class_name,
+            "action": action,
+            "x": round(x, 2),
+            "y": round(y, 2),
+            "bounds": {
+                "x": element.x,
+                "y": element.y,
+                "width": element.width,
+                "height": element.height,
+            },
+        }
+        if action == "drag":
+            payload["end_x"] = round(x + drag_dx, 2)
+            payload["end_y"] = round(y + drag_dy, 2)
+        if action == "scroll":
+            payload["scroll_clicks"] = scroll_clicks
+
+        if dry_run:
+            typer.echo(json.dumps(payload, indent=2))
+            return
+
+        if action == "click":
+            atspi.click_matching_element(
+                app_name, contains=contains, max_depth=max_depth, index=index
+            )
+        else:
+            payload = run_ax_action(
+                adapter=create_action_adapter(),
+                element=element,
+                action=action,
+                drag_dx=drag_dx,
+                drag_dy=drag_dy,
+                scroll_clicks=scroll_clicks,
+            )
+    except Exception as exc:
+        typer.echo(f"atspi-click failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    typer.echo(json.dumps(payload, indent=2))
+
+
+@app.command("atspi-type")
+def atspi_type(
+    app_name: Annotated[
+        str,
+        typer.Option("--app", help="Linux app name."),
+    ],
+    contains: Annotated[
+        str,
+        typer.Option("--contains", help="Substring match for the target field."),
+    ],
+    text: Annotated[
+        str,
+        typer.Option("--text", help="Text to type."),
+    ],
+    max_depth: Annotated[
+        int,
+        typer.Option("--max-depth", min=0, help="Maximum UI tree depth."),
+    ] = 12,
+    index: Annotated[
+        int,
+        typer.Option("--index", min=1, help="1-based match index."),
+    ] = 1,
+    replace: Annotated[
+        bool,
+        typer.Option("--replace/--append", help="Select all existing text first."),
+    ] = False,
+    interval: Annotated[
+        float,
+        typer.Option("--interval", min=0.0, help="Delay between characters."),
+    ] = 0.0,
+    dry_run: Annotated[
+        bool,
+        typer.Option("--dry-run/--execute", help="Preview without typing."),
+    ] = True,
+) -> None:
+    try:
+        atspi = _load_atspi_accessibility()
+        element = select_semantic_element(
+            finder=atspi.find_matching_elements,
+            app_name=app_name,
+            contains=contains,
+            max_depth=max_depth,
+            index=index,
+        )
+        x, y = element_center(element)
+        payload = {
+            "path": element.path,
+            "label": element.label,
+            "class_name": element.class_name,
+            "x": round(x, 2),
+            "y": round(y, 2),
+            "text": text,
+            "replace": replace,
+            "bounds": {
+                "x": element.x,
+                "y": element.y,
+                "width": element.width,
+                "height": element.height,
+            },
+        }
+        if dry_run:
+            typer.echo(json.dumps(payload, indent=2))
+            return
+
+        atspi.type_into_matching_element(
+            app_name,
+            contains=contains,
+            text=text,
+            max_depth=max_depth,
+            index=index,
+            replace=replace,
+            interval=interval,
+        )
+    except Exception as exc:
+        typer.echo(f"atspi-type failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    typer.echo(json.dumps(payload, indent=2))

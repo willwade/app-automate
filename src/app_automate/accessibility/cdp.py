@@ -597,6 +597,29 @@ def _find_app_pids(app_name: str) -> list[int]:
 
 
 def _find_app_exe(app_name: str) -> str | None:
+    import os
+
+    common_paths = [
+        os.path.join(
+            os.environ.get("ProgramFiles", r"C:\Program Files"),
+            app_name,
+            f"{app_name}.exe",
+        ),
+        os.path.join(
+            os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)"),
+            app_name,
+            f"{app_name}.exe",
+        ),
+        os.path.join(
+            os.environ.get("LOCALAPPDATA", ""),
+            "Programs",
+            app_name,
+            f"{app_name}.exe",
+        ),
+    ]
+    for path in common_paths:
+        if os.path.isfile(path):
+            return path
     return None
 
 
