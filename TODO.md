@@ -89,6 +89,35 @@ Strategies for extracting keyboard shortcuts from live apps on each platform.
 - [ ] **Version pinning.** ShortcutMapper data is old (PS CC 2014, Blender 2.78). Add version fields to profiles and a way to flag when an app update may have changed shortcuts.
 - [ ] **Shortcut validation at profile load time.** Warn if a shortcut references keys that don't exist on the current platform (e.g. `super` on Windows).
 
+## Native Adapter Libraries
+
+Standalone native libraries for each platform that handle profile loading + platform input without Python.
+
+### Why native?
+
+- **macOS**: Accessibility permission is per-binary. Python venv paths change on rebuild, breaking the permission. Signed Swift binary = stable identity, permission sticks.
+- **Windows**: `SendInput` with `uiAccess=true` in manifest allows interacting with UAC-elevated apps. Requires code signing. Python can't get UIAccess.
+- **Linux**: No security benefit, but C/XTest avoids the `pyautogui` → `xdg` → `DISPLAY` dependency chain.
+
+### Roadmap
+
+- [ ] **NuGet package `AppAutomate.Consumer`** (highest priority — Smartbox .NET apps)
+  - [ ] Add `WindowsNativeAdapter` with `SendInput` P/Invoke (example in `docs/native-adapters.md`)
+  - [ ] Add NuGet metadata (icon, description, tags)
+  - [ ] Set up CI publish to nuget.org on tag
+  - [ ] Test with a real .NET app loading Firefox profile
+- [ ] **Swift Package `AppAutomateConsumer`** (macOS AT products)
+  - [ ] Create `Package.swift` with profile model structs
+  - [ ] Add `CGEventAdapter` with shortcut/type/sendKey (example in `docs/native-adapters.md`)
+  - [ ] Test Accessibility permission flow
+- [ ] **C header-only library** (Linux/embedded)
+  - [ ] `adapter.h` with XTest key sending (example in `docs/native-adapters.md`)
+  - [ ] Profile parsing via any JSON-C library (json-c, cJSON)
+- [ ] **Cross-platform docs**
+  - [x] `docs/native-adapters.md` — full examples for all three platforms
+  - [x] `docs/consumer-spec.md` — interface spec
+  - [x] `sdks/dotnet/` — .NET SDK skeleton with `IInputAdapter`
+
 ## Cross-platform
 
 ### High priority
