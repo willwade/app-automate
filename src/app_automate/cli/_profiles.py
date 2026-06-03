@@ -15,6 +15,70 @@ from app_automate.cli._shared import (
 from app_automate.config.validation import load_profile
 
 
+def _validate_profile_checks(profile_path_arg: Path) -> list[str]:
+    warnings: list[str] = []
+    try:
+        loaded = load_profile(profile_path_arg)
+    except Exception as exc:
+        return [f"FATAL: {exc}"]
+
+    if loaded.type == "semantic":
+        if not loaded.backend:
+            warnings.append("semantic profile missing 'backend' field")
+        if not loaded.semantic_elements:
+            warnings.append("semantic profile has no semantic_elements")
+        seen_aliases: dict[str, str] = {}
+        for eid, el in loaded.semantic_elements.items():
+            if el.action.value == "shortcut" and el.shortcut is None:
+                warnings.append(
+                    f"element '{eid}' has action=shortcut but no shortcut definition"
+                )
+            if el.action.value == "type" and not el.role and not el.selector:
+                warnings.append(
+                    f"element '{eid}' has action=type but no role or selector"
+                )
+            for alias in el.aliases:
+                lower = alias.lower()
+                if lower in seen_aliases:
+                    warnings.append(
+                        f"duplicate alias '{alias}' in elements "
+                        f"'{seen_aliases[lower]}' and '{eid}'"
+                    )
+                seen_aliases[lower] = eid
+        for sname, sdef in loaded.shortcuts.items():
+            if not sdef.keys.strip():
+                warnings.append(f"shortcut '{sname}' has empty keys")
+    else:
+        if not loaded.elements and not loaded.states:
+            warnings.append("visual profile has no elements or states")
+        if loaded.elements and loaded.anchors is None:
+            warnings.append("visual profile with elements but no anchors")
+
+    return warnings
+
+
+@app.command("validate")
+def validate_profile(
+    profile: Annotated[
+        Path,
+        typer.Argument(help="Path to a profile directory or profile JSON file."),
+    ],
+) -> None:
+    p = profile_path(profile)
+    if not p.exists():
+        typer.echo(f"Profile not found: {p}", err=True)
+        raise typer.Exit(code=1)
+    warnings = _validate_profile_checks(p)
+    if not warnings:
+        typer.echo(f"OK: {p} is valid")
+        return
+    has_fatal = any(w.startswith("FATAL") for w in warnings)
+    for w in warnings:
+        typer.echo(f"  {w}", err=True)
+    typer.echo(f"\n{len(warnings)} issue(s) found in {p}", err=True)
+    raise typer.Exit(code=1 if has_fatal else 2)
+
+
 @app.command("train")
 def train(
     screenshot: Annotated[
