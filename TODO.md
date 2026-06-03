@@ -52,17 +52,54 @@ Things to do when you have access to a macOS or Linux desktop for hands-on testi
 - [ ] **Permission handling.** Document the Screen Recording and Accessibility permission setup process. Can we detect missing permissions and give a helpful error?
 - [ ] **Test multi-state profiles on macOS.** Visual profiles with state detection — does it work on Retina?
 
+## Shortcut Harvesting
+
+Strategies for extracting keyboard shortcuts from live apps on each platform.
+
+### Linux
+
+- [ ] **AT-SPI menu accelerator extraction.** `extract-shortcuts --source atspi-menu` reads accelerator labels from GTK/Qt menu items via AT-SPI. Needs running app + desktop session.
+- [ ] **`.desktop` file parsing.** `extract-shortcuts --source desktop` reads `~/.local/share/applications/*.desktop` for `Exec=` lines with keyboard hints. Already written, needs testing.
+- [ ] **GNOME WM keybindings.** `extract-shortcuts --source gnome-wm` reads `gsettings` for window manager shortcuts. Already written, needs testing.
+- [ ] **GTK Inspector.** For apps without AT-SPI menu bars (header bar apps), explore using GTK Inspector to extract action accelerators programmatically.
+- [ ] **Qt accessibility.** Qt apps expose shortcuts via `QAccessibleActionInterface`. Investigate if AT-SPI exposes these.
+
+### macOS
+
+- [ ] **AX menu item extraction.** `extract_from_ax_menu_items()` reads `AXMenuItemCmdChar` + `AXMenuItemCmdModifiers` from the accessibility tree. Written but untested.
+- [ ] **`defaults` plist parsing.** Many macOS apps store keyboard shortcuts in `~/Library/Preferences/*.plist`. Write an extractor that reads `NSUserKeyEquivalents` entries.
+- [ ] **System Preferences keyboard shortcuts.** macOS exposes system-level shortcuts via `defaults find NSUserKeyEquivalents`. Harvest for system actions (Spotlight, Mission Control, etc.).
+- [ ] **Safari WebExtension shortcuts.** Safari extensions have `commands` in their manifest. Investigate extraction.
+- [ ] **iWork shortcuts (Pages, Numbers, Keynote).** Apple's apps have rich shortcut sets but don't expose them via AX menus consistently. May need manual curation.
+
+### Windows
+
+- [ ] **UIA accelerator key extraction.** `UIA_AcceleratorKeyPropertyId` on menu items gives the shortcut text (e.g. "Ctrl+S"). Write a `extract-shortcuts --source uia` extractor.
+- [ ] **Registry shortcut harvesting.** Some apps store keyboard bindings in the registry under `HKCU\Software\<Vendor>`. Pattern varies per app.
+- [ ] **`.lnk` file parsing.** Windows shortcuts (`*.lnk`) can have hotkeys assigned. Parse `IShellLink::GetHotkey` for globally-registered app shortcuts.
+- [ ] **MS Office ribbon shortcuts.** Office apps have "Key Tips" (Alt sequences). Investigate if UIA exposes these or if they need manual documentation.
+- [ ] **PowerShell `Get-Command` + help.** For Windows-native CLI tools, harvest `-Key` parameter docs.
+
+### Cross-platform
+
+- [x] **ShortcutMapper bulk import.** Converter script `scripts/convert_shortcutmapper.py` imports from `waldobronchart/ShortcutMapper`. 20 apps done.
+- [x] **JSON/TXT file import.** `extract-shortcuts --source file` reads user-provided JSON or `key = value` text files.
+- [ ] **Web scraping pipeline.** For apps that only document shortcuts on web pages (e.g. Google Docs, Figma, Notion), write targeted scrapers. Consider per-app scrapers rather than generic.
+- [ ] **User contribution workflow.** Define how users submit new shortcut files or corrections. GitHub PR to `examples/profiles/` or `examples/profiles-imported/`?
+- [ ] **Version pinning.** ShortcutMapper data is old (PS CC 2014, Blender 2.78). Add version fields to profiles and a way to flag when an app update may have changed shortcuts.
+- [ ] **Shortcut validation at profile load time.** Warn if a shortcut references keys that don't exist on the current platform (e.g. `super` on Windows).
+
 ## Cross-platform
 
 ### High priority
 
-- [ ] **Shortcut file library.** Build a collection of shortcut JSON files for common apps: Firefox, Chrome, VS Code, LibreOffice, TextEdit/Notepad. Contributors can add more.
-- [ ] **Combined profiles.** A profile should be able to mix shortcut elements (reliable) with accessibility elements (specific). Test a Firefox profile that uses shortcuts for nav and AT-SPI/UIA for specific buttons.
+- [x] **Shortcut file library.** 25 apps with shortcut profiles: 5 hand-crafted in `examples/profiles/`, 20 auto-imported in `examples/profiles-imported/`.
+- [x] **Combined profiles.** Profiles already support mixing shortcut elements with accessibility elements in a single `semantic_elements` dict.
 - [ ] **Test `probe` on all three platforms.** Verify recommendation logic: UIA on Windows, AT-SPI on Linux, AX on macOS, CV fallback everywhere.
 
 ### Medium priority
 
 - [ ] **Hybrid profile schema.** Allow a single profile to specify `backend: "mixed"` with per-element backend hints.
-- [ ] **CI testing.** Run the test suite on all three platforms via GitHub Actions. At minimum, run `ruff check` + `pytest` on Linux.
-- [ ] **Profile validator command.** `app-automate validate <profile>` that checks the profile against the schema and warns about common mistakes.
+- [x] **CI testing.** GitHub Actions workflow runs `ruff check` + `pytest` on push/PR.
+- [x] **Profile validator command.** `app-automate validate <profile>` checks profiles for common issues (exit 0/1/2).
 - [ ] **Profile migration tool.** Help convert old visual profiles to semantic or shortcut-based profiles.
