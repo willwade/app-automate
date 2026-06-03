@@ -4,7 +4,7 @@
   "type": "semantic",
   "backend": "shortcut",
   "platform_hint": null,
-  "notes": "Auto-generated from ShortcutMapper. 161 shortcuts.",
+  "notes": "Auto-generated from ShortcutMapper. 151 shortcuts.",
   "shortcuts": {
     "view_previous_image": {
       "keys": "ctrl+right",
@@ -30,14 +30,10 @@
       "keys": "alt+right",
       "description": "Move Right 1 Pixel"
     },
-    "invert_selection_mac": {
-      "keys": "ctrl+shift+i / cmd+shift+i",
-      "description": "Invert Selection",
-      "platform": "macos"
-    },
     "invert_selection": {
       "keys": "ctrl+shift+i",
-      "description": "Invert Selection"
+      "description": "Invert Selection",
+      "keys_macos": "ctrl+shift+i / cmd+shift+i"
     },
     "vertex_selection_mode": {
       "keys": "f9",
@@ -187,14 +183,10 @@
       "keys": "shift+s+lmb",
       "description": "Keyframe Marking Menu"
     },
-    "open_scene_mac": {
-      "keys": "ctrl+o / cmd+o",
-      "description": "Open Scene",
-      "platform": "macos"
-    },
     "open_scene": {
       "keys": "ctrl+o",
-      "description": "Open Scene"
+      "description": "Open Scene",
+      "keys_macos": "ctrl+o / cmd+o"
     },
     "vertex_face_selection_mode": {
       "keys": "alt+f9",
@@ -256,14 +248,10 @@
       "keys": "2",
       "description": "Medium Display Quality"
     },
-    "cut_mac": {
-      "keys": "ctrl+x / cmd+x",
-      "description": "Cut",
-      "platform": "macos"
-    },
     "cut": {
       "keys": "ctrl+x",
-      "description": "Cut"
+      "description": "Cut",
+      "keys_macos": "ctrl+x / cmd+x"
     },
     "go_to_min_frame": {
       "keys": "alt+shift+v",
@@ -277,14 +265,10 @@
       "keys": "alt+left",
       "description": "Move Left 1 Pixel"
     },
-    "save_scene_mac": {
-      "keys": "ctrl+s / cmd+s",
-      "description": "Save Scene",
-      "platform": "macos"
-    },
     "save_scene": {
       "keys": "ctrl+s",
-      "description": "Save Scene"
+      "description": "Save Scene",
+      "keys_macos": "ctrl+s / cmd+s"
     },
     "duplicate": {
       "keys": "ctrl+d",
@@ -294,14 +278,10 @@
       "keys": "z",
       "description": "Undo"
     },
-    "import_mac": {
-      "keys": "ctrl+i / cmd+i",
-      "description": "Import",
-      "platform": "macos"
-    },
     "import": {
       "keys": "ctrl+i",
-      "description": "Import"
+      "description": "Import",
+      "keys_macos": "ctrl+i / cmd+i"
     },
     "face_selection_mode": {
       "keys": "f11",
@@ -347,14 +327,10 @@
       "keys": "e+lmb",
       "description": "Rotate Tool Marking Menu"
     },
-    "exit_maya_mac": {
-      "keys": "ctrl+q / cmd+q",
-      "description": "Exit Maya",
-      "platform": "macos"
-    },
     "exit_maya": {
       "keys": "ctrl+q",
-      "description": "Exit Maya"
+      "description": "Exit Maya",
+      "keys_macos": "ctrl+q / cmd+q"
     },
     "hold_pivot_move_mode": {
       "keys": "d",
@@ -392,27 +368,19 @@
       "keys": "shift+d",
       "description": "Duplicate with Transform"
     },
-    "new_scene_mac": {
-      "keys": "ctrl+n / cmd+n",
-      "description": "New Scene",
-      "platform": "macos"
-    },
     "new_scene": {
       "keys": "ctrl+n",
-      "description": "New Scene"
+      "description": "New Scene",
+      "keys_macos": "ctrl+n / cmd+n"
     },
     "shrink_selection": {
       "keys": "shift+,",
       "description": "Shrink Selection"
     },
-    "select_all_mac": {
-      "keys": "ctrl+shift+a / cmd+shift+a",
-      "description": "Select All",
-      "platform": "macos"
-    },
     "select_all": {
       "keys": "ctrl+shift+a",
-      "description": "Select All"
+      "description": "Select All",
+      "keys_macos": "ctrl+shift+a / cmd+shift+a"
     },
     "shaded_display": {
       "keys": "5",
@@ -446,23 +414,15 @@
       "keys": "alt+b",
       "description": "Switch Background Color"
     },
-    "copy_mac": {
-      "keys": "ctrl+c / cmd+c",
-      "description": "Copy",
-      "platform": "macos"
-    },
     "copy": {
       "keys": "ctrl+c",
-      "description": "Copy"
-    },
-    "paste_mac": {
-      "keys": "ctrl+v / cmd+v",
-      "description": "Paste",
-      "platform": "macos"
+      "description": "Copy",
+      "keys_macos": "ctrl+c / cmd+c"
     },
     "paste": {
       "keys": "ctrl+v",
-      "description": "Paste"
+      "description": "Paste",
+      "keys_macos": "ctrl+v / cmd+v"
     },
     "insert_anim_keys_tool": {
       "keys": "i",
@@ -736,7 +696,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+i",
-        "description": "Invert Selection"
+        "description": "Invert Selection",
+        "keys_macos": "ctrl+shift+i / cmd+shift+i"
       }
     },
     "vertex_selection_mode": {
@@ -1158,7 +1119,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+o",
-        "description": "Open Scene"
+        "description": "Open Scene",
+        "keys_macos": "ctrl+o / cmd+o"
       }
     },
     "vertex_face_selection_mode": {
@@ -1336,7 +1298,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+x",
-        "description": "Cut"
+        "description": "Cut",
+        "keys_macos": "ctrl+x / cmd+x"
       }
     },
     "go_to_min_frame": {
@@ -1380,7 +1343,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+s",
-        "description": "Save Scene"
+        "description": "Save Scene",
+        "keys_macos": "ctrl+s / cmd+s"
       }
     },
     "duplicate": {
@@ -1413,7 +1377,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+i",
-        "description": "Import"
+        "description": "Import",
+        "keys_macos": "ctrl+i / cmd+i"
       }
     },
     "face_selection_mode": {
@@ -1547,7 +1512,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+q",
-        "description": "Exit Maya"
+        "description": "Exit Maya",
+        "keys_macos": "ctrl+q / cmd+q"
       }
     },
     "hold_pivot_move_mode": {
@@ -1657,7 +1623,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+n",
-        "description": "New Scene"
+        "description": "New Scene",
+        "keys_macos": "ctrl+n / cmd+n"
       }
     },
     "shrink_selection": {
@@ -1679,7 +1646,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+a",
-        "description": "Select All"
+        "description": "Select All",
+        "keys_macos": "ctrl+shift+a / cmd+shift+a"
       }
     },
     "shaded_display": {
@@ -1778,7 +1746,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+c",
-        "description": "Copy"
+        "description": "Copy",
+        "keys_macos": "ctrl+c / cmd+c"
       }
     },
     "paste": {
@@ -1789,7 +1758,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+v",
-        "description": "Paste"
+        "description": "Paste",
+        "keys_macos": "ctrl+v / cmd+v"
       }
     },
     "insert_anim_keys_tool": {

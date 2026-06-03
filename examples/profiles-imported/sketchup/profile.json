@@ -4,7 +4,7 @@
   "type": "semantic",
   "backend": "shortcut",
   "platform_hint": null,
-  "notes": "Auto-generated from ShortcutMapper. 94 shortcuts.",
+  "notes": "Auto-generated from ShortcutMapper. 72 shortcuts.",
   "shortcuts": {
     "context_help": {
       "keys": "shift+f1",
@@ -14,14 +14,10 @@
       "keys": "shift+z",
       "description": "Zoom Extents"
     },
-    "zoom_window_mac": {
-      "keys": "cmd+shift+w",
-      "description": "Zoom Window",
-      "platform": "macos"
-    },
     "zoom_window": {
       "keys": "ctrl+shift+w",
-      "description": "Zoom Window"
+      "description": "Zoom Window",
+      "keys_macos": "cmd+shift+w"
     },
     "pan": {
       "keys": "h",
@@ -55,32 +51,20 @@
       "keys": "l",
       "description": "Line"
     },
-    "select_none_mac": {
-      "keys": "cmd+t",
-      "description": "Select None",
-      "platform": "macos"
-    },
     "select_none": {
       "keys": "ctrl+t",
-      "description": "Select None"
-    },
-    "copy_mac": {
-      "keys": "cmd+insert",
-      "description": "Copy",
-      "platform": "macos"
+      "description": "Select None",
+      "keys_macos": "cmd+t"
     },
     "copy": {
       "keys": "ctrl+insert",
-      "description": "Copy"
-    },
-    "cut_mac": {
-      "keys": "cmd+x",
-      "description": "Cut",
-      "platform": "macos"
+      "description": "Copy",
+      "keys_macos": "cmd+insert"
     },
     "cut": {
       "keys": "ctrl+x",
-      "description": "Cut"
+      "description": "Cut",
+      "keys_macos": "cmd+x"
     },
     "delete": {
       "keys": "delete",
@@ -90,72 +74,44 @@
       "keys": "shift+insert",
       "description": "Paste"
     },
-    "redo_mac": {
-      "keys": "cmd+y",
-      "description": "Redo",
-      "platform": "macos"
-    },
     "redo": {
       "keys": "ctrl+y",
-      "description": "Redo"
-    },
-    "select_all_mac": {
-      "keys": "cmd+a",
-      "description": "Select All",
-      "platform": "macos"
+      "description": "Redo",
+      "keys_macos": "cmd+y"
     },
     "select_all": {
       "keys": "ctrl+a",
-      "description": "Select All"
-    },
-    "undo_mac": {
-      "keys": "cmd+z",
-      "description": "Undo",
-      "platform": "macos"
+      "description": "Select All",
+      "keys_macos": "cmd+a"
     },
     "undo": {
       "keys": "ctrl+z",
-      "description": "Undo"
+      "description": "Undo",
+      "keys_macos": "cmd+z"
     },
     "make_component": {
       "keys": "g",
       "description": "Make Component"
     },
-    "new_mac": {
-      "keys": "cmd+n",
-      "description": "New",
-      "platform": "macos"
-    },
     "new": {
       "keys": "ctrl+n",
-      "description": "New"
-    },
-    "open_mac": {
-      "keys": "cmd+o",
-      "description": "Open",
-      "platform": "macos"
+      "description": "New",
+      "keys_macos": "cmd+n"
     },
     "open": {
       "keys": "ctrl+o",
-      "description": "Open"
-    },
-    "print_mac": {
-      "keys": "cmd+p",
-      "description": "Print",
-      "platform": "macos"
+      "description": "Open",
+      "keys_macos": "cmd+o"
     },
     "print": {
       "keys": "ctrl+p",
-      "description": "Print"
-    },
-    "save_mac": {
-      "keys": "cmd+s",
-      "description": "Save",
-      "platform": "macos"
+      "description": "Print",
+      "keys_macos": "cmd+p"
     },
     "save": {
       "keys": "ctrl+s",
-      "description": "Save"
+      "description": "Save",
+      "keys_macos": "cmd+s"
     },
     "eraser": {
       "keys": "e",
@@ -221,14 +177,10 @@
       "keys": "down",
       "description": "Parallel/Perpendicular"
     },
-    "copy_mode_move_mac": {
-      "keys": "cmd",
-      "description": "Copy",
-      "platform": "macos"
-    },
     "copy_mode_move": {
       "keys": "ctrl",
-      "description": "Copy"
+      "description": "Copy",
+      "keys_macos": "cmd"
     },
     "auto_fold": {
       "keys": "alt",
@@ -262,27 +214,19 @@
       "keys": "/",
       "description": "Internal Copy Array"
     },
-    "hold_suspend_gravity_mac": {
-      "keys": "cmd",
-      "description": "(HOLD) Suspend gravity",
-      "platform": "macos"
-    },
     "hold_suspend_gravity": {
       "keys": "ctrl",
-      "description": "(HOLD) Suspend gravity"
+      "description": "(HOLD) Suspend gravity",
+      "keys_macos": "cmd"
     },
     "hold_activate_pan": {
       "keys": "shift",
       "description": "(HOLD) Activate Pan"
     },
-    "paint_all_matching_connected_faces_mac": {
-      "keys": "cmd",
-      "description": "Paint all matching connected faces",
-      "platform": "macos"
-    },
     "paint_all_matching_connected_faces": {
       "keys": "ctrl",
-      "description": "Paint all matching connected faces"
+      "description": "Paint all matching connected faces",
+      "keys_macos": "cmd"
     },
     "paint_all_matching_faces_in_the_model": {
       "keys": "shift",
@@ -292,23 +236,15 @@
       "keys": "alt",
       "description": "Sample material"
     },
-    "paint_all_matching_faces_on_the_same_object_mac": {
-      "keys": "cmd+shift",
-      "description": "Paint all matching faces on the same object",
-      "platform": "macos"
-    },
     "paint_all_matching_faces_on_the_same_object": {
       "keys": "ctrl+shift",
-      "description": "Paint all matching faces on the same object"
-    },
-    "push_pull_a_copy_of_the_face_leaving_the_original_face_in_place_mac": {
-      "keys": "cmd",
-      "description": "Push/Pull a copy of the face (leaving the original face in place)",
-      "platform": "macos"
+      "description": "Paint all matching faces on the same object",
+      "keys_macos": "cmd+shift"
     },
     "push_pull_a_copy_of_the_face_leaving_the_original_face_in_place": {
       "keys": "ctrl",
-      "description": "Push/Pull a copy of the face (leaving the original face in place)"
+      "description": "Push/Pull a copy of the face (leaving the original face in place)",
+      "keys_macos": "cmd"
     },
     "lock_in_current_direction_plane": {
       "keys": "shift",
@@ -318,71 +254,47 @@
       "keys": "alt",
       "description": "Lock drawing plane for first edge (after first click)"
     },
-    "about_center_mac": {
-      "keys": "cmd",
-      "description": "About center",
-      "platform": "macos"
-    },
     "about_center": {
       "keys": "ctrl",
-      "description": "About center"
+      "description": "About center",
+      "keys_macos": "cmd"
     },
     "uniformly_don_t_distort": {
       "keys": "shift",
       "description": "Uniformly (don\u2019t distort)"
     },
-    "soften_smooth_mac": {
-      "keys": "cmd",
-      "description": "Soften/Smooth",
-      "platform": "macos"
-    },
     "soften_smooth": {
       "keys": "ctrl",
-      "description": "Soften/Smooth"
+      "description": "Soften/Smooth",
+      "keys_macos": "cmd"
     },
     "hide": {
       "keys": "shift",
       "description": "Hide"
     },
-    "add_to_selection_mac": {
-      "keys": "cmd",
-      "description": "Add to selection",
-      "platform": "macos"
-    },
     "add_to_selection": {
       "keys": "ctrl",
-      "description": "Add to selection"
+      "description": "Add to selection",
+      "keys_macos": "cmd"
     },
     "add_subtract_from_selection": {
       "keys": "shift",
       "description": "Add/Subtract from selection"
     },
-    "subtract_from_selection_mac": {
-      "keys": "cmd+shift",
-      "description": "Subtract from selection",
-      "platform": "macos"
-    },
     "subtract_from_selection": {
       "keys": "ctrl+shift",
-      "description": "Subtract from selection"
-    },
-    "copy_mode_rotate_mac": {
-      "keys": "cmd",
-      "description": "Copy",
-      "platform": "macos"
+      "description": "Subtract from selection",
+      "keys_macos": "cmd+shift"
     },
     "copy_mode_rotate": {
       "keys": "ctrl",
-      "description": "Copy"
-    },
-    "create_guide_or_measure_only_mac": {
-      "keys": "cmd",
-      "description": "Create guide or measure only",
-      "platform": "macos"
+      "description": "Copy",
+      "keys_macos": "cmd"
     },
     "create_guide_or_measure_only": {
       "keys": "ctrl",
-      "description": "Create guide or measure only"
+      "description": "Create guide or measure only",
+      "keys_macos": "cmd"
     },
     "on_blue_axis_mode_tape_measure": {
       "keys": "up",
@@ -436,7 +348,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+w",
-        "description": "Zoom Window"
+        "description": "Zoom Window",
+        "keys_macos": "cmd+shift+w"
       }
     },
     "pan": {
@@ -535,7 +448,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+t",
-        "description": "Select None"
+        "description": "Select None",
+        "keys_macos": "cmd+t"
       }
     },
     "copy": {
@@ -546,7 +460,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+insert",
-        "description": "Copy"
+        "description": "Copy",
+        "keys_macos": "cmd+insert"
       }
     },
     "cut": {
@@ -557,7 +472,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+x",
-        "description": "Cut"
+        "description": "Cut",
+        "keys_macos": "cmd+x"
       }
     },
     "delete": {
@@ -590,7 +506,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+y",
-        "description": "Redo"
+        "description": "Redo",
+        "keys_macos": "cmd+y"
       }
     },
     "select_all": {
@@ -601,7 +518,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+a",
-        "description": "Select All"
+        "description": "Select All",
+        "keys_macos": "cmd+a"
       }
     },
     "undo": {
@@ -612,7 +530,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+z",
-        "description": "Undo"
+        "description": "Undo",
+        "keys_macos": "cmd+z"
       }
     },
     "make_component": {
@@ -634,7 +553,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+n",
-        "description": "New"
+        "description": "New",
+        "keys_macos": "cmd+n"
       }
     },
     "open": {
@@ -645,7 +565,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+o",
-        "description": "Open"
+        "description": "Open",
+        "keys_macos": "cmd+o"
       }
     },
     "print": {
@@ -656,7 +577,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+p",
-        "description": "Print"
+        "description": "Print",
+        "keys_macos": "cmd+p"
       }
     },
     "save": {
@@ -667,7 +589,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+s",
-        "description": "Save"
+        "description": "Save",
+        "keys_macos": "cmd+s"
       }
     },
     "eraser": {
@@ -858,7 +781,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Copy"
+        "description": "Copy",
+        "keys_macos": "cmd"
       }
     },
     "auto_fold": {
@@ -959,7 +883,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "(HOLD) Suspend gravity"
+        "description": "(HOLD) Suspend gravity",
+        "keys_macos": "cmd"
       }
     },
     "hold_activate_pan": {
@@ -981,7 +906,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Paint all matching connected faces"
+        "description": "Paint all matching connected faces",
+        "keys_macos": "cmd"
       }
     },
     "paint_all_matching_faces_in_the_model": {
@@ -1014,7 +940,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift",
-        "description": "Paint all matching faces on the same object"
+        "description": "Paint all matching faces on the same object",
+        "keys_macos": "cmd+shift"
       }
     },
     "push_pull_a_copy_of_the_face_leaving_the_original_face_in_place": {
@@ -1027,7 +954,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Push/Pull a copy of the face (leaving the original face in place)"
+        "description": "Push/Pull a copy of the face (leaving the original face in place)",
+        "keys_macos": "cmd"
       }
     },
     "lock_in_current_direction_plane": {
@@ -1062,7 +990,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "About center"
+        "description": "About center",
+        "keys_macos": "cmd"
       }
     },
     "uniformly_don_t_distort": {
@@ -1086,7 +1015,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Soften/Smooth"
+        "description": "Soften/Smooth",
+        "keys_macos": "cmd"
       }
     },
     "hide": {
@@ -1108,7 +1038,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Add to selection"
+        "description": "Add to selection",
+        "keys_macos": "cmd"
       }
     },
     "add_subtract_from_selection": {
@@ -1132,7 +1063,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift",
-        "description": "Subtract from selection"
+        "description": "Subtract from selection",
+        "keys_macos": "cmd+shift"
       }
     },
     "copy_mode_rotate": {
@@ -1143,7 +1075,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Copy"
+        "description": "Copy",
+        "keys_macos": "cmd"
       }
     },
     "create_guide_or_measure_only": {
@@ -1154,7 +1087,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "Create guide or measure only"
+        "description": "Create guide or measure only",
+        "keys_macos": "cmd"
       }
     },
     "on_blue_axis_mode_tape_measure": {

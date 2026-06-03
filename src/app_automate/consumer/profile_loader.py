@@ -88,7 +88,7 @@ class Consumer:
             )
 
         if element.action.value == "shortcut" and element.shortcut:
-            self.send_shortcut(element.shortcut.keys)
+            self.send_shortcut(element.shortcut.keys_for_platform())
             return ExecuteResult(
                 element_id=element_id,
                 label=element.label,

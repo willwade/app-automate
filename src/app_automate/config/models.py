@@ -56,8 +56,23 @@ class ElementDefinition(BaseModel):
 
 class ShortcutDefinition(BaseModel):
     keys: str
+    keys_macos: str | None = None
+    keys_linux: str | None = None
+    keys_windows: str | None = None
     description: str = ""
     platform: str | None = None
+
+    def keys_for_platform(self, platform: str | None = None) -> str:
+        import platform as _platform
+
+        current = platform or _platform.system().lower()
+        if current == "darwin" and self.keys_macos:
+            return self.keys_macos
+        if current == "linux" and self.keys_linux:
+            return self.keys_linux
+        if current == "windows" and self.keys_windows:
+            return self.keys_windows
+        return self.keys
 
 
 class SemanticElement(BaseModel):

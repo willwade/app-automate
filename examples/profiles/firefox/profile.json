@@ -6,95 +6,268 @@
   "platform_hint": "linux",
   "notes": "Firefox profile using keyboard shortcuts (cross-platform) + AT-SPI for Linux-specific elements",
   "shortcuts": {
-    "new_tab": {"keys": "ctrl+t", "description": "Open new tab"},
-    "close_tab": {"keys": "ctrl+w", "description": "Close current tab"},
-    "new_window": {"keys": "ctrl+n", "description": "Open new window"},
-    "open_file": {"keys": "ctrl+o", "description": "Open file dialog"},
-    "save_page": {"keys": "ctrl+s", "description": "Save current page"},
-    "find": {"keys": "ctrl+f", "description": "Find in page"},
-    "url_bar": {"keys": "ctrl+l", "description": "Focus URL bar"},
-    "reload": {"keys": "f5", "description": "Reload page"},
-    "back": {"keys": "alt+left", "description": "Navigate back"},
-    "forward": {"keys": "alt+right", "description": "Navigate forward"},
-    "zoom_in": {"keys": "ctrl+plus", "description": "Zoom in"},
-    "zoom_out": {"keys": "ctrl+minus", "description": "Zoom out"},
-    "bookmark": {"keys": "ctrl+d", "description": "Bookmark page"},
-    "history": {"keys": "ctrl+h", "description": "Show history sidebar"},
-    "downloads": {"keys": "ctrl+j", "description": "Show downloads"},
-    "quit": {"keys": "ctrl+q", "description": "Quit Firefox"},
-    "devtools": {"keys": "f12", "description": "Toggle developer tools"},
-    "print": {"keys": "ctrl+p", "description": "Print page"},
-    "select_all": {"keys": "ctrl+a", "description": "Select all"},
-    "copy": {"keys": "ctrl+c", "description": "Copy selection"},
-    "paste": {"keys": "ctrl+v", "description": "Paste"},
-    "cut": {"keys": "ctrl+x", "description": "Cut selection"},
-    "undo": {"keys": "ctrl+z", "description": "Undo"},
-    "redo": {"keys": "ctrl+shift+z", "description": "Redo"},
-    "next_tab": {"keys": "ctrl+tab", "description": "Switch to next tab"},
-    "prev_tab": {"keys": "ctrl+shift+tab", "description": "Switch to previous tab"},
-    "fullscreen": {"keys": "f11", "description": "Toggle fullscreen"}
+    "new_tab": {
+      "keys": "ctrl+t",
+      "keys_macos": "cmd+t",
+      "description": "Open new tab"
+    },
+    "close_tab": {
+      "keys": "ctrl+w",
+      "keys_macos": "cmd+w",
+      "description": "Close current tab"
+    },
+    "new_window": {
+      "keys": "ctrl+n",
+      "keys_macos": "cmd+n",
+      "description": "Open new window"
+    },
+    "open_file": {
+      "keys": "ctrl+o",
+      "keys_macos": "cmd+o",
+      "description": "Open file dialog"
+    },
+    "save_page": {
+      "keys": "ctrl+s",
+      "keys_macos": "cmd+s",
+      "description": "Save current page"
+    },
+    "find": {
+      "keys": "ctrl+f",
+      "keys_macos": "cmd+f",
+      "description": "Find in page"
+    },
+    "url_bar": {
+      "keys": "ctrl+l",
+      "keys_macos": "cmd+l",
+      "description": "Focus URL bar"
+    },
+    "reload": {
+      "keys": "f5",
+      "description": "Reload page"
+    },
+    "back": {
+      "keys": "alt+left",
+      "keys_macos": "ctrl+left",
+      "description": "Navigate back"
+    },
+    "forward": {
+      "keys": "alt+right",
+      "keys_macos": "ctrl+right",
+      "description": "Navigate forward"
+    },
+    "zoom_in": {
+      "keys": "ctrl+plus",
+      "keys_macos": "cmd+plus",
+      "description": "Zoom in"
+    },
+    "zoom_out": {
+      "keys": "ctrl+minus",
+      "keys_macos": "cmd+minus",
+      "description": "Zoom out"
+    },
+    "bookmark": {
+      "keys": "ctrl+d",
+      "keys_macos": "cmd+d",
+      "description": "Bookmark page"
+    },
+    "history": {
+      "keys": "ctrl+h",
+      "keys_macos": "cmd+h",
+      "description": "Show history sidebar"
+    },
+    "downloads": {
+      "keys": "ctrl+j",
+      "keys_macos": "cmd+j",
+      "description": "Show downloads"
+    },
+    "quit": {
+      "keys": "ctrl+q",
+      "keys_macos": "cmd+q",
+      "description": "Quit Firefox"
+    },
+    "devtools": {
+      "keys": "f12",
+      "description": "Toggle developer tools"
+    },
+    "print": {
+      "keys": "ctrl+p",
+      "keys_macos": "cmd+p",
+      "description": "Print page"
+    },
+    "select_all": {
+      "keys": "ctrl+a",
+      "keys_macos": "cmd+a",
+      "description": "Select all"
+    },
+    "copy": {
+      "keys": "ctrl+c",
+      "keys_macos": "cmd+c",
+      "description": "Copy selection"
+    },
+    "paste": {
+      "keys": "ctrl+v",
+      "keys_macos": "cmd+v",
+      "description": "Paste"
+    },
+    "cut": {
+      "keys": "ctrl+x",
+      "keys_macos": "cmd+x",
+      "description": "Cut selection"
+    },
+    "undo": {
+      "keys": "ctrl+z",
+      "keys_macos": "cmd+z",
+      "description": "Undo"
+    },
+    "redo": {
+      "keys": "ctrl+shift+z",
+      "keys_macos": "cmd+shift+z",
+      "description": "Redo"
+    },
+    "next_tab": {
+      "keys": "ctrl+tab",
+      "keys_macos": "cmd+tab",
+      "description": "Switch to next tab"
+    },
+    "prev_tab": {
+      "keys": "ctrl+shift+tab",
+      "keys_macos": "cmd+shift+tab",
+      "description": "Switch to previous tab"
+    },
+    "fullscreen": {
+      "keys": "f11",
+      "description": "Toggle fullscreen"
+    }
   },
   "semantic_elements": {
     "new_tab_shortcut": {
       "label": "new_tab",
-      "aliases": ["open tab", "new tab"],
+      "aliases": [
+        "open tab",
+        "new tab"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+t", "description": "Open new tab"}
+      "shortcut": {
+        "keys": "ctrl+t",
+        "keys_macos": "cmd+t",
+        "description": "Open new tab"
+      }
     },
     "close_tab_shortcut": {
       "label": "close_tab",
-      "aliases": ["close tab"],
+      "aliases": [
+        "close tab"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+w", "description": "Close current tab"}
+      "shortcut": {
+        "keys": "ctrl+w",
+        "keys_macos": "cmd+w",
+        "description": "Close current tab"
+      }
     },
     "url_bar_shortcut": {
       "label": "url_bar",
-      "aliases": ["address bar", "url", "location bar", "navigate"],
+      "aliases": [
+        "address bar",
+        "url",
+        "location bar",
+        "navigate"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+l", "description": "Focus URL bar"}
+      "shortcut": {
+        "keys": "ctrl+l",
+        "keys_macos": "cmd+l",
+        "description": "Focus URL bar"
+      }
     },
     "find_shortcut": {
       "label": "find",
-      "aliases": ["search page", "find in page"],
+      "aliases": [
+        "search page",
+        "find in page"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+f", "description": "Find in page"}
+      "shortcut": {
+        "keys": "ctrl+f",
+        "keys_macos": "cmd+f",
+        "description": "Find in page"
+      }
     },
     "back_shortcut": {
       "label": "back",
-      "aliases": ["go back", "previous page"],
+      "aliases": [
+        "go back",
+        "previous page"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "alt+left", "description": "Go back"}
+      "shortcut": {
+        "keys": "alt+left",
+        "keys_macos": "ctrl+left",
+        "description": "Go back"
+      }
     },
     "forward_shortcut": {
       "label": "forward",
-      "aliases": ["go forward", "next page"],
+      "aliases": [
+        "go forward",
+        "next page"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "alt+right", "description": "Go forward"}
+      "shortcut": {
+        "keys": "alt+right",
+        "keys_macos": "ctrl+right",
+        "description": "Go forward"
+      }
     },
     "reload_shortcut": {
       "label": "reload",
-      "aliases": ["refresh"],
+      "aliases": [
+        "refresh"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "f5", "description": "Reload page"}
+      "shortcut": {
+        "keys": "f5",
+        "description": "Reload page"
+      }
     },
     "bookmark_shortcut": {
       "label": "bookmark",
-      "aliases": ["add bookmark", "star"],
+      "aliases": [
+        "add bookmark",
+        "star"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+d", "description": "Bookmark page"}
+      "shortcut": {
+        "keys": "ctrl+d",
+        "keys_macos": "cmd+d",
+        "description": "Bookmark page"
+      }
     },
     "quit_shortcut": {
       "label": "quit",
-      "aliases": ["exit", "close firefox"],
+      "aliases": [
+        "exit",
+        "close firefox"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+q", "description": "Quit Firefox"}
+      "shortcut": {
+        "keys": "ctrl+q",
+        "keys_macos": "cmd+q",
+        "description": "Quit Firefox"
+      }
     },
     "url_bar_atspi": {
       "label": "Search with %S or enter address",
-      "aliases": ["url bar element"],
+      "aliases": [
+        "url bar element"
+      ],
       "role": "entry",
       "action": "type",
-      "shortcut": {"keys": "ctrl+l", "description": "Focus URL bar first"}
+      "shortcut": {
+        "keys": "ctrl+l",
+        "keys_macos": "cmd+l",
+        "description": "Focus URL bar first"
+      }
     }
   }
 }

@@ -1,43 +1,204 @@
 {
-  "new_doc": {"keys": "ctrl+n", "description": "New document"},
-  "open": {"keys": "ctrl+o", "description": "Open document"},
-  "save": {"keys": "ctrl+s", "description": "Save document"},
-  "save_as": {"keys": "ctrl+shift+s", "description": "Save as"},
-  "print": {"keys": "ctrl+p", "description": "Print"},
-  "close_doc": {"keys": "ctrl+w", "description": "Close document"},
-  "quit": {"keys": "ctrl+q", "description": "Quit LibreOffice"},
-  "undo": {"keys": "ctrl+z", "description": "Undo"},
-  "redo": {"keys": "ctrl+y", "description": "Redo"},
-  "cut": {"keys": "ctrl+x", "description": "Cut"},
-  "copy": {"keys": "ctrl+c", "description": "Copy"},
-  "paste": {"keys": "ctrl+v", "description": "Paste"},
-  "paste_special": {"keys": "ctrl+shift+v", "description": "Paste special"},
-  "select_all": {"keys": "ctrl+a", "description": "Select all"},
-  "find": {"keys": "ctrl+f", "description": "Find"},
-  "find_replace": {"keys": "ctrl+h", "description": "Find and replace"},
-  "find_next": {"keys": "f3", "description": "Find next (after find)"},
-  "bold": {"keys": "ctrl+b", "description": "Toggle bold"},
-  "italic": {"keys": "ctrl+i", "description": "Toggle italic"},
-  "underline": {"keys": "ctrl+u", "description": "Toggle underline"},
-  "strikethrough": {"keys": "ctrl+shift+s", "description": "Toggle strikethrough"},
-  "heading_1": {"keys": "ctrl+1", "description": "Apply heading 1"},
-  "heading_2": {"keys": "ctrl+2", "description": "Apply heading 2"},
-  "heading_3": {"keys": "ctrl+3", "description": "Apply heading 3"},
-  "body_text": {"keys": "ctrl+0", "description": "Apply body text style"},
-  "align_left": {"keys": "ctrl+l", "description": "Align left"},
-  "align_center": {"keys": "ctrl+e", "description": "Align center"},
-  "align_right": {"keys": "ctrl+r", "description": "Align right"},
-  "align_justify": {"keys": "ctrl+j", "description": "Justify"},
-  "bullet_list": {"keys": "ctrl+shift+b", "description": "Toggle bullet list"},
-  "numbered_list": {"keys": "ctrl+shift+f12", "description": "Toggle numbered list"},
-  "insert_link": {"keys": "ctrl+k", "description": "Insert hyperlink"},
-  "insert_page_break": {"keys": "ctrl+enter", "description": "Insert page break"},
-  "insert_line_break": {"keys": "shift+enter", "description": "Insert line break"},
-  "zoom_in": {"keys": "ctrl+plus", "description": "Zoom in"},
-  "zoom_out": {"keys": "ctrl+minus", "description": "Zoom out"},
-  "fullscreen": {"keys": "ctrl+shift+j", "description": "Toggle fullscreen"},
-  "spellcheck": {"keys": "f7", "description": "Spell check"},
-  "word_count": {"keys": "ctrl+shift+t", "description": "Word count"},
-  "goto_page": {"keys": "ctrl+g", "description": "Go to page"},
-  "export_pdf": {"keys": "ctrl+shift+o", "description": "Export as PDF (File > Export as PDF menu)"}
+  "new_doc": {
+    "keys": "ctrl+n",
+    "keys_macos": "cmd+n",
+    "description": "New document"
+  },
+  "open": {
+    "keys": "ctrl+o",
+    "keys_macos": "cmd+o",
+    "description": "Open document"
+  },
+  "save": {
+    "keys": "ctrl+s",
+    "keys_macos": "cmd+s",
+    "description": "Save document"
+  },
+  "save_as": {
+    "keys": "ctrl+shift+s",
+    "keys_macos": "cmd+shift+s",
+    "description": "Save as"
+  },
+  "print": {
+    "keys": "ctrl+p",
+    "keys_macos": "cmd+p",
+    "description": "Print"
+  },
+  "close_doc": {
+    "keys": "ctrl+w",
+    "keys_macos": "cmd+w",
+    "description": "Close document"
+  },
+  "quit": {
+    "keys": "ctrl+q",
+    "keys_macos": "cmd+q",
+    "description": "Quit LibreOffice"
+  },
+  "undo": {
+    "keys": "ctrl+z",
+    "keys_macos": "cmd+z",
+    "description": "Undo"
+  },
+  "redo": {
+    "keys": "ctrl+y",
+    "keys_macos": "cmd+y",
+    "description": "Redo"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "keys_macos": "cmd+x",
+    "description": "Cut"
+  },
+  "copy": {
+    "keys": "ctrl+c",
+    "keys_macos": "cmd+c",
+    "description": "Copy"
+  },
+  "paste": {
+    "keys": "ctrl+v",
+    "keys_macos": "cmd+v",
+    "description": "Paste"
+  },
+  "paste_special": {
+    "keys": "ctrl+shift+v",
+    "keys_macos": "cmd+shift+v",
+    "description": "Paste special"
+  },
+  "select_all": {
+    "keys": "ctrl+a",
+    "keys_macos": "cmd+a",
+    "description": "Select all"
+  },
+  "find": {
+    "keys": "ctrl+f",
+    "keys_macos": "cmd+f",
+    "description": "Find"
+  },
+  "find_replace": {
+    "keys": "ctrl+h",
+    "keys_macos": "cmd+h",
+    "description": "Find and replace"
+  },
+  "find_next": {
+    "keys": "f3",
+    "description": "Find next (after find)"
+  },
+  "bold": {
+    "keys": "ctrl+b",
+    "keys_macos": "cmd+b",
+    "description": "Toggle bold"
+  },
+  "italic": {
+    "keys": "ctrl+i",
+    "keys_macos": "cmd+i",
+    "description": "Toggle italic"
+  },
+  "underline": {
+    "keys": "ctrl+u",
+    "keys_macos": "cmd+u",
+    "description": "Toggle underline"
+  },
+  "strikethrough": {
+    "keys": "ctrl+shift+s",
+    "keys_macos": "cmd+shift+s",
+    "description": "Toggle strikethrough"
+  },
+  "heading_1": {
+    "keys": "ctrl+1",
+    "keys_macos": "cmd+1",
+    "description": "Apply heading 1"
+  },
+  "heading_2": {
+    "keys": "ctrl+2",
+    "keys_macos": "cmd+2",
+    "description": "Apply heading 2"
+  },
+  "heading_3": {
+    "keys": "ctrl+3",
+    "keys_macos": "cmd+3",
+    "description": "Apply heading 3"
+  },
+  "body_text": {
+    "keys": "ctrl+0",
+    "keys_macos": "cmd+0",
+    "description": "Apply body text style"
+  },
+  "align_left": {
+    "keys": "ctrl+l",
+    "keys_macos": "cmd+l",
+    "description": "Align left"
+  },
+  "align_center": {
+    "keys": "ctrl+e",
+    "keys_macos": "cmd+e",
+    "description": "Align center"
+  },
+  "align_right": {
+    "keys": "ctrl+r",
+    "keys_macos": "cmd+r",
+    "description": "Align right"
+  },
+  "align_justify": {
+    "keys": "ctrl+j",
+    "keys_macos": "cmd+j",
+    "description": "Justify"
+  },
+  "bullet_list": {
+    "keys": "ctrl+shift+b",
+    "keys_macos": "cmd+shift+b",
+    "description": "Toggle bullet list"
+  },
+  "numbered_list": {
+    "keys": "ctrl+shift+f12",
+    "keys_macos": "cmd+shift+f12",
+    "description": "Toggle numbered list"
+  },
+  "insert_link": {
+    "keys": "ctrl+k",
+    "keys_macos": "cmd+k",
+    "description": "Insert hyperlink"
+  },
+  "insert_page_break": {
+    "keys": "ctrl+enter",
+    "keys_macos": "cmd+enter",
+    "description": "Insert page break"
+  },
+  "insert_line_break": {
+    "keys": "shift+enter",
+    "description": "Insert line break"
+  },
+  "zoom_in": {
+    "keys": "ctrl+plus",
+    "keys_macos": "cmd+plus",
+    "description": "Zoom in"
+  },
+  "zoom_out": {
+    "keys": "ctrl+minus",
+    "keys_macos": "cmd+minus",
+    "description": "Zoom out"
+  },
+  "fullscreen": {
+    "keys": "ctrl+shift+j",
+    "keys_macos": "cmd+shift+j",
+    "description": "Toggle fullscreen"
+  },
+  "spellcheck": {
+    "keys": "f7",
+    "description": "Spell check"
+  },
+  "word_count": {
+    "keys": "ctrl+shift+t",
+    "keys_macos": "cmd+shift+t",
+    "description": "Word count"
+  },
+  "goto_page": {
+    "keys": "ctrl+g",
+    "keys_macos": "cmd+g",
+    "description": "Go to page"
+  },
+  "export_pdf": {
+    "keys": "ctrl+shift+o",
+    "keys_macos": "cmd+shift+o",
+    "description": "Export as PDF (File > Export as PDF menu)"
+  }
 }

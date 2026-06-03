@@ -1,7 +1,8 @@
 {
   "update_image_size": {
     "keys": "ctrl+u",
-    "description": "Update Image Size"
+    "description": "Update Image Size",
+    "keys_macos": "shift+ctrl+i"
   },
   "increment_by_1": {
     "keys": "ctrl+up",
@@ -9,7 +10,8 @@
   },
   "encode_decode_image_to_data_url": {
     "keys": "ctrl+'",
-    "description": "Encode/Decode Image to data:URL"
+    "description": "Encode/Decode Image to data:URL",
+    "keys_macos": "shift+ctrl+d"
   },
   "increment_by_0_1": {
     "keys": "alt+up",
@@ -21,11 +23,13 @@
   },
   "split_join_tag": {
     "keys": "shift+ctrl+`",
-    "description": "Split/Join Tag"
+    "description": "Split/Join Tag",
+    "keys_macos": "shift+cmd+'"
   },
   "toggle_comment": {
     "keys": "shift+ctrl+/",
-    "description": "Toggle Comment"
+    "description": "Toggle Comment",
+    "keys_macos": "shift+alt+/"
   },
   "decrement_by_0_1": {
     "keys": "alt+down",
@@ -37,23 +41,28 @@
   },
   "reflect_css_value": {
     "keys": "shift+ctrl+r",
-    "description": "Reflect CSS Value"
+    "description": "Reflect CSS Value",
+    "keys_macos": "shift+cmd+r"
   },
   "wrap_with_abbreviation": {
     "keys": "shift+ctrl+g",
-    "description": "Wrap With Abbreviation"
+    "description": "Wrap With Abbreviation",
+    "keys_macos": "ctrl+w"
   },
   "go_to_matching_pair": {
     "keys": "ctrl+alt+j",
-    "description": "Go to Matching Pair"
+    "description": "Go to Matching Pair",
+    "keys_macos": "shift+ctrl+t"
   },
   "remove_tag": {
     "keys": "shift+ctrl+;",
-    "description": "Remove Tag"
+    "description": "Remove Tag",
+    "keys_macos": "cmd+'"
   },
   "decrement_by_10": {
     "keys": "shift+alt+down",
-    "description": "Decrement by 10"
+    "description": "Decrement by 10",
+    "keys_macos": "alt+cmd+down"
   },
   "expand_abbreviation": {
     "keys": "tab",
@@ -61,15 +70,18 @@
   },
   "evaluate_math_expression": {
     "keys": "shift+ctrl+y",
-    "description": "Evaluate Math Expression"
+    "description": "Evaluate Math Expression",
+    "keys_macos": "shift+cmd+y"
   },
   "match_tag_pair_inward": {
     "keys": "shift+ctrl+0",
-    "description": "Match Tag Pair Inward"
+    "description": "Match Tag Pair Inward",
+    "keys_macos": "ctrl+j"
   },
   "increment_by_10": {
     "keys": "shift+alt+up",
-    "description": "Increment by 10"
+    "description": "Increment by 10",
+    "keys_macos": "alt+cmd+up"
   },
   "decrement_by_1": {
     "keys": "ctrl+down",
@@ -77,14 +89,17 @@
   },
   "select_item": {
     "keys": "shift+ctrl+.",
-    "description": "Select Item"
+    "description": "Select Item",
+    "keys_macos": "shift+cmd+."
   },
   "rename_tag": {
     "keys": "shift+ctrl+'",
-    "description": "Rename Tag"
+    "description": "Rename Tag",
+    "keys_macos": "shift+cmd+k"
   },
   "match_tag_pair_outward": {
     "keys": "ctrl+,",
-    "description": "Match Tag Pair Outward"
+    "description": "Match Tag Pair Outward",
+    "keys_macos": "ctrl+d"
   }
 }

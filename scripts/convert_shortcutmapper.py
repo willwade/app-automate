@@ -164,13 +164,13 @@ def convert_intermediate(
             slug = _dedupe_slug(slug, ctx_name, seen_slugs)
 
             entry: dict = {"keys": base_keys, "description": action_label}
+            shortcut_def: dict = {
+                "keys": base_keys,
+                "description": action_label,
+            }
             if mac_keys != base_keys and mac_keys and is_valid_shortcut(mac_keys):
-                mac_entry = {
-                    "keys": mac_keys,
-                    "description": action_label,
-                    "platform": "macos",
-                }
-                shortcuts[f"{slug}_mac"] = mac_entry
+                entry["keys_macos"] = mac_keys
+                shortcut_def["keys_macos"] = mac_keys
             shortcuts[slug] = entry
 
             aliases = make_alias(action_label)
@@ -178,7 +178,7 @@ def convert_intermediate(
                 "label": action_label,
                 "aliases": aliases,
                 "action": "shortcut",
-                "shortcut": {"keys": base_keys, "description": action_label},
+                "shortcut": shortcut_def,
             }
 
     return shortcuts, elements

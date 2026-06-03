@@ -26,7 +26,7 @@ sudo apt install python3-gi gir1.2-atspi-2.0 xdotool wmctrl
 
 ## 30-second example: Firefox with shortcuts
 
-Create a profile with keyboard shortcuts — these work on any OS:
+Create a profile with keyboard shortcuts — works across platforms:
 
 ```json
 {
@@ -39,13 +39,13 @@ Create a profile with keyboard shortcuts — these work on any OS:
       "label": "new_tab",
       "aliases": ["open tab"],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+t", "description": "Open new tab"}
+      "shortcut": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"}
     },
     "url_bar": {
       "label": "url_bar",
       "aliases": ["address bar", "navigate"],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+l", "description": "Focus URL bar"}
+      "shortcut": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
     }
   }
 }
@@ -174,22 +174,22 @@ A profile is a `profile.json` file (plus optional anchor images for CV). A singl
   "type": "semantic",
   "backend": "atspi",
   "shortcuts": {
-    "new_tab": {"keys": "ctrl+t", "description": "Open new tab"},
-    "close_tab": {"keys": "ctrl+w", "description": "Close tab"},
-    "url_bar": {"keys": "ctrl+l", "description": "Focus URL bar"}
+    "new_tab": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"},
+    "close_tab": {"keys": "ctrl+w", "keys_macos": "cmd+w", "description": "Close tab"},
+    "url_bar": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
   },
   "semantic_elements": {
     "new_tab": {
       "label": "new_tab",
       "aliases": ["open tab"],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+t", "description": "Open new tab"}
+      "shortcut": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"}
     },
     "url_bar": {
       "label": "url_bar",
       "aliases": ["address bar", "navigate"],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+l", "description": "Focus URL bar"}
+      "shortcut": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
     },
     "search_box": {
       "label": "Search with Google",
@@ -200,7 +200,7 @@ A profile is a `profile.json` file (plus optional anchor images for CV). A singl
 }
 ```
 
-**Why hybrid?** Shortcuts are cross-platform and reliable (`ctrl+t` is always "new tab"). Accessibility elements let you target specific UI that has no shortcut (like typing into a search box). Use shortcuts for the 80%, accessibility for the 20%.
+**Why hybrid?** Shortcuts are cross-platform and reliable (`ctrl+t` on Windows/Linux, `cmd+t` on macOS). Accessibility elements let you target specific UI that has no shortcut (like typing into a search box). Use shortcuts for the 80%, accessibility for the 20%. Per-platform keys (`keys_macos`, `keys_linux`, `keys_windows`) handle OS differences without separate files.
 
 **Actions available:** `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`, `shortcut`.
 

@@ -97,7 +97,7 @@ public sealed class Consumer
 
         if (element.Action == "shortcut" && element.Shortcut != null)
         {
-            GetAdapter().SendShortcut(element.Shortcut.Keys);
+            GetAdapter().SendShortcut(element.Shortcut.KeysForPlatform());
             return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "shortcut" };
         }
 

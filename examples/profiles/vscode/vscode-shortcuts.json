@@ -1,41 +1,194 @@
 {
-  "new_file": {"keys": "ctrl+n", "description": "New file"},
-  "open_file": {"keys": "ctrl+o", "description": "Open file"},
-  "save": {"keys": "ctrl+s", "description": "Save file"},
-  "save_as": {"keys": "ctrl+shift+s", "description": "Save as"},
-  "save_all": {"keys": "ctrl+k ctrl+s", "description": "Save all files"},
-  "close_editor": {"keys": "ctrl+w", "description": "Close editor"},
-  "close_all": {"keys": "ctrl+k ctrl+w", "description": "Close all editors"},
-  "find": {"keys": "ctrl+f", "description": "Find in file"},
-  "find_replace": {"keys": "ctrl+h", "description": "Find and replace"},
-  "find_in_files": {"keys": "ctrl+shift+f", "description": "Find across all files"},
-  "replace_in_files": {"keys": "ctrl+shift+h", "description": "Replace across all files"},
-  "goto_line": {"keys": "ctrl+g", "description": "Go to line"},
-  "goto_file": {"keys": "ctrl+p", "description": "Quick open file"},
-  "toggle_sidebar": {"keys": "ctrl+b", "description": "Toggle sidebar"},
-  "toggle_terminal": {"keys": "ctrl+`", "description": "Toggle terminal"},
-  "toggle_comments": {"keys": "ctrl+/", "description": "Toggle line comment"},
-  "new_terminal": {"keys": "ctrl+shift+`", "description": "New terminal"},
-  "command_palette": {"keys": "ctrl+shift+p", "description": "Command palette"},
-  "zoom_in": {"keys": "ctrl+plus", "description": "Zoom in"},
-  "zoom_out": {"keys": "ctrl+minus", "description": "Zoom out"},
-  "undo": {"keys": "ctrl+z", "description": "Undo"},
-  "redo": {"keys": "ctrl+shift+z", "description": "Redo"},
-  "cut": {"keys": "ctrl+x", "description": "Cut"},
-  "copy": {"keys": "ctrl+c", "description": "Copy"},
-  "paste": {"keys": "ctrl+v", "description": "Paste"},
-  "select_all": {"keys": "ctrl+a", "description": "Select all"},
-  "indent": {"keys": "tab", "description": "Indent"},
-  "outdent": {"keys": "shift+tab", "description": "Outdent"},
-  "move_line_up": {"keys": "alt+up", "description": "Move line up"},
-  "move_line_down": {"keys": "alt+down", "description": "Move line down"},
-  "copy_line_up": {"keys": "shift+alt+up", "description": "Copy line up"},
-  "copy_line_down": {"keys": "shift+alt+down", "description": "Copy line down"},
-  "delete_line": {"keys": "ctrl+shift+k", "description": "Delete line"},
-  "toggle_word_wrap": {"keys": "alt+z", "description": "Toggle word wrap"},
-  "split_editor": {"keys": "ctrl+\\", "description": "Split editor"},
-  "next_editor": {"keys": "ctrl+pagedown", "description": "Next editor tab"},
-  "prev_editor": {"keys": "ctrl+pageup", "description": "Previous editor tab"},
-  "fullscreen": {"keys": "f11", "description": "Toggle fullscreen"},
-  "quit": {"keys": "ctrl+q", "description": "Quit VS Code"}
+  "new_file": {
+    "keys": "ctrl+n",
+    "keys_macos": "cmd+n",
+    "description": "New file"
+  },
+  "open_file": {
+    "keys": "ctrl+o",
+    "keys_macos": "cmd+o",
+    "description": "Open file"
+  },
+  "save": {
+    "keys": "ctrl+s",
+    "keys_macos": "cmd+s",
+    "description": "Save file"
+  },
+  "save_as": {
+    "keys": "ctrl+shift+s",
+    "keys_macos": "cmd+shift+s",
+    "description": "Save as"
+  },
+  "save_all": {
+    "keys": "ctrl+k ctrl+s",
+    "keys_macos": "cmd+k cmd+s",
+    "description": "Save all files"
+  },
+  "close_editor": {
+    "keys": "ctrl+w",
+    "keys_macos": "cmd+w",
+    "description": "Close editor"
+  },
+  "close_all": {
+    "keys": "ctrl+k ctrl+w",
+    "keys_macos": "cmd+k cmd+w",
+    "description": "Close all editors"
+  },
+  "find": {
+    "keys": "ctrl+f",
+    "keys_macos": "cmd+f",
+    "description": "Find in file"
+  },
+  "find_replace": {
+    "keys": "ctrl+h",
+    "keys_macos": "cmd+h",
+    "description": "Find and replace"
+  },
+  "find_in_files": {
+    "keys": "ctrl+shift+f",
+    "keys_macos": "cmd+shift+f",
+    "description": "Find across all files"
+  },
+  "replace_in_files": {
+    "keys": "ctrl+shift+h",
+    "keys_macos": "cmd+shift+h",
+    "description": "Replace across all files"
+  },
+  "goto_line": {
+    "keys": "ctrl+g",
+    "keys_macos": "cmd+g",
+    "description": "Go to line"
+  },
+  "goto_file": {
+    "keys": "ctrl+p",
+    "keys_macos": "cmd+p",
+    "description": "Quick open file"
+  },
+  "toggle_sidebar": {
+    "keys": "ctrl+b",
+    "keys_macos": "cmd+b",
+    "description": "Toggle sidebar"
+  },
+  "toggle_terminal": {
+    "keys": "ctrl+`",
+    "keys_macos": "cmd+`",
+    "description": "Toggle terminal"
+  },
+  "toggle_comments": {
+    "keys": "ctrl+/",
+    "keys_macos": "cmd+/",
+    "description": "Toggle line comment"
+  },
+  "new_terminal": {
+    "keys": "ctrl+shift+`",
+    "keys_macos": "cmd+shift+`",
+    "description": "New terminal"
+  },
+  "command_palette": {
+    "keys": "ctrl+shift+p",
+    "keys_macos": "cmd+shift+p",
+    "description": "Command palette"
+  },
+  "zoom_in": {
+    "keys": "ctrl+plus",
+    "keys_macos": "cmd+plus",
+    "description": "Zoom in"
+  },
+  "zoom_out": {
+    "keys": "ctrl+minus",
+    "keys_macos": "cmd+minus",
+    "description": "Zoom out"
+  },
+  "undo": {
+    "keys": "ctrl+z",
+    "keys_macos": "cmd+z",
+    "description": "Undo"
+  },
+  "redo": {
+    "keys": "ctrl+shift+z",
+    "keys_macos": "cmd+shift+z",
+    "description": "Redo"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "keys_macos": "cmd+x",
+    "description": "Cut"
+  },
+  "copy": {
+    "keys": "ctrl+c",
+    "keys_macos": "cmd+c",
+    "description": "Copy"
+  },
+  "paste": {
+    "keys": "ctrl+v",
+    "keys_macos": "cmd+v",
+    "description": "Paste"
+  },
+  "select_all": {
+    "keys": "ctrl+a",
+    "keys_macos": "cmd+a",
+    "description": "Select all"
+  },
+  "indent": {
+    "keys": "tab",
+    "description": "Indent"
+  },
+  "outdent": {
+    "keys": "shift+tab",
+    "description": "Outdent"
+  },
+  "move_line_up": {
+    "keys": "alt+up",
+    "keys_macos": "ctrl+up",
+    "description": "Move line up"
+  },
+  "move_line_down": {
+    "keys": "alt+down",
+    "keys_macos": "ctrl+down",
+    "description": "Move line down"
+  },
+  "copy_line_up": {
+    "keys": "shift+alt+up",
+    "keys_macos": "shift+ctrl+up",
+    "description": "Copy line up"
+  },
+  "copy_line_down": {
+    "keys": "shift+alt+down",
+    "keys_macos": "shift+ctrl+down",
+    "description": "Copy line down"
+  },
+  "delete_line": {
+    "keys": "ctrl+shift+k",
+    "keys_macos": "cmd+shift+k",
+    "description": "Delete line"
+  },
+  "toggle_word_wrap": {
+    "keys": "alt+z",
+    "keys_macos": "ctrl+z",
+    "description": "Toggle word wrap"
+  },
+  "split_editor": {
+    "keys": "ctrl+\\",
+    "keys_macos": "cmd+\\",
+    "description": "Split editor"
+  },
+  "next_editor": {
+    "keys": "ctrl+pagedown",
+    "keys_macos": "cmd+pagedown",
+    "description": "Next editor tab"
+  },
+  "prev_editor": {
+    "keys": "ctrl+pageup",
+    "keys_macos": "cmd+pageup",
+    "description": "Previous editor tab"
+  },
+  "fullscreen": {
+    "keys": "f11",
+    "description": "Toggle fullscreen"
+  },
+  "quit": {
+    "keys": "ctrl+q",
+    "keys_macos": "cmd+q",
+    "description": "Quit VS Code"
+  }
 }

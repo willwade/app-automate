@@ -4,7 +4,7 @@
   "type": "semantic",
   "backend": "shortcut",
   "platform_hint": null,
-  "notes": "Auto-generated from ShortcutMapper. 411 shortcuts.",
+  "notes": "Auto-generated from ShortcutMapper. 260 shortcuts.",
   "shortcuts": {
     "toggle_bookmark_8": {
       "keys": "shift+ctrl+8",
@@ -30,27 +30,19 @@
       "keys": "shift+ctrl+4",
       "description": "Toggle Bookmark 4"
     },
-    "stop_mac": {
-      "keys": "cmd+f2",
-      "description": "Stop",
-      "platform": "macos"
-    },
     "stop": {
       "keys": "ctrl+f2",
-      "description": "Stop"
+      "description": "Stop",
+      "keys_macos": "cmd+f2"
     },
     "toggle_bookmark_5": {
       "keys": "shift+ctrl+5",
       "description": "Toggle Bookmark 5"
     },
-    "push_mac": {
-      "keys": "shift+cmd+k",
-      "description": "Push",
-      "platform": "macos"
-    },
     "push": {
       "keys": "shift+ctrl+k",
-      "description": "Push"
+      "description": "Push",
+      "keys_macos": "shift+cmd+k"
     },
     "toggle_bookmark_2": {
       "keys": "shift+ctrl+2",
@@ -60,14 +52,10 @@
       "keys": "shift+ctrl+f4",
       "description": "Close Active Tab"
     },
-    "project_mac": {
-      "keys": "cmd+1",
-      "description": "Project",
-      "platform": "macos"
-    },
     "project": {
       "keys": "alt+1",
-      "description": "Project"
+      "description": "Project",
+      "keys_macos": "cmd+1"
     },
     "toggle_bookmark_3": {
       "keys": "shift+ctrl+3",
@@ -77,174 +65,106 @@
       "keys": "shift+ctrl+0",
       "description": "Toggle Bookmark 0"
     },
-    "highlight_usages_in_file_mac": {
-      "keys": "shift+cmd+f7",
-      "description": "Highlight Usages in File",
-      "platform": "macos"
-    },
     "highlight_usages_in_file": {
       "keys": "shift+ctrl+f7",
-      "description": "Highlight Usages in File"
+      "description": "Highlight Usages in File",
+      "keys_macos": "shift+cmd+f7"
     },
     "toggle_bookmark_1": {
       "keys": "shift+ctrl+1",
       "description": "Toggle Bookmark 1"
     },
-    "related_navigate_to_symbol_mac": {
-      "keys": "ctrl+cmd+up",
-      "description": "Related Navigate to Symbol",
-      "platform": "macos"
-    },
     "related_navigate_to_symbol": {
       "keys": "ctrl+alt+home",
-      "description": "Related Navigate to Symbol"
-    },
-    "copy_paths_mac": {
-      "keys": "shift+cmd+c",
-      "description": "Copy Paths",
-      "platform": "macos"
+      "description": "Related Navigate to Symbol",
+      "keys_macos": "ctrl+cmd+up"
     },
     "copy_paths": {
       "keys": "shift+ctrl+c",
-      "description": "Copy Paths"
+      "description": "Copy Paths",
+      "keys_macos": "shift+cmd+c"
     },
     "clear_context": {
       "keys": "shift+alt+x",
       "description": "Clear Context"
     },
-    "duplicate_line_or_block_mac": {
-      "keys": "cmd+d",
-      "description": "Duplicate Line or Block",
-      "platform": "macos"
-    },
     "duplicate_line_or_block": {
       "keys": "ctrl+d",
-      "description": "Duplicate Line or Block"
-    },
-    "previous_method_mac": {
-      "keys": "ctrl+up",
-      "description": "Previous Method",
-      "platform": "macos"
+      "description": "Duplicate Line or Block",
+      "keys_macos": "cmd+d"
     },
     "previous_method": {
       "keys": "alt+up",
-      "description": "Previous Method"
-    },
-    "previous_occurrence_mac": {
-      "keys": "cmd+alt+up",
-      "description": "Previous Occurrence",
-      "platform": "macos"
+      "description": "Previous Method",
+      "keys_macos": "ctrl+up"
     },
     "previous_occurrence": {
       "keys": "ctrl+alt+up",
-      "description": "Previous Occurrence"
+      "description": "Previous Occurrence",
+      "keys_macos": "cmd+alt+up"
     },
     "cyclic_expand_word_backward": {
       "keys": "shift+alt+/",
       "description": "Cyclic Expand Word (Backward)"
     },
-    "move_statement_up_mac": {
-      "keys": "shift+cmd+up",
-      "description": "Move Statement Up",
-      "platform": "macos"
-    },
     "move_statement_up": {
       "keys": "shift+ctrl+up",
-      "description": "Move Statement Up"
-    },
-    "recently_changed_files_mac": {
-      "keys": "shift+cmd+e",
-      "description": "Recently Changed Files",
-      "platform": "macos"
+      "description": "Move Statement Up",
+      "keys_macos": "shift+cmd+up"
     },
     "recently_changed_files": {
       "keys": "shift+ctrl+e",
-      "description": "Recently Changed Files"
-    },
-    "shrink_selection_mac": {
-      "keys": "alt+down",
-      "description": "Shrink Selection",
-      "platform": "macos"
+      "description": "Recently Changed Files",
+      "keys_macos": "shift+cmd+e"
     },
     "shrink_selection": {
       "keys": "shift+ctrl+w",
-      "description": "Shrink Selection"
-    },
-    "save_all_mac": {
-      "keys": "cmd+s",
-      "description": "Save All",
-      "platform": "macos"
+      "description": "Shrink Selection",
+      "keys_macos": "alt+down"
     },
     "save_all": {
       "keys": "ctrl+s",
-      "description": "Save All"
-    },
-    "move_caret_to_page_bottom_with_selection_mac": {
-      "keys": "shift+cmd+pageup",
-      "description": "Move Caret to Page Bottom with Selection",
-      "platform": "macos"
+      "description": "Save All",
+      "keys_macos": "cmd+s"
     },
     "move_caret_to_page_bottom_with_selection": {
       "keys": "shift+ctrl+pageup",
-      "description": "Move Caret to Page Bottom with Selection"
-    },
-    "toggle_bookmark_with_mnemonic_mac": {
-      "keys": "alt+f3",
-      "description": "Toggle Bookmark with Mnemonic",
-      "platform": "macos"
+      "description": "Move Caret to Page Bottom with Selection",
+      "keys_macos": "shift+cmd+pageup"
     },
     "toggle_bookmark_with_mnemonic": {
       "keys": "ctrl+f11",
-      "description": "Toggle Bookmark with Mnemonic"
+      "description": "Toggle Bookmark with Mnemonic",
+      "keys_macos": "alt+f3"
     },
     "jump_to_last_tool_window": {
       "keys": "f12",
       "description": "Jump to Last Tool Window"
     },
-    "expand_recursively_mac": {
-      "keys": "cmd+alt++or command+alt+=",
-      "description": "Expand Recursively",
-      "platform": "macos"
-    },
     "expand_recursively": {
       "keys": "ctrl+alt++or ctrl+alt+=",
-      "description": "Expand Recursively"
-    },
-    "change_signature_mac": {
-      "keys": "cmd+f6",
-      "description": "Change Signature",
-      "platform": "macos"
+      "description": "Expand Recursively",
+      "keys_macos": "cmd+alt++or command+alt+="
     },
     "change_signature": {
       "keys": "ctrl+f6",
-      "description": "Change Signature"
-    },
-    "move_caret_to_next_word_with_selection_mac": {
-      "keys": "shift+alt+right",
-      "description": "Move Caret to Next Word with Selection",
-      "platform": "macos"
+      "description": "Change Signature",
+      "keys_macos": "cmd+f6"
     },
     "move_caret_to_next_word_with_selection": {
       "keys": "shift+ctrl+right",
-      "description": "Move Caret to Next Word with Selection"
-    },
-    "error_description_mac": {
-      "keys": "cmd+f1",
-      "description": "Error Description",
-      "platform": "macos"
+      "description": "Move Caret to Next Word with Selection",
+      "keys_macos": "shift+alt+right"
     },
     "error_description": {
       "keys": "ctrl+f1",
-      "description": "Error Description"
-    },
-    "toggle_line_breakpoint_mac": {
-      "keys": "cmd+f8",
-      "description": "Toggle Line Breakpoint",
-      "platform": "macos"
+      "description": "Error Description",
+      "keys_macos": "cmd+f1"
     },
     "toggle_line_breakpoint": {
       "keys": "ctrl+f8",
-      "description": "Toggle Line Breakpoint"
+      "description": "Toggle Line Breakpoint",
+      "keys_macos": "cmd+f8"
     },
     "start_new_line": {
       "keys": "shift+enter",
@@ -258,23 +178,15 @@
       "keys": "shift+cmd+`",
       "description": "Previous Project Window"
     },
-    "unselect_occurrence_mac": {
-      "keys": "shift+ctrl+g",
-      "description": "Unselect Occurrence",
-      "platform": "macos"
-    },
     "unselect_occurrence": {
       "keys": "shift+alt+j",
-      "description": "Unselect Occurrence"
-    },
-    "last_edit_location_mac": {
-      "keys": "shift+cmd+backspace",
-      "description": "Last Edit Location",
-      "platform": "macos"
+      "description": "Unselect Occurrence",
+      "keys_macos": "shift+ctrl+g"
     },
     "last_edit_location": {
       "keys": "shift+ctrl+backspace",
-      "description": "Last Edit Location"
+      "description": "Last Edit Location",
+      "keys_macos": "shift+cmd+backspace"
     },
     "change_view": {
       "keys": "alt+f1",
@@ -284,23 +196,15 @@
       "keys": "shift+alt+t",
       "description": "Switch Task"
     },
-    "select_all_mac": {
-      "keys": "cmd+a",
-      "description": "Select All",
-      "platform": "macos"
-    },
     "select_all": {
       "keys": "ctrl+a",
-      "description": "Select All"
-    },
-    "context_info_mac": {
-      "keys": "shift+ctrl+q",
-      "description": "Context Info",
-      "platform": "macos"
+      "description": "Select All",
+      "keys_macos": "cmd+a"
     },
     "context_info": {
       "keys": "alt+q",
-      "description": "Context Info"
+      "description": "Context Info",
+      "keys_macos": "shift+ctrl+q"
     },
     "web_preview": {
       "keys": "alt+f2",
@@ -314,134 +218,82 @@
       "keys": "shift+ctrl+alt+up",
       "description": "Previous Change"
     },
-    "move_caret_to_text_end_mac": {
-      "keys": "cmd+end",
-      "description": "Move Caret to Text End",
-      "platform": "macos"
-    },
     "move_caret_to_text_end": {
       "keys": "ctrl+end",
-      "description": "Move Caret to Text End"
-    },
-    "move_caret_to_text_end_with_selection_mac": {
-      "keys": "shift+cmd+end",
-      "description": "Move Caret to Text End with Selection",
-      "platform": "macos"
+      "description": "Move Caret to Text End",
+      "keys_macos": "cmd+end"
     },
     "move_caret_to_text_end_with_selection": {
       "keys": "shift+ctrl+end",
-      "description": "Move Caret to Text End with Selection"
-    },
-    "copy_reference_mac": {
-      "keys": "shift+cmd+alt+c",
-      "description": "Copy Reference",
-      "platform": "macos"
+      "description": "Move Caret to Text End with Selection",
+      "keys_macos": "shift+cmd+end"
     },
     "copy_reference": {
       "keys": "shift+ctrl+alt+c",
-      "description": "Copy Reference"
+      "description": "Copy Reference",
+      "keys_macos": "shift+cmd+alt+c"
     },
     "override_methods": {
       "keys": "ctrl+o",
       "description": "Override Methods"
     },
-    "extract_variable_mac": {
-      "keys": "cmd+alt+v",
-      "description": "Extract Variable",
-      "platform": "macos"
-    },
     "extract_variable": {
       "keys": "ctrl+alt+v",
-      "description": "Extract Variable"
+      "description": "Extract Variable",
+      "keys_macos": "cmd+alt+v"
     },
     "hide_active_tool_window": {
       "keys": "shift+esc",
       "description": "Hide Active Tool Window"
     },
-    "check_in_project_mac": {
-      "keys": "cmd+k",
-      "description": "Check In Project",
-      "platform": "macos"
-    },
     "check_in_project": {
       "keys": "ctrl+k",
-      "description": "Check In Project"
-    },
-    "select_all_occurrences_mac": {
-      "keys": "ctrl+cmd+g",
-      "description": "Select All Occurrences",
-      "platform": "macos"
+      "description": "Check In Project",
+      "keys_macos": "cmd+k"
     },
     "select_all_occurrences": {
       "keys": "shift+ctrl+alt+j",
-      "description": "Select All Occurrences"
-    },
-    "method_hierarchy_mac": {
-      "keys": "shift+cmd+h",
-      "description": "Method Hierarchy",
-      "platform": "macos"
+      "description": "Select All Occurrences",
+      "keys_macos": "ctrl+cmd+g"
     },
     "method_hierarchy": {
       "keys": "shift+ctrl+h",
-      "description": "Method Hierarchy"
-    },
-    "vcs_operations_popup_mac": {
-      "keys": "ctrl+v",
-      "description": "VCS Operations Popup",
-      "platform": "macos"
+      "description": "Method Hierarchy",
+      "keys_macos": "shift+cmd+h"
     },
     "vcs_operations_popup": {
       "keys": "alt+`",
-      "description": "VCS Operations Popup"
-    },
-    "redo_mac": {
-      "keys": "shift+cmd+z",
-      "description": "Redo",
-      "platform": "macos"
+      "description": "VCS Operations Popup",
+      "keys_macos": "ctrl+v"
     },
     "redo": {
       "keys": "shift+ctrl+z",
-      "description": "Redo"
+      "description": "Redo",
+      "keys_macos": "shift+cmd+z"
     },
     "smart_step_into": {
       "keys": "shift+f7",
       "description": "Smart Step Into"
     },
-    "collapse_recursively_mac": {
-      "keys": "cmd+alt+-",
-      "description": "Collapse Recursively",
-      "platform": "macos"
-    },
     "collapse_recursively": {
       "keys": "ctrl+alt+-",
-      "description": "Collapse Recursively"
-    },
-    "run_mac": {
-      "keys": "ctrl+alt+r",
-      "description": "Run",
-      "platform": "macos"
+      "description": "Collapse Recursively",
+      "keys_macos": "cmd+alt+-"
     },
     "run": {
       "keys": "shift+alt+f10",
-      "description": "Run"
-    },
-    "move_caret_to_previous_word_mac": {
-      "keys": "alt+left",
-      "description": "Move Caret to Previous Word",
-      "platform": "macos"
+      "description": "Run",
+      "keys_macos": "ctrl+alt+r"
     },
     "move_caret_to_previous_word": {
       "keys": "ctrl+left",
-      "description": "Move Caret to Previous Word"
-    },
-    "inline_mac": {
-      "keys": "cmd+alt+n",
-      "description": "Inline",
-      "platform": "macos"
+      "description": "Move Caret to Previous Word",
+      "keys_macos": "alt+left"
     },
     "inline": {
       "keys": "ctrl+alt+n",
-      "description": "Inline"
+      "description": "Inline",
+      "keys_macos": "cmd+alt+n"
     },
     "backspace": {
       "keys": "backspace",
@@ -459,23 +311,15 @@
       "keys": "alt+/",
       "description": "Cyclic Expand Word"
     },
-    "jump_to_navigation_bar_mac": {
-      "keys": "cmd+up",
-      "description": "Jump to Navigation Bar",
-      "platform": "macos"
-    },
     "jump_to_navigation_bar": {
       "keys": "alt+home",
-      "description": "Jump to Navigation Bar"
-    },
-    "expand_all_mac": {
-      "keys": "cmd++or command+=",
-      "description": "Expand All",
-      "platform": "macos"
+      "description": "Jump to Navigation Bar",
+      "keys_macos": "cmd+up"
     },
     "expand_all": {
       "keys": "ctrl++or ctrl+=",
-      "description": "Expand All"
+      "description": "Expand All",
+      "keys_macos": "cmd++or command+="
     },
     "prev_parameter": {
       "keys": "shift+tab",
@@ -485,54 +329,34 @@
       "keys": "end",
       "description": "Move Caret to Line End"
     },
-    "navigate_to_class_mac": {
-      "keys": "cmd+o",
-      "description": "Navigate to Class",
-      "platform": "macos"
-    },
     "navigate_to_class": {
       "keys": "ctrl+n",
-      "description": "Navigate to Class"
-    },
-    "changes_mac": {
-      "keys": "cmd+9",
-      "description": "Changes",
-      "platform": "macos"
+      "description": "Navigate to Class",
+      "keys_macos": "cmd+o"
     },
     "changes": {
       "keys": "alt+9",
-      "description": "Changes"
-    },
-    "copy_mac": {
-      "keys": "cmd+c",
-      "description": "Copy",
-      "platform": "macos"
+      "description": "Changes",
+      "keys_macos": "cmd+9"
     },
     "copy": {
       "keys": "ctrl+c",
-      "description": "Copy"
+      "description": "Copy",
+      "keys_macos": "cmd+c"
     },
     "show_execution_point": {
       "keys": "alt+f10",
       "description": "Show Execution Point"
     },
-    "move_statement_down_mac": {
-      "keys": "shift+cmd+down",
-      "description": "Move Statement Down",
-      "platform": "macos"
-    },
     "move_statement_down": {
       "keys": "shift+ctrl+down",
-      "description": "Move Statement Down"
-    },
-    "collapse_mac": {
-      "keys": "cmd+-",
-      "description": "Collapse",
-      "platform": "macos"
+      "description": "Move Statement Down",
+      "keys_macos": "shift+cmd+down"
     },
     "collapse": {
       "keys": "ctrl+-",
-      "description": "Collapse"
+      "description": "Collapse",
+      "keys_macos": "cmd+-"
     },
     "move_to_the_previous_difference": {
       "keys": "shift+f7",
@@ -542,41 +366,25 @@
       "keys": "shift+f8",
       "description": "Step Out"
     },
-    "show_hide_path_text_mac": {
-      "keys": "cmd+p",
-      "description": "Show/Hide path text",
-      "platform": "macos"
-    },
     "show_hide_path_text": {
       "keys": "ctrl+p",
-      "description": "Show/Hide path text"
-    },
-    "navigate_to_previous_table_column_mac": {
-      "keys": "shift+cmd+alt+left",
-      "description": "Navigate to previous table column",
-      "platform": "macos"
+      "description": "Show/Hide path text",
+      "keys_macos": "cmd+p"
     },
     "navigate_to_previous_table_column": {
       "keys": "shift+ctrl+alt+left",
-      "description": "Navigate to previous table column"
-    },
-    "delete_line_mac": {
-      "keys": "cmd+backspace",
-      "description": "Delete Line",
-      "platform": "macos"
+      "description": "Navigate to previous table column",
+      "keys_macos": "shift+cmd+alt+left"
     },
     "delete_line": {
       "keys": "ctrl+y",
-      "description": "Delete Line"
-    },
-    "choose_lookup_item_and_invoke_complete_statement_mac": {
-      "keys": "shift+cmd+enter",
-      "description": "Choose Lookup Item and Invoke Complete Statement",
-      "platform": "macos"
+      "description": "Delete Line",
+      "keys_macos": "cmd+backspace"
     },
     "choose_lookup_item_and_invoke_complete_statement": {
       "keys": "shift+ctrl+enter",
-      "description": "Choose Lookup Item and Invoke Complete Statement"
+      "description": "Choose Lookup Item and Invoke Complete Statement",
+      "keys_macos": "shift+cmd+enter"
     },
     "open_source_in_new_window": {
       "keys": "shift+f4",
@@ -586,45 +394,29 @@
       "keys": "shift+alt+h",
       "description": "Imports Hierarchy"
     },
-    "show_image_thumbnails_mac": {
-      "keys": "shift+cmd+t",
-      "description": "Show Image Thumbnails",
-      "platform": "macos"
-    },
     "show_image_thumbnails": {
       "keys": "shift+ctrl+t",
-      "description": "Show Image Thumbnails"
-    },
-    "navigate_to_symbol_mac": {
-      "keys": "cmd+alt+o",
-      "description": "Navigate to Symbol",
-      "platform": "macos"
+      "description": "Show Image Thumbnails",
+      "keys_macos": "shift+cmd+t"
     },
     "navigate_to_symbol": {
       "keys": "shift+ctrl+alt+n",
-      "description": "Navigate to Symbol"
-    },
-    "update_project_mac": {
-      "keys": "cmd+t",
-      "description": "Update Project",
-      "platform": "macos"
+      "description": "Navigate to Symbol",
+      "keys_macos": "cmd+alt+o"
     },
     "update_project": {
       "keys": "ctrl+t",
-      "description": "Update Project"
+      "description": "Update Project",
+      "keys_macos": "cmd+t"
     },
     "run_gulp_task": {
       "keys": "alt+f11",
       "description": "Run Gulp Task"
     },
-    "compare_two_files_mac": {
-      "keys": "cmd+d",
-      "description": "Compare Two Files",
-      "platform": "macos"
-    },
     "compare_two_files": {
       "keys": "ctrl+d",
-      "description": "Compare Two Files"
+      "description": "Compare Two Files",
+      "keys_macos": "cmd+d"
     },
     "quick_switch_scheme": {
       "keys": "ctrl+`",
@@ -634,27 +426,19 @@
       "keys": "shift+right",
       "description": "Right with Selection"
     },
-    "navigate_to_type_declaration_mac": {
-      "keys": "shift+cmd+b",
-      "description": "Navigate to Type Declaration",
-      "platform": "macos"
-    },
     "navigate_to_type_declaration": {
       "keys": "shift+ctrl+b",
-      "description": "Navigate to Type Declaration"
+      "description": "Navigate to Type Declaration",
+      "keys_macos": "shift+cmd+b"
     },
     "page_down": {
       "keys": "pageup",
       "description": "Page Down"
     },
-    "typedef_mac": {
-      "keys": "cmd+alt+k",
-      "description": "Typedef",
-      "platform": "macos"
-    },
     "typedef": {
       "keys": "ctrl+alt+k",
-      "description": "Typedef"
+      "description": "Typedef",
+      "keys_macos": "cmd+alt+k"
     },
     "escape": {
       "keys": "esc",
@@ -664,107 +448,67 @@
       "keys": "shift+pageup",
       "description": "Page Down with Selection"
     },
-    "extract_constant_mac": {
-      "keys": "cmd+alt+c",
-      "description": "Extract Constant",
-      "platform": "macos"
-    },
     "extract_constant": {
       "keys": "ctrl+alt+c",
-      "description": "Extract Constant"
-    },
-    "paste_from_history_mac": {
-      "keys": "shift+cmd+v",
-      "description": "Paste from History",
-      "platform": "macos"
+      "description": "Extract Constant",
+      "keys_macos": "cmd+alt+c"
     },
     "paste_from_history": {
       "keys": "shift+ctrl+v",
-      "description": "Paste from History"
-    },
-    "show_usages_mac": {
-      "keys": "cmd+alt+f7",
-      "description": "Show Usages",
-      "platform": "macos"
+      "description": "Paste from History",
+      "keys_macos": "shift+cmd+v"
     },
     "show_usages": {
       "keys": "ctrl+alt+f7",
-      "description": "Show Usages"
-    },
-    "rollback_mac": {
-      "keys": "cmd+alt+z",
-      "description": "Rollback",
-      "platform": "macos"
+      "description": "Show Usages",
+      "keys_macos": "cmd+alt+f7"
     },
     "rollback": {
       "keys": "ctrl+alt+z",
-      "description": "Rollback"
+      "description": "Rollback",
+      "keys_macos": "cmd+alt+z"
     },
     "call_hierarchy": {
       "keys": "ctrl+alt+h",
       "description": "Call Hierarchy"
     },
-    "surround_with_mac": {
-      "keys": "cmd+alt+t",
-      "description": "Surround With",
-      "platform": "macos"
-    },
     "surround_with": {
       "keys": "ctrl+alt+t",
-      "description": "Surround With"
-    },
-    "new_mac": {
-      "keys": "cmd+n",
-      "description": "New...",
-      "platform": "macos"
+      "description": "Surround With",
+      "keys_macos": "cmd+alt+t"
     },
     "new": {
       "keys": "ctrl+n",
-      "description": "New..."
-    },
-    "extend_selection_mac": {
-      "keys": "alt+up",
-      "description": "Extend Selection",
-      "platform": "macos"
+      "description": "New...",
+      "keys_macos": "cmd+n"
     },
     "extend_selection": {
       "keys": "ctrl+w",
-      "description": "Extend Selection"
+      "description": "Extend Selection",
+      "keys_macos": "alt+up"
     },
     "expand_tree_node": {
       "keys": "+",
       "description": "Expand Tree Node"
     },
-    "extract_method_mac": {
-      "keys": "cmd+alt+m",
-      "description": "Extract Method",
-      "platform": "macos"
-    },
     "extract_method": {
       "keys": "ctrl+alt+m",
-      "description": "Extract Method"
+      "description": "Extract Method",
+      "keys_macos": "cmd+alt+m"
     },
     "open_in_browser": {
       "keys": "shift+alt+b",
       "description": "Open in Browser"
     },
-    "paste_mac": {
-      "keys": "cmd+v",
-      "description": "Paste",
-      "platform": "macos"
-    },
     "paste": {
       "keys": "ctrl+v",
-      "description": "Paste"
-    },
-    "expand_mac": {
-      "keys": "cmd++or command+=",
-      "description": "Expand",
-      "platform": "macos"
+      "description": "Paste",
+      "keys_macos": "cmd+v"
     },
     "expand": {
       "keys": "ctrl++or ctrl+=",
-      "description": "Expand"
+      "description": "Expand",
+      "keys_macos": "cmd++or command+="
     },
     "up_with_selection": {
       "keys": "shift+up",
@@ -778,14 +522,10 @@
       "keys": "shift+f2",
       "description": "Previous Highlighted Error"
     },
-    "jump_to_source_mac": {
-      "keys": "cmd+down",
-      "description": "Jump to Source",
-      "platform": "macos"
-    },
     "jump_to_source": {
       "keys": "f4",
-      "description": "Jump to Source"
+      "description": "Jump to Source",
+      "keys_macos": "cmd+down"
     },
     "previous_template_variable": {
       "keys": "shift+tab",
@@ -795,23 +535,15 @@
       "keys": "alt+right",
       "description": "Select Next Tab"
     },
-    "file_structure_mac": {
-      "keys": "cmd+f12",
-      "description": "File Structure",
-      "platform": "macos"
-    },
     "file_structure": {
       "keys": "ctrl+f12",
-      "description": "File Structure"
-    },
-    "file_path_mac": {
-      "keys": "cmd+alt+f12",
-      "description": "File Path",
-      "platform": "macos"
+      "description": "File Structure",
+      "keys_macos": "cmd+f12"
     },
     "file_path": {
       "keys": "ctrl+alt+f12",
-      "description": "File Path"
+      "description": "File Path",
+      "keys_macos": "cmd+alt+f12"
     },
     "move_line_down": {
       "keys": "shift+alt+down",
@@ -821,111 +553,71 @@
       "keys": "alt+enter",
       "description": "Show Intention Actions"
     },
-    "replace_mac": {
-      "keys": "cmd+r",
-      "description": "Replace",
-      "platform": "macos"
-    },
     "replace": {
       "keys": "ctrl+r",
-      "description": "Replace"
+      "description": "Replace",
+      "keys_macos": "cmd+r"
     },
     "recent_changes": {
       "keys": "shift+alt+c",
       "description": "Recent Changes"
     },
-    "preferences_mac": {
-      "keys": "cmd+,",
-      "description": "Preferences",
-      "platform": "macos"
-    },
     "preferences": {
       "keys": "ctrl+alt+s",
-      "description": "Preferences"
-    },
-    "force_run_to_cursor_mac": {
-      "keys": "cmd+alt+f9",
-      "description": "Force Run to Cursor",
-      "platform": "macos"
+      "description": "Preferences",
+      "keys_macos": "cmd+,"
     },
     "force_run_to_cursor": {
       "keys": "ctrl+alt+f9",
-      "description": "Force Run to Cursor"
-    },
-    "quick_evaluate_expression_mac": {
-      "keys": "cmd+alt+f8",
-      "description": "Quick Evaluate Expression",
-      "platform": "macos"
+      "description": "Force Run to Cursor",
+      "keys_macos": "cmd+alt+f9"
     },
     "quick_evaluate_expression": {
       "keys": "ctrl+alt+f8",
-      "description": "Quick Evaluate Expression"
-    },
-    "paste_simple_mac": {
-      "keys": "shift+cmd+alt+v",
-      "description": "Paste Simple",
-      "platform": "macos"
+      "description": "Quick Evaluate Expression",
+      "keys_macos": "cmd+alt+f8"
     },
     "paste_simple": {
       "keys": "shift+ctrl+alt+v",
-      "description": "Paste Simple"
-    },
-    "navigate_to_file_mac": {
-      "keys": "shift+cmd+o",
-      "description": "Navigate to File",
-      "platform": "macos"
+      "description": "Paste Simple",
+      "keys_macos": "shift+cmd+alt+v"
     },
     "navigate_to_file": {
       "keys": "shift+ctrl+n",
-      "description": "Navigate to File"
+      "description": "Navigate to File",
+      "keys_macos": "shift+cmd+o"
     },
     "external_documentation": {
       "keys": "shift+f1",
       "description": "External Documentation"
     },
-    "browse_history_mac": {
-      "keys": "cmd+alt+e",
-      "description": "Browse History",
-      "platform": "macos"
-    },
     "browse_history": {
       "keys": "ctrl+alt+e",
-      "description": "Browse History"
-    },
-    "quick_definition_mac": {
-      "keys": "alt+space",
-      "description": "Quick Definition",
-      "platform": "macos"
+      "description": "Browse History",
+      "keys_macos": "cmd+alt+e"
     },
     "quick_definition": {
       "keys": "shift+ctrl+i",
-      "description": "Quick Definition"
+      "description": "Quick Definition",
+      "keys_macos": "alt+space"
     },
     "smart_completion": {
       "keys": "shift+ctrl+space",
       "description": "Smart Completion"
     },
-    "next_method_mac": {
-      "keys": "ctrl+down",
-      "description": "Next Method",
-      "platform": "macos"
-    },
     "next_method": {
       "keys": "alt+down",
-      "description": "Next Method"
+      "description": "Next Method",
+      "keys_macos": "ctrl+down"
     },
     "next_highlighted_error": {
       "keys": "f2",
       "description": "Next Highlighted Error"
     },
-    "collapse_all_mac": {
-      "keys": "shift+cmd+-",
-      "description": "Collapse All",
-      "platform": "macos"
-    },
     "collapse_all": {
       "keys": "shift+ctrl+-",
-      "description": "Collapse All"
+      "description": "Collapse All",
+      "keys_macos": "shift+cmd+-"
     },
     "move_to_the_next_difference": {
       "keys": "f7",
@@ -935,14 +627,10 @@
       "keys": "shift+end",
       "description": "Move Caret to Line End with Selection"
     },
-    "quick_documentation_mac": {
-      "keys": "f1",
-      "description": "Quick Documentation",
-      "platform": "macos"
-    },
     "quick_documentation": {
       "keys": "ctrl+q",
-      "description": "Quick Documentation"
+      "description": "Quick Documentation",
+      "keys_macos": "f1"
     },
     "previous_parameter": {
       "keys": "shift+tab",
@@ -952,23 +640,15 @@
       "keys": "cmd+`",
       "description": "Next Project Window"
     },
-    "view_breakpoints_mac": {
-      "keys": "shift+cmd+f8",
-      "description": "View Breakpoints",
-      "platform": "macos"
-    },
     "view_breakpoints": {
       "keys": "shift+ctrl+f8",
-      "description": "View Breakpoints"
-    },
-    "undo_mac": {
-      "keys": "cmd+z",
-      "description": "Undo",
-      "platform": "macos"
+      "description": "View Breakpoints",
+      "keys_macos": "shift+cmd+f8"
     },
     "undo": {
       "keys": "ctrl+z",
-      "description": "Undo"
+      "description": "Undo",
+      "keys_macos": "cmd+z"
     },
     "choose_lookup_item_and_insert_dot": {
       "keys": "ctrl+.",
@@ -982,120 +662,76 @@
       "keys": "insert",
       "description": "Insert element"
     },
-    "comment_with_line_comment_mac": {
-      "keys": "cmd+/",
-      "description": "Comment with Line Comment",
-      "platform": "macos"
-    },
     "comment_with_line_comment": {
       "keys": "ctrl+/",
-      "description": "Comment with Line Comment"
+      "description": "Comment with Line Comment",
+      "keys_macos": "cmd+/"
     },
     "back": {
       "keys": "ctrl+alt+left",
       "description": "Back"
     },
-    "move_caret_to_page_top_with_selection_mac": {
-      "keys": "shift+cmd+pageup",
-      "description": "Move Caret to Page Top with Selection",
-      "platform": "macos"
-    },
     "move_caret_to_page_top_with_selection": {
       "keys": "shift+ctrl+pageup",
-      "description": "Move Caret to Page Top with Selection"
-    },
-    "navigate_to_declaration_mac": {
-      "keys": "cmd+b",
-      "description": "Navigate to Declaration",
-      "platform": "macos"
+      "description": "Move Caret to Page Top with Selection",
+      "keys_macos": "shift+cmd+pageup"
     },
     "navigate_to_declaration": {
       "keys": "ctrl+b",
-      "description": "Navigate to Declaration"
+      "description": "Navigate to Declaration",
+      "keys_macos": "cmd+b"
     },
     "step_over": {
       "keys": "f8",
       "description": "Step Over"
     },
-    "rerun_navigate_to_tests_mac": {
-      "keys": "ctrl+cmd+r",
-      "description": "Rerun Navigate to Tests",
-      "platform": "macos"
-    },
     "rerun_navigate_to_tests": {
       "keys": "shift+alt+r",
-      "description": "Rerun Navigate to Tests"
-    },
-    "extract_parameter_mac": {
-      "keys": "cmd+alt+p",
-      "description": "Extract Parameter",
-      "platform": "macos"
+      "description": "Rerun Navigate to Tests",
+      "keys_macos": "ctrl+cmd+r"
     },
     "extract_parameter": {
       "keys": "ctrl+alt+p",
-      "description": "Extract Parameter"
-    },
-    "toggle_case_mac": {
-      "keys": "shift+cmd+u",
-      "description": "Toggle Case",
-      "platform": "macos"
+      "description": "Extract Parameter",
+      "keys_macos": "cmd+alt+p"
     },
     "toggle_case": {
       "keys": "shift+ctrl+u",
-      "description": "Toggle Case"
+      "description": "Toggle Case",
+      "keys_macos": "shift+cmd+u"
     },
     "force_step_into": {
       "keys": "shift+alt+f7",
       "description": "Force Step Into"
     },
-    "compare_directories_mac": {
-      "keys": "cmd+d",
-      "description": "Compare Directories",
-      "platform": "macos"
-    },
     "compare_directories": {
       "keys": "ctrl+d",
-      "description": "Compare Directories"
+      "description": "Compare Directories",
+      "keys_macos": "cmd+d"
     },
     "join_lines": {
       "keys": "shift+ctrl+j",
       "description": "Join Lines"
     },
-    "replace_in_path_mac": {
-      "keys": "shift+cmd+r",
-      "description": "Replace in Path",
-      "platform": "macos"
-    },
     "replace_in_path": {
       "keys": "shift+ctrl+r",
-      "description": "Replace in Path"
-    },
-    "parameter_info_mac": {
-      "keys": "cmd+p",
-      "description": "Parameter Info",
-      "platform": "macos"
+      "description": "Replace in Path",
+      "keys_macos": "shift+cmd+r"
     },
     "parameter_info": {
       "keys": "ctrl+p",
-      "description": "Parameter Info"
-    },
-    "fold_selection_remove_region_mac": {
-      "keys": "cmd+.",
-      "description": "Fold Selection / Remove region",
-      "platform": "macos"
+      "description": "Parameter Info",
+      "keys_macos": "cmd+p"
     },
     "fold_selection_remove_region": {
       "keys": "ctrl+.",
-      "description": "Fold Selection / Remove region"
-    },
-    "next_occurrence_mac": {
-      "keys": "cmd+alt+down",
-      "description": "Next Occurrence",
-      "platform": "macos"
+      "description": "Fold Selection / Remove region",
+      "keys_macos": "cmd+."
     },
     "next_occurrence": {
       "keys": "ctrl+alt+down",
-      "description": "Next Occurrence"
+      "description": "Next Occurrence",
+      "keys_macos": "cmd+alt+down"
     },
     "go_to_bookmark_9": {
       "keys": "ctrl+9",
@@ -1105,59 +741,35 @@
       "keys": "ctrl+delete",
       "description": "Remove From Favorites"
     },
-    "find_next_move_to_next_occurrence_mac": {
-      "keys": "cmd+g",
-      "description": "Find Next / Move to Next Occurrence",
-      "platform": "macos"
-    },
     "find_next_move_to_next_occurrence": {
       "keys": "f3",
-      "description": "Find Next / Move to Next Occurrence"
-    },
-    "find_usages_in_file_mac": {
-      "keys": "cmd+f7",
-      "description": "Find Usages in File",
-      "platform": "macos"
+      "description": "Find Next / Move to Next Occurrence",
+      "keys_macos": "cmd+g"
     },
     "find_usages_in_file": {
       "keys": "ctrl+f7",
-      "description": "Find Usages in File"
-    },
-    "move_caret_to_page_top_mac": {
-      "keys": "cmd+pageup",
-      "description": "Move Caret to Page Top",
-      "platform": "macos"
+      "description": "Find Usages in File",
+      "keys_macos": "cmd+f7"
     },
     "move_caret_to_page_top": {
       "keys": "ctrl+pageup",
-      "description": "Move Caret to Page Top"
-    },
-    "run_context_configuration_mac": {
-      "keys": "shift+ctrl+r",
-      "description": "Run context configuration",
-      "platform": "macos"
+      "description": "Move Caret to Page Top",
+      "keys_macos": "cmd+pageup"
     },
     "run_context_configuration": {
       "keys": "shift+ctrl+f10",
-      "description": "Run context configuration"
-    },
-    "delete_to_word_end_mac": {
-      "keys": "alt+delete",
-      "description": "Delete to Word End",
-      "platform": "macos"
+      "description": "Run context configuration",
+      "keys_macos": "shift+ctrl+r"
     },
     "delete_to_word_end": {
       "keys": "ctrl+delete",
-      "description": "Delete to Word End"
-    },
-    "debug_mac": {
-      "keys": "ctrl+d",
-      "description": "Debug",
-      "platform": "macos"
+      "description": "Delete to Word End",
+      "keys_macos": "alt+delete"
     },
     "debug": {
       "keys": "shift+f9",
-      "description": "Debug"
+      "description": "Debug",
+      "keys_macos": "ctrl+d"
     },
     "optimize_imports": {
       "keys": "ctrl+alt+o",
@@ -1167,27 +779,19 @@
       "keys": "enter",
       "description": "Execute Current Statement"
     },
-    "surround_with_live_template_mac": {
-      "keys": "cmd+alt+j",
-      "description": "Surround with Live Template",
-      "platform": "macos"
-    },
     "surround_with_live_template": {
       "keys": "ctrl+alt+j",
-      "description": "Surround with Live Template"
+      "description": "Surround with Live Template",
+      "keys_macos": "cmd+alt+j"
     },
     "restore_default_layout": {
       "keys": "shift+f12",
       "description": "Restore Default Layout"
     },
-    "hide_all_tool_windows_mac": {
-      "keys": "shift+cmd+f12",
-      "description": "Hide All Tool Windows",
-      "platform": "macos"
-    },
     "hide_all_tool_windows": {
       "keys": "shift+ctrl+f12",
-      "description": "Hide All Tool Windows"
+      "description": "Hide All Tool Windows",
+      "keys_macos": "shift+cmd+f12"
     },
     "open_task": {
       "keys": "shift+alt+n",
@@ -1197,14 +801,10 @@
       "keys": "ctrl+i",
       "description": "Implement Methods"
     },
-    "favorites_mac": {
-      "keys": "cmd+2",
-      "description": "Favorites",
-      "platform": "macos"
-    },
     "favorites": {
       "keys": "alt+2",
-      "description": "Favorites"
+      "description": "Favorites",
+      "keys_macos": "cmd+2"
     },
     "collapse_tree_node": {
       "keys": "-",
@@ -1214,107 +814,67 @@
       "keys": "home",
       "description": "Move Caret to Line Start"
     },
-    "export_to_text_file_mac": {
-      "keys": "ctrl+o",
-      "description": "Export to Text File",
-      "platform": "macos"
-    },
     "export_to_text_file": {
       "keys": "alt+o",
-      "description": "Export to Text File"
+      "description": "Export to Text File",
+      "keys_macos": "ctrl+o"
     },
     "inspect_code_with_editor_settings": {
       "keys": "shift+alt+i",
       "description": "Inspect Code With Editor Settings"
     },
-    "structure_mac": {
-      "keys": "cmd+7",
-      "description": "Structure",
-      "platform": "macos"
-    },
     "structure": {
       "keys": "alt+7",
-      "description": "Structure"
+      "description": "Structure",
+      "keys_macos": "cmd+7"
     },
     "page_up_with_selection": {
       "keys": "shift+pageup",
       "description": "Page Up with Selection"
     },
-    "find_previous_move_to_previous_occurrence_mac": {
-      "keys": "shift+cmd+g",
-      "description": "Find Previous / Move to Previous Occurrence",
-      "platform": "macos"
-    },
     "find_previous_move_to_previous_occurrence": {
       "keys": "shift+f3",
-      "description": "Find Previous / Move to Previous Occurrence"
-    },
-    "home_directory_mac": {
-      "keys": "cmd+1",
-      "description": "Home Directory",
-      "platform": "macos"
+      "description": "Find Previous / Move to Previous Occurrence",
+      "keys_macos": "shift+cmd+g"
     },
     "home_directory": {
       "keys": "ctrl+1",
-      "description": "Home Directory"
-    },
-    "navigate_to_line_mac": {
-      "keys": "cmd+l",
-      "description": "Navigate to Line",
-      "platform": "macos"
+      "description": "Home Directory",
+      "keys_macos": "cmd+1"
     },
     "navigate_to_line": {
       "keys": "ctrl+g",
-      "description": "Navigate to Line"
-    },
-    "cut_mac": {
-      "keys": "cmd+x",
-      "description": "Cut",
-      "platform": "macos"
+      "description": "Navigate to Line",
+      "keys_macos": "cmd+l"
     },
     "cut": {
       "keys": "ctrl+x",
-      "description": "Cut"
-    },
-    "reformat_code_mac": {
-      "keys": "cmd+alt+l",
-      "description": "Reformat Code",
-      "platform": "macos"
+      "description": "Cut",
+      "keys_macos": "cmd+x"
     },
     "reformat_code": {
       "keys": "ctrl+alt+l",
-      "description": "Reformat Code"
+      "description": "Reformat Code",
+      "keys_macos": "cmd+alt+l"
     },
     "auto_indent_lines": {
       "keys": "ctrl+alt+i",
       "description": "Auto-Indent Lines"
     },
-    "move_caret_to_page_bottom_mac": {
-      "keys": "cmd+pageup",
-      "description": "Move Caret to Page Bottom",
-      "platform": "macos"
-    },
     "move_caret_to_page_bottom": {
       "keys": "ctrl+pageup",
-      "description": "Move Caret to Page Bottom"
-    },
-    "move_caret_to_previous_word_with_selection_mac": {
-      "keys": "shift+alt+left",
-      "description": "Move Caret to Previous Word with Selection",
-      "platform": "macos"
+      "description": "Move Caret to Page Bottom",
+      "keys_macos": "cmd+pageup"
     },
     "move_caret_to_previous_word_with_selection": {
       "keys": "shift+ctrl+left",
-      "description": "Move Caret to Previous Word with Selection"
-    },
-    "property_mac": {
-      "keys": "cmd+alt+e",
-      "description": "Property",
-      "platform": "macos"
+      "description": "Move Caret to Previous Word with Selection",
+      "keys_macos": "shift+alt+left"
     },
     "property": {
       "keys": "ctrl+alt+e",
-      "description": "Property"
+      "description": "Property",
+      "keys_macos": "cmd+alt+e"
     },
     "close_active_task": {
       "keys": "shift+alt+w",
@@ -1332,178 +892,110 @@
       "keys": "alt+f1",
       "description": "Select In"
     },
-    "define_mac": {
-      "keys": "cmd+alt+d",
-      "description": "Define",
-      "platform": "macos"
-    },
     "define": {
       "keys": "ctrl+alt+d",
-      "description": "Define"
-    },
-    "comment_with_block_comment_mac": {
-      "keys": "cmd+alt+/",
-      "description": "Comment with Block Comment",
-      "platform": "macos"
+      "description": "Define",
+      "keys_macos": "cmd+alt+d"
     },
     "comment_with_block_comment": {
       "keys": "shift+ctrl+/",
-      "description": "Comment with Block Comment"
+      "description": "Comment with Block Comment",
+      "keys_macos": "cmd+alt+/"
     },
     "rename": {
       "keys": "shift+f6",
       "description": "Rename"
     },
-    "select_next_tab_in_multi_editor_file_mac": {
-      "keys": "shift+ctrl+right",
-      "description": "Select Next Tab in multi-editor file",
-      "platform": "macos"
-    },
     "select_next_tab_in_multi_editor_file": {
       "keys": "shift+alt+right",
-      "description": "Select Next Tab in multi-editor file"
-    },
-    "synchronize_mac": {
-      "keys": "cmd+alt+y",
-      "description": "Synchronize",
-      "platform": "macos"
+      "description": "Select Next Tab in multi-editor file",
+      "keys_macos": "shift+ctrl+right"
     },
     "synchronize": {
       "keys": "ctrl+alt+y",
-      "description": "Synchronize"
+      "description": "Synchronize",
+      "keys_macos": "cmd+alt+y"
     },
     "select_previous_tab": {
       "keys": "alt+left",
       "description": "Select Previous Tab"
     },
-    "show_all_affected_files_mac": {
-      "keys": "ctrl+cmd+a",
-      "description": "Show All Affected Files",
-      "platform": "macos"
-    },
     "show_all_affected_files": {
       "keys": "shift+alt+a",
-      "description": "Show All Affected Files"
-    },
-    "refactor_this_mac": {
-      "keys": "ctrl+t",
-      "description": "Refactor This",
-      "platform": "macos"
+      "description": "Show All Affected Files",
+      "keys_macos": "ctrl+cmd+a"
     },
     "refactor_this": {
       "keys": "shift+ctrl+alt+t",
-      "description": "Refactor This"
-    },
-    "find_usages_settings_mac": {
-      "keys": "shift+cmd+alt+f7",
-      "description": "Find Usages Settings",
-      "platform": "macos"
+      "description": "Refactor This",
+      "keys_macos": "ctrl+t"
     },
     "find_usages_settings": {
       "keys": "shift+ctrl+alt+f7",
-      "description": "Find Usages Settings"
-    },
-    "navigate_to_next_table_column_mac": {
-      "keys": "shift+cmd+alt+right",
-      "description": "Navigate to next table column",
-      "platform": "macos"
+      "description": "Find Usages Settings",
+      "keys_macos": "shift+cmd+alt+f7"
     },
     "navigate_to_next_table_column": {
       "keys": "shift+ctrl+alt+right",
-      "description": "Navigate to next table column"
-    },
-    "add_to_vcs_mac": {
-      "keys": "cmd+alt+a",
-      "description": "Add to VCS",
-      "platform": "macos"
+      "description": "Navigate to next table column",
+      "keys_macos": "shift+cmd+alt+right"
     },
     "add_to_vcs": {
       "keys": "ctrl+alt+a",
-      "description": "Add to VCS"
-    },
-    "run_inspection_by_name_mac": {
-      "keys": "shift+cmd+alt+i",
-      "description": "Run Inspection by Name",
-      "platform": "macos"
+      "description": "Add to VCS",
+      "keys_macos": "cmd+alt+a"
     },
     "run_inspection_by_name": {
       "keys": "shift+ctrl+alt+i",
-      "description": "Run Inspection by Name"
+      "description": "Run Inspection by Name",
+      "keys_macos": "shift+cmd+alt+i"
     },
     "step_into": {
       "keys": "f7",
       "description": "Step Into"
     },
-    "start_new_line_before_current_mac": {
-      "keys": "cmd+alt+enter",
-      "description": "Start New Line Before Current",
-      "platform": "macos"
-    },
     "start_new_line_before_current": {
       "keys": "ctrl+alt+enter",
-      "description": "Start New Line Before Current"
+      "description": "Start New Line Before Current",
+      "keys_macos": "cmd+alt+enter"
     },
     "unindent_line_or_selection": {
       "keys": "shift+tab",
       "description": "Unindent Line or Selection"
     },
-    "select_previous_tab_in_multi_editor_file_mac": {
-      "keys": "shift+ctrl+left",
-      "description": "Select Previous Tab in multi-editor file",
-      "platform": "macos"
-    },
     "select_previous_tab_in_multi_editor_file": {
       "keys": "shift+alt+left",
-      "description": "Select Previous Tab in multi-editor file"
-    },
-    "safe_delete_mac": {
-      "keys": "cmd+delete",
-      "description": "Safe Delete",
-      "platform": "macos"
+      "description": "Select Previous Tab in multi-editor file",
+      "keys_macos": "shift+ctrl+left"
     },
     "safe_delete": {
       "keys": "alt+delete",
-      "description": "Safe Delete"
-    },
-    "show_bookmarks_mac": {
-      "keys": "cmd+f3",
-      "description": "Show Bookmarks",
-      "platform": "macos"
+      "description": "Safe Delete",
+      "keys_macos": "cmd+delete"
     },
     "show_bookmarks": {
       "keys": "shift+f11",
-      "description": "Show Bookmarks"
-    },
-    "insert_live_template_mac": {
-      "keys": "cmd+j",
-      "description": "Insert Live Template",
-      "platform": "macos"
+      "description": "Show Bookmarks",
+      "keys_macos": "cmd+f3"
     },
     "insert_live_template": {
       "keys": "ctrl+j",
-      "description": "Insert Live Template"
-    },
-    "toggle_bookmark_mac": {
-      "keys": "f3",
-      "description": "Toggle Bookmark",
-      "platform": "macos"
+      "description": "Insert Live Template",
+      "keys_macos": "cmd+j"
     },
     "toggle_bookmark": {
       "keys": "f11",
-      "description": "Toggle Bookmark"
+      "description": "Toggle Bookmark",
+      "keys_macos": "f3"
     },
     "force_step_over": {
       "keys": "shift+alt+f8",
       "description": "Force Step Over"
     },
-    "find_in_path_mac": {
-      "keys": "shift+cmd+f",
-      "description": "Find in Path",
-      "platform": "macos"
-    },
     "find_in_path": {
       "keys": "shift+ctrl+f",
-      "description": "Find in Path"
+      "description": "Find in Path",
+      "keys_macos": "shift+cmd+f"
     },
     "choose_lookup_item_replace": {
       "keys": "tab",
@@ -1521,23 +1013,15 @@
       "keys": "ctrl+tab",
       "description": "Switcher"
     },
-    "move_caret_to_text_start_with_selection_mac": {
-      "keys": "shift+cmd+home",
-      "description": "Move Caret to Text Start with Selection",
-      "platform": "macos"
-    },
     "move_caret_to_text_start_with_selection": {
       "keys": "shift+ctrl+home",
-      "description": "Move Caret to Text Start with Selection"
-    },
-    "navigate_to_test_mac": {
-      "keys": "shift+cmd+t",
-      "description": "Navigate to Test",
-      "platform": "macos"
+      "description": "Move Caret to Text Start with Selection",
+      "keys_macos": "shift+cmd+home"
     },
     "navigate_to_test": {
       "keys": "shift+ctrl+t",
-      "description": "Navigate to Test"
+      "description": "Navigate to Test",
+      "keys_macos": "shift+cmd+t"
     },
     "go_to_bookmark_6": {
       "keys": "ctrl+6",
@@ -1555,137 +1039,89 @@
       "keys": "ctrl+7",
       "description": "Go to Bookmark 7"
     },
-    "clean_mac": {
-      "keys": "shift+cmd+k",
-      "description": "Clean",
-      "platform": "macos"
-    },
     "clean": {
       "keys": "shift+ctrl+k",
-      "description": "Clean"
-    },
-    "jump_to_external_editor_mac": {
-      "keys": "cmd+alt+f4",
-      "description": "Jump to External Editor",
-      "platform": "macos"
+      "description": "Clean",
+      "keys_macos": "shift+cmd+k"
     },
     "jump_to_external_editor": {
       "keys": "ctrl+alt+f4",
-      "description": "Jump to External Editor"
+      "description": "Jump to External Editor",
+      "keys_macos": "cmd+alt+f4"
     },
     "go_to_bookmark_2": {
       "keys": "ctrl+2",
       "description": "Go to Bookmark 2"
     },
-    "move_caret_to_next_word_mac": {
-      "keys": "alt+right",
-      "description": "Move Caret to Next Word",
-      "platform": "macos"
-    },
     "move_caret_to_next_word": {
       "keys": "ctrl+right",
-      "description": "Move Caret to Next Word"
+      "description": "Move Caret to Next Word",
+      "keys_macos": "alt+right"
     },
     "go_to_bookmark_1": {
       "keys": "ctrl+1",
       "description": "Go to Bookmark 1"
     },
-    "add_selection_for_next_occurrence_mac": {
-      "keys": "ctrl+g",
-      "description": "Add Selection for Next Occurrence",
-      "platform": "macos"
-    },
     "add_selection_for_next_occurrence": {
       "keys": "alt+j",
-      "description": "Add Selection for Next Occurrence"
+      "description": "Add Selection for Next Occurrence",
+      "keys_macos": "ctrl+g"
     },
     "go_to_bookmark_4": {
       "keys": "ctrl+4",
       "description": "Go to Bookmark 4"
     },
-    "recent_files_mac": {
-      "keys": "cmd+e",
-      "description": "Recent Files",
-      "platform": "macos"
-    },
     "recent_files": {
       "keys": "ctrl+e",
-      "description": "Recent Files"
+      "description": "Recent Files",
+      "keys_macos": "cmd+e"
     },
     "go_to_bookmark_3": {
       "keys": "ctrl+3",
       "description": "Go to Bookmark 3"
     },
-    "unwrap_remove_mac": {
-      "keys": "shift+cmd+delete",
-      "description": "Unwrap/Remove",
-      "platform": "macos"
-    },
     "unwrap_remove": {
       "keys": "shift+ctrl+delete",
-      "description": "Unwrap/Remove"
-    },
-    "navigate_to_previous_table_row_mac": {
-      "keys": "shift+cmd+alt+up",
-      "description": "Navigate to previous table row",
-      "platform": "macos"
+      "description": "Unwrap/Remove",
+      "keys_macos": "shift+cmd+delete"
     },
     "navigate_to_previous_table_row": {
       "keys": "shift+ctrl+alt+up",
-      "description": "Navigate to previous table row"
+      "description": "Navigate to previous table row",
+      "keys_macos": "shift+cmd+alt+up"
     },
     "move": {
       "keys": "f6",
       "description": "Move"
     },
-    "close_mac": {
-      "keys": "cmd+w",
-      "description": "Close",
-      "platform": "macos"
-    },
     "close": {
       "keys": "ctrl+f4",
-      "description": "Close"
+      "description": "Close",
+      "keys_macos": "cmd+w"
     },
     "run_to_cursor": {
       "keys": "alt+f9",
       "description": "Run to Cursor"
     },
-    "show_list_of_tabs_mac": {
-      "keys": "ctrl+down",
-      "description": "Show List of Tabs",
-      "platform": "macos"
-    },
     "show_list_of_tabs": {
       "keys": "alt+down",
-      "description": "Show List of Tabs"
-    },
-    "revert_mac": {
-      "keys": "cmd+alt+z",
-      "description": "Revert",
-      "platform": "macos"
+      "description": "Show List of Tabs",
+      "keys_macos": "ctrl+down"
     },
     "revert": {
       "keys": "ctrl+alt+z",
-      "description": "Revert"
-    },
-    "find_action_mac": {
-      "keys": "shift+cmd+a",
-      "description": "Find Action",
-      "platform": "macos"
+      "description": "Revert",
+      "keys_macos": "cmd+alt+z"
     },
     "find_action": {
       "keys": "shift+ctrl+a",
-      "description": "Find Action"
-    },
-    "complete_current_statement_mac": {
-      "keys": "shift+cmd+enter",
-      "description": "Complete Current Statement",
-      "platform": "macos"
+      "description": "Find Action",
+      "keys_macos": "shift+cmd+a"
     },
     "complete_current_statement": {
       "keys": "shift+ctrl+enter",
-      "description": "Complete Current Statement"
+      "description": "Complete Current Statement",
+      "keys_macos": "shift+cmd+enter"
     },
     "move_caret_to_line_start_with_selection": {
       "keys": "shift+home",
@@ -1695,90 +1131,54 @@
       "keys": "shift+down",
       "description": "Down with Selection"
     },
-    "todo_mac": {
-      "keys": "cmd+6",
-      "description": "TODO",
-      "platform": "macos"
-    },
     "todo": {
       "keys": "alt+6",
-      "description": "TODO"
-    },
-    "dump_lookup_element_weights_to_log_mac": {
-      "keys": "shift+cmd+alt+w",
-      "description": "Dump lookup element weights to log",
-      "platform": "macos"
+      "description": "TODO",
+      "keys_macos": "cmd+6"
     },
     "dump_lookup_element_weights_to_log": {
       "keys": "shift+ctrl+alt+w",
-      "description": "Dump lookup element weights to log"
-    },
-    "delete_to_word_start_mac": {
-      "keys": "alt+backspace",
-      "description": "Delete to Word Start",
-      "platform": "macos"
+      "description": "Dump lookup element weights to log",
+      "keys_macos": "shift+cmd+alt+w"
     },
     "delete_to_word_start": {
       "keys": "ctrl+backspace",
-      "description": "Delete to Word Start"
-    },
-    "rerun_mac": {
-      "keys": "cmd+r",
-      "description": "Rerun",
-      "platform": "macos"
+      "description": "Delete to Word Start",
+      "keys_macos": "alt+backspace"
     },
     "rerun": {
       "keys": "ctrl+f5",
-      "description": "Rerun"
+      "description": "Rerun",
+      "keys_macos": "cmd+r"
     },
     "terminal": {
       "keys": "alt+f12",
       "description": "Terminal"
     },
-    "toggle_temporary_line_breakpoint_mac": {
-      "keys": "shift+cmd+alt+f8",
-      "description": "Toggle Temporary Line Breakpoint",
-      "platform": "macos"
-    },
     "toggle_temporary_line_breakpoint": {
       "keys": "shift+ctrl+alt+f8",
-      "description": "Toggle Temporary Line Breakpoint"
-    },
-    "extract_field_mac": {
-      "keys": "cmd+alt+f",
-      "description": "Extract Field",
-      "platform": "macos"
+      "description": "Toggle Temporary Line Breakpoint",
+      "keys_macos": "shift+cmd+alt+f8"
     },
     "extract_field": {
       "keys": "ctrl+alt+f",
-      "description": "Extract Field"
-    },
-    "find_mac": {
-      "keys": "cmd+f",
-      "description": "Find",
-      "platform": "macos"
+      "description": "Extract Field",
+      "keys_macos": "cmd+alt+f"
     },
     "find": {
       "keys": "ctrl+f",
-      "description": "Find"
-    },
-    "navigate_to_next_table_row_mac": {
-      "keys": "shift+cmd+alt+down",
-      "description": "Navigate to next table row",
-      "platform": "macos"
+      "description": "Find",
+      "keys_macos": "cmd+f"
     },
     "navigate_to_next_table_row": {
       "keys": "shift+ctrl+alt+down",
-      "description": "Navigate to next table row"
-    },
-    "move_caret_to_text_start_mac": {
-      "keys": "cmd+home",
-      "description": "Move Caret to Text Start",
-      "platform": "macos"
+      "description": "Navigate to next table row",
+      "keys_macos": "shift+cmd+alt+down"
     },
     "move_caret_to_text_start": {
       "keys": "ctrl+home",
-      "description": "Move Caret to Text Start"
+      "description": "Move Caret to Text Start",
+      "keys_macos": "cmd+home"
     },
     "page_up": {
       "keys": "pageup",
@@ -1792,14 +1192,10 @@
       "keys": "shift+alt+f",
       "description": "Add to Favorites"
     },
-    "resume_program_mac": {
-      "keys": "cmd+alt+r",
-      "description": "Resume Program",
-      "platform": "macos"
-    },
     "resume_program": {
       "keys": "f9",
-      "description": "Resume Program"
+      "description": "Resume Program",
+      "keys_macos": "cmd+alt+r"
     }
   },
   "semantic_elements": {
@@ -1877,7 +1273,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f2",
-        "description": "Stop"
+        "description": "Stop",
+        "keys_macos": "cmd+f2"
       }
     },
     "toggle_bookmark_5": {
@@ -1899,7 +1296,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+k",
-        "description": "Push"
+        "description": "Push",
+        "keys_macos": "shift+cmd+k"
       }
     },
     "toggle_bookmark_2": {
@@ -1932,7 +1330,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+1",
-        "description": "Project"
+        "description": "Project",
+        "keys_macos": "cmd+1"
       }
     },
     "toggle_bookmark_3": {
@@ -1965,7 +1364,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+f7",
-        "description": "Highlight Usages in File"
+        "description": "Highlight Usages in File",
+        "keys_macos": "shift+cmd+f7"
       }
     },
     "toggle_bookmark_1": {
@@ -1987,7 +1387,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+home",
-        "description": "Related Navigate to Symbol"
+        "description": "Related Navigate to Symbol",
+        "keys_macos": "ctrl+cmd+up"
       }
     },
     "copy_paths": {
@@ -1998,7 +1399,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+c",
-        "description": "Copy Paths"
+        "description": "Copy Paths",
+        "keys_macos": "shift+cmd+c"
       }
     },
     "clear_context": {
@@ -2020,7 +1422,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+d",
-        "description": "Duplicate Line or Block"
+        "description": "Duplicate Line or Block",
+        "keys_macos": "cmd+d"
       }
     },
     "previous_method": {
@@ -2031,7 +1434,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+up",
-        "description": "Previous Method"
+        "description": "Previous Method",
+        "keys_macos": "ctrl+up"
       }
     },
     "previous_occurrence": {
@@ -2042,7 +1446,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+up",
-        "description": "Previous Occurrence"
+        "description": "Previous Occurrence",
+        "keys_macos": "cmd+alt+up"
       }
     },
     "cyclic_expand_word_backward": {
@@ -2064,7 +1469,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+up",
-        "description": "Move Statement Up"
+        "description": "Move Statement Up",
+        "keys_macos": "shift+cmd+up"
       }
     },
     "recently_changed_files": {
@@ -2075,7 +1481,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+e",
-        "description": "Recently Changed Files"
+        "description": "Recently Changed Files",
+        "keys_macos": "shift+cmd+e"
       }
     },
     "shrink_selection": {
@@ -2086,7 +1493,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+w",
-        "description": "Shrink Selection"
+        "description": "Shrink Selection",
+        "keys_macos": "alt+down"
       }
     },
     "save_all": {
@@ -2097,7 +1505,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+s",
-        "description": "Save All"
+        "description": "Save All",
+        "keys_macos": "cmd+s"
       }
     },
     "move_caret_to_page_bottom_with_selection": {
@@ -2108,7 +1517,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+pageup",
-        "description": "Move Caret to Page Bottom with Selection"
+        "description": "Move Caret to Page Bottom with Selection",
+        "keys_macos": "shift+cmd+pageup"
       }
     },
     "toggle_bookmark_with_mnemonic": {
@@ -2119,7 +1529,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f11",
-        "description": "Toggle Bookmark with Mnemonic"
+        "description": "Toggle Bookmark with Mnemonic",
+        "keys_macos": "alt+f3"
       }
     },
     "jump_to_last_tool_window": {
@@ -2141,7 +1552,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt++or ctrl+alt+=",
-        "description": "Expand Recursively"
+        "description": "Expand Recursively",
+        "keys_macos": "cmd+alt++or command+alt+="
       }
     },
     "change_signature": {
@@ -2152,7 +1564,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f6",
-        "description": "Change Signature"
+        "description": "Change Signature",
+        "keys_macos": "cmd+f6"
       }
     },
     "move_caret_to_next_word_with_selection": {
@@ -2163,7 +1576,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+right",
-        "description": "Move Caret to Next Word with Selection"
+        "description": "Move Caret to Next Word with Selection",
+        "keys_macos": "shift+alt+right"
       }
     },
     "error_description": {
@@ -2174,7 +1588,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f1",
-        "description": "Error Description"
+        "description": "Error Description",
+        "keys_macos": "cmd+f1"
       }
     },
     "toggle_line_breakpoint": {
@@ -2185,7 +1600,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f8",
-        "description": "Toggle Line Breakpoint"
+        "description": "Toggle Line Breakpoint",
+        "keys_macos": "cmd+f8"
       }
     },
     "start_new_line": {
@@ -2229,7 +1645,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+alt+j",
-        "description": "Unselect Occurrence"
+        "description": "Unselect Occurrence",
+        "keys_macos": "shift+ctrl+g"
       }
     },
     "last_edit_location": {
@@ -2240,7 +1657,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+backspace",
-        "description": "Last Edit Location"
+        "description": "Last Edit Location",
+        "keys_macos": "shift+cmd+backspace"
       }
     },
     "change_view": {
@@ -2273,7 +1691,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+a",
-        "description": "Select All"
+        "description": "Select All",
+        "keys_macos": "cmd+a"
       }
     },
     "context_info": {
@@ -2284,7 +1703,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+q",
-        "description": "Context Info"
+        "description": "Context Info",
+        "keys_macos": "shift+ctrl+q"
       }
     },
     "web_preview": {
@@ -2328,7 +1748,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+end",
-        "description": "Move Caret to Text End"
+        "description": "Move Caret to Text End",
+        "keys_macos": "cmd+end"
       }
     },
     "move_caret_to_text_end_with_selection": {
@@ -2339,7 +1760,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+end",
-        "description": "Move Caret to Text End with Selection"
+        "description": "Move Caret to Text End with Selection",
+        "keys_macos": "shift+cmd+end"
       }
     },
     "copy_reference": {
@@ -2350,7 +1772,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+c",
-        "description": "Copy Reference"
+        "description": "Copy Reference",
+        "keys_macos": "shift+cmd+alt+c"
       }
     },
     "override_methods": {
@@ -2372,7 +1795,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+v",
-        "description": "Extract Variable"
+        "description": "Extract Variable",
+        "keys_macos": "cmd+alt+v"
       }
     },
     "hide_active_tool_window": {
@@ -2394,7 +1818,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+k",
-        "description": "Check In Project"
+        "description": "Check In Project",
+        "keys_macos": "cmd+k"
       }
     },
     "select_all_occurrences": {
@@ -2405,7 +1830,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+j",
-        "description": "Select All Occurrences"
+        "description": "Select All Occurrences",
+        "keys_macos": "ctrl+cmd+g"
       }
     },
     "method_hierarchy": {
@@ -2416,7 +1842,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+h",
-        "description": "Method Hierarchy"
+        "description": "Method Hierarchy",
+        "keys_macos": "shift+cmd+h"
       }
     },
     "vcs_operations_popup": {
@@ -2427,7 +1854,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+`",
-        "description": "VCS Operations Popup"
+        "description": "VCS Operations Popup",
+        "keys_macos": "ctrl+v"
       }
     },
     "redo": {
@@ -2438,7 +1866,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+z",
-        "description": "Redo"
+        "description": "Redo",
+        "keys_macos": "shift+cmd+z"
       }
     },
     "smart_step_into": {
@@ -2460,7 +1889,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+-",
-        "description": "Collapse Recursively"
+        "description": "Collapse Recursively",
+        "keys_macos": "cmd+alt+-"
       }
     },
     "run": {
@@ -2471,7 +1901,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+alt+f10",
-        "description": "Run"
+        "description": "Run",
+        "keys_macos": "ctrl+alt+r"
       }
     },
     "move_caret_to_previous_word": {
@@ -2482,7 +1913,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+left",
-        "description": "Move Caret to Previous Word"
+        "description": "Move Caret to Previous Word",
+        "keys_macos": "alt+left"
       }
     },
     "inline": {
@@ -2493,7 +1925,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+n",
-        "description": "Inline"
+        "description": "Inline",
+        "keys_macos": "cmd+alt+n"
       }
     },
     "backspace": {
@@ -2548,7 +1981,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+home",
-        "description": "Jump to Navigation Bar"
+        "description": "Jump to Navigation Bar",
+        "keys_macos": "cmd+up"
       }
     },
     "expand_all": {
@@ -2559,7 +1993,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl++or ctrl+=",
-        "description": "Expand All"
+        "description": "Expand All",
+        "keys_macos": "cmd++or command+="
       }
     },
     "prev_parameter": {
@@ -2592,7 +2027,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+n",
-        "description": "Navigate to Class"
+        "description": "Navigate to Class",
+        "keys_macos": "cmd+o"
       }
     },
     "changes": {
@@ -2603,7 +2039,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+9",
-        "description": "Changes"
+        "description": "Changes",
+        "keys_macos": "cmd+9"
       }
     },
     "copy": {
@@ -2614,7 +2051,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+c",
-        "description": "Copy"
+        "description": "Copy",
+        "keys_macos": "cmd+c"
       }
     },
     "show_execution_point": {
@@ -2636,7 +2074,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+down",
-        "description": "Move Statement Down"
+        "description": "Move Statement Down",
+        "keys_macos": "shift+cmd+down"
       }
     },
     "collapse": {
@@ -2647,7 +2086,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+-",
-        "description": "Collapse"
+        "description": "Collapse",
+        "keys_macos": "cmd+-"
       }
     },
     "move_to_the_previous_difference": {
@@ -2682,7 +2122,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+p",
-        "description": "Show/Hide path text"
+        "description": "Show/Hide path text",
+        "keys_macos": "cmd+p"
       }
     },
     "navigate_to_previous_table_column": {
@@ -2693,7 +2134,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+left",
-        "description": "Navigate to previous table column"
+        "description": "Navigate to previous table column",
+        "keys_macos": "shift+cmd+alt+left"
       }
     },
     "delete_line": {
@@ -2704,7 +2146,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+y",
-        "description": "Delete Line"
+        "description": "Delete Line",
+        "keys_macos": "cmd+backspace"
       }
     },
     "choose_lookup_item_and_invoke_complete_statement": {
@@ -2715,7 +2158,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+enter",
-        "description": "Choose Lookup Item and Invoke Complete Statement"
+        "description": "Choose Lookup Item and Invoke Complete Statement",
+        "keys_macos": "shift+cmd+enter"
       }
     },
     "open_source_in_new_window": {
@@ -2748,7 +2192,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+t",
-        "description": "Show Image Thumbnails"
+        "description": "Show Image Thumbnails",
+        "keys_macos": "shift+cmd+t"
       }
     },
     "navigate_to_symbol": {
@@ -2759,7 +2204,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+n",
-        "description": "Navigate to Symbol"
+        "description": "Navigate to Symbol",
+        "keys_macos": "cmd+alt+o"
       }
     },
     "update_project": {
@@ -2770,7 +2216,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+t",
-        "description": "Update Project"
+        "description": "Update Project",
+        "keys_macos": "cmd+t"
       }
     },
     "run_gulp_task": {
@@ -2792,7 +2239,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+d",
-        "description": "Compare Two Files"
+        "description": "Compare Two Files",
+        "keys_macos": "cmd+d"
       }
     },
     "quick_switch_scheme": {
@@ -2825,7 +2273,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+b",
-        "description": "Navigate to Type Declaration"
+        "description": "Navigate to Type Declaration",
+        "keys_macos": "shift+cmd+b"
       }
     },
     "page_down": {
@@ -2847,7 +2296,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+k",
-        "description": "Typedef"
+        "description": "Typedef",
+        "keys_macos": "cmd+alt+k"
       }
     },
     "escape": {
@@ -2880,7 +2330,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+c",
-        "description": "Extract Constant"
+        "description": "Extract Constant",
+        "keys_macos": "cmd+alt+c"
       }
     },
     "paste_from_history": {
@@ -2891,7 +2342,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+v",
-        "description": "Paste from History"
+        "description": "Paste from History",
+        "keys_macos": "shift+cmd+v"
       }
     },
     "show_usages": {
@@ -2902,7 +2354,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f7",
-        "description": "Show Usages"
+        "description": "Show Usages",
+        "keys_macos": "cmd+alt+f7"
       }
     },
     "rollback": {
@@ -2913,7 +2366,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+z",
-        "description": "Rollback"
+        "description": "Rollback",
+        "keys_macos": "cmd+alt+z"
       }
     },
     "call_hierarchy": {
@@ -2935,7 +2389,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+t",
-        "description": "Surround With"
+        "description": "Surround With",
+        "keys_macos": "cmd+alt+t"
       }
     },
     "new": {
@@ -2946,7 +2401,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+n",
-        "description": "New..."
+        "description": "New...",
+        "keys_macos": "cmd+n"
       }
     },
     "extend_selection": {
@@ -2957,7 +2413,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+w",
-        "description": "Extend Selection"
+        "description": "Extend Selection",
+        "keys_macos": "alt+up"
       }
     },
     "expand_tree_node": {
@@ -2979,7 +2436,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+m",
-        "description": "Extract Method"
+        "description": "Extract Method",
+        "keys_macos": "cmd+alt+m"
       }
     },
     "open_in_browser": {
@@ -3001,7 +2459,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+v",
-        "description": "Paste"
+        "description": "Paste",
+        "keys_macos": "cmd+v"
       }
     },
     "expand": {
@@ -3012,7 +2471,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl++or ctrl+=",
-        "description": "Expand"
+        "description": "Expand",
+        "keys_macos": "cmd++or command+="
       }
     },
     "up_with_selection": {
@@ -3056,7 +2516,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "f4",
-        "description": "Jump to Source"
+        "description": "Jump to Source",
+        "keys_macos": "cmd+down"
       }
     },
     "previous_template_variable": {
@@ -3089,7 +2550,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f12",
-        "description": "File Structure"
+        "description": "File Structure",
+        "keys_macos": "cmd+f12"
       }
     },
     "file_path": {
@@ -3100,7 +2562,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f12",
-        "description": "File Path"
+        "description": "File Path",
+        "keys_macos": "cmd+alt+f12"
       }
     },
     "move_line_down": {
@@ -3133,7 +2596,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+r",
-        "description": "Replace"
+        "description": "Replace",
+        "keys_macos": "cmd+r"
       }
     },
     "recent_changes": {
@@ -3155,7 +2619,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+s",
-        "description": "Preferences"
+        "description": "Preferences",
+        "keys_macos": "cmd+,"
       }
     },
     "force_run_to_cursor": {
@@ -3166,7 +2631,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f9",
-        "description": "Force Run to Cursor"
+        "description": "Force Run to Cursor",
+        "keys_macos": "cmd+alt+f9"
       }
     },
     "quick_evaluate_expression": {
@@ -3177,7 +2643,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f8",
-        "description": "Quick Evaluate Expression"
+        "description": "Quick Evaluate Expression",
+        "keys_macos": "cmd+alt+f8"
       }
     },
     "paste_simple": {
@@ -3188,7 +2655,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+v",
-        "description": "Paste Simple"
+        "description": "Paste Simple",
+        "keys_macos": "shift+cmd+alt+v"
       }
     },
     "navigate_to_file": {
@@ -3199,7 +2667,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+n",
-        "description": "Navigate to File"
+        "description": "Navigate to File",
+        "keys_macos": "shift+cmd+o"
       }
     },
     "external_documentation": {
@@ -3221,7 +2690,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+e",
-        "description": "Browse History"
+        "description": "Browse History",
+        "keys_macos": "cmd+alt+e"
       }
     },
     "quick_definition": {
@@ -3232,7 +2702,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+i",
-        "description": "Quick Definition"
+        "description": "Quick Definition",
+        "keys_macos": "alt+space"
       }
     },
     "smart_completion": {
@@ -3254,7 +2725,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+down",
-        "description": "Next Method"
+        "description": "Next Method",
+        "keys_macos": "ctrl+down"
       }
     },
     "next_highlighted_error": {
@@ -3276,7 +2748,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+-",
-        "description": "Collapse All"
+        "description": "Collapse All",
+        "keys_macos": "shift+cmd+-"
       }
     },
     "move_to_the_next_difference": {
@@ -3309,7 +2782,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+q",
-        "description": "Quick Documentation"
+        "description": "Quick Documentation",
+        "keys_macos": "f1"
       }
     },
     "previous_parameter": {
@@ -3342,7 +2816,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+f8",
-        "description": "View Breakpoints"
+        "description": "View Breakpoints",
+        "keys_macos": "shift+cmd+f8"
       }
     },
     "undo": {
@@ -3353,7 +2828,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+z",
-        "description": "Undo"
+        "description": "Undo",
+        "keys_macos": "cmd+z"
       }
     },
     "choose_lookup_item_and_insert_dot": {
@@ -3397,7 +2873,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+/",
-        "description": "Comment with Line Comment"
+        "description": "Comment with Line Comment",
+        "keys_macos": "cmd+/"
       }
     },
     "back": {
@@ -3419,7 +2896,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+pageup",
-        "description": "Move Caret to Page Top with Selection"
+        "description": "Move Caret to Page Top with Selection",
+        "keys_macos": "shift+cmd+pageup"
       }
     },
     "navigate_to_declaration": {
@@ -3430,7 +2908,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+b",
-        "description": "Navigate to Declaration"
+        "description": "Navigate to Declaration",
+        "keys_macos": "cmd+b"
       }
     },
     "step_over": {
@@ -3452,7 +2931,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+alt+r",
-        "description": "Rerun Navigate to Tests"
+        "description": "Rerun Navigate to Tests",
+        "keys_macos": "ctrl+cmd+r"
       }
     },
     "extract_parameter": {
@@ -3463,7 +2943,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+p",
-        "description": "Extract Parameter"
+        "description": "Extract Parameter",
+        "keys_macos": "cmd+alt+p"
       }
     },
     "toggle_case": {
@@ -3474,7 +2955,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+u",
-        "description": "Toggle Case"
+        "description": "Toggle Case",
+        "keys_macos": "shift+cmd+u"
       }
     },
     "force_step_into": {
@@ -3496,7 +2978,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+d",
-        "description": "Compare Directories"
+        "description": "Compare Directories",
+        "keys_macos": "cmd+d"
       }
     },
     "join_lines": {
@@ -3518,7 +3001,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+r",
-        "description": "Replace in Path"
+        "description": "Replace in Path",
+        "keys_macos": "shift+cmd+r"
       }
     },
     "parameter_info": {
@@ -3529,7 +3013,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+p",
-        "description": "Parameter Info"
+        "description": "Parameter Info",
+        "keys_macos": "cmd+p"
       }
     },
     "fold_selection_remove_region": {
@@ -3542,7 +3027,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+.",
-        "description": "Fold Selection / Remove region"
+        "description": "Fold Selection / Remove region",
+        "keys_macos": "cmd+."
       }
     },
     "next_occurrence": {
@@ -3553,7 +3039,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+down",
-        "description": "Next Occurrence"
+        "description": "Next Occurrence",
+        "keys_macos": "cmd+alt+down"
       }
     },
     "go_to_bookmark_9": {
@@ -3588,7 +3075,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "f3",
-        "description": "Find Next / Move to Next Occurrence"
+        "description": "Find Next / Move to Next Occurrence",
+        "keys_macos": "cmd+g"
       }
     },
     "find_usages_in_file": {
@@ -3599,7 +3087,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f7",
-        "description": "Find Usages in File"
+        "description": "Find Usages in File",
+        "keys_macos": "cmd+f7"
       }
     },
     "move_caret_to_page_top": {
@@ -3610,7 +3099,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+pageup",
-        "description": "Move Caret to Page Top"
+        "description": "Move Caret to Page Top",
+        "keys_macos": "cmd+pageup"
       }
     },
     "run_context_configuration": {
@@ -3621,7 +3111,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+f10",
-        "description": "Run context configuration"
+        "description": "Run context configuration",
+        "keys_macos": "shift+ctrl+r"
       }
     },
     "delete_to_word_end": {
@@ -3632,7 +3123,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+delete",
-        "description": "Delete to Word End"
+        "description": "Delete to Word End",
+        "keys_macos": "alt+delete"
       }
     },
     "debug": {
@@ -3643,7 +3135,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+f9",
-        "description": "Debug"
+        "description": "Debug",
+        "keys_macos": "ctrl+d"
       }
     },
     "optimize_imports": {
@@ -3676,7 +3169,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+j",
-        "description": "Surround with Live Template"
+        "description": "Surround with Live Template",
+        "keys_macos": "cmd+alt+j"
       }
     },
     "restore_default_layout": {
@@ -3698,7 +3192,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+f12",
-        "description": "Hide All Tool Windows"
+        "description": "Hide All Tool Windows",
+        "keys_macos": "shift+cmd+f12"
       }
     },
     "open_task": {
@@ -3731,7 +3226,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+2",
-        "description": "Favorites"
+        "description": "Favorites",
+        "keys_macos": "cmd+2"
       }
     },
     "collapse_tree_node": {
@@ -3764,7 +3260,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+o",
-        "description": "Export to Text File"
+        "description": "Export to Text File",
+        "keys_macos": "ctrl+o"
       }
     },
     "inspect_code_with_editor_settings": {
@@ -3786,7 +3283,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+7",
-        "description": "Structure"
+        "description": "Structure",
+        "keys_macos": "cmd+7"
       }
     },
     "page_up_with_selection": {
@@ -3810,7 +3308,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+f3",
-        "description": "Find Previous / Move to Previous Occurrence"
+        "description": "Find Previous / Move to Previous Occurrence",
+        "keys_macos": "shift+cmd+g"
       }
     },
     "home_directory": {
@@ -3821,7 +3320,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+1",
-        "description": "Home Directory"
+        "description": "Home Directory",
+        "keys_macos": "cmd+1"
       }
     },
     "navigate_to_line": {
@@ -3832,7 +3332,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+g",
-        "description": "Navigate to Line"
+        "description": "Navigate to Line",
+        "keys_macos": "cmd+l"
       }
     },
     "cut": {
@@ -3843,7 +3344,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+x",
-        "description": "Cut"
+        "description": "Cut",
+        "keys_macos": "cmd+x"
       }
     },
     "reformat_code": {
@@ -3854,7 +3356,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+l",
-        "description": "Reformat Code"
+        "description": "Reformat Code",
+        "keys_macos": "cmd+alt+l"
       }
     },
     "auto_indent_lines": {
@@ -3876,7 +3379,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+pageup",
-        "description": "Move Caret to Page Bottom"
+        "description": "Move Caret to Page Bottom",
+        "keys_macos": "cmd+pageup"
       }
     },
     "move_caret_to_previous_word_with_selection": {
@@ -3887,7 +3391,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+left",
-        "description": "Move Caret to Previous Word with Selection"
+        "description": "Move Caret to Previous Word with Selection",
+        "keys_macos": "shift+alt+left"
       }
     },
     "property": {
@@ -3898,7 +3403,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+e",
-        "description": "Property"
+        "description": "Property",
+        "keys_macos": "cmd+alt+e"
       }
     },
     "close_active_task": {
@@ -3953,7 +3459,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+d",
-        "description": "Define"
+        "description": "Define",
+        "keys_macos": "cmd+alt+d"
       }
     },
     "comment_with_block_comment": {
@@ -3964,7 +3471,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+/",
-        "description": "Comment with Block Comment"
+        "description": "Comment with Block Comment",
+        "keys_macos": "cmd+alt+/"
       }
     },
     "rename": {
@@ -3986,7 +3494,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+alt+right",
-        "description": "Select Next Tab in multi-editor file"
+        "description": "Select Next Tab in multi-editor file",
+        "keys_macos": "shift+ctrl+right"
       }
     },
     "synchronize": {
@@ -3997,7 +3506,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+y",
-        "description": "Synchronize"
+        "description": "Synchronize",
+        "keys_macos": "cmd+alt+y"
       }
     },
     "select_previous_tab": {
@@ -4019,7 +3529,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+alt+a",
-        "description": "Show All Affected Files"
+        "description": "Show All Affected Files",
+        "keys_macos": "ctrl+cmd+a"
       }
     },
     "refactor_this": {
@@ -4030,7 +3541,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+t",
-        "description": "Refactor This"
+        "description": "Refactor This",
+        "keys_macos": "ctrl+t"
       }
     },
     "find_usages_settings": {
@@ -4041,7 +3553,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+f7",
-        "description": "Find Usages Settings"
+        "description": "Find Usages Settings",
+        "keys_macos": "shift+cmd+alt+f7"
       }
     },
     "navigate_to_next_table_column": {
@@ -4052,7 +3565,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+right",
-        "description": "Navigate to next table column"
+        "description": "Navigate to next table column",
+        "keys_macos": "shift+cmd+alt+right"
       }
     },
     "add_to_vcs": {
@@ -4063,7 +3577,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+a",
-        "description": "Add to VCS"
+        "description": "Add to VCS",
+        "keys_macos": "cmd+alt+a"
       }
     },
     "run_inspection_by_name": {
@@ -4074,7 +3589,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+i",
-        "description": "Run Inspection by Name"
+        "description": "Run Inspection by Name",
+        "keys_macos": "shift+cmd+alt+i"
       }
     },
     "step_into": {
@@ -4096,7 +3612,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+enter",
-        "description": "Start New Line Before Current"
+        "description": "Start New Line Before Current",
+        "keys_macos": "cmd+alt+enter"
       }
     },
     "unindent_line_or_selection": {
@@ -4118,7 +3635,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+alt+left",
-        "description": "Select Previous Tab in multi-editor file"
+        "description": "Select Previous Tab in multi-editor file",
+        "keys_macos": "shift+ctrl+left"
       }
     },
     "safe_delete": {
@@ -4129,7 +3647,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+delete",
-        "description": "Safe Delete"
+        "description": "Safe Delete",
+        "keys_macos": "cmd+delete"
       }
     },
     "show_bookmarks": {
@@ -4140,7 +3659,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+f11",
-        "description": "Show Bookmarks"
+        "description": "Show Bookmarks",
+        "keys_macos": "cmd+f3"
       }
     },
     "insert_live_template": {
@@ -4151,7 +3671,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+j",
-        "description": "Insert Live Template"
+        "description": "Insert Live Template",
+        "keys_macos": "cmd+j"
       }
     },
     "toggle_bookmark": {
@@ -4162,7 +3683,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "f11",
-        "description": "Toggle Bookmark"
+        "description": "Toggle Bookmark",
+        "keys_macos": "f3"
       }
     },
     "force_step_over": {
@@ -4184,7 +3706,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+f",
-        "description": "Find in Path"
+        "description": "Find in Path",
+        "keys_macos": "shift+cmd+f"
       }
     },
     "choose_lookup_item_replace": {
@@ -4239,7 +3762,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+home",
-        "description": "Move Caret to Text Start with Selection"
+        "description": "Move Caret to Text Start with Selection",
+        "keys_macos": "shift+cmd+home"
       }
     },
     "navigate_to_test": {
@@ -4250,7 +3774,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+t",
-        "description": "Navigate to Test"
+        "description": "Navigate to Test",
+        "keys_macos": "shift+cmd+t"
       }
     },
     "go_to_bookmark_6": {
@@ -4305,7 +3830,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+k",
-        "description": "Clean"
+        "description": "Clean",
+        "keys_macos": "shift+cmd+k"
       }
     },
     "jump_to_external_editor": {
@@ -4316,7 +3842,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f4",
-        "description": "Jump to External Editor"
+        "description": "Jump to External Editor",
+        "keys_macos": "cmd+alt+f4"
       }
     },
     "go_to_bookmark_2": {
@@ -4338,7 +3865,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+right",
-        "description": "Move Caret to Next Word"
+        "description": "Move Caret to Next Word",
+        "keys_macos": "alt+right"
       }
     },
     "go_to_bookmark_1": {
@@ -4360,7 +3888,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+j",
-        "description": "Add Selection for Next Occurrence"
+        "description": "Add Selection for Next Occurrence",
+        "keys_macos": "ctrl+g"
       }
     },
     "go_to_bookmark_4": {
@@ -4382,7 +3911,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+e",
-        "description": "Recent Files"
+        "description": "Recent Files",
+        "keys_macos": "cmd+e"
       }
     },
     "go_to_bookmark_3": {
@@ -4406,7 +3936,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+delete",
-        "description": "Unwrap/Remove"
+        "description": "Unwrap/Remove",
+        "keys_macos": "shift+cmd+delete"
       }
     },
     "navigate_to_previous_table_row": {
@@ -4417,7 +3948,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+up",
-        "description": "Navigate to previous table row"
+        "description": "Navigate to previous table row",
+        "keys_macos": "shift+cmd+alt+up"
       }
     },
     "move": {
@@ -4439,7 +3971,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f4",
-        "description": "Close"
+        "description": "Close",
+        "keys_macos": "cmd+w"
       }
     },
     "run_to_cursor": {
@@ -4461,7 +3994,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+down",
-        "description": "Show List of Tabs"
+        "description": "Show List of Tabs",
+        "keys_macos": "ctrl+down"
       }
     },
     "revert": {
@@ -4472,7 +4006,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+z",
-        "description": "Revert"
+        "description": "Revert",
+        "keys_macos": "cmd+alt+z"
       }
     },
     "find_action": {
@@ -4483,7 +4018,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+a",
-        "description": "Find Action"
+        "description": "Find Action",
+        "keys_macos": "shift+cmd+a"
       }
     },
     "complete_current_statement": {
@@ -4494,7 +4030,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+enter",
-        "description": "Complete Current Statement"
+        "description": "Complete Current Statement",
+        "keys_macos": "shift+cmd+enter"
       }
     },
     "move_caret_to_line_start_with_selection": {
@@ -4527,7 +4064,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+6",
-        "description": "TODO"
+        "description": "TODO",
+        "keys_macos": "cmd+6"
       }
     },
     "dump_lookup_element_weights_to_log": {
@@ -4538,7 +4076,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+w",
-        "description": "Dump lookup element weights to log"
+        "description": "Dump lookup element weights to log",
+        "keys_macos": "shift+cmd+alt+w"
       }
     },
     "delete_to_word_start": {
@@ -4549,7 +4088,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+backspace",
-        "description": "Delete to Word Start"
+        "description": "Delete to Word Start",
+        "keys_macos": "alt+backspace"
       }
     },
     "rerun": {
@@ -4560,7 +4100,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f5",
-        "description": "Rerun"
+        "description": "Rerun",
+        "keys_macos": "cmd+r"
       }
     },
     "terminal": {
@@ -4582,7 +4123,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+f8",
-        "description": "Toggle Temporary Line Breakpoint"
+        "description": "Toggle Temporary Line Breakpoint",
+        "keys_macos": "shift+cmd+alt+f8"
       }
     },
     "extract_field": {
@@ -4593,7 +4135,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f",
-        "description": "Extract Field"
+        "description": "Extract Field",
+        "keys_macos": "cmd+alt+f"
       }
     },
     "find": {
@@ -4604,7 +4147,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f",
-        "description": "Find"
+        "description": "Find",
+        "keys_macos": "cmd+f"
       }
     },
     "navigate_to_next_table_row": {
@@ -4615,7 +4159,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "shift+ctrl+alt+down",
-        "description": "Navigate to next table row"
+        "description": "Navigate to next table row",
+        "keys_macos": "shift+cmd+alt+down"
       }
     },
     "move_caret_to_text_start": {
@@ -4626,7 +4171,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+home",
-        "description": "Move Caret to Text Start"
+        "description": "Move Caret to Text Start",
+        "keys_macos": "cmd+home"
       }
     },
     "page_up": {
@@ -4670,7 +4216,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "f9",
-        "description": "Resume Program"
+        "description": "Resume Program",
+        "keys_macos": "cmd+alt+r"
       }
     }
   }

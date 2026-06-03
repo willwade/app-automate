@@ -6,91 +6,239 @@
   "platform_hint": null,
   "notes": "LibreOffice Writer profile using keyboard shortcuts. Works cross-platform. AT-SPI elements can be added for Linux-specific UI.",
   "shortcuts": {
-    "new_doc": {"keys": "ctrl+n", "description": "New document"},
-    "open": {"keys": "ctrl+o", "description": "Open document"},
-    "save": {"keys": "ctrl+s", "description": "Save document"},
-    "print": {"keys": "ctrl+p", "description": "Print"},
-    "close_doc": {"keys": "ctrl+w", "description": "Close document"},
-    "quit": {"keys": "ctrl+q", "description": "Quit LibreOffice"},
-    "undo": {"keys": "ctrl+z", "description": "Undo"},
-    "redo": {"keys": "ctrl+y", "description": "Redo"},
-    "bold": {"keys": "ctrl+b", "description": "Toggle bold"},
-    "italic": {"keys": "ctrl+i", "description": "Toggle italic"},
-    "underline": {"keys": "ctrl+u", "description": "Toggle underline"},
-    "find": {"keys": "ctrl+f", "description": "Find"},
-    "find_replace": {"keys": "ctrl+h", "description": "Find and replace"},
-    "select_all": {"keys": "ctrl+a", "description": "Select all"},
-    "insert_link": {"keys": "ctrl+k", "description": "Insert hyperlink"},
-    "align_left": {"keys": "ctrl+l", "description": "Align left"},
-    "align_center": {"keys": "ctrl+e", "description": "Align center"},
-    "spellcheck": {"keys": "f7", "description": "Spell check"}
+    "new_doc": {
+      "keys": "ctrl+n",
+      "keys_macos": "cmd+n",
+      "description": "New document"
+    },
+    "open": {
+      "keys": "ctrl+o",
+      "keys_macos": "cmd+o",
+      "description": "Open document"
+    },
+    "save": {
+      "keys": "ctrl+s",
+      "keys_macos": "cmd+s",
+      "description": "Save document"
+    },
+    "print": {
+      "keys": "ctrl+p",
+      "keys_macos": "cmd+p",
+      "description": "Print"
+    },
+    "close_doc": {
+      "keys": "ctrl+w",
+      "keys_macos": "cmd+w",
+      "description": "Close document"
+    },
+    "quit": {
+      "keys": "ctrl+q",
+      "keys_macos": "cmd+q",
+      "description": "Quit LibreOffice"
+    },
+    "undo": {
+      "keys": "ctrl+z",
+      "keys_macos": "cmd+z",
+      "description": "Undo"
+    },
+    "redo": {
+      "keys": "ctrl+y",
+      "keys_macos": "cmd+y",
+      "description": "Redo"
+    },
+    "bold": {
+      "keys": "ctrl+b",
+      "keys_macos": "cmd+b",
+      "description": "Toggle bold"
+    },
+    "italic": {
+      "keys": "ctrl+i",
+      "keys_macos": "cmd+i",
+      "description": "Toggle italic"
+    },
+    "underline": {
+      "keys": "ctrl+u",
+      "keys_macos": "cmd+u",
+      "description": "Toggle underline"
+    },
+    "find": {
+      "keys": "ctrl+f",
+      "keys_macos": "cmd+f",
+      "description": "Find"
+    },
+    "find_replace": {
+      "keys": "ctrl+h",
+      "keys_macos": "cmd+h",
+      "description": "Find and replace"
+    },
+    "select_all": {
+      "keys": "ctrl+a",
+      "keys_macos": "cmd+a",
+      "description": "Select all"
+    },
+    "insert_link": {
+      "keys": "ctrl+k",
+      "keys_macos": "cmd+k",
+      "description": "Insert hyperlink"
+    },
+    "align_left": {
+      "keys": "ctrl+l",
+      "keys_macos": "cmd+l",
+      "description": "Align left"
+    },
+    "align_center": {
+      "keys": "ctrl+e",
+      "keys_macos": "cmd+e",
+      "description": "Align center"
+    },
+    "spellcheck": {
+      "keys": "f7",
+      "description": "Spell check"
+    }
   },
   "semantic_elements": {
     "new_doc": {
       "label": "new_doc",
-      "aliases": ["new document", "create document"],
+      "aliases": [
+        "new document",
+        "create document"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+n", "description": "New document"}
+      "shortcut": {
+        "keys": "ctrl+n",
+        "keys_macos": "cmd+n",
+        "description": "New document"
+      }
     },
     "open": {
       "label": "open",
-      "aliases": ["open file", "open document"],
+      "aliases": [
+        "open file",
+        "open document"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+o", "description": "Open document"}
+      "shortcut": {
+        "keys": "ctrl+o",
+        "keys_macos": "cmd+o",
+        "description": "Open document"
+      }
     },
     "save": {
       "label": "save",
-      "aliases": ["save file", "save document"],
+      "aliases": [
+        "save file",
+        "save document"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+s", "description": "Save document"}
+      "shortcut": {
+        "keys": "ctrl+s",
+        "keys_macos": "cmd+s",
+        "description": "Save document"
+      }
     },
     "bold": {
       "label": "bold",
-      "aliases": ["make bold", "bold text"],
+      "aliases": [
+        "make bold",
+        "bold text"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+b", "description": "Toggle bold"}
+      "shortcut": {
+        "keys": "ctrl+b",
+        "keys_macos": "cmd+b",
+        "description": "Toggle bold"
+      }
     },
     "italic": {
       "label": "italic",
-      "aliases": ["make italic", "italicize"],
+      "aliases": [
+        "make italic",
+        "italicize"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+i", "description": "Toggle italic"}
+      "shortcut": {
+        "keys": "ctrl+i",
+        "keys_macos": "cmd+i",
+        "description": "Toggle italic"
+      }
     },
     "underline": {
       "label": "underline",
-      "aliases": ["make underline", "underline text"],
+      "aliases": [
+        "make underline",
+        "underline text"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+u", "description": "Toggle underline"}
+      "shortcut": {
+        "keys": "ctrl+u",
+        "keys_macos": "cmd+u",
+        "description": "Toggle underline"
+      }
     },
     "find": {
       "label": "find",
-      "aliases": ["search", "find text"],
+      "aliases": [
+        "search",
+        "find text"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+f", "description": "Find"}
+      "shortcut": {
+        "keys": "ctrl+f",
+        "keys_macos": "cmd+f",
+        "description": "Find"
+      }
     },
     "find_replace": {
       "label": "find_replace",
-      "aliases": ["replace", "find and replace"],
+      "aliases": [
+        "replace",
+        "find and replace"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+h", "description": "Find and replace"}
+      "shortcut": {
+        "keys": "ctrl+h",
+        "keys_macos": "cmd+h",
+        "description": "Find and replace"
+      }
     },
     "insert_link": {
       "label": "insert_link",
-      "aliases": ["hyperlink", "link", "insert link"],
+      "aliases": [
+        "hyperlink",
+        "link",
+        "insert link"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+k", "description": "Insert hyperlink"}
+      "shortcut": {
+        "keys": "ctrl+k",
+        "keys_macos": "cmd+k",
+        "description": "Insert hyperlink"
+      }
     },
     "spellcheck": {
       "label": "spellcheck",
-      "aliases": ["spell check", "check spelling"],
+      "aliases": [
+        "spell check",
+        "check spelling"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "f7", "description": "Spell check"}
+      "shortcut": {
+        "keys": "f7",
+        "description": "Spell check"
+      }
     },
     "quit": {
       "label": "quit",
-      "aliases": ["exit", "close writer"],
+      "aliases": [
+        "exit",
+        "close writer"
+      ],
       "action": "shortcut",
-      "shortcut": {"keys": "ctrl+q", "description": "Quit LibreOffice"}
+      "shortcut": {
+        "keys": "ctrl+q",
+        "keys_macos": "cmd+q",
+        "description": "Quit LibreOffice"
+      }
     }
   }
 }

@@ -68,7 +68,11 @@ void send_shortcut(string keys)
 
 Send a keyboard shortcut using the platform's native input API. The `keys` string uses `+` notation: `"ctrl+t"`, `"alt+left"`, `"f5"`, `"ctrl+shift+n"`.
 
-On macOS, SDKs should automatically map `ctrl` → `cmd` for standard shortcuts unless the profile specifies `platform: "macos"` explicitly.
+**Platform-specific keys:** Shortcuts can specify per-platform key overrides:
+```json
+{"keys": "ctrl+t", "keys_macos": "cmd+t"}
+```
+The SDK must resolve the correct keys for the current platform using `keys_for_platform()`. The `keys` field is always required as the default/fallback.
 
 ## Action Types
 

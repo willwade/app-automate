@@ -82,7 +82,19 @@
       "properties": {
         "keys": {
           "type": "string",
-          "description": "Key combination using '+' notation. Examples: 'ctrl+t', 'alt+left', 'f5', 'ctrl+shift+n'."
+          "description": "Default key combination using '+' notation. Used when no platform-specific override matches. Examples: 'ctrl+t', 'alt+left', 'f5'."
+        },
+        "keys_macos": {
+          "type": ["string", "null"],
+          "description": "macOS-specific key combination. E.g. 'cmd+t'."
+        },
+        "keys_linux": {
+          "type": ["string", "null"],
+          "description": "Linux-specific key combination."
+        },
+        "keys_windows": {
+          "type": ["string", "null"],
+          "description": "Windows-specific key combination."
         },
         "description": {
           "type": "string",
@@ -90,7 +102,7 @@
         },
         "platform": {
           "type": ["string", "null"],
-          "description": "Platform override: 'windows', 'linux', 'macos', or null for all platforms."
+          "description": "Deprecated. Use keys_macos/keys_linux/keys_windows instead."
         }
       }
     },

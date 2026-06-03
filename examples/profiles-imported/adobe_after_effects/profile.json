@@ -4,16 +4,12 @@
   "type": "semantic",
   "backend": "shortcut",
   "platform_hint": null,
-  "notes": "Auto-generated from ShortcutMapper. 586 shortcuts.",
+  "notes": "Auto-generated from ShortcutMapper. 392 shortcuts.",
   "shortcuts": {
-    "select_all_mac": {
-      "keys": "cmd+a",
-      "description": "Select all",
-      "platform": "macos"
-    },
     "select_all": {
       "keys": "ctrl+a",
-      "description": "Select all"
+      "description": "Select all",
+      "keys_macos": "cmd+a"
     },
     "deselect_all": {
       "keys": "f2",
@@ -27,90 +23,54 @@
       "keys": "numenter",
       "description": "Open selected layer/composition/footage"
     },
-    "move_layer_mask_effect_to_top_mac": {
-      "keys": "cmd+alt+up",
-      "description": "Move layer/mask/effect to top",
-      "platform": "macos"
-    },
     "move_layer_mask_effect_to_top": {
       "keys": "ctrl+alt+up",
-      "description": "Move layer/mask/effect to top"
-    },
-    "move_layer_mask_effect_to_bottom_mac": {
-      "keys": "cmd+alt+down",
-      "description": "Move layer/mask/effect to bottom",
-      "platform": "macos"
+      "description": "Move layer/mask/effect to top",
+      "keys_macos": "cmd+alt+up"
     },
     "move_layer_mask_effect_to_bottom": {
       "keys": "ctrl+alt+down",
-      "description": "Move layer/mask/effect to bottom"
-    },
-    "duplicate_selected_layers_masks_effects_text_selectors_animators_puppet_meshes_shapes_render_items_output_modules_or_compositions_mac": {
-      "keys": "cmd+d",
-      "description": "Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)",
-      "platform": "macos"
+      "description": "Move layer/mask/effect to bottom",
+      "keys_macos": "cmd+alt+down"
     },
     "duplicate_selected_layers_masks_effects_text_selectors_animators_puppet_meshes_shapes_render_items_output_modules_or_compositions": {
       "keys": "ctrl+d",
-      "description": "Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)"
-    },
-    "quit_mac": {
-      "keys": "cmd+q",
-      "description": "Quit",
-      "platform": "macos"
+      "description": "Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)",
+      "keys_macos": "cmd+d"
     },
     "quit": {
       "keys": "ctrl+q",
-      "description": "Quit"
-    },
-    "undo_mac": {
-      "keys": "cmd+z",
-      "description": "Undo",
-      "platform": "macos"
+      "description": "Quit",
+      "keys_macos": "cmd+q"
     },
     "undo": {
       "keys": "ctrl+z",
-      "description": "Undo"
-    },
-    "redo_mac": {
-      "keys": "cmd+shift+z",
-      "description": "Redo",
-      "platform": "macos"
+      "description": "Undo",
+      "keys_macos": "cmd+z"
     },
     "redo": {
       "keys": "ctrl+shift+z",
-      "description": "Redo"
-    },
-    "purge_all_memory_mac": {
-      "keys": "cmd+alt+/",
-      "description": "Purge All Memory",
-      "platform": "macos"
+      "description": "Redo",
+      "keys_macos": "cmd+shift+z"
     },
     "purge_all_memory": {
       "keys": "ctrl+alt+/",
-      "description": "Purge All Memory"
+      "description": "Purge All Memory",
+      "keys_macos": "cmd+alt+/"
     },
     "return_exit_interrupt": {
       "keys": "esc",
       "description": "Return/Exit/Interrupt"
     },
-    "display_filename_corresponding_to_the_frame_at_the_current_time_in_the_info_panel_mac": {
-      "keys": "cmd+alt+e",
-      "description": "Display filename corresponding to the frame at the current time in the Info panel",
-      "platform": "macos"
-    },
     "display_filename_corresponding_to_the_frame_at_the_current_time_in_the_info_panel": {
       "keys": "ctrl+alt+e",
-      "description": "Display filename corresponding to the frame at the current time in the Info panel"
-    },
-    "cycle_through_tools_mac": {
-      "keys": "option-click tool button in tools panel",
-      "description": "Cycle through tools",
-      "platform": "macos"
+      "description": "Display filename corresponding to the frame at the current time in the Info panel",
+      "keys_macos": "cmd+alt+e"
     },
     "cycle_through_tools": {
       "keys": "alt-click tool button in tools panel",
-      "description": "Cycle through tools"
+      "description": "Cycle through tools",
+      "keys_macos": "option-click tool button in tools panel"
     },
     "selection_tool": {
       "keys": "v",
@@ -152,72 +112,44 @@
       "keys": "q",
       "description": "Cycle mask and shape tools"
     },
-    "cycle_type_tools_mac": {
-      "keys": "cmd+t",
-      "description": "Cycle Type tools",
-      "platform": "macos"
-    },
     "cycle_type_tools": {
       "keys": "ctrl+t",
-      "description": "Cycle Type tools"
+      "description": "Cycle Type tools",
+      "keys_macos": "cmd+t"
     },
     "cycle_pen_and_mask_feather_tools": {
       "keys": "g",
       "description": "Cycle Pen and Mask Feather tools"
     },
-    "cycle_brush_clone_stamp_eraser_mac": {
-      "keys": "cmd+b",
-      "description": "Cycle Brush, Clone Stamp, Eraser",
-      "platform": "macos"
-    },
     "cycle_brush_clone_stamp_eraser": {
       "keys": "ctrl+b",
-      "description": "Cycle Brush, Clone Stamp, Eraser"
-    },
-    "cycle_puppet_tools_mac": {
-      "keys": "cmd+p",
-      "description": "Cycle Puppet tools",
-      "platform": "macos"
+      "description": "Cycle Brush, Clone Stamp, Eraser",
+      "keys_macos": "cmd+b"
     },
     "cycle_puppet_tools": {
       "keys": "ctrl+p",
-      "description": "Cycle Puppet tools"
-    },
-    "zoom_in_mac": {
-      "keys": "cmd+=",
-      "description": "Zoom in",
-      "platform": "macos"
+      "description": "Cycle Puppet tools",
+      "keys_macos": "cmd+p"
     },
     "zoom_in": {
       "keys": "ctrl+=",
-      "description": "Zoom in"
-    },
-    "zoom_out_mac": {
-      "keys": "cmd+-",
-      "description": "Zoom out",
-      "platform": "macos"
+      "description": "Zoom in",
+      "keys_macos": "cmd+="
     },
     "zoom_out": {
       "keys": "ctrl+-",
-      "description": "Zoom out"
-    },
-    "new_composition_mac": {
-      "keys": "cmd+n",
-      "description": "New composition",
-      "platform": "macos"
+      "description": "Zoom out",
+      "keys_macos": "cmd+-"
     },
     "new_composition": {
       "keys": "ctrl+n",
-      "description": "New composition"
-    },
-    "composition_settings_mac": {
-      "keys": "cmd+k",
-      "description": "Composition Settings",
-      "platform": "macos"
+      "description": "New composition",
+      "keys_macos": "cmd+n"
     },
     "composition_settings": {
       "keys": "ctrl+k",
-      "description": "Composition Settings"
+      "description": "Composition Settings",
+      "keys_macos": "cmd+k"
     },
     "set_beginning_of_work_area_to_current_time": {
       "keys": "b",
@@ -227,14 +159,10 @@
       "keys": "n",
       "description": "Set end of work area to current time"
     },
-    "set_work_area_to_duration_of_selected_layers_or_if_no_layers_are_selected_set_work_area_to_composition_duration_mac": {
-      "keys": "cmd+alt+b",
-      "description": "Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration",
-      "platform": "macos"
-    },
     "set_work_area_to_duration_of_selected_layers_or_if_no_layers_are_selected_set_work_area_to_composition_duration": {
       "keys": "ctrl+alt+b",
-      "description": "Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration"
+      "description": "Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration",
+      "keys_macos": "cmd+alt+b"
     },
     "open_composition_mini_flowchart_for_active_composition": {
       "keys": "tab",
@@ -244,131 +172,75 @@
       "keys": "shift+esc",
       "description": "Activate the most recently active composition that is in the same composition hierarchy as the currently active composition"
     },
-    "delete_all_effects_from_selected_layers_mac": {
-      "keys": "cmd+shift+e",
-      "description": "Delete all effects from selected layers",
-      "platform": "macos"
-    },
     "delete_all_effects_from_selected_layers": {
       "keys": "ctrl+shift+e",
-      "description": "Delete all effects from selected layers"
-    },
-    "apply_most_recently_applied_effect_to_selected_layers_mac": {
-      "keys": "cmd+alt+shift+e",
-      "description": "Apply most recently applied effect to selected layers",
-      "platform": "macos"
+      "description": "Delete all effects from selected layers",
+      "keys_macos": "cmd+shift+e"
     },
     "apply_most_recently_applied_effect_to_selected_layers": {
       "keys": "ctrl+alt+shift+e",
-      "description": "Apply most recently applied effect to selected layers"
-    },
-    "apply_most_recently_applied_animation_preset_to_selected_layers_mac": {
-      "keys": "cmd+alt+shift+f",
-      "description": "Apply most recently applied animation preset to selected layers",
-      "platform": "macos"
+      "description": "Apply most recently applied effect to selected layers",
+      "keys_macos": "cmd+alt+shift+e"
     },
     "apply_most_recently_applied_animation_preset_to_selected_layers": {
       "keys": "ctrl+alt+shift+f",
-      "description": "Apply most recently applied animation preset to selected layers"
-    },
-    "import_one_file_or_image_sequence_mac": {
-      "keys": "cmd+i",
-      "description": "Import one file or image sequence",
-      "platform": "macos"
+      "description": "Apply most recently applied animation preset to selected layers",
+      "keys_macos": "cmd+alt+shift+f"
     },
     "import_one_file_or_image_sequence": {
       "keys": "ctrl+i",
-      "description": "Import one file or image sequence"
-    },
-    "import_multiple_files_or_image_sequences_mac": {
-      "keys": "cmd+alt+i",
-      "description": "Import multiple files or image sequences",
-      "platform": "macos"
+      "description": "Import one file or image sequence",
+      "keys_macos": "cmd+i"
     },
     "import_multiple_files_or_image_sequences": {
       "keys": "ctrl+alt+i",
-      "description": "Import multiple files or image sequences"
-    },
-    "add_selected_items_to_most_recently_activated_composition_mac": {
-      "keys": "cmd+/",
-      "description": "Add selected items to most recently activated composition",
-      "platform": "macos"
+      "description": "Import multiple files or image sequences",
+      "keys_macos": "cmd+alt+i"
     },
     "add_selected_items_to_most_recently_activated_composition": {
       "keys": "ctrl+/",
-      "description": "Add selected items to most recently activated composition"
-    },
-    "replace_selected_source_footage_for_selected_layers_with_footage_item_selected_in_project_panel_mac": {
-      "keys": "cmd+alt+/",
-      "description": "Replace selected source footage for selected layers with footage item selected in Project panel",
-      "platform": "macos"
+      "description": "Add selected items to most recently activated composition",
+      "keys_macos": "cmd+/"
     },
     "replace_selected_source_footage_for_selected_layers_with_footage_item_selected_in_project_panel": {
       "keys": "ctrl+alt+/",
-      "description": "Replace selected source footage for selected layers with footage item selected in Project panel"
-    },
-    "delete_a_footage_item_without_a_warning_mac": {
-      "keys": "cmd+delete",
-      "description": "Delete a footage item without a warning",
-      "platform": "macos"
+      "description": "Replace selected source footage for selected layers with footage item selected in Project panel",
+      "keys_macos": "cmd+alt+/"
     },
     "delete_a_footage_item_without_a_warning": {
       "keys": "ctrl+backspace",
-      "description": "Delete a footage item without a warning"
-    },
-    "open_interpret_footage_dialog_box_for_selected_footage_item_mac": {
-      "keys": "cmd+alt+g",
-      "description": "Open Interpret Footage dialog box for selected footage item",
-      "platform": "macos"
+      "description": "Delete a footage item without a warning",
+      "keys_macos": "cmd+delete"
     },
     "open_interpret_footage_dialog_box_for_selected_footage_item": {
       "keys": "ctrl+alt+g",
-      "description": "Open Interpret Footage dialog box for selected footage item"
-    },
-    "remember_footage_interpretation_mac": {
-      "keys": "cmd+alt+c",
-      "description": "Remember footage interpretation",
-      "platform": "macos"
+      "description": "Open Interpret Footage dialog box for selected footage item",
+      "keys_macos": "cmd+alt+g"
     },
     "remember_footage_interpretation": {
       "keys": "ctrl+alt+c",
-      "description": "Remember footage interpretation"
-    },
-    "edit_selected_footage_item_in_application_with_which_it_s_associated_mac": {
-      "keys": "cmd+e",
-      "description": "Edit selected footage item in application with which it\u2019s associated",
-      "platform": "macos"
+      "description": "Remember footage interpretation",
+      "keys_macos": "cmd+alt+c"
     },
     "edit_selected_footage_item_in_application_with_which_it_s_associated": {
       "keys": "ctrl+e",
-      "description": "Edit selected footage item in application with which it\u2019s associated"
-    },
-    "replace_selected_footage_item_mac": {
-      "keys": "cmd+h",
-      "description": "Replace selected footage item",
-      "platform": "macos"
+      "description": "Edit selected footage item in application with which it\u2019s associated",
+      "keys_macos": "cmd+e"
     },
     "replace_selected_footage_item": {
       "keys": "ctrl+h",
-      "description": "Replace selected footage item"
-    },
-    "reload_selected_footage_items_mac": {
-      "keys": "cmd+alt+l",
-      "description": "Reload selected footage items",
-      "platform": "macos"
+      "description": "Replace selected footage item",
+      "keys_macos": "cmd+h"
     },
     "reload_selected_footage_items": {
       "keys": "ctrl+alt+l",
-      "description": "Reload selected footage items"
-    },
-    "set_proxy_for_selected_footage_item_mac": {
-      "keys": "cmd+alt+p",
-      "description": "Set proxy for selected footage item",
-      "platform": "macos"
+      "description": "Reload selected footage items",
+      "keys_macos": "cmd+alt+l"
     },
     "set_proxy_for_selected_footage_item": {
       "keys": "ctrl+alt+p",
-      "description": "Set proxy for selected footage item"
+      "description": "Set proxy for selected footage item",
+      "keys_macos": "cmd+alt+p"
     },
     "toggle_graph_editor_layer_bar_modes": {
       "keys": "shift+f3",
@@ -378,14 +250,10 @@
       "keys": "click property name",
       "description": "Select all keyframes for a property"
     },
-    "select_all_visible_keyframes_and_properties_mac": {
-      "keys": "cmd+alt+a",
-      "description": "Select all visible keyframes and properties",
-      "platform": "macos"
-    },
     "select_all_visible_keyframes_and_properties": {
       "keys": "ctrl+alt+a",
-      "description": "Select all visible keyframes and properties"
+      "description": "Select all visible keyframes and properties",
+      "keys_macos": "cmd+alt+a"
     },
     "deselect_all_keyframes_properties_and_property_groups": {
       "keys": "shift+f2",
@@ -407,41 +275,25 @@
       "keys": "alt+shift+left",
       "description": "Move keyframe 10 frames earlier"
     },
-    "set_interpolation_for_selected_keyframes_mac": {
-      "keys": "cmd+alt+k",
-      "description": "Set interpolation for selected keyframes",
-      "platform": "macos"
-    },
     "set_interpolation_for_selected_keyframes": {
       "keys": "ctrl+alt+k",
-      "description": "Set interpolation for selected keyframes"
-    },
-    "set_keyframe_interpolation_hold_or_auto_bezier_mac": {
-      "keys": "cmd+alt+h",
-      "description": "Set keyframe interpolation: hold or Auto Bezier",
-      "platform": "macos"
+      "description": "Set interpolation for selected keyframes",
+      "keys_macos": "cmd+alt+k"
     },
     "set_keyframe_interpolation_hold_or_auto_bezier": {
       "keys": "ctrl+alt+h",
-      "description": "Set keyframe interpolation: hold or Auto Bezier"
-    },
-    "set_keyframe_interpolation_linear_or_auto_bezier_mac": {
-      "keys": "command-click in layer bar mode",
-      "description": "Set keyframe interpolation: linear or Auto Bezier",
-      "platform": "macos"
+      "description": "Set keyframe interpolation: hold or Auto Bezier",
+      "keys_macos": "cmd+alt+h"
     },
     "set_keyframe_interpolation_linear_or_auto_bezier": {
       "keys": "ctrl-click in layer bar mode",
-      "description": "Set keyframe interpolation: linear or Auto Bezier"
-    },
-    "set_keyframe_interpolation_linear_or_hold_mac": {
-      "keys": "cmd+option-click in layer bar mode",
-      "description": "Set keyframe interpolation: linear or hold",
-      "platform": "macos"
+      "description": "Set keyframe interpolation: linear or Auto Bezier",
+      "keys_macos": "command-click in layer bar mode"
     },
     "set_keyframe_interpolation_linear_or_hold": {
       "keys": "ctrl+alt-click in layer bar mode",
-      "description": "Set keyframe interpolation: linear or hold"
+      "description": "Set keyframe interpolation: linear or hold",
+      "keys_macos": "cmd+option-click in layer bar mode"
     },
     "easy_ease_selected_keyframes": {
       "keys": "f9",
@@ -451,108 +303,64 @@
       "keys": "shift+f9",
       "description": "Easy ease selected keyframes in"
     },
-    "easy_ease_selected_keyframes_out_mac": {
-      "keys": "cmd+shift+f9",
-      "description": "Easy ease selected keyframes out",
-      "platform": "macos"
-    },
     "easy_ease_selected_keyframes_out": {
       "keys": "ctrl+shift+f9",
-      "description": "Easy ease selected keyframes out"
-    },
-    "set_velocity_for_selected_keyframes_mac": {
-      "keys": "cmd+shift+k",
-      "description": "Set velocity for selected keyframes",
-      "platform": "macos"
+      "description": "Easy ease selected keyframes out",
+      "keys_macos": "cmd+shift+f9"
     },
     "set_velocity_for_selected_keyframes": {
       "keys": "ctrl+shift+k",
-      "description": "Set velocity for selected keyframes"
-    },
-    "add_or_remove_keyframe_at_current_time_for_property_shortcuts_see_showing_properties_and_groups_in_the_timeline_panel_mac": {
-      "keys": "alt+property shortcut",
-      "description": "Add or remove keyframe at current time. For property shortcuts, see Showing properties and groups in the Timeline panel .",
-      "platform": "macos"
+      "description": "Set velocity for selected keyframes",
+      "keys_macos": "cmd+shift+k"
     },
     "add_or_remove_keyframe_at_current_time_for_property_shortcuts_see_showing_properties_and_groups_in_the_timeline_panel": {
       "keys": "alt+shift+property shortcut",
-      "description": "Add or remove keyframe at current time. For property shortcuts, see Showing properties and groups in the Timeline panel ."
-    },
-    "new_text_layer_mac": {
-      "keys": "cmd+alt+shift+t",
-      "description": "New text layer",
-      "platform": "macos"
+      "description": "Add or remove keyframe at current time. For property shortcuts, see Showing properties and groups in the Timeline panel .",
+      "keys_macos": "alt+property shortcut"
     },
     "new_text_layer": {
       "keys": "ctrl+alt+shift+t",
-      "description": "New text layer"
-    },
-    "new_solid_layer_mac": {
-      "keys": "cmd+y",
-      "description": "New solid layer",
-      "platform": "macos"
+      "description": "New text layer",
+      "keys_macos": "cmd+alt+shift+t"
     },
     "new_solid_layer": {
       "keys": "ctrl+y",
-      "description": "New solid layer"
-    },
-    "new_null_layer_mac": {
-      "keys": "cmd+alt+shift+y",
-      "description": "New null layer",
-      "platform": "macos"
+      "description": "New solid layer",
+      "keys_macos": "cmd+y"
     },
     "new_null_layer": {
       "keys": "ctrl+alt+shift+y",
-      "description": "New null layer"
-    },
-    "new_adjustment_layer_mac": {
-      "keys": "cmd+alt+y",
-      "description": "New adjustment layer",
-      "platform": "macos"
+      "description": "New null layer",
+      "keys_macos": "cmd+alt+shift+y"
     },
     "new_adjustment_layer": {
       "keys": "ctrl+alt+y",
-      "description": "New adjustment layer"
+      "description": "New adjustment layer",
+      "keys_macos": "cmd+alt+y"
     },
     "select_layer_by_its_number": {
       "keys": "num1-9",
       "description": "Select layer by its number"
     },
-    "select_next_layer_in_stacking_order_mac": {
-      "keys": "cmd+down",
-      "description": "Select next layer in stacking order",
-      "platform": "macos"
-    },
     "select_next_layer_in_stacking_order": {
       "keys": "ctrl+down",
-      "description": "Select next layer in stacking order"
-    },
-    "select_previous_layer_in_stacking_order_mac": {
-      "keys": "cmd+up",
-      "description": "Select previous layer in stacking order",
-      "platform": "macos"
+      "description": "Select next layer in stacking order",
+      "keys_macos": "cmd+down"
     },
     "select_previous_layer_in_stacking_order": {
       "keys": "ctrl+up",
-      "description": "Select previous layer in stacking order"
-    },
-    "extend_selection_to_next_layer_in_stacking_order_mac": {
-      "keys": "cmd+shift+down",
-      "description": "Extend selection to next layer in stacking order",
-      "platform": "macos"
+      "description": "Select previous layer in stacking order",
+      "keys_macos": "cmd+up"
     },
     "extend_selection_to_next_layer_in_stacking_order": {
       "keys": "ctrl+shift+down",
-      "description": "Extend selection to next layer in stacking order"
-    },
-    "extend_selection_to_previous_layer_in_stacking_order_mac": {
-      "keys": "cmd+shift+up",
-      "description": "Extend selection to previous layer in stacking order",
-      "platform": "macos"
+      "description": "Extend selection to next layer in stacking order",
+      "keys_macos": "cmd+shift+down"
     },
     "extend_selection_to_previous_layer_in_stacking_order": {
       "keys": "ctrl+shift+up",
-      "description": "Extend selection to previous layer in stacking order"
+      "description": "Extend selection to previous layer in stacking order",
+      "keys_macos": "cmd+shift+up"
     },
     "toggle_parent_column": {
       "keys": "shift+f4",
@@ -562,135 +370,79 @@
       "keys": "f4",
       "description": "Toggle Layer Switches and Modes columns"
     },
-    "setting_the_sampling_method_for_selected_layers_mac": {
-      "keys": "alt+b / option+shift+b",
-      "description": "Setting the sampling method for selected layers",
-      "platform": "macos"
-    },
     "setting_the_sampling_method_for_selected_layers": {
       "keys": "alt+b / alt+shift+b",
-      "description": "Setting the sampling method for selected layers"
-    },
-    "turn_off_all_other_solo_switches_mac": {
-      "keys": "option-click solo switch",
-      "description": "Turn off all other solo switches",
-      "platform": "macos"
+      "description": "Setting the sampling method for selected layers",
+      "keys_macos": "alt+b / option+shift+b"
     },
     "turn_off_all_other_solo_switches": {
       "keys": "alt-click solo switch",
-      "description": "Turn off all other solo switches"
-    },
-    "turn_video_switch_on_or_off_for_selected_layers_mac": {
-      "keys": "cmd+alt+shift+v",
-      "description": "Turn Video switch on or off for selected layers",
-      "platform": "macos"
+      "description": "Turn off all other solo switches",
+      "keys_macos": "option-click solo switch"
     },
     "turn_video_switch_on_or_off_for_selected_layers": {
       "keys": "ctrl+alt+shift+v",
-      "description": "Turn Video switch on or off for selected layers"
-    },
-    "turn_off_video_switch_for_all_video_layers_other_than_selected_layers_mac": {
-      "keys": "cmd+shift+v",
-      "description": "Turn off Video switch for all video layers other than selected layers",
-      "platform": "macos"
+      "description": "Turn Video switch on or off for selected layers",
+      "keys_macos": "cmd+alt+shift+v"
     },
     "turn_off_video_switch_for_all_video_layers_other_than_selected_layers": {
       "keys": "ctrl+shift+v",
-      "description": "Turn off Video switch for all video layers other than selected layers"
-    },
-    "open_settings_dialog_box_for_selected_solid_light_camera_null_or_adjustment_layer_mac": {
-      "keys": "cmd+shift+y",
-      "description": "Open settings dialog box for selected solid, light, camera, null, or adjustment layer",
-      "platform": "macos"
+      "description": "Turn off Video switch for all video layers other than selected layers",
+      "keys_macos": "cmd+shift+v"
     },
     "open_settings_dialog_box_for_selected_solid_light_camera_null_or_adjustment_layer": {
       "keys": "ctrl+shift+y",
-      "description": "Open settings dialog box for selected solid, light, camera, null, or adjustment layer"
-    },
-    "paste_layers_at_current_time_mac": {
-      "keys": "cmd+alt+v",
-      "description": "Paste layers at current time",
-      "platform": "macos"
+      "description": "Open settings dialog box for selected solid, light, camera, null, or adjustment layer",
+      "keys_macos": "cmd+shift+y"
     },
     "paste_layers_at_current_time": {
       "keys": "ctrl+alt+v",
-      "description": "Paste layers at current time"
-    },
-    "split_selected_layers_mac": {
-      "keys": "cmd+shift+d",
-      "description": "Split selected layers",
-      "platform": "macos"
+      "description": "Paste layers at current time",
+      "keys_macos": "cmd+alt+v"
     },
     "split_selected_layers": {
       "keys": "ctrl+shift+d",
-      "description": "Split selected layers"
-    },
-    "precompose_selected_layers_mac": {
-      "keys": "cmd+shift+c",
-      "description": "Precompose selected layers",
-      "platform": "macos"
+      "description": "Split selected layers",
+      "keys_macos": "cmd+shift+d"
     },
     "precompose_selected_layers": {
       "keys": "ctrl+shift+c",
-      "description": "Precompose selected layers"
+      "description": "Precompose selected layers",
+      "keys_macos": "cmd+shift+c"
     },
     "open_layer_in_layer_panel": {
       "keys": "double-click a layer",
       "description": "Open layer in Layer panel"
     },
-    "open_source_of_a_layer_in_footage_panel_mac": {
-      "keys": "option-double-click a layer",
-      "description": "Open source of a layer in Footage panel",
-      "platform": "macos"
-    },
     "open_source_of_a_layer_in_footage_panel": {
       "keys": "alt-double-click a layer",
-      "description": "Open source of a layer in Footage panel"
-    },
-    "reverse_selected_layers_in_time_mac": {
-      "keys": "cmd+alt+r",
-      "description": "Reverse selected layers in time",
-      "platform": "macos"
+      "description": "Open source of a layer in Footage panel",
+      "keys_macos": "option-double-click a layer"
     },
     "reverse_selected_layers_in_time": {
       "keys": "ctrl+alt+r",
-      "description": "Reverse selected layers in time"
-    },
-    "enable_time_remapping_for_selected_layers_mac": {
-      "keys": "cmd+alt+t",
-      "description": "Enable time remapping for selected layers",
-      "platform": "macos"
+      "description": "Reverse selected layers in time",
+      "keys_macos": "cmd+alt+r"
     },
     "enable_time_remapping_for_selected_layers": {
       "keys": "ctrl+alt+t",
-      "description": "Enable time remapping for selected layers"
-    },
-    "add_or_remove_expression_for_a_property_mac": {
-      "keys": "option-click stopwatch",
-      "description": "Add or remove expression for a property",
-      "platform": "macos"
+      "description": "Enable time remapping for selected layers",
+      "keys_macos": "cmd+alt+t"
     },
     "add_or_remove_expression_for_a_property": {
       "keys": "alt-click stopwatch",
-      "description": "Add or remove expression for a property"
-    },
-    "set_in_point_by_time_stretching_mac": {
-      "keys": "cmd+shift+,",
-      "description": "Set In point by time-stretching",
-      "platform": "macos"
+      "description": "Add or remove expression for a property",
+      "keys_macos": "option-click stopwatch"
     },
     "set_in_point_by_time_stretching": {
       "keys": "ctrl+shift+,",
-      "description": "Set In point by time-stretching"
-    },
-    "set_out_point_by_time_stretching_mac": {
-      "keys": "cmd+alt+,",
-      "description": "Set Out point by time-stretching",
-      "platform": "macos"
+      "description": "Set In point by time-stretching",
+      "keys_macos": "cmd+shift+,"
     },
     "set_out_point_by_time_stretching": {
       "keys": "ctrl+alt+,",
-      "description": "Set Out point by time-stretching"
+      "description": "Set Out point by time-stretching",
+      "keys_macos": "cmd+alt+,"
     },
     "with_selected_layers_move_in_point_to_beginning_of_composition": {
       "keys": "alt+home",
@@ -700,50 +452,30 @@
       "keys": "alt+end",
       "description": "With selected layers: move Out point to end of composition"
     },
-    "lock_selected_layers_mac": {
-      "keys": "cmd+l",
-      "description": "Lock selected layers",
-      "platform": "macos"
-    },
     "lock_selected_layers": {
       "keys": "ctrl+l",
-      "description": "Lock selected layers"
-    },
-    "unlock_all_layers_mac": {
-      "keys": "cmd+shift+l",
-      "description": "Unlock all layers",
-      "platform": "macos"
+      "description": "Lock selected layers",
+      "keys_macos": "cmd+l"
     },
     "unlock_all_layers": {
       "keys": "ctrl+shift+l",
-      "description": "Unlock all layers"
-    },
-    "set_quality_to_best_for_selected_layers_mac": {
-      "keys": "cmd+u",
-      "description": "Set Quality to Best for selected layers",
-      "platform": "macos"
+      "description": "Unlock all layers",
+      "keys_macos": "cmd+shift+l"
     },
     "set_quality_to_best_for_selected_layers": {
       "keys": "ctrl+u",
-      "description": "Set Quality to Best for selected layers"
-    },
-    "set_quality_to_draft_for_selected_layers_mac": {
-      "keys": "cmd+shift+u",
-      "description": "Set Quality to Draft for selected layers",
-      "platform": "macos"
+      "description": "Set Quality to Best for selected layers",
+      "keys_macos": "cmd+u"
     },
     "set_quality_to_draft_for_selected_layers": {
       "keys": "ctrl+shift+u",
-      "description": "Set Quality to Draft for selected layers"
-    },
-    "set_quality_to_wireframe_for_selected_layers_mac": {
-      "keys": "cmd+alt+shift+u",
-      "description": "Set Quality to Wireframe for selected layers",
-      "platform": "macos"
+      "description": "Set Quality to Draft for selected layers",
+      "keys_macos": "cmd+shift+u"
     },
     "set_quality_to_wireframe_for_selected_layers": {
       "keys": "ctrl+alt+shift+u",
-      "description": "Set Quality to Wireframe for selected layers"
+      "description": "Set Quality to Wireframe for selected layers",
+      "keys_macos": "cmd+alt+shift+u"
     },
     "cycle_forward_through_blending_modes_for_selected_layers": {
       "keys": "shift+-",
@@ -757,14 +489,10 @@
       "keys": "num*",
       "description": "Set marker at current time"
     },
-    "set_marker_at_current_time_and_open_marker_dialog_box_mac": {
-      "keys": "alt+num*or control+alt+8",
-      "description": "Set marker at current time and open marker dialog box",
-      "platform": "macos"
-    },
     "set_marker_at_current_time_and_open_marker_dialog_box": {
       "keys": "alt+num*",
-      "description": "Set marker at current time and open marker dialog box"
+      "description": "Set marker at current time and open marker dialog box",
+      "keys_macos": "alt+num*or control+alt+8"
     },
     "set_and_number_a_composition_marker_at_the_current_time": {
       "keys": "shift+0-9",
@@ -774,41 +502,25 @@
       "keys": "0-9",
       "description": "Go to a composition marker"
     },
-    "display_the_duration_between_two_layer_markers_or_keyframes_in_the_info_panel_mac": {
-      "keys": "option-click the markers",
-      "description": "Display the duration between two layer markers or keyframes in the Info panel",
-      "platform": "macos"
-    },
     "display_the_duration_between_two_layer_markers_or_keyframes_in_the_info_panel": {
       "keys": "alt-click the markers",
-      "description": "Display the duration between two layer markers or keyframes in the Info panel"
-    },
-    "remove_marker_mac": {
-      "keys": "command-click marker",
-      "description": "Remove marker",
-      "platform": "macos"
+      "description": "Display the duration between two layer markers or keyframes in the Info panel",
+      "keys_macos": "option-click the markers"
     },
     "remove_marker": {
       "keys": "ctrl-click marker",
-      "description": "Remove marker"
-    },
-    "new_mask_mac": {
-      "keys": "cmd+shift+n",
-      "description": "New mask",
-      "platform": "macos"
+      "description": "Remove marker",
+      "keys_macos": "command-click marker"
     },
     "new_mask": {
       "keys": "ctrl+shift+n",
-      "description": "New mask"
-    },
-    "select_all_points_in_a_mask_mac": {
-      "keys": "option-click mask",
-      "description": "Select all points in a mask",
-      "platform": "macos"
+      "description": "New mask",
+      "keys_macos": "cmd+shift+n"
     },
     "select_all_points_in_a_mask": {
       "keys": "alt-click mask",
-      "description": "Select all points in a mask"
+      "description": "Select all points in a mask",
+      "keys_macos": "option-click mask"
     },
     "select_next_mask": {
       "keys": "alt+`",
@@ -822,59 +534,35 @@
       "keys": "double-click mask with selection tool",
       "description": "Enter free-transform mask editing mode"
     },
-    "scale_around_center_point_in_free_transform_mode_mac": {
-      "keys": "command-drag",
-      "description": "Scale around center point in Free Transform mode",
-      "platform": "macos"
-    },
     "scale_around_center_point_in_free_transform_mode": {
       "keys": "ctrl-drag",
-      "description": "Scale around center point in Free Transform mode"
-    },
-    "toggle_between_smooth_and_corner_points_mac": {
-      "keys": "cmd+option-click vertex",
-      "description": "Toggle between smooth and corner points",
-      "platform": "macos"
+      "description": "Scale around center point in Free Transform mode",
+      "keys_macos": "command-drag"
     },
     "toggle_between_smooth_and_corner_points": {
       "keys": "ctrl+alt-click vertex",
-      "description": "Toggle between smooth and corner points"
-    },
-    "redraw_bezier_handles_mac": {
-      "keys": "cmd+option-drag vertex",
-      "description": "Redraw Bezier handles",
-      "platform": "macos"
+      "description": "Toggle between smooth and corner points",
+      "keys_macos": "cmd+option-click vertex"
     },
     "redraw_bezier_handles": {
       "keys": "ctrl+alt-drag vertex",
-      "description": "Redraw Bezier handles"
-    },
-    "invert_selected_mask_mac": {
-      "keys": "cmd+shift+i",
-      "description": "Invert selected mask",
-      "platform": "macos"
+      "description": "Redraw Bezier handles",
+      "keys_macos": "cmd+option-drag vertex"
     },
     "invert_selected_mask": {
       "keys": "ctrl+shift+i",
-      "description": "Invert selected mask"
-    },
-    "open_mask_feather_dialog_box_for_selected_mask_mac": {
-      "keys": "cmd+shift+f",
-      "description": "Open Mask Feather dialog box for selected mask",
-      "platform": "macos"
+      "description": "Invert selected mask",
+      "keys_macos": "cmd+shift+i"
     },
     "open_mask_feather_dialog_box_for_selected_mask": {
       "keys": "ctrl+shift+f",
-      "description": "Open Mask Feather dialog box for selected mask"
-    },
-    "open_mask_shape_dialog_box_for_selected_mask_mac": {
-      "keys": "cmd+shift+m",
-      "description": "Open Mask Shape dialog box for selected mask",
-      "platform": "macos"
+      "description": "Open Mask Feather dialog box for selected mask",
+      "keys_macos": "cmd+shift+f"
     },
     "open_mask_shape_dialog_box_for_selected_mask": {
       "keys": "ctrl+shift+m",
-      "description": "Open Mask Shape dialog box for selected mask"
+      "description": "Open Mask Shape dialog box for selected mask",
+      "keys_macos": "cmd+shift+m"
     },
     "move_selection_1_pixel_at_current_zoom": {
       "keys": "arrow keys",
@@ -896,32 +584,20 @@
       "keys": "f12",
       "description": "Switch to 3D view 3"
     },
-    "new_light_mac": {
-      "keys": "cmd+alt+shift+l",
-      "description": "New light",
-      "platform": "macos"
-    },
     "new_light": {
       "keys": "ctrl+alt+shift+l",
-      "description": "New light"
-    },
-    "new_camera_mac": {
-      "keys": "cmd+alt+shift+c",
-      "description": "New camera",
-      "platform": "macos"
+      "description": "New light",
+      "keys_macos": "cmd+alt+shift+l"
     },
     "new_camera": {
       "keys": "ctrl+alt+shift+c",
-      "description": "New camera"
-    },
-    "move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers_mac": {
-      "keys": "cmd+alt+shift+\\",
-      "description": "Move the camera and its point of interest to look at selected 3D layers",
-      "platform": "macos"
+      "description": "New camera",
+      "keys_macos": "cmd+alt+shift+c"
     },
     "move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers": {
       "keys": "ctrl+alt+shift+\\",
-      "description": "Move the camera and its point of interest to look at selected 3D layers"
+      "description": "Move the camera and its point of interest to look at selected 3D layers",
+      "keys_macos": "cmd+alt+shift+\\"
     },
     "with_a_camera_tool_selected_move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers": {
       "keys": "f",
@@ -939,59 +615,35 @@
       "keys": "shift-drag property value",
       "description": "Modify property value by 10x default increments"
     },
-    "modify_property_value_by_1_10_default_increments_mac": {
-      "keys": "command-drag property value",
-      "description": "Modify property value by 1/10 default increments",
-      "platform": "macos"
-    },
     "modify_property_value_by_1_10_default_increments": {
       "keys": "ctrl-drag property value",
-      "description": "Modify property value by 1/10 default increments"
-    },
-    "open_auto_orientation_dialog_box_for_selected_layers_mac": {
-      "keys": "cmd+alt+o",
-      "description": "Open Auto-Orientation dialog box for selected layers",
-      "platform": "macos"
+      "description": "Modify property value by 1/10 default increments",
+      "keys_macos": "command-drag property value"
     },
     "open_auto_orientation_dialog_box_for_selected_layers": {
       "keys": "ctrl+alt+o",
-      "description": "Open Auto-Orientation dialog box for selected layers"
-    },
-    "open_opacity_dialog_box_for_selected_layers_mac": {
-      "keys": "cmd+shift+o",
-      "description": "Open Opacity dialog box for selected layers",
-      "platform": "macos"
+      "description": "Open Auto-Orientation dialog box for selected layers",
+      "keys_macos": "cmd+alt+o"
     },
     "open_opacity_dialog_box_for_selected_layers": {
       "keys": "ctrl+shift+o",
-      "description": "Open Opacity dialog box for selected layers"
-    },
-    "open_rotation_dialog_box_for_selected_layers_mac": {
-      "keys": "cmd+shift+r",
-      "description": "Open Rotation dialog box for selected layers",
-      "platform": "macos"
+      "description": "Open Opacity dialog box for selected layers",
+      "keys_macos": "cmd+shift+o"
     },
     "open_rotation_dialog_box_for_selected_layers": {
       "keys": "ctrl+shift+r",
-      "description": "Open Rotation dialog box for selected layers"
-    },
-    "open_position_dialog_box_for_selected_layers_mac": {
-      "keys": "cmd+shift+p",
-      "description": "Open Position dialog box for selected layers",
-      "platform": "macos"
+      "description": "Open Rotation dialog box for selected layers",
+      "keys_macos": "cmd+shift+r"
     },
     "open_position_dialog_box_for_selected_layers": {
       "keys": "ctrl+shift+p",
-      "description": "Open Position dialog box for selected layers"
-    },
-    "center_selected_layers_in_view_mac": {
-      "keys": "cmd+home",
-      "description": "Center selected layers in view",
-      "platform": "macos"
+      "description": "Open Position dialog box for selected layers",
+      "keys_macos": "cmd+shift+p"
     },
     "center_selected_layers_in_view": {
       "keys": "ctrl+home",
-      "description": "Center selected layers in view"
+      "description": "Center selected layers in view",
+      "keys_macos": "cmd+home"
     },
     "move_selected_layers_1_frame_earlier": {
       "keys": "alt+pageup",
@@ -1041,41 +693,25 @@
       "keys": "ctrl+alt+shift+num-",
       "description": "Decrease Opacity of selected layers by 10%"
     },
-    "increase_scale_of_selected_layers_by_1_mac": {
-      "keys": "cmd+numpad+or option+numpad+",
-      "description": "Increase Scale of selected layers by 1%",
-      "platform": "macos"
-    },
     "increase_scale_of_selected_layers_by_1": {
       "keys": "ctrl+numpad+or alt+numpad+",
-      "description": "Increase Scale of selected layers by 1%"
-    },
-    "decrease_scale_of_selected_layers_by_1_mac": {
-      "keys": "cmd+num-",
-      "description": "Decrease Scale of selected layers by 1%",
-      "platform": "macos"
+      "description": "Increase Scale of selected layers by 1%",
+      "keys_macos": "cmd+numpad+or option+numpad+"
     },
     "decrease_scale_of_selected_layers_by_1": {
       "keys": "ctrl+num-",
-      "description": "Decrease Scale of selected layers by 1%"
-    },
-    "increase_scale_of_selected_layers_by_10_mac": {
-      "keys": "cmd+shift+numpad+",
-      "description": "Increase Scale of selected layers by 10%",
-      "platform": "macos"
+      "description": "Decrease Scale of selected layers by 1%",
+      "keys_macos": "cmd+num-"
     },
     "increase_scale_of_selected_layers_by_10": {
       "keys": "ctrl+shift+numpad+",
-      "description": "Increase Scale of selected layers by 10%"
-    },
-    "decrease_scale_of_selected_layers_by_10_mac": {
-      "keys": "cmd+shift+num-",
-      "description": "Decrease Scale of selected layers by 10%",
-      "platform": "macos"
+      "description": "Increase Scale of selected layers by 10%",
+      "keys_macos": "cmd+shift+numpad+"
     },
     "decrease_scale_of_selected_layers_by_10": {
       "keys": "ctrl+shift+num-",
-      "description": "Decrease Scale of selected layers by 10%"
+      "description": "Decrease Scale of selected layers by 10%",
+      "keys_macos": "cmd+shift+num-"
     },
     "modify_rotation_or_orientation_in_45_increments": {
       "keys": "shift-drag with rotation tool",
@@ -1089,32 +725,20 @@
       "keys": "double-click selection tool",
       "description": "Reset Scale to 100%"
     },
-    "scale_and_reposition_selected_layers_to_fit_composition_mac": {
-      "keys": "cmd+alt+f",
-      "description": "Scale and reposition selected layers to fit composition",
-      "platform": "macos"
-    },
     "scale_and_reposition_selected_layers_to_fit_composition": {
       "keys": "ctrl+alt+f",
-      "description": "Scale and reposition selected layers to fit composition"
-    },
-    "scale_and_reposition_selected_layers_to_fit_composition_width_preserving_image_aspect_ratio_for_each_layer_mac": {
-      "keys": "cmd+alt+shift+h",
-      "description": "Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer",
-      "platform": "macos"
+      "description": "Scale and reposition selected layers to fit composition",
+      "keys_macos": "cmd+alt+f"
     },
     "scale_and_reposition_selected_layers_to_fit_composition_width_preserving_image_aspect_ratio_for_each_layer": {
       "keys": "ctrl+alt+shift+h",
-      "description": "Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer"
-    },
-    "scale_and_reposition_selected_layers_to_fit_composition_height_preserving_image_aspect_ratio_for_each_layer_mac": {
-      "keys": "cmd+alt+shift+g",
-      "description": "Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer",
-      "platform": "macos"
+      "description": "Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer",
+      "keys_macos": "cmd+alt+shift+h"
     },
     "scale_and_reposition_selected_layers_to_fit_composition_height_preserving_image_aspect_ratio_for_each_layer": {
       "keys": "ctrl+alt+shift+g",
-      "description": "Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer"
+      "description": "Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer",
+      "keys_macos": "cmd+alt+shift+g"
     },
     "swap_color_background_foreground": {
       "keys": "x",
@@ -1124,241 +748,145 @@
       "keys": "d",
       "description": "Reset Background/Foreground to black white"
     },
-    "set_foreground_color_to_the_color_currently_under_any_paint_tool_pointer_mac": {
-      "keys": "option-click",
-      "description": "Set foreground color to the color currently under any paint tool pointer",
-      "platform": "macos"
-    },
     "set_foreground_color_to_the_color_currently_under_any_paint_tool_pointer": {
       "keys": "alt-click",
-      "description": "Set foreground color to the color currently under any paint tool pointer"
-    },
-    "set_foreground_color_to_the_average_color_of_a_4_pixel_x_4_pixel_area_under_any_paint_tool_pointer_mac": {
-      "keys": "cmd+option-click",
-      "description": "Set foreground color to the average color of a 4-pixel x 4-pixel area under any paint tool pointer",
-      "platform": "macos"
+      "description": "Set foreground color to the color currently under any paint tool pointer",
+      "keys_macos": "option-click"
     },
     "set_foreground_color_to_the_average_color_of_a_4_pixel_x_4_pixel_area_under_any_paint_tool_pointer": {
       "keys": "ctrl+alt-click",
-      "description": "Set foreground color to the average color of a 4-pixel x 4-pixel area under any paint tool pointer"
-    },
-    "set_brush_size_for_a_paint_tool_mac": {
-      "keys": "command-drag",
-      "description": "Set brush size for a paint tool",
-      "platform": "macos"
+      "description": "Set foreground color to the average color of a 4-pixel x 4-pixel area under any paint tool pointer",
+      "keys_macos": "cmd+option-click"
     },
     "set_brush_size_for_a_paint_tool": {
       "keys": "ctrl-drag",
-      "description": "Set brush size for a paint tool"
+      "description": "Set brush size for a paint tool",
+      "keys_macos": "command-drag"
     },
     "join_current_paint_stroke_to_the_previous_stroke": {
       "keys": "hold shift while beginning stroke",
       "description": "Join current paint stroke to the previous stroke"
     },
-    "set_starting_sample_point_to_point_currently_under_clone_stamp_tool_pointer_mac": {
-      "keys": "option-click",
-      "description": "Set starting sample point to point currently under Clone Stamp tool pointer",
-      "platform": "macos"
-    },
     "set_starting_sample_point_to_point_currently_under_clone_stamp_tool_pointer": {
       "keys": "alt-click",
-      "description": "Set starting sample point to point currently under Clone Stamp tool pointer"
-    },
-    "hold_eraser_tool_with_last_stroke_only_option_mac": {
-      "keys": "cmd+shift",
-      "description": "(Hold) Eraser tool with Last Stroke Only option",
-      "platform": "macos"
+      "description": "Set starting sample point to point currently under Clone Stamp tool pointer",
+      "keys_macos": "option-click"
     },
     "hold_eraser_tool_with_last_stroke_only_option": {
       "keys": "ctrl+shift",
-      "description": "(Hold) Eraser tool with Last Stroke Only option"
+      "description": "(Hold) Eraser tool with Last Stroke Only option",
+      "keys_macos": "cmd+shift"
     },
     "show_and_move_overlay": {
       "keys": "alt+shift-drag with clone stamp tool",
       "description": "Show and move overlay"
     },
-    "duplicate_a_clone_stamp_tool_preset_in_paint_panel_mac": {
-      "keys": "option-click the button for the preset",
-      "description": "Duplicate a Clone Stamp tool preset in Paint panel",
-      "platform": "macos"
-    },
     "duplicate_a_clone_stamp_tool_preset_in_paint_panel": {
       "keys": "alt-click the button for the preset",
-      "description": "Duplicate a Clone Stamp tool preset in Paint panel"
-    },
-    "move_earlier_or_later_by_number_of_frames_specified_for_stroke_duration_mac": {
-      "keys": "cmd+pageup",
-      "description": "Move earlier or later by number of frames specified for stroke Duration",
-      "platform": "macos"
+      "description": "Duplicate a Clone Stamp tool preset in Paint panel",
+      "keys_macos": "option-click the button for the preset"
     },
     "move_earlier_or_later_by_number_of_frames_specified_for_stroke_duration": {
       "keys": "ctrl+pageup",
-      "description": "Move earlier or later by number of frames specified for stroke Duration"
+      "description": "Move earlier or later by number of frames specified for stroke Duration",
+      "keys_macos": "cmd+pageup"
     },
     "maximize_or_restore_panel_under_pointer": {
       "keys": "`",
       "description": "Maximize or restore panel under pointer"
     },
-    "toggle_project_panel_mac": {
-      "keys": "cmd+0",
-      "description": "Toggle Project panel",
-      "platform": "macos"
-    },
     "toggle_project_panel": {
       "keys": "ctrl+0",
-      "description": "Toggle Project panel"
-    },
-    "toggle_render_queue_panel_mac": {
-      "keys": "cmd+alt+0",
-      "description": "Toggle Render Queue panel",
-      "platform": "macos"
+      "description": "Toggle Project panel",
+      "keys_macos": "cmd+0"
     },
     "toggle_render_queue_panel": {
       "keys": "ctrl+alt+0",
-      "description": "Toggle Render Queue panel"
-    },
-    "toggle_tools_panel_mac": {
-      "keys": "cmd+1",
-      "description": "Toggle Tools panel",
-      "platform": "macos"
+      "description": "Toggle Render Queue panel",
+      "keys_macos": "cmd+alt+0"
     },
     "toggle_tools_panel": {
       "keys": "ctrl+1",
-      "description": "Toggle Tools panel"
-    },
-    "toggle_info_panel_mac": {
-      "keys": "cmd+2",
-      "description": "Toggle Info panel",
-      "platform": "macos"
+      "description": "Toggle Tools panel",
+      "keys_macos": "cmd+1"
     },
     "toggle_info_panel": {
       "keys": "ctrl+2",
-      "description": "Toggle Info panel"
-    },
-    "toggle_preview_panel_mac": {
-      "keys": "cmd+3",
-      "description": "Toggle Preview panel",
-      "platform": "macos"
+      "description": "Toggle Info panel",
+      "keys_macos": "cmd+2"
     },
     "toggle_preview_panel": {
       "keys": "ctrl+3",
-      "description": "Toggle Preview panel"
-    },
-    "toggle_audio_panel_mac": {
-      "keys": "cmd+4",
-      "description": "Toggle Audio panel",
-      "platform": "macos"
+      "description": "Toggle Preview panel",
+      "keys_macos": "cmd+3"
     },
     "toggle_audio_panel": {
       "keys": "ctrl+4",
-      "description": "Toggle Audio panel"
-    },
-    "toggle_effects_presets_panel_mac": {
-      "keys": "cmd+5",
-      "description": "Toggle Effects & Presets panel",
-      "platform": "macos"
+      "description": "Toggle Audio panel",
+      "keys_macos": "cmd+4"
     },
     "toggle_effects_presets_panel": {
       "keys": "ctrl+5",
-      "description": "Toggle Effects & Presets panel"
-    },
-    "toggle_character_panel_mac": {
-      "keys": "cmd+6",
-      "description": "Toggle Character panel",
-      "platform": "macos"
+      "description": "Toggle Effects & Presets panel",
+      "keys_macos": "cmd+5"
     },
     "toggle_character_panel": {
       "keys": "ctrl+6",
-      "description": "Toggle Character panel"
-    },
-    "toggle_paragraph_panel_mac": {
-      "keys": "cmd+7",
-      "description": "Toggle Paragraph panel",
-      "platform": "macos"
+      "description": "Toggle Character panel",
+      "keys_macos": "cmd+6"
     },
     "toggle_paragraph_panel": {
       "keys": "ctrl+7",
-      "description": "Toggle Paragraph panel"
-    },
-    "toggle_paint_panel_mac": {
-      "keys": "cmd+8",
-      "description": "Toggle Paint panel",
-      "platform": "macos"
+      "description": "Toggle Paragraph panel",
+      "keys_macos": "cmd+7"
     },
     "toggle_paint_panel": {
       "keys": "ctrl+8",
-      "description": "Toggle Paint panel"
-    },
-    "toggle_brushes_panel_mac": {
-      "keys": "cmd+9",
-      "description": "Toggle Brushes panel",
-      "platform": "macos"
+      "description": "Toggle Paint panel",
+      "keys_macos": "cmd+8"
     },
     "toggle_brushes_panel": {
       "keys": "ctrl+9",
-      "description": "Toggle Brushes panel"
+      "description": "Toggle Brushes panel",
+      "keys_macos": "cmd+9"
     },
     "toggle_effect_controls_panel_for_selected_layer": {
       "keys": "f3",
       "description": "Toggle Effect Controls panel for selected layer"
     },
-    "open_flowchart_panel_for_project_flowchart_mac": {
-      "keys": "cmd+f11",
-      "description": "Open Flowchart panel for project flowchart",
-      "platform": "macos"
-    },
     "open_flowchart_panel_for_project_flowchart": {
       "keys": "ctrl+f11",
-      "description": "Open Flowchart panel for project flowchart"
+      "description": "Open Flowchart panel for project flowchart",
+      "keys_macos": "cmd+f11"
     },
     "switch_to_workspace": {
       "keys": "shift+f10/shift+f11/shift+f12",
       "description": "Switch to workspace"
     },
-    "close_active_viewer_or_panel_mac": {
-      "keys": "cmd+w",
-      "description": "Close active viewer or panel",
-      "platform": "macos"
-    },
     "close_active_viewer_or_panel": {
       "keys": "ctrl+w",
-      "description": "Close active viewer or panel"
-    },
-    "close_active_panel_or_all_viewers_of_type_of_active_viewer_mac": {
-      "keys": "cmd+shift+w",
-      "description": "Close active panel or all viewers of type of active viewer",
-      "platform": "macos"
+      "description": "Close active viewer or panel",
+      "keys_macos": "cmd+w"
     },
     "close_active_panel_or_all_viewers_of_type_of_active_viewer": {
       "keys": "ctrl+shift+w",
-      "description": "Close active panel or all viewers of type of active viewer"
-    },
-    "split_the_frame_containing_the_active_viewer_and_create_a_new_viewer_with_opposite_locked_unlocked_state_mac": {
-      "keys": "cmd+alt+shift+n",
-      "description": "Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state",
-      "platform": "macos"
+      "description": "Close active panel or all viewers of type of active viewer",
+      "keys_macos": "cmd+shift+w"
     },
     "split_the_frame_containing_the_active_viewer_and_create_a_new_viewer_with_opposite_locked_unlocked_state": {
       "keys": "ctrl+alt+shift+n",
-      "description": "Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state"
-    },
-    "resize_application_window_or_floating_window_to_fit_screen_mac": {
-      "keys": "cmd+\\",
-      "description": "Resize application window or floating window to fit screen.",
-      "platform": "macos"
+      "description": "Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state",
+      "keys_macos": "cmd+alt+shift+n"
     },
     "resize_application_window_or_floating_window_to_fit_screen": {
       "keys": "ctrl+\\",
-      "description": "Resize application window or floating window to fit screen."
-    },
-    "move_application_window_or_floating_window_to_main_monitor_resize_window_to_fit_screen_mac": {
-      "keys": "cmd+alt+\\",
-      "description": "Move application window or floating window to main monitor; resize window to fit screen.",
-      "platform": "macos"
+      "description": "Resize application window or floating window to fit screen.",
+      "keys_macos": "cmd+\\"
     },
     "move_application_window_or_floating_window_to_main_monitor_resize_window_to_fit_screen": {
       "keys": "ctrl+alt+\\",
-      "description": "Move application window or floating window to main monitor; resize window to fit screen."
+      "description": "Move application window or floating window to main monitor; resize window to fit screen.",
+      "keys_macos": "cmd+alt+\\"
     },
     "toggle_activation_between_composition_panel_and_timeline_panel_for_current_composition": {
       "keys": "\\",
@@ -1376,14 +904,10 @@
       "keys": "click with middle mouse button",
       "description": "Activate a view in a multi-view layout in the Composition panel without affecting layer selection"
     },
-    "open_preferences_dialog_box_mac": {
-      "keys": "cmd+alt+;",
-      "description": "Open Preferences dialog box",
-      "platform": "macos"
-    },
     "open_preferences_dialog_box": {
       "keys": "ctrl+alt+;",
-      "description": "Open Preferences dialog box"
+      "description": "Open Preferences dialog box",
+      "keys_macos": "cmd+alt+;"
     },
     "start_or_stop_standard_preview": {
       "keys": "spacebar",
@@ -1397,23 +921,15 @@
       "keys": "shift+num0",
       "description": "RAM preview with alternate settings"
     },
-    "save_ram_preview_mac": {
-      "keys": "command-click ram preview button",
-      "description": "Save RAM preview",
-      "platform": "macos"
-    },
     "save_ram_preview": {
       "keys": "ctrl-click ram preview button",
-      "description": "Save RAM preview"
-    },
-    "save_ram_preview_with_alternate_settings_mac": {
-      "keys": "cmd+shift-click ram preview button",
-      "description": "Save RAM preview with alternate settings",
-      "platform": "macos"
+      "description": "Save RAM preview",
+      "keys_macos": "command-click ram preview button"
     },
     "save_ram_preview_with_alternate_settings": {
       "keys": "ctrl+shift-click ram preview button",
-      "description": "Save RAM preview with alternate settings"
+      "description": "Save RAM preview with alternate settings",
+      "keys_macos": "cmd+shift-click ram preview button"
     },
     "preview_only_audio_from_current_time": {
       "keys": "num.",
@@ -1427,14 +943,10 @@
       "keys": "drag",
       "description": "Manually preview  video"
     },
-    "manually_preview_audio_mac": {
-      "keys": "command-drag current-time indicator",
-      "description": "Manually preview  audio",
-      "platform": "macos"
-    },
     "manually_preview_audio": {
       "keys": "ctrl-drag current-time indicator",
-      "description": "Manually preview  audio"
+      "description": "Manually preview  audio",
+      "keys_macos": "command-drag current-time indicator"
     },
     "ram_preview_number_of_frames_specified_by_alternate_ram_preview_preference": {
       "keys": "alt+num0",
@@ -1448,158 +960,90 @@
       "keys": "f5/f6/f7/f8",
       "description": "Display snapshot in active viewer"
     },
-    "purge_snapshot_mac": {
-      "keys": "cmd+shift+f5",
-      "description": "Purge snapshot",
-      "platform": "macos"
-    },
     "purge_snapshot": {
       "keys": "ctrl+shift+f5",
-      "description": "Purge snapshot"
-    },
-    "fast_previews_off_mac": {
-      "keys": "cmd+alt+1",
-      "description": "Fast Previews > Off",
-      "platform": "macos"
+      "description": "Purge snapshot",
+      "keys_macos": "cmd+shift+f5"
     },
     "fast_previews_off": {
       "keys": "ctrl+alt+1",
-      "description": "Fast Previews > Off"
-    },
-    "fast_previews_adaptive_resolution_mac": {
-      "keys": "cmd+alt+2",
-      "description": "Fast Previews > Adaptive Resolution",
-      "platform": "macos"
+      "description": "Fast Previews > Off",
+      "keys_macos": "cmd+alt+1"
     },
     "fast_previews_adaptive_resolution": {
       "keys": "ctrl+alt+2",
-      "description": "Fast Previews > Adaptive Resolution"
-    },
-    "fast_previews_draft_mac": {
-      "keys": "cmd+alt+3",
-      "description": "Fast Previews > Draft",
-      "platform": "macos"
+      "description": "Fast Previews > Adaptive Resolution",
+      "keys_macos": "cmd+alt+2"
     },
     "fast_previews_draft": {
       "keys": "ctrl+alt+3",
-      "description": "Fast Previews > Draft"
-    },
-    "fast_previews_fast_draft_mac": {
-      "keys": "cmd+alt+4",
-      "description": "Fast Previews > Fast Draft",
-      "platform": "macos"
+      "description": "Fast Previews > Draft",
+      "keys_macos": "cmd+alt+3"
     },
     "fast_previews_fast_draft": {
       "keys": "ctrl+alt+4",
-      "description": "Fast Previews > Fast Draft"
-    },
-    "fast_previews_wireframe_mac": {
-      "keys": "cmd+alt+5",
-      "description": "Fast Previews > Wireframe",
-      "platform": "macos"
+      "description": "Fast Previews > Fast Draft",
+      "keys_macos": "cmd+alt+4"
     },
     "fast_previews_wireframe": {
       "keys": "ctrl+alt+5",
-      "description": "Fast Previews > Wireframe"
-    },
-    "new_project_mac": {
-      "keys": "cmd+alt+n",
-      "description": "New project",
-      "platform": "macos"
+      "description": "Fast Previews > Wireframe",
+      "keys_macos": "cmd+alt+5"
     },
     "new_project": {
       "keys": "ctrl+alt+n",
-      "description": "New project"
-    },
-    "open_project_mac": {
-      "keys": "cmd+o",
-      "description": "Open project",
-      "platform": "macos"
+      "description": "New project",
+      "keys_macos": "cmd+alt+n"
     },
     "open_project": {
       "keys": "ctrl+o",
-      "description": "Open project"
-    },
-    "open_most_recent_project_mac": {
-      "keys": "cmd+alt+shift+p",
-      "description": "Open most recent project",
-      "platform": "macos"
+      "description": "Open project",
+      "keys_macos": "cmd+o"
     },
     "open_most_recent_project": {
       "keys": "ctrl+alt+shift+p",
-      "description": "Open most recent project"
-    },
-    "find_in_project_panel_mac": {
-      "keys": "cmd+f",
-      "description": "Find in Project panel",
-      "platform": "macos"
+      "description": "Open most recent project",
+      "keys_macos": "cmd+alt+shift+p"
     },
     "find_in_project_panel": {
       "keys": "ctrl+f",
-      "description": "Find in Project panel"
-    },
-    "save_project_mac": {
-      "keys": "cmd+s",
-      "description": "Save project",
-      "platform": "macos"
+      "description": "Find in Project panel",
+      "keys_macos": "cmd+f"
     },
     "save_project": {
       "keys": "ctrl+s",
-      "description": "Save project"
-    },
-    "increment_and_save_project_mac": {
-      "keys": "cmd+alt+shift+s",
-      "description": "Increment and save project",
-      "platform": "macos"
+      "description": "Save project",
+      "keys_macos": "cmd+s"
     },
     "increment_and_save_project": {
       "keys": "ctrl+alt+shift+s",
-      "description": "Increment and save project"
-    },
-    "save_as_mac": {
-      "keys": "cmd+shift+s",
-      "description": "Save As",
-      "platform": "macos"
+      "description": "Increment and save project",
+      "keys_macos": "cmd+alt+shift+s"
     },
     "save_as": {
       "keys": "ctrl+shift+s",
-      "description": "Save As"
-    },
-    "add_active_composition_or_selected_items_to_render_queue_mac": {
-      "keys": "cmd+shift+/",
-      "description": "Add active composition or selected items to render queue",
-      "platform": "macos"
+      "description": "Save As",
+      "keys_macos": "cmd+shift+s"
     },
     "add_active_composition_or_selected_items_to_render_queue": {
       "keys": "ctrl+shift+/",
-      "description": "Add active composition or selected items to render queue"
-    },
-    "add_current_frame_to_render_queue_mac": {
-      "keys": "cmd+alt+s",
-      "description": "Add current frame to render queue",
-      "platform": "macos"
+      "description": "Add active composition or selected items to render queue",
+      "keys_macos": "cmd+shift+/"
     },
     "add_current_frame_to_render_queue": {
       "keys": "ctrl+alt+s",
-      "description": "Add current frame to render queue"
-    },
-    "group_selected_shapes_mac": {
-      "keys": "cmd+g",
-      "description": "Group selected shapes",
-      "platform": "macos"
+      "description": "Add current frame to render queue",
+      "keys_macos": "cmd+alt+s"
     },
     "group_selected_shapes": {
       "keys": "ctrl+g",
-      "description": "Group selected shapes"
-    },
-    "ungroup_selected_shapes_mac": {
-      "keys": "cmd+shift+g",
-      "description": "Ungroup selected shapes",
-      "platform": "macos"
+      "description": "Group selected shapes",
+      "keys_macos": "cmd+g"
     },
     "ungroup_selected_shapes": {
       "keys": "ctrl+shift+g",
-      "description": "Ungroup selected shapes"
+      "description": "Ungroup selected shapes",
+      "keys_macos": "cmd+shift+g"
     },
     "increase_star_inner_roundness": {
       "keys": "page up when dragging to create shape",
@@ -1625,14 +1069,10 @@
       "keys": "shift when dragging to create shape",
       "description": "Constrain rectangles to squares; constrain ellipses to circles; constrain polygons and stars to zero rotation"
     },
-    "change_outer_radius_of_star_mac": {
-      "keys": "command when dragging to create shape",
-      "description": "Change outer radius of star",
-      "platform": "macos"
-    },
     "change_outer_radius_of_star": {
       "keys": "ctrl when dragging to create shape",
-      "description": "Change outer radius of star"
+      "description": "Change outer radius of star",
+      "keys_macos": "command when dragging to create shape"
     },
     "go_to_specific_time": {
       "keys": "alt+shift+j",
@@ -1686,23 +1126,15 @@
       "keys": "o",
       "description": "Go to layer Out point"
     },
-    "go_to_previous_in_point_or_out_point_mac": {
-      "keys": "cmd+alt+shift+left",
-      "description": "Go to previous In point or Out point",
-      "platform": "macos"
-    },
     "go_to_previous_in_point_or_out_point": {
       "keys": "ctrl+alt+shift+left",
-      "description": "Go to previous In point or Out point"
-    },
-    "go_to_next_in_point_or_out_point_mac": {
-      "keys": "cmd+alt+shift+right",
-      "description": "Go to next In point or Out point",
-      "platform": "macos"
+      "description": "Go to previous In point or Out point",
+      "keys_macos": "cmd+alt+shift+left"
     },
     "go_to_next_in_point_or_out_point": {
       "keys": "ctrl+alt+shift+right",
-      "description": "Go to next In point or Out point"
+      "description": "Go to next In point or Out point",
+      "keys_macos": "cmd+alt+shift+right"
     },
     "turn_display_color_management_on_or_off_for_active_view": {
       "keys": "shift+/",
@@ -1776,41 +1208,25 @@
       "keys": "alt+/",
       "description": "Zoom up to 100% to fit in Composition, Layer, or Footage panel"
     },
-    "set_resolution_to_full_in_composition_panel_mac": {
-      "keys": "cmd+j",
-      "description": "Set resolution to Full in Composition panel",
-      "platform": "macos"
-    },
     "set_resolution_to_full_in_composition_panel": {
       "keys": "ctrl+j",
-      "description": "Set resolution to Full in Composition panel"
-    },
-    "set_resolution_to_half_in_composition_panel_mac": {
-      "keys": "cmd+shift+j",
-      "description": "Set resolution to Half in Composition panel",
-      "platform": "macos"
+      "description": "Set resolution to Full in Composition panel",
+      "keys_macos": "cmd+j"
     },
     "set_resolution_to_half_in_composition_panel": {
       "keys": "ctrl+shift+j",
-      "description": "Set resolution to Half in Composition panel"
-    },
-    "set_resolution_to_custom_in_composition_panel_mac": {
-      "keys": "cmd+alt+j",
-      "description": "Set resolution to Custom in Composition panel",
-      "platform": "macos"
+      "description": "Set resolution to Half in Composition panel",
+      "keys_macos": "cmd+shift+j"
     },
     "set_resolution_to_custom_in_composition_panel": {
       "keys": "ctrl+alt+j",
-      "description": "Set resolution to Custom in Composition panel"
-    },
-    "open_view_options_dialog_box_for_active_composition_panel_mac": {
-      "keys": "cmd+alt+u",
-      "description": "Open View Options dialog box for active Composition panel",
-      "platform": "macos"
+      "description": "Set resolution to Custom in Composition panel",
+      "keys_macos": "cmd+alt+j"
     },
     "open_view_options_dialog_box_for_active_composition_panel": {
       "keys": "ctrl+alt+u",
-      "description": "Open View Options dialog box for active Composition panel"
+      "description": "Open View Options dialog box for active Composition panel",
+      "keys_macos": "cmd+alt+u"
     },
     "zoom_in_time": {
       "keys": "=",
@@ -1836,81 +1252,49 @@
       "keys": "'",
       "description": "Toggle safe zones"
     },
-    "toggle_grid_mac": {
-      "keys": "cmd+'",
-      "description": "Toggle grid",
-      "platform": "macos"
-    },
     "toggle_grid": {
       "keys": "ctrl+'",
-      "description": "Toggle grid"
+      "description": "Toggle grid",
+      "keys_macos": "cmd+'"
     },
     "toggle_proportional_grid": {
       "keys": "alt+'",
       "description": "Toggle proportional grid"
     },
-    "toggle_rulers_mac": {
-      "keys": "cmd+r",
-      "description": "Toggle rulers",
-      "platform": "macos"
-    },
     "toggle_rulers": {
       "keys": "ctrl+r",
-      "description": "Toggle rulers"
-    },
-    "toggle_guides_mac": {
-      "keys": "cmd+;",
-      "description": "Toggle guides",
-      "platform": "macos"
+      "description": "Toggle rulers",
+      "keys_macos": "cmd+r"
     },
     "toggle_guides": {
       "keys": "ctrl+;",
-      "description": "Toggle guides"
-    },
-    "turn_snapping_to_grid_on_or_off_mac": {
-      "keys": "cmd+shift+'",
-      "description": "Turn snapping to grid on or off",
-      "platform": "macos"
+      "description": "Toggle guides",
+      "keys_macos": "cmd+;"
     },
     "turn_snapping_to_grid_on_or_off": {
       "keys": "ctrl+shift+'",
-      "description": "Turn snapping to grid on or off"
-    },
-    "turn_snapping_to_guides_on_or_off_mac": {
-      "keys": "cmd+shift+;",
-      "description": "Turn snapping to guides on or off",
-      "platform": "macos"
+      "description": "Turn snapping to grid on or off",
+      "keys_macos": "cmd+shift+'"
     },
     "turn_snapping_to_guides_on_or_off": {
       "keys": "ctrl+shift+;",
-      "description": "Turn snapping to guides on or off"
-    },
-    "lock_or_unlock_guides_mac": {
-      "keys": "cmd+alt+shift+;",
-      "description": "Lock or unlock guides",
-      "platform": "macos"
+      "description": "Turn snapping to guides on or off",
+      "keys_macos": "cmd+shift+;"
     },
     "lock_or_unlock_guides": {
       "keys": "ctrl+alt+shift+;",
-      "description": "Lock or unlock guides"
-    },
-    "toggle_layer_controls_mac": {
-      "keys": "cmd+shift+h",
-      "description": "Toggle layer controls",
-      "platform": "macos"
+      "description": "Lock or unlock guides",
+      "keys_macos": "cmd+alt+shift+;"
     },
     "toggle_layer_controls": {
       "keys": "ctrl+shift+h",
-      "description": "Toggle layer controls"
-    },
-    "hold_selection_tool_mac": {
-      "keys": "cmd",
-      "description": "(Hold) Selection tool",
-      "platform": "macos"
+      "description": "Toggle layer controls",
+      "keys_macos": "cmd+shift+h"
     },
     "hold_selection_tool": {
       "keys": "ctrl",
-      "description": "(Hold) Selection tool"
+      "description": "(Hold) Selection tool",
+      "keys_macos": "cmd"
     },
     "set_opacity_for_a_paint_tool": {
       "keys": "num0-9",
@@ -1932,27 +1316,19 @@
       "keys": "alt",
       "description": "(Hold) Shape Duplication tool"
     },
-    "hold_direct_selection_tool_mac": {
-      "keys": "cmd",
-      "description": "(Hold) Direct Selection tool",
-      "platform": "macos"
-    },
     "hold_direct_selection_tool": {
       "keys": "ctrl",
-      "description": "(Hold) Direct Selection tool"
+      "description": "(Hold) Direct Selection tool",
+      "keys_macos": "cmd"
     },
     "activate_a_clone_stamp_tool_preset": {
       "keys": "3-7",
       "description": "Activate a Clone Stamp tool preset"
     },
-    "move_the_camera_and_its_point_of_interest_to_look_at_all_3d_layers_mac": {
-      "keys": "cmd+shift+f",
-      "description": "Move the camera and its point of interest to look at all 3D layers",
-      "platform": "macos"
-    },
     "move_the_camera_and_its_point_of_interest_to_look_at_all_3d_layers": {
       "keys": "ctrl+shift+f",
-      "description": "Move the camera and its point of interest to look at all 3D layers"
+      "description": "Move the camera and its point of interest to look at all 3D layers",
+      "keys_macos": "cmd+shift+f"
     },
     "move_1px_feature_region_search_region_and_attach_point": {
       "keys": "arrow keys",
@@ -1974,14 +1350,10 @@
       "keys": "/",
       "description": "Toggle Mercury Transmit video preview"
     },
-    "new_folder_in_project_panel_mac": {
-      "keys": "cmd+alt+shift+n",
-      "description": "New folder in Project panel",
-      "platform": "macos"
-    },
     "new_folder_in_project_panel": {
       "keys": "ctrl+alt+shift+n",
-      "description": "New folder in Project panel"
+      "description": "New folder in Project panel",
+      "keys_macos": "cmd+alt+shift+n"
     },
     "extend_selection_to_next_item": {
       "keys": "shift+down",
@@ -1991,14 +1363,10 @@
       "keys": "shift+up",
       "description": "Extend selection to previous item"
     },
-    "duplicate_render_item_with_same_output_filename_as_original_mac": {
-      "keys": "cmd+shift+d",
-      "description": "Duplicate render item with same output filename as original",
-      "platform": "macos"
-    },
     "duplicate_render_item_with_same_output_filename_as_original": {
       "keys": "ctrl+shift+d",
-      "description": "Duplicate render item with same output filename as original"
+      "description": "Duplicate render item with same output filename as original",
+      "keys_macos": "cmd+shift+d"
     },
     "extend_selection_to_next_item_panel_renderqueue": {
       "keys": "shift+down",
@@ -2008,40 +1376,28 @@
       "keys": "shift+up",
       "description": "Extend selection to previous item"
     },
-    "find_mac": {
-      "keys": "cmd+f",
-      "description": "Find",
-      "platform": "macos"
-    },
     "find": {
       "keys": "ctrl+f",
-      "description": "Find"
+      "description": "Find",
+      "keys_macos": "cmd+f"
     },
     "scroll_topmost_selected_layer_to_top_of_timeline_panel": {
       "keys": "x",
       "description": "Scroll topmost selected layer to top of Timeline panel"
     },
-    "enter_free_transform_path_editing_mode_mac": {
-      "keys": "cmd+t",
-      "description": "Enter free-transform path editing mode",
-      "platform": "macos"
-    },
     "enter_free_transform_path_editing_mode": {
       "keys": "ctrl+t",
-      "description": "Enter free-transform path editing mode"
+      "description": "Enter free-transform path editing mode",
+      "keys_macos": "cmd+t"
     },
     "toggle_selection_of_layer_by_its_number": {
       "keys": "shift+num0-9",
       "description": "Toggle selection of layer  by its number"
     },
-    "toggle_expansion_of_selected_layers_to_show_all_properties_mac": {
-      "keys": "cmd+`",
-      "description": "Toggle expansion of selected layers to show all properties",
-      "platform": "macos"
-    },
     "toggle_expansion_of_selected_layers_to_show_all_properties": {
       "keys": "ctrl+`",
-      "description": "Toggle expansion of selected layers to show all properties"
+      "description": "Toggle expansion of selected layers to show all properties",
+      "keys_macos": "cmd+`"
     },
     "scroll_to_current_time": {
       "keys": "d",
@@ -2135,23 +1491,15 @@
       "keys": "shift+property",
       "description": "Add or remove property or group from set that is shown"
     },
-    "add_or_remove_keyframe_at_current_time_mac": {
-      "keys": "alt+property shortcut",
-      "description": "Add or remove keyframe at current time",
-      "platform": "macos"
-    },
     "add_or_remove_keyframe_at_current_time": {
       "keys": "alt+shift+property shortcut",
-      "description": "Add or remove keyframe at current time"
-    },
-    "toggle_expansion_of_selected_effects_to_show_all_properties_mac": {
-      "keys": "cmd+`",
-      "description": "Toggle expansion of selected effects to show all properties",
-      "platform": "macos"
+      "description": "Add or remove keyframe at current time",
+      "keys_macos": "alt+property shortcut"
     },
     "toggle_expansion_of_selected_effects_to_show_all_properties": {
       "keys": "ctrl+`",
-      "description": "Toggle expansion of selected effects to show all properties"
+      "description": "Toggle expansion of selected effects to show all properties",
+      "keys_macos": "cmd+`"
     },
     "extend_selection_to_next_item_panel_effect_controls": {
       "keys": "shift+down",
@@ -2161,41 +1509,25 @@
       "keys": "shift+up",
       "description": "Extend selection to previous item"
     },
-    "align_text_left_top_mac": {
-      "keys": "cmd+shift+l",
-      "description": "Align text left/top",
-      "platform": "macos"
-    },
     "align_text_left_top": {
       "keys": "ctrl+shift+l",
-      "description": "Align text left/top"
-    },
-    "align_text_center_mac": {
-      "keys": "cmd+shift+c",
-      "description": "Align text center",
-      "platform": "macos"
+      "description": "Align text left/top",
+      "keys_macos": "cmd+shift+l"
     },
     "align_text_center": {
       "keys": "ctrl+shift+c",
-      "description": "Align text center"
-    },
-    "align_text_right_bottom_mac": {
-      "keys": "cmd+shift+r",
-      "description": "Align text right/bottom",
-      "platform": "macos"
+      "description": "Align text center",
+      "keys_macos": "cmd+shift+c"
     },
     "align_text_right_bottom": {
       "keys": "ctrl+shift+r",
-      "description": "Align text right/bottom"
-    },
-    "extend_or_reduce_selection_mac": {
-      "keys": "cmd+shift+down / command+shift+up",
-      "description": "Extend or reduce selection",
-      "platform": "macos"
+      "description": "Align text right/bottom",
+      "keys_macos": "cmd+shift+r"
     },
     "extend_or_reduce_selection": {
       "keys": "ctrl+shift+down / ctrl+shift+up",
-      "description": "Extend or reduce selection"
+      "description": "Extend or reduce selection",
+      "keys_macos": "cmd+shift+down / command+shift+up"
     },
     "select_text_to_beginning_of_line": {
       "keys": "shift+home",
@@ -2213,32 +1545,20 @@
       "keys": "end",
       "description": "Move cursor to end of line"
     },
-    "select_all_text_mac": {
-      "keys": "cmd+a",
-      "description": "Select all text",
-      "platform": "macos"
-    },
     "select_all_text": {
       "keys": "ctrl+a",
-      "description": "Select all text"
-    },
-    "select_text_to_beginning_of_text_frame_mac": {
-      "keys": "cmd+shift+home",
-      "description": "Select text to beginning of text frame",
-      "platform": "macos"
+      "description": "Select all text",
+      "keys_macos": "cmd+a"
     },
     "select_text_to_beginning_of_text_frame": {
       "keys": "ctrl+shift+home",
-      "description": "Select text to beginning of text frame"
-    },
-    "select_text_to_end_of_text_frame_mac": {
-      "keys": "cmd+shift+end",
-      "description": "Select text to end of text frame",
-      "platform": "macos"
+      "description": "Select text to beginning of text frame",
+      "keys_macos": "cmd+shift+home"
     },
     "select_text_to_end_of_text_frame": {
       "keys": "ctrl+shift+end",
-      "description": "Select text to end of text frame"
+      "description": "Select text to end of text frame",
+      "keys_macos": "cmd+shift+end"
     },
     "select_text_from_insertion_point_to_mouse_click_point": {
       "keys": "shift-click",
@@ -2248,140 +1568,80 @@
       "keys": "arrows",
       "description": "Move text caret"
     },
-    "turn_all_caps_on_or_off_for_selected_text_mac": {
-      "keys": "cmd+shift+k",
-      "description": "Turn All Caps on or off for selected text",
-      "platform": "macos"
-    },
     "turn_all_caps_on_or_off_for_selected_text": {
       "keys": "ctrl+shift+k",
-      "description": "Turn All Caps on or off for selected text"
-    },
-    "turn_small_caps_on_or_off_for_selected_text_mac": {
-      "keys": "cmd+alt+shift+k",
-      "description": "Turn Small Caps on or off for selected text",
-      "platform": "macos"
+      "description": "Turn All Caps on or off for selected text",
+      "keys_macos": "cmd+shift+k"
     },
     "turn_small_caps_on_or_off_for_selected_text": {
       "keys": "ctrl+alt+shift+k",
-      "description": "Turn Small Caps on or off for selected text"
-    },
-    "turn_superscript_on_or_off_for_selected_text_mac": {
-      "keys": "cmd+shift+=",
-      "description": "Turn Superscript on or off for selected text",
-      "platform": "macos"
+      "description": "Turn Small Caps on or off for selected text",
+      "keys_macos": "cmd+alt+shift+k"
     },
     "turn_superscript_on_or_off_for_selected_text": {
       "keys": "ctrl+shift+=",
-      "description": "Turn Superscript on or off for selected text"
-    },
-    "turn_subscript_on_or_off_for_selected_text_mac": {
-      "keys": "cmd+alt+shift+=",
-      "description": "Turn Subscript on or off for selected text",
-      "platform": "macos"
+      "description": "Turn Superscript on or off for selected text",
+      "keys_macos": "cmd+shift+="
     },
     "turn_subscript_on_or_off_for_selected_text": {
       "keys": "ctrl+alt+shift+=",
-      "description": "Turn Subscript on or off for selected text"
-    },
-    "set_horizontal_scale_to_100_for_selected_text_mac": {
-      "keys": "cmd+shift+x",
-      "description": "Set horizontal scale to 100% for selected text",
-      "platform": "macos"
+      "description": "Turn Subscript on or off for selected text",
+      "keys_macos": "cmd+alt+shift+="
     },
     "set_horizontal_scale_to_100_for_selected_text": {
       "keys": "ctrl+shift+x",
-      "description": "Set horizontal scale to 100% for selected text"
-    },
-    "set_vertical_scale_to_100_for_selected_text_mac": {
-      "keys": "cmd+alt+shift+x",
-      "description": "Set vertical scale to 100% for selected text",
-      "platform": "macos"
+      "description": "Set horizontal scale to 100% for selected text",
+      "keys_macos": "cmd+shift+x"
     },
     "set_vertical_scale_to_100_for_selected_text": {
       "keys": "ctrl+alt+shift+x",
-      "description": "Set vertical scale to 100% for selected text"
-    },
-    "auto_leading_for_selected_text_mac": {
-      "keys": "cmd+alt+shift+a",
-      "description": "Auto leading for selected text",
-      "platform": "macos"
+      "description": "Set vertical scale to 100% for selected text",
+      "keys_macos": "cmd+alt+shift+x"
     },
     "auto_leading_for_selected_text": {
       "keys": "ctrl+alt+shift+a",
-      "description": "Auto leading for selected text"
-    },
-    "reset_tracking_to_0_for_selected_text_mac": {
-      "keys": "cmd+shift+ctrl+q",
-      "description": "Reset tracking to 0 for selected text",
-      "platform": "macos"
+      "description": "Auto leading for selected text",
+      "keys_macos": "cmd+alt+shift+a"
     },
     "reset_tracking_to_0_for_selected_text": {
       "keys": "ctrl+shift+q",
-      "description": "Reset tracking to 0 for selected text"
-    },
-    "justify_paragraph_left_align_last_line_mac": {
-      "keys": "cmd+shift+j",
-      "description": "Justify paragraph; left align last line",
-      "platform": "macos"
+      "description": "Reset tracking to 0 for selected text",
+      "keys_macos": "cmd+shift+ctrl+q"
     },
     "justify_paragraph_left_align_last_line": {
       "keys": "ctrl+shift+j",
-      "description": "Justify paragraph; left align last line"
-    },
-    "justify_paragraph_right_align_last_line_mac": {
-      "keys": "cmd+alt+shift+j",
-      "description": "Justify paragraph; right align last line",
-      "platform": "macos"
+      "description": "Justify paragraph; left align last line",
+      "keys_macos": "cmd+shift+j"
     },
     "justify_paragraph_right_align_last_line": {
       "keys": "ctrl+alt+shift+j",
-      "description": "Justify paragraph; right align last line"
-    },
-    "justify_paragraph_force_last_line_mac": {
-      "keys": "cmd+shift+f",
-      "description": "Justify paragraph; force last line",
-      "platform": "macos"
+      "description": "Justify paragraph; right align last line",
+      "keys_macos": "cmd+alt+shift+j"
     },
     "justify_paragraph_force_last_line": {
       "keys": "ctrl+shift+f",
-      "description": "Justify paragraph; force last line"
-    },
-    "decrease_font_size_by_2_units_mac": {
-      "keys": "cmd+shift+,",
-      "description": "Decrease font size by 2 units",
-      "platform": "macos"
+      "description": "Justify paragraph; force last line",
+      "keys_macos": "cmd+shift+f"
     },
     "decrease_font_size_by_2_units": {
       "keys": "ctrl+shift+,",
-      "description": "Decrease font size by 2 units"
-    },
-    "increase_font_size_by_2_units_mac": {
-      "keys": "cmd+shift+.",
-      "description": "Increase font size by 2 units",
-      "platform": "macos"
+      "description": "Decrease font size by 2 units",
+      "keys_macos": "cmd+shift+,"
     },
     "increase_font_size_by_2_units": {
       "keys": "ctrl+shift+.",
-      "description": "Increase font size by 2 units"
-    },
-    "decrease_font_size_by_10_units_mac": {
-      "keys": "cmd+alt+shift+,",
-      "description": "Decrease font size by 10 units",
-      "platform": "macos"
+      "description": "Increase font size by 2 units",
+      "keys_macos": "cmd+shift+."
     },
     "decrease_font_size_by_10_units": {
       "keys": "ctrl+alt+shift+,",
-      "description": "Decrease font size by 10 units"
-    },
-    "increase_font_size_by_10_units_mac": {
-      "keys": "cmd+alt+shift+.",
-      "description": "Increase font size by 10 units",
-      "platform": "macos"
+      "description": "Decrease font size by 10 units",
+      "keys_macos": "cmd+alt+shift+,"
     },
     "increase_font_size_by_10_units": {
       "keys": "ctrl+alt+shift+.",
-      "description": "Increase font size by 10 units"
+      "description": "Increase font size by 10 units",
+      "keys_macos": "cmd+alt+shift+."
     },
     "increase_leading_by_2_units": {
       "keys": "alt+up",
@@ -2391,23 +1651,15 @@
       "keys": "alt+down",
       "description": "Decrease leading by 2 units"
     },
-    "increase_leading_by_10_units_mac": {
-      "keys": "cmd+alt+up",
-      "description": "Increase leading by 10 units",
-      "platform": "macos"
-    },
     "increase_leading_by_10_units": {
       "keys": "ctrl+alt+up",
-      "description": "Increase leading by 10 units"
-    },
-    "decrease_leading_by_10_units_mac": {
-      "keys": "cmd+alt+down",
-      "description": "Decrease leading by 10 units",
-      "platform": "macos"
+      "description": "Increase leading by 10 units",
+      "keys_macos": "cmd+alt+up"
     },
     "decrease_leading_by_10_units": {
       "keys": "ctrl+alt+down",
-      "description": "Decrease leading by 10 units"
+      "description": "Decrease leading by 10 units",
+      "keys_macos": "cmd+alt+down"
     },
     "decrease_baseline_shift_by_2_units": {
       "keys": "alt+shift+down",
@@ -2417,23 +1669,15 @@
       "keys": "alt+shift+up",
       "description": "Increase baseline shift by 2 units"
     },
-    "decrease_baseline_shift_by_10_units_mac": {
-      "keys": "cmd+alt+shift+down",
-      "description": "Decrease baseline shift by 10 units",
-      "platform": "macos"
-    },
     "decrease_baseline_shift_by_10_units": {
       "keys": "ctrl+alt+shift+down",
-      "description": "Decrease baseline shift by 10 units"
-    },
-    "increase_baseline_shift_by_10_units_mac": {
-      "keys": "cmd+alt+shift+up",
-      "description": "Increase baseline shift by 10 units",
-      "platform": "macos"
+      "description": "Decrease baseline shift by 10 units",
+      "keys_macos": "cmd+alt+shift+down"
     },
     "increase_baseline_shift_by_10_units": {
       "keys": "ctrl+alt+shift+up",
-      "description": "Increase baseline shift by 10 units"
+      "description": "Increase baseline shift by 10 units",
+      "keys_macos": "cmd+alt+shift+up"
     },
     "decrease_kerning_or_tracking_20_units": {
       "keys": "alt+left",
@@ -2443,32 +1687,20 @@
       "keys": "alt+right",
       "description": "Increase kerning or tracking 20 units"
     },
-    "decrease_kerning_or_tracking_100_units_mac": {
-      "keys": "cmd+alt+left",
-      "description": "Decrease kerning or tracking 100 units",
-      "platform": "macos"
-    },
     "decrease_kerning_or_tracking_100_units": {
       "keys": "ctrl+alt+left",
-      "description": "Decrease kerning or tracking 100 units"
-    },
-    "increase_kerning_or_tracking_100_units_mac": {
-      "keys": "cmd+alt+right",
-      "description": "Increase kerning or tracking 100 units",
-      "platform": "macos"
+      "description": "Decrease kerning or tracking 100 units",
+      "keys_macos": "cmd+alt+left"
     },
     "increase_kerning_or_tracking_100_units": {
       "keys": "ctrl+alt+right",
-      "description": "Increase kerning or tracking 100 units"
-    },
-    "toggle_paragraph_composer_mac": {
-      "keys": "cmd+alt+shift+t",
-      "description": "Toggle paragraph composer",
-      "platform": "macos"
+      "description": "Increase kerning or tracking 100 units",
+      "keys_macos": "cmd+alt+right"
     },
     "toggle_paragraph_composer": {
       "keys": "ctrl+alt+shift+t",
-      "description": "Toggle paragraph composer"
+      "description": "Toggle paragraph composer",
+      "keys_macos": "cmd+alt+shift+t"
     },
     "go_to_specific_time_time_navigation": {
       "keys": "alt+shift+j",
@@ -2522,23 +1754,15 @@
       "keys": "o",
       "description": "Go to layer Out point"
     },
-    "go_to_previous_in_point_or_out_point_time_navigation_mac": {
-      "keys": "cmd+alt+shift+left",
-      "description": "Go to previous In point or Out point",
-      "platform": "macos"
-    },
     "go_to_previous_in_point_or_out_point_time_navigation": {
       "keys": "ctrl+alt+shift+left",
-      "description": "Go to previous In point or Out point"
-    },
-    "go_to_next_in_point_or_out_point_time_navigation_mac": {
-      "keys": "cmd+alt+shift+right",
-      "description": "Go to next In point or Out point",
-      "platform": "macos"
+      "description": "Go to previous In point or Out point",
+      "keys_macos": "cmd+alt+shift+left"
     },
     "go_to_next_in_point_or_out_point_time_navigation": {
       "keys": "ctrl+alt+shift+right",
-      "description": "Go to next In point or Out point"
+      "description": "Go to next In point or Out point",
+      "keys_macos": "cmd+alt+shift+right"
     },
     "scroll_to_current_time_in_timeline_panel": {
       "keys": "d",
@@ -2554,7 +1778,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+a",
-        "description": "Select all"
+        "description": "Select all",
+        "keys_macos": "cmd+a"
       }
     },
     "deselect_all": {
@@ -2604,7 +1829,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+up",
-        "description": "Move layer/mask/effect to top"
+        "description": "Move layer/mask/effect to top",
+        "keys_macos": "cmd+alt+up"
       }
     },
     "move_layer_mask_effect_to_bottom": {
@@ -2618,7 +1844,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+down",
-        "description": "Move layer/mask/effect to bottom"
+        "description": "Move layer/mask/effect to bottom",
+        "keys_macos": "cmd+alt+down"
       }
     },
     "duplicate_selected_layers_masks_effects_text_selectors_animators_puppet_meshes_shapes_render_items_output_modules_or_compositions": {
@@ -2629,7 +1856,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+d",
-        "description": "Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)"
+        "description": "Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)",
+        "keys_macos": "cmd+d"
       }
     },
     "quit": {
@@ -2640,7 +1868,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+q",
-        "description": "Quit"
+        "description": "Quit",
+        "keys_macos": "cmd+q"
       }
     },
     "undo": {
@@ -2651,7 +1880,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+z",
-        "description": "Undo"
+        "description": "Undo",
+        "keys_macos": "cmd+z"
       }
     },
     "redo": {
@@ -2662,7 +1892,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+z",
-        "description": "Redo"
+        "description": "Redo",
+        "keys_macos": "cmd+shift+z"
       }
     },
     "purge_all_memory": {
@@ -2673,7 +1904,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+/",
-        "description": "Purge All Memory"
+        "description": "Purge All Memory",
+        "keys_macos": "cmd+alt+/"
       }
     },
     "return_exit_interrupt": {
@@ -2698,7 +1930,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+e",
-        "description": "Display filename corresponding to the frame at the current time in the Info panel"
+        "description": "Display filename corresponding to the frame at the current time in the Info panel",
+        "keys_macos": "cmd+alt+e"
       }
     },
     "cycle_through_tools": {
@@ -2709,7 +1942,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click tool button in tools panel",
-        "description": "Cycle through tools"
+        "description": "Cycle through tools",
+        "keys_macos": "option-click tool button in tools panel"
       }
     },
     "selection_tool": {
@@ -2830,7 +2064,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+t",
-        "description": "Cycle Type tools"
+        "description": "Cycle Type tools",
+        "keys_macos": "cmd+t"
       }
     },
     "cycle_pen_and_mask_feather_tools": {
@@ -2852,7 +2087,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+b",
-        "description": "Cycle Brush, Clone Stamp, Eraser"
+        "description": "Cycle Brush, Clone Stamp, Eraser",
+        "keys_macos": "cmd+b"
       }
     },
     "cycle_puppet_tools": {
@@ -2863,7 +2099,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+p",
-        "description": "Cycle Puppet tools"
+        "description": "Cycle Puppet tools",
+        "keys_macos": "cmd+p"
       }
     },
     "zoom_in": {
@@ -2874,7 +2111,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+=",
-        "description": "Zoom in"
+        "description": "Zoom in",
+        "keys_macos": "cmd+="
       }
     },
     "zoom_out": {
@@ -2885,7 +2123,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+-",
-        "description": "Zoom out"
+        "description": "Zoom out",
+        "keys_macos": "cmd+-"
       }
     },
     "new_composition": {
@@ -2896,7 +2135,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+n",
-        "description": "New composition"
+        "description": "New composition",
+        "keys_macos": "cmd+n"
       }
     },
     "composition_settings": {
@@ -2907,7 +2147,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+k",
-        "description": "Composition Settings"
+        "description": "Composition Settings",
+        "keys_macos": "cmd+k"
       }
     },
     "set_beginning_of_work_area_to_current_time": {
@@ -2940,7 +2181,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+b",
-        "description": "Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration"
+        "description": "Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration",
+        "keys_macos": "cmd+alt+b"
       }
     },
     "open_composition_mini_flowchart_for_active_composition": {
@@ -2973,7 +2215,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+e",
-        "description": "Delete all effects from selected layers"
+        "description": "Delete all effects from selected layers",
+        "keys_macos": "cmd+shift+e"
       }
     },
     "apply_most_recently_applied_effect_to_selected_layers": {
@@ -2984,7 +2227,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+e",
-        "description": "Apply most recently applied effect to selected layers"
+        "description": "Apply most recently applied effect to selected layers",
+        "keys_macos": "cmd+alt+shift+e"
       }
     },
     "apply_most_recently_applied_animation_preset_to_selected_layers": {
@@ -2995,7 +2239,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+f",
-        "description": "Apply most recently applied animation preset to selected layers"
+        "description": "Apply most recently applied animation preset to selected layers",
+        "keys_macos": "cmd+alt+shift+f"
       }
     },
     "import_one_file_or_image_sequence": {
@@ -3006,7 +2251,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+i",
-        "description": "Import one file or image sequence"
+        "description": "Import one file or image sequence",
+        "keys_macos": "cmd+i"
       }
     },
     "import_multiple_files_or_image_sequences": {
@@ -3017,7 +2263,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+i",
-        "description": "Import multiple files or image sequences"
+        "description": "Import multiple files or image sequences",
+        "keys_macos": "cmd+alt+i"
       }
     },
     "add_selected_items_to_most_recently_activated_composition": {
@@ -3028,7 +2275,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+/",
-        "description": "Add selected items to most recently activated composition"
+        "description": "Add selected items to most recently activated composition",
+        "keys_macos": "cmd+/"
       }
     },
     "replace_selected_source_footage_for_selected_layers_with_footage_item_selected_in_project_panel": {
@@ -3039,7 +2287,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+/",
-        "description": "Replace selected source footage for selected layers with footage item selected in Project panel"
+        "description": "Replace selected source footage for selected layers with footage item selected in Project panel",
+        "keys_macos": "cmd+alt+/"
       }
     },
     "delete_a_footage_item_without_a_warning": {
@@ -3050,7 +2299,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+backspace",
-        "description": "Delete a footage item without a warning"
+        "description": "Delete a footage item without a warning",
+        "keys_macos": "cmd+delete"
       }
     },
     "open_interpret_footage_dialog_box_for_selected_footage_item": {
@@ -3061,7 +2311,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+g",
-        "description": "Open Interpret Footage dialog box for selected footage item"
+        "description": "Open Interpret Footage dialog box for selected footage item",
+        "keys_macos": "cmd+alt+g"
       }
     },
     "remember_footage_interpretation": {
@@ -3072,7 +2323,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+c",
-        "description": "Remember footage interpretation"
+        "description": "Remember footage interpretation",
+        "keys_macos": "cmd+alt+c"
       }
     },
     "edit_selected_footage_item_in_application_with_which_it_s_associated": {
@@ -3083,7 +2335,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+e",
-        "description": "Edit selected footage item in application with which it\u2019s associated"
+        "description": "Edit selected footage item in application with which it\u2019s associated",
+        "keys_macos": "cmd+e"
       }
     },
     "replace_selected_footage_item": {
@@ -3094,7 +2347,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+h",
-        "description": "Replace selected footage item"
+        "description": "Replace selected footage item",
+        "keys_macos": "cmd+h"
       }
     },
     "reload_selected_footage_items": {
@@ -3105,7 +2359,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+l",
-        "description": "Reload selected footage items"
+        "description": "Reload selected footage items",
+        "keys_macos": "cmd+alt+l"
       }
     },
     "set_proxy_for_selected_footage_item": {
@@ -3116,7 +2371,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+p",
-        "description": "Set proxy for selected footage item"
+        "description": "Set proxy for selected footage item",
+        "keys_macos": "cmd+alt+p"
       }
     },
     "toggle_graph_editor_layer_bar_modes": {
@@ -3151,7 +2407,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+a",
-        "description": "Select all visible keyframes and properties"
+        "description": "Select all visible keyframes and properties",
+        "keys_macos": "cmd+alt+a"
       }
     },
     "deselect_all_keyframes_properties_and_property_groups": {
@@ -3217,7 +2474,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+k",
-        "description": "Set interpolation for selected keyframes"
+        "description": "Set interpolation for selected keyframes",
+        "keys_macos": "cmd+alt+k"
       }
     },
     "set_keyframe_interpolation_hold_or_auto_bezier": {
@@ -3228,7 +2486,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+h",
-        "description": "Set keyframe interpolation: hold or Auto Bezier"
+        "description": "Set keyframe interpolation: hold or Auto Bezier",
+        "keys_macos": "cmd+alt+h"
       }
     },
     "set_keyframe_interpolation_linear_or_auto_bezier": {
@@ -3239,7 +2498,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-click in layer bar mode",
-        "description": "Set keyframe interpolation: linear or Auto Bezier"
+        "description": "Set keyframe interpolation: linear or Auto Bezier",
+        "keys_macos": "command-click in layer bar mode"
       }
     },
     "set_keyframe_interpolation_linear_or_hold": {
@@ -3250,7 +2510,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt-click in layer bar mode",
-        "description": "Set keyframe interpolation: linear or hold"
+        "description": "Set keyframe interpolation: linear or hold",
+        "keys_macos": "cmd+option-click in layer bar mode"
       }
     },
     "easy_ease_selected_keyframes": {
@@ -3283,7 +2544,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+f9",
-        "description": "Easy ease selected keyframes out"
+        "description": "Easy ease selected keyframes out",
+        "keys_macos": "cmd+shift+f9"
       }
     },
     "set_velocity_for_selected_keyframes": {
@@ -3294,7 +2556,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+k",
-        "description": "Set velocity for selected keyframes"
+        "description": "Set velocity for selected keyframes",
+        "keys_macos": "cmd+shift+k"
       }
     },
     "add_or_remove_keyframe_at_current_time_for_property_shortcuts_see_showing_properties_and_groups_in_the_timeline_panel": {
@@ -3305,7 +2568,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+shift+property shortcut",
-        "description": "Add or remove keyframe at current time. For property shortcuts, see Showing properties and groups in the Timeline panel ."
+        "description": "Add or remove keyframe at current time. For property shortcuts, see Showing properties and groups in the Timeline panel .",
+        "keys_macos": "alt+property shortcut"
       }
     },
     "new_text_layer": {
@@ -3316,7 +2580,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+t",
-        "description": "New text layer"
+        "description": "New text layer",
+        "keys_macos": "cmd+alt+shift+t"
       }
     },
     "new_solid_layer": {
@@ -3327,7 +2592,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+y",
-        "description": "New solid layer"
+        "description": "New solid layer",
+        "keys_macos": "cmd+y"
       }
     },
     "new_null_layer": {
@@ -3338,7 +2604,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+y",
-        "description": "New null layer"
+        "description": "New null layer",
+        "keys_macos": "cmd+alt+shift+y"
       }
     },
     "new_adjustment_layer": {
@@ -3349,7 +2616,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+y",
-        "description": "New adjustment layer"
+        "description": "New adjustment layer",
+        "keys_macos": "cmd+alt+y"
       }
     },
     "select_layer_by_its_number": {
@@ -3371,7 +2639,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+down",
-        "description": "Select next layer in stacking order"
+        "description": "Select next layer in stacking order",
+        "keys_macos": "cmd+down"
       }
     },
     "select_previous_layer_in_stacking_order": {
@@ -3382,7 +2651,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+up",
-        "description": "Select previous layer in stacking order"
+        "description": "Select previous layer in stacking order",
+        "keys_macos": "cmd+up"
       }
     },
     "extend_selection_to_next_layer_in_stacking_order": {
@@ -3393,7 +2663,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+down",
-        "description": "Extend selection to next layer in stacking order"
+        "description": "Extend selection to next layer in stacking order",
+        "keys_macos": "cmd+shift+down"
       }
     },
     "extend_selection_to_previous_layer_in_stacking_order": {
@@ -3404,7 +2675,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+up",
-        "description": "Extend selection to previous layer in stacking order"
+        "description": "Extend selection to previous layer in stacking order",
+        "keys_macos": "cmd+shift+up"
       }
     },
     "toggle_parent_column": {
@@ -3437,7 +2709,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+b / alt+shift+b",
-        "description": "Setting the sampling method for selected layers"
+        "description": "Setting the sampling method for selected layers",
+        "keys_macos": "alt+b / option+shift+b"
       }
     },
     "turn_off_all_other_solo_switches": {
@@ -3448,7 +2721,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click solo switch",
-        "description": "Turn off all other solo switches"
+        "description": "Turn off all other solo switches",
+        "keys_macos": "option-click solo switch"
       }
     },
     "turn_video_switch_on_or_off_for_selected_layers": {
@@ -3459,7 +2733,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+v",
-        "description": "Turn Video switch on or off for selected layers"
+        "description": "Turn Video switch on or off for selected layers",
+        "keys_macos": "cmd+alt+shift+v"
       }
     },
     "turn_off_video_switch_for_all_video_layers_other_than_selected_layers": {
@@ -3470,7 +2745,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+v",
-        "description": "Turn off Video switch for all video layers other than selected layers"
+        "description": "Turn off Video switch for all video layers other than selected layers",
+        "keys_macos": "cmd+shift+v"
       }
     },
     "open_settings_dialog_box_for_selected_solid_light_camera_null_or_adjustment_layer": {
@@ -3481,7 +2757,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+y",
-        "description": "Open settings dialog box for selected solid, light, camera, null, or adjustment layer"
+        "description": "Open settings dialog box for selected solid, light, camera, null, or adjustment layer",
+        "keys_macos": "cmd+shift+y"
       }
     },
     "paste_layers_at_current_time": {
@@ -3492,7 +2769,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+v",
-        "description": "Paste layers at current time"
+        "description": "Paste layers at current time",
+        "keys_macos": "cmd+alt+v"
       }
     },
     "split_selected_layers": {
@@ -3503,7 +2781,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+d",
-        "description": "Split selected layers"
+        "description": "Split selected layers",
+        "keys_macos": "cmd+shift+d"
       }
     },
     "precompose_selected_layers": {
@@ -3514,7 +2793,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+c",
-        "description": "Precompose selected layers"
+        "description": "Precompose selected layers",
+        "keys_macos": "cmd+shift+c"
       }
     },
     "open_layer_in_layer_panel": {
@@ -3536,7 +2816,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-double-click a layer",
-        "description": "Open source of a layer in Footage panel"
+        "description": "Open source of a layer in Footage panel",
+        "keys_macos": "option-double-click a layer"
       }
     },
     "reverse_selected_layers_in_time": {
@@ -3547,7 +2828,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+r",
-        "description": "Reverse selected layers in time"
+        "description": "Reverse selected layers in time",
+        "keys_macos": "cmd+alt+r"
       }
     },
     "enable_time_remapping_for_selected_layers": {
@@ -3558,7 +2840,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+t",
-        "description": "Enable time remapping for selected layers"
+        "description": "Enable time remapping for selected layers",
+        "keys_macos": "cmd+alt+t"
       }
     },
     "add_or_remove_expression_for_a_property": {
@@ -3569,7 +2852,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click stopwatch",
-        "description": "Add or remove expression for a property"
+        "description": "Add or remove expression for a property",
+        "keys_macos": "option-click stopwatch"
       }
     },
     "set_in_point_by_time_stretching": {
@@ -3580,7 +2864,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+,",
-        "description": "Set In point by time-stretching"
+        "description": "Set In point by time-stretching",
+        "keys_macos": "cmd+shift+,"
       }
     },
     "set_out_point_by_time_stretching": {
@@ -3591,7 +2876,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+,",
-        "description": "Set Out point by time-stretching"
+        "description": "Set Out point by time-stretching",
+        "keys_macos": "cmd+alt+,"
       }
     },
     "with_selected_layers_move_in_point_to_beginning_of_composition": {
@@ -3624,7 +2910,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+l",
-        "description": "Lock selected layers"
+        "description": "Lock selected layers",
+        "keys_macos": "cmd+l"
       }
     },
     "unlock_all_layers": {
@@ -3635,7 +2922,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+l",
-        "description": "Unlock all layers"
+        "description": "Unlock all layers",
+        "keys_macos": "cmd+shift+l"
       }
     },
     "set_quality_to_best_for_selected_layers": {
@@ -3646,7 +2934,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+u",
-        "description": "Set Quality to Best for selected layers"
+        "description": "Set Quality to Best for selected layers",
+        "keys_macos": "cmd+u"
       }
     },
     "set_quality_to_draft_for_selected_layers": {
@@ -3657,7 +2946,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+u",
-        "description": "Set Quality to Draft for selected layers"
+        "description": "Set Quality to Draft for selected layers",
+        "keys_macos": "cmd+shift+u"
       }
     },
     "set_quality_to_wireframe_for_selected_layers": {
@@ -3668,7 +2958,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+u",
-        "description": "Set Quality to Wireframe for selected layers"
+        "description": "Set Quality to Wireframe for selected layers",
+        "keys_macos": "cmd+alt+shift+u"
       }
     },
     "cycle_forward_through_blending_modes_for_selected_layers": {
@@ -3712,7 +3003,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+num*",
-        "description": "Set marker at current time and open marker dialog box"
+        "description": "Set marker at current time and open marker dialog box",
+        "keys_macos": "alt+num*or control+alt+8"
       }
     },
     "set_and_number_a_composition_marker_at_the_current_time": {
@@ -3745,7 +3037,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click the markers",
-        "description": "Display the duration between two layer markers or keyframes in the Info panel"
+        "description": "Display the duration between two layer markers or keyframes in the Info panel",
+        "keys_macos": "option-click the markers"
       }
     },
     "remove_marker": {
@@ -3756,7 +3049,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-click marker",
-        "description": "Remove marker"
+        "description": "Remove marker",
+        "keys_macos": "command-click marker"
       }
     },
     "new_mask": {
@@ -3767,7 +3061,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+n",
-        "description": "New mask"
+        "description": "New mask",
+        "keys_macos": "cmd+shift+n"
       }
     },
     "select_all_points_in_a_mask": {
@@ -3778,7 +3073,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click mask",
-        "description": "Select all points in a mask"
+        "description": "Select all points in a mask",
+        "keys_macos": "option-click mask"
       }
     },
     "select_next_mask": {
@@ -3822,7 +3118,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-drag",
-        "description": "Scale around center point in Free Transform mode"
+        "description": "Scale around center point in Free Transform mode",
+        "keys_macos": "command-drag"
       }
     },
     "toggle_between_smooth_and_corner_points": {
@@ -3833,7 +3130,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt-click vertex",
-        "description": "Toggle between smooth and corner points"
+        "description": "Toggle between smooth and corner points",
+        "keys_macos": "cmd+option-click vertex"
       }
     },
     "redraw_bezier_handles": {
@@ -3844,7 +3142,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt-drag vertex",
-        "description": "Redraw Bezier handles"
+        "description": "Redraw Bezier handles",
+        "keys_macos": "cmd+option-drag vertex"
       }
     },
     "invert_selected_mask": {
@@ -3855,7 +3154,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+i",
-        "description": "Invert selected mask"
+        "description": "Invert selected mask",
+        "keys_macos": "cmd+shift+i"
       }
     },
     "open_mask_feather_dialog_box_for_selected_mask": {
@@ -3866,7 +3166,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+f",
-        "description": "Open Mask Feather dialog box for selected mask"
+        "description": "Open Mask Feather dialog box for selected mask",
+        "keys_macos": "cmd+shift+f"
       }
     },
     "open_mask_shape_dialog_box_for_selected_mask": {
@@ -3877,7 +3178,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+m",
-        "description": "Open Mask Shape dialog box for selected mask"
+        "description": "Open Mask Shape dialog box for selected mask",
+        "keys_macos": "cmd+shift+m"
       }
     },
     "move_selection_1_pixel_at_current_zoom": {
@@ -3943,7 +3245,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+l",
-        "description": "New light"
+        "description": "New light",
+        "keys_macos": "cmd+alt+shift+l"
       }
     },
     "new_camera": {
@@ -3954,7 +3257,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+c",
-        "description": "New camera"
+        "description": "New camera",
+        "keys_macos": "cmd+alt+shift+c"
       }
     },
     "move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers": {
@@ -3965,7 +3269,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+\\",
-        "description": "Move the camera and its point of interest to look at selected 3D layers"
+        "description": "Move the camera and its point of interest to look at selected 3D layers",
+        "keys_macos": "cmd+alt+shift+\\"
       }
     },
     "with_a_camera_tool_selected_move_the_camera_and_its_point_of_interest_to_look_at_selected_3d_layers": {
@@ -4022,7 +3327,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-drag property value",
-        "description": "Modify property value by 1/10 default increments"
+        "description": "Modify property value by 1/10 default increments",
+        "keys_macos": "command-drag property value"
       }
     },
     "open_auto_orientation_dialog_box_for_selected_layers": {
@@ -4033,7 +3339,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+o",
-        "description": "Open Auto-Orientation dialog box for selected layers"
+        "description": "Open Auto-Orientation dialog box for selected layers",
+        "keys_macos": "cmd+alt+o"
       }
     },
     "open_opacity_dialog_box_for_selected_layers": {
@@ -4044,7 +3351,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+o",
-        "description": "Open Opacity dialog box for selected layers"
+        "description": "Open Opacity dialog box for selected layers",
+        "keys_macos": "cmd+shift+o"
       }
     },
     "open_rotation_dialog_box_for_selected_layers": {
@@ -4055,7 +3363,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+r",
-        "description": "Open Rotation dialog box for selected layers"
+        "description": "Open Rotation dialog box for selected layers",
+        "keys_macos": "cmd+shift+r"
       }
     },
     "open_position_dialog_box_for_selected_layers": {
@@ -4066,7 +3375,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+p",
-        "description": "Open Position dialog box for selected layers"
+        "description": "Open Position dialog box for selected layers",
+        "keys_macos": "cmd+shift+p"
       }
     },
     "center_selected_layers_in_view": {
@@ -4077,7 +3387,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+home",
-        "description": "Center selected layers in view"
+        "description": "Center selected layers in view",
+        "keys_macos": "cmd+home"
       }
     },
     "move_selected_layers_1_frame_earlier": {
@@ -4220,7 +3531,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+numpad+or alt+numpad+",
-        "description": "Increase Scale of selected layers by 1%"
+        "description": "Increase Scale of selected layers by 1%",
+        "keys_macos": "cmd+numpad+or option+numpad+"
       }
     },
     "decrease_scale_of_selected_layers_by_1": {
@@ -4231,7 +3543,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+num-",
-        "description": "Decrease Scale of selected layers by 1%"
+        "description": "Decrease Scale of selected layers by 1%",
+        "keys_macos": "cmd+num-"
       }
     },
     "increase_scale_of_selected_layers_by_10": {
@@ -4242,7 +3555,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+numpad+",
-        "description": "Increase Scale of selected layers by 10%"
+        "description": "Increase Scale of selected layers by 10%",
+        "keys_macos": "cmd+shift+numpad+"
       }
     },
     "decrease_scale_of_selected_layers_by_10": {
@@ -4253,7 +3567,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+num-",
-        "description": "Decrease Scale of selected layers by 10%"
+        "description": "Decrease Scale of selected layers by 10%",
+        "keys_macos": "cmd+shift+num-"
       }
     },
     "modify_rotation_or_orientation_in_45_increments": {
@@ -4297,7 +3612,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+f",
-        "description": "Scale and reposition selected layers to fit composition"
+        "description": "Scale and reposition selected layers to fit composition",
+        "keys_macos": "cmd+alt+f"
       }
     },
     "scale_and_reposition_selected_layers_to_fit_composition_width_preserving_image_aspect_ratio_for_each_layer": {
@@ -4308,7 +3624,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+h",
-        "description": "Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer"
+        "description": "Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer",
+        "keys_macos": "cmd+alt+shift+h"
       }
     },
     "scale_and_reposition_selected_layers_to_fit_composition_height_preserving_image_aspect_ratio_for_each_layer": {
@@ -4319,7 +3636,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+g",
-        "description": "Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer"
+        "description": "Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer",
+        "keys_macos": "cmd+alt+shift+g"
       }
     },
     "swap_color_background_foreground": {
@@ -4356,7 +3674,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click",
-        "description": "Set foreground color to the color currently under any paint tool pointer"
+        "description": "Set foreground color to the color currently under any paint tool pointer",
+        "keys_macos": "option-click"
       }
     },
     "set_foreground_color_to_the_average_color_of_a_4_pixel_x_4_pixel_area_under_any_paint_tool_pointer": {
@@ -4367,7 +3686,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt-click",
-        "description": "Set foreground color to the average color of a 4-pixel x 4-pixel area under any paint tool pointer"
+        "description": "Set foreground color to the average color of a 4-pixel x 4-pixel area under any paint tool pointer",
+        "keys_macos": "cmd+option-click"
       }
     },
     "set_brush_size_for_a_paint_tool": {
@@ -4378,7 +3698,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-drag",
-        "description": "Set brush size for a paint tool"
+        "description": "Set brush size for a paint tool",
+        "keys_macos": "command-drag"
       }
     },
     "join_current_paint_stroke_to_the_previous_stroke": {
@@ -4400,7 +3721,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click",
-        "description": "Set starting sample point to point currently under Clone Stamp tool pointer"
+        "description": "Set starting sample point to point currently under Clone Stamp tool pointer",
+        "keys_macos": "option-click"
       }
     },
     "hold_eraser_tool_with_last_stroke_only_option": {
@@ -4411,7 +3733,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift",
-        "description": "(Hold) Eraser tool with Last Stroke Only option"
+        "description": "(Hold) Eraser tool with Last Stroke Only option",
+        "keys_macos": "cmd+shift"
       }
     },
     "show_and_move_overlay": {
@@ -4433,7 +3756,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt-click the button for the preset",
-        "description": "Duplicate a Clone Stamp tool preset in Paint panel"
+        "description": "Duplicate a Clone Stamp tool preset in Paint panel",
+        "keys_macos": "option-click the button for the preset"
       }
     },
     "move_earlier_or_later_by_number_of_frames_specified_for_stroke_duration": {
@@ -4444,7 +3768,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+pageup",
-        "description": "Move earlier or later by number of frames specified for stroke Duration"
+        "description": "Move earlier or later by number of frames specified for stroke Duration",
+        "keys_macos": "cmd+pageup"
       }
     },
     "maximize_or_restore_panel_under_pointer": {
@@ -4466,7 +3791,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+0",
-        "description": "Toggle Project panel"
+        "description": "Toggle Project panel",
+        "keys_macos": "cmd+0"
       }
     },
     "toggle_render_queue_panel": {
@@ -4477,7 +3803,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+0",
-        "description": "Toggle Render Queue panel"
+        "description": "Toggle Render Queue panel",
+        "keys_macos": "cmd+alt+0"
       }
     },
     "toggle_tools_panel": {
@@ -4488,7 +3815,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+1",
-        "description": "Toggle Tools panel"
+        "description": "Toggle Tools panel",
+        "keys_macos": "cmd+1"
       }
     },
     "toggle_info_panel": {
@@ -4499,7 +3827,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+2",
-        "description": "Toggle Info panel"
+        "description": "Toggle Info panel",
+        "keys_macos": "cmd+2"
       }
     },
     "toggle_preview_panel": {
@@ -4510,7 +3839,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+3",
-        "description": "Toggle Preview panel"
+        "description": "Toggle Preview panel",
+        "keys_macos": "cmd+3"
       }
     },
     "toggle_audio_panel": {
@@ -4521,7 +3851,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+4",
-        "description": "Toggle Audio panel"
+        "description": "Toggle Audio panel",
+        "keys_macos": "cmd+4"
       }
     },
     "toggle_effects_presets_panel": {
@@ -4532,7 +3863,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+5",
-        "description": "Toggle Effects & Presets panel"
+        "description": "Toggle Effects & Presets panel",
+        "keys_macos": "cmd+5"
       }
     },
     "toggle_character_panel": {
@@ -4543,7 +3875,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+6",
-        "description": "Toggle Character panel"
+        "description": "Toggle Character panel",
+        "keys_macos": "cmd+6"
       }
     },
     "toggle_paragraph_panel": {
@@ -4554,7 +3887,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+7",
-        "description": "Toggle Paragraph panel"
+        "description": "Toggle Paragraph panel",
+        "keys_macos": "cmd+7"
       }
     },
     "toggle_paint_panel": {
@@ -4565,7 +3899,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+8",
-        "description": "Toggle Paint panel"
+        "description": "Toggle Paint panel",
+        "keys_macos": "cmd+8"
       }
     },
     "toggle_brushes_panel": {
@@ -4576,7 +3911,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+9",
-        "description": "Toggle Brushes panel"
+        "description": "Toggle Brushes panel",
+        "keys_macos": "cmd+9"
       }
     },
     "toggle_effect_controls_panel_for_selected_layer": {
@@ -4598,7 +3934,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f11",
-        "description": "Open Flowchart panel for project flowchart"
+        "description": "Open Flowchart panel for project flowchart",
+        "keys_macos": "cmd+f11"
       }
     },
     "switch_to_workspace": {
@@ -4620,7 +3957,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+w",
-        "description": "Close active viewer or panel"
+        "description": "Close active viewer or panel",
+        "keys_macos": "cmd+w"
       }
     },
     "close_active_panel_or_all_viewers_of_type_of_active_viewer": {
@@ -4631,7 +3969,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+w",
-        "description": "Close active panel or all viewers of type of active viewer"
+        "description": "Close active panel or all viewers of type of active viewer",
+        "keys_macos": "cmd+shift+w"
       }
     },
     "split_the_frame_containing_the_active_viewer_and_create_a_new_viewer_with_opposite_locked_unlocked_state": {
@@ -4644,7 +3983,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+n",
-        "description": "Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state"
+        "description": "Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state",
+        "keys_macos": "cmd+alt+shift+n"
       }
     },
     "resize_application_window_or_floating_window_to_fit_screen": {
@@ -4655,7 +3995,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+\\",
-        "description": "Resize application window or floating window to fit screen."
+        "description": "Resize application window or floating window to fit screen.",
+        "keys_macos": "cmd+\\"
       }
     },
     "move_application_window_or_floating_window_to_main_monitor_resize_window_to_fit_screen": {
@@ -4666,7 +4007,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+\\",
-        "description": "Move application window or floating window to main monitor; resize window to fit screen."
+        "description": "Move application window or floating window to main monitor; resize window to fit screen.",
+        "keys_macos": "cmd+alt+\\"
       }
     },
     "toggle_activation_between_composition_panel_and_timeline_panel_for_current_composition": {
@@ -4721,7 +4063,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+;",
-        "description": "Open Preferences dialog box"
+        "description": "Open Preferences dialog box",
+        "keys_macos": "cmd+alt+;"
       }
     },
     "start_or_stop_standard_preview": {
@@ -4765,7 +4108,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-click ram preview button",
-        "description": "Save RAM preview"
+        "description": "Save RAM preview",
+        "keys_macos": "command-click ram preview button"
       }
     },
     "save_ram_preview_with_alternate_settings": {
@@ -4776,7 +4120,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift-click ram preview button",
-        "description": "Save RAM preview with alternate settings"
+        "description": "Save RAM preview with alternate settings",
+        "keys_macos": "cmd+shift-click ram preview button"
       }
     },
     "preview_only_audio_from_current_time": {
@@ -4820,7 +4165,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl-drag current-time indicator",
-        "description": "Manually preview  audio"
+        "description": "Manually preview  audio",
+        "keys_macos": "command-drag current-time indicator"
       }
     },
     "ram_preview_number_of_frames_specified_by_alternate_ram_preview_preference": {
@@ -4864,7 +4210,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+f5",
-        "description": "Purge snapshot"
+        "description": "Purge snapshot",
+        "keys_macos": "cmd+shift+f5"
       }
     },
     "fast_previews_off": {
@@ -4875,7 +4222,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+1",
-        "description": "Fast Previews > Off"
+        "description": "Fast Previews > Off",
+        "keys_macos": "cmd+alt+1"
       }
     },
     "fast_previews_adaptive_resolution": {
@@ -4886,7 +4234,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+2",
-        "description": "Fast Previews > Adaptive Resolution"
+        "description": "Fast Previews > Adaptive Resolution",
+        "keys_macos": "cmd+alt+2"
       }
     },
     "fast_previews_draft": {
@@ -4897,7 +4246,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+3",
-        "description": "Fast Previews > Draft"
+        "description": "Fast Previews > Draft",
+        "keys_macos": "cmd+alt+3"
       }
     },
     "fast_previews_fast_draft": {
@@ -4908,7 +4258,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+4",
-        "description": "Fast Previews > Fast Draft"
+        "description": "Fast Previews > Fast Draft",
+        "keys_macos": "cmd+alt+4"
       }
     },
     "fast_previews_wireframe": {
@@ -4919,7 +4270,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+5",
-        "description": "Fast Previews > Wireframe"
+        "description": "Fast Previews > Wireframe",
+        "keys_macos": "cmd+alt+5"
       }
     },
     "new_project": {
@@ -4930,7 +4282,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+n",
-        "description": "New project"
+        "description": "New project",
+        "keys_macos": "cmd+alt+n"
       }
     },
     "open_project": {
@@ -4941,7 +4294,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+o",
-        "description": "Open project"
+        "description": "Open project",
+        "keys_macos": "cmd+o"
       }
     },
     "open_most_recent_project": {
@@ -4952,7 +4306,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+p",
-        "description": "Open most recent project"
+        "description": "Open most recent project",
+        "keys_macos": "cmd+alt+shift+p"
       }
     },
     "find_in_project_panel": {
@@ -4963,7 +4318,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f",
-        "description": "Find in Project panel"
+        "description": "Find in Project panel",
+        "keys_macos": "cmd+f"
       }
     },
     "save_project": {
@@ -4974,7 +4330,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+s",
-        "description": "Save project"
+        "description": "Save project",
+        "keys_macos": "cmd+s"
       }
     },
     "increment_and_save_project": {
@@ -4985,7 +4342,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+s",
-        "description": "Increment and save project"
+        "description": "Increment and save project",
+        "keys_macos": "cmd+alt+shift+s"
       }
     },
     "save_as": {
@@ -4996,7 +4354,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+s",
-        "description": "Save As"
+        "description": "Save As",
+        "keys_macos": "cmd+shift+s"
       }
     },
     "add_active_composition_or_selected_items_to_render_queue": {
@@ -5007,7 +4366,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+/",
-        "description": "Add active composition or selected items to render queue"
+        "description": "Add active composition or selected items to render queue",
+        "keys_macos": "cmd+shift+/"
       }
     },
     "add_current_frame_to_render_queue": {
@@ -5018,7 +4378,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+s",
-        "description": "Add current frame to render queue"
+        "description": "Add current frame to render queue",
+        "keys_macos": "cmd+alt+s"
       }
     },
     "group_selected_shapes": {
@@ -5029,7 +4390,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+g",
-        "description": "Group selected shapes"
+        "description": "Group selected shapes",
+        "keys_macos": "cmd+g"
       }
     },
     "ungroup_selected_shapes": {
@@ -5040,7 +4402,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+g",
-        "description": "Ungroup selected shapes"
+        "description": "Ungroup selected shapes",
+        "keys_macos": "cmd+shift+g"
       }
     },
     "increase_star_inner_roundness": {
@@ -5117,7 +4480,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl when dragging to create shape",
-        "description": "Change outer radius of star"
+        "description": "Change outer radius of star",
+        "keys_macos": "command when dragging to create shape"
       }
     },
     "go_to_specific_time": {
@@ -5271,7 +4635,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+left",
-        "description": "Go to previous In point or Out point"
+        "description": "Go to previous In point or Out point",
+        "keys_macos": "cmd+alt+shift+left"
       }
     },
     "go_to_next_in_point_or_out_point": {
@@ -5282,7 +4647,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+right",
-        "description": "Go to next In point or Out point"
+        "description": "Go to next In point or Out point",
+        "keys_macos": "cmd+alt+shift+right"
       }
     },
     "turn_display_color_management_on_or_off_for_active_view": {
@@ -5491,7 +4857,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+j",
-        "description": "Set resolution to Full in Composition panel"
+        "description": "Set resolution to Full in Composition panel",
+        "keys_macos": "cmd+j"
       }
     },
     "set_resolution_to_half_in_composition_panel": {
@@ -5502,7 +4869,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+j",
-        "description": "Set resolution to Half in Composition panel"
+        "description": "Set resolution to Half in Composition panel",
+        "keys_macos": "cmd+shift+j"
       }
     },
     "set_resolution_to_custom_in_composition_panel": {
@@ -5513,7 +4881,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+j",
-        "description": "Set resolution to Custom in Composition panel"
+        "description": "Set resolution to Custom in Composition panel",
+        "keys_macos": "cmd+alt+j"
       }
     },
     "open_view_options_dialog_box_for_active_composition_panel": {
@@ -5524,7 +4893,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+u",
-        "description": "Open View Options dialog box for active Composition panel"
+        "description": "Open View Options dialog box for active Composition panel",
+        "keys_macos": "cmd+alt+u"
       }
     },
     "zoom_in_time": {
@@ -5601,7 +4971,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+'",
-        "description": "Toggle grid"
+        "description": "Toggle grid",
+        "keys_macos": "cmd+'"
       }
     },
     "toggle_proportional_grid": {
@@ -5623,7 +4994,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+r",
-        "description": "Toggle rulers"
+        "description": "Toggle rulers",
+        "keys_macos": "cmd+r"
       }
     },
     "toggle_guides": {
@@ -5634,7 +5006,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+;",
-        "description": "Toggle guides"
+        "description": "Toggle guides",
+        "keys_macos": "cmd+;"
       }
     },
     "turn_snapping_to_grid_on_or_off": {
@@ -5645,7 +5018,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+'",
-        "description": "Turn snapping to grid on or off"
+        "description": "Turn snapping to grid on or off",
+        "keys_macos": "cmd+shift+'"
       }
     },
     "turn_snapping_to_guides_on_or_off": {
@@ -5656,7 +5030,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+;",
-        "description": "Turn snapping to guides on or off"
+        "description": "Turn snapping to guides on or off",
+        "keys_macos": "cmd+shift+;"
       }
     },
     "lock_or_unlock_guides": {
@@ -5667,7 +5042,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+;",
-        "description": "Lock or unlock guides"
+        "description": "Lock or unlock guides",
+        "keys_macos": "cmd+alt+shift+;"
       }
     },
     "toggle_layer_controls": {
@@ -5678,7 +5054,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+h",
-        "description": "Toggle layer controls"
+        "description": "Toggle layer controls",
+        "keys_macos": "cmd+shift+h"
       }
     },
     "hold_selection_tool": {
@@ -5689,7 +5066,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "(Hold) Selection tool"
+        "description": "(Hold) Selection tool",
+        "keys_macos": "cmd"
       }
     },
     "set_opacity_for_a_paint_tool": {
@@ -5755,7 +5133,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl",
-        "description": "(Hold) Direct Selection tool"
+        "description": "(Hold) Direct Selection tool",
+        "keys_macos": "cmd"
       }
     },
     "activate_a_clone_stamp_tool_preset": {
@@ -5777,7 +5156,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+f",
-        "description": "Move the camera and its point of interest to look at all 3D layers"
+        "description": "Move the camera and its point of interest to look at all 3D layers",
+        "keys_macos": "cmd+shift+f"
       }
     },
     "move_1px_feature_region_search_region_and_attach_point": {
@@ -5843,7 +5223,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+n",
-        "description": "New folder in Project panel"
+        "description": "New folder in Project panel",
+        "keys_macos": "cmd+alt+shift+n"
       }
     },
     "extend_selection_to_next_item": {
@@ -5876,7 +5257,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+d",
-        "description": "Duplicate render item with same output filename as original"
+        "description": "Duplicate render item with same output filename as original",
+        "keys_macos": "cmd+shift+d"
       }
     },
     "extend_selection_to_next_item_panel_renderqueue": {
@@ -5909,7 +5291,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+f",
-        "description": "Find"
+        "description": "Find",
+        "keys_macos": "cmd+f"
       }
     },
     "scroll_topmost_selected_layer_to_top_of_timeline_panel": {
@@ -5931,7 +5314,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+t",
-        "description": "Enter free-transform path editing mode"
+        "description": "Enter free-transform path editing mode",
+        "keys_macos": "cmd+t"
       }
     },
     "toggle_selection_of_layer_by_its_number": {
@@ -5953,7 +5337,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+`",
-        "description": "Toggle expansion of selected layers to show all properties"
+        "description": "Toggle expansion of selected layers to show all properties",
+        "keys_macos": "cmd+`"
       }
     },
     "scroll_to_current_time": {
@@ -6217,7 +5602,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "alt+shift+property shortcut",
-        "description": "Add or remove keyframe at current time"
+        "description": "Add or remove keyframe at current time",
+        "keys_macos": "alt+property shortcut"
       }
     },
     "toggle_expansion_of_selected_effects_to_show_all_properties": {
@@ -6228,7 +5614,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+`",
-        "description": "Toggle expansion of selected effects to show all properties"
+        "description": "Toggle expansion of selected effects to show all properties",
+        "keys_macos": "cmd+`"
       }
     },
     "extend_selection_to_next_item_panel_effect_controls": {
@@ -6263,7 +5650,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+l",
-        "description": "Align text left/top"
+        "description": "Align text left/top",
+        "keys_macos": "cmd+shift+l"
       }
     },
     "align_text_center": {
@@ -6274,7 +5662,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+c",
-        "description": "Align text center"
+        "description": "Align text center",
+        "keys_macos": "cmd+shift+c"
       }
     },
     "align_text_right_bottom": {
@@ -6287,7 +5676,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+r",
-        "description": "Align text right/bottom"
+        "description": "Align text right/bottom",
+        "keys_macos": "cmd+shift+r"
       }
     },
     "extend_or_reduce_selection": {
@@ -6298,7 +5688,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+down / ctrl+shift+up",
-        "description": "Extend or reduce selection"
+        "description": "Extend or reduce selection",
+        "keys_macos": "cmd+shift+down / command+shift+up"
       }
     },
     "select_text_to_beginning_of_line": {
@@ -6353,7 +5744,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+a",
-        "description": "Select all text"
+        "description": "Select all text",
+        "keys_macos": "cmd+a"
       }
     },
     "select_text_to_beginning_of_text_frame": {
@@ -6364,7 +5756,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+home",
-        "description": "Select text to beginning of text frame"
+        "description": "Select text to beginning of text frame",
+        "keys_macos": "cmd+shift+home"
       }
     },
     "select_text_to_end_of_text_frame": {
@@ -6375,7 +5768,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+end",
-        "description": "Select text to end of text frame"
+        "description": "Select text to end of text frame",
+        "keys_macos": "cmd+shift+end"
       }
     },
     "select_text_from_insertion_point_to_mouse_click_point": {
@@ -6408,7 +5802,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+k",
-        "description": "Turn All Caps on or off for selected text"
+        "description": "Turn All Caps on or off for selected text",
+        "keys_macos": "cmd+shift+k"
       }
     },
     "turn_small_caps_on_or_off_for_selected_text": {
@@ -6419,7 +5814,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+k",
-        "description": "Turn Small Caps on or off for selected text"
+        "description": "Turn Small Caps on or off for selected text",
+        "keys_macos": "cmd+alt+shift+k"
       }
     },
     "turn_superscript_on_or_off_for_selected_text": {
@@ -6430,7 +5826,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+=",
-        "description": "Turn Superscript on or off for selected text"
+        "description": "Turn Superscript on or off for selected text",
+        "keys_macos": "cmd+shift+="
       }
     },
     "turn_subscript_on_or_off_for_selected_text": {
@@ -6441,7 +5838,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+=",
-        "description": "Turn Subscript on or off for selected text"
+        "description": "Turn Subscript on or off for selected text",
+        "keys_macos": "cmd+alt+shift+="
       }
     },
     "set_horizontal_scale_to_100_for_selected_text": {
@@ -6452,7 +5850,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+x",
-        "description": "Set horizontal scale to 100% for selected text"
+        "description": "Set horizontal scale to 100% for selected text",
+        "keys_macos": "cmd+shift+x"
       }
     },
     "set_vertical_scale_to_100_for_selected_text": {
@@ -6463,7 +5862,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+x",
-        "description": "Set vertical scale to 100% for selected text"
+        "description": "Set vertical scale to 100% for selected text",
+        "keys_macos": "cmd+alt+shift+x"
       }
     },
     "auto_leading_for_selected_text": {
@@ -6474,7 +5874,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+a",
-        "description": "Auto leading for selected text"
+        "description": "Auto leading for selected text",
+        "keys_macos": "cmd+alt+shift+a"
       }
     },
     "reset_tracking_to_0_for_selected_text": {
@@ -6485,7 +5886,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+q",
-        "description": "Reset tracking to 0 for selected text"
+        "description": "Reset tracking to 0 for selected text",
+        "keys_macos": "cmd+shift+ctrl+q"
       }
     },
     "justify_paragraph_left_align_last_line": {
@@ -6496,7 +5898,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+j",
-        "description": "Justify paragraph; left align last line"
+        "description": "Justify paragraph; left align last line",
+        "keys_macos": "cmd+shift+j"
       }
     },
     "justify_paragraph_right_align_last_line": {
@@ -6507,7 +5910,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+j",
-        "description": "Justify paragraph; right align last line"
+        "description": "Justify paragraph; right align last line",
+        "keys_macos": "cmd+alt+shift+j"
       }
     },
     "justify_paragraph_force_last_line": {
@@ -6518,7 +5922,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+f",
-        "description": "Justify paragraph; force last line"
+        "description": "Justify paragraph; force last line",
+        "keys_macos": "cmd+shift+f"
       }
     },
     "decrease_font_size_by_2_units": {
@@ -6529,7 +5934,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+,",
-        "description": "Decrease font size by 2 units"
+        "description": "Decrease font size by 2 units",
+        "keys_macos": "cmd+shift+,"
       }
     },
     "increase_font_size_by_2_units": {
@@ -6540,7 +5946,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+shift+.",
-        "description": "Increase font size by 2 units"
+        "description": "Increase font size by 2 units",
+        "keys_macos": "cmd+shift+."
       }
     },
     "decrease_font_size_by_10_units": {
@@ -6551,7 +5958,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+,",
-        "description": "Decrease font size by 10 units"
+        "description": "Decrease font size by 10 units",
+        "keys_macos": "cmd+alt+shift+,"
       }
     },
     "increase_font_size_by_10_units": {
@@ -6562,7 +5970,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+.",
-        "description": "Increase font size by 10 units"
+        "description": "Increase font size by 10 units",
+        "keys_macos": "cmd+alt+shift+."
       }
     },
     "increase_leading_by_2_units": {
@@ -6595,7 +6004,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+up",
-        "description": "Increase leading by 10 units"
+        "description": "Increase leading by 10 units",
+        "keys_macos": "cmd+alt+up"
       }
     },
     "decrease_leading_by_10_units": {
@@ -6606,7 +6016,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+down",
-        "description": "Decrease leading by 10 units"
+        "description": "Decrease leading by 10 units",
+        "keys_macos": "cmd+alt+down"
       }
     },
     "decrease_baseline_shift_by_2_units": {
@@ -6639,7 +6050,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+down",
-        "description": "Decrease baseline shift by 10 units"
+        "description": "Decrease baseline shift by 10 units",
+        "keys_macos": "cmd+alt+shift+down"
       }
     },
     "increase_baseline_shift_by_10_units": {
@@ -6650,7 +6062,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+up",
-        "description": "Increase baseline shift by 10 units"
+        "description": "Increase baseline shift by 10 units",
+        "keys_macos": "cmd+alt+shift+up"
       }
     },
     "decrease_kerning_or_tracking_20_units": {
@@ -6683,7 +6096,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+left",
-        "description": "Decrease kerning or tracking 100 units"
+        "description": "Decrease kerning or tracking 100 units",
+        "keys_macos": "cmd+alt+left"
       }
     },
     "increase_kerning_or_tracking_100_units": {
@@ -6694,7 +6108,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+right",
-        "description": "Increase kerning or tracking 100 units"
+        "description": "Increase kerning or tracking 100 units",
+        "keys_macos": "cmd+alt+right"
       }
     },
     "toggle_paragraph_composer": {
@@ -6705,7 +6120,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+t",
-        "description": "Toggle paragraph composer"
+        "description": "Toggle paragraph composer",
+        "keys_macos": "cmd+alt+shift+t"
       }
     },
     "go_to_specific_time_time_navigation": {
@@ -6859,7 +6275,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+left",
-        "description": "Go to previous In point or Out point"
+        "description": "Go to previous In point or Out point",
+        "keys_macos": "cmd+alt+shift+left"
       }
     },
     "go_to_next_in_point_or_out_point_time_navigation": {
@@ -6870,7 +6287,8 @@
       "action": "shortcut",
       "shortcut": {
         "keys": "ctrl+alt+shift+right",
-        "description": "Go to next In point or Out point"
+        "description": "Go to next In point or Out point",
+        "keys_macos": "cmd+alt+shift+right"
       }
     },
     "scroll_to_current_time_in_timeline_panel": {

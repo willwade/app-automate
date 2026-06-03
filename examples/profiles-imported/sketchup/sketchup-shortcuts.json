@@ -9,7 +9,8 @@
   },
   "zoom_window": {
     "keys": "ctrl+shift+w",
-    "description": "Zoom Window"
+    "description": "Zoom Window",
+    "keys_macos": "cmd+shift+w"
   },
   "pan": {
     "keys": "h",
@@ -45,15 +46,18 @@
   },
   "select_none": {
     "keys": "ctrl+t",
-    "description": "Select None"
+    "description": "Select None",
+    "keys_macos": "cmd+t"
   },
   "copy": {
     "keys": "ctrl+insert",
-    "description": "Copy"
+    "description": "Copy",
+    "keys_macos": "cmd+insert"
   },
   "cut": {
     "keys": "ctrl+x",
-    "description": "Cut"
+    "description": "Cut",
+    "keys_macos": "cmd+x"
   },
   "delete": {
     "keys": "delete",
@@ -65,15 +69,18 @@
   },
   "redo": {
     "keys": "ctrl+y",
-    "description": "Redo"
+    "description": "Redo",
+    "keys_macos": "cmd+y"
   },
   "select_all": {
     "keys": "ctrl+a",
-    "description": "Select All"
+    "description": "Select All",
+    "keys_macos": "cmd+a"
   },
   "undo": {
     "keys": "ctrl+z",
-    "description": "Undo"
+    "description": "Undo",
+    "keys_macos": "cmd+z"
   },
   "make_component": {
     "keys": "g",
@@ -81,19 +88,23 @@
   },
   "new": {
     "keys": "ctrl+n",
-    "description": "New"
+    "description": "New",
+    "keys_macos": "cmd+n"
   },
   "open": {
     "keys": "ctrl+o",
-    "description": "Open"
+    "description": "Open",
+    "keys_macos": "cmd+o"
   },
   "print": {
     "keys": "ctrl+p",
-    "description": "Print"
+    "description": "Print",
+    "keys_macos": "cmd+p"
   },
   "save": {
     "keys": "ctrl+s",
-    "description": "Save"
+    "description": "Save",
+    "keys_macos": "cmd+s"
   },
   "eraser": {
     "keys": "e",
@@ -161,7 +172,8 @@
   },
   "copy_mode_move": {
     "keys": "ctrl",
-    "description": "Copy"
+    "description": "Copy",
+    "keys_macos": "cmd"
   },
   "auto_fold": {
     "keys": "alt",
@@ -197,7 +209,8 @@
   },
   "hold_suspend_gravity": {
     "keys": "ctrl",
-    "description": "(HOLD) Suspend gravity"
+    "description": "(HOLD) Suspend gravity",
+    "keys_macos": "cmd"
   },
   "hold_activate_pan": {
     "keys": "shift",
@@ -205,7 +218,8 @@
   },
   "paint_all_matching_connected_faces": {
     "keys": "ctrl",
-    "description": "Paint all matching connected faces"
+    "description": "Paint all matching connected faces",
+    "keys_macos": "cmd"
   },
   "paint_all_matching_faces_in_the_model": {
     "keys": "shift",
@@ -217,11 +231,13 @@
   },
   "paint_all_matching_faces_on_the_same_object": {
     "keys": "ctrl+shift",
-    "description": "Paint all matching faces on the same object"
+    "description": "Paint all matching faces on the same object",
+    "keys_macos": "cmd+shift"
   },
   "push_pull_a_copy_of_the_face_leaving_the_original_face_in_place": {
     "keys": "ctrl",
-    "description": "Push/Pull a copy of the face (leaving the original face in place)"
+    "description": "Push/Pull a copy of the face (leaving the original face in place)",
+    "keys_macos": "cmd"
   },
   "lock_in_current_direction_plane": {
     "keys": "shift",
@@ -233,7 +249,8 @@
   },
   "about_center": {
     "keys": "ctrl",
-    "description": "About center"
+    "description": "About center",
+    "keys_macos": "cmd"
   },
   "uniformly_don_t_distort": {
     "keys": "shift",
@@ -241,7 +258,8 @@
   },
   "soften_smooth": {
     "keys": "ctrl",
-    "description": "Soften/Smooth"
+    "description": "Soften/Smooth",
+    "keys_macos": "cmd"
   },
   "hide": {
     "keys": "shift",
@@ -249,7 +267,8 @@
   },
   "add_to_selection": {
     "keys": "ctrl",
-    "description": "Add to selection"
+    "description": "Add to selection",
+    "keys_macos": "cmd"
   },
   "add_subtract_from_selection": {
     "keys": "shift",
@@ -257,15 +276,18 @@
   },
   "subtract_from_selection": {
     "keys": "ctrl+shift",
-    "description": "Subtract from selection"
+    "description": "Subtract from selection",
+    "keys_macos": "cmd+shift"
   },
   "copy_mode_rotate": {
     "keys": "ctrl",
-    "description": "Copy"
+    "description": "Copy",
+    "keys_macos": "cmd"
   },
   "create_guide_or_measure_only": {
     "keys": "ctrl",
-    "description": "Create guide or measure only"
+    "description": "Create guide or measure only",
+    "keys_macos": "cmd"
   },
   "on_blue_axis_mode_tape_measure": {
     "keys": "up",

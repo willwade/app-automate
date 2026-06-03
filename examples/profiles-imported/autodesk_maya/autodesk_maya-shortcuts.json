@@ -25,7 +25,8 @@
   },
   "invert_selection": {
     "keys": "ctrl+shift+i",
-    "description": "Invert Selection"
+    "description": "Invert Selection",
+    "keys_macos": "ctrl+shift+i / cmd+shift+i"
   },
   "vertex_selection_mode": {
     "keys": "f9",
@@ -177,7 +178,8 @@
   },
   "open_scene": {
     "keys": "ctrl+o",
-    "description": "Open Scene"
+    "description": "Open Scene",
+    "keys_macos": "ctrl+o / cmd+o"
   },
   "vertex_face_selection_mode": {
     "keys": "alt+f9",
@@ -241,7 +243,8 @@
   },
   "cut": {
     "keys": "ctrl+x",
-    "description": "Cut"
+    "description": "Cut",
+    "keys_macos": "ctrl+x / cmd+x"
   },
   "go_to_min_frame": {
     "keys": "alt+shift+v",
@@ -257,7 +260,8 @@
   },
   "save_scene": {
     "keys": "ctrl+s",
-    "description": "Save Scene"
+    "description": "Save Scene",
+    "keys_macos": "ctrl+s / cmd+s"
   },
   "duplicate": {
     "keys": "ctrl+d",
@@ -269,7 +273,8 @@
   },
   "import": {
     "keys": "ctrl+i",
-    "description": "Import"
+    "description": "Import",
+    "keys_macos": "ctrl+i / cmd+i"
   },
   "face_selection_mode": {
     "keys": "f11",
@@ -317,7 +322,8 @@
   },
   "exit_maya": {
     "keys": "ctrl+q",
-    "description": "Exit Maya"
+    "description": "Exit Maya",
+    "keys_macos": "ctrl+q / cmd+q"
   },
   "hold_pivot_move_mode": {
     "keys": "d",
@@ -357,7 +363,8 @@
   },
   "new_scene": {
     "keys": "ctrl+n",
-    "description": "New Scene"
+    "description": "New Scene",
+    "keys_macos": "ctrl+n / cmd+n"
   },
   "shrink_selection": {
     "keys": "shift+,",
@@ -365,7 +372,8 @@
   },
   "select_all": {
     "keys": "ctrl+shift+a",
-    "description": "Select All"
+    "description": "Select All",
+    "keys_macos": "ctrl+shift+a / cmd+shift+a"
   },
   "shaded_display": {
     "keys": "5",
@@ -401,11 +409,13 @@
   },
   "copy": {
     "keys": "ctrl+c",
-    "description": "Copy"
+    "description": "Copy",
+    "keys_macos": "ctrl+c / cmd+c"
   },
   "paste": {
     "keys": "ctrl+v",
-    "description": "Paste"
+    "description": "Paste",
+    "keys_macos": "ctrl+v / cmd+v"
   },
   "insert_anim_keys_tool": {
     "keys": "i",
