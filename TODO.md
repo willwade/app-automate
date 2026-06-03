@@ -40,7 +40,7 @@ Things to do when you have access to a macOS or Linux desktop for hands-on testi
 
 ### Medium priority
 
-- [ ] **Integrate `MacOSActionAdapter`.** Currently defined but unused in `create_action_adapter()`. macOS now falls through to `PyAutoGuiAdapter`. Decide: is the platform guard useful? If so, wire it up.
+- [x] **Integrate `MacOSActionAdapter`.** Wired up as the macOS fallback in `create_action_adapter()` in `_shared.py`. Platform guard raises RuntimeError if not on macOS.
 - [ ] **Extract keyboard shortcuts from AX menu items.** The `extract_from_ax_menu_items()` extractor is written but untested. It reads `AXMenuItemCmdChar` and `AXMenuItemCmdModifiers` from the accessibility tree.
 - [ ] **Notes.app profile.** Simple, good accessibility, good for type testing.
 - [ ] **TextEdit profile.** Standard text editor. Good for type/drag testing.
