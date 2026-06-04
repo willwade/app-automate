@@ -245,7 +245,35 @@ Regardless of adoption, we're building open-source tooling to extract shortcuts 
 
 We'd rather not need any of these workarounds. If web apps used `aria-keyshortcuts`, a single CDP query would give us every shortcut in the application.
 
+## Related Work
+
+This gap has not been studied directly, but several strands of research are relevant.
+
+### Large-scale accessibility audits
+
+Multiple studies have audited web accessibility compliance at scale. Campoverde-Molina et al. (2020) reviewed empirical web accessibility studies in educational websites. Ara, Sik-Lanyi & Kelemen (2024) conducted a systematic literature review of accessibility engineering in web evaluation, covering ARIA roles and automated evaluation tools. Chouchane et al. (2026) investigated the diffuseness of accessibility issues across public web applications. None of these studies specifically measured `aria-keyshortcuts` adoption or keyboard shortcut discoverability through the accessibility tree.
+
+### Keyboard accessibility detection
+
+Chiou, Alotaibi & Halfond (2021, ASE) developed automated techniques for detecting keyboard accessibility failures in web applications — specifically, whether UI elements are reachable and operable via keyboard. Their follow-up work, Bagel (CHI 2023), extended this to navigation-based barriers. Both focus on whether elements are *reachable*, not whether keyboard shortcuts are *discoverable* by assistive technology. Moore, Smith & Greenberg (2018) addressed keyboard and screen reader access in complex interactive science simulations (PhET), identifying design patterns for making interactive elements accessible.
+
+### Screen reader interaction
+
+Ashok et al. (ASSETS 2017) investigated web screen reading automation using semantic abstraction, relevant to understanding how assistive technology processes web content. Jain, Huq, He & Malek (ASE 2025) developed automated detection of navigation barriers specifically for screen reader users by simulating screen reader interaction. Antonelli, Sensiate, Watanabe et al. (2019) identified challenges in automatically evaluating RIA accessibility, including gaps in handling dynamic ARIA attributes.
+
+### ARIA adoption
+
+Bassi et al. (2025) proposed LLM-based accessibility auditing, and Genne (2022) addressed accessibility-first enterprise web platform design at scale. Both reference ARIA attributes and keyboard navigation but do not analyze `aria-keyshortcuts` specifically.
+
+### The gap
+
+**No published study has specifically audited `aria-keyshortcuts` adoption across web applications.** Existing research measures whether elements are keyboard-reachable (WCAG 2.1.1), whether ARIA roles are correct, and whether screen readers can read content. None measure whether web applications expose their keyboard shortcut bindings through the accessibility tree, or evaluate the gap between documented shortcuts and AT-accessible shortcuts.
+
+We are conducting a larger-scale study to fill this gap, auditing 105 web applications across 7 domains. See [the research repository](https://github.com/willwade/keyboard-shortcut-gap) for the full research plan and corpus.
+
 ## References
+
+### Standards and specifications
 
 - [Wikipedia: Access key](https://en.wikipedia.org/wiki/Access_key) — history of accesskey, conflicts, and standardisation attempts
 - [WATS: Using Accesskeys — is it worth it? (2002)](https://web.archive.org/web/20120204224705/http://www.wats.ca/show.php?contentid=32) — the accessibility consultancy report that recommended avoiding accesskeys
@@ -253,3 +281,16 @@ We'd rather not need any of these workarounds. If web apps used `aria-keyshortcu
 - [WAI-ARIA `aria-keyshortcuts` specification](https://www.w3.org/TR/wai-aria-1.2/#aria-keyshortcuts)
 - [HTML `accesskey` attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute)
 - [MDN: aria-keyshortcuts](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-keyshortcuts)
+
+### Academic literature
+
+- Campoverde-Molina et al. (2020). "Empirical studies on web accessibility of educational websites: A systematic literature review." *IEEE Access.* [DOI](https://ieeexplore.ieee.org/abstract/document/9092982/)
+- Ara, Sik-Lanyi & Kelemen (2024). "Accessibility engineering in web evaluation process: a systematic literature review." *Universal Access in the Information Society.* [DOI](https://link.springer.com/article/10.1007/s10209-023-00967-2)
+- Chouchane et al. (2026). "An Empirical Investigation on the Diffuseness of Accessibility Issues in Public Web Applications." *International Journal of Human-Computer Interaction.* [DOI](https://www.tandfonline.com/doi/abs/10.1080/10447318.2026.2640458)
+- Chiou, Alotaibi & Halfond (2021). "Detecting and localizing keyboard accessibility failures in web applications." *ASE 2021.* [DOI](https://dl.acm.org/doi/abs/10.1145/3468264.3468581)
+- Chiou, Alotaibi & Halfond (2023). "Bagel: An Approach to Automatically Detect Navigation-Based Web Accessibility Barriers for Keyboard Users." *CHI 2023.* [DOI](https://dl.acm.org/doi/abs/10.1145/3544548.3580749)
+- Moore, Smith & Greenberg (2018). "Keyboard and screen reader accessibility in complex interactive science simulations." *UAHCI 2018.* [DOI](https://link.springer.com/chapter/10.1007/978-3-319-92049-8_28)
+- Ashok et al. (2017). "Web screen reading automation assistance using semantic abstraction." *ASSETS 2017.* [DOI](https://dl.acm.org/doi/abs/10.1145/3025171.3025229)
+- Jain, Huq, He & Malek (2025). "Automated Detection of Web Application Navigation Barriers for Screen Reader Users." *ASE 2025.* [DOI](https://ieeexplore.ieee.org/abstract/document/11334511/)
+- Antonelli et al. (2019). "Challenges of automatically evaluating rich internet applications accessibility." *SAC 2019.* [DOI](https://dl.acm.org/doi/abs/10.1145/3328020.3353950)
+- Bassi et al. (2025). "Supporting accessibility auditing and HTML validation using large language models." *SAC 2025.* [DOI](https://dl.acm.org/doi/abs/10.1145/3672608.3707912)
