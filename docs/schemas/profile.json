@@ -22,8 +22,8 @@
     },
     "backend": {
       "type": ["string", "null"],
-      "enum": ["uia", "cdp", "atspi", "shortcut", "ax", null],
-      "description": "Accessibility backend for semantic profiles. Required when type is 'semantic'."
+      "enum": ["uia", "cdp", "atspi", "shortcut", "ax", "mixed", null],
+      "description": "Primary backend for semantic profiles. 'shortcut' = keyboard-only, 'mixed' = combination of backends (per-element). Required when type is 'semantic'."
     },
     "platform_hint": {
       "type": ["string", "null"],

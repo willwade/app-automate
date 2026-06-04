@@ -151,7 +151,8 @@ class AppProfile(BaseModel):
         if self.type == "semantic":
             if not self.backend:
                 raise ValueError(
-                    "semantic profile requires 'backend' (uia, cdp, or atspi)"
+                    "semantic profile requires 'backend' "
+                    "(shortcut, uia, cdp, atspi, ax, or mixed)"
                 )
             if not self.semantic_elements:
                 raise ValueError("semantic profile must have semantic_elements defined")

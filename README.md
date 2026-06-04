@@ -164,9 +164,11 @@ uv run app-automate whats-here --radius 150
 
 ## Profile structure
 
-A profile is a `profile.json` file (plus optional anchor images for CV). A single profile can **mix strategies** — use keyboard shortcuts for common actions, accessibility elements for specific UI targets, or both.
+A profile is a `profile.json` file (plus optional anchor images for CV). **There is one schema.** Every profile can contain shortcuts, accessibility elements, and visual elements — mix and match as needed.
 
-**Hybrid profile** (shortcuts + accessibility in one):
+**`backend`** tells the runtime which primary strategy to use: `"shortcut"` (keyboard only), `"atspi"`/`"uia"`/`"ax"` (accessibility), `"cdp"` (browser), or `"mixed"` (hybrid). Per-element, each `action` determines what actually happens (shortcut, click, type, etc.).
+
+**Example — Firefox with shortcuts + accessibility:**
 ```json
 {
   "profile_id": "firefox",
@@ -200,7 +202,7 @@ A profile is a `profile.json` file (plus optional anchor images for CV). A singl
 }
 ```
 
-**Why hybrid?** Shortcuts are cross-platform and reliable (`ctrl+t` on Windows/Linux, `cmd+t` on macOS). Accessibility elements let you target specific UI that has no shortcut (like typing into a search box). Use shortcuts for the 80%, accessibility for the 20%. Per-platform keys (`keys_macos`, `keys_linux`, `keys_windows`) handle OS differences without separate files.
+**Why mix?** Shortcuts are cross-platform and reliable (`ctrl+t` on Windows/Linux, `cmd+t` on macOS). Accessibility elements let you target specific UI that has no shortcut (like typing into a search box). Use shortcuts for the 80%, accessibility for the 20%. Per-platform keys (`keys_macos`, `keys_linux`, `keys_windows`) handle OS differences without separate files. It's all one profile.
 
 **Actions available:** `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`, `shortcut`.
 
