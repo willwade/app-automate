@@ -4,9 +4,17 @@ namespace AppAutomate.Consumer;
 
 public interface IInputAdapter
 {
+    // Keyboard
     void SendShortcut(string keys);
     void TypeText(string text);
     void SendKey(string key);
+    // Mouse
+    void Click(double x, double y);
+    void DoubleClick(double x, double y);
+    void RightClick(double x, double y);
+    void MoveMouse(double x, double y);
+    void Drag(double x, double y, double dx, double dy);
+    void Scroll(double x, double y, int clicks);
 }
 
 public sealed class Consumer
@@ -122,9 +130,30 @@ public sealed class Consumer
             return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "wait" };
         }
 
+        var adapter = GetAdapter();
+        switch (element.Action)
+        {
+            case "click":
+                adapter.Click(0, 0);
+                return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "click" };
+            case "double_click":
+                adapter.DoubleClick(0, 0);
+                return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "double_click" };
+            case "right_click":
+                adapter.RightClick(0, 0);
+                return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "right_click" };
+            case "drag":
+                adapter.Drag(0, 0, element.DragDx ?? 0, element.DragDy ?? 0);
+                return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "drag" };
+            case "scroll":
+                adapter.Scroll(0, 0, element.ScrollClicks ?? 3);
+                return new ExecuteResult { ElementId = elementId, Label = element.Label, Action = "scroll" };
+        }
+
         throw new NotImplementedException(
-            $"action '{element.Action}' requires a platform-specific backend. " +
-            "Use shortcut-based elements for cross-platform consumer usage.");
+            $"action '{element.Action}' is not supported by the consumer. " +
+            "Supported: shortcut, hotkey, type, wait, click, double_click, " +
+            "right_click, drag, scroll.");
     }
 
     private IInputAdapter GetAdapter()

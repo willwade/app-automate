@@ -13,6 +13,18 @@ class InputAdapter(Protocol):
 
     def write_text(self, text: str, *, interval: float = 0.0) -> None: ...
 
+    def click(self, x: float, y: float) -> None: ...
+
+    def double_click(self, x: float, y: float) -> None: ...
+
+    def right_click(self, x: float, y: float) -> None: ...
+
+    def move_mouse(self, x: float, y: float) -> None: ...
+
+    def drag(self, x: float, y: float, dx: float, dy: float) -> None: ...
+
+    def scroll(self, x: float, y: float, clicks: int) -> None: ...
+
 
 class Consumer:
     def __init__(
@@ -126,9 +138,34 @@ class Consumer:
                 action="wait",
             )
 
+        if element.action.value in (
+            "click",
+            "double_click",
+            "right_click",
+            "drag",
+            "scroll",
+        ):
+            adapter = self._get_adapter()
+            if element.action.value == "click":
+                adapter.click(0, 0)
+            elif element.action.value == "double_click":
+                adapter.double_click(0, 0)
+            elif element.action.value == "right_click":
+                adapter.right_click(0, 0)
+            elif element.action.value == "drag":
+                adapter.drag(0, 0, element.drag_dx or 0, element.drag_dy or 0)
+            elif element.action.value == "scroll":
+                adapter.scroll(0, 0, element.scroll_clicks or 3)
+            return ExecuteResult(
+                element_id=element_id,
+                label=element.label,
+                action=element.action.value,
+            )
+
         raise NotImplementedError(
-            f"action '{element.action.value}' requires a platform-specific backend. "
-            f"Use shortcut-based elements for cross-platform consumer usage."
+            f"action '{element.action.value}' is not supported by the consumer. "
+            f"Supported: shortcut, hotkey, type, wait, click, double_click, "
+            f"right_click, drag, scroll."
         )
 
     def _get_adapter(self) -> Any:

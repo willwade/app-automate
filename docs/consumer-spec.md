@@ -81,16 +81,18 @@ Each resolved element has an `action` that determines what the SDK must do:
 | Action         | What the SDK does                                              |
 |----------------|----------------------------------------------------------------|
 | `shortcut`     | Parse `element.shortcut.keys` and call `send_shortcut()`       |
-| `click`        | Click at the element's coordinates                             |
+| `click`        | Call `click(x, y)` at the element's coordinates               |
+| `double_click` | Call `double_click(x, y)`                                      |
+| `right_click`  | Call `right_click(x, y)`                                       |
 | `type`         | Click the element, then type `text` from options or profile    |
-| `double_click` | Double-click at coordinates                                    |
-| `right_click`  | Right-click at coordinates                                     |
 | `drag`         | Click at element, drag by `drag_dx`, `drag_dy`                 |
 | `scroll`       | Scroll at element by `scroll_clicks`                           |
 | `hotkey`       | Send `element.hotkey` key combination                          |
 | `wait`         | Sleep for `element.wait_ms` milliseconds                       |
 
-**For shortcut-only profiles** (backend = "shortcut"), only `shortcut`, `hotkey`, `type`, and `wait` actions are relevant. No screen coordinates or accessibility tree is needed.
+**For shortcut-only profiles** (backend = "shortcut"), only `shortcut`, `hotkey`, `type`, and `wait` actions are used. No mouse calls needed.
+
+**For accessibility/hybrid profiles**, mouse methods must be implemented. Coordinates come from the accessibility tree at runtime, not from the profile JSON.
 
 ## Platform Input
 

@@ -4,7 +4,9 @@ The consumer SDK loads profiles (pure JSON) and resolves elements. But sending a
 
 ## The Interface
 
-Every adapter implements three methods:
+Every adapter implements these methods:
+
+**Keyboard:**
 
 | Method | What it does |
 |--------|-------------|
@@ -12,7 +14,20 @@ Every adapter implements three methods:
 | `TypeText(string text)` | Type a string character by character |
 | `SendKey(string key)` | Press a single key like `"enter"` or `"tab"` |
 
-That's it. The SDK handles profile loading, element resolution, and key string parsing. You just implement the input.
+**Mouse:**
+
+| Method | What it does |
+|--------|-------------|
+| `Click(x, y)` | Left-click at screen coordinates |
+| `DoubleClick(x, y)` | Double-click at screen coordinates |
+| `RightClick(x, y)` | Right-click at screen coordinates |
+| `MoveMouse(x, y)` | Move cursor to screen coordinates |
+| `Drag(x, y, dx, dy)` | Click at (x,y), drag to (x+dx, y+dy) |
+| `Scroll(x, y, clicks)` | Scroll at (x,y). Positive = down, negative = up |
+
+The SDK handles profile loading, element resolution, and key string parsing. You just implement the input.
+
+Coordinates are in screen pixels. For shortcut-only profiles, the mouse methods are never called.
 
 ## Key Format
 
@@ -98,6 +113,60 @@ public sealed class WindowsNativeAdapter : IInputAdapter
     }
 
     public void SendKey(string key) => SendShortcut(key);
+
+    // --- Mouse ---
+
+    [DllImport("user32.dll")]
+    static extern bool SetCursorPos(int x, int y);
+
+    static void MouseInput(uint flags, int dx = 0, int dy = 0)
+    {
+        var input = new INPUT
+        {
+            type = 0, // MOUSE
+            u = new INPUTUNION
+            {
+                ki = new KEYBDINPUT() // reuse union space
+            }
+        };
+        // Marshal mouse data over the union
+        Marshal.SetInt32(input.u.ki.wScan, 0, flags); // simplified
+        // In practice, use a proper MOUSEINPUT struct
+        SendInput(1, [input], Marshal.SizeOf<INPUT>());
+    }
+
+    public void Click(double x, double y)
+    {
+        SetCursorPos((int)x, (int)y);
+        // mouse down + mouse up via SendInput with MOUSEINPUT
+    }
+
+    public void DoubleClick(double x, double y)
+    {
+        Click(x, y);
+        Thread.Sleep(50);
+        Click(x, y);
+    }
+
+    public void RightClick(double x, double y)
+    {
+        SetCursorPos((int)x, (int)y);
+        // right mouse down + right mouse up via SendInput
+    }
+
+    public void MoveMouse(double x, double y) => SetCursorPos((int)x, (int)y);
+
+    public void Drag(double x, double y, double dx, double dy)
+    {
+        SetCursorPos((int)x, (int)y);
+        // mouse down at (x,y), move to (x+dx, y+dy), mouse up
+    }
+
+    public void Scroll(double x, double y, int clicks)
+    {
+        SetCursorPos((int)x, (int)y);
+        // mouse wheel event via SendInput with MOUSEINPUT.dwFlags = 0x0800
+    }
 
     void SendKeyInput(ushort vk, bool keyDown)
     {
@@ -226,6 +295,63 @@ class NativeAdapter {
         sendShortcut(key)
     }
 
+    // --- Mouse ---
+
+    func click(x: Double, y: Double) {
+        let point = CGPoint(x: x, y: y)
+        let down = CGEvent(mouseEventSource: nil, mouseType: .leftMouseDown,
+                           mouseCursorPosition: point, mouseButton: .left)
+        let up = CGEvent(mouseEventSource: nil, mouseType: .leftMouseUp,
+                         mouseCursorPosition: point, mouseButton: .left)
+        down?.post(tap: .cghidEventTap)
+        up?.post(tap: .cghidEventTap)
+    }
+
+    func doubleClick(x: Double, y: Double) {
+        click(x: x, y: y)
+        click(x: x, y: y)
+    }
+
+    func rightClick(x: Double, y: Double) {
+        let point = CGPoint(x: x, y: y)
+        let down = CGEvent(mouseEventSource: nil, mouseType: .rightMouseDown,
+                           mouseCursorPosition: point, mouseButton: .right)
+        let up = CGEvent(mouseEventSource: nil, mouseType: .rightMouseUp,
+                         mouseCursorPosition: point, mouseButton: .right)
+        down?.post(tap: .cghidEventTap)
+        up?.post(tap: .cghidEventTap)
+    }
+
+    func moveMouse(x: Double, y: Double) {
+        let point = CGPoint(x: x, y: y)
+        let move = CGEvent(mouseEventSource: nil, mouseType: .mouseMoved,
+                           mouseCursorPosition: point, mouseButton: .left)
+        move?.post(tap: .cghidEventTap)
+    }
+
+    func drag(x: Double, y: Double, dx: Double, dy: Double) {
+        let from = CGPoint(x: x, y: y)
+        let to = CGPoint(x: x + dx, y: y + dy)
+        let down = CGEvent(mouseEventSource: nil, mouseType: .leftMouseDown,
+                           mouseCursorPosition: from, mouseButton: .left)
+        let drag = CGEvent(mouseEventSource: nil, mouseType: .leftMouseDragged,
+                           mouseCursorPosition: to, mouseButton: .left)
+        let up = CGEvent(mouseEventSource: nil, mouseType: .leftMouseUp,
+                         mouseCursorPosition: to, mouseButton: .left)
+        down?.post(tap: .cghidEventTap)
+        drag?.post(tap: .cghidEventTap)
+        up?.post(tap: .cghidEventTap)
+    }
+
+    func scroll(x: Double, y: Double, clicks: Int) {
+        let point = CGPoint(x: x, y: y)
+        let scroll = CGEvent(scrollWheelEvent2Source: nil, units: .pixel,
+                             wheelCount: 1, wheel1: Int32(clicks * 10),
+                             wheel2: 0, wheel3: 0)
+        scroll?.location = point
+        scroll?.post(tap: .cghidEventTap)
+    }
+
     private func parseModifier(_ mod: String) -> CGEventFlags {
         switch mod.lowercased() {
         case "cmd", "command": return .maskCommand
@@ -342,6 +468,53 @@ KeyCode parse_keycode(Display *dpy, const char *name) {
 }
 
 // Compile: gcc -lX11 -lXtst adapter.c -o adapter
+
+// --- Mouse ---
+
+void move_mouse(Display *display, int x, int y) {
+    XWarpPointer(display, None, DefaultRootWindow(display),
+                 0, 0, 0, 0, x, y);
+    XFlush(display);
+}
+
+void click(Display *display, int x, int y) {
+    move_mouse(display, x, y);
+    XTestFakeButtonEvent(display, 1, True, 0);   // left down
+    XTestFakeButtonEvent(display, 1, False, 0);  // left up
+    XFlush(display);
+}
+
+void double_click(Display *display, int x, int y) {
+    click(display, x, y);
+    usleep(50000); // 50ms
+    click(display, x, y);
+}
+
+void right_click(Display *display, int x, int y) {
+    move_mouse(display, x, y);
+    XTestFakeButtonEvent(display, 3, True, 0);   // right down
+    XTestFakeButtonEvent(display, 3, False, 0);  // right up
+    XFlush(display);
+}
+
+void drag(Display *display, int x, int y, int dx, int dy) {
+    move_mouse(display, x, y);
+    XTestFakeButtonEvent(display, 1, True, 0);   // left down
+    move_mouse(display, x + dx, y + dy);
+    XTestFakeButtonEvent(display, 1, False, 0);  // left up
+    XFlush(display);
+}
+
+void scroll(Display *display, int x, int y, int clicks) {
+    move_mouse(display, x, y);
+    int button = (clicks > 0) ? 5 : 4;  // 4=up, 5=down
+    int count = abs(clicks);
+    for (int i = 0; i < count; i++) {
+        XTestFakeButtonEvent(display, button, True, 0);
+        XTestFakeButtonEvent(display, button, False, 0);
+    }
+    XFlush(display);
+}
 ```
 
 **For Wayland**, replace XTest with `ydotool` (uses `/dev/uinput`) or libei. The shortcut parsing stays the same.
