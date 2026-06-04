@@ -100,7 +100,17 @@ def _parse_table(table) -> list[TableShortcut]:
             if any(k in text for k in ("shortcut", "key", "keyboard", " keystroke")):
                 header_map["keys"] = i
             elif any(
-                k in text for k in ("action", "command", "description", "feature")
+                k in text
+                for k in (
+                    "action",
+                    "command",
+                    "description",
+                    "feature",
+                    "effect",
+                    "function",
+                    "result",
+                    "what it does",
+                )
             ):
                 header_map["action"] = i
 
@@ -159,6 +169,10 @@ def _normalise_keys(raw: str) -> str:
     if " or " in keys:
         keys = keys.split(" or ")[0].strip()
 
+    keys = re.sub(r"CommandCtrl", "ctrl", keys, flags=re.I)
+    keys = re.sub(r"OptionAlt", "alt", keys, flags=re.I)
+    keys = re.sub(r"Option", "alt", keys, flags=re.I)
+
     keys = (
         keys.replace("Ctrl+", "ctrl+")
         .replace("Alt+", "alt+")
@@ -172,6 +186,16 @@ def _normalise_keys(raw: str) -> str:
     )
 
     keys = keys.replace(" + ", "+").replace(" - ", "-")
+
+    keys = re.sub(r"(?<!\w)Enter(\s+key)?(?!\w)", "enter", keys, flags=re.I)
+    keys = re.sub(r"(?<!\w)Esc(?!\w)", "escape", keys, flags=re.I)
+    keys = re.sub(r"(?<!\w)Spacebar(?!\w)", "space", keys, flags=re.I)
+    keys = re.sub(r"(?<!\w)Arrow\s+(keys|key)?(?!\w)", "", keys, flags=re.I)
+    keys = re.sub(
+        r"(?<!\w)(Up|Down|Left|Right)(?!\w)", lambda m: m.group(1).lower(), keys
+    )
+
+    keys = re.sub(r"\s+", "", keys)
 
     if not re.search(r"[a-zA-Z0-9]", keys):
         return ""
