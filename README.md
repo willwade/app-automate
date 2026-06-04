@@ -310,9 +310,12 @@ uv run pytest
 
 ## Documentation
 
+- **[Profile Schema Reference](docs/schema-reference.md)** — complete field reference with examples
 - [Architecture](docs/architecture.md)
 - [MVP Roadmap](docs/mvp-roadmap.md)
 - [New App Guide](docs/new-app-guide.md)
+- [Native Adapters](docs/native-adapters.md) — platform-specific input in Swift/C/.NET
+- [Consumer SDK Spec](docs/consumer-spec.md) — interface for language SDKs
 - [Windows Integration](docs/windows-integration.md)
 - [Linux Integration](docs/linux-integration.md)
 - [Development TODO](TODO.md)
