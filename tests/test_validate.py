@@ -101,3 +101,54 @@ def test_validate_all_example_profiles() -> None:
         assert result.exit_code == 0, (
             f"validate failed for {profile_dir.name}: {result.output}"
         )
+
+
+def test_validate_unknown_key_in_shortcut() -> None:
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "shortcut",
+                    "semantic_elements": {
+                        "btn": {
+                            "label": "ok",
+                            "action": "shortcut",
+                            "shortcut": {"keys": "ctrl+t"},
+                        },
+                    },
+                    "shortcuts": {"bad": {"keys": "ctrl+foobar"}},
+                }
+            )
+        )
+        result = runner.invoke(cli.app, ["validate", str(p)])
+        assert result.exit_code == 2
+        combined = result.output + result.stderr
+        assert "unknown key" in combined
+
+
+def test_validate_platform_specific_key() -> None:
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "shortcut",
+                    "semantic_elements": {
+                        "btn": {
+                            "label": "ok",
+                            "action": "shortcut",
+                            "shortcut": {"keys": "ctrl+t", "keys_macos": "cmd+t"},
+                        },
+                    },
+                }
+            )
+        )
+        result = runner.invoke(cli.app, ["validate", str(p)])
+        assert result.exit_code == 0

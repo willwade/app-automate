@@ -1,40 +1,25 @@
-"""Demo: drive Galculator using keyboard shortcuts via app-automate profile.
+"""Demo: drive Galculator using the Consumer SDK.
 
-Performs the calculation 2 + 3 = 5 using the galculator shortcut profile.
+Performs the calculation 2 + 3 = 5 using keyboard shortcuts.
 
 Usage:
-    uv run python demos/calculator_shortcuts.py
+    uv run python demos/calculator_shortcuts.py --dry-run
+    uv run python demos/calculator_shortcuts.py --execute
 
 Prerequisites:
-    - Galculator must be installed: sudo apt install galculator
-    - Galculator must be running and focused
+    - Galculator must be installed (sudo apt install galculator)
+    - Galculator must be running and focused (for --execute)
 """
 
 from __future__ import annotations
 
-import json
-import subprocess
 import sys
 import time
 from pathlib import Path
 
+from app_automate.consumer import Consumer
+
 PROFILE = Path("examples/profiles/galculator/profile.json")
-
-
-def run(cmd: str, args: list[str] | None = None) -> dict:
-    command = ["uv", "run", "app-automate", cmd]
-    if args:
-        command.extend(args)
-    result = subprocess.run(command, capture_output=True, text=True)
-    if result.returncode != 0:
-        print(f"FAIL: {' '.join(command)}")
-        print(result.stderr)
-        sys.exit(1)
-    try:
-        return json.loads(result.stdout)
-    except json.JSONDecodeError:
-        print(result.stdout)
-        return {}
 
 
 def main() -> None:
@@ -42,52 +27,41 @@ def main() -> None:
         print(f"Profile not found: {PROFILE}")
         sys.exit(1)
 
-    print("Calculator Shortcuts Demo")
-    print("=" * 40)
+    execute = "--execute" in sys.argv
+    mode = "EXECUTE" if execute else "DRY-RUN"
+
+    c = Consumer.from_file(PROFILE)
+
+    print(f"Calculator SDK Demo ({mode})")
+    print(f"Profile: {c.profile_id} — {c.app_name}")
     print()
 
-    print("1. Listing profile elements:")
-    run("list-elements", [str(PROFILE)])
+    calculation = [
+        ("2", "Press 2"),
+        ("plus", "Press +"),
+        ("3", "Press 3"),
+        ("equals", "Press ="),
+    ]
+
+    print("  2 + 3 = ?")
     print()
 
-    print("2. Dry-run for digit 2:")
-    result = run("dry-run", ["2", "--profile", str(PROFILE)])
-    print(f"   action={result.get('action')} backend={result.get('backend')}")
-    print()
+    for command, description in calculation:
+        element = c.resolve(command)
+        keys = element.shortcut.keys_for_platform() if element.shortcut else None
+        if not execute:
+            detail = f" → {keys}" if keys else ""
+            print(f"    {description:15s} [{element.action.value}]{detail}")
+        else:
+            result = c.execute(command)
+            print(f"    {description:15s} [{result.action}]")
+            time.sleep(0.3)
 
-    print("3. Dry-run for add:")
-    result = run("dry-run", ["+", "--profile", str(PROFILE)])
-    print(f"   action={result.get('action')} keys matched")
     print()
-
-    print("4. Dry-run for equals:")
-    result = run("dry-run", ["equals", "--profile", str(PROFILE)])
-    print(f"   action={result.get('action')}")
-    print()
-
-    print("To execute real keypresses (requires Galculator focused):")
-    p = "examples/profiles/galculator/profile.json"
-    print(f'  uv run app-automate click "2" --profile {p}')
-    print(f'  uv run app-automate click "+" --profile {p}')
-    print(f'  uv run app-automate click "3" --profile {p}')
-    print(f'  uv run app-automate click "equals" --profile {p}')
-    print()
-    print("Or all at once:")
-    print()
-    print("  uv run python demos/calculator_shortcuts.py --execute")
-    print()
-
-    if "--execute" in sys.argv:
-        print("Executing: 2 + 3 = ...")
-        time.sleep(0.5)
-        run("click", ["2", "--profile", str(PROFILE)])
-        time.sleep(0.2)
-        run("click", ["+", "--profile", str(PROFILE)])
-        time.sleep(0.2)
-        run("click", ["3", "--profile", str(PROFILE)])
-        time.sleep(0.2)
-        run("click", ["equals", "--profile", str(PROFILE)])
-        print("Done! Result should be 5 in Galculator.")
+    if not execute:
+        print("  Run with --execute to send real keypresses to Galculator.")
+    else:
+        print("  Done! Result should be 5.")
 
 
 if __name__ == "__main__":

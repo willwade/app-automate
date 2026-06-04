@@ -12,6 +12,7 @@ from app_automate.cli._shared import (
     profile_path,
     run_train_review,
 )
+from app_automate.config.key_validation import validate_key_string
 from app_automate.config.validation import load_profile
 
 
@@ -48,6 +49,29 @@ def _validate_profile_checks(profile_path_arg: Path) -> list[str]:
         for sname, sdef in loaded.shortcuts.items():
             if not sdef.keys.strip():
                 warnings.append(f"shortcut '{sname}' has empty keys")
+            for field, val, plat in [
+                ("keys", sdef.keys, None),
+                ("keys_macos", sdef.keys_macos, "macos"),
+                ("keys_linux", sdef.keys_linux, "linux"),
+                ("keys_windows", sdef.keys_windows, "windows"),
+            ]:
+                if val:
+                    for kw in validate_key_string(val, platform=plat):
+                        warnings.append(f"shortcut '{sname}' {field}: {kw}")
+        for eid, el in loaded.semantic_elements.items():
+            if el.shortcut:
+                for field, val, plat in [
+                    ("keys", el.shortcut.keys, None),
+                    ("keys_macos", el.shortcut.keys_macos, "macos"),
+                    ("keys_linux", el.shortcut.keys_linux, "linux"),
+                    ("keys_windows", el.shortcut.keys_windows, "windows"),
+                ]:
+                    if val:
+                        for kw in validate_key_string(val, platform=plat):
+                            warnings.append(f"element '{eid}' shortcut {field}: {kw}")
+            if el.hotkey:
+                for kw in validate_key_string(el.hotkey):
+                    warnings.append(f"element '{eid}' hotkey: {kw}")
     else:
         if not loaded.elements and not loaded.states:
             warnings.append("visual profile has no elements or states")

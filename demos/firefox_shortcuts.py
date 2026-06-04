@@ -1,45 +1,28 @@
-"""Demo: drive Firefox using keyboard shortcuts via app-automate profile.
+"""Demo: drive Firefox using the Consumer SDK.
 
-Demonstrates cross-platform keyboard shortcut automation:
-- Opens a new tab (ctrl+t)
-- Focuses the URL bar (ctrl+l)
-- Navigates to a URL
-- Finds text on page (ctrl+f)
-- Closes the tab (ctrl+w)
+Performs a navigation workflow:
+  open tab → focus URL bar → type URL → wait → find text → close tab
 
 Usage:
     uv run python demos/firefox_shortcuts.py --dry-run
     uv run python demos/firefox_shortcuts.py --execute
 
 Prerequisites:
-    - Firefox must be running and focused
+    - Firefox must be running and focused (for --execute)
 """
 
 from __future__ import annotations
 
-import json
-import subprocess
+import logging
 import sys
 import time
 from pathlib import Path
 
+from app_automate.consumer import Consumer
+
+logging.basicConfig(level=logging.WARNING)
+
 PROFILE = Path("examples/profiles/firefox/profile.json")
-
-
-def run(cmd: str, args: list[str] | None = None) -> dict:
-    command = ["uv", "run", "app-automate", cmd]
-    if args:
-        command.extend(args)
-    result = subprocess.run(command, capture_output=True, text=True)
-    if result.returncode != 0:
-        print(f"FAIL: {' '.join(command)}")
-        print(result.stderr)
-        sys.exit(1)
-    try:
-        return json.loads(result.stdout)
-    except json.JSONDecodeError:
-        print(result.stdout)
-        return {}
 
 
 def main() -> None:
@@ -47,42 +30,38 @@ def main() -> None:
         print(f"Profile not found: {PROFILE}")
         sys.exit(1)
 
-    dry_run = "--execute" not in sys.argv
-    mode = "DRY-RUN" if dry_run else "EXECUTE"
+    execute = "--execute" in sys.argv
+    mode = "EXECUTE" if execute else "DRY-RUN"
 
-    print(f"Firefox Shortcuts Demo ({mode})")
-    print("=" * 40)
+    c = Consumer.from_file(PROFILE, adapter=None)
+
+    print(f"Firefox SDK Demo ({mode})")
+    print(f"Profile: {c.profile_id} — {c.app_name}")
+    print(f"Commands: {len(c.list_commands())} available")
     print()
 
     steps = [
-        ("new_tab", "Open new tab", []),
-        ("url_bar", "Focus URL bar", []),
-        ("find", "Open find bar", []),
-        ("close_tab", "Close tab", []),
-        ("back", "Go back", []),
-        ("reload", "Reload page", []),
+        ("new tab", "Open new tab", None),
+        ("address bar", "Focus URL bar", None),
+        ("find", "Open find bar", None),
+        ("back", "Go back", None),
+        ("close tab", "Close tab", None),
     ]
 
-    for element_id, description, extra_args in steps:
-        print(f"  {description}: ", end="")
-        args = [element_id, "--profile", str(PROFILE)] + extra_args
-
-        if dry_run:
-            result = run("dry-run", args)
+    for command, description, _text in steps:
+        element = c.resolve(command)
+        if not execute:
+            keys = element.shortcut.keys_for_platform() if element.shortcut else None
+            detail = f" → {keys}" if keys else ""
+            print(f"  {description:30s} [{element.action.value}]{detail}")
         else:
-            result = run("click", args)
+            result = c.execute(command)
+            print(f"  {description:30s} [{result.action}]")
             time.sleep(0.5)
 
-        backend = result.get("backend", "?")
-        action = result.get("action", "?")
-        print(f"[{backend}/{action}]")
-
     print()
-    if dry_run:
-        print("All steps resolved successfully in dry-run mode.")
+    if not execute:
         print("Run with --execute to send real keypresses to Firefox.")
-    else:
-        print("All steps executed!")
 
 
 if __name__ == "__main__":
