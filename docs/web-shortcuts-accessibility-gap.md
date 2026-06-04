@@ -4,11 +4,11 @@
 
 Web applications increasingly rely on keyboard shortcuts for power users. VS Code, Google Docs, Figma, Desmos, Notion, and GitHub all offer extensive keyboard shortcut systems. Yet **none of them expose these shortcuts through the browser's accessibility layer**.
 
-We surveyed major web applications and found:
+We surveyed major web applications using the Chrome DevTools Protocol and found:
 
 | Application | `aria-keyshortcuts` | `accesskey` | Shortcuts in DOM |
 |---|---|---|---|
-| VS Code (web) | No | No | Yes (`.monaco-keybinding` spans) |
+| VS Code (web) | No | No | Partial (`.monaco-keybinding` only in Command Palette) |
 | Google Docs | No | No | No |
 | GitHub | No | No | No (shown in a dialog) |
 | Notion | No | No | No |
@@ -16,7 +16,19 @@ We surveyed major web applications and found:
 | Desmos | No | No | No |
 | Wikipedia | No | Yes (19 links) | N/A |
 
-0 out of 7 applications use `aria-keyshortcuts`. Only Wikipedia uses `accesskey`.
+0 out of 7 applications use `aria-keyshortcuts`. Only Wikipedia uses `accesskey`. Note on VS Code: the `.monaco-keybinding` spans are only rendered when the Command Palette or Keyboard Shortcuts editor is actively open — they are not bound to core interactive workspace nodes. This underscores why DOM scraping is fragile for shortcut extraction.
+
+## The Evolutionary Leap
+
+Before diving into the history, here is the core technical difference between what we had and what we have now:
+
+| Feature | `accesskey` (Old) | `aria-keyshortcuts` (New) |
+|---|---|---|
+| **Behaviour** | Active — browser intercepts the key | Declarative — documents an existing JS binding |
+| **Modifiers** | Forced by browser/OS (Alt, Alt+Shift, etc.) | Custom defined (`Control+Shift+P`) |
+| **Collisions** | High — breaks screen reader shortcuts | Zero — screen reader respects or bypasses |
+| **Discovery** | Not announced to user | Exposed in accessibility tree |
+| **Scope** | One key per element | Full modifier combos |
 
 ## A Brief History: Why Web Shortcut Accessibility Failed
 
@@ -49,17 +61,22 @@ In 2004, a numeric standard emerged (promoted by the UK government): `1` for hom
 
 In 2014, [SAK2014 (Standard Access Keys 2014)](https://web.archive.org/web/20230401101600/https://www.standardaccesskeys.com/) released a more comprehensive standard using both letters and numbers. It didn't gain traction either.
 
-### 2005–2010: XHTML 2 tries to replace it
+### 2005–2010: XHTML 2 — the failed ancestor that birthed ARIA
 
-The W3C's XHTML 2 working group deprecated `accesskey` in favour of a new `<access>` element in the XHTML Role Access Module. But XHTML 2 was abandoned in favour of HTML5, which kept `accesskey` and never adopted `<access>`.
+The W3C's XHTML 2 working group deprecated `accesskey` in favour of a new `<access>` element alongside a standardised role attribute framework in the XHTML Role Access Module. XHTML 2 was eventually abandoned in favour of HTML5, which kept `accesskey` and never adopted `<access>`.
+
+But the work didn't vanish. The role attribute framework from XHTML 2 was directly migrated into what became **WAI-ARIA** — the same specification that would later introduce `aria-keyshortcuts`. XHTML 2 wasn't just a dead end; it was the failed evolutionary ancestor that accidentally created the foundation for modern web accessibility attributes.
 
 ### 2017: `aria-keyshortcuts` — the right answer nobody uses
 
 WAI-ARIA 1.1 introduced `aria-keyshortcuts`:
 
 ```html
-<button aria-keyshortcuts="Control+Shift+P" aria-label="Show All Commands">
-  Show All Commands
+<button
+  aria-keyshortcuts="Control+Shift+B"
+  aria-label="Toggle bold (Control plus Shift plus B)"
+>
+  B
 </button>
 ```
 
@@ -70,6 +87,8 @@ This solves every problem that killed `accesskey`:
 - **Works alongside existing bindings** — the app handles the keyboard event in JS, `aria-keyshortcuts` just documents it
 
 But by 2017, the web development community had spent 15 years learning that "keyboard shortcut attributes don't work." The collective memory of `accesskey`'s failures meant nobody adopted the replacement.
+
+---
 
 ### 2024: We verified the gap
 
@@ -83,9 +102,13 @@ Result: **zero applications expose keyboard shortcuts through the accessibility 
 
 ### For assistive technology users
 
-Screen readers and alternative input devices can't discover keyboard shortcuts unless the application provides a separate help dialog. A user navigating by ARIA landmarks and roles has no way to know that `Ctrl+Shift+P` opens a command palette, or that `Ctrl+B` toggles bold text.
+Screen readers and alternative input devices can't discover keyboard shortcuts unless the application provides a separate help dialog. A user navigating by ARIA landmarks and roles has no way to know that `Control+Shift+P` opens a command palette, or that `Control+B` toggles bold text.
+
+There is an important nuance here. When a screen reader is in **Browse Mode** (the default for reading web content), almost every letter key is a navigation shortcut — H for heading, B for button, L for list. A web app that uses single-key shortcuts (like J and K in Gmail) will conflict regardless of `aria-keyshortcuts`, because the screen reader intercepts the key first. The user must toggle into **Focus Mode** (also called Forms Mode) to pass keystrokes through to the web page. `aria-keyshortcuts` does not override this screen reader behaviour — it only tells the AT that a shortcut exists, so it can be announced when the user navigates to the element.
 
 ### For automation tooling
+
+[app-automate](https://github.com/Smartbox-Assistive-Technology/app-automate) is an open-source cross-platform desktop automation tool that programmatically controls applications via keyboard shortcuts, accessibility APIs, and computer vision. It builds machine-readable profiles of application shortcuts and elements so that assistive technology and automation scripts can drive any app.
 
 Tools like app-automate, Puppeteer, and browser automation frameworks could query the accessibility tree to discover available keyboard shortcuts. Instead, we resort to:
 - Scraping documentation pages (fragile, often behind JS rendering)
@@ -135,26 +158,41 @@ This data is:
 When a web element has a keyboard shortcut, add `aria-keyshortcuts`:
 
 ```html
-<button aria-keyshortcuts="Control+Shift+B" aria-label="Toggle bold">
+<button
+  aria-keyshortcuts="Control+Shift+B"
+  aria-label="Toggle bold (Control plus Shift plus B)"
+>
   B
 </button>
 ```
 
 This is a single attribute addition. The app continues to handle the keyboard event in JavaScript — `aria-keyshortcuts` just documents the existing binding for the accessibility tree. No behaviour change required.
 
+Note: the ARIA spec requires that the shortcut must also be included in the accessible name (`aria-label`) or description, because current screen reader support for `aria-keyshortcuts` is inconsistent. Including it in the label ensures it is always announced.
+
 ### 2. Use `aria-keyshortcuts` on menu items and toolbar buttons
 
 For command palettes, menus, and toolbars:
 
 ```html
-<div role="menuitem" aria-keyshortcuts="Control+Shift+P" aria-label="Show All Commands">
+<div
+  role="menuitem"
+  aria-keyshortcuts="Control+Shift+P"
+  aria-label="Show All Commands (Control plus Shift plus P)"
+>
   Show All Commands
 </div>
 ```
 
-### 3. The accessibility tree already works
+### 3. The accessibility tree already works — mostly
 
-Browsers already expose `aria-keyshortcuts` through their accessibility APIs. We verified this with Chromium's CDP: setting `aria-keyshortcuts="Control+Shift+P"` on a button causes it to appear in the `keyshortcuts` property of the corresponding AX tree node. Screen readers can announce it. Automation tools can query it. The pipeline works — it just needs developers to set the attribute.
+Browsers already expose `aria-keyshortcuts` through their accessibility APIs. We verified this with Chromium's CDP: setting `aria-keyshortcuts="Control+Shift+P"` on a button causes it to appear in the `keyshortcuts` property of the corresponding AX tree node. The pipeline works at the browser level.
+
+However, **assistive technology is lagging behind the browser tree support**:
+- **NVDA** and **JAWS** do a poor job of automatically announcing `aria-keyshortcuts` unless the user explicitly requests a shortcut list or is navigating a menu.
+- **VoiceOver** on macOS struggles because macOS expects shortcuts to live in the native Application Menu bar (`AXMenuBar`), not inside the web viewport rendering layer.
+
+Adding the attribute is still the right thing to do — it populates the tree correctly and future-proofs against AT improvements. But developers should not expect immediate, universal screen reader announcements. Including the shortcut in the `aria-label` (as shown above) is the practical workaround for today.
 
 ### 4. Consider a `keyboardShortcuts` manifest
 
@@ -178,11 +216,27 @@ For applications with many shortcuts (like code editors), a JSON manifest discov
 }
 ```
 
-This would be the web equivalent of desktop app shortcut documentation, machine-readable from the start.
+This could be **auto-generated at build time** from the application's JavaScript shortcut registry — developers would not need to maintain a separate hand-written file. The build step that registers keybindings in JS can also emit the manifest, keeping both in sync automatically.
+
+## Implementation Gotchas
+
+Developers looking to adopt `aria-keyshortcuts` should be aware of:
+
+### String formatting is strict
+
+The ARIA spec requires specific token modifiers: **`Alt`**, **`Control`**, **`Meta`**, **`Shift`** — separated by `+` with no spaces. `Ctrl` is invalid. `ctrl` is invalid. The correct string is `Control+Shift+P`.
+
+### Dynamic modifiers per platform
+
+If an application uses `Ctrl+B` on Windows/Linux and `Cmd+B` on macOS, the `aria-keyshortcuts` string must dynamically update based on the user's platform. Use `navigator.userAgentData?.platform` or `navigator.platform` to detect the OS and inject the correct string at render time. A static string like `Ctrl+B` will confuse macOS VoiceOver users who expect `Cmd+B`.
+
+### Include the shortcut in the accessible name
+
+Because current screen reader support is inconsistent (see above), always include the shortcut in the `aria-label` or `aria-describedby` as well. Do not rely solely on `aria-keyshortcuts` for discovery today.
 
 ## What app-automate Is Doing
 
-Regardless of adoption, we're building tooling to extract shortcuts from web apps:
+Regardless of adoption, we're building open-source tooling to extract shortcuts from web apps:
 
 1. **CDP shortcut extraction**: Query `aria-keyshortcuts`, `accesskey`, and AX tree `keyshortcuts` properties via `app-automate cdp-shortcuts`
 2. **DOM scraping**: Query known CSS patterns (`.monaco-keybinding`, etc.)
