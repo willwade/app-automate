@@ -84,9 +84,16 @@ uv run app-automate train --app "Calculator" --output-dir examples/profiles/calc
 
 ## Backend Strategy on Linux
 
-1. **Shortcuts** — use when the app has documented keyboard shortcuts. Most reliable, fully cross-platform.
-2. **AT-SPI** — use when the app exposes a good accessibility tree (GTK/Qt apps, GNOME apps).
-3. **CV** — use for apps with poor accessibility (some Electron apps, Wine apps, games).
+Pick the strategy that fits the app:
+
+| Strategy | Best for |
+|---|---|
+| **Keyboard shortcuts** | Apps with well-documented shortcuts |
+| **AT-SPI** | Apps with good accessibility trees (GTK/Qt, GNOME apps) |
+| **CDP** | Chromium-based browsers and Electron apps |
+| **Computer vision** | Apps with poor accessibility (some Electron apps, Wine apps, games) |
+
+You can combine strategies in a single profile — see `docs/schema-reference.md`.
 
 ## Known Limitations
 
