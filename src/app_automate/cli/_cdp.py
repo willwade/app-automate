@@ -267,3 +267,36 @@ def cdp_type(
     except Exception as exc:
         typer.echo(f"cdp-type failed: {exc}", err=True)
         raise typer.Exit(code=1) from exc
+
+
+@app.command("cdp-shortcuts")
+def cdp_shortcuts(
+    port: Annotated[
+        int,
+        typer.Option("--port", help="CDP remote debugging port."),
+    ] = 9222,
+    as_json: Annotated[
+        bool,
+        typer.Option("--json/--table", help="Emit JSON instead of text."),
+    ] = False,
+) -> None:
+    try:
+        cdp_mod = load_cdp_accessibility()
+        shortcuts = cdp_mod.list_cdp_shortcuts(port=port)
+    except Exception as exc:
+        typer.echo(f"cdp-shortcuts failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    if not shortcuts:
+        typer.echo(
+            "No keyboard shortcuts found via "
+            "aria-keyshortcuts, accesskey, or accessibility tree."
+        )
+        return
+
+    if as_json:
+        typer.echo(json.dumps([s.as_dict() for s in shortcuts], indent=2))
+        return
+
+    for s in shortcuts:
+        typer.echo(f"  {s.keys:25s} {s.label:40s} [{s.source}]")

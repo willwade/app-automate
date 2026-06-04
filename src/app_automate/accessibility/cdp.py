@@ -507,6 +507,127 @@ def _collect_elements(page: Any) -> list[UIElement]:
     return elements
 
 
+@dataclass(slots=True)
+class CDPShortcut:
+    label: str
+    keys: str
+    role: str | None = None
+    source: str = ""
+
+    def as_dict(self) -> dict[str, object]:
+        return {
+            "label": self.label,
+            "keys": self.keys,
+            "role": self.role,
+            "source": self.source,
+        }
+
+
+def list_cdp_shortcuts(
+    page: Any | None = None,
+    port: int = CDP_DEFAULT_PORT,
+) -> list[CDPShortcut]:
+    shortcuts: list[CDPShortcut] = []
+    if page is not None:
+        _collect_shortcuts_from_page(page, shortcuts)
+        return shortcuts
+
+    from playwright.sync_api import sync_playwright
+
+    pw = sync_playwright().start()
+    try:
+        browser = pw.chromium.connect_over_cdp(f"http://localhost:{port}")
+        for ctx in browser.contexts:
+            for pg in ctx.pages:
+                _collect_shortcuts_from_page(pg, shortcuts)
+    finally:
+        try:
+            browser.close()
+        except Exception:
+            pass
+        try:
+            pw.stop()
+        except Exception:
+            pass
+
+    return shortcuts
+
+
+def _collect_shortcuts_from_page(page: Any, out: list[CDPShortcut]) -> None:
+    _collect_dom_shortcuts(page, out)
+    _collect_ax_tree_shortcuts(page, out)
+
+
+def _collect_dom_shortcuts(page: Any, out: list[CDPShortcut]) -> None:
+    seen: set[str] = set()
+    try:
+        elements = page.evaluate("""() => {
+            const results = [];
+            const selector = '[aria-keyshortcuts], [accesskey]';
+            for (const el of document.querySelectorAll(selector)) {
+                const label = el.getAttribute('aria-label')
+                    || el.title
+                    || el.textContent?.trim()?.substring(0, 80)
+                    || '';
+                const aks = el.getAttribute('aria-keyshortcuts');
+                const ak = el.getAttribute('accesskey');
+                const role = el.getAttribute('role') || el.tagName.toLowerCase();
+                if (aks) {
+                    results.push({label, keys: aks, role, source: 'aria-keyshortcuts'});
+                }
+                if (ak) {
+                    results.push({label, keys: ak, role, source: 'accesskey'});
+                }
+            }
+            return results;
+        }""")
+        for item in elements:
+            key = f"{item['keys']}:{item['label']}"
+            if key not in seen:
+                seen.add(key)
+                out.append(
+                    CDPShortcut(
+                        label=item["label"],
+                        keys=item["keys"],
+                        role=item["role"],
+                        source=item["source"],
+                    )
+                )
+    except Exception:
+        pass
+
+
+def _collect_ax_tree_shortcuts(page: Any, out: list[CDPShortcut]) -> None:
+    seen: set[str] = set()
+    try:
+        client = page.context.new_cdp_session(page)
+        tree = client.send("Accessibility.getFullAXTree")
+        for node in tree.get("nodes", []):
+            props = {p["name"]: p.get("value", {}) for p in node.get("properties", [])}
+            ks = props.get("keyshortcuts", {}).get("value", "")
+            if not ks:
+                continue
+            name = props.get("name", {}).get("value", "")
+            role = node.get("role", {}).get("value", "")
+            key = f"{ks}:{name}"
+            if key not in seen:
+                seen.add(key)
+                out.append(
+                    CDPShortcut(
+                        label=name,
+                        keys=ks,
+                        role=role,
+                        source="ax-tree",
+                    )
+                )
+        try:
+            client.detach()
+        except Exception:
+            pass
+    except Exception:
+        pass
+
+
 def _check_cdp_status() -> dict[str, str]:
     try:
         with urllib.request.urlopen(
