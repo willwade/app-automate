@@ -109,19 +109,30 @@ def _extract_tables(html: str) -> list[list[TableShortcut]]:
     return results
 
 
+def _is_section_header_row(th_list) -> bool:
+    if len(th_list) != 1:
+        return False
+    th = th_list[0]
+    colspan = th.get("colspan")
+    if colspan and int(colspan) >= 2:
+        return True
+    return False
+
+
 def _parse_table(table) -> list[TableShortcut]:
     shortcuts: list[TableShortcut] = []
-    header_map: dict[int, str] = {}
-
-    first_row = table.find("tr")
-    if first_row is None:
+    all_rows = table.find_all("tr")
+    if not all_rows:
         return shortcuts
 
+    first_row = all_rows[0]
     ths = first_row.find_all("th")
-    if ths:
+
+    if ths and not _is_section_header_row(ths):
+        header_map: dict[str, int] = {}
         for i, th in enumerate(ths):
             text = th.get_text(strip=True).lower()
-            if any(k in text for k in ("shortcut", "key", "keyboard", " keystroke")):
+            if any(k in text for k in ("shortcut", "key", "keyboard", "keystroke")):
                 header_map["keys"] = i
             elif any(
                 k in text
@@ -134,14 +145,16 @@ def _parse_table(table) -> list[TableShortcut]:
                     "function",
                     "result",
                     "what it does",
+                    "name",
+                    "operation",
                 )
             ):
                 header_map["action"] = i
 
         if "keys" not in header_map or "action" not in header_map:
-            return shortcuts
+            return _parse_headerless_rows(all_rows)
 
-        for row in table.find_all("tr")[1:]:
+        for row in all_rows[1:]:
             cells = row.find_all(["td", "th"])
             action_idx = header_map["action"]
             keys_idx = header_map["keys"]
@@ -151,17 +164,24 @@ def _parse_table(table) -> list[TableShortcut]:
                 if action and keys:
                     shortcuts.append(TableShortcut(action=action, keys=keys))
     else:
-        rows = table.find_all("tr")
-        if len(rows) < 2:
-            return shortcuts
-        for row in rows:
-            cells = row.find_all(["td", "th"])
-            if len(cells) >= 2:
-                action = cells[0].get_text(strip=True)
-                keys = cells[1].get_text(strip=True)
-                if action and keys:
-                    shortcuts.append(TableShortcut(action=action, keys=keys))
+        shortcuts = _parse_headerless_rows(all_rows)
 
+    return shortcuts
+
+
+def _parse_headerless_rows(rows) -> list[TableShortcut]:
+    shortcuts: list[TableShortcut] = []
+    for row in rows:
+        cells = row.find_all(["td", "th"])
+        if len(cells) == 1:
+            colspan = cells[0].get("colspan")
+            if colspan and int(colspan) >= 2:
+                continue
+        if len(cells) >= 2:
+            action = cells[0].get_text(strip=True)
+            keys = cells[1].get_text(strip=True)
+            if action and keys:
+                shortcuts.append(TableShortcut(action=action, keys=keys))
     return shortcuts
 
 
@@ -198,7 +218,12 @@ def _normalise_keys(raw: str) -> str:
     keys = re.sub(r"Option", "alt", keys, flags=re.I)
 
     keys = (
-        keys.replace("Ctrl+", "ctrl+")
+        keys.replace("Ctrl +", "ctrl+")
+        .replace("Alt +", "alt+")
+        .replace("Shift +", "shift+")
+        .replace("Cmd +", "cmd+")
+        .replace("Command +", "cmd+")
+        .replace("Ctrl+", "ctrl+")
         .replace("Alt+", "alt+")
         .replace("Shift+", "shift+")
         .replace("Cmd+", "cmd+")
@@ -247,6 +272,17 @@ _SHORTCUT_PATTERN = re.compile(
 )
 
 
+_STANDALONE_KEY_PATTERN = re.compile(
+    r"^(?P<keys>"
+    r"(?:cmd|ctrl|alt|shift|⌘|⌃|⌥|⇧)"
+    r"(?:\s*/\s*(?:cmd|ctrl|alt|shift|⌘|⌃|⌥|⇧))*"
+    r"\s*\+?\s*[A-Za-z0-9\[\]←→↑↓]+"
+    r"(?:\s*(?:\+\s*|,\s*)[A-Za-z0-9\[\]←→↑↓]+)*"
+    r")$",
+    re.I,
+)
+
+
 def _extract_from_text_patterns(html: str, source_url: str) -> list[ExtractedShortcut]:
     from bs4 import BeautifulSoup
 
@@ -256,11 +292,11 @@ def _extract_from_text_patterns(html: str, source_url: str) -> list[ExtractedSho
         tag.decompose()
 
     text = soup.get_text(separator="\n")
+    lines = [line.strip() for line in text.split("\n")]
     shortcuts: list[ExtractedShortcut] = []
     seen: set[str] = set()
 
-    for line in text.split("\n"):
-        line = line.strip()
+    for i, line in enumerate(lines):
         if not line or len(line) > 300:
             continue
 
@@ -282,5 +318,44 @@ def _extract_from_text_patterns(html: str, source_url: str) -> list[ExtractedSho
                     description=action,
                 )
             )
+
+    for i, line in enumerate(lines):
+        if not line or len(line) > 100:
+            continue
+        m = _STANDALONE_KEY_PATTERN.match(line)
+        if not m:
+            continue
+        keys_raw = m.group("keys").strip()
+        keys = _normalise_keys(keys_raw)
+        if not keys:
+            continue
+        action = ""
+        for offset in range(1, max(i, len(lines) - i)):
+            for j in (i - offset, i + offset):
+                if 0 <= j < len(lines):
+                    candidate = lines[j]
+                    if (
+                        candidate
+                        and len(candidate) < 100
+                        and not _STANDALONE_KEY_PATTERN.match(candidate)
+                    ):
+                        action = candidate
+                        break
+            if action:
+                break
+        if not action:
+            continue
+        slug = _slugify(action)
+        if not slug or slug in seen:
+            continue
+        seen.add(slug)
+        shortcuts.append(
+            ExtractedShortcut(
+                action=slug,
+                keys=keys,
+                source=f"web-text-pair:{source_url}",
+                description=action,
+            )
+        )
 
     return shortcuts

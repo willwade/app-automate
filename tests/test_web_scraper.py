@@ -206,3 +206,48 @@ def test_scrape_text_patterns_deduplicates() -> None:
         fetcher=FakeFetcher(html),
     )
     assert len(result.shortcuts) == 1
+
+
+def test_scrape_colspan_section_headers() -> None:
+    html = """
+    <html><body>
+    <table>
+      <tr><th colspan="2"><p>Common actions</p></th></tr>
+      <tr><td>Copy</td><td><strong>Ctrl + c</strong></td></tr>
+      <tr><td>Cut</td><td><strong>Ctrl + x</strong></td></tr>
+      <tr><td>Paste</td><td><strong>Ctrl + v</strong></td></tr>
+      <tr><th colspan="2"><p>Text formatting</p></th></tr>
+      <tr><td>Bold</td><td><strong>Ctrl + b</strong></td></tr>
+    </table>
+    </body></html>
+    """
+    result = scrape_shortcuts_from_url(
+        "https://example.com/shortcuts",
+        "TestApp",
+        fetcher=FakeFetcher(html),
+    )
+    assert len(result.shortcuts) == 4
+    assert result.shortcuts[0].action == "copy"
+    assert result.shortcuts[0].keys == "ctrl+c"
+    assert result.shortcuts[3].action == "bold"
+
+
+def test_scrape_standalone_key_with_adjacent_action() -> None:
+    html = """
+    <html><body>
+    <div>
+      <p>Copy</p>
+      <p>Ctrl + C</p>
+      <p>Paste</p>
+      <p>Ctrl + V</p>
+    </div>
+    </body></html>
+    """
+    result = scrape_shortcuts_from_url(
+        "https://example.com/shortcuts",
+        "TestApp",
+        fetcher=FakeFetcher(html),
+    )
+    assert len(result.shortcuts) == 2
+    assert result.shortcuts[0].action == "copy"
+    assert result.shortcuts[0].keys == "ctrl+C"
