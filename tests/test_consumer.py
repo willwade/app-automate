@@ -146,3 +146,281 @@ def test_cross_profile_resolve() -> None:
         c = Consumer.from_file(Path(path))
         cmds = c.list_commands()
         assert len(cmds) > 0, f"{path} has no commands"
+
+
+def test_execute_click_action() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "btn": {"label": "click me", "action": "click"},
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        result = c.execute("click me")
+        adapter.click.assert_called_once_with(0, 0)
+        assert result.action == "click"
+
+
+def test_execute_double_click_action() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "btn": {"label": "dbl", "action": "double_click"},
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        result = c.execute("dbl")
+        adapter.double_click.assert_called_once_with(0, 0)
+        assert result.action == "double_click"
+
+
+def test_execute_right_click_action() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "btn": {"label": "righty", "action": "right_click"},
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        c.execute("righty")
+        adapter.right_click.assert_called_once_with(0, 0)
+
+
+def test_execute_drag_action() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "slider": {
+                            "label": "drag me",
+                            "action": "drag",
+                            "drag_dx": 100,
+                            "drag_dy": -50,
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        result = c.execute("drag me")
+        adapter.drag.assert_called_once_with(0, 0, 100, -50)
+        assert result.action == "drag"
+
+
+def test_execute_scroll_action() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "area": {
+                            "label": "scroll down",
+                            "action": "scroll",
+                            "scroll_clicks": 5,
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        c.execute("scroll down")
+        adapter.scroll.assert_called_once_with(0, 0, 5)
+
+
+def test_execute_type_with_text() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "field": {
+                            "label": "name",
+                            "action": "type",
+                            "text": "hello",
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        result = c.execute("name")
+        adapter.write_text.assert_called_once_with("hello")
+        assert result.action == "type"
+
+
+def test_execute_type_with_runtime_text() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "field": {
+                            "label": "name",
+                            "action": "type",
+                            "text": "default",
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        c.execute("name", text="override")
+        adapter.write_text.assert_called_once_with("override")
+
+
+def test_execute_wait_action() -> None:
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "pause": {
+                            "label": "wait",
+                            "action": "wait",
+                            "wait_ms": 10,
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p)
+        import time
+
+        start = time.monotonic()
+        result = c.execute("wait")
+        elapsed = time.monotonic() - start
+        assert result.action == "wait"
+        assert elapsed >= 0.01
+
+
+def test_execute_hotkey_action() -> None:
+    adapter = _mock_adapter()
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "hk": {
+                            "label": "hot",
+                            "action": "hotkey",
+                            "hotkey": "ctrl+shift+i",
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p, adapter=adapter)
+        result = c.execute("hot")
+        adapter.hotkey.assert_called_once_with("ctrl", "shift", "i")
+        assert result.action == "hotkey"
+
+
+def test_send_shortcut() -> None:
+    adapter = _mock_adapter()
+    c = Consumer.from_file(FIREFOX_PATH, adapter=adapter)
+    c.send_shortcut("ctrl+t")
+    adapter.hotkey.assert_called_once_with("ctrl", "t")
+
+
+def test_type_text() -> None:
+    adapter = _mock_adapter()
+    c = Consumer.from_file(FIREFOX_PATH, adapter=adapter)
+    c.type_text("hello world")
+    adapter.write_text.assert_called_once_with("hello world")
+
+
+def test_send_key() -> None:
+    adapter = _mock_adapter()
+    c = Consumer.from_file(FIREFOX_PATH, adapter=adapter)
+    c.send_key("enter")
+    adapter.hotkey.assert_called_once_with("enter")
+
+
+def test_execute_unsupported_action() -> None:
+    with TemporaryDirectory() as tmp:
+        p = Path(tmp) / "profile.json"
+        p.write_text(
+            json.dumps(
+                {
+                    "profile_id": "test",
+                    "app_name": "Test",
+                    "type": "semantic",
+                    "backend": "mixed",
+                    "semantic_elements": {
+                        "btn": {
+                            "label": "ok",
+                            "action": "click",
+                        },
+                    },
+                }
+            )
+        )
+        c = Consumer.from_file(p)
+        result = c.execute("ok", dry_run=True)
+        assert result.action == "click"
+        assert result.element_id == "btn"
