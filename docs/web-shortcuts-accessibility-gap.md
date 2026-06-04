@@ -2,13 +2,13 @@
 
 ## The Problem in One Number
 
-We audited **105 web applications** across 7 domains for keyboard shortcut metadata. The result:
+We audited **39 consumer-facing web applications** across 7 domains for keyboard shortcut metadata. Every app loaded its actual UI without authentication—no login walls.
 
-**98.1% expose zero keyboard shortcut metadata through the accessibility layer.**
+**87.2% expose zero keyboard shortcut metadata through the accessibility layer.**
 
-Only **Excalidraw** (1 app out of 103 that loaded) correctly implements `aria-keyshortcuts`. Zero apps use `accesskey`. Meanwhile, **21 apps document 1,422 shortcuts** in external help pages—shortcuts that are completely invisible to assistive technology.
+Only **Excalidraw** and **YouTube** (2 out of 39 apps) correctly implement `aria-keyshortcuts`. Wikipedia uses the legacy `accesskey` attribute. Meanwhile, **7 apps document 476 shortcuts** in external help pages—shortcuts that are completely invisible to assistive technology.
 
-This is the first large-scale audit of `aria-keyshortcuts` adoption. The full research is in our [keyboard-shortcut-gap repository](https://github.com/willwade/keyboard-shortcut-gap); this article covers the background, results, and what we're doing about it.
+This is the first large-scale audit of `aria-keyshortcuts` adoption focused on consumer applications. The full research is in our [keyboard-shortcut-gap repository](https://github.com/willwade/keyboard-shortcut-gap); this article covers the background, results, and what we're doing about it.
 
 ## Who This Affects
 
@@ -30,60 +30,53 @@ Screen reader users benefit from knowing application shortcuts, but face a diffe
 
 ## The Numbers
 
-We used three extraction channels:
+We used two extraction channels across 39 consumer-facing web apps that all loaded without authentication.
 
-### Channel A: DOM and Accessibility Tree (103 apps loaded)
+### Channel A: DOM and Accessibility Tree (39 apps, all loaded)
 
 | Metric | Count | Rate |
 |---|---|---|
-| `aria-keyshortcuts` | 1 | 1.0% |
-| `accesskey` | 0 | 0.0% |
-| AX tree keyshortcuts | 1 | 1.0% |
-| Heuristic DOM matches | 2 | 1.9% |
-| **Any DOM metadata** | **2** | **1.9%** |
+| `aria-keyshortcuts` | 2 | 5.1% |
+| `accesskey` | 1 | 2.6% |
+| AX tree keyshortcuts | 2 | 5.1% |
+| Heuristic DOM matches | 2 | 5.1% |
+| **Any DOM metadata** | **5** | **12.8%** |
 
-The one app: **Excalidraw**, an open-source virtual whiteboard, declares 12 shortcuts via `aria-keyshortcuts` on its toolbar buttons.
+The two apps: **Excalidraw** (12 shortcuts on drawing tools) and **YouTube** (8 shortcuts on media player controls). Wikipedia uses `accesskey` for 18 navigation keys.
 
-### Channel B: Documentation Scraping (94 apps loaded)
+### Channel B: Documentation Scraping (39 apps, all loaded)
 
 | Metric | Value |
 |---|---|
-| Apps with documented shortcuts | 21 (22.3%) |
-| Total documented shortcuts | 1,422 |
+| Apps with documented shortcuts | 7 (18.0%) |
+| Total documented shortcuts | 476 |
 
-Top extractors: Google Docs (512), Google Sheets (365), Slack (205), Observable (115), Gmail (72), Asana (71).
-
-### Channel A3: JS Runtime Proxying (103 apps)
-
-We injected proxy scripts intercepting three keyboard frameworks (Mousetrap, hotkeys-js, tinykeys) to capture shortcut registrations at runtime.
-
-Result: **0 shortcuts captured**. Only 1 app (Datawrapper) loaded a detectable framework (hotkeys-js). Modern web apps build custom shortcut engines for good reason—complex modifier combinations, suppressing browser defaults, context-dependent bindings, user customization—but this means framework-level tooling cannot bridge the gap.
+Top extractors: Slack (205), Observable (115), Wikipedia (114), YouTube (26), Scratch (7), VS Code Web (5), Google Colab (4).
 
 ### The Gap
 
-Of 94 apps analyzed in both channels:
-
 | Category | Apps | Rate |
 |---|---|---|
-| Docs but NO DOM metadata (the gap) | 20 | 21.3% |
-| Both docs AND DOM | 1 | 1.1% |
-| Neither | 72 | 76.6% |
+| Docs but NO DOM metadata (the gap) | 4 | 10.3% |
+| Both docs AND DOM metadata | 3 | 7.7% |
+| Neither | 29 | 74.4% |
+| DOM only (no docs found) | 3 | 7.7% |
 
-20 apps document shortcuts externally but expose **nothing** through the accessibility layer.
+4 apps document shortcuts externally but expose **nothing** through the accessibility layer. Slack alone has 205 documented shortcuts with zero accessibility metadata.
 
 ### By Domain
 
-| Domain | DOM metadata | Doc shortcuts | Total doc shortcuts |
-|---|---|---|---|
-| IDE | 1/15 | 8/15 | 176 |
-| Documents | 0/15 | 2/13 | 513 |
-| Data/Spreadsheets | 0/15 | 3/13 | 437 |
-| Communication | 0/15 | 3/14 | 279 |
-| Design | 1/14 | 2/13 | 7 |
-| Collaboration | 0/14 | 2/13 | 6 |
-| Scientific | 0/15 | 1/13 | 4 |
+| Domain | Apps | DOM metadata | Doc shortcuts | Total doc shortcuts |
+|---|---|---|---|---|
+| Creative & Design | 8 | 1/8 | 0/8 | 0 |
+| Education & Learning | 8 | 1/8 | 3/8 | 16 |
+| Data Visualization | 5 | 0/5 | 3/5 | 124 |
+| Maps & Navigation | 3 | 0/3 | 0/3 | 0 |
+| Media & Entertainment | 5 | 2/5 | 3/5 | 140 |
+| Social & Communication | 5 | 0/5 | 1/5 | 205 |
+| Shopping & Reference | 5 | 1/5 | 0/5 | 0 |
 
-IDEs have the highest documentation rate (53.3%), yet only VS Code (via heuristic) exposes any DOM metadata.
+Media & Entertainment leads with YouTube and Wikipedia both exposing metadata, plus 3 apps with documented shortcuts.
 
 ## A Brief History: Why Web Shortcut Accessibility Failed
 
@@ -131,11 +124,27 @@ This solves every problem that killed `accesskey`:
 
 Critically, `aria-keyshortcuts` does **not** create key listeners. It is purely a **declarative label** that tells the accessibility API what the application's existing JavaScript handlers already do. Developers need not choose between implementing shortcuts in code and declaring them in ARIA—it's additive.
 
-But by 2017, nobody was listening. Our audit confirms the result: 1 out of 103 apps.
+But by 2017, nobody was listening. Our audit confirms the result: 2 out of 39 apps.
 
-## Excalidraw: The One App Doing It Right
+## YouTube: The Biggest App Doing It Right
 
-Excalidraw is the sole application in our corpus that correctly implements `aria-keyshortcuts`. The HTML is straightforward:
+YouTube—one of the world's top 5 most visited websites—declares `aria-keyshortcuts` on its media player controls:
+
+```html
+<button
+  aria-label="Play (k)"
+  aria-keyshortcuts="k"
+  class="ytp-play-button">
+</button>
+```
+
+8 shortcuts cover core playback: play/pause (`k`), next (`Shift+n`), mute (`m`), subtitles (`c`), cinema mode (`t`), fullscreen (`f`), and playback speed (`v`).
+
+This is significant for AAC users: an eye gaze user watching YouTube in Grid 3's embedded browser could tap auto-generated cells for play, pause, mute, and fullscreen—operations currently inaccessible without a mouse or keyboard.
+
+## Excalidraw: Drawing Tools Done Right
+
+Excalidraw is the other application using `aria-keyshortcuts`:
 
 ```html
 <button
@@ -146,19 +155,24 @@ Excalidraw is the sole application in our corpus that correctly implements `aria
 </button>
 ```
 
-This surfaces correctly in the accessibility tree:
+12 shortcuts cover core drawing operations. Excalidraw is open-source, collaborative, real-time, and handles dynamic state. It proves `aria-keyshortcuts` is feasible in production.
 
-```json
-{
-  "role": {"value": "button"},
-  "name": {"value": "Rectangle"},
-  "properties": [
-    {"name": "keyshortcuts", "value": {"type": "string", "value": "R"}}
-  ]
-}
-```
+## Proof of Concept: Auto-Generating AAC Grids
 
-Excalidraw is open-source, collaborative, real-time, and handles dynamic state. It proves that `aria-keyshortcuts` is feasible in production web applications.
+We built a tool that takes discovered shortcuts and generates real Grid 3 `.gridset` files—ready-to-load AAC vocabulary grids. Each cell uses the `ComputerControl.SendKeys` command to send the key sequence to the web app running in Grid 3's embedded browser.
+
+**Results across 39 consumer apps:**
+
+| Metric | Value |
+|---|---|
+| Apps with generated grid cells | 9 |
+| Total grid cells generated | 347 |
+| Generation time | 1.5 ms |
+| Equivalent manual clinician time | ~67.5 minutes (at 45s/cell) |
+
+Excalidraw and YouTube produce complete gridsets from `aria-keyshortcuts` alone—no manual configuration needed. Slack's 205 documented shortcuts generate 98 cells, but only through fragile documentation scraping.
+
+The 31 apps with zero cells illustrate the gap: without `aria-keyshortcuts` or documented shortcuts, automation is impossible.
 
 ## Why Adoption Is So Low
 
@@ -181,7 +195,7 @@ Modern apps build custom engines for complex modifiers, context-dependent bindin
 1. **CDP shortcut extraction**: Query `aria-keyshortcuts`, `accesskey`, and AX tree via `app-automate cdp-shortcuts`
 2. **DOM scraping**: Known CSS patterns (`.monaco-keybinding`, `kbd`, `.shortcut`)
 3. **Documentation scraping**: Extract from help pages with table/dl/text extraction using Playwright
-4. **JS runtime proxying**: Inject via `addInitScript` to intercept keyboard frameworks
+4. **Grid 3 gridset generation**: Auto-generate `.gridset` files using `@willwade/aac-processors`
 
 We'd rather not need any of these. If web apps used `aria-keyshortcuts`, a single accessibility tree query would give AT software every shortcut in the application—automatically generating grid cells for eye gaze users, announcing shortcuts to screen reader users, and enabling keyboard-only navigation for motor-impaired users.
 
@@ -191,7 +205,7 @@ We'd rather not need any of these. If web apps used `aria-keyshortcuts`, a singl
 
 - Add `aria-keyshortcuts` to elements with keyboard bindings—it's additive, not a replacement for your JS handlers
 - Include the shortcut in the `aria-label` as well, since screen reader support is still inconsistent
-- Consider Excalidraw as a reference implementation
+- Consider Excalidraw and YouTube as reference implementations—both are large-scale, widely used apps
 
 ### For AT vendors
 
