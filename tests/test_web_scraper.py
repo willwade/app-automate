@@ -151,3 +151,58 @@ def test_scrape_takes_first_of_alternatives() -> None:
     )
     assert len(result.shortcuts) == 1
     assert result.shortcuts[0].keys == "ctrl+S"
+
+
+def test_scrape_text_patterns_fallback() -> None:
+    html = """
+    <html><body>
+    <div>
+      <p>Copy selection - Ctrl+C</p>
+      <p>Paste content - Ctrl+V</p>
+      <p>Undo action - Ctrl+Z</p>
+      <p>This is just a paragraph with no shortcuts</p>
+    </div>
+    </body></html>
+    """
+    result = scrape_shortcuts_from_url(
+        "https://example.com/shortcuts",
+        "TestApp",
+        fetcher=FakeFetcher(html),
+    )
+    assert len(result.shortcuts) == 3
+    assert result.shortcuts[0].keys == "ctrl+C"
+    assert result.shortcuts[1].action == "paste_content"
+
+
+def test_scrape_text_patterns_with_dashes() -> None:
+    html = """
+    <html><body>
+    <div>
+      <p>Bold text — Ctrl+B</p>
+      <p>Italic text – Ctrl+I</p>
+    </div>
+    </body></html>
+    """
+    result = scrape_shortcuts_from_url(
+        "https://example.com/shortcuts",
+        "TestApp",
+        fetcher=FakeFetcher(html),
+    )
+    assert len(result.shortcuts) == 2
+
+
+def test_scrape_text_patterns_deduplicates() -> None:
+    html = """
+    <html><body>
+    <div>
+      <p>Save - Ctrl+S</p>
+      <p>Save - Ctrl+S</p>
+    </div>
+    </body></html>
+    """
+    result = scrape_shortcuts_from_url(
+        "https://example.com/shortcuts",
+        "TestApp",
+        fetcher=FakeFetcher(html),
+    )
+    assert len(result.shortcuts) == 1

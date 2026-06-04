@@ -34,6 +34,23 @@ class HttpxFetcher:
         return resp.text
 
 
+class PlaywrightFetcher:
+    def __init__(self, *, wait_seconds: float = 3.0) -> None:
+        self.wait_seconds = wait_seconds
+
+    def fetch(self, url: str) -> str:
+        from playwright.sync_api import sync_playwright
+
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(url, wait_until="networkidle", timeout=30000)
+            page.wait_for_timeout(int(self.wait_seconds * 1000))
+            html = page.content()
+            browser.close()
+            return html
+
+
 def scrape_shortcuts_from_url(
     url: str,
     app_name: str,
@@ -63,6 +80,13 @@ def scrape_shortcuts_from_url(
                     source=f"web:{url}",
                     description=ts.action,
                 )
+            )
+
+    if not result.shortcuts:
+        result.shortcuts = _extract_from_text_patterns(html, url)
+        if result.shortcuts:
+            result.warnings.append(
+                "extracted from text patterns (no tables found), review for accuracy"
             )
 
     return result
@@ -209,3 +233,54 @@ def _slugify(text: str) -> str:
     slug = re.sub(r"[\s-]+", "_", slug)
     slug = slug.strip("_")
     return slug
+
+
+_SHORTCUT_PATTERN = re.compile(
+    r"(?P<action>.+?)\s*[–—\-:]\s*"
+    r"(?P<keys>"
+    r"(?:cmd|ctrl|alt|shift|⌘|⌃|⌥|⇧)"
+    r"(?:\s*/\s*(?:cmd|ctrl|alt|shift|⌘|⌃|⌥|⇧))*"
+    r"\s*\+?\s*[A-Za-z0-9\[\]←→↑↓]+"
+    r"(?:\s*\+\s*[A-Za-z0-9\[\]←→↑↓]+)*"
+    r")",
+    re.I,
+)
+
+
+def _extract_from_text_patterns(html: str, source_url: str) -> list[ExtractedShortcut]:
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(html, "html.parser")
+
+    for tag in soup(["script", "style", "nav", "header", "footer"]):
+        tag.decompose()
+
+    text = soup.get_text(separator="\n")
+    shortcuts: list[ExtractedShortcut] = []
+    seen: set[str] = set()
+
+    for line in text.split("\n"):
+        line = line.strip()
+        if not line or len(line) > 300:
+            continue
+
+        for m in _SHORTCUT_PATTERN.finditer(line):
+            action = m.group("action").strip()
+            keys_raw = m.group("keys").strip()
+            keys = _normalise_keys(keys_raw)
+            if not keys:
+                continue
+            slug = _slugify(action)
+            if not slug or slug in seen:
+                continue
+            seen.add(slug)
+            shortcuts.append(
+                ExtractedShortcut(
+                    action=slug,
+                    keys=keys,
+                    source=f"web-text:{source_url}",
+                    description=action,
+                )
+            )
+
+    return shortcuts
