@@ -1,11 +1,31 @@
 from __future__ import annotations
 
+import pytest
+
 from app_automate.accessibility.cdp import (
     CDPShortcut,
     _collect_shortcuts_from_page,
 )
 
 
+def _playwright_available() -> bool:
+    try:
+        from playwright.sync_api import sync_playwright
+
+        with sync_playwright() as p:
+            p.chromium.launch(headless=True).close()
+        return True
+    except Exception:
+        return False
+
+
+needs_playwright = pytest.mark.skipif(
+    not _playwright_available(),
+    reason="Playwright chromium not installed",
+)
+
+
+@needs_playwright
 def test_collect_aria_keyshortcuts() -> None:
     from playwright.sync_api import sync_playwright
 
@@ -43,6 +63,7 @@ def test_collect_aria_keyshortcuts() -> None:
     assert dom_ak[0].keys == "h"
 
 
+@needs_playwright
 def test_collect_no_shortcuts() -> None:
     from playwright.sync_api import sync_playwright
 
