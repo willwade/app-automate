@@ -128,7 +128,17 @@ Standalone native libraries for each platform that handle profile loading + plat
 
 ### Medium priority
 
-- [ ] **Hybrid profile schema.** Allow a single profile to specify `backend: "mixed"` with per-element backend hints.
+- [x] **Hybrid profile schema.** `backend: "mixed"` with per-element action types.
 - [x] **CI testing.** GitHub Actions workflow runs `ruff check` + `pytest` on push/PR.
 - [x] **Profile validator command.** `app-automate validate <profile>` checks profiles for common issues (exit 0/1/2).
 - [ ] **Profile migration tool.** Help convert old visual profiles to semantic or shortcut-based profiles.
+- [ ] **Human review step for builder output.** Before a trained profile is considered final, show the user what was detected and let them confirm/edit.
+- [ ] **Anchor scoring and ranking.** Rank candidate anchors before accepting the LLM's proposal. Prefer stable, high-contrast, positionally useful anchors.
+- [ ] **Prompt improvements for repeated-grid interfaces.** Apps with grid layouts (calculators, spreadsheets) produce repetitive elements. Improve the builder prompt to handle these better.
+
+### Hard problems
+
+- [ ] **Controls that animate or move** independently from the window frame (tooltips, floating panels, auto-hide toolbars).
+- [ ] **Layouts that don't scale linearly.** Some apps use non-linear scaling or fixed-size elements at certain breakpoints.
+- [ ] **Robust anchor re-training.** When an anchor breaks (app update, theme change), make it easy to re-train just that anchor without rebuilding the whole profile.
+- [ ] **Profile versioning and migration.** When the schema changes, provide a migration path for existing profiles.

@@ -2,6 +2,19 @@
 
 This is the shortest path for building a profile for a new app.
 
+## Choosing a Strategy
+
+app-automate supports multiple strategies for controlling apps. Pick the one that fits your app best:
+
+| Strategy | Best for | Commands |
+|---|---|---|
+| **Keyboard shortcuts** | Apps with well-documented shortcuts | `extract-shortcuts` |
+| **Accessibility** (AX/UIA/AT-SPI) | Apps with rich accessibility trees | `ax-list`, `uia-list`, `atspi-list` |
+| **CDP** (Chrome DevTools Protocol) | Chromium-based browsers and Electron apps | `cdp-list`, `cdp-click` |
+| **Computer vision** | Apps with no shortcuts and poor accessibility | `train`, `click` |
+
+You can combine strategies in a single profile — see `examples/profiles/firefox/profile.json` for a profile that mixes shortcuts with other backends.
+
 ## Before You Start
 
 - Make sure the target app is visible on screen and not minimized.
@@ -9,7 +22,57 @@ This is the shortest path for building a profile for a new app.
 - If you plan to click later, also enable `Accessibility`.
 - Create `app-automate.settings.toml` if you want to use the LLM-backed builder.
 
-## Fast Path
+## Keyboard Shortcuts
+
+Extract shortcuts from files, desktop environments, or the built-in ShortcutMapper data:
+
+```bash
+uv run app-automate extract-shortcuts "Firefox" --source file --shortcuts-file my-shortcuts.json
+uv run app-automate extract-shortcuts "Firefox" --source desktop
+uv run app-automate extract-shortcuts "" --source gnome-wm
+```
+
+See `examples/profiles/firefox/profile.json` and `examples/profiles-imported/` for shortcut-based profile examples.
+
+## Accessibility
+
+For apps that expose useful accessibility metadata:
+
+**macOS:**
+```bash
+uv run app-automate ax-list --app "Pages" --actionable-only
+uv run app-automate ax-click --app "Pages" --contains "Insert" --max-depth 2 --dry-run
+```
+
+**Linux:**
+```bash
+uv run app-automate atspi-list --app "Calculator" --actionable-only
+uv run app-automate atspi-click --app "Calculator" --contains "5" --dry-run
+```
+
+**Windows:**
+```bash
+uv run app-automate uia-list --app "Calculator" --actionable-only
+uv run app-automate uia-click --app "Calculator" --contains "5" --dry-run
+```
+
+If that returns useful labels and bounds for the controls you care about, the app works well with the accessibility backend.
+
+If accessibility returns very little or only generic controls, try another strategy.
+
+## Chrome DevTools Protocol (CDP)
+
+For Chromium-based browsers and Electron apps:
+
+```bash
+uv run app-automate cdp-setup
+uv run app-automate cdp-list --actionable-only
+uv run app-automate cdp-click --contains "Submit" --dry-run
+```
+
+## Computer Vision (Visual Profiles)
+
+When other strategies don't cover what you need, use the visual profile flow.
 
 1. Open the target app and put it in a stable state.
    Good examples:
@@ -52,7 +115,7 @@ uv run app-automate debug-target "insert" --profile examples/profiles/pages/prof
 uv run app-automate click "insert" --profile examples/profiles/pages/profile.json
 ```
 
-## If Training Fails
+### If Training Fails
 
 Check:
 - `mapping_error.txt`
@@ -67,45 +130,7 @@ Common failure causes:
 
 The simplest fix is usually to retrain from a cleaner screen state with fewer repeated controls visible.
 
-## Try Accessibility First
-
-For apps that expose useful accessibility metadata, a simpler first step is:
-
-**macOS:**
-```bash
-uv run app-automate ax-list --app "Pages" --actionable-only
-uv run app-automate ax-click --app "Pages" --contains "Insert" --max-depth 2 --dry-run
-```
-
-**Linux:**
-```bash
-uv run app-automate atspi-list --app "Calculator" --actionable-only
-uv run app-automate atspi-click --app "Calculator" --contains "5" --dry-run
-```
-
-**Windows:**
-```bash
-uv run app-automate uia-list --app "Calculator" --actionable-only
-uv run app-automate uia-click --app "Calculator" --contains "5" --dry-run
-```
-
-If that returns useful labels and bounds for the controls you care about, the app is a good candidate for a semantic accessibility backend instead of a pure screenshot/profile flow.
-
-If accessibility returns very little or only generic controls, fall back to the visual profile workflow.
-
-## Try Keyboard Shortcuts First
-
-Before any of the above, check if the app has documented keyboard shortcuts. This is the most reliable and cross-platform approach:
-
-```bash
-uv run app-automate extract-shortcuts "Firefox" --source file --shortcuts-file my-shortcuts.json
-uv run app-automate extract-shortcuts "Firefox" --source desktop
-uv run app-automate extract-shortcuts "" --source gnome-wm
-```
-
-See `examples/profiles/firefox/profile.json` for a shortcut-based profile example.
-
-## Manual Review
+### Manual Review
 
 If you want to review anchors interactively after a successful training run:
 
@@ -118,7 +143,7 @@ That will:
 - ask whether to accept the chosen anchors
 - let you enter replacement crop boxes as `x,y,width,height`
 
-## How To Pick a Good Screen State
+### How To Pick a Good Screen State
 
 Prefer screens where:
 - the app title bar or toolbar is visible
@@ -132,10 +157,10 @@ Avoid:
 
 ## Platform Notes
 
-**Linux:** Try AT-SPI first (`atspi-list`), then keyboard shortcuts, then the visual profile flow. See `docs/linux-integration.md` for setup.
+**Linux:** AT-SPI (`atspi-list`), keyboard shortcuts, CDP, and visual profiles all work. See `docs/linux-integration.md` for setup.
 
-**Windows:** Try UIA first (`uia-list`), then keyboard shortcuts, then the visual profile flow. See `docs/windows-integration.md`.
+**Windows:** UIA (`uia-list`), keyboard shortcuts, CDP, and visual profiles all work. See `docs/windows-integration.md`.
 
-**macOS:** Try AX first (`ax-list`), then keyboard shortcuts, then the visual profile flow.
+**macOS:** AX (`ax-list`), keyboard shortcuts, CDP, and visual profiles all work.
 
-**Keyboard shortcuts** work on all platforms and are the most reliable approach when available.
+**Cross-platform:** Keyboard shortcuts and CDP work consistently across platforms. Accessibility and visual profiles are platform-specific.
