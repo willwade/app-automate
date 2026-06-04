@@ -1,19 +1,21 @@
 # app-automate
 
-Control desktop applications programmatically — through keyboard shortcuts, accessibility APIs, browser DevTools, or visual template matching. Works on Linux, Windows, and macOS.
+Control desktop applications programmatically. Works on Linux, Windows, and macOS.
 
 ## How it works
 
-You describe what you want to press or click in a JSON profile. `app-automate` finds the target and performs the action.
+You create a JSON profile that describes an app's UI elements — buttons, fields, keyboard shortcuts. `app-automate` uses that profile to find targets and perform actions like clicking, typing, or pressing keys.
 
-Four strategies, from simplest to most complex:
+**One profile format, multiple strategies.** Each element in a profile uses whichever strategy works best for that element:
 
-| Strategy | Needs display? | Cross-platform? | Reliability |
-|----------|---------------|-----------------|-------------|
-| **Shortcuts** | App must be focused | Yes | High — key combos don't change with screen size |
-| **Accessibility** (AT-SPI / UIA / AX) | Yes | Per-platform | High — semantic tree doesn't shift |
-| **CDP** | Yes | WebView2 only | High — DOM selectors |
-| **Computer Vision** | Yes + screenshots | Yes | Medium — anchor images can break on resize/theme |
+| Strategy | How it finds the target | Needs display? | Cross-platform? |
+|----------|------------------------|----------------|-----------------|
+| **Keyboard shortcut** | Sends key combination (e.g. `ctrl+t`) | App must be focused | Yes |
+| **Accessibility** (AT-SPI / UIA / AX) | Queries the accessibility tree by role, name, or ID | Yes | Per-platform |
+| **CDP** | Targets DOM elements by CSS selector | Yes | WebView2 only |
+| **Computer vision** | Matches anchor screenshots at relative coordinates | Yes + screenshots | Yes |
+
+Use whatever combination works for the app. A single profile can mix all of them.
 
 ## Install
 
@@ -24,16 +26,20 @@ uv sync
 sudo apt install python3-gi gir1.2-atspi-2.0 xdotool wmctrl
 ```
 
-## 30-second example: Firefox with shortcuts
+## Quick example
 
-Create a profile with keyboard shortcuts — works across platforms:
+Create a profile (`profile.json`):
 
 ```json
 {
   "profile_id": "firefox",
   "app_name": "Firefox",
   "type": "semantic",
-  "backend": "shortcut",
+  "backend": "mixed",
+  "shortcuts": {
+    "new_tab": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"},
+    "url_bar": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
+  },
   "semantic_elements": {
     "new_tab": {
       "label": "new_tab",
@@ -46,68 +52,68 @@ Create a profile with keyboard shortcuts — works across platforms:
       "aliases": ["address bar", "navigate"],
       "action": "shortcut",
       "shortcut": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
+    },
+    "search_box": {
+      "label": "Search with Google",
+      "role": "entry",
+      "action": "type"
     }
   }
 }
 ```
 
+This profile uses keyboard shortcuts for navigation and accessibility (`role: "entry"`) for the search box. Both strategies in one profile.
+
 Then use it:
 
 ```bash
 # See what the profile contains
-uv run app-automate list-elements examples/profiles/firefox/profile.json
+uv run app-automate list-elements my-profile/profile.json
 
 # Preview without acting
-uv run app-automate dry-run "url_bar" --profile examples/profiles/firefox/profile.json
+uv run app-automate dry-run "url_bar" --profile my-profile/profile.json
 
-# Actually execute (sends ctrl+l to focused Firefox window)
-uv run app-automate click "url_bar" --profile examples/profiles/firefox/profile.json
+# Actually execute
+uv run app-automate click "url_bar" --profile my-profile/profile.json
 ```
 
 ## Strategies in detail
 
-### 1. Shortcuts — the cross-platform default
+### Keyboard shortcuts
 
-If an app has keyboard shortcuts (most do), this is the easiest and most reliable approach. No screenshots, no accessibility trees, no screen coordinates.
+When an element has a known keyboard shortcut, you define it with `action: "shortcut"` and a key combination. The SDK sends those keys at runtime.
 
-**Import existing shortcuts from a file:**
+Key notation uses `+` to combine: `"ctrl+t"`, `"ctrl+shift+s"`, `"f5"`, `"alt+left"`. Per-platform keys are supported: `"keys": "ctrl+s", "keys_macos": "cmd+s"`.
+
+Shortcuts can come from:
+- The profile JSON directly (as shown above)
+- A standalone JSON file: `{"save": {"keys": "ctrl+s"}, "quit": {"keys": "ctrl+q"}}`
+- A plain text file: `save = ctrl+s`
+- Live extraction from the app (see `extract-shortcuts` below)
+
+To import shortcuts into a profile from a file:
 
 ```bash
-# From a JSON file you wrote or copied from docs
 uv run app-automate extract-shortcuts Firefox --source file \
   --shortcuts-file my-shortcuts.json
+```
+
+To extract from a running app:
+
+```bash
+# From AT-SPI menu accelerators (Linux)
+uv run app-automate extract-shortcuts Firefox --source atspi-menu
 
 # From GNOME window manager bindings (Linux)
 uv run app-automate extract-shortcuts "" --source gnome-wm
-
-# From AT-SPI menu accelerators (Linux, requires running app)
-uv run app-automate extract-shortcuts Firefox --source atspi-menu
 
 # From .desktop files (Linux)
 uv run app-automate extract-shortcuts firefox --source desktop
 ```
 
-**Shortcut file format** (JSON):
+### Accessibility — semantic element targeting
 
-```json
-{
-  "new_tab": {"keys": "ctrl+t", "description": "Open new tab"},
-  "close_tab": {"keys": "ctrl+w", "description": "Close tab"},
-  "find": {"keys": "ctrl+f", "description": "Find in page"}
-}
-```
-
-**Or plain text** (`=` or `:` separated):
-
-```
-new_tab = ctrl+t
-close_tab = ctrl+w
-find = ctrl+f
-```
-
-### 2. Accessibility — semantic element targeting
-
-Query the app's accessibility tree to find buttons, fields, and menus by name.
+Query the app's accessibility tree to find buttons, fields, and menus by role, name, or automation ID.
 
 **Linux (AT-SPI):**
 ```bash
@@ -134,7 +140,7 @@ uv run app-automate train --backend atspi --app "Calculator" --output-dir my-pro
 uv run app-automate click "5" --profile my-profile/profile.json
 ```
 
-### 3. CDP — WebView2 apps (Windows)
+### CDP — WebView2 apps (Windows)
 
 ```bash
 uv run app-automate cdp-setup --app "Outlook"
@@ -142,7 +148,7 @@ uv run app-automate cdp-list --actionable-only
 uv run app-automate cdp-click --contains "New email" --execute
 ```
 
-### 4. Visual profiles — anything else
+### Visual profiles — computer vision
 
 For apps with poor accessibility support. Takes a screenshot, generates a grid overlay, uses an LLM to build a profile, then matches anchor images at runtime.
 
@@ -151,6 +157,16 @@ For apps with poor accessibility support. Takes a screenshot, generates a grid o
 uv run app-automate train --app "MyApp" --output-dir my-profile
 uv run app-automate click "save_button" --profile my-profile/profile.json
 ```
+
+## Profile structure
+
+A profile is a single `profile.json` file. **One schema covers all strategies** — shortcuts, accessibility, and visual elements coexist in the same file.
+
+See the **[Profile Schema Reference](docs/schema-reference.md)** for the complete field-by-field documentation.
+
+`backend` tells the runtime which strategy to prefer: `"shortcut"`, `"atspi"`, `"uia"`, `"ax"`, `"cdp"`, or `"mixed"`. Per-element, the `action` field determines what actually happens.
+
+**Actions available:** `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`, `shortcut`.
 
 ## Discovering what's available
 
@@ -162,84 +178,56 @@ uv run app-automate probe "Calculator"
 uv run app-automate whats-here --radius 150
 ```
 
-## Profile structure
-
-A profile is a `profile.json` file (plus optional anchor images for CV). **There is one schema.** Every profile can contain shortcuts, accessibility elements, and visual elements — mix and match as needed.
-
-**`backend`** tells the runtime which primary strategy to use: `"shortcut"` (keyboard only), `"atspi"`/`"uia"`/`"ax"` (accessibility), `"cdp"` (browser), or `"mixed"` (hybrid). Per-element, each `action` determines what actually happens (shortcut, click, type, etc.).
-
-**Example — Firefox with shortcuts + accessibility:**
-```json
-{
-  "profile_id": "firefox",
-  "app_name": "Firefox",
-  "type": "semantic",
-  "backend": "atspi",
-  "shortcuts": {
-    "new_tab": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"},
-    "close_tab": {"keys": "ctrl+w", "keys_macos": "cmd+w", "description": "Close tab"},
-    "url_bar": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
-  },
-  "semantic_elements": {
-    "new_tab": {
-      "label": "new_tab",
-      "aliases": ["open tab"],
-      "action": "shortcut",
-      "shortcut": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"}
-    },
-    "url_bar": {
-      "label": "url_bar",
-      "aliases": ["address bar", "navigate"],
-      "action": "shortcut",
-      "shortcut": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
-    },
-    "search_box": {
-      "label": "Search with Google",
-      "role": "entry",
-      "action": "type"
-    }
-  }
-}
-```
-
-**Why mix?** Shortcuts are cross-platform and reliable (`ctrl+t` on Windows/Linux, `cmd+t` on macOS). Accessibility elements let you target specific UI that has no shortcut (like typing into a search box). Use shortcuts for the 80%, accessibility for the 20%. Per-platform keys (`keys_macos`, `keys_linux`, `keys_windows`) handle OS differences without separate files. It's all one profile.
-
-**Actions available:** `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`, `shortcut`.
-
 ## Adding a new app
 
-1. **Check for shortcuts first.** Most apps document their keyboard shortcuts. Drop them in a JSON file and you're done. See `examples/profiles/` for hand-crafted profiles and `examples/profiles-imported/` for 20 auto-imported apps.
-
-2. **Probe the app** to see if accessibility works:
+1. **Probe the app** to see what backends are available:
    ```bash
    uv run app-automate probe "AppName"
    ```
 
-3. **If accessibility looks good**, build a semantic profile:
+2. **Check for shortcuts.** If the app has documented keyboard shortcuts, add them as shortcut elements. You can import from a file or extract live.
+
+3. **Try accessibility.** If the app exposes a good accessibility tree, build a semantic profile:
    ```bash
-   uv run app-automate train --backend atspi --app "AppName" --output-dir examples/profiles/appname
+   uv run app-automate train --backend atspi --app "AppName" --output-dir my-profile
    ```
 
-4. **If accessibility is poor**, try the CV path:
+4. **Fall back to CV** if accessibility is poor:
    ```bash
-   uv run app-automate train --app "AppName" --output-dir examples/profiles/appname
+   uv run app-automate train --app "AppName" --output-dir my-profile
    ```
 
-5. **Mix strategies.** A single profile can contain shortcut elements AND accessibility elements. Use shortcuts for the reliable cross-platform actions (save, quit, new tab) and accessibility for everything else.
+5. **Combine strategies.** A single profile can contain shortcut elements, accessibility elements, and visual elements. Use whichever works best for each action.
 
 ## Example profiles
 
 **Hand-crafted** (`examples/profiles/`):
 
-| Profile | Strategy | Notes |
-|---------|----------|-------|
-| Firefox | Shortcuts + AT-SPI | Hybrid: shortcuts for navigation, AT-SPI for UI |
-| Chrome | Shortcuts | 34 cross-platform shortcuts |
-| VS Code | Shortcuts | 38 cross-platform shortcuts |
-| LibreOffice Writer | Shortcuts | 40 cross-platform shortcuts |
-| Galculator | Keyboard shortcuts | Linux calculator |
+| Profile | Strategies used | Notes |
+|---------|----------------|-------|
+| Firefox | Shortcuts + AT-SPI | Shortcuts for navigation, AT-SPI for UI elements |
+| Chrome | Shortcuts | 34 shortcuts with per-platform keys |
+| VS Code | Shortcuts | 38 shortcuts with per-platform keys |
+| LibreOffice Writer | Shortcuts | 40 shortcuts with per-platform keys |
+| Galculator | Shortcuts | Linux calculator |
 
-**Auto-imported from ShortcutMapper** (`examples/profiles-imported/`): 20 apps including Blender (1,525), Photoshop (827), IntelliJ IDEA (465), and more. Run `app-automate validate examples/profiles-imported/<app>` to inspect any of them.
+**Auto-imported from ShortcutMapper** (`examples/profiles-imported/`): 20 apps including Blender, Photoshop, IntelliJ IDEA, and more. These are shortcut-only profiles generated from the ShortcutMapper dataset. Run `app-automate validate examples/profiles-imported/<app>` to inspect any of them.
+
+## Using profiles from your own code
+
+The consumer SDK lets you load and execute profiles without the CLI. Available for Python and .NET:
+
+```python
+from app_automate.consumer import Consumer
+
+c = Consumer.from_file("profiles/firefox")
+c.execute("new tab")          # sends ctrl+t
+c.execute("url bar")          # sends ctrl+l
+c.type_text("https://example.com")
+c.send_key("enter")
+```
+
+See [Consumer SDK Spec](docs/consumer-spec.md) and [Native Adapters](docs/native-adapters.md) for .NET, Swift, and C implementations.
 
 ## Platform support
 
@@ -285,6 +273,7 @@ A profile is a `profile.json` file (plus optional anchor images for CV). **There
 |---------|-------------|
 | `train --backend <b> --app <name>` | Build semantic profile |
 | `train --app <name>` | Build visual profile (needs LLM key) |
+| `validate <profile>` | Check profile for issues |
 | `inspect <profile>` | Describe a profile |
 | `list-elements <profile>` | List elements |
 | `dry-run <cmd> --profile <path>` | Preview without acting |
@@ -311,11 +300,10 @@ uv run pytest
 ## Documentation
 
 - **[Profile Schema Reference](docs/schema-reference.md)** — complete field reference with examples
-- [Architecture](docs/architecture.md)
-- [MVP Roadmap](docs/mvp-roadmap.md)
-- [New App Guide](docs/new-app-guide.md)
-- [Native Adapters](docs/native-adapters.md) — platform-specific input in Swift/C/.NET
 - [Consumer SDK Spec](docs/consumer-spec.md) — interface for language SDKs
+- [Native Adapters](docs/native-adapters.md) — platform-specific input in Swift/C/.NET
+- [New App Guide](docs/new-app-guide.md)
 - [Windows Integration](docs/windows-integration.md)
 - [Linux Integration](docs/linux-integration.md)
+- [Architecture](docs/architecture.md)
 - [Development TODO](TODO.md)
