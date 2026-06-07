@@ -21,7 +21,8 @@ def extract_shortcuts(
             "--source",
             help=(
                 "Extraction source: auto, desktop, gnome-wm, "
-                "atspi-menu, uia-menu, ax-menu, file."
+                "atspi-menu, uia-menu, ax-menu, plist, "
+                "system-hotkeys, file."
             ),
         ),
     ] = "auto",
@@ -49,8 +50,10 @@ def extract_shortcuts(
             extract_from_ax_menu_items,
             extract_from_desktop_file,
             extract_from_gnome_wm,
+            extract_from_plist,
             extract_from_shortcuts_file,
             extract_from_uia_accelerators,
+            extract_system_shortcuts,
         )
 
         results: list[ExtractedShortcut] = []
@@ -67,6 +70,10 @@ def extract_shortcuts(
             results = extract_from_uia_accelerators(app_name)
         elif source == "ax-menu":
             results = extract_from_ax_menu_items(app_name)
+        elif source == "plist":
+            results = extract_from_plist(app_name)
+        elif source == "system-hotkeys":
+            results = extract_system_shortcuts()
         elif source == "file":
             if shortcuts_file is None:
                 typer.echo("--shortcuts-file is required with --source file", err=True)

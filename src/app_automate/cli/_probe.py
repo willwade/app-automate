@@ -25,7 +25,7 @@ def whats_here(
         str,
         typer.Option(
             "--backend",
-            help="Backend to use: uia or cdp.",
+            help="Backend to use: uia, ax, or cdp.",
         ),
     ] = "uia",
     app_name: Annotated[
@@ -53,6 +53,8 @@ def whats_here(
 
         if backend == "uia":
             _whats_here_uia(app_name, x1, y1, x2, y2)
+        elif backend == "ax":
+            _whats_here_ax(app_name, x1, y1, x2, y2)
         elif backend == "cdp":
             _whats_here_cdp(port, x1, y1, x2, y2)
         else:
@@ -184,6 +186,7 @@ def _probe_app(app_name: str) -> dict[str, Any]:
         "uia": None,
         "cdp": None,
         "atspi": None,
+        "ax": None,
         "recommendation": None,
     }
 
@@ -196,6 +199,9 @@ def _probe_app(app_name: str) -> dict[str, Any]:
     atspi_info = _probe_atspi(app_name)
     result["atspi"] = atspi_info
 
+    ax_info = _probe_ax(app_name)
+    result["ax"] = ax_info
+
     if (
         uia_elements["interactive_with_bounds"] >= 20
         and not uia_elements["title_bar_only"]
@@ -203,6 +209,12 @@ def _probe_app(app_name: str) -> dict[str, Any]:
         result["recommendation"] = "uia"
         result["reason"] = (
             f"UIA found {uia_elements['interactive_with_bounds']} "
+            "interactive elements with bounds"
+        )
+    elif ax_info["available"] and ax_info["interactive_with_bounds"] >= 10:
+        result["recommendation"] = "ax"
+        result["reason"] = (
+            f"AX found {ax_info['interactive_with_bounds']} "
             "interactive elements with bounds"
         )
     elif cdp_info["available"]:
@@ -220,7 +232,7 @@ def _probe_app(app_name: str) -> dict[str, Any]:
     else:
         result["recommendation"] = "cv"
         result["reason"] = (
-            "UIA/CDP/AT-SPI coverage is poor; use visual profile with train --app"
+            "UIA/CDP/AT-SPI/AX coverage is poor; use visual profile with train --app"
         )
 
     return result
@@ -299,3 +311,99 @@ def _probe_atspi(app_name: str) -> dict[str, Any]:
         info["available"] = False
         info["error"] = "AT-SPI unavailable or app not found"
     return info
+
+
+def _probe_ax(app_name: str) -> dict[str, Any]:
+    info: dict[str, Any] = {
+        "available": False,
+        "interactive_with_bounds": 0,
+    }
+    try:
+        from app_automate.accessibility.macos_ax import list_app_ui_elements
+
+        elements = list_app_ui_elements(app_name, max_depth=10, actionable_only=True)
+        with_bounds = [e for e in elements if e.has_bounds]
+        info["available"] = True
+        info["interactive_with_bounds"] = len(with_bounds)
+        info["total_elements"] = len(elements)
+        roles = set(
+            e.role or e.class_name
+            for e in with_bounds
+            if e.role or e.class_name
+        )
+        info["roles"] = sorted(roles)
+    except Exception:
+        info["available"] = False
+        info["error"] = "AX unavailable or app not found"
+    return info
+
+
+def _whats_here_ax(
+    app_name: str | None, x1: int, y1: int, x2: int, y2: int
+) -> None:
+    from app_automate.accessibility.macos_ax import list_app_ui_elements
+
+    if not app_name:
+        app_name = _macos_foreground_app()
+
+    if app_name:
+        print(f"  Foreground app: {app_name}")
+
+    elements = list_app_ui_elements(
+        app_name or "", max_depth=15, actionable_only=False
+    )
+
+    nearby = []
+    for el in elements:
+        if el.x is None or el.y is None:
+            continue
+        el_x1 = el.x
+        el_y1 = el.y
+        el_x2 = el.x + (el.width or 0)
+        el_y2 = el.y + (el.height or 0)
+        if el_x2 < x1 or el_x1 > x2 or el_y2 < y1 or el_y1 > y2:
+            continue
+        nearby.append(el)
+
+    if not nearby:
+        print("No AX elements found near cursor.")
+        return
+
+    nearby.sort(key=lambda e: (e.width or 0) * (e.height or 0))
+
+    print(f"\n{len(nearby)} elements found:\n")
+    print(f"  {'Label':<30} {'Role':<20} {'X':>5} {'Y':>5} {'W':>5} {'H':>5}")
+    print(f"  {'-' * 30} {'-' * 20} {'-' * 5} {'-' * 5} {'-' * 5} {'-' * 5}")
+    for el in nearby:
+        label = (el.label or "")[:30]
+        role = (el.role or el.class_name or "")[:20]
+        print(
+            f"  {label:<30} {role:<20} "
+            f"{el.x or 0:>5} {el.y or 0:>5} "
+            f"{el.width or 0:>5} {el.height or 0:>5}"
+        )
+
+
+def _macos_foreground_app() -> str | None:
+    try:
+        import subprocess
+
+        result = subprocess.run(
+            [
+                "osascript",
+                "-e",
+                (
+                    'tell application "System Events" to get name '
+                    "of first process whose frontmost is true"
+                ),
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except Exception:
+        pass
+    return None
