@@ -173,6 +173,97 @@ def ax_click(
     typer.echo(json.dumps(payload, indent=2))
 
 
+@app.command("ax-type")
+def ax_type(
+    app_name: Annotated[
+        str,
+        typer.Option("--app", help="macOS app name to inspect."),
+    ],
+    contains: Annotated[
+        str,
+        typer.Option("--contains", help="Substring match for the target field."),
+    ],
+    text: Annotated[
+        str,
+        typer.Option("--text", help="Text to type into the matched element."),
+    ],
+    max_depth: Annotated[
+        int,
+        typer.Option("--max-depth", min=0, help="Maximum UI tree depth to inspect."),
+    ] = 3,
+    index: Annotated[
+        int,
+        typer.Option(
+            "--index",
+            min=1,
+            help="1-based match index when multiple accessible elements match.",
+        ),
+    ] = 1,
+    replace: Annotated[
+        bool,
+        typer.Option(
+            "--replace/--append",
+            help="Select all existing text before typing.",
+        ),
+    ] = False,
+    interval: Annotated[
+        float,
+        typer.Option(
+            "--interval",
+            min=0.0,
+            help="Delay between typed characters in seconds.",
+        ),
+    ] = 0.0,
+    dry_run: Annotated[
+        bool,
+        typer.Option(
+            "--dry-run/--execute",
+            help="Preview the AX target and text without sending input.",
+        ),
+    ] = True,
+) -> None:
+    try:
+        element = select_semantic_element(
+            finder=load_macos_accessibility().find_matching_elements,
+            app_name=app_name,
+            contains=contains,
+            max_depth=max_depth,
+            index=index,
+        )
+        x, y = element_center(element)
+        payload = {
+            "path": element.path,
+            "label": element.label,
+            "class_name": element.class_name,
+            "x": round(x, 2),
+            "y": round(y, 2),
+            "text": text,
+            "replace": replace,
+            "bounds": {
+                "x": element.x,
+                "y": element.y,
+                "width": element.width,
+                "height": element.height,
+            },
+        }
+        if dry_run:
+            typer.echo(json.dumps(payload, indent=2))
+            return
+
+        payload = type_into_element(
+            adapter=create_action_adapter(),
+            element=element,
+            text=text,
+            replace=replace,
+            interval=interval,
+        )
+    except Exception as exc:
+        typer.echo(f"ax-type failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    typer.echo(json.dumps(payload, indent=2))
+
+
 @app.command("uia-list")
 def uia_list(
     app_name: Annotated[

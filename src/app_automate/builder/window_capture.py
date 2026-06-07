@@ -56,6 +56,17 @@ def _activate_app(app_name: str) -> None:
 
 
 def _front_window_bounds_macos(app_name: str) -> tuple[int, int, int, int]:
+    try:
+        from app_automate.accessibility.macos_ax import _axtool, _has_axtool
+
+        if _has_axtool():
+            import json
+
+            raw = _axtool("window-bounds", "--app", app_name, "--json")
+            data = json.loads(raw)
+            return data["x"], data["y"], data["width"], data["height"]
+    except Exception:
+        pass
     position_raw = _osascript(
         'tell application "System Events" to tell process '
         f'"{app_name}" to get position of front window'
