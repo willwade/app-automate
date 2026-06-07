@@ -134,12 +134,12 @@ Standalone native libraries for each platform that handle profile loading + plat
 
 Cross-platform live search over the accessibility tree — query, filter, and act on elements without a pre-built profile. Inspired by [Shortcat](https://shortcat.app/) but scriptable and cross-platform.
 
-- [ ] **Synonym expansion map.** Build a reusable synonym dictionary for common UI concepts (delete/remove/erase, button/btn, close/dismiss, search/find, etc.). Expand search queries through synonyms before matching. Must work across all backends (AX, UIA, AT-SPI).
-- [ ] **`app-automate search` CLI command.** `search "delete" --app Safari` queries the live accessibility tree (AX on macOS, UIA on Windows, AT-SPI on Linux), fuzzy-matches by label + role + synonyms, and returns ranked results with element details.
-- [ ] **Element type filtering.** `search "Promotions" --role link` or `search --role button` to filter by AX/UIA/AT-SPI role. Expose role names from each platform's native taxonomy (AXButton, ButtonControl, etc.) with normalised aliases (button, link, menuitem, textfield, etc.).
-- [ ] **Search + act in one step.** `search "delete" --click` to find the first matching element and click it. `search "email" --type "hello@example.com"` to find a text field and type into it. Cross-platform via existing click/type adapters.
-- [ ] **Fuzzy matching.** Substring match, case-insensitive, with synonym expansion. Consider `rapidfuzz` or simple tokenised scoring. Match against label, description, role, and value.
-- [ ] **Backend abstraction for search.** All three backends (AX, UIA, AT-SPI) already return `UIElement` with `label`, `role`, `x`, `y`, `width`, `height`. Search just needs to query the live tree and filter — no profile needed.
+- [x] **Synonym expansion map.** Built in `accessibility/synonyms.py` — 75+ synonym groups covering common UI concepts (delete/remove/erase, button/btn, close/dismiss, search/find, etc.). `expand_synonyms("erase")` → `[clear, delete, destroy, discard, erase, remove, trash]`. Works across all backends.
+- [x] **`app-automate search` CLI command.** `search "delete" --app Safari` queries the live accessibility tree (AX on macOS, UIA on Windows, AT-SPI on Linux), scores by label/role/synonym match, returns ranked results. Tested on Safari with 187 elements.
+- [x] **Element type filtering.** `search "search" --role textfield` filters by normalised role aliases (AXButton→button, AXTextField→textfield, etc.). 30+ role aliases mapped across platforms in `ROLE_ALIASES`.
+- [x] **Search + act in one step.** `search "share" --click --execute` finds and clicks. `search "email" --type "hello@example.com"` finds a text field and types. `--dry-run` (default) shows what would be done.
+- [x] **Fuzzy matching.** Scoring engine in `accessibility/search.py` — exact match (100), substring (80+), token (60+), role (55), synonym (30+). Actionable elements get +5 bonus. Ranked by score then depth/position.
+- [x] **Backend abstraction for search.** `search_elements()` takes any `list[UIElement]` — works with AX, UIA, and AT-SPI backends. No profile needed.
 
 ### Medium priority
 

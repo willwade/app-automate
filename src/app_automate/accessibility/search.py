@@ -60,7 +60,14 @@ def search_elements(
         if best is not None:
             results.append(best)
 
-    results.sort(key=lambda r: (-r.score, r.element.depth, r.element.x or 0, r.element.y or 0))
+    results.sort(
+        key=lambda r: (
+            -r.score,
+            r.element.depth,
+            r.element.x or 0,
+            r.element.y or 0,
+        )
+    )
     return results[:max_results]
 
 
