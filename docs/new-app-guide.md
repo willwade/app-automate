@@ -30,6 +30,11 @@ Extract shortcuts from files, desktop environments, or the built-in ShortcutMapp
 uv run app-automate extract-shortcuts "Firefox" --source file --shortcuts-file my-shortcuts.json
 uv run app-automate extract-shortcuts "Firefox" --source desktop
 uv run app-automate extract-shortcuts "" --source gnome-wm
+
+# macOS: extract from live app menus and preferences
+uv run app-automate extract-shortcuts Safari --source ax-menu
+uv run app-automate extract-shortcuts Safari --source plist
+uv run app-automate extract-shortcuts "" --source system-hotkeys
 ```
 
 See `examples/profiles/firefox/profile.json` and `examples/profiles-imported/` for shortcut-based profile examples.
@@ -155,12 +160,47 @@ Avoid:
 - galleries of repeated thumbnails
 - temporary menus unless the menu itself is the target workflow
 
+## Live Element Search
+
+Search the live accessibility tree without building a profile. Works on all platforms (AX on macOS, UIA on Windows, AT-SPI on Linux). Synonym expansion means you can find elements even when you don't know the exact label.
+
+```bash
+# Find elements by label
+uv run app-automate search "share" --app Safari
+
+# Filter by role (button, link, textfield, menuitem, checkbox, etc.)
+uv run app-automate search "email" --app Safari --role textfield
+
+# Synonym search: "erase" finds "delete", "btn" finds buttons, etc.
+uv run app-automate search "erase" --app TextEdit --all
+
+# Click the top result
+uv run app-automate search "reload" --app Safari --click --execute
+
+# Type into a found text field
+uv run app-automate search "email" --app Safari --type "hello@example.com" --execute
+
+# JSON output for scripting
+uv run app-automate search "back" --app Safari --json
+```
+
+Options:
+- `--role <role>` — filter by element role (button, link, textfield, etc.)
+- `--click` — click the top-ranked result
+- `--type <text>` — type text into the top-ranked result
+- `--index <n>` — act on the nth result (default: 1)
+- `--dry-run/--execute` — preview or execute (default: dry-run)
+- `--actionable/--all` — only actionable elements or all
+- `--max-depth <n>` — accessibility tree depth (default: 10)
+- `--max-results <n>` — maximum results (default: 20)
+- `--json/--text` — output format
+
 ## Platform Notes
 
 **Linux:** AT-SPI (`atspi-list`), keyboard shortcuts, CDP, and visual profiles all work. See `docs/linux-integration.md` for setup.
 
 **Windows:** UIA (`uia-list`), keyboard shortcuts, CDP, and visual profiles all work. See `docs/windows-integration.md`.
 
-**macOS:** AX (`ax-list`), keyboard shortcuts, CDP, and visual profiles all work.
+**macOS:** AX (`ax-list`), keyboard shortcuts, CDP, and visual profiles all work. Native `axtool` Swift CLI provides fast accessibility operations. Extract shortcuts from live menus (`--source ax-menu`), app preferences (`--source plist`), or system hotkeys (`--source system-hotkeys`).
 
 **Cross-platform:** Keyboard shortcuts and CDP work consistently across platforms. Accessibility and visual profiles are platform-specific.

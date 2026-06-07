@@ -132,12 +132,43 @@ uv run app-automate uia-click --app "Calculator" --contains "Close" --execute
 ```bash
 uv run app-automate ax-list --app "Pages" --actionable-only
 uv run app-automate ax-click --app "Pages" --contains "Insert" --dry-run
+
+# Extract shortcuts from live app menus and macOS defaults
+uv run app-automate extract-shortcuts Safari --source ax-menu
+uv run app-automate extract-shortcuts Safari --source plist
+uv run app-automate extract-shortcuts "" --source system-hotkeys
 ```
 
 **Build a semantic profile from the live app:**
 ```bash
 uv run app-automate train --backend atspi --app "Calculator" --output-dir my-profile
 uv run app-automate click "5" --profile my-profile/profile.json
+```
+
+### Live element search
+
+Query the live accessibility tree without building a profile. Search by label, role, or synonym — then click or type in one step. Works with AX (macOS), UIA (Windows), and AT-SPI (Linux).
+
+```bash
+# Find and list elements matching "share"
+uv run app-automate search "share" --app Safari
+
+# Filter by element role
+uv run app-automate search "search" --app Safari --role textfield
+
+# Find and click the top result (dry-run by default)
+uv run app-automate search "share" --app Safari --click --dry-run
+uv run app-automate search "share" --app Safari --click --execute
+
+# Find a text field and type into it
+uv run app-automate search "email" --app Safari --type "hello@example.com" --execute
+
+# Synonym expansion: "btn" finds buttons, "erase" finds delete, etc.
+uv run app-automate search "btn" --app Safari --all
+uv run app-automate search "erase" --app TextEdit --all
+
+# JSON output
+uv run app-automate search "reload" --app Safari --json
 ```
 
 ### CDP — WebView2 apps (Windows)
@@ -235,9 +266,10 @@ See [Consumer SDK Spec](docs/consumer-spec.md) and [Native Adapters](docs/native
 |---------|-------|---------|-------|
 | Keyboard shortcuts | Yes | Yes | Yes |
 | Visual profiles (CV) | Yes | Yes | Yes |
-| Accessibility | AT-SPI | UIA | System Events |
+| Accessibility | AT-SPI | UIA | AX (native axtool) |
+| Live search | AT-SPI | UIA | AX |
 | Browser/WebView | — | CDP | — |
-| Window capture | xdotool + mss | user32 + mss | screencapture + mss |
+| Window capture | xdotool + mss | user32 + mss | axtool + mss |
 
 ## CLI Reference
 
@@ -246,6 +278,7 @@ See [Consumer SDK Spec](docs/consumer-spec.md) and [Native Adapters](docs/native
 |---------|-------------|
 | `probe <app>` | Detect best backend for an app |
 | `whats-here` | List elements near cursor |
+| `search <query> --app <name>` | Search live accessibility tree by label/role/synonym |
 | `extract-shortcuts <app>` | Extract keyboard shortcuts |
 
 ### Accessibility
