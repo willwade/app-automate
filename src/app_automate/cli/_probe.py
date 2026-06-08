@@ -254,14 +254,22 @@ def _probe_uia(app_name: str) -> dict[str, Any]:
         roles = set(e.class_name for e in with_bounds)
         info["roles"] = sorted(roles)
         title_roles = {
-            "ButtonControl",
             "MenuBarControl",
             "MenuItemControl",
             "TitleBarControl",
         }
-        non_title = [e for e in with_bounds if e.class_name not in title_roles]
-        if with_bounds and not non_title:
-            info["title_bar_only"] = True
+        if with_bounds:
+            window_top = min(e.y for e in with_bounds if e.y is not None)
+            window_heights = [(e.y or 0) + (e.height or 0) for e in with_bounds]
+            window_bottom = max(window_heights) if window_heights else window_top + 50
+            title_bar_threshold = window_top + (window_bottom - window_top) * 0.08
+            below_title = [
+                e
+                for e in with_bounds
+                if (e.y or 0) > title_bar_threshold or e.class_name not in title_roles
+            ]
+            if not below_title:
+                info["title_bar_only"] = True
     except Exception:
         info["available"] = False
         info["error"] = "no matching window found or UIA unavailable"
@@ -280,11 +288,6 @@ def _probe_cdp() -> dict[str, Any]:
             info["available"] = True
             info["page_title"] = status.get("page_title", "")
             info["page_url"] = status.get("page_url", "")
-            try:
-                elements = cdp.list_cdp_elements(actionable_only=True)
-                info["interactive_elements"] = len(elements)
-            except Exception:
-                info["interactive_elements"] = "error"
     except Exception:
         info["available"] = False
     return info
@@ -327,9 +330,7 @@ def _probe_ax(app_name: str) -> dict[str, Any]:
         info["interactive_with_bounds"] = len(with_bounds)
         info["total_elements"] = len(elements)
         roles = set(
-            e.role or e.class_name
-            for e in with_bounds
-            if e.role or e.class_name
+            e.role or e.class_name for e in with_bounds if e.role or e.class_name
         )
         info["roles"] = sorted(roles)
     except Exception:
@@ -338,9 +339,7 @@ def _probe_ax(app_name: str) -> dict[str, Any]:
     return info
 
 
-def _whats_here_ax(
-    app_name: str | None, x1: int, y1: int, x2: int, y2: int
-) -> None:
+def _whats_here_ax(app_name: str | None, x1: int, y1: int, x2: int, y2: int) -> None:
     from app_automate.accessibility.macos_ax import list_app_ui_elements
 
     if not app_name:
@@ -349,9 +348,7 @@ def _whats_here_ax(
     if app_name:
         print(f"  Foreground app: {app_name}")
 
-    elements = list_app_ui_elements(
-        app_name or "", max_depth=15, actionable_only=False
-    )
+    elements = list_app_ui_elements(app_name or "", max_depth=15, actionable_only=False)
 
     nearby = []
     for el in elements:

@@ -86,8 +86,7 @@ def search_command(
             app_name = _foreground_app()
             if not app_name:
                 typer.echo(
-                    "No --app specified and cannot detect "
-                    "foreground app.",
+                    "No --app specified and cannot detect foreground app.",
                     err=True,
                 )
                 raise typer.Exit(code=1)
@@ -152,9 +151,23 @@ def search_command(
 
 
 def _foreground_app() -> str | None:
-    from app_automate.platform_utils import is_macos
+    from app_automate.platform_utils import is_macos, is_windows
 
-    if is_macos():
+    if is_windows():
+        import ctypes
+
+        hwnd = ctypes.windll.user32.GetForegroundWindow()
+        if hwnd:
+            length = ctypes.windll.user32.GetWindowTextLengthW(hwnd) + 1
+            buf = ctypes.create_unicode_buffer(length)
+            ctypes.windll.user32.GetWindowTextW(hwnd, buf, length)
+            title = buf.value
+            if title:
+                for sep in (" - ", " — "):
+                    if sep in title:
+                        title = title.split(sep)[-1].strip()
+                return title
+    elif is_macos():
         import subprocess
 
         result = subprocess.run(
@@ -204,8 +217,6 @@ def _list_elements(app_name: str, max_depth: int, actionable_only: bool) -> list
 def _act_on_result(
     result, *, click: bool, type_text: str | None, dry_run: bool
 ) -> None:
-    from app_automate.platform_utils import is_macos
-
     el = result.element
     label = el.label or "(unnamed)"
     role_str = el.role or el.class_name or ""
@@ -214,10 +225,7 @@ def _act_on_result(
 
     if dry_run:
         if click:
-            typer.echo(
-                f"[dry-run] Would click '{label}' "
-                f"({role_str}) at ({cx}, {cy})"
-            )
+            typer.echo(f"[dry-run] Would click '{label}' ({role_str}) at ({cx}, {cy})")
         if type_text is not None:
             typer.echo(
                 f"[dry-run] Would type '{type_text}' into '{label}' "
@@ -225,30 +233,16 @@ def _act_on_result(
             )
         return
 
-    if is_macos():
-        from app_automate.cli._shared import create_action_adapter
+    from app_automate.cli._shared import create_action_adapter
 
-        adapter = create_action_adapter()
-        if click:
-            adapter.click(cx, cy)
-            typer.echo(f"Clicked '{label}' at ({cx}, {cy})")
-        if type_text is not None:
-            adapter.click(cx, cy)
-            import time
+    adapter = create_action_adapter()
+    if click:
+        adapter.click(cx, cy)
+        typer.echo(f"Clicked '{label}' at ({cx}, {cy})")
+    if type_text is not None:
+        adapter.click(cx, cy)
+        import time
 
-            time.sleep(0.1)
-            adapter.type_text(type_text)
-            typer.echo(f"Typed '{type_text}' into '{label}' at ({cx}, {cy})")
-    else:
-        import pyautogui
-
-        if click:
-            pyautogui.click(cx, cy)
-            typer.echo(f"Clicked '{label}' at ({cx}, {cy})")
-        if type_text is not None:
-            pyautogui.click(cx, cy)
-            import time
-
-            time.sleep(0.1)
-            pyautogui.write(type_text)
-            typer.echo(f"Typed '{type_text}' into '{label}' at ({cx}, {cy})")
+        time.sleep(0.1)
+        adapter.write_text(type_text)
+        typer.echo(f"Typed '{type_text}' into '{label}' at ({cx}, {cy})")
