@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Select Xcode 16
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+
       - name: Build axtool
         working-directory: native/axtool
         run: swift build -c release
