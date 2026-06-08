@@ -1,0 +1,2 @@
+C:\github\app-automate\native\uia-tool\publish\uia.pdb
+C:\github\app-automate\native\uia-tool\publish\uia.exe

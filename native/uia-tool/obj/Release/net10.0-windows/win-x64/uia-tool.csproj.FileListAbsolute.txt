@@ -1,0 +1,15 @@
+C:\github\app-automate\native\uia-tool\bin\Release\net10.0-windows\win-x64\uia.exe
+C:\github\app-automate\native\uia-tool\bin\Release\net10.0-windows\win-x64\uia.deps.json
+C:\github\app-automate\native\uia-tool\bin\Release\net10.0-windows\win-x64\uia.runtimeconfig.json
+C:\github\app-automate\native\uia-tool\bin\Release\net10.0-windows\win-x64\uia.dll
+C:\github\app-automate\native\uia-tool\bin\Release\net10.0-windows\win-x64\uia.pdb
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia-tool.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia-tool.AssemblyInfoInputs.cache
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia-tool.AssemblyInfo.cs
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia-tool.csproj.CoreCompileInputs.cache
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia-tool.sourcelink.json
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia.dll
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\refint\uia.dll
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia.pdb
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\uia-tool.genruntimeconfig.cache
+C:\github\app-automate\native\uia-tool\obj\Release\net10.0-windows\win-x64\ref\uia.dll
