@@ -21,8 +21,8 @@ def extract_shortcuts(
             "--source",
             help=(
                 "Extraction source: auto, desktop, gnome-wm, "
-                "atspi-menu, uia-menu, ax-menu, plist, "
-                "system-hotkeys, file."
+                "atspi-menu, uia-menu, registry, lnk, "
+                "ax-menu, plist, system-hotkeys, file."
             ),
         ),
     ] = "auto",
@@ -50,7 +50,9 @@ def extract_shortcuts(
             extract_from_ax_menu_items,
             extract_from_desktop_file,
             extract_from_gnome_wm,
+            extract_from_lnk_files,
             extract_from_plist,
+            extract_from_registry,
             extract_from_shortcuts_file,
             extract_from_uia_accelerators,
             extract_system_shortcuts,
@@ -68,6 +70,10 @@ def extract_shortcuts(
             results = extract_from_atspi_menus(app_name)
         elif source == "uia-menu":
             results = extract_from_uia_accelerators(app_name)
+        elif source == "registry":
+            results = extract_from_registry(app_name)
+        elif source == "lnk":
+            results = extract_from_lnk_files()
         elif source == "ax-menu":
             results = extract_from_ax_menu_items(app_name)
         elif source == "plist":

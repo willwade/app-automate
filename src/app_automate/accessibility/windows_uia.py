@@ -23,6 +23,8 @@ ACTIONABLE_CONTROL_TYPES = {
 
 @dataclass(slots=True)
 class UIAElement(UIElement):
+    accelerator_key: str | None = None
+
     @property
     def actionable(self) -> bool:
         return self.class_name in ACTIONABLE_CONTROL_TYPES
@@ -275,6 +277,7 @@ def _to_element(control: Any, *, path: str, depth: int) -> UIAElement | None:
         enabled=_safe_get_bool(control, "IsEnabled"),
         depth=depth,
         child_count=child_count,
+        accelerator_key=_safe_get_str(control, "AcceleratorKey"),
     )
 
 

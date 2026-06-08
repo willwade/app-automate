@@ -195,20 +195,112 @@ def extract_from_uia_accelerators(app_name: str) -> list[ExtractedShortcut]:
         elements = windows_uia.list_app_ui_elements(
             app_name, max_depth=15, actionable_only=False
         )
+        seen: set[tuple[str, str]] = set()
         for el in elements:
-            if not el.path or "menu" not in (el.role or "").lower():
-                continue
             accel = getattr(el, "accelerator_key", None)
-            if accel:
-                shortcuts.append(
-                    ExtractedShortcut(
-                        action=el.label,
-                        keys=_normalise_windows_accel(accel),
-                        source="uia-menu",
-                        description=el.label,
-                        platform="windows",
-                    )
+            if not accel:
+                continue
+            label = el.label or ""
+            key = (label, accel)
+            if key in seen:
+                continue
+            seen.add(key)
+            shortcuts.append(
+                ExtractedShortcut(
+                    action=label,
+                    keys=_normalise_windows_accel(accel),
+                    source="uia-menu",
+                    description=label,
+                    platform="windows",
                 )
+            )
+    except Exception:
+        pass
+    return shortcuts
+
+
+def extract_from_registry(app_name: str) -> list[ExtractedShortcut]:
+    shortcuts: list[ExtractedShortcut] = []
+    try:
+        import winreg
+
+        from app_automate.platform_utils import is_windows
+
+        if not is_windows():
+            return shortcuts
+        needle = app_name.lower()
+        search_roots = [
+            (winreg.HKEY_CURRENT_USER, "HKCU\\Software"),
+            (winreg.HKEY_LOCAL_MACHINE, "HKLM\\Software"),
+        ]
+        for hive, hive_label in search_roots:
+            try:
+                with winreg.OpenKey(hive, "Software") as key:
+                    i = 0
+                    while True:
+                        try:
+                            subkey_name = winreg.EnumKey(key, i)
+                            i += 1
+                        except OSError:
+                            break
+                        if needle not in subkey_name.lower():
+                            continue
+                        _walk_registry_shortcuts(
+                            hive,
+                            f"Software\\{subkey_name}",
+                            shortcuts,
+                            hive_label,
+                            depth=0,
+                        )
+            except Exception:
+                pass
+    except ImportError:
+        pass
+    return shortcuts
+
+
+def extract_from_lnk_files() -> list[ExtractedShortcut]:
+    shortcuts: list[ExtractedShortcut] = []
+    try:
+        import os
+
+        from app_automate.platform_utils import is_windows
+
+        if not is_windows():
+            return shortcuts
+
+        search_dirs = [
+            os.path.join(
+                os.environ.get("APPDATA", ""),
+                "Microsoft\\Windows\\Start Menu",
+            ),
+            os.path.join(
+                os.environ.get("PROGRAMDATA", ""),
+                "Microsoft\\Windows\\Start Menu",
+            ),
+        ]
+
+        for search_dir in search_dirs:
+            if not os.path.isdir(search_dir):
+                continue
+            for root, _dirs, files in os.walk(search_dir):
+                for fname in files:
+                    if not fname.lower().endswith(".lnk"):
+                        continue
+                    lnk_path = os.path.join(root, fname)
+                    hotkey = _read_lnk_hotkey(lnk_path)
+                    if not hotkey:
+                        continue
+                    app_name = os.path.splitext(fname)[0]
+                    shortcuts.append(
+                        ExtractedShortcut(
+                            action=f"launch_{app_name.lower()}",
+                            keys=hotkey,
+                            source="lnk",
+                            description=f"Launch {app_name}",
+                            platform="windows",
+                        )
+                    )
     except Exception:
         pass
     return shortcuts
@@ -252,6 +344,8 @@ def extract_all(app_name: str) -> list[ExtractedShortcut]:
         all_shortcuts.extend(extract_from_atspi_menus(app_name))
     elif is_windows():
         all_shortcuts.extend(extract_from_uia_accelerators(app_name))
+        all_shortcuts.extend(extract_from_registry(app_name))
+        all_shortcuts.extend(extract_from_lnk_files())
     elif is_macos():
         all_shortcuts.extend(extract_from_ax_menu_items(app_name))
         all_shortcuts.extend(extract_from_plist(app_name))
@@ -356,13 +450,10 @@ def _resolve_bundle_id(app_name: str) -> str | None:
     import subprocess
 
     result = subprocess.run(
-            [
-                "mdfind",
-                (
-                    f"kMDItemKind == 'Application' && "
-                    f"kMDItemFSName == '{app_name}.app'"
-                ),
-            ],
+        [
+            "mdfind",
+            (f"kMDItemKind == 'Application' && kMDItemFSName == '{app_name}.app'"),
+        ],
         check=False,
         capture_output=True,
         text=True,
@@ -521,20 +612,88 @@ def _params_to_keys(params: list) -> str:
 
 
 _KEYCODE_NAMES: dict[int, str] = {
-    0: "a", 1: "s", 2: "d", 3: "f", 4: "h", 5: "g", 6: "z", 7: "x",
-    8: "c", 9: "v", 10: "b", 11: "q", 12: "w", 13: "e", 14: "r",
-    15: "y", 16: "t", 17: "1", 18: "2", 19: "3", 20: "4", 21: "5",
-    22: "6", 23: "7", 24: "8", 25: "9", 26: "0", 27: "minus",
-    28: "equal", 29: "]", 30: "o", 31: "u", 32: "[", 33: "i", 34: "p",
-    35: "return", 36: "l", 37: "j", 38: "'", 39: "k", 40: ";",
-    41: "\\", 42: ",", 43: "/", 44: "n", 45: "m", 46: ".", 47: "tab",
-    48: "space", 49: "`", 50: "delete", 51: "escape", 52: "cmd",
-    53: "shift", 54: "caps", 55: "alt", 56: "ctrl", 57: "fn",
-    96: "f5", 97: "f6", 98: "f7", 99: "f3", 100: "f8", 101: "f9",
-    103: "f11", 105: "f13", 107: "f14", 109: "f10", 111: "f12",
-    113: "f15", 115: "home", 116: "pageup", 117: "delete",
-    118: "f4", 119: "end", 120: "f2", 121: "pagedown", 122: "f1",
-    123: "left", 124: "right", 125: "down", 126: "up",
+    0: "a",
+    1: "s",
+    2: "d",
+    3: "f",
+    4: "h",
+    5: "g",
+    6: "z",
+    7: "x",
+    8: "c",
+    9: "v",
+    10: "b",
+    11: "q",
+    12: "w",
+    13: "e",
+    14: "r",
+    15: "y",
+    16: "t",
+    17: "1",
+    18: "2",
+    19: "3",
+    20: "4",
+    21: "5",
+    22: "6",
+    23: "7",
+    24: "8",
+    25: "9",
+    26: "0",
+    27: "minus",
+    28: "equal",
+    29: "]",
+    30: "o",
+    31: "u",
+    32: "[",
+    33: "i",
+    34: "p",
+    35: "return",
+    36: "l",
+    37: "j",
+    38: "'",
+    39: "k",
+    40: ";",
+    41: "\\",
+    42: ",",
+    43: "/",
+    44: "n",
+    45: "m",
+    46: ".",
+    47: "tab",
+    48: "space",
+    49: "`",
+    50: "delete",
+    51: "escape",
+    52: "cmd",
+    53: "shift",
+    54: "caps",
+    55: "alt",
+    56: "ctrl",
+    57: "fn",
+    96: "f5",
+    97: "f6",
+    98: "f7",
+    99: "f3",
+    100: "f8",
+    101: "f9",
+    103: "f11",
+    105: "f13",
+    107: "f14",
+    109: "f10",
+    111: "f12",
+    113: "f15",
+    115: "home",
+    116: "pageup",
+    117: "delete",
+    118: "f4",
+    119: "end",
+    120: "f2",
+    121: "pagedown",
+    122: "f1",
+    123: "left",
+    124: "right",
+    125: "down",
+    126: "up",
 }
 
 
@@ -677,3 +836,147 @@ def _normalise_atspi_accel(accel: str) -> str:
         .replace("<Primary>", "ctrl")
         .replace("<Meta>", "super")
     )
+
+
+_REGISTRY_SHORTCUT_NAMES: dict[str, str] = {
+    "Ctrl+N": "ctrl+n",
+    "Ctrl+O": "ctrl+o",
+    "Ctrl+S": "ctrl+s",
+    "Ctrl+P": "ctrl+p",
+    "Ctrl+Z": "ctrl+z",
+    "Ctrl+Y": "ctrl+y",
+    "Ctrl+C": "ctrl+c",
+    "Ctrl+X": "ctrl+x",
+    "Ctrl+V": "ctrl+v",
+    "Ctrl+A": "ctrl+a",
+    "Ctrl+F": "ctrl+f",
+    "Ctrl+W": "ctrl+w",
+    "Ctrl+Q": "ctrl+q",
+    "Ctrl+Shift+N": "ctrl+shift+n",
+    "Ctrl+Shift+S": "ctrl+shift+s",
+    "F1": "f1",
+    "F2": "f2",
+    "F3": "f3",
+    "F5": "f5",
+    "F11": "f11",
+    "F12": "f12",
+    "Ctrl+F4": "ctrl+f4",
+    "Alt+F4": "alt+f4",
+}
+
+
+def _walk_registry_shortcuts(
+    hive: int,
+    key_path: str,
+    out: list[ExtractedShortcut],
+    hive_label: str,
+    *,
+    depth: int,
+    max_depth: int = 3,
+) -> None:
+    import winreg
+
+    if depth > max_depth:
+        return
+    try:
+        with winreg.OpenKey(hive, key_path) as key:
+            i = 0
+            while True:
+                try:
+                    name, value, vtype = winreg.EnumValue(key, i)
+                    i += 1
+                except OSError:
+                    break
+                if not isinstance(value, str):
+                    continue
+                normalised = _normalise_windows_accel(value)
+                if "+" not in normalised:
+                    continue
+                parts = normalised.split("+")
+                if len(parts) < 2:
+                    continue
+                out.append(
+                    ExtractedShortcut(
+                        action=name,
+                        keys=normalised,
+                        source=f"registry:{hive_label}\\{key_path}",
+                        description=name,
+                        platform="windows",
+                    )
+                )
+            i = 0
+            while True:
+                try:
+                    subkey_name = winreg.EnumKey(key, i)
+                    i += 1
+                except OSError:
+                    break
+                subkey_lower = subkey_name.lower()
+                if any(
+                    k in subkey_lower
+                    for k in ("shortcut", "hotkey", "keybinding", "keyboard", "accel")
+                ):
+                    _walk_registry_shortcuts(
+                        hive,
+                        f"{key_path}\\{subkey_name}",
+                        out,
+                        hive_label,
+                        depth=depth + 1,
+                        max_depth=max_depth,
+                    )
+    except Exception:
+        pass
+
+
+_LNK_HOTKEY_MODIFIERS: dict[int, str] = {
+    1: "alt",
+    2: "ctrl",
+    4: "shift",
+}
+
+
+def _read_lnk_hotkey(lnk_path: str) -> str | None:
+    try:
+        import pythoncom
+        from win32com.shell import shell
+
+        shortcut = pythoncom.CoCreateInstance(
+            shell.CLSID_ShellLink,
+            None,
+            pythoncom.CLSCTX_INPROC_SERVER,
+            shell.IID_IShellLink,
+        )
+        persist = shortcut.QueryInterface(pythoncom.IID_IPersistFile)
+        persist.Load(lnk_path)
+        hotkey_low = shortcut.GetHotkey() & 0xFF
+        hotkey_high = (shortcut.GetHotkey() >> 8) & 0xFF
+        if hotkey_low == 0 and hotkey_high == 0:
+            return None
+        parts: list[str] = []
+        for bit, mod_name in _LNK_HOTKEY_MODIFIERS.items():
+            if hotkey_high & bit:
+                parts.append(mod_name)
+        if hotkey_low:
+            parts.append(chr(hotkey_low).lower())
+        return "+".join(parts) if parts else None
+    except Exception:
+        try:
+            with open(lnk_path, "rb") as f:
+                f.seek(0)
+                header = f.read(76)
+                if len(header) < 76:
+                    return None
+                hotkey_flags = header[0x48] | (header[0x49] << 8)
+                if hotkey_flags == 0:
+                    return None
+                parts: list[str] = []
+                low = hotkey_flags & 0xFF
+                high = (hotkey_flags >> 8) & 0xFF
+                for bit, mod_name in _LNK_HOTKEY_MODIFIERS.items():
+                    if high & bit:
+                        parts.append(mod_name)
+                if low:
+                    parts.append(chr(low).lower())
+                return "+".join(parts) if parts else None
+        except Exception:
+            return None
