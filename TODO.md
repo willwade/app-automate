@@ -74,9 +74,9 @@ Strategies for extracting keyboard shortcuts from live apps on each platform.
 
 ### Windows
 
-- [ ] **UIA accelerator key extraction.** `UIA_AcceleratorKeyPropertyId` on menu items gives the shortcut text (e.g. "Ctrl+S"). Write a `extract-shortcuts --source uia` extractor.
-- [ ] **Registry shortcut harvesting.** Some apps store keyboard bindings in the registry under `HKCU\Software\<Vendor>`. Pattern varies per app.
-- [ ] **`.lnk` file parsing.** Windows shortcuts (`*.lnk`) can have hotkeys assigned. Parse `IShellLink::GetHotkey` for globally-registered app shortcuts.
+- [x] **UIA accelerator key extraction.** `extract-shortcuts --source uia-menu` reads `AcceleratorKey` from all UIA controls (not just menus). Added `accelerator_key` field to `UIAElement`. Tested on Paint (ctrl+S, ctrl+Z, ctrl+Y).
+- [x] **Registry shortcut harvesting.** `extract-shortcuts --source registry` walks HKCU/HKLM Software keys matching app name, recursing into shortcut/hotkey subkeys.
+- [x] **`.lnk` file parsing.** `extract-shortcuts --source lnk` scans Start Menu .lnk files for IShellLink hotkey assignments with raw binary fallback parser.
 - [ ] **MS Office ribbon shortcuts.** Office apps have "Key Tips" (Alt sequences). Investigate if UIA exposes these or if they need manual documentation.
 - [ ] **PowerShell `Get-Command` + help.** For Windows-native CLI tools, harvest `-Key` parameter docs.
 
@@ -102,6 +102,7 @@ Standalone native libraries for each platform that handle profile loading + plat
 ### Roadmap
 
 - [ ] **NuGet package `AppAutomate.Consumer`** (highest priority — Smartbox .NET apps)
+  - [x] `uia` native .NET CLI — list, find, click, type, shortcuts, window-bounds, activate. Built with managed `System.Windows.Automation` via WPF. Single-file publish.
   - [ ] Add `WindowsNativeAdapter` with `SendInput` P/Invoke (example in `docs/native-adapters.md`)
   - [ ] Add NuGet metadata (icon, description, tags)
   - [ ] Set up CI publish to nuget.org on tag
@@ -114,6 +115,9 @@ Standalone native libraries for each platform that handle profile loading + plat
   - [x] Permission check — `axtool check-permissions` reports Accessibility permission status
   - [ ] Create `Package.swift` with profile model structs
   - [ ] Test Accessibility permission flow with signed binary
+- [ ] **CI/CD for native tools**
+  - [ ] GitHub Actions workflow to build axtool (macOS runner, Swift) and uia.exe (Windows runner, .NET) on tag push
+  - [ ] Attach built binaries to GitHub Release
 - [ ] **C header-only library** (Linux/embedded)
   - [ ] `adapter.h` with XTest key sending (example in `docs/native-adapters.md`)
   - [ ] Profile parsing via any JSON-C library (json-c, cJSON)
@@ -128,7 +132,7 @@ Standalone native libraries for each platform that handle profile loading + plat
 
 - [x] **Shortcut file library.** 25 apps with shortcut profiles: 5 hand-crafted in `examples/profiles/`, 20 auto-imported in `examples/profiles-imported/`.
 - [x] **Combined profiles.** Profiles already support mixing shortcut elements with accessibility elements in a single `semantic_elements` dict.
-- [ ] **Test `probe` on all three platforms.** Verify recommendation logic: UIA on Windows, AT-SPI on Linux, AX on macOS, CV fallback everywhere. AX probe now implemented — `probe` checks AX on macOS and recommends it when 10+ interactive elements found.
+- [ ] **Test `probe` on all three platforms.** Verify recommendation logic: UIA on Windows, AT-SPI on Linux, AX on macOS, CV fallback everywhere. AX probe now implemented — `probe` checks AX on macOS and recommends it when 10+ interactive elements found. UIA probe tested on Windows — 37 Calculator elements found in 0.35s.
 
 ### Live Element Search (Shortcat-style, all platforms)
 
