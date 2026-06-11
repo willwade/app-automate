@@ -1,0 +1,260 @@
+{
+  "profile_id": "chrome",
+  "app_name": "Google Chrome",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "Chrome/Chromium profile using keyboard shortcuts. Works cross-platform (Linux, Windows, macOS with ctrl/cmd substitution).",
+  "shortcuts": {
+    "new_tab": {
+      "keys": "ctrl+t",
+      "keys_macos": "cmd+t",
+      "description": "Open new tab"
+    },
+    "close_tab": {
+      "keys": "ctrl+w",
+      "keys_macos": "cmd+w",
+      "description": "Close current tab"
+    },
+    "new_window": {
+      "keys": "ctrl+n",
+      "keys_macos": "cmd+n",
+      "description": "Open new window"
+    },
+    "new_incognito": {
+      "keys": "ctrl+shift+n",
+      "keys_macos": "cmd+shift+n",
+      "description": "Open incognito window"
+    },
+    "reopen_tab": {
+      "keys": "ctrl+shift+t",
+      "keys_macos": "cmd+shift+t",
+      "description": "Reopen last closed tab"
+    },
+    "url_bar": {
+      "keys": "ctrl+l",
+      "keys_macos": "cmd+l",
+      "description": "Focus URL bar"
+    },
+    "find": {
+      "keys": "ctrl+f",
+      "keys_macos": "cmd+f",
+      "description": "Find in page"
+    },
+    "find_next": {
+      "keys": "ctrl+g",
+      "keys_macos": "cmd+g",
+      "description": "Find next match"
+    },
+    "reload": {
+      "keys": "f5",
+      "description": "Reload page"
+    },
+    "back": {
+      "keys": "alt+left",
+      "keys_macos": "ctrl+left",
+      "description": "Go back"
+    },
+    "forward": {
+      "keys": "alt+right",
+      "keys_macos": "ctrl+right",
+      "description": "Go forward"
+    },
+    "bookmark": {
+      "keys": "ctrl+d",
+      "keys_macos": "cmd+d",
+      "description": "Bookmark current page"
+    },
+    "history": {
+      "keys": "ctrl+h",
+      "keys_macos": "cmd+h",
+      "description": "Show history"
+    },
+    "downloads": {
+      "keys": "ctrl+j",
+      "keys_macos": "cmd+j",
+      "description": "Show downloads"
+    },
+    "zoom_in": {
+      "keys": "ctrl+plus",
+      "keys_macos": "cmd+plus",
+      "description": "Zoom in"
+    },
+    "zoom_out": {
+      "keys": "ctrl+minus",
+      "keys_macos": "cmd+minus",
+      "description": "Zoom out"
+    },
+    "devtools": {
+      "keys": "f12",
+      "description": "Toggle developer tools"
+    },
+    "print": {
+      "keys": "ctrl+p",
+      "keys_macos": "cmd+p",
+      "description": "Print page"
+    },
+    "quit": {
+      "keys": "ctrl+q",
+      "keys_macos": "cmd+q",
+      "description": "Quit Chrome"
+    },
+    "next_tab": {
+      "keys": "ctrl+tab",
+      "keys_macos": "cmd+tab",
+      "description": "Next tab"
+    },
+    "prev_tab": {
+      "keys": "ctrl+shift+tab",
+      "keys_macos": "cmd+shift+tab",
+      "description": "Previous tab"
+    },
+    "fullscreen": {
+      "keys": "f11",
+      "description": "Toggle fullscreen"
+    }
+  },
+  "semantic_elements": {
+    "new_tab": {
+      "label": "new_tab",
+      "aliases": [
+        "open tab",
+        "new tab"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+t",
+        "keys_macos": "cmd+t",
+        "description": "Open new tab"
+      }
+    },
+    "close_tab": {
+      "label": "close_tab",
+      "aliases": [
+        "close tab"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+w",
+        "keys_macos": "cmd+w",
+        "description": "Close current tab"
+      }
+    },
+    "url_bar": {
+      "label": "url_bar",
+      "aliases": [
+        "address bar",
+        "url",
+        "navigate",
+        "location bar"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+l",
+        "keys_macos": "cmd+l",
+        "description": "Focus URL bar"
+      }
+    },
+    "find": {
+      "label": "find",
+      "aliases": [
+        "search page",
+        "find in page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f",
+        "keys_macos": "cmd+f",
+        "description": "Find in page"
+      }
+    },
+    "back": {
+      "label": "back",
+      "aliases": [
+        "go back",
+        "previous page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+left",
+        "keys_macos": "ctrl+left",
+        "description": "Go back"
+      }
+    },
+    "forward": {
+      "label": "forward",
+      "aliases": [
+        "go forward",
+        "next page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "alt+right",
+        "keys_macos": "ctrl+right",
+        "description": "Go forward"
+      }
+    },
+    "reload": {
+      "label": "reload",
+      "aliases": [
+        "refresh"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f5",
+        "description": "Reload page"
+      }
+    },
+    "bookmark": {
+      "label": "bookmark",
+      "aliases": [
+        "add bookmark",
+        "star"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+d",
+        "keys_macos": "cmd+d",
+        "description": "Bookmark page"
+      }
+    },
+    "quit": {
+      "label": "quit",
+      "aliases": [
+        "exit",
+        "close chrome"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+q",
+        "keys_macos": "cmd+q",
+        "description": "Quit Chrome"
+      }
+    },
+    "reopen_tab": {
+      "label": "reopen_tab",
+      "aliases": [
+        "undo close",
+        "reopen tab"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+t",
+        "keys_macos": "cmd+shift+t",
+        "description": "Reopen last closed tab"
+      }
+    },
+    "devtools": {
+      "label": "devtools",
+      "aliases": [
+        "developer tools",
+        "inspect"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f12",
+        "description": "Toggle developer tools"
+      }
+    }
+  }
+}

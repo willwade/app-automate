@@ -1,0 +1,1249 @@
+{
+  "app_name" : "TextEdit",
+  "backend" : "ax",
+  "platform_hint" : "macos",
+  "profile_id" : "textedit",
+  "semantic_elements" : {
+    "actual_size_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "actual size",
+        "view actual size"
+      ],
+      "label" : "actual_size",
+      "shortcut" : {
+        "description" : "Actual Size",
+        "keys" : "cmd+0",
+        "platform" : "macos"
+      }
+    },
+    "align_left_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "align left",
+        "text align left"
+      ],
+      "label" : "align_left",
+      "shortcut" : {
+        "description" : "Align Left",
+        "keys" : "cmd+{",
+        "platform" : "macos"
+      }
+    },
+    "align_right_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "align right",
+        "text align right"
+      ],
+      "label" : "align_right",
+      "shortcut" : {
+        "description" : "Align Right",
+        "keys" : "cmd+}",
+        "platform" : "macos"
+      }
+    },
+    "attach_files_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "attach files…",
+        "edit attach files…"
+      ],
+      "label" : "attach_files",
+      "shortcut" : {
+        "description" : "Attach Files…",
+        "keys" : "cmd+a",
+        "platform" : "macos"
+      }
+    },
+    "bigger_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "bigger",
+        "font bigger"
+      ],
+      "label" : "bigger",
+      "shortcut" : {
+        "description" : "Bigger",
+        "keys" : "cmd++",
+        "platform" : "macos"
+      }
+    },
+    "bold_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "bold",
+        "font bold"
+      ],
+      "label" : "bold",
+      "shortcut" : {
+        "description" : "Bold",
+        "keys" : "cmd+b",
+        "platform" : "macos"
+      }
+    },
+    "center_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "center",
+        "text center"
+      ],
+      "label" : "center",
+      "shortcut" : {
+        "description" : "Center",
+        "keys" : "cmd+|",
+        "platform" : "macos"
+      }
+    },
+    "check_document_now_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "check document now",
+        "spelling and grammar check document now"
+      ],
+      "label" : "check_document_now",
+      "shortcut" : {
+        "description" : "Check Document Now",
+        "keys" : "cmd+;",
+        "platform" : "macos"
+      }
+    },
+    "close_all_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "close all",
+        "file close all"
+      ],
+      "label" : "close_all",
+      "shortcut" : {
+        "description" : "Close All",
+        "keys" : "cmd+w",
+        "platform" : "macos"
+      }
+    },
+    "close_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "close",
+        "file close"
+      ],
+      "label" : "close",
+      "shortcut" : {
+        "description" : "Close",
+        "keys" : "cmd+w",
+        "platform" : "macos"
+      }
+    },
+    "complete_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "complete",
+        "edit complete"
+      ],
+      "label" : "complete",
+      "shortcut" : {
+        "description" : "Complete",
+        "keys" : "cmd+\u001b",
+        "platform" : "macos"
+      }
+    },
+    "copy_ruler_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "copy ruler",
+        "text copy ruler"
+      ],
+      "label" : "copy_ruler",
+      "shortcut" : {
+        "description" : "Copy Ruler",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "copy_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "copy",
+        "edit copy"
+      ],
+      "label" : "copy",
+      "shortcut" : {
+        "description" : "Copy",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "copy_style_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "copy style",
+        "font copy style"
+      ],
+      "label" : "copy_style",
+      "shortcut" : {
+        "description" : "Copy Style",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "cut_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "cut",
+        "edit cut"
+      ],
+      "label" : "cut",
+      "shortcut" : {
+        "description" : "Cut",
+        "keys" : "cmd+x",
+        "platform" : "macos"
+      }
+    },
+    "duplicate_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "duplicate",
+        "file duplicate"
+      ],
+      "label" : "duplicate",
+      "shortcut" : {
+        "description" : "Duplicate",
+        "keys" : "cmd+s",
+        "platform" : "macos"
+      }
+    },
+    "emoji_&_symbols_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "emoji & symbols",
+        "edit emoji & symbols"
+      ],
+      "label" : "emoji_&_symbols",
+      "shortcut" : {
+        "description" : "Emoji & Symbols",
+        "keys" : "cmd+🌐",
+        "platform" : "macos"
+      }
+    },
+    "enter_full_screen_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "enter full screen",
+        "view enter full screen"
+      ],
+      "label" : "enter_full_screen",
+      "shortcut" : {
+        "description" : "Enter Full Screen",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "fill_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "fill",
+        "window fill"
+      ],
+      "label" : "fill",
+      "shortcut" : {
+        "description" : "Fill",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "find_and_replace_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find and replace…",
+        "find find and replace…"
+      ],
+      "label" : "find_and_replace",
+      "shortcut" : {
+        "description" : "Find and Replace…",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "find_next_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find next",
+        "find find next"
+      ],
+      "label" : "find_next",
+      "shortcut" : {
+        "description" : "Find Next",
+        "keys" : "cmd+g",
+        "platform" : "macos"
+      }
+    },
+    "find_previous_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find previous",
+        "find find previous"
+      ],
+      "label" : "find_previous",
+      "shortcut" : {
+        "description" : "Find Previous",
+        "keys" : "cmd+g",
+        "platform" : "macos"
+      }
+    },
+    "find_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find…",
+        "find find…"
+      ],
+      "label" : "find",
+      "shortcut" : {
+        "description" : "Find…",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "force_quit_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "force quit…"
+      ],
+      "label" : "force_quit",
+      "shortcut" : {
+        "description" : "Force Quit…",
+        "keys" : "cmd+⎋",
+        "platform" : "macos"
+      }
+    },
+    "force_quit_textedit_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "force quit textedit"
+      ],
+      "label" : "force_quit_textedit",
+      "shortcut" : {
+        "description" : "Force Quit TextEdit",
+        "keys" : "cmd+⎋",
+        "platform" : "macos"
+      }
+    },
+    "hide_others_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "hide others",
+        "textedit hide others"
+      ],
+      "label" : "hide_others",
+      "shortcut" : {
+        "description" : "Hide Others",
+        "keys" : "cmd+h",
+        "platform" : "macos"
+      }
+    },
+    "hide_textedit_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "hide textedit",
+        "textedit hide textedit"
+      ],
+      "label" : "hide_textedit",
+      "shortcut" : {
+        "description" : "Hide TextEdit",
+        "keys" : "cmd+h",
+        "platform" : "macos"
+      }
+    },
+    "italic_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "italic",
+        "font italic"
+      ],
+      "label" : "italic",
+      "shortcut" : {
+        "description" : "Italic",
+        "keys" : "cmd+i",
+        "platform" : "macos"
+      }
+    },
+    "jump_to_selection_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "jump to selection",
+        "find jump to selection"
+      ],
+      "label" : "jump_to_selection",
+      "shortcut" : {
+        "description" : "Jump to Selection",
+        "keys" : "cmd+j",
+        "platform" : "macos"
+      }
+    },
+    "link_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "link…",
+        "edit link…"
+      ],
+      "label" : "link",
+      "shortcut" : {
+        "description" : "Link…",
+        "keys" : "cmd+k",
+        "platform" : "macos"
+      }
+    },
+    "lock_screen_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "lock screen"
+      ],
+      "label" : "lock_screen",
+      "shortcut" : {
+        "description" : "Lock Screen",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "log_out_will_wade_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "log out will wade…"
+      ],
+      "label" : "log_out_will_wade",
+      "shortcut" : {
+        "description" : "Log Out Will Wade…",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "loosen_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "loosen",
+        "kern loosen"
+      ],
+      "label" : "loosen",
+      "shortcut" : {
+        "description" : "Loosen",
+        "keys" : "cmd+]",
+        "platform" : "macos"
+      }
+    },
+    "make_rich_text_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "make rich text",
+        "format make rich text"
+      ],
+      "label" : "make_rich_text",
+      "shortcut" : {
+        "description" : "Make Rich Text",
+        "keys" : "cmd+t",
+        "platform" : "macos"
+      }
+    },
+    "minimize_all_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "minimize all",
+        "window minimize all"
+      ],
+      "label" : "minimize_all",
+      "shortcut" : {
+        "description" : "Minimize All",
+        "keys" : "cmd+m",
+        "platform" : "macos"
+      }
+    },
+    "minimize_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "minimize",
+        "window minimize"
+      ],
+      "label" : "minimize",
+      "shortcut" : {
+        "description" : "Minimize",
+        "keys" : "cmd+m",
+        "platform" : "macos"
+      }
+    },
+    "new_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "new",
+        "file new"
+      ],
+      "label" : "new",
+      "shortcut" : {
+        "description" : "New",
+        "keys" : "cmd+n",
+        "platform" : "macos"
+      }
+    },
+    "open_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "open…",
+        "file open…"
+      ],
+      "label" : "open",
+      "shortcut" : {
+        "description" : "Open…",
+        "keys" : "cmd+o",
+        "platform" : "macos"
+      }
+    },
+    "page_setup_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "page setup…",
+        "file page setup…"
+      ],
+      "label" : "page_setup",
+      "shortcut" : {
+        "description" : "Page Setup…",
+        "keys" : "cmd+p",
+        "platform" : "macos"
+      }
+    },
+    "paste_and_match_style_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "paste and match style",
+        "edit paste and match style"
+      ],
+      "label" : "paste_and_match_style",
+      "shortcut" : {
+        "description" : "Paste and Match Style",
+        "keys" : "cmd+v",
+        "platform" : "macos"
+      }
+    },
+    "paste_ruler_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "paste ruler",
+        "text paste ruler"
+      ],
+      "label" : "paste_ruler",
+      "shortcut" : {
+        "description" : "Paste Ruler",
+        "keys" : "cmd+v",
+        "platform" : "macos"
+      }
+    },
+    "paste_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "paste",
+        "edit paste"
+      ],
+      "label" : "paste",
+      "shortcut" : {
+        "description" : "Paste",
+        "keys" : "cmd+v",
+        "platform" : "macos"
+      }
+    },
+    "paste_style_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "paste style",
+        "font paste style"
+      ],
+      "label" : "paste_style",
+      "shortcut" : {
+        "description" : "Paste Style",
+        "keys" : "cmd+v",
+        "platform" : "macos"
+      }
+    },
+    "print_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "print…",
+        "file print…"
+      ],
+      "label" : "print",
+      "shortcut" : {
+        "description" : "Print…",
+        "keys" : "cmd+p",
+        "platform" : "macos"
+      }
+    },
+    "quit_and_keep_windows_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "quit and keep windows",
+        "textedit quit and keep windows"
+      ],
+      "label" : "quit_and_keep_windows",
+      "shortcut" : {
+        "description" : "Quit and Keep Windows",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "quit_textedit_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "quit textedit",
+        "textedit quit textedit"
+      ],
+      "label" : "quit_textedit",
+      "shortcut" : {
+        "description" : "Quit TextEdit",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "redo_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "redo",
+        "edit redo"
+      ],
+      "label" : "redo",
+      "shortcut" : {
+        "description" : "Redo",
+        "keys" : "cmd+z",
+        "platform" : "macos"
+      }
+    },
+    "return_to_previous_size_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "return to previous size",
+        "move & resize return to previous size"
+      ],
+      "label" : "return_to_previous_size",
+      "shortcut" : {
+        "description" : "Return to Previous Size",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "save_as_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "save as…",
+        "file save as…"
+      ],
+      "label" : "save_as",
+      "shortcut" : {
+        "description" : "Save As…",
+        "keys" : "cmd+s",
+        "platform" : "macos"
+      }
+    },
+    "save_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "save…",
+        "file save…"
+      ],
+      "label" : "save",
+      "shortcut" : {
+        "description" : "Save…",
+        "keys" : "cmd+s",
+        "platform" : "macos"
+      }
+    },
+    "select_all_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "select all",
+        "edit select all"
+      ],
+      "label" : "select_all",
+      "shortcut" : {
+        "description" : "Select All",
+        "keys" : "cmd+a",
+        "platform" : "macos"
+      }
+    },
+    "select_line..._shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "select line...",
+        "find select line..."
+      ],
+      "label" : "select_line...",
+      "shortcut" : {
+        "description" : "Select Line...",
+        "keys" : "cmd+l",
+        "platform" : "macos"
+      }
+    },
+    "settings_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "settings…",
+        "textedit settings…"
+      ],
+      "label" : "settings",
+      "shortcut" : {
+        "description" : "Settings…",
+        "keys" : "cmd+,",
+        "platform" : "macos"
+      }
+    },
+    "show_colors_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show colors",
+        "font show colors"
+      ],
+      "label" : "show_colors",
+      "shortcut" : {
+        "description" : "Show Colors",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "show_fonts_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show fonts",
+        "font show fonts"
+      ],
+      "label" : "show_fonts",
+      "shortcut" : {
+        "description" : "Show Fonts",
+        "keys" : "cmd+t",
+        "platform" : "macos"
+      }
+    },
+    "show_next_tab_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show next tab",
+        "window show next tab"
+      ],
+      "label" : "show_next_tab",
+      "shortcut" : {
+        "description" : "Show Next Tab",
+        "keys" : "cmd+\t",
+        "platform" : "macos"
+      }
+    },
+    "show_previous_tab_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show previous tab",
+        "window show previous tab"
+      ],
+      "label" : "show_previous_tab",
+      "shortcut" : {
+        "description" : "Show Previous Tab",
+        "keys" : "cmd+\t",
+        "platform" : "macos"
+      }
+    },
+    "show_properties_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show properties",
+        "file show properties"
+      ],
+      "label" : "show_properties",
+      "shortcut" : {
+        "description" : "Show Properties",
+        "keys" : "cmd+p",
+        "platform" : "macos"
+      }
+    },
+    "show_ruler_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show ruler",
+        "text show ruler"
+      ],
+      "label" : "show_ruler",
+      "shortcut" : {
+        "description" : "Show Ruler",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "show_spelling_and_grammar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show spelling and grammar",
+        "spelling and grammar show spelling and grammar"
+      ],
+      "label" : "show_spelling_and_grammar",
+      "shortcut" : {
+        "description" : "Show Spelling and Grammar",
+        "keys" : "cmd+:",
+        "platform" : "macos"
+      }
+    },
+    "smaller_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "smaller",
+        "font smaller"
+      ],
+      "label" : "smaller",
+      "shortcut" : {
+        "description" : "Smaller",
+        "keys" : "cmd+-",
+        "platform" : "macos"
+      }
+    },
+    "start_dictation_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "start dictation…",
+        "edit start dictation…"
+      ],
+      "label" : "start_dictation",
+      "shortcut" : {
+        "description" : "Start Dictation…",
+        "keys" : "cmd+🎤",
+        "platform" : "macos"
+      }
+    },
+    "tighten_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "tighten",
+        "kern tighten"
+      ],
+      "label" : "tighten",
+      "shortcut" : {
+        "description" : "Tighten",
+        "keys" : "cmd+[",
+        "platform" : "macos"
+      }
+    },
+    "underline_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "underline",
+        "font underline"
+      ],
+      "label" : "underline",
+      "shortcut" : {
+        "description" : "Underline",
+        "keys" : "cmd+u",
+        "platform" : "macos"
+      }
+    },
+    "undo_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "undo",
+        "edit undo"
+      ],
+      "label" : "undo",
+      "shortcut" : {
+        "description" : "Undo",
+        "keys" : "cmd+z",
+        "platform" : "macos"
+      }
+    },
+    "use_selection_for_find_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "use selection for find",
+        "find use selection for find"
+      ],
+      "label" : "use_selection_for_find",
+      "shortcut" : {
+        "description" : "Use Selection for Find",
+        "keys" : "cmd+e",
+        "platform" : "macos"
+      }
+    },
+    "wrap_to_page_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "wrap to page",
+        "format wrap to page"
+      ],
+      "label" : "wrap_to_page",
+      "shortcut" : {
+        "description" : "Wrap to Page",
+        "keys" : "cmd+w",
+        "platform" : "macos"
+      }
+    },
+    "zoom_in_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "zoom in",
+        "view zoom in"
+      ],
+      "label" : "zoom_in",
+      "shortcut" : {
+        "description" : "Zoom In",
+        "keys" : "cmd+.",
+        "platform" : "macos"
+      }
+    },
+    "zoom_out_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "zoom out",
+        "view zoom out"
+      ],
+      "label" : "zoom_out",
+      "shortcut" : {
+        "description" : "Zoom Out",
+        "keys" : "cmd+,",
+        "platform" : "macos"
+      }
+    }
+  },
+  "shortcuts" : {
+    "actual_size" : {
+      "description" : "Actual Size",
+      "keys" : "cmd+0",
+      "platform" : "macos"
+    },
+    "align_left" : {
+      "description" : "Align Left",
+      "keys" : "cmd+{",
+      "platform" : "macos"
+    },
+    "align_right" : {
+      "description" : "Align Right",
+      "keys" : "cmd+}",
+      "platform" : "macos"
+    },
+    "attach_files" : {
+      "description" : "Attach Files…",
+      "keys" : "cmd+a",
+      "platform" : "macos"
+    },
+    "bigger" : {
+      "description" : "Bigger",
+      "keys" : "cmd++",
+      "platform" : "macos"
+    },
+    "bold" : {
+      "description" : "Bold",
+      "keys" : "cmd+b",
+      "platform" : "macos"
+    },
+    "center" : {
+      "description" : "Center",
+      "keys" : "cmd+|",
+      "platform" : "macos"
+    },
+    "check_document_now" : {
+      "description" : "Check Document Now",
+      "keys" : "cmd+;",
+      "platform" : "macos"
+    },
+    "close" : {
+      "description" : "Close",
+      "keys" : "cmd+w",
+      "platform" : "macos"
+    },
+    "close_all" : {
+      "description" : "Close All",
+      "keys" : "cmd+w",
+      "platform" : "macos"
+    },
+    "complete" : {
+      "description" : "Complete",
+      "keys" : "cmd+\u001b",
+      "platform" : "macos"
+    },
+    "copy" : {
+      "description" : "Copy",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "copy_ruler" : {
+      "description" : "Copy Ruler",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "copy_style" : {
+      "description" : "Copy Style",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "cut" : {
+      "description" : "Cut",
+      "keys" : "cmd+x",
+      "platform" : "macos"
+    },
+    "duplicate" : {
+      "description" : "Duplicate",
+      "keys" : "cmd+s",
+      "platform" : "macos"
+    },
+    "emoji_&_symbols" : {
+      "description" : "Emoji & Symbols",
+      "keys" : "cmd+🌐",
+      "platform" : "macos"
+    },
+    "enter_full_screen" : {
+      "description" : "Enter Full Screen",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "fill" : {
+      "description" : "Fill",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "find" : {
+      "description" : "Find…",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "find_and_replace" : {
+      "description" : "Find and Replace…",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "find_next" : {
+      "description" : "Find Next",
+      "keys" : "cmd+g",
+      "platform" : "macos"
+    },
+    "find_previous" : {
+      "description" : "Find Previous",
+      "keys" : "cmd+g",
+      "platform" : "macos"
+    },
+    "force_quit" : {
+      "description" : "Force Quit…",
+      "keys" : "cmd+⎋",
+      "platform" : "macos"
+    },
+    "force_quit_textedit" : {
+      "description" : "Force Quit TextEdit",
+      "keys" : "cmd+⎋",
+      "platform" : "macos"
+    },
+    "hide_others" : {
+      "description" : "Hide Others",
+      "keys" : "cmd+h",
+      "platform" : "macos"
+    },
+    "hide_textedit" : {
+      "description" : "Hide TextEdit",
+      "keys" : "cmd+h",
+      "platform" : "macos"
+    },
+    "italic" : {
+      "description" : "Italic",
+      "keys" : "cmd+i",
+      "platform" : "macos"
+    },
+    "jump_to_selection" : {
+      "description" : "Jump to Selection",
+      "keys" : "cmd+j",
+      "platform" : "macos"
+    },
+    "link" : {
+      "description" : "Link…",
+      "keys" : "cmd+k",
+      "platform" : "macos"
+    },
+    "lock_screen" : {
+      "description" : "Lock Screen",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "log_out_will_wade" : {
+      "description" : "Log Out Will Wade…",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "loosen" : {
+      "description" : "Loosen",
+      "keys" : "cmd+]",
+      "platform" : "macos"
+    },
+    "make_rich_text" : {
+      "description" : "Make Rich Text",
+      "keys" : "cmd+t",
+      "platform" : "macos"
+    },
+    "minimize" : {
+      "description" : "Minimize",
+      "keys" : "cmd+m",
+      "platform" : "macos"
+    },
+    "minimize_all" : {
+      "description" : "Minimize All",
+      "keys" : "cmd+m",
+      "platform" : "macos"
+    },
+    "new" : {
+      "description" : "New",
+      "keys" : "cmd+n",
+      "platform" : "macos"
+    },
+    "open" : {
+      "description" : "Open…",
+      "keys" : "cmd+o",
+      "platform" : "macos"
+    },
+    "page_setup" : {
+      "description" : "Page Setup…",
+      "keys" : "cmd+p",
+      "platform" : "macos"
+    },
+    "paste" : {
+      "description" : "Paste",
+      "keys" : "cmd+v",
+      "platform" : "macos"
+    },
+    "paste_and_match_style" : {
+      "description" : "Paste and Match Style",
+      "keys" : "cmd+v",
+      "platform" : "macos"
+    },
+    "paste_ruler" : {
+      "description" : "Paste Ruler",
+      "keys" : "cmd+v",
+      "platform" : "macos"
+    },
+    "paste_style" : {
+      "description" : "Paste Style",
+      "keys" : "cmd+v",
+      "platform" : "macos"
+    },
+    "print" : {
+      "description" : "Print…",
+      "keys" : "cmd+p",
+      "platform" : "macos"
+    },
+    "quit_and_keep_windows" : {
+      "description" : "Quit and Keep Windows",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "quit_textedit" : {
+      "description" : "Quit TextEdit",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "redo" : {
+      "description" : "Redo",
+      "keys" : "cmd+z",
+      "platform" : "macos"
+    },
+    "return_to_previous_size" : {
+      "description" : "Return to Previous Size",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "save" : {
+      "description" : "Save…",
+      "keys" : "cmd+s",
+      "platform" : "macos"
+    },
+    "save_as" : {
+      "description" : "Save As…",
+      "keys" : "cmd+s",
+      "platform" : "macos"
+    },
+    "select_all" : {
+      "description" : "Select All",
+      "keys" : "cmd+a",
+      "platform" : "macos"
+    },
+    "select_line..." : {
+      "description" : "Select Line...",
+      "keys" : "cmd+l",
+      "platform" : "macos"
+    },
+    "settings" : {
+      "description" : "Settings…",
+      "keys" : "cmd+,",
+      "platform" : "macos"
+    },
+    "show_colors" : {
+      "description" : "Show Colors",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "show_fonts" : {
+      "description" : "Show Fonts",
+      "keys" : "cmd+t",
+      "platform" : "macos"
+    },
+    "show_next_tab" : {
+      "description" : "Show Next Tab",
+      "keys" : "cmd+\t",
+      "platform" : "macos"
+    },
+    "show_previous_tab" : {
+      "description" : "Show Previous Tab",
+      "keys" : "cmd+\t",
+      "platform" : "macos"
+    },
+    "show_properties" : {
+      "description" : "Show Properties",
+      "keys" : "cmd+p",
+      "platform" : "macos"
+    },
+    "show_ruler" : {
+      "description" : "Show Ruler",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "show_spelling_and_grammar" : {
+      "description" : "Show Spelling and Grammar",
+      "keys" : "cmd+:",
+      "platform" : "macos"
+    },
+    "smaller" : {
+      "description" : "Smaller",
+      "keys" : "cmd+-",
+      "platform" : "macos"
+    },
+    "start_dictation" : {
+      "description" : "Start Dictation…",
+      "keys" : "cmd+🎤",
+      "platform" : "macos"
+    },
+    "tighten" : {
+      "description" : "Tighten",
+      "keys" : "cmd+[",
+      "platform" : "macos"
+    },
+    "underline" : {
+      "description" : "Underline",
+      "keys" : "cmd+u",
+      "platform" : "macos"
+    },
+    "undo" : {
+      "description" : "Undo",
+      "keys" : "cmd+z",
+      "platform" : "macos"
+    },
+    "use_selection_for_find" : {
+      "description" : "Use Selection for Find",
+      "keys" : "cmd+e",
+      "platform" : "macos"
+    },
+    "wrap_to_page" : {
+      "description" : "Wrap to Page",
+      "keys" : "cmd+w",
+      "platform" : "macos"
+    },
+    "zoom_in" : {
+      "description" : "Zoom In",
+      "keys" : "cmd+.",
+      "platform" : "macos"
+    },
+    "zoom_out" : {
+      "description" : "Zoom Out",
+      "keys" : "cmd+,",
+      "platform" : "macos"
+    }
+  },
+  "type" : "semantic"
+}

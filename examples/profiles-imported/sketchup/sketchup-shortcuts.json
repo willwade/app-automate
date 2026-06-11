@@ -1,0 +1,312 @@
+{
+  "context_help": {
+    "keys": "shift+f1",
+    "description": "Context Help"
+  },
+  "zoom_extents": {
+    "keys": "shift+z",
+    "description": "Zoom Extents"
+  },
+  "zoom_window": {
+    "keys": "ctrl+shift+w",
+    "description": "Zoom Window",
+    "keys_macos": "cmd+shift+w"
+  },
+  "pan": {
+    "keys": "h",
+    "description": "Pan"
+  },
+  "image_igloo": {
+    "keys": "i",
+    "description": "Image Igloo"
+  },
+  "orbit": {
+    "keys": "o",
+    "description": "Orbit"
+  },
+  "zoom": {
+    "keys": "z",
+    "description": "Zoom"
+  },
+  "2_point_arc": {
+    "keys": "a",
+    "description": "2 Point Arc"
+  },
+  "circle": {
+    "keys": "c",
+    "description": "Circle"
+  },
+  "rectangle": {
+    "keys": "r",
+    "description": "Rectangle"
+  },
+  "line": {
+    "keys": "l",
+    "description": "Line"
+  },
+  "select_none": {
+    "keys": "ctrl+t",
+    "description": "Select None",
+    "keys_macos": "cmd+t"
+  },
+  "copy": {
+    "keys": "ctrl+insert",
+    "description": "Copy",
+    "keys_macos": "cmd+insert"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "description": "Cut",
+    "keys_macos": "cmd+x"
+  },
+  "delete": {
+    "keys": "delete",
+    "description": "Delete"
+  },
+  "paste": {
+    "keys": "shift+insert",
+    "description": "Paste"
+  },
+  "redo": {
+    "keys": "ctrl+y",
+    "description": "Redo",
+    "keys_macos": "cmd+y"
+  },
+  "select_all": {
+    "keys": "ctrl+a",
+    "description": "Select All",
+    "keys_macos": "cmd+a"
+  },
+  "undo": {
+    "keys": "ctrl+z",
+    "description": "Undo",
+    "keys_macos": "cmd+z"
+  },
+  "make_component": {
+    "keys": "g",
+    "description": "Make Component"
+  },
+  "new": {
+    "keys": "ctrl+n",
+    "description": "New",
+    "keys_macos": "cmd+n"
+  },
+  "open": {
+    "keys": "ctrl+o",
+    "description": "Open",
+    "keys_macos": "cmd+o"
+  },
+  "print": {
+    "keys": "ctrl+p",
+    "description": "Print",
+    "keys_macos": "cmd+p"
+  },
+  "save": {
+    "keys": "ctrl+s",
+    "description": "Save",
+    "keys_macos": "cmd+s"
+  },
+  "eraser": {
+    "keys": "e",
+    "description": "Eraser"
+  },
+  "paint_bucket": {
+    "keys": "b",
+    "description": "Paint Bucket"
+  },
+  "push_pull": {
+    "keys": "p",
+    "description": "Push/Pull"
+  },
+  "select": {
+    "keys": "spacebar",
+    "description": "Select"
+  },
+  "move": {
+    "keys": "m",
+    "description": "Move"
+  },
+  "tape_measure": {
+    "keys": "t",
+    "description": "Tape Measure"
+  },
+  "offset": {
+    "keys": "f",
+    "description": "Offset"
+  },
+  "rotate": {
+    "keys": "q",
+    "description": "Rotate"
+  },
+  "scale": {
+    "keys": "s",
+    "description": "Scale"
+  },
+  "back_edges": {
+    "keys": "k",
+    "description": "Back Edges"
+  },
+  "lock_current_inferences": {
+    "keys": "shift",
+    "description": "Lock current inferences"
+  },
+  "face_perimeter_as_extrusion_path": {
+    "keys": "alt",
+    "description": "Face perimeter as extrusion path"
+  },
+  "on_green_axis": {
+    "keys": "left",
+    "description": "On Green Axis"
+  },
+  "on_red_axis": {
+    "keys": "right",
+    "description": "On Red Axis"
+  },
+  "on_blue_axis": {
+    "keys": "up",
+    "description": "On Blue Axis"
+  },
+  "parallel_perpendicular": {
+    "keys": "down",
+    "description": "Parallel/Perpendicular"
+  },
+  "copy_mode_move": {
+    "keys": "ctrl",
+    "description": "Copy",
+    "keys_macos": "cmd"
+  },
+  "auto_fold": {
+    "keys": "alt",
+    "description": "Auto-fold"
+  },
+  "lock_inference": {
+    "keys": "shift",
+    "description": "Lock Inference"
+  },
+  "on_blue_axis_mode_move": {
+    "keys": "up",
+    "description": "On Blue Axis"
+  },
+  "on_green_axis_mode_move": {
+    "keys": "left",
+    "description": "On Green Axis"
+  },
+  "on_red_axis_mode_move": {
+    "keys": "right",
+    "description": "On Red Axis"
+  },
+  "parallel_perpendicular_mode_move": {
+    "keys": "down",
+    "description": "Parallel/Perpendicular"
+  },
+  "external_copy_array": {
+    "keys": "x",
+    "description": "External Copy Array"
+  },
+  "internal_copy_array": {
+    "keys": "/",
+    "description": "Internal Copy Array"
+  },
+  "hold_suspend_gravity": {
+    "keys": "ctrl",
+    "description": "(HOLD) Suspend gravity",
+    "keys_macos": "cmd"
+  },
+  "hold_activate_pan": {
+    "keys": "shift",
+    "description": "(HOLD) Activate Pan"
+  },
+  "paint_all_matching_connected_faces": {
+    "keys": "ctrl",
+    "description": "Paint all matching connected faces",
+    "keys_macos": "cmd"
+  },
+  "paint_all_matching_faces_in_the_model": {
+    "keys": "shift",
+    "description": "Paint all matching faces in the model"
+  },
+  "sample_material": {
+    "keys": "alt",
+    "description": "Sample material"
+  },
+  "paint_all_matching_faces_on_the_same_object": {
+    "keys": "ctrl+shift",
+    "description": "Paint all matching faces on the same object",
+    "keys_macos": "cmd+shift"
+  },
+  "push_pull_a_copy_of_the_face_leaving_the_original_face_in_place": {
+    "keys": "ctrl",
+    "description": "Push/Pull a copy of the face (leaving the original face in place)",
+    "keys_macos": "cmd"
+  },
+  "lock_in_current_direction_plane": {
+    "keys": "shift",
+    "description": "Lock in current direction/plane"
+  },
+  "lock_drawing_plane_for_first_edge_after_first_click": {
+    "keys": "alt",
+    "description": "Lock drawing plane for first edge (after first click)"
+  },
+  "about_center": {
+    "keys": "ctrl",
+    "description": "About center",
+    "keys_macos": "cmd"
+  },
+  "uniformly_don_t_distort": {
+    "keys": "shift",
+    "description": "Uniformly (don\u2019t distort)"
+  },
+  "soften_smooth": {
+    "keys": "ctrl",
+    "description": "Soften/Smooth",
+    "keys_macos": "cmd"
+  },
+  "hide": {
+    "keys": "shift",
+    "description": "Hide"
+  },
+  "add_to_selection": {
+    "keys": "ctrl",
+    "description": "Add to selection",
+    "keys_macos": "cmd"
+  },
+  "add_subtract_from_selection": {
+    "keys": "shift",
+    "description": "Add/Subtract from selection"
+  },
+  "subtract_from_selection": {
+    "keys": "ctrl+shift",
+    "description": "Subtract from selection",
+    "keys_macos": "cmd+shift"
+  },
+  "copy_mode_rotate": {
+    "keys": "ctrl",
+    "description": "Copy",
+    "keys_macos": "cmd"
+  },
+  "create_guide_or_measure_only": {
+    "keys": "ctrl",
+    "description": "Create guide or measure only",
+    "keys_macos": "cmd"
+  },
+  "on_blue_axis_mode_tape_measure": {
+    "keys": "up",
+    "description": "On Blue Axis"
+  },
+  "on_green_axis_mode_tape_measure": {
+    "keys": "left",
+    "description": "On Green Axis"
+  },
+  "on_red_axis_mode_tape_measure": {
+    "keys": "right",
+    "description": "On Red Axis"
+  },
+  "parallel_perpendicular_mode_tape_measure": {
+    "keys": "down",
+    "description": "Parallel/Perpendicular"
+  },
+  "hold_and_click_drag_mouse_to_change_field_of_view": {
+    "keys": "shift",
+    "description": "(HOLD) and click-drag mouse to change Field of View"
+  }
+}

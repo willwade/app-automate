@@ -1,0 +1,984 @@
+{
+  "profile_id": "euro_truck_simulator_2",
+  "app_name": "Euro Truck Simulator 2",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "Auto-generated from ShortcutMapper. 64 shortcuts.",
+  "shortcuts": {
+    "throttle": {
+      "keys": "up",
+      "description": "Throttle"
+    },
+    "throttle_truck_controls": {
+      "keys": "w",
+      "description": "Throttle "
+    },
+    "brake_reverse": {
+      "keys": "down",
+      "description": "Brake / Reverse"
+    },
+    "brake_reverse_truck_controls": {
+      "keys": "s",
+      "description": "Brake / Reverse "
+    },
+    "steering_left": {
+      "keys": "left",
+      "description": "Steering Left"
+    },
+    "steering_left_truck_controls": {
+      "keys": "a",
+      "description": "Steering Left "
+    },
+    "steering_right": {
+      "keys": "right",
+      "description": "Steering Right"
+    },
+    "steering_right_truck_controls": {
+      "keys": "d",
+      "description": "Steering Right "
+    },
+    "shift_up": {
+      "keys": "shift",
+      "description": "Shift Up"
+    },
+    "shift_down": {
+      "keys": "ctrl",
+      "description": "Shift Down"
+    },
+    "start_stop_engine": {
+      "keys": "e",
+      "description": "Start/Stop Engine"
+    },
+    "parking_brake": {
+      "keys": "space",
+      "description": "Parking Brake"
+    },
+    "exhaust_brake": {
+      "keys": "b",
+      "description": "Exhaust Brake"
+    },
+    "retarder_increase": {
+      "keys": ";",
+      "description": "Retarder Increase"
+    },
+    "retarder_decrease": {
+      "keys": "'",
+      "description": "Retarder Decrease"
+    },
+    "lift_drop_axle": {
+      "keys": "u",
+      "description": "Lift/Drop Axle"
+    },
+    "hazard_warning": {
+      "keys": "f",
+      "description": "Hazard Warning"
+    },
+    "light_modes": {
+      "keys": "l",
+      "description": "Light Modes"
+    },
+    "high_beam_headlights": {
+      "keys": "k",
+      "description": "High Beam Headlights"
+    },
+    "beacon": {
+      "keys": "o",
+      "description": "Beacon"
+    },
+    "horn": {
+      "keys": "h",
+      "description": "Horn"
+    },
+    "air_horn": {
+      "keys": "n",
+      "description": "Air Horn"
+    },
+    "light_horn": {
+      "keys": "j",
+      "description": "Light Horn"
+    },
+    "wipers": {
+      "keys": "p",
+      "description": "Wipers"
+    },
+    "cruise_control": {
+      "keys": "c",
+      "description": "Cruise Control"
+    },
+    "dashboard_display_mode": {
+      "keys": "i",
+      "description": "Dashboard Display Mode"
+    },
+    "show_hide_side_mirrors_on_screen": {
+      "keys": "f2",
+      "description": "Show/Hide Side Mirrors On-Screen"
+    },
+    "route_advisor_modes": {
+      "keys": "f3",
+      "description": "Route Advisor Modes"
+    },
+    "truck_adjustment": {
+      "keys": "f4",
+      "description": "Truck Adjustment"
+    },
+    "route_advisor_mouse_control": {
+      "keys": "f1",
+      "description": "Route Advisor Mouse Control"
+    },
+    "route_advisor_mouse_control_hud_controls": {
+      "keys": "break",
+      "description": "Route Advisor Mouse Control "
+    },
+    "route_advisor_navigation_page": {
+      "keys": "f5",
+      "description": "Route Advisor Navigation Page"
+    },
+    "route_advisor_job_info_page": {
+      "keys": "f6",
+      "description": "Route Advisor Job Info Page"
+    },
+    "route_advisor_diagnostics_page": {
+      "keys": "f7",
+      "description": "Route Advisor Diagnostics Page"
+    },
+    "route_advisor_info_page": {
+      "keys": "f8",
+      "description": "Route Advisor Info Page"
+    },
+    "route_advisor_next_page": {
+      "keys": "num0",
+      "description": "Route Advisor Next Page"
+    },
+    "next_camera": {
+      "keys": "9",
+      "description": "Next Camera"
+    },
+    "interior_camera": {
+      "keys": "1",
+      "description": "Interior Camera"
+    },
+    "chasing_camera": {
+      "keys": "2",
+      "description": "Chasing Camera"
+    },
+    "top_down_camera": {
+      "keys": "3",
+      "description": "Top-Down Camera"
+    },
+    "roof_camera": {
+      "keys": "4",
+      "description": "Roof Camera"
+    },
+    "lean_out_camera": {
+      "keys": "5",
+      "description": "Lean Out Camera"
+    },
+    "bumper_camera": {
+      "keys": "6",
+      "description": "Bumper Camera"
+    },
+    "on_wheel_camera": {
+      "keys": "7",
+      "description": "On-Wheel Camera"
+    },
+    "drive_by_camera": {
+      "keys": "8",
+      "description": "Drive-By Camera"
+    },
+    "rotate_camera_in_mouse_control": {
+      "keys": "rmb",
+      "description": "Rotate Camera (in mouse control)"
+    },
+    "look_left": {
+      "keys": "num/",
+      "description": "Look Left"
+    },
+    "look_right": {
+      "keys": "num*",
+      "description": "Look Right"
+    },
+    "interior_look_forward": {
+      "keys": "num5",
+      "description": "Interior Look Forward"
+    },
+    "interior_look_up_right": {
+      "keys": "num9",
+      "description": "Interior Look Up Right"
+    },
+    "interior_look_up_left": {
+      "keys": "num7",
+      "description": "Interior Look Up Left"
+    },
+    "interior_look_right": {
+      "keys": "num6",
+      "description": "Interior Look Right"
+    },
+    "interior_look_left": {
+      "keys": "num4",
+      "description": "Interior Look Left"
+    },
+    "interior_look_up_middle": {
+      "keys": "num8",
+      "description": "Interior Look Up Middle"
+    },
+    "activate": {
+      "keys": "enter",
+      "description": "Activate"
+    },
+    "trailer_attach_detach": {
+      "keys": "t",
+      "description": "Trailer Attach/Detach"
+    },
+    "menu": {
+      "keys": "esc",
+      "description": "Menu"
+    },
+    "quick_save": {
+      "keys": "scroll_lock",
+      "description": "Quick Save"
+    },
+    "audio_player": {
+      "keys": "r",
+      "description": "Audio Player"
+    },
+    "audio_player_next_favourite": {
+      "keys": "pagedown",
+      "description": "Audio Player Next Favourite"
+    },
+    "audio_player_previous_favourite": {
+      "keys": "pageup",
+      "description": "Audio Player Previous Favourite"
+    },
+    "world_map": {
+      "keys": "m",
+      "description": "World Map"
+    },
+    "garage_manager": {
+      "keys": "g",
+      "description": "Garage Manager"
+    },
+    "screenshot": {
+      "keys": "f10",
+      "description": "Screenshot"
+    }
+  },
+  "semantic_elements": {
+    "throttle": {
+      "label": "Throttle",
+      "aliases": [
+        "throttle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "up",
+        "description": "Throttle"
+      }
+    },
+    "throttle_truck_controls": {
+      "label": "Throttle ",
+      "aliases": [
+        "throttle "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "w",
+        "description": "Throttle "
+      }
+    },
+    "brake_reverse": {
+      "label": "Brake / Reverse",
+      "aliases": [
+        "brake / reverse",
+        "brake",
+        "reverse"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "down",
+        "description": "Brake / Reverse"
+      }
+    },
+    "brake_reverse_truck_controls": {
+      "label": "Brake / Reverse ",
+      "aliases": [
+        "brake / reverse ",
+        "brake",
+        "reverse"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "s",
+        "description": "Brake / Reverse "
+      }
+    },
+    "steering_left": {
+      "label": "Steering Left",
+      "aliases": [
+        "steering left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "left",
+        "description": "Steering Left"
+      }
+    },
+    "steering_left_truck_controls": {
+      "label": "Steering Left ",
+      "aliases": [
+        "steering left "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "a",
+        "description": "Steering Left "
+      }
+    },
+    "steering_right": {
+      "label": "Steering Right",
+      "aliases": [
+        "steering right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "right",
+        "description": "Steering Right"
+      }
+    },
+    "steering_right_truck_controls": {
+      "label": "Steering Right ",
+      "aliases": [
+        "steering right "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "d",
+        "description": "Steering Right "
+      }
+    },
+    "shift_up": {
+      "label": "Shift Up",
+      "aliases": [
+        "shift up"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "shift",
+        "description": "Shift Up"
+      }
+    },
+    "shift_down": {
+      "label": "Shift Down",
+      "aliases": [
+        "shift down"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl",
+        "description": "Shift Down"
+      }
+    },
+    "start_stop_engine": {
+      "label": "Start/Stop Engine",
+      "aliases": [
+        "start/stop engine",
+        "start",
+        "stop engine"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "e",
+        "description": "Start/Stop Engine"
+      }
+    },
+    "parking_brake": {
+      "label": "Parking Brake",
+      "aliases": [
+        "parking brake"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "space",
+        "description": "Parking Brake"
+      }
+    },
+    "exhaust_brake": {
+      "label": "Exhaust Brake",
+      "aliases": [
+        "exhaust brake"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "b",
+        "description": "Exhaust Brake"
+      }
+    },
+    "retarder_increase": {
+      "label": "Retarder Increase",
+      "aliases": [
+        "retarder increase"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": ";",
+        "description": "Retarder Increase"
+      }
+    },
+    "retarder_decrease": {
+      "label": "Retarder Decrease",
+      "aliases": [
+        "retarder decrease"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "'",
+        "description": "Retarder Decrease"
+      }
+    },
+    "lift_drop_axle": {
+      "label": "Lift/Drop Axle",
+      "aliases": [
+        "lift/drop axle",
+        "lift",
+        "drop axle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "u",
+        "description": "Lift/Drop Axle"
+      }
+    },
+    "hazard_warning": {
+      "label": "Hazard Warning",
+      "aliases": [
+        "hazard warning"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f",
+        "description": "Hazard Warning"
+      }
+    },
+    "light_modes": {
+      "label": "Light Modes",
+      "aliases": [
+        "light modes"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "l",
+        "description": "Light Modes"
+      }
+    },
+    "high_beam_headlights": {
+      "label": "High Beam Headlights",
+      "aliases": [
+        "high beam headlights"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "k",
+        "description": "High Beam Headlights"
+      }
+    },
+    "beacon": {
+      "label": "Beacon",
+      "aliases": [
+        "beacon"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "o",
+        "description": "Beacon"
+      }
+    },
+    "horn": {
+      "label": "Horn",
+      "aliases": [
+        "horn"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "h",
+        "description": "Horn"
+      }
+    },
+    "air_horn": {
+      "label": "Air Horn",
+      "aliases": [
+        "air horn"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "n",
+        "description": "Air Horn"
+      }
+    },
+    "light_horn": {
+      "label": "Light Horn",
+      "aliases": [
+        "light horn"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "j",
+        "description": "Light Horn"
+      }
+    },
+    "wipers": {
+      "label": "Wipers",
+      "aliases": [
+        "wipers"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "p",
+        "description": "Wipers"
+      }
+    },
+    "cruise_control": {
+      "label": "Cruise Control",
+      "aliases": [
+        "cruise control"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "c",
+        "description": "Cruise Control"
+      }
+    },
+    "dashboard_display_mode": {
+      "label": "Dashboard Display Mode",
+      "aliases": [
+        "dashboard display mode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "i",
+        "description": "Dashboard Display Mode"
+      }
+    },
+    "show_hide_side_mirrors_on_screen": {
+      "label": "Show/Hide Side Mirrors On-Screen",
+      "aliases": [
+        "show/hide side mirrors on-screen",
+        "show",
+        "hide side mirrors on-screen"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f2",
+        "description": "Show/Hide Side Mirrors On-Screen"
+      }
+    },
+    "route_advisor_modes": {
+      "label": "Route Advisor Modes",
+      "aliases": [
+        "route advisor modes"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f3",
+        "description": "Route Advisor Modes"
+      }
+    },
+    "truck_adjustment": {
+      "label": "Truck Adjustment",
+      "aliases": [
+        "truck adjustment"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f4",
+        "description": "Truck Adjustment"
+      }
+    },
+    "route_advisor_mouse_control": {
+      "label": "Route Advisor Mouse Control",
+      "aliases": [
+        "route advisor mouse control"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f1",
+        "description": "Route Advisor Mouse Control"
+      }
+    },
+    "route_advisor_mouse_control_hud_controls": {
+      "label": "Route Advisor Mouse Control ",
+      "aliases": [
+        "route advisor mouse control "
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "break",
+        "description": "Route Advisor Mouse Control "
+      }
+    },
+    "route_advisor_navigation_page": {
+      "label": "Route Advisor Navigation Page",
+      "aliases": [
+        "route advisor navigation page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f5",
+        "description": "Route Advisor Navigation Page"
+      }
+    },
+    "route_advisor_job_info_page": {
+      "label": "Route Advisor Job Info Page",
+      "aliases": [
+        "route advisor job info page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f6",
+        "description": "Route Advisor Job Info Page"
+      }
+    },
+    "route_advisor_diagnostics_page": {
+      "label": "Route Advisor Diagnostics Page",
+      "aliases": [
+        "route advisor diagnostics page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f7",
+        "description": "Route Advisor Diagnostics Page"
+      }
+    },
+    "route_advisor_info_page": {
+      "label": "Route Advisor Info Page",
+      "aliases": [
+        "route advisor info page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f8",
+        "description": "Route Advisor Info Page"
+      }
+    },
+    "route_advisor_next_page": {
+      "label": "Route Advisor Next Page",
+      "aliases": [
+        "route advisor next page"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num0",
+        "description": "Route Advisor Next Page"
+      }
+    },
+    "next_camera": {
+      "label": "Next Camera",
+      "aliases": [
+        "next camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "9",
+        "description": "Next Camera"
+      }
+    },
+    "interior_camera": {
+      "label": "Interior Camera",
+      "aliases": [
+        "interior camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "1",
+        "description": "Interior Camera"
+      }
+    },
+    "chasing_camera": {
+      "label": "Chasing Camera",
+      "aliases": [
+        "chasing camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "2",
+        "description": "Chasing Camera"
+      }
+    },
+    "top_down_camera": {
+      "label": "Top-Down Camera",
+      "aliases": [
+        "top-down camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "3",
+        "description": "Top-Down Camera"
+      }
+    },
+    "roof_camera": {
+      "label": "Roof Camera",
+      "aliases": [
+        "roof camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "4",
+        "description": "Roof Camera"
+      }
+    },
+    "lean_out_camera": {
+      "label": "Lean Out Camera",
+      "aliases": [
+        "lean out camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "5",
+        "description": "Lean Out Camera"
+      }
+    },
+    "bumper_camera": {
+      "label": "Bumper Camera",
+      "aliases": [
+        "bumper camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "6",
+        "description": "Bumper Camera"
+      }
+    },
+    "on_wheel_camera": {
+      "label": "On-Wheel Camera",
+      "aliases": [
+        "on-wheel camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "7",
+        "description": "On-Wheel Camera"
+      }
+    },
+    "drive_by_camera": {
+      "label": "Drive-By Camera",
+      "aliases": [
+        "drive-by camera"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "8",
+        "description": "Drive-By Camera"
+      }
+    },
+    "rotate_camera_in_mouse_control": {
+      "label": "Rotate Camera (in mouse control)",
+      "aliases": [
+        "rotate camera (in mouse control)"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "rmb",
+        "description": "Rotate Camera (in mouse control)"
+      }
+    },
+    "look_left": {
+      "label": "Look Left",
+      "aliases": [
+        "look left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num/",
+        "description": "Look Left"
+      }
+    },
+    "look_right": {
+      "label": "Look Right",
+      "aliases": [
+        "look right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num*",
+        "description": "Look Right"
+      }
+    },
+    "interior_look_forward": {
+      "label": "Interior Look Forward",
+      "aliases": [
+        "interior look forward"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num5",
+        "description": "Interior Look Forward"
+      }
+    },
+    "interior_look_up_right": {
+      "label": "Interior Look Up Right",
+      "aliases": [
+        "interior look up right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num9",
+        "description": "Interior Look Up Right"
+      }
+    },
+    "interior_look_up_left": {
+      "label": "Interior Look Up Left",
+      "aliases": [
+        "interior look up left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num7",
+        "description": "Interior Look Up Left"
+      }
+    },
+    "interior_look_right": {
+      "label": "Interior Look Right",
+      "aliases": [
+        "interior look right"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num6",
+        "description": "Interior Look Right"
+      }
+    },
+    "interior_look_left": {
+      "label": "Interior Look Left",
+      "aliases": [
+        "interior look left"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num4",
+        "description": "Interior Look Left"
+      }
+    },
+    "interior_look_up_middle": {
+      "label": "Interior Look Up Middle",
+      "aliases": [
+        "interior look up middle"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "num8",
+        "description": "Interior Look Up Middle"
+      }
+    },
+    "activate": {
+      "label": "Activate",
+      "aliases": [
+        "activate"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "enter",
+        "description": "Activate"
+      }
+    },
+    "trailer_attach_detach": {
+      "label": "Trailer Attach/Detach",
+      "aliases": [
+        "trailer attach/detach",
+        "trailer attach",
+        "detach"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "t",
+        "description": "Trailer Attach/Detach"
+      }
+    },
+    "menu": {
+      "label": "Menu",
+      "aliases": [
+        "menu"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "esc",
+        "description": "Menu"
+      }
+    },
+    "quick_save": {
+      "label": "Quick Save",
+      "aliases": [
+        "quick save"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "scroll_lock",
+        "description": "Quick Save"
+      }
+    },
+    "audio_player": {
+      "label": "Audio Player",
+      "aliases": [
+        "audio player"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "r",
+        "description": "Audio Player"
+      }
+    },
+    "audio_player_next_favourite": {
+      "label": "Audio Player Next Favourite",
+      "aliases": [
+        "audio player next favourite"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "pagedown",
+        "description": "Audio Player Next Favourite"
+      }
+    },
+    "audio_player_previous_favourite": {
+      "label": "Audio Player Previous Favourite",
+      "aliases": [
+        "audio player previous favourite"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "pageup",
+        "description": "Audio Player Previous Favourite"
+      }
+    },
+    "world_map": {
+      "label": "World Map",
+      "aliases": [
+        "world map"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "m",
+        "description": "World Map"
+      }
+    },
+    "garage_manager": {
+      "label": "Garage Manager",
+      "aliases": [
+        "garage manager"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "g",
+        "description": "Garage Manager"
+      }
+    },
+    "screenshot": {
+      "label": "Screenshot",
+      "aliases": [
+        "screenshot"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "f10",
+        "description": "Screenshot"
+      }
+    }
+  }
+}

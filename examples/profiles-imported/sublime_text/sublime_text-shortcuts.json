@@ -1,0 +1,105 @@
+{
+  "update_image_size": {
+    "keys": "ctrl+u",
+    "description": "Update Image Size",
+    "keys_macos": "shift+ctrl+i"
+  },
+  "increment_by_1": {
+    "keys": "ctrl+up",
+    "description": "Increment by 1"
+  },
+  "encode_decode_image_to_data_url": {
+    "keys": "ctrl+'",
+    "description": "Encode/Decode Image to data:URL",
+    "keys_macos": "shift+ctrl+d"
+  },
+  "increment_by_0_1": {
+    "keys": "alt+up",
+    "description": "Increment by 0.1"
+  },
+  "go_to_edit_point": {
+    "keys": "ctrl+alt+right",
+    "description": "Go to Edit Point"
+  },
+  "split_join_tag": {
+    "keys": "shift+ctrl+`",
+    "description": "Split/Join Tag",
+    "keys_macos": "shift+cmd+'"
+  },
+  "toggle_comment": {
+    "keys": "shift+ctrl+/",
+    "description": "Toggle Comment",
+    "keys_macos": "shift+alt+/"
+  },
+  "decrement_by_0_1": {
+    "keys": "alt+down",
+    "description": "Decrement by 0.1"
+  },
+  "interactive_expand_abbreviation": {
+    "keys": "ctrl+alt+enter",
+    "description": "Interactive \u201cExpand Abbreviation\u201d"
+  },
+  "reflect_css_value": {
+    "keys": "shift+ctrl+r",
+    "description": "Reflect CSS Value",
+    "keys_macos": "shift+cmd+r"
+  },
+  "wrap_with_abbreviation": {
+    "keys": "shift+ctrl+g",
+    "description": "Wrap With Abbreviation",
+    "keys_macos": "ctrl+w"
+  },
+  "go_to_matching_pair": {
+    "keys": "ctrl+alt+j",
+    "description": "Go to Matching Pair",
+    "keys_macos": "shift+ctrl+t"
+  },
+  "remove_tag": {
+    "keys": "shift+ctrl+;",
+    "description": "Remove Tag",
+    "keys_macos": "cmd+'"
+  },
+  "decrement_by_10": {
+    "keys": "shift+alt+down",
+    "description": "Decrement by 10",
+    "keys_macos": "alt+cmd+down"
+  },
+  "expand_abbreviation": {
+    "keys": "tab",
+    "description": "Expand Abbreviation"
+  },
+  "evaluate_math_expression": {
+    "keys": "shift+ctrl+y",
+    "description": "Evaluate Math Expression",
+    "keys_macos": "shift+cmd+y"
+  },
+  "match_tag_pair_inward": {
+    "keys": "shift+ctrl+0",
+    "description": "Match Tag Pair Inward",
+    "keys_macos": "ctrl+j"
+  },
+  "increment_by_10": {
+    "keys": "shift+alt+up",
+    "description": "Increment by 10",
+    "keys_macos": "alt+cmd+up"
+  },
+  "decrement_by_1": {
+    "keys": "ctrl+down",
+    "description": "Decrement by 1"
+  },
+  "select_item": {
+    "keys": "shift+ctrl+.",
+    "description": "Select Item",
+    "keys_macos": "shift+cmd+."
+  },
+  "rename_tag": {
+    "keys": "shift+ctrl+'",
+    "description": "Rename Tag",
+    "keys_macos": "shift+cmd+k"
+  },
+  "match_tag_pair_outward": {
+    "keys": "ctrl+,",
+    "description": "Match Tag Pair Outward",
+    "keys_macos": "ctrl+d"
+  }
+}

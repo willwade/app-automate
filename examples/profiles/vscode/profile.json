@@ -1,0 +1,238 @@
+{
+  "profile_id": "vscode",
+  "app_name": "Code",
+  "type": "semantic",
+  "backend": "shortcut",
+  "platform_hint": null,
+  "notes": "VS Code profile using keyboard shortcuts. Works cross-platform. On macOS, ctrl maps to cmd.",
+  "shortcuts": {
+    "new_file": {
+      "keys": "ctrl+n",
+      "keys_macos": "cmd+n",
+      "description": "New file"
+    },
+    "open_file": {
+      "keys": "ctrl+o",
+      "keys_macos": "cmd+o",
+      "description": "Open file"
+    },
+    "save": {
+      "keys": "ctrl+s",
+      "keys_macos": "cmd+s",
+      "description": "Save file"
+    },
+    "close_editor": {
+      "keys": "ctrl+w",
+      "keys_macos": "cmd+w",
+      "description": "Close editor"
+    },
+    "find": {
+      "keys": "ctrl+f",
+      "keys_macos": "cmd+f",
+      "description": "Find in file"
+    },
+    "find_replace": {
+      "keys": "ctrl+h",
+      "keys_macos": "cmd+h",
+      "description": "Find and replace"
+    },
+    "find_in_files": {
+      "keys": "ctrl+shift+f",
+      "keys_macos": "cmd+shift+f",
+      "description": "Find in all files"
+    },
+    "goto_line": {
+      "keys": "ctrl+g",
+      "keys_macos": "cmd+g",
+      "description": "Go to line"
+    },
+    "goto_file": {
+      "keys": "ctrl+p",
+      "keys_macos": "cmd+p",
+      "description": "Quick open file"
+    },
+    "toggle_sidebar": {
+      "keys": "ctrl+b",
+      "keys_macos": "cmd+b",
+      "description": "Toggle sidebar"
+    },
+    "toggle_terminal": {
+      "keys": "ctrl+`",
+      "keys_macos": "cmd+`",
+      "description": "Toggle terminal"
+    },
+    "toggle_comments": {
+      "keys": "ctrl+/",
+      "keys_macos": "cmd+/",
+      "description": "Toggle line comment"
+    },
+    "command_palette": {
+      "keys": "ctrl+shift+p",
+      "keys_macos": "cmd+shift+p",
+      "description": "Command palette"
+    },
+    "undo": {
+      "keys": "ctrl+z",
+      "keys_macos": "cmd+z",
+      "description": "Undo"
+    },
+    "redo": {
+      "keys": "ctrl+shift+z",
+      "keys_macos": "cmd+shift+z",
+      "description": "Redo"
+    },
+    "quit": {
+      "keys": "ctrl+q",
+      "keys_macos": "cmd+q",
+      "description": "Quit VS Code"
+    }
+  },
+  "semantic_elements": {
+    "new_file": {
+      "label": "new_file",
+      "aliases": [
+        "new file",
+        "create file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+n",
+        "keys_macos": "cmd+n",
+        "description": "New file"
+      }
+    },
+    "open_file": {
+      "label": "open_file",
+      "aliases": [
+        "open",
+        "open file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+o",
+        "keys_macos": "cmd+o",
+        "description": "Open file"
+      }
+    },
+    "save": {
+      "label": "save",
+      "aliases": [
+        "save file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+s",
+        "keys_macos": "cmd+s",
+        "description": "Save file"
+      }
+    },
+    "find": {
+      "label": "find",
+      "aliases": [
+        "search",
+        "find in file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+f",
+        "keys_macos": "cmd+f",
+        "description": "Find in file"
+      }
+    },
+    "find_in_files": {
+      "label": "find_in_files",
+      "aliases": [
+        "search everywhere",
+        "global search",
+        "find across files"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+f",
+        "keys_macos": "cmd+shift+f",
+        "description": "Find in all files"
+      }
+    },
+    "goto_line": {
+      "label": "goto_line",
+      "aliases": [
+        "go to line",
+        "jump to line"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+g",
+        "keys_macos": "cmd+g",
+        "description": "Go to line"
+      }
+    },
+    "goto_file": {
+      "label": "goto_file",
+      "aliases": [
+        "quick open",
+        "open file by name",
+        "go to file"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+p",
+        "keys_macos": "cmd+p",
+        "description": "Quick open file"
+      }
+    },
+    "command_palette": {
+      "label": "command_palette",
+      "aliases": [
+        "commands",
+        "command palette",
+        "palette"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+shift+p",
+        "keys_macos": "cmd+shift+p",
+        "description": "Command palette"
+      }
+    },
+    "toggle_terminal": {
+      "label": "toggle_terminal",
+      "aliases": [
+        "terminal",
+        "open terminal",
+        "console"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+`",
+        "keys_macos": "cmd+`",
+        "description": "Toggle terminal"
+      }
+    },
+    "toggle_sidebar": {
+      "label": "toggle_sidebar",
+      "aliases": [
+        "sidebar",
+        "explorer"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+b",
+        "keys_macos": "cmd+b",
+        "description": "Toggle sidebar"
+      }
+    },
+    "quit": {
+      "label": "quit",
+      "aliases": [
+        "exit",
+        "close vscode"
+      ],
+      "action": "shortcut",
+      "shortcut": {
+        "keys": "ctrl+q",
+        "keys_macos": "cmd+q",
+        "description": "Quit VS Code"
+      }
+    }
+  }
+}

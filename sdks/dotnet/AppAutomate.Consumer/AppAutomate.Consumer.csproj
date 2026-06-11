@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AppAutomate.Consumer</RootNamespace>
+    <PackageId>AppAutomate.Consumer</PackageId>
+    <Description>Load and execute app-automate profiles for cross-platform app control via keyboard shortcuts and accessibility.</Description>
+    <Version>0.1.0</Version>
+    <Authors>Smartbox Assistive Technology</Authors>
+    <RepositoryUrl>https://github.com/Smartbox-Assistive-Technology/app-automate</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,18 +1,327 @@
 # app-automate
 
-`app-automate` discovers interactive elements in desktop applications and drives them through platform accessibility APIs, browser DevTools, or visual profile matching.
+Control desktop applications programmatically. Works on Linux, Windows, and macOS.
 
-Three backend strategies, picked per-app:
+## How it works
 
-| Backend | How it works | Best for |
-|---------|-------------|----------|
-| **UIA** | Windows UI Automation tree | Native Windows apps (Calculator, Paint, classic Outlook) |
-| **CDP** | Chrome DevTools Protocol via Playwright | WebView2 apps (new Outlook, Teams) |
-| **CV** | Screenshot + LLM-built profile + template matching | Anything else; cross-platform fallback |
+You create a JSON profile that describes an app's UI elements — buttons, fields, keyboard shortcuts. `app-automate` uses that profile to find targets and perform actions like clicking, typing, or pressing keys.
 
-Use `probe <app>` to auto-detect the right backend.
+**One profile format, multiple strategies.** Each element in a profile uses whichever strategy works best for that element:
 
-## Quick Start
+| Strategy | How it finds the target | Needs display? | Cross-platform? |
+|----------|------------------------|----------------|-----------------|
+| **Keyboard shortcut** | Sends key combination (e.g. `ctrl+t`) | App must be focused | Yes |
+| **Accessibility** (AT-SPI / UIA / AX) | Queries the accessibility tree by role, name, or ID | Yes | Per-platform |
+| **CDP** | Targets DOM elements by CSS selector | Yes | WebView2 only |
+| **Computer vision** | Matches anchor screenshots at relative coordinates | Yes + screenshots | Yes |
+
+Use whatever combination works for the app. A single profile can mix all of them.
+
+## Install
+
+```bash
+uv sync
+
+# Linux: install AT-SPI bindings for accessibility support
+sudo apt install python3-gi gir1.2-atspi-2.0 xdotool wmctrl
+```
+
+## Quick example
+
+Create a profile (`profile.json`):
+
+```json
+{
+  "profile_id": "firefox",
+  "app_name": "Firefox",
+  "type": "semantic",
+  "backend": "mixed",
+  "shortcuts": {
+    "new_tab": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"},
+    "url_bar": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
+  },
+  "semantic_elements": {
+    "new_tab": {
+      "label": "new_tab",
+      "aliases": ["open tab"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+t", "keys_macos": "cmd+t", "description": "Open new tab"}
+    },
+    "url_bar": {
+      "label": "url_bar",
+      "aliases": ["address bar", "navigate"],
+      "action": "shortcut",
+      "shortcut": {"keys": "ctrl+l", "keys_macos": "cmd+l", "description": "Focus URL bar"}
+    },
+    "search_box": {
+      "label": "Search with Google",
+      "role": "entry",
+      "action": "type"
+    }
+  }
+}
+```
+
+This profile uses keyboard shortcuts for navigation and accessibility (`role: "entry"`) for the search box. Both strategies in one profile.
+
+Then use it:
+
+```bash
+# See what the profile contains
+uv run app-automate list-elements my-profile/profile.json
+
+# Preview without acting
+uv run app-automate dry-run "url_bar" --profile my-profile/profile.json
+
+# Actually execute
+uv run app-automate click "url_bar" --profile my-profile/profile.json
+```
+
+## Strategies in detail
+
+### Keyboard shortcuts
+
+When an element has a known keyboard shortcut, you define it with `action: "shortcut"` and a key combination. The SDK sends those keys at runtime.
+
+Key notation uses `+` to combine: `"ctrl+t"`, `"ctrl+shift+s"`, `"f5"`, `"alt+left"`. Per-platform keys are supported: `"keys": "ctrl+s", "keys_macos": "cmd+s"`.
+
+Shortcuts can come from:
+- The profile JSON directly (as shown above)
+- A standalone JSON file: `{"save": {"keys": "ctrl+s"}, "quit": {"keys": "ctrl+q"}}`
+- A plain text file: `save = ctrl+s`
+- Live extraction from the app (see `extract-shortcuts` below)
+
+To import shortcuts into a profile from a file:
+
+```bash
+uv run app-automate extract-shortcuts Firefox --source file \
+  --shortcuts-file my-shortcuts.json
+```
+
+To extract from a running app:
+
+```bash
+# From AT-SPI menu accelerators (Linux)
+uv run app-automate extract-shortcuts Firefox --source atspi-menu
+
+# From GNOME window manager bindings (Linux)
+uv run app-automate extract-shortcuts "" --source gnome-wm
+
+# From .desktop files (Linux)
+uv run app-automate extract-shortcuts firefox --source desktop
+```
+
+### Accessibility — semantic element targeting
+
+Query the app's accessibility tree to find buttons, fields, and menus by role, name, or automation ID.
+
+**Linux (AT-SPI):**
+```bash
+uv run app-automate atspi-list --app "Calculator" --actionable-only --json
+uv run app-automate atspi-click --app "Calculator" --contains "5" --dry-run
+uv run app-automate atspi-type --app "TextEditor" --contains "Search" --text "hello" --execute
+```
+
+**Windows (UIA):**
+```bash
+uv run app-automate uia-list --app "Calculator" --actionable-only
+uv run app-automate uia-click --app "Calculator" --contains "Close" --execute
+```
+
+**macOS (AX):**
+```bash
+uv run app-automate ax-list --app "Pages" --actionable-only
+uv run app-automate ax-click --app "Pages" --contains "Insert" --dry-run
+
+# Extract shortcuts from live app menus and macOS defaults
+uv run app-automate extract-shortcuts Safari --source ax-menu
+uv run app-automate extract-shortcuts Safari --source plist
+uv run app-automate extract-shortcuts "" --source system-hotkeys
+```
+
+**Build a semantic profile from the live app:**
+```bash
+uv run app-automate train --backend atspi --app "Calculator" --output-dir my-profile
+uv run app-automate click "5" --profile my-profile/profile.json
+```
+
+### Live element search
+
+Query the live accessibility tree without building a profile. Search by label, role, or synonym — then click or type in one step. Works with AX (macOS), UIA (Windows), and AT-SPI (Linux).
+
+```bash
+# Find and list elements matching "share"
+uv run app-automate search "share" --app Safari
+
+# Filter by element role
+uv run app-automate search "search" --app Safari --role textfield
+
+# Find and click the top result (dry-run by default)
+uv run app-automate search "share" --app Safari --click --dry-run
+uv run app-automate search "share" --app Safari --click --execute
+
+# Find a text field and type into it
+uv run app-automate search "email" --app Safari --type "hello@example.com" --execute
+
+# Synonym expansion: "btn" finds buttons, "erase" finds delete, etc.
+uv run app-automate search "btn" --app Safari --all
+uv run app-automate search "erase" --app TextEdit --all
+
+# JSON output
+uv run app-automate search "reload" --app Safari --json
+```
+
+### CDP — WebView2 apps (Windows)
+
+```bash
+uv run app-automate cdp-setup --app "Outlook"
+uv run app-automate cdp-list --actionable-only
+uv run app-automate cdp-click --contains "New email" --execute
+```
+
+### Visual profiles — computer vision
+
+For apps with poor accessibility support. Takes a screenshot, generates a grid overlay, uses an LLM to build a profile, then matches anchor images at runtime.
+
+```bash
+# Requires an OpenAI key in settings
+uv run app-automate train --app "MyApp" --output-dir my-profile
+uv run app-automate click "save_button" --profile my-profile/profile.json
+```
+
+## Profile structure
+
+A profile is a single `profile.json` file. **One schema covers all strategies** — shortcuts, accessibility, and visual elements coexist in the same file.
+
+See the **[Profile Schema Reference](docs/schema-reference.md)** for the complete field-by-field documentation.
+
+`backend` tells the runtime which strategy to prefer: `"shortcut"`, `"atspi"`, `"uia"`, `"ax"`, `"cdp"`, or `"mixed"`. Per-element, the `action` field determines what actually happens.
+
+**Actions available:** `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`, `shortcut`.
+
+## Discovering what's available
+
+```bash
+# Auto-detect best backend for an app
+uv run app-automate probe "Calculator"
+
+# See what elements are near your cursor
+uv run app-automate whats-here --radius 150
+```
+
+## Adding a new app
+
+1. **Probe the app** to see what backends are available:
+   ```bash
+   uv run app-automate probe "AppName"
+   ```
+
+2. **Check for shortcuts.** If the app has documented keyboard shortcuts, add them as shortcut elements. You can import from a file or extract live.
+
+3. **Try accessibility.** If the app exposes a good accessibility tree, build a semantic profile:
+   ```bash
+   uv run app-automate train --backend atspi --app "AppName" --output-dir my-profile
+   ```
+
+4. **Fall back to CV** if accessibility is poor:
+   ```bash
+   uv run app-automate train --app "AppName" --output-dir my-profile
+   ```
+
+5. **Combine strategies.** A single profile can contain shortcut elements, accessibility elements, and visual elements. Use whichever works best for each action.
+
+## Example profiles
+
+**Hand-crafted** (`examples/profiles/`):
+
+| Profile | Strategies used | Notes |
+|---------|----------------|-------|
+| Firefox | Shortcuts + AT-SPI | Shortcuts for navigation, AT-SPI for UI elements |
+| Chrome | Shortcuts | 34 shortcuts with per-platform keys |
+| VS Code | Shortcuts | 38 shortcuts with per-platform keys |
+| LibreOffice Writer | Shortcuts | 40 shortcuts with per-platform keys |
+| Galculator | Shortcuts | Linux calculator |
+
+**Auto-imported from ShortcutMapper** (`examples/profiles-imported/`): 20 apps including Blender, Photoshop, IntelliJ IDEA, and more. These are shortcut-only profiles generated from the ShortcutMapper dataset. Run `app-automate validate examples/profiles-imported/<app>` to inspect any of them.
+
+## Using profiles from your own code
+
+The consumer SDK lets you load and execute profiles without the CLI. Available for Python and .NET:
+
+```python
+from app_automate.consumer import Consumer
+
+c = Consumer.from_file("profiles/firefox")
+c.execute("new tab")          # sends ctrl+t
+c.execute("url bar")          # sends ctrl+l
+c.type_text("https://example.com")
+c.send_key("enter")
+```
+
+See [Consumer SDK Spec](docs/consumer-spec.md) and [Native Adapters](docs/native-adapters.md) for .NET, Swift, and C implementations.
+
+## Platform support
+
+| Feature | Linux | Windows | macOS |
+|---------|-------|---------|-------|
+| Keyboard shortcuts | Yes | Yes | Yes |
+| Visual profiles (CV) | Yes | Yes | Yes |
+| Accessibility | AT-SPI | UIA | AX (native axtool) |
+| Live search | AT-SPI | UIA | AX |
+| Browser/WebView | — | CDP | — |
+| Window capture | xdotool + mss | user32 + mss | axtool + mss |
+
+## CLI Reference
+
+### Discovery
+| Command | Description |
+|---------|-------------|
+| `probe <app>` | Detect best backend for an app |
+| `whats-here` | List elements near cursor |
+| `search <query> --app <name>` | Search live accessibility tree by label/role/synonym |
+| `extract-shortcuts <app>` | Extract keyboard shortcuts |
+
+### Accessibility
+| Command | Description |
+|---------|-------------|
+| `atspi-list --app <name>` | List elements via AT-SPI (Linux) |
+| `atspi-click --app <name> --contains <text>` | Click via AT-SPI |
+| `atspi-type --app <name> --contains <text> --text <text>` | Type via AT-SPI |
+| `uia-list --app <name>` | List elements via UIA (Windows) |
+| `uia-click --app <name> --contains <text>` | Click via UIA |
+| `uia-type --app <name> --contains <text> --text <text>` | Type via UIA |
+| `ax-list --app <name>` | List elements via AX (macOS) |
+| `ax-click --app <name> --contains <text>` | Click via AX |
+
+### CDP (WebView2)
+| Command | Description |
+|---------|-------------|
+| `cdp-setup --app <name>` | Enable CDP debugging |
+| `cdp-list` | List elements via DevTools |
+| `cdp-click --contains <text>` | Click via DevTools |
+| `cdp-type --contains <text> --text <text>` | Type via DevTools |
+
+### Profiles
+| Command | Description |
+|---------|-------------|
+| `train --backend <b> --app <name>` | Build semantic profile |
+| `train --app <name>` | Build visual profile (needs LLM key) |
+| `validate <profile>` | Check profile for issues |
+| `inspect <profile>` | Describe a profile |
+| `list-elements <profile>` | List elements |
+| `dry-run <cmd> --profile <path>` | Preview without acting |
+| `click <cmd> --profile <path>` | Execute action |
+| `locate-anchors --profile <path>` | Check anchor detection |
+| `debug-target <cmd> --profile <path>` | Generate debug overlay |
+
+### Common options
+- `--dry-run` / `--execute` — preview vs real input
+- `--actionable-only` / `--all` — filter to interactive controls
+- `--json` / `--table` — output format
+- `--index <n>` — select among multiple matches (1-based)
+- `--exact` / `--substring` — matching mode
+
+## Development
 
 ```bash
 uv sync
@@ -21,359 +330,13 @@ uv run ruff format .
 uv run pytest
 ```
 
-For the LLM-backed visual profile builder, copy and edit the settings file:
-
-```bash
-cp app-automate.settings.example.toml app-automate.settings.toml
-```
-
-```toml
-[llm]
-model = "gpt-4o-mini"
-api_key = "sk-..."
-max_attempts = 2
-
-[builder]
-grid_size = 120
-anchor_confidence_threshold = 0.85
-```
-
-## Workflow
-
-### 1. Discover which backend to use
-
-```bash
-uv run --no-project app-automate probe "Calculator"
-```
-
-Returns a recommendation (`uia`, `cdp`, or `cv`) with element counts and reasoning.
-
-### 2. Inspect what's under the cursor
-
-```bash
-uv run --no-project app-automate whats-here
-uv run --no-project app-automate whats-here --radius 150 --app Paint
-```
-
-Reads cursor position and lists all UIA/CDP elements in a box around it. Useful for exploring what the accessibility tree can see.
-
-### 3. Interact directly (UIA or CDP)
-
-No profile needed — these backends query the live app:
-
-```bash
-# Windows native app
-uv run --no-project app-automate uia-list --app "Calculator" --actionable-only
-uv run --no-project app-automate uia-click --app "Calculator" --contains "Close" --execute
-
-# WebView2 app — enable CDP first
-uv run --no-project app-automate cdp-setup --app "Outlook"
-uv run --no-project app-automate cdp-list --actionable-only
-uv run --no-project app-automate cdp-click --contains "New email" --exact --execute
-uv run --no-project app-automate cdp-type --contains "To" --exact --text "user@example.com" --execute
-```
-
-### 4. Build a semantic profile (UIA or CDP)
-
-Snapshot the live element tree into a reusable profile — no LLM tokens, no screenshots:
-
-```bash
-# From UIA (native Windows app)
-uv run --no-project app-automate train --backend uia --app Paint --output-dir examples/profiles/paint
-
-# From CDP (WebView2 app)
-uv run --no-project app-automate train --backend cdp --output-dir examples/profiles/outlook
-```
-
-Then execute actions against the profile — the runtime re-queries the live backend by stored selectors:
-
-```bash
-uv run --no-project app-automate inspect examples/profiles/paint/profile.json
-uv run --no-project app-automate list-elements examples/profiles/paint/profile.json
-uv run --no-project app-automate dry-run oval --profile examples/profiles/paint/profile.json
-uv run --no-project app-automate click oval --profile examples/profiles/paint/profile.json
-uv run --no-project app-automate click brushes --profile examples/profiles/paint/profile.json
-uv run --no-project app-automate click to_field --profile examples/profiles/outlook/profile.json --text "hello@example.com"
-```
-
-Semantic profiles support these actions: `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`.
-
-### 5. Build a visual profile (CV path)
-
-For apps where accessibility APIs don't reach, build a profile from a screenshot:
-
-```bash
-# Capture the front window and build a profile
-uv run --no-project app-automate train --app "Photo Booth" --settings app-automate.settings.toml --output-dir examples/profiles/photo-booth
-
-# Or from an existing screenshot
-uv run --no-project app-automate train --screenshot window.png --output-dir examples/profiles/my-app
-```
-
-Then run commands against the saved profile:
-
-```bash
-uv run --no-project app-automate inspect examples/profiles/photo-booth/profile.json
-uv run --no-project app-automate locate-anchors --profile examples/profiles/photo-booth/profile.json
-uv run --no-project app-automate dry-run effects --profile examples/profiles/photo-booth/profile.json
-uv run --no-project app-automate click effects --profile examples/profiles/photo-booth/profile.json
-```
-
-### Demo: Draw a car in Paint
-
-```bash
-uv run --no-project python demos/paint_car.py
-```
-
-Opens MS Paint, builds a semantic profile from the live UIA tree, then draws a car (body, roof, wheels, red fill) using brush, oval, and fill tools selected from the profile.
-
-## CLI Reference
-
-### Probe and Discovery
-
-| Command | Description |
-|---------|-------------|
-| `probe <app>` | Detect best backend (UIA / CDP / CV) for an app |
-| `whats-here` | List UIA/CDP elements near the cursor position |
-
-### UIA (Windows native apps)
-
-| Command | Description |
-|---------|-------------|
-| `uia-list --app <name>` | List UI elements via Windows UI Automation |
-| `uia-click --app <name> --contains <text>` | Click a matched element |
-| `uia-type --app <name> --contains <text> --text <text>` | Type into a matched element |
-
-### CDP (WebView2 apps)
-
-| Command | Description |
-|---------|-------------|
-| `cdp-setup --app <name>` | Enable CDP debugging and restart the app |
-| `cdp-list` | List interactive elements via Chrome DevTools Protocol |
-| `cdp-click --contains <text>` | Click a matched element |
-| `cdp-type --contains <text> --text <text>` | Type into a matched field |
-
-### macOS Accessibility
-
-| Command | Description |
-|---------|-------------|
-| `ax-list --app <name>` | List UI elements via macOS System Events |
-| `ax-click --app <name> --contains <text>` | Click a matched element |
-
-### Semantic Profiles (UIA / CDP)
-
-| Command | Description |
-|---------|-------------|
-| `train --backend uia --app <name>` | Snapshot UIA tree into a semantic profile |
-| `train --backend cdp` | Snapshot CDP elements into a semantic profile |
-| `inspect <profile>` | Describe a saved profile |
-| `list-elements <profile>` | List elements in a profile |
-| `dry-run <command> --profile <path>` | Resolve target without acting |
-| `click <command> --profile <path>` | Execute action via stored selectors |
-| `click <command> --profile <path> --text <text>` | Execute type action |
-
-### Visual Profiles (CV)
-
-| Command | Description |
-|---------|-------------|
-| `train --app <name>` | Capture window, generate grid, build profile via LLM |
-| `locate-anchors --profile <path>` | Check live anchor detection |
-| `debug-target <command> --profile <path>` | Generate annotated debug overlay |
-
-### Common Options
-
-- `--exact` / `--substring` — exact vs substring matching for `--contains`
-- `--dry-run` / `--execute` — preview vs real input
-- `--actionable-only` / `--all` — filter to interactive controls
-- `--json` / `--table` — output format for list commands
-- `--index <n>` — select among multiple matches (1-based)
-- `--app <name>` — capture or target a specific app window
-- `--port <n>` — CDP port (default 9222)
-- `--radius <px>` — search box half-width for `whats-here` (default 96)
-
-## Profile Types
-
-### Visual Profiles
-
-JSON files describing an app's visual layout relative to anchor images.
-
-```json
-{
-  "type": "visual",
-  "baseline": { "width": 720, "height": 572 },
-  "anchors": {
-    "primary": { "id": "titlebar_top_left", "path": "anchor_primary.png", "x": 0, "y": 0 }
-  },
-  "elements": {
-    "effects_btn": {
-      "label": "Effects",
-      "rel_x": 48.5,
-      "rel_y": 16,
-      "layout": "bottom_right",
-      "action": "click"
-    }
-  }
-}
-```
-
-Layout modes: `fixed_from_primary`, `top_right`, `bottom_right`, `center_scaled`.
-
-### Semantic Profiles
-
-JSON files storing element selectors from UIA or CDP — no screenshots or anchors needed.
-
-```json
-{
-  "type": "semantic",
-  "backend": "uia",
-  "app_name": "Paint",
-  "semantic_elements": {
-    "oval": {
-      "label": "Oval",
-      "role": "ListItemControl",
-      "action": "click"
-    },
-    "brushes": {
-      "label": "Brushes",
-      "role": "RadioButtonControl",
-      "action": "click"
-    },
-    "fill": {
-      "label": "Fill",
-      "role": "ButtonControl",
-      "action": "click"
-    },
-    "red": {
-      "label": "Red",
-      "role": "ListItemControl",
-      "action": "click"
-    }
-  }
-}
-```
-
-Key fields:
-- `backend`: `"uia"` or `"cdp"` — which backend to query at runtime
-- `semantic_elements[*].label`: element label for matching
-- `semantic_elements[*].role`: UIA control type or ARIA role
-- `semantic_elements[*].automation_id`: UIA automation ID (optional, for precise matching)
-- `semantic_elements[*].selector`: CSS selector for CDP elements (optional)
-- `semantic_elements[*].action`: `click`, `double_click`, `right_click`, `type`, `drag`, `scroll`, `hotkey`, `wait`
-- `semantic_elements[*].drag_dx` / `drag_dy`: drag distance (for drag actions)
-- `semantic_elements[*].hotkey`: key combination like `"ctrl+z"` (for hotkey actions)
-- `semantic_elements[*].text`: default text to type (for type actions)
-
-## Multi-State Profiles
-
-Apps change appearance across states. Multi-state profiles handle this with per-state signatures:
-
-```json
-{
-  "profile_id": "camera-app",
-  "app_name": "Camera App",
-  "baseline": { "width": 800, "height": 600 },
-  "default_state": "idle",
-  "states": {
-    "idle": {
-      "id": "idle",
-      "signature": { "check_regions": [{ "path": "check_no_camera.png", "x": 50, "y": 100, "required": true }] },
-      "anchors": { "primary": { "id": "titlebar", "path": "anchor.png", "x": 0, "y": 0 } },
-      "elements": { "connect_btn": { "label": "Connect", "rel_x": 100, "rel_y": 50, "layout": "fixed_from_primary" } }
-    },
-    "connected": {
-      "id": "connected",
-      "signature": { "check_regions": [{ "path": "check_camera_icon.png", "x": 50, "y": 100, "required": true }] },
-      "anchors": { "primary": { "id": "titlebar", "path": "anchor.png", "x": 0, "y": 0 } },
-      "elements": { "record_btn": { "label": "Record", "rel_x": 200, "rel_y": 50, "layout": "fixed_from_primary" } }
-    }
-  }
-}
-```
-
-Runtime auto-detects the current state by matching signature regions (~5-10ms per region). Use `--state` to force a specific state.
-
-## Platform Support
-
-### Windows
-
-- **UIA** — uses `uiautomation` library; works for native Win32/WPF/WinUI apps
-- **CDP** — uses Playwright `connect_over_cdp()`; for WebView2 apps
-- **CV** — visual profile path with `ctypes`/`user32` window capture
-- DPI awareness handled via `SetProcessDpiAwareness(2)`
-- Window capture and activation via `EnumWindows` / `GetWindowRect` / `SetForegroundWindow`
-- Note: the `comtypes` gen cache can corrupt between runs; `uia-list` auto-clears it
-
-### macOS
-
-- **Accessibility** — uses System Events UI scripting
-- **CV** — visual profile path with `screencapture` window capture
-- Requires `Screen Recording` and `Accessibility` permissions
-
-## Demos
-
-- `demos/paint_car.py` — draws a car in MS Paint using a semantic profile built from the live UIA tree
-
-## Project Status
-
-Working today:
-- JSON profile schema with Pydantic validation (visual and semantic types)
-- Multi-state visual profiles with automatic state detection
-- Semantic profiles built from UIA or CDP element trees
-- 8 action types: click, double_click, right_click, type, drag, scroll, hotkey, wait
-- macOS accessibility inspection via System Events
-- Windows UIA inspection and direct click/type
-- Windows CDP inspection and direct click/type via Playwright
-- `probe` command for auto-detecting the best backend per app
-- `whats-here` command for inspecting elements near the cursor
-- `train --backend uia/cdp` for instant semantic profiles (no LLM tokens)
-- Training asset generation from screenshots and grid overlays
-- LLM-backed visual profile generation via the `llm` library
-- Automatic window capture and activation on both macOS and Windows
-- Template-matching anchor detection
-- Debug overlay output for target validation
-
-Not complete yet:
-- Multi-monitor / DPI scale validation matrix (100%, 125%, 150%)
-- CDP port is global — not aware of which app's WebView2 to connect to when multiple are running
-- Hybrid profiles combining semantic + visual selectors
-- LLM-assisted multi-state profile generation needs prompt refinement
-- Anchor selection is still not strong enough for every app without retries
-
-## Tooling
-
-- `uv` for packaging, dependency management, and commands
-- `ruff` for linting and formatting
-- `pytest` for tests
-
-## Troubleshooting
-
-**`probe` recommends wrong backend**: some apps expose partial UIA trees. Run `uia-list --app <name> --actionable-only` and `cdp-list` separately to see what each finds.
-
-**`whats-here` finds nothing**: try `--radius 200` to widen the search. Use `--app <name>` to limit to a specific app's elements. Some UIA elements may not have bounding boxes.
-
-**`uia-list` fails or crashes**: the `comtypes` cache may be corrupt. The tool auto-clears it, but if issues persist, manually delete `.venv/Lib/site-packages/comtypes/gen/*`.
-
-**`cdp-list` fails**: CDP must be enabled first. Run `cdp-setup --app <name>`, then close and reopen the app. Verify with `cdp-setup` (no args) — it should show `"listening": "true"`.
-
-**`cdp-click --contains "X"` matches too broadly**: use `--exact` to require an exact label match instead of substring.
-
-**Semantic `click` fails with keyword error**: ensure you're on the latest version — earlier builds passed unsupported kwargs to UIA click functions.
-
-**Anchor detection fails (CV path)**: run `locate-anchors`, check confidence values, verify anchor images match the current app appearance. Rebuild with `train` if the app theme or window chrome changed.
-
-**Click lands in wrong place (CV path)**: run `debug-target` and inspect the overlay image. Check the control's `layout` mode and confirm the app is in the expected state.
-
-**macOS capture or clicking fails**: re-check `Screen Recording` and `Accessibility` permissions in System Settings.
-
-## Coordinate Notes
-
-On macOS, runtime capture uses `mss` which reports logical display coordinates, keeping anchor detection aligned with `pyautogui` click coordinates on Retina displays.
-
-On Windows, DPI awareness is set to per-monitor DPI-aware (level 2) so coordinates from `GetWindowRect` and `mss` capture are in physical pixels.
-
-## Additional Docs
-
-- [Architecture](docs/architecture.md)
-- [MVP Roadmap](docs/mvp-roadmap.md)
+## Documentation
+
+- **[Profile Schema Reference](docs/schema-reference.md)** — complete field reference with examples
+- [Consumer SDK Spec](docs/consumer-spec.md) — interface for language SDKs
+- [Native Adapters](docs/native-adapters.md) — platform-specific input in Swift/C/.NET
 - [New App Guide](docs/new-app-guide.md)
 - [Windows Integration](docs/windows-integration.md)
+- [Linux Integration](docs/linux-integration.md)
+- [Architecture](docs/architecture.md)
+- [Development TODO](TODO.md)

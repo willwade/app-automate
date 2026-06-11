@@ -297,6 +297,20 @@ def dry_run_semantic_command(
 ) -> SemanticResolvedCommand:
     element_id = resolve_semantic_element_id(command, profile)
     element = profile.semantic_elements[element_id]
+
+    if element.action.value == "shortcut" and element.shortcut:
+        return SemanticResolvedCommand(
+            element_id=element_id,
+            label=element.label,
+            action=element.action.value,
+            backend="shortcut",
+            selector=element.selector,
+            automation_id=element.automation_id,
+            role=element.role,
+            x=None,
+            y=None,
+        )
+
     backend = profile.backend or "uia"
 
     x: float | None = None
@@ -306,6 +320,8 @@ def dry_run_semantic_command(
         x, y = _uia_locate(profile.app_name, element)
     elif backend == "cdp":
         x, y = _cdp_locate(element)
+    elif backend == "atspi":
+        x, y = _atspi_locate(profile.app_name, element)
 
     return SemanticResolvedCommand(
         element_id=element_id,
@@ -325,6 +341,24 @@ def execute_semantic_command(
 ) -> SemanticResolvedCommand:
     element_id = resolve_semantic_element_id(command, profile)
     element = profile.semantic_elements[element_id]
+
+    if element.action.value == "shortcut" and element.shortcut:
+        import pyautogui
+
+        keys = element.shortcut.keys.split("+")
+        pyautogui.hotkey(*keys)
+        return SemanticResolvedCommand(
+            element_id=element_id,
+            label=element.label,
+            action=element.action.value,
+            backend="shortcut",
+            selector=element.selector,
+            automation_id=element.automation_id,
+            role=element.role,
+            x=None,
+            y=None,
+        )
+
     backend = profile.backend or "uia"
 
     x: float | None = None
@@ -334,6 +368,8 @@ def execute_semantic_command(
         x, y = _uia_execute(profile.app_name, element, text=text)
     elif backend == "cdp":
         x, y = _cdp_execute(element, text=text)
+    elif backend == "atspi":
+        x, y = _atspi_execute(profile.app_name, element, text=text)
 
     return SemanticResolvedCommand(
         element_id=element_id,
@@ -473,13 +509,9 @@ def _cdp_locate(element: Any) -> tuple[float | None, float | None]:
 
 
 def _cdp_locate_by_selector(selector: str) -> tuple[float | None, float | None]:
-    from playwright.sync_api import sync_playwright
+    from app_automate.accessibility.cdp import cdp_session
 
-    pw = sync_playwright().start()
-    browser = None
-    try:
-        browser = pw.chromium.connect_over_cdp("http://localhost:9222")
-        page = browser.contexts[0].pages[0]
+    with cdp_session() as page:
         locator = page.locator(selector)
         if locator.count() == 0:
             raise RuntimeError(f"CDP selector matched nothing: {selector}")
@@ -487,16 +519,6 @@ def _cdp_locate_by_selector(selector: str) -> tuple[float | None, float | None]:
         if box is None:
             return None, None
         return box["x"] + box["width"] / 2.0, box["y"] + box["height"] / 2.0
-    finally:
-        try:
-            if browser:
-                browser.close()
-        except Exception:
-            pass
-        try:
-            pw.stop()
-        except Exception:
-            pass
 
 
 def _cdp_execute(
@@ -507,28 +529,14 @@ def _cdp_execute(
     action = element.action.value
 
     if action in ("hotkey", "wait"):
-        from playwright.sync_api import sync_playwright
+        from app_automate.accessibility.cdp import cdp_session
 
-        pw = sync_playwright().start()
-        browser = None
-        try:
-            browser = pw.chromium.connect_over_cdp("http://localhost:9222")
-            page = browser.contexts[0].pages[0]
+        with cdp_session() as page:
             if action == "hotkey":
                 keys = (element.hotkey or "").split("+")
                 page.keyboard.press("+".join(keys))
             elif action == "wait":
                 page.wait_for_timeout(element.wait_ms or 500)
-        finally:
-            try:
-                if browser:
-                    browser.close()
-            except Exception:
-                pass
-            try:
-                pw.stop()
-            except Exception:
-                pass
         return None, None
 
     if action == "click":
@@ -553,13 +561,9 @@ def _cdp_execute(
             raise RuntimeError(
                 f"CDP could not locate element for {action}: {element.label}"
             )
-        from playwright.sync_api import sync_playwright
+        from app_automate.accessibility.cdp import cdp_session
 
-        pw = sync_playwright().start()
-        browser = None
-        try:
-            browser = pw.chromium.connect_over_cdp("http://localhost:9222")
-            page = browser.contexts[0].pages[0]
+        with cdp_session() as page:
             if action == "drag":
                 dx = element.drag_dx or 0
                 dy = element.drag_dy or 0
@@ -573,19 +577,63 @@ def _cdp_execute(
                 page.mouse.click(x, y, button="right")
             elif action == "scroll":
                 page.mouse.wheel(0, element.scroll_clicks or 0)
-        finally:
-            try:
-                if browser:
-                    browser.close()
-            except Exception:
-                pass
-            try:
-                pw.stop()
-            except Exception:
-                pass
         return x, y
     else:
         return _cdp_locate(element)
+
+    if target.x is None or target.y is None:
+        return None, None
+    return (
+        target.x + (target.width or 0) / 2.0,
+        target.y + (target.height or 0) / 2.0,
+    )
+
+
+def _atspi_locate(app_name: str, element: Any) -> tuple[float | None, float | None]:
+    from app_automate.accessibility import linux_atspi
+
+    kwargs: dict[str, Any] = {
+        "contains": element.label,
+        "max_depth": 15,
+        "actionable_only": True,
+        "enabled_only": True,
+    }
+    if element.role:
+        kwargs["control_type"] = element.role
+    matches = linux_atspi.find_matching_elements(app_name, **kwargs)
+    if not matches:
+        raise RuntimeError(f"AT-SPI could not find element matching '{element.label}'")
+    target = matches[0]
+    if target.x is None or target.y is None:
+        return None, None
+    return (
+        target.x + (target.width or 0) / 2.0,
+        target.y + (target.height or 0) / 2.0,
+    )
+
+
+def _atspi_execute(
+    app_name: str, element: Any, *, text: str | None = None
+) -> tuple[float | None, float | None]:
+    from app_automate.accessibility import linux_atspi
+
+    action = element.action.value
+
+    if action == "click":
+        target = linux_atspi.click_matching_element(app_name, contains=element.label)
+    elif action == "type":
+        type_text = text or element.text
+        if type_text is None:
+            raise RuntimeError(
+                f"type action requires --text for element '{element.label}'"
+            )
+        target = linux_atspi.type_into_matching_element(
+            app_name,
+            contains=element.label,
+            text=type_text,
+        )
+    else:
+        return _atspi_locate(app_name, element)
 
     if target.x is None or target.y is None:
         return None, None

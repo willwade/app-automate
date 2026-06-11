@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-import platform
 from enum import Enum
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
+
+from app_automate.platform_utils import default_platform_hint
 
 
 class LayoutMode(str, Enum):
@@ -23,6 +24,7 @@ class ActionType(str, Enum):
     SCROLL = "scroll"
     HOTKEY = "hotkey"
     WAIT = "wait"
+    SHORTCUT = "shortcut"
 
 
 class Baseline(BaseModel):
@@ -52,6 +54,27 @@ class ElementDefinition(BaseModel):
     action: ActionType = ActionType.CLICK
 
 
+class ShortcutDefinition(BaseModel):
+    keys: str
+    keys_macos: str | None = None
+    keys_linux: str | None = None
+    keys_windows: str | None = None
+    description: str = ""
+    platform: str | None = None
+
+    def keys_for_platform(self, platform: str | None = None) -> str:
+        import platform as _platform
+
+        current = platform or _platform.system().lower()
+        if current == "darwin" and self.keys_macos:
+            return self.keys_macos
+        if current == "linux" and self.keys_linux:
+            return self.keys_linux
+        if current == "windows" and self.keys_windows:
+            return self.keys_windows
+        return self.keys
+
+
 class SemanticElement(BaseModel):
     label: str
     aliases: list[str] = Field(default_factory=list)
@@ -62,6 +85,7 @@ class SemanticElement(BaseModel):
     drag_dx: float | None = None
     drag_dy: float | None = None
     hotkey: str | None = None
+    shortcut: ShortcutDefinition | None = None
     text: str | None = None
     scroll_clicks: int | None = None
     wait_ms: int | None = None
@@ -112,7 +136,7 @@ class AppProfile(BaseModel):
     app_name: str
     type: Literal["visual", "semantic"] = "visual"
     backend: str | None = None
-    platform_hint: str = "windows" if platform.system() == "Windows" else "macos"
+    platform_hint: str | None = default_platform_hint()
     notes: str = ""
     baseline: Baseline | None = None
     anchors: Anchors | None = None
@@ -120,12 +144,16 @@ class AppProfile(BaseModel):
     states: dict[str, AppState] = Field(default_factory=dict)
     default_state: str = "default"
     semantic_elements: dict[str, SemanticElement] = Field(default_factory=dict)
+    shortcuts: dict[str, ShortcutDefinition] = Field(default_factory=dict)
 
     @model_validator(mode="after")
     def validate_profile_structure(self) -> "AppProfile":
         if self.type == "semantic":
             if not self.backend:
-                raise ValueError("semantic profile requires 'backend' (uia or cdp)")
+                raise ValueError(
+                    "semantic profile requires 'backend' "
+                    "(shortcut, uia, cdp, atspi, ax, or mixed)"
+                )
             if not self.semantic_elements:
                 raise ValueError("semantic profile must have semantic_elements defined")
             return self

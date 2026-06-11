@@ -18,6 +18,14 @@ UIA_TYPEABLE_ROLES = {
 
 CDP_TYPEABLE_ROLES = {"textbox", "combobox", "searchbox"}
 
+ATSPI_TYPEABLE_ROLES = {
+    "entry",
+    "text",
+    "terminal",
+    "spin button",
+    "combo box",
+}
+
 
 def build_semantic_profile(
     *,
@@ -32,6 +40,8 @@ def build_semantic_profile(
         elements = _collect_uia_elements(app_name)
     elif backend == "cdp":
         elements = _collect_cdp_elements(port)
+    elif backend == "atspi":
+        elements = _collect_atspi_elements(app_name)
     else:
         raise ValueError(f"unknown backend: {backend}")
 
@@ -76,6 +86,14 @@ def _collect_cdp_elements(port: int) -> list[UIElement]:
     return cdp.list_cdp_elements(port, actionable_only=True)
 
 
+def _collect_atspi_elements(app_name: str) -> list[UIElement]:
+    from app_automate.accessibility import linux_atspi
+
+    return linux_atspi.list_app_ui_elements(
+        app_name, max_depth=15, actionable_only=True
+    )
+
+
 def _slugify(text: str) -> str:
     slug = text.strip().lower()
     slug = re.sub(r"[^a-z0-9]+", "_", slug)
@@ -89,7 +107,11 @@ def _infer_action(el: UIElement) -> ActionType:
     role = (el.role or el.class_name or "").lower()
     class_name = el.class_name or ""
 
-    if class_name in UIA_TYPEABLE_ROLES or role in CDP_TYPEABLE_ROLES:
+    if (
+        class_name in UIA_TYPEABLE_ROLES
+        or role in CDP_TYPEABLE_ROLES
+        or role in ATSPI_TYPEABLE_ROLES
+    ):
         return ActionType.TYPE
     return ActionType.CLICK
 

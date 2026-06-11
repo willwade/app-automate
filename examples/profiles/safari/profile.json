@@ -1,0 +1,1699 @@
+{
+  "app_name" : "Safari",
+  "backend" : "ax",
+  "platform_hint" : "macos",
+  "profile_id" : "safari",
+  "semantic_elements" : {
+    "actual_size_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "actual size",
+        "view actual size"
+      ],
+      "label" : "actual_size",
+      "shortcut" : {
+        "description" : "Actual Size",
+        "keys" : "cmd+0",
+        "platform" : "macos"
+      }
+    },
+    "add_bookmark_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "add bookmark…",
+        "bookmarks add bookmark…"
+      ],
+      "label" : "add_bookmark",
+      "shortcut" : {
+        "description" : "Add Bookmark…",
+        "keys" : "cmd+d",
+        "platform" : "macos"
+      }
+    },
+    "add_to_reading_list_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "add to reading list",
+        "bookmarks add to reading list"
+      ],
+      "label" : "add_to_reading_list",
+      "shortcut" : {
+        "description" : "Add to Reading List",
+        "keys" : "cmd+d",
+        "platform" : "macos"
+      }
+    },
+    "annasarchive_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "annasarchive",
+        "favorites annasarchive"
+      ],
+      "label" : "annasarchive",
+      "shortcut" : {
+        "description" : "AnnasArchive",
+        "keys" : "cmd+3",
+        "platform" : "macos"
+      }
+    },
+    "autofill_form_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "autofill form",
+        "edit autofill form"
+      ],
+      "label" : "autofill_form",
+      "shortcut" : {
+        "description" : "AutoFill Form",
+        "keys" : "cmd+a",
+        "platform" : "macos"
+      }
+    },
+    "back_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "back",
+        "history back"
+      ],
+      "label" : "back",
+      "shortcut" : {
+        "description" : "Back",
+        "keys" : "cmd+[",
+        "platform" : "macos"
+      }
+    },
+    "bookmark_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "bookmark",
+        "favorites bookmark"
+      ],
+      "label" : "bookmark",
+      "shortcut" : {
+        "description" : "Bookmark",
+        "keys" : "cmd+1",
+        "platform" : "macos"
+      }
+    },
+    "center_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "center",
+        "window center"
+      ],
+      "label" : "center",
+      "shortcut" : {
+        "description" : "Center",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "check_document_now_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "check document now",
+        "spelling and grammar check document now"
+      ],
+      "label" : "check_document_now",
+      "shortcut" : {
+        "description" : "Check Document Now",
+        "keys" : "cmd+;",
+        "platform" : "macos"
+      }
+    },
+    "close_all_windows_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "close all windows",
+        "file close all windows"
+      ],
+      "label" : "close_all_windows",
+      "shortcut" : {
+        "description" : "Close All Windows",
+        "keys" : "cmd+w",
+        "platform" : "macos"
+      }
+    },
+    "close_window_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "close window",
+        "file close window"
+      ],
+      "label" : "close_window",
+      "shortcut" : {
+        "description" : "Close Window",
+        "keys" : "cmd+w",
+        "platform" : "macos"
+      }
+    },
+    "connect_web_inspector_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "connect web inspector",
+        "develop connect web inspector"
+      ],
+      "label" : "connect_web_inspector",
+      "shortcut" : {
+        "description" : "Connect Web Inspector",
+        "keys" : "cmd+i",
+        "platform" : "macos"
+      }
+    },
+    "copy_search_terms_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "copy search terms",
+        "edit copy search terms"
+      ],
+      "label" : "copy_search_terms",
+      "shortcut" : {
+        "description" : "Copy Search Terms",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "copy_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "copy",
+        "edit copy"
+      ],
+      "label" : "copy",
+      "shortcut" : {
+        "description" : "Copy",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "cut_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "cut",
+        "edit cut"
+      ],
+      "label" : "cut",
+      "shortcut" : {
+        "description" : "Cut",
+        "keys" : "cmd+x",
+        "platform" : "macos"
+      }
+    },
+    "delete_tab_group_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "delete tab group",
+        "file delete tab group"
+      ],
+      "label" : "delete_tab_group",
+      "shortcut" : {
+        "description" : "Delete Tab Group",
+        "keys" : "cmd+w",
+        "platform" : "macos"
+      }
+    },
+    "edit_bookmarks_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "edit bookmarks",
+        "bookmarks edit bookmarks"
+      ],
+      "label" : "edit_bookmarks",
+      "shortcut" : {
+        "description" : "Edit Bookmarks",
+        "keys" : "cmd+b",
+        "platform" : "macos"
+      }
+    },
+    "emoji_&_symbols_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "emoji & symbols",
+        "edit emoji & symbols"
+      ],
+      "label" : "emoji_&_symbols",
+      "shortcut" : {
+        "description" : "Emoji & Symbols",
+        "keys" : "cmd+🌐",
+        "platform" : "macos"
+      }
+    },
+    "empty_caches_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "empty caches",
+        "develop empty caches"
+      ],
+      "label" : "empty_caches",
+      "shortcut" : {
+        "description" : "Empty Caches",
+        "keys" : "cmd+e",
+        "platform" : "macos"
+      }
+    },
+    "enter_full_screen_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "enter full screen",
+        "view enter full screen"
+      ],
+      "label" : "enter_full_screen",
+      "shortcut" : {
+        "description" : "Enter Full Screen",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "enter_responsive_design_mode_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "enter responsive design mode",
+        "develop enter responsive design mode"
+      ],
+      "label" : "enter_responsive_design_mode",
+      "shortcut" : {
+        "description" : "Enter Responsive Design Mode",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "enter_video_viewer_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "enter video viewer",
+        "view enter video viewer"
+      ],
+      "label" : "enter_video_viewer",
+      "shortcut" : {
+        "description" : "Enter Video Viewer",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "fill_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "fill",
+        "window fill"
+      ],
+      "label" : "fill",
+      "shortcut" : {
+        "description" : "Fill",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "find_next_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find next",
+        "find find next"
+      ],
+      "label" : "find_next",
+      "shortcut" : {
+        "description" : "Find Next",
+        "keys" : "cmd+g",
+        "platform" : "macos"
+      }
+    },
+    "find_previous_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find previous",
+        "find find previous"
+      ],
+      "label" : "find_previous",
+      "shortcut" : {
+        "description" : "Find Previous",
+        "keys" : "cmd+g",
+        "platform" : "macos"
+      }
+    },
+    "find_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "find…",
+        "find find…"
+      ],
+      "label" : "find",
+      "shortcut" : {
+        "description" : "Find…",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "force_quit_safari_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "force quit safari"
+      ],
+      "label" : "force_quit_safari",
+      "shortcut" : {
+        "description" : "Force Quit Safari",
+        "keys" : "cmd+⎋",
+        "platform" : "macos"
+      }
+    },
+    "force_quit_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "force quit…"
+      ],
+      "label" : "force_quit",
+      "shortcut" : {
+        "description" : "Force Quit…",
+        "keys" : "cmd+⎋",
+        "platform" : "macos"
+      }
+    },
+    "forward_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "forward",
+        "history forward"
+      ],
+      "label" : "forward",
+      "shortcut" : {
+        "description" : "Forward",
+        "keys" : "cmd+]",
+        "platform" : "macos"
+      }
+    },
+    "go_to_next_tab_group_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "go to next tab group",
+        "window go to next tab group"
+      ],
+      "label" : "go_to_next_tab_group",
+      "shortcut" : {
+        "description" : "Go to Next Tab Group",
+        "keys" : "cmd+",
+        "platform" : "macos"
+      }
+    },
+    "go_to_previous_tab_group_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "go to previous tab group",
+        "window go to previous tab group"
+      ],
+      "label" : "go_to_previous_tab_group",
+      "shortcut" : {
+        "description" : "Go to Previous Tab Group",
+        "keys" : "cmd+",
+        "platform" : "macos"
+      }
+    },
+    "google_search_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "google search…",
+        "find google search…"
+      ],
+      "label" : "google_search",
+      "shortcut" : {
+        "description" : "Google Search…",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "hide_find_banner_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "hide find banner",
+        "find hide find banner"
+      ],
+      "label" : "hide_find_banner",
+      "shortcut" : {
+        "description" : "Hide Find Banner",
+        "keys" : "cmd+f",
+        "platform" : "macos"
+      }
+    },
+    "hide_others_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "hide others",
+        "safari hide others"
+      ],
+      "label" : "hide_others",
+      "shortcut" : {
+        "description" : "Hide Others",
+        "keys" : "cmd+h",
+        "platform" : "macos"
+      }
+    },
+    "hide_safari_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "hide safari",
+        "safari hide safari"
+      ],
+      "label" : "hide_safari",
+      "shortcut" : {
+        "description" : "Hide Safari",
+        "keys" : "cmd+h",
+        "platform" : "macos"
+      }
+    },
+    "home_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "home",
+        "history home"
+      ],
+      "label" : "home",
+      "shortcut" : {
+        "description" : "Home",
+        "keys" : "cmd+h",
+        "platform" : "macos"
+      }
+    },
+    "homebridge_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "homebridge",
+        "favorites homebridge"
+      ],
+      "label" : "homebridge",
+      "shortcut" : {
+        "description" : "Homebridge",
+        "keys" : "cmd+2",
+        "platform" : "macos"
+      }
+    },
+    "jump_to_selection_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "jump to selection",
+        "find jump to selection"
+      ],
+      "label" : "jump_to_selection",
+      "shortcut" : {
+        "description" : "Jump to Selection",
+        "keys" : "cmd+j",
+        "platform" : "macos"
+      }
+    },
+    "lock_screen_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "lock screen"
+      ],
+      "label" : "lock_screen",
+      "shortcut" : {
+        "description" : "Lock Screen",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "log_out_will_wade_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "log out will wade…"
+      ],
+      "label" : "log_out_will_wade",
+      "shortcut" : {
+        "description" : "Log Out Will Wade…",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "make_text_bigger_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "make text bigger",
+        "view make text bigger"
+      ],
+      "label" : "make_text_bigger",
+      "shortcut" : {
+        "description" : "Make Text Bigger",
+        "keys" : "cmd++",
+        "platform" : "macos"
+      }
+    },
+    "make_text_smaller_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "make text smaller",
+        "view make text smaller"
+      ],
+      "label" : "make_text_smaller",
+      "shortcut" : {
+        "description" : "Make Text Smaller",
+        "keys" : "cmd+-",
+        "platform" : "macos"
+      }
+    },
+    "minimize_all_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "minimize all",
+        "window minimize all"
+      ],
+      "label" : "minimize_all",
+      "shortcut" : {
+        "description" : "Minimize All",
+        "keys" : "cmd+m",
+        "platform" : "macos"
+      }
+    },
+    "minimize_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "minimize",
+        "window minimize"
+      ],
+      "label" : "minimize",
+      "shortcut" : {
+        "description" : "Minimize",
+        "keys" : "cmd+m",
+        "platform" : "macos"
+      }
+    },
+    "new_empty_tab_group_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "new empty tab group",
+        "file new empty tab group"
+      ],
+      "label" : "new_empty_tab_group",
+      "shortcut" : {
+        "description" : "New Empty Tab Group",
+        "keys" : "cmd+n",
+        "platform" : "macos"
+      }
+    },
+    "new_private_window_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "new private window",
+        "file new private window"
+      ],
+      "label" : "new_private_window",
+      "shortcut" : {
+        "description" : "New Private Window",
+        "keys" : "cmd+n",
+        "platform" : "macos"
+      }
+    },
+    "new_tab_at_end_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "new tab at end",
+        "file new tab at end"
+      ],
+      "label" : "new_tab_at_end",
+      "shortcut" : {
+        "description" : "New Tab at End",
+        "keys" : "cmd+t",
+        "platform" : "macos"
+      }
+    },
+    "new_tab_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "new tab",
+        "file new tab"
+      ],
+      "label" : "new_tab",
+      "shortcut" : {
+        "description" : "New Tab",
+        "keys" : "cmd+t",
+        "platform" : "macos"
+      }
+    },
+    "new_window_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "new window",
+        "file new window"
+      ],
+      "label" : "new_window",
+      "shortcut" : {
+        "description" : "New Window",
+        "keys" : "cmd+n",
+        "platform" : "macos"
+      }
+    },
+    "open_file_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "open file…",
+        "file open file…"
+      ],
+      "label" : "open_file",
+      "shortcut" : {
+        "description" : "Open File…",
+        "keys" : "cmd+o",
+        "platform" : "macos"
+      }
+    },
+    "open_location_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "open location…",
+        "file open location…"
+      ],
+      "label" : "open_location",
+      "shortcut" : {
+        "description" : "Open Location…",
+        "keys" : "cmd+l",
+        "platform" : "macos"
+      }
+    },
+    "paste_and_match_style_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "paste and match style",
+        "edit paste and match style"
+      ],
+      "label" : "paste_and_match_style",
+      "shortcut" : {
+        "description" : "Paste and Match Style",
+        "keys" : "cmd+v",
+        "platform" : "macos"
+      }
+    },
+    "paste_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "paste",
+        "edit paste"
+      ],
+      "label" : "paste",
+      "shortcut" : {
+        "description" : "Paste",
+        "keys" : "cmd+v",
+        "platform" : "macos"
+      }
+    },
+    "pi_jellyfin_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "pi - jellyfin",
+        "favorites pi - jellyfin"
+      ],
+      "label" : "pi_jellyfin",
+      "shortcut" : {
+        "description" : "pi - Jellyfin",
+        "keys" : "cmd+8",
+        "platform" : "macos"
+      }
+    },
+    "pi_qbittorrent_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "pi - qbittorrent",
+        "favorites pi - qbittorrent"
+      ],
+      "label" : "pi_qbittorrent",
+      "shortcut" : {
+        "description" : "pi - qBittorrent",
+        "keys" : "cmd+7",
+        "platform" : "macos"
+      }
+    },
+    "pi_radarr_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "pi - radarr",
+        "favorites pi - radarr"
+      ],
+      "label" : "pi_radarr",
+      "shortcut" : {
+        "description" : "pi - Radarr",
+        "keys" : "cmd+6",
+        "platform" : "macos"
+      }
+    },
+    "pi_sonarr_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "pi - sonarr",
+        "favorites pi - sonarr"
+      ],
+      "label" : "pi_sonarr",
+      "shortcut" : {
+        "description" : "pi - Sonarr",
+        "keys" : "cmd+5",
+        "platform" : "macos"
+      }
+    },
+    "print_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "print…",
+        "file print…"
+      ],
+      "label" : "print",
+      "shortcut" : {
+        "description" : "Print…",
+        "keys" : "cmd+p",
+        "platform" : "macos"
+      }
+    },
+    "quit_and_keep_windows_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "quit and keep windows",
+        "safari quit and keep windows"
+      ],
+      "label" : "quit_and_keep_windows",
+      "shortcut" : {
+        "description" : "Quit and Keep Windows",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "quit_safari_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "quit safari",
+        "safari quit safari"
+      ],
+      "label" : "quit_safari",
+      "shortcut" : {
+        "description" : "Quit Safari",
+        "keys" : "cmd+q",
+        "platform" : "macos"
+      }
+    },
+    "redo_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "redo",
+        "edit redo"
+      ],
+      "label" : "redo",
+      "shortcut" : {
+        "description" : "Redo",
+        "keys" : "cmd+z",
+        "platform" : "macos"
+      }
+    },
+    "reload_page_from_origin_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "reload page from origin",
+        "view reload page from origin"
+      ],
+      "label" : "reload_page_from_origin",
+      "shortcut" : {
+        "description" : "Reload Page From Origin",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "reload_page_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "reload page",
+        "view reload page"
+      ],
+      "label" : "reload_page",
+      "shortcut" : {
+        "description" : "Reload Page",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "remote_desktop_web_client_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "remote desktop web client",
+        "favorites remote desktop web client"
+      ],
+      "label" : "remote_desktop_web_client",
+      "shortcut" : {
+        "description" : "Remote Desktop Web Client",
+        "keys" : "cmd+4",
+        "platform" : "macos"
+      }
+    },
+    "reopen_last_closed_tab_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "reopen last closed tab",
+        "history reopen last closed tab"
+      ],
+      "label" : "reopen_last_closed_tab",
+      "shortcut" : {
+        "description" : "Reopen Last Closed Tab",
+        "keys" : "cmd+t",
+        "platform" : "macos"
+      }
+    },
+    "return_to_previous_size_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "return to previous size",
+        "move & resize return to previous size"
+      ],
+      "label" : "return_to_previous_size",
+      "shortcut" : {
+        "description" : "Return to Previous Size",
+        "keys" : "cmd+r",
+        "platform" : "macos"
+      }
+    },
+    "return_to_search_results_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "return to search results",
+        "history return to search results"
+      ],
+      "label" : "return_to_search_results",
+      "shortcut" : {
+        "description" : "Return to Search Results",
+        "keys" : "cmd+s",
+        "platform" : "macos"
+      }
+    },
+    "save_as_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "save as…",
+        "file save as…"
+      ],
+      "label" : "save_as",
+      "shortcut" : {
+        "description" : "Save As…",
+        "keys" : "cmd+s",
+        "platform" : "macos"
+      }
+    },
+    "select_all_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "select all",
+        "edit select all"
+      ],
+      "label" : "select_all",
+      "shortcut" : {
+        "description" : "Select All",
+        "keys" : "cmd+a",
+        "platform" : "macos"
+      }
+    },
+    "settings_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "settings…",
+        "safari settings…"
+      ],
+      "label" : "settings",
+      "shortcut" : {
+        "description" : "Settings…",
+        "keys" : "cmd+,",
+        "platform" : "macos"
+      }
+    },
+    "show_all_history_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show all history",
+        "history show all history"
+      ],
+      "label" : "show_all_history",
+      "shortcut" : {
+        "description" : "Show All History",
+        "keys" : "cmd+y",
+        "platform" : "macos"
+      }
+    },
+    "show_bookmarks_sidebar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show bookmarks sidebar",
+        "view show bookmarks sidebar"
+      ],
+      "label" : "show_bookmarks_sidebar",
+      "shortcut" : {
+        "description" : "Show Bookmarks Sidebar",
+        "keys" : "cmd+1",
+        "platform" : "macos"
+      }
+    },
+    "show_downloads_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show downloads",
+        "view show downloads"
+      ],
+      "label" : "show_downloads",
+      "shortcut" : {
+        "description" : "Show Downloads",
+        "keys" : "cmd+l",
+        "platform" : "macos"
+      }
+    },
+    "show_favorites_bar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show favorites bar",
+        "view show favorites bar"
+      ],
+      "label" : "show_favorites_bar",
+      "shortcut" : {
+        "description" : "Show Favorites Bar",
+        "keys" : "cmd+b",
+        "platform" : "macos"
+      }
+    },
+    "show_javascript_console_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show javascript console",
+        "develop show javascript console"
+      ],
+      "label" : "show_javascript_console",
+      "shortcut" : {
+        "description" : "Show JavaScript Console",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "show_next_tab_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show next tab",
+        "window show next tab"
+      ],
+      "label" : "show_next_tab",
+      "shortcut" : {
+        "description" : "Show Next Tab",
+        "keys" : "cmd+\t",
+        "platform" : "macos"
+      }
+    },
+    "show_page_resources_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show page resources",
+        "develop show page resources"
+      ],
+      "label" : "show_page_resources",
+      "shortcut" : {
+        "description" : "Show Page Resources",
+        "keys" : "cmd+a",
+        "platform" : "macos"
+      }
+    },
+    "show_page_source_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show page source",
+        "develop show page source"
+      ],
+      "label" : "show_page_source",
+      "shortcut" : {
+        "description" : "Show Page Source",
+        "keys" : "cmd+u",
+        "platform" : "macos"
+      }
+    },
+    "show_previous_tab_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show previous tab",
+        "window show previous tab"
+      ],
+      "label" : "show_previous_tab",
+      "shortcut" : {
+        "description" : "Show Previous Tab",
+        "keys" : "cmd+\t",
+        "platform" : "macos"
+      }
+    },
+    "show_reading_list_sidebar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show reading list sidebar",
+        "view show reading list sidebar"
+      ],
+      "label" : "show_reading_list_sidebar",
+      "shortcut" : {
+        "description" : "Show Reading List Sidebar",
+        "keys" : "cmd+2",
+        "platform" : "macos"
+      }
+    },
+    "show_sidebar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show sidebar",
+        "view show sidebar"
+      ],
+      "label" : "show_sidebar",
+      "shortcut" : {
+        "description" : "Show Sidebar",
+        "keys" : "cmd+l",
+        "platform" : "macos"
+      }
+    },
+    "show_spelling_and_grammar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show spelling and grammar",
+        "spelling and grammar show spelling and grammar"
+      ],
+      "label" : "show_spelling_and_grammar",
+      "shortcut" : {
+        "description" : "Show Spelling and Grammar",
+        "keys" : "cmd+:",
+        "platform" : "macos"
+      }
+    },
+    "show_status_bar_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show status bar",
+        "view show status bar"
+      ],
+      "label" : "show_status_bar",
+      "shortcut" : {
+        "description" : "Show Status Bar",
+        "keys" : "cmd+\/",
+        "platform" : "macos"
+      }
+    },
+    "show_tab_overview_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show tab overview",
+        "view show tab overview"
+      ],
+      "label" : "show_tab_overview",
+      "shortcut" : {
+        "description" : "Show Tab Overview",
+        "keys" : "cmd+\\",
+        "platform" : "macos"
+      }
+    },
+    "show_web_inspector_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "show web inspector",
+        "develop show web inspector"
+      ],
+      "label" : "show_web_inspector",
+      "shortcut" : {
+        "description" : "Show Web Inspector",
+        "keys" : "cmd+i",
+        "platform" : "macos"
+      }
+    },
+    "start_dictation_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "start dictation…",
+        "edit start dictation…"
+      ],
+      "label" : "start_dictation",
+      "shortcut" : {
+        "description" : "Start Dictation…",
+        "keys" : "cmd+🎤",
+        "platform" : "macos"
+      }
+    },
+    "start_element_selection_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "start element selection",
+        "develop start element selection"
+      ],
+      "label" : "start_element_selection",
+      "shortcut" : {
+        "description" : "Start Element Selection",
+        "keys" : "cmd+c",
+        "platform" : "macos"
+      }
+    },
+    "start_timeline_recording_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "start timeline recording",
+        "develop start timeline recording"
+      ],
+      "label" : "start_timeline_recording",
+      "shortcut" : {
+        "description" : "Start Timeline Recording",
+        "keys" : "cmd+t",
+        "platform" : "macos"
+      }
+    },
+    "stop_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "stop",
+        "view stop"
+      ],
+      "label" : "stop",
+      "shortcut" : {
+        "description" : "Stop",
+        "keys" : "cmd+.",
+        "platform" : "macos"
+      }
+    },
+    "undo_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "undo",
+        "edit undo"
+      ],
+      "label" : "undo",
+      "shortcut" : {
+        "description" : "Undo",
+        "keys" : "cmd+z",
+        "platform" : "macos"
+      }
+    },
+    "use_selection_for_find_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "use selection for find",
+        "find use selection for find"
+      ],
+      "label" : "use_selection_for_find",
+      "shortcut" : {
+        "description" : "Use Selection for Find",
+        "keys" : "cmd+e",
+        "platform" : "macos"
+      }
+    },
+    "walletwallet_—_create_apple_passes_for_free_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "walletwallet — create apple passes for free",
+        "favorites walletwallet — create apple passes for free"
+      ],
+      "label" : "walletwallet_—_create_apple_passes_for_free",
+      "shortcut" : {
+        "description" : "WalletWallet — Create Apple Passes for Free",
+        "keys" : "cmd+9",
+        "platform" : "macos"
+      }
+    },
+    "zoom_in_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "zoom in",
+        "view zoom in"
+      ],
+      "label" : "zoom_in",
+      "shortcut" : {
+        "description" : "Zoom In",
+        "keys" : "cmd++",
+        "platform" : "macos"
+      }
+    },
+    "zoom_out_shortcut" : {
+      "action" : "shortcut",
+      "aliases" : [
+        "zoom out",
+        "view zoom out"
+      ],
+      "label" : "zoom_out",
+      "shortcut" : {
+        "description" : "Zoom Out",
+        "keys" : "cmd+-",
+        "platform" : "macos"
+      }
+    }
+  },
+  "shortcuts" : {
+    "actual_size" : {
+      "description" : "Actual Size",
+      "keys" : "cmd+0",
+      "platform" : "macos"
+    },
+    "add_bookmark" : {
+      "description" : "Add Bookmark…",
+      "keys" : "cmd+d",
+      "platform" : "macos"
+    },
+    "add_to_reading_list" : {
+      "description" : "Add to Reading List",
+      "keys" : "cmd+d",
+      "platform" : "macos"
+    },
+    "annasarchive" : {
+      "description" : "AnnasArchive",
+      "keys" : "cmd+3",
+      "platform" : "macos"
+    },
+    "autofill_form" : {
+      "description" : "AutoFill Form",
+      "keys" : "cmd+a",
+      "platform" : "macos"
+    },
+    "back" : {
+      "description" : "Back",
+      "keys" : "cmd+[",
+      "platform" : "macos"
+    },
+    "bookmark" : {
+      "description" : "Bookmark",
+      "keys" : "cmd+1",
+      "platform" : "macos"
+    },
+    "center" : {
+      "description" : "Center",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "check_document_now" : {
+      "description" : "Check Document Now",
+      "keys" : "cmd+;",
+      "platform" : "macos"
+    },
+    "close_all_windows" : {
+      "description" : "Close All Windows",
+      "keys" : "cmd+w",
+      "platform" : "macos"
+    },
+    "close_window" : {
+      "description" : "Close Window",
+      "keys" : "cmd+w",
+      "platform" : "macos"
+    },
+    "connect_web_inspector" : {
+      "description" : "Connect Web Inspector",
+      "keys" : "cmd+i",
+      "platform" : "macos"
+    },
+    "copy" : {
+      "description" : "Copy",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "copy_search_terms" : {
+      "description" : "Copy Search Terms",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "cut" : {
+      "description" : "Cut",
+      "keys" : "cmd+x",
+      "platform" : "macos"
+    },
+    "delete_tab_group" : {
+      "description" : "Delete Tab Group",
+      "keys" : "cmd+w",
+      "platform" : "macos"
+    },
+    "edit_bookmarks" : {
+      "description" : "Edit Bookmarks",
+      "keys" : "cmd+b",
+      "platform" : "macos"
+    },
+    "emoji_&_symbols" : {
+      "description" : "Emoji & Symbols",
+      "keys" : "cmd+🌐",
+      "platform" : "macos"
+    },
+    "empty_caches" : {
+      "description" : "Empty Caches",
+      "keys" : "cmd+e",
+      "platform" : "macos"
+    },
+    "enter_full_screen" : {
+      "description" : "Enter Full Screen",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "enter_responsive_design_mode" : {
+      "description" : "Enter Responsive Design Mode",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "enter_video_viewer" : {
+      "description" : "Enter Video Viewer",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "fill" : {
+      "description" : "Fill",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "find" : {
+      "description" : "Find…",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "find_next" : {
+      "description" : "Find Next",
+      "keys" : "cmd+g",
+      "platform" : "macos"
+    },
+    "find_previous" : {
+      "description" : "Find Previous",
+      "keys" : "cmd+g",
+      "platform" : "macos"
+    },
+    "force_quit" : {
+      "description" : "Force Quit…",
+      "keys" : "cmd+⎋",
+      "platform" : "macos"
+    },
+    "force_quit_safari" : {
+      "description" : "Force Quit Safari",
+      "keys" : "cmd+⎋",
+      "platform" : "macos"
+    },
+    "forward" : {
+      "description" : "Forward",
+      "keys" : "cmd+]",
+      "platform" : "macos"
+    },
+    "go_to_next_tab_group" : {
+      "description" : "Go to Next Tab Group",
+      "keys" : "cmd+",
+      "platform" : "macos"
+    },
+    "go_to_previous_tab_group" : {
+      "description" : "Go to Previous Tab Group",
+      "keys" : "cmd+",
+      "platform" : "macos"
+    },
+    "google_search" : {
+      "description" : "Google Search…",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "hide_find_banner" : {
+      "description" : "Hide Find Banner",
+      "keys" : "cmd+f",
+      "platform" : "macos"
+    },
+    "hide_others" : {
+      "description" : "Hide Others",
+      "keys" : "cmd+h",
+      "platform" : "macos"
+    },
+    "hide_safari" : {
+      "description" : "Hide Safari",
+      "keys" : "cmd+h",
+      "platform" : "macos"
+    },
+    "home" : {
+      "description" : "Home",
+      "keys" : "cmd+h",
+      "platform" : "macos"
+    },
+    "homebridge" : {
+      "description" : "Homebridge",
+      "keys" : "cmd+2",
+      "platform" : "macos"
+    },
+    "jump_to_selection" : {
+      "description" : "Jump to Selection",
+      "keys" : "cmd+j",
+      "platform" : "macos"
+    },
+    "lock_screen" : {
+      "description" : "Lock Screen",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "log_out_will_wade" : {
+      "description" : "Log Out Will Wade…",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "make_text_bigger" : {
+      "description" : "Make Text Bigger",
+      "keys" : "cmd++",
+      "platform" : "macos"
+    },
+    "make_text_smaller" : {
+      "description" : "Make Text Smaller",
+      "keys" : "cmd+-",
+      "platform" : "macos"
+    },
+    "minimize" : {
+      "description" : "Minimize",
+      "keys" : "cmd+m",
+      "platform" : "macos"
+    },
+    "minimize_all" : {
+      "description" : "Minimize All",
+      "keys" : "cmd+m",
+      "platform" : "macos"
+    },
+    "new_empty_tab_group" : {
+      "description" : "New Empty Tab Group",
+      "keys" : "cmd+n",
+      "platform" : "macos"
+    },
+    "new_private_window" : {
+      "description" : "New Private Window",
+      "keys" : "cmd+n",
+      "platform" : "macos"
+    },
+    "new_tab" : {
+      "description" : "New Tab",
+      "keys" : "cmd+t",
+      "platform" : "macos"
+    },
+    "new_tab_at_end" : {
+      "description" : "New Tab at End",
+      "keys" : "cmd+t",
+      "platform" : "macos"
+    },
+    "new_window" : {
+      "description" : "New Window",
+      "keys" : "cmd+n",
+      "platform" : "macos"
+    },
+    "open_file" : {
+      "description" : "Open File…",
+      "keys" : "cmd+o",
+      "platform" : "macos"
+    },
+    "open_location" : {
+      "description" : "Open Location…",
+      "keys" : "cmd+l",
+      "platform" : "macos"
+    },
+    "paste" : {
+      "description" : "Paste",
+      "keys" : "cmd+v",
+      "platform" : "macos"
+    },
+    "paste_and_match_style" : {
+      "description" : "Paste and Match Style",
+      "keys" : "cmd+v",
+      "platform" : "macos"
+    },
+    "pi_jellyfin" : {
+      "description" : "pi - Jellyfin",
+      "keys" : "cmd+8",
+      "platform" : "macos"
+    },
+    "pi_qbittorrent" : {
+      "description" : "pi - qBittorrent",
+      "keys" : "cmd+7",
+      "platform" : "macos"
+    },
+    "pi_radarr" : {
+      "description" : "pi - Radarr",
+      "keys" : "cmd+6",
+      "platform" : "macos"
+    },
+    "pi_sonarr" : {
+      "description" : "pi - Sonarr",
+      "keys" : "cmd+5",
+      "platform" : "macos"
+    },
+    "print" : {
+      "description" : "Print…",
+      "keys" : "cmd+p",
+      "platform" : "macos"
+    },
+    "quit_and_keep_windows" : {
+      "description" : "Quit and Keep Windows",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "quit_safari" : {
+      "description" : "Quit Safari",
+      "keys" : "cmd+q",
+      "platform" : "macos"
+    },
+    "redo" : {
+      "description" : "Redo",
+      "keys" : "cmd+z",
+      "platform" : "macos"
+    },
+    "reload_page" : {
+      "description" : "Reload Page",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "reload_page_from_origin" : {
+      "description" : "Reload Page From Origin",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "remote_desktop_web_client" : {
+      "description" : "Remote Desktop Web Client",
+      "keys" : "cmd+4",
+      "platform" : "macos"
+    },
+    "reopen_last_closed_tab" : {
+      "description" : "Reopen Last Closed Tab",
+      "keys" : "cmd+t",
+      "platform" : "macos"
+    },
+    "return_to_previous_size" : {
+      "description" : "Return to Previous Size",
+      "keys" : "cmd+r",
+      "platform" : "macos"
+    },
+    "return_to_search_results" : {
+      "description" : "Return to Search Results",
+      "keys" : "cmd+s",
+      "platform" : "macos"
+    },
+    "save_as" : {
+      "description" : "Save As…",
+      "keys" : "cmd+s",
+      "platform" : "macos"
+    },
+    "select_all" : {
+      "description" : "Select All",
+      "keys" : "cmd+a",
+      "platform" : "macos"
+    },
+    "settings" : {
+      "description" : "Settings…",
+      "keys" : "cmd+,",
+      "platform" : "macos"
+    },
+    "show_all_history" : {
+      "description" : "Show All History",
+      "keys" : "cmd+y",
+      "platform" : "macos"
+    },
+    "show_bookmarks_sidebar" : {
+      "description" : "Show Bookmarks Sidebar",
+      "keys" : "cmd+1",
+      "platform" : "macos"
+    },
+    "show_downloads" : {
+      "description" : "Show Downloads",
+      "keys" : "cmd+l",
+      "platform" : "macos"
+    },
+    "show_favorites_bar" : {
+      "description" : "Show Favorites Bar",
+      "keys" : "cmd+b",
+      "platform" : "macos"
+    },
+    "show_javascript_console" : {
+      "description" : "Show JavaScript Console",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "show_next_tab" : {
+      "description" : "Show Next Tab",
+      "keys" : "cmd+\t",
+      "platform" : "macos"
+    },
+    "show_page_resources" : {
+      "description" : "Show Page Resources",
+      "keys" : "cmd+a",
+      "platform" : "macos"
+    },
+    "show_page_source" : {
+      "description" : "Show Page Source",
+      "keys" : "cmd+u",
+      "platform" : "macos"
+    },
+    "show_previous_tab" : {
+      "description" : "Show Previous Tab",
+      "keys" : "cmd+\t",
+      "platform" : "macos"
+    },
+    "show_reading_list_sidebar" : {
+      "description" : "Show Reading List Sidebar",
+      "keys" : "cmd+2",
+      "platform" : "macos"
+    },
+    "show_sidebar" : {
+      "description" : "Show Sidebar",
+      "keys" : "cmd+l",
+      "platform" : "macos"
+    },
+    "show_spelling_and_grammar" : {
+      "description" : "Show Spelling and Grammar",
+      "keys" : "cmd+:",
+      "platform" : "macos"
+    },
+    "show_status_bar" : {
+      "description" : "Show Status Bar",
+      "keys" : "cmd+\/",
+      "platform" : "macos"
+    },
+    "show_tab_overview" : {
+      "description" : "Show Tab Overview",
+      "keys" : "cmd+\\",
+      "platform" : "macos"
+    },
+    "show_web_inspector" : {
+      "description" : "Show Web Inspector",
+      "keys" : "cmd+i",
+      "platform" : "macos"
+    },
+    "start_dictation" : {
+      "description" : "Start Dictation…",
+      "keys" : "cmd+🎤",
+      "platform" : "macos"
+    },
+    "start_element_selection" : {
+      "description" : "Start Element Selection",
+      "keys" : "cmd+c",
+      "platform" : "macos"
+    },
+    "start_timeline_recording" : {
+      "description" : "Start Timeline Recording",
+      "keys" : "cmd+t",
+      "platform" : "macos"
+    },
+    "stop" : {
+      "description" : "Stop",
+      "keys" : "cmd+.",
+      "platform" : "macos"
+    },
+    "undo" : {
+      "description" : "Undo",
+      "keys" : "cmd+z",
+      "platform" : "macos"
+    },
+    "use_selection_for_find" : {
+      "description" : "Use Selection for Find",
+      "keys" : "cmd+e",
+      "platform" : "macos"
+    },
+    "walletwallet_—_create_apple_passes_for_free" : {
+      "description" : "WalletWallet — Create Apple Passes for Free",
+      "keys" : "cmd+9",
+      "platform" : "macos"
+    },
+    "zoom_in" : {
+      "description" : "Zoom In",
+      "keys" : "cmd++",
+      "platform" : "macos"
+    },
+    "zoom_out" : {
+      "description" : "Zoom Out",
+      "keys" : "cmd+-",
+      "platform" : "macos"
+    }
+  },
+  "type" : "semantic"
+}

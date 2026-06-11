@@ -1,0 +1,616 @@
+{
+  "view_previous_image": {
+    "keys": "ctrl+right",
+    "description": "View Previous Image"
+  },
+  "view_next_image": {
+    "keys": "ctrl+left",
+    "description": "View Next Image"
+  },
+  "edge_selection_mode": {
+    "keys": "f10",
+    "description": "Edge Selection Mode"
+  },
+  "rendering_menu_set": {
+    "keys": "f6",
+    "description": "Rendering menu set"
+  },
+  "walk_right_in_current": {
+    "keys": "right",
+    "description": "Walk Right in Current"
+  },
+  "move_right_1_pixel": {
+    "keys": "alt+right",
+    "description": "Move Right 1 Pixel"
+  },
+  "invert_selection": {
+    "keys": "ctrl+shift+i",
+    "description": "Invert Selection",
+    "keys_macos": "ctrl+shift+i / cmd+shift+i"
+  },
+  "vertex_selection_mode": {
+    "keys": "f9",
+    "description": "Vertex Selection Mode"
+  },
+  "select_tool_polygon_menu": {
+    "keys": "alt+q+lmb",
+    "description": "Select-Tool Polygon Menu"
+  },
+  "frame_selected_in_all_views": {
+    "keys": "shift+f",
+    "description": "Frame Selected in All Views"
+  },
+  "repeat_last": {
+    "keys": "g",
+    "description": "Repeat Last"
+  },
+  "move_tool": {
+    "keys": "w",
+    "description": "Move Tool"
+  },
+  "parent": {
+    "keys": "p",
+    "description": "Parent"
+  },
+  "select_next_intermediate_object": {
+    "keys": "ctrl+i",
+    "description": "Select Next Intermediate Object"
+  },
+  "toggle_multicolor_feedback": {
+    "keys": "alt+j",
+    "description": "Toggle Multicolor Feedback"
+  },
+  "walk_up_current": {
+    "keys": "up",
+    "description": "Walk Up Current"
+  },
+  "toggle_main_menu_bar": {
+    "keys": "ctrl+m",
+    "description": "Toggle Main Menu Bar"
+  },
+  "set_key_for_scale": {
+    "keys": "shift+r",
+    "description": "Set Key for Scale"
+  },
+  "complete_current_tool": {
+    "keys": "enter",
+    "description": "Complete Current Tool"
+  },
+  "hold_snap_to_curves": {
+    "keys": "c",
+    "description": "(HOLD) Snap to Curves"
+  },
+  "hold_relative_snap_current_tool": {
+    "keys": "shift+j",
+    "description": "(HOLD) Relative-Snap Current Tool"
+  },
+  "toggle_playback_on_off": {
+    "keys": "alt+v",
+    "description": "Toggle Playback On/Off"
+  },
+  "show_selection": {
+    "keys": "shift+h",
+    "description": "Show Selection"
+  },
+  "timeline_next_frame": {
+    "keys": "alt+.",
+    "description": "Timeline: Next Frame"
+  },
+  "scale_tool_marking_menu": {
+    "keys": "r+lmb",
+    "description": "Scale Tool Marking Menu"
+  },
+  "dolly_tool": {
+    "keys": "alt+rmb",
+    "description": "Dolly Tool"
+  },
+  "set_anim_key": {
+    "keys": "s",
+    "description": "Set Anim Key"
+  },
+  "unparent": {
+    "keys": "shift+p",
+    "description": "Unparent"
+  },
+  "polygons_menu_set": {
+    "keys": "f3",
+    "description": "Polygons menu set"
+  },
+  "toggle_panel_menu_bar": {
+    "keys": "shift+m",
+    "description": "Toggle Panel Menu Bar"
+  },
+  "group_selection": {
+    "keys": "ctrl+g",
+    "description": "Group Selection"
+  },
+  "history_operations_marking_menu": {
+    "keys": "a+lmb",
+    "description": "History Operations marking menu"
+  },
+  "move_tool_marking_menu": {
+    "keys": "w+lmb",
+    "description": "Move Tool Marking Menu"
+  },
+  "manipulator_tool": {
+    "keys": "t",
+    "description": "Manipulator Tool"
+  },
+  "virtual_time_slider_mode": {
+    "keys": "k+mmb",
+    "description": "Virtual Time Slider mode"
+  },
+  "create_file_reference": {
+    "keys": "ctrl+r",
+    "description": "Create File Reference"
+  },
+  "animation_menu_set": {
+    "keys": "f2",
+    "description": "Animation menu set"
+  },
+  "isolate_view_selected": {
+    "keys": "shift+l",
+    "description": "Isolate View Selected"
+  },
+  "scale_tool": {
+    "keys": "r",
+    "description": "Scale Tool"
+  },
+  "assign_new_material": {
+    "keys": "shift+t",
+    "description": "Assign New Material"
+  },
+  "select_tool_component_menu": {
+    "keys": "shift+q+lmb",
+    "description": "Select-Tool Component Menu"
+  },
+  "obj_comp_selection_mode": {
+    "keys": "f8",
+    "description": "Obj/Comp Selection Mode"
+  },
+  "frame_all_in_all_views": {
+    "keys": "shift+a",
+    "description": "Frame All in All Views"
+  },
+  "keyframe_marking_menu": {
+    "keys": "shift+s+lmb",
+    "description": "Keyframe Marking Menu"
+  },
+  "open_scene": {
+    "keys": "ctrl+o",
+    "description": "Open Scene",
+    "keys_macos": "ctrl+o / cmd+o"
+  },
+  "vertex_face_selection_mode": {
+    "keys": "alt+f9",
+    "description": "Vertex Face Selection Mode"
+  },
+  "decrease_manipulator_size": {
+    "keys": "-",
+    "description": "Decrease manipulator size"
+  },
+  "zoom": {
+    "keys": "scroll",
+    "description": "Zoom"
+  },
+  "move_down_1_pixel": {
+    "keys": "alt+down",
+    "description": "Move Down 1 Pixel"
+  },
+  "set_key_for_rotate": {
+    "keys": "shift+e",
+    "description": "Set Key for Rotate"
+  },
+  "walk_down_current": {
+    "keys": "down",
+    "description": "Walk Down Current"
+  },
+  "select_tool": {
+    "keys": "q",
+    "description": "Select-Tool"
+  },
+  "save_scene_as": {
+    "keys": "shift+s",
+    "description": "Save Scene As"
+  },
+  "shade_use_all_lights": {
+    "keys": "7",
+    "description": "Shade Use All Lights"
+  },
+  "rotate_tool": {
+    "keys": "e",
+    "description": "Rotate Tool"
+  },
+  "hide_unselected_objects": {
+    "keys": "alt+h",
+    "description": "Hide Unselected Objects"
+  },
+  "channel_box_attrib_editor": {
+    "keys": "ctrl+a",
+    "description": "Channel Box / Attrib Editor"
+  },
+  "timeline_go_to_next_key": {
+    "keys": ".",
+    "description": "Timeline: Go to Next Key"
+  },
+  "walk_left_in_current": {
+    "keys": "left",
+    "description": "Walk Left in Current"
+  },
+  "medium_display_quality": {
+    "keys": "2",
+    "description": "Medium Display Quality"
+  },
+  "cut": {
+    "keys": "ctrl+x",
+    "description": "Cut",
+    "keys_macos": "ctrl+x / cmd+x"
+  },
+  "go_to_min_frame": {
+    "keys": "alt+shift+v",
+    "description": "Go to Min Frame"
+  },
+  "track_tool": {
+    "keys": "alt+mmb",
+    "description": "Track Tool"
+  },
+  "move_left_1_pixel": {
+    "keys": "alt+left",
+    "description": "Move Left 1 Pixel"
+  },
+  "save_scene": {
+    "keys": "ctrl+s",
+    "description": "Save Scene",
+    "keys_macos": "ctrl+s / cmd+s"
+  },
+  "duplicate": {
+    "keys": "ctrl+d",
+    "description": "Duplicate"
+  },
+  "undo": {
+    "keys": "z",
+    "description": "Undo"
+  },
+  "import": {
+    "keys": "ctrl+i",
+    "description": "Import",
+    "keys_macos": "ctrl+i / cmd+i"
+  },
+  "face_selection_mode": {
+    "keys": "f11",
+    "description": "Face Selection Mode"
+  },
+  "maya_help": {
+    "keys": "f1",
+    "description": "Maya Help"
+  },
+  "hold_snap_to_grids": {
+    "keys": "x",
+    "description": "(HOLD) Snap to Grids"
+  },
+  "tangent_marking_menu": {
+    "keys": "shift+s+mmb",
+    "description": "Tangent Marking Menu"
+  },
+  "rough_display_quality": {
+    "keys": "1",
+    "description": "Rough Display Quality"
+  },
+  "toggle_fullscreen_view": {
+    "keys": "ctrl+space",
+    "description": "Toggle FullScreen View"
+  },
+  "hide_selection": {
+    "keys": "ctrl+h",
+    "description": "Hide Selection"
+  },
+  "increment_and_save": {
+    "keys": "cmd+alt+s",
+    "description": "Increment And Save"
+  },
+  "smooth_display_quality": {
+    "keys": "3",
+    "description": "Smooth Display Quality"
+  },
+  "show_hide_panel_toolbar": {
+    "keys": "m",
+    "description": "Show/Hide Panel Toolbar"
+  },
+  "rotate_tool_marking_menu": {
+    "keys": "e+lmb",
+    "description": "Rotate Tool Marking Menu"
+  },
+  "exit_maya": {
+    "keys": "ctrl+q",
+    "description": "Exit Maya",
+    "keys_macos": "ctrl+q / cmd+q"
+  },
+  "hold_pivot_move_mode": {
+    "keys": "d",
+    "description": "(HOLD) Pivot Move Mode"
+  },
+  "move_up_1_pixel": {
+    "keys": "alt+up",
+    "description": "Move Up 1 Pixel"
+  },
+  "repeat_last_command_at_mouse_pos": {
+    "keys": "shift+g",
+    "description": "Repeat Last Command at Mouse Pos"
+  },
+  "default_display_quality": {
+    "keys": "0",
+    "description": "Default Display Quality"
+  },
+  "set_key_for_translate": {
+    "keys": "shift+w",
+    "description": "Set Key for Translate"
+  },
+  "tumble_tool": {
+    "keys": "alt+lmb",
+    "description": "Tumble Tool"
+  },
+  "redo": {
+    "keys": "shift+z",
+    "description": "Redo"
+  },
+  "grow_selection": {
+    "keys": "shift+.",
+    "description": "Grow Selection"
+  },
+  "duplicate_with_transform": {
+    "keys": "shift+d",
+    "description": "Duplicate with Transform"
+  },
+  "new_scene": {
+    "keys": "ctrl+n",
+    "description": "New Scene",
+    "keys_macos": "ctrl+n / cmd+n"
+  },
+  "shrink_selection": {
+    "keys": "shift+,",
+    "description": "Shrink Selection"
+  },
+  "select_all": {
+    "keys": "ctrl+shift+a",
+    "description": "Select All",
+    "keys_macos": "ctrl+shift+a / cmd+shift+a"
+  },
+  "shaded_display": {
+    "keys": "5",
+    "description": "Shaded Display"
+  },
+  "menu_set_marking_menu": {
+    "keys": "h+lmb",
+    "description": "Menu Set Marking Menu"
+  },
+  "uv_selection_mode": {
+    "keys": "f12",
+    "description": "UV Selection Mode"
+  },
+  "hold_snap_current_tool": {
+    "keys": "j",
+    "description": "(HOLD) Snap Current Tool"
+  },
+  "frame_selected_in_active_panel": {
+    "keys": "f",
+    "description": "Frame Selected in Active Panel"
+  },
+  "increase_manipulator_size": {
+    "keys": "= or+",
+    "description": "Increase manipulator size"
+  },
+  "show_last_hidden": {
+    "keys": "ctrl+shift+h",
+    "description": "Show Last Hidden"
+  },
+  "switch_background_color": {
+    "keys": "alt+b",
+    "description": "Switch Background Color"
+  },
+  "copy": {
+    "keys": "ctrl+c",
+    "description": "Copy",
+    "keys_macos": "ctrl+c / cmd+c"
+  },
+  "paste": {
+    "keys": "ctrl+v",
+    "description": "Paste",
+    "keys_macos": "ctrl+v / cmd+v"
+  },
+  "insert_anim_keys_tool": {
+    "keys": "i",
+    "description": "Insert Anim Keys Tool"
+  },
+  "universal_manipulator_tool": {
+    "keys": "ctrl+t",
+    "description": "Universal Manipulator Tool"
+  },
+  "hold_snap_to_points": {
+    "keys": "v",
+    "description": "(HOLD) Snap to Points"
+  },
+  "select_tool_mask_menu": {
+    "keys": "q+lmb",
+    "description": "Select-Tool Mask Menu"
+  },
+  "wireframe_shading": {
+    "keys": "4",
+    "description": "Wireframe Shading"
+  },
+  "hold_show_hotbox": {
+    "keys": "space",
+    "description": "(HOLD) Show Hotbox"
+  },
+  "timeline_go_to_prev_key": {
+    "keys": ",",
+    "description": "Timeline: Go to Prev Key"
+  },
+  "duplicate_special": {
+    "keys": "ctrl+shift+d",
+    "description": "Duplicate Special"
+  },
+  "shaded_and_textured_display": {
+    "keys": "6",
+    "description": "Shaded and Textured Display"
+  },
+  "default_hotbox_style": {
+    "keys": "alt+m",
+    "description": "Default Hotbox Style"
+  },
+  "last_used_tool": {
+    "keys": "y",
+    "description": "Last Used Tool"
+  },
+  "modeling_menu_set": {
+    "keys": "f4",
+    "description": "Modeling menu set"
+  },
+  "frame_all_in_active_panel": {
+    "keys": "a",
+    "description": "Frame All in Active Panel"
+  },
+  "enter_tool_edit_mode": {
+    "keys": "insert",
+    "description": "Enter Tool Edit mode"
+  },
+  "dynamics_menu_set": {
+    "keys": "f5",
+    "description": "Dynamics menu set"
+  },
+  "timeline_prev_frame": {
+    "keys": "alt+,",
+    "description": "Timeline: Prev Frame"
+  },
+  "cage_smooth_polygon_mesh_display": {
+    "keys": "2",
+    "description": "Cage + Smooth Polygon Mesh Display"
+  },
+  "select_refine_subdiv_surface_component": {
+    "keys": "ctrl+i",
+    "description": "Select/refine subdiv surface component"
+  },
+  "smooth_polygon_mesh_display": {
+    "keys": "3",
+    "description": "Smooth Polygon Mesh Display"
+  },
+  "display_original_and_smooth_mesh": {
+    "keys": "~",
+    "description": "Display Original and Smooth Mesh"
+  },
+  "convert_nurbs_poly_menu": {
+    "keys": "alt+shift+~",
+    "description": "Convert NURBS/Poly Menu"
+  },
+  "convert_selection_to_edges": {
+    "keys": "ctrl+f10",
+    "description": "Convert Selection to Edges"
+  },
+  "subdiv_proxy": {
+    "keys": "ctrl+shift+`",
+    "description": "Subdiv Proxy >"
+  },
+  "toggle_original_smooth_mesh": {
+    "keys": "`",
+    "description": "Toggle Original/Smooth Mesh"
+  },
+  "subdiv_proxy_mode_modeling_operations": {
+    "keys": "ctrl+`",
+    "description": "Subdiv Proxy"
+  },
+  "default_polygon_mesh_display": {
+    "keys": "1",
+    "description": "Default Polygon Mesh Display"
+  },
+  "covert_selection_to_faces": {
+    "keys": "ctrl+f11",
+    "description": "Covert Selection to Faces"
+  },
+  "increase_division_levels": {
+    "keys": "pageup",
+    "description": "Increase Division Levels"
+  },
+  "decrease_division_levels": {
+    "keys": "pagedown",
+    "description": "Decrease Division Levels"
+  },
+  "covert_selection_to_uvs": {
+    "keys": "ctrl+f12",
+    "description": "Covert Selection to UVs"
+  },
+  "lock_unlock_length_of_curve": {
+    "keys": "l",
+    "description": "Lock/Unlock Length of Curve"
+  },
+  "convert_selection_to_vertices": {
+    "keys": "ctrl+f9",
+    "description": "Convert Selection to Vertices"
+  },
+  "display_coarser_subdiv_level": {
+    "keys": "ctrl+h",
+    "description": "Display Coarser Subdiv Level"
+  },
+  "convert_nurbs_poly_to_subdiv": {
+    "keys": "alt+`",
+    "description": "Convert NURBS/Poly to Subdiv"
+  },
+  "toggle_move_pivot_object": {
+    "keys": "insert",
+    "description": "Toggle Move Pivot/Object"
+  },
+  "hold_modify_upper_brush_radius": {
+    "keys": "b",
+    "description": "(HOLD) Modify Upper Brush Radius"
+  },
+  "turn_color_feedback_on_or_off": {
+    "keys": "alt+c",
+    "description": "Turn Color Feedback on or off"
+  },
+  "poly_brush_tool_marking_menu": {
+    "keys": "o+lmb",
+    "description": "Poly Brush Tool marking menu"
+  },
+  "open_paint_effects_panel": {
+    "keys": "8",
+    "description": "Open Paint Effects panel"
+  },
+  "artisan_paint_marking_menu": {
+    "keys": "u+lmb",
+    "description": "Artisan Paint Marking Menu"
+  },
+  "modify_paint_value": {
+    "keys": "n",
+    "description": "Modify paint value"
+  },
+  "toggle_reflection_on_or_off": {
+    "keys": "alt+r",
+    "description": "Toggle Reflection on or off"
+  },
+  "turn_show_wireframe_on_or_off": {
+    "keys": "alt+a",
+    "description": "Turn Show Wireframe on or off"
+  },
+  "edit_paint_effects_brush_settings": {
+    "keys": "ctrl+b",
+    "description": "Edit Paint Effects Brush Settings"
+  },
+  "hold_modify_lower_brush_radius": {
+    "keys": "shift+b",
+    "description": "(HOLD) Modify Lower Brush Radius"
+  },
+  "modify_maximum_displacement": {
+    "keys": "m",
+    "description": "Modify maximum displacement"
+  },
+  "poly_uv_tool_marking_menu": {
+    "keys": "o+mmb",
+    "description": "Poly UV Tool marking menu"
+  },
+  "flood_with_the_current_value": {
+    "keys": "alt+f",
+    "description": "Flood with the current value"
+  },
+  "switch_to_pick_color_mode": {
+    "keys": "/",
+    "description": "Switch to pick color mode"
+  }
+}

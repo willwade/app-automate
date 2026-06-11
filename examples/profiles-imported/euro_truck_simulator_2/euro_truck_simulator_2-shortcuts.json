@@ -1,0 +1,258 @@
+{
+  "throttle": {
+    "keys": "up",
+    "description": "Throttle"
+  },
+  "throttle_truck_controls": {
+    "keys": "w",
+    "description": "Throttle "
+  },
+  "brake_reverse": {
+    "keys": "down",
+    "description": "Brake / Reverse"
+  },
+  "brake_reverse_truck_controls": {
+    "keys": "s",
+    "description": "Brake / Reverse "
+  },
+  "steering_left": {
+    "keys": "left",
+    "description": "Steering Left"
+  },
+  "steering_left_truck_controls": {
+    "keys": "a",
+    "description": "Steering Left "
+  },
+  "steering_right": {
+    "keys": "right",
+    "description": "Steering Right"
+  },
+  "steering_right_truck_controls": {
+    "keys": "d",
+    "description": "Steering Right "
+  },
+  "shift_up": {
+    "keys": "shift",
+    "description": "Shift Up"
+  },
+  "shift_down": {
+    "keys": "ctrl",
+    "description": "Shift Down"
+  },
+  "start_stop_engine": {
+    "keys": "e",
+    "description": "Start/Stop Engine"
+  },
+  "parking_brake": {
+    "keys": "space",
+    "description": "Parking Brake"
+  },
+  "exhaust_brake": {
+    "keys": "b",
+    "description": "Exhaust Brake"
+  },
+  "retarder_increase": {
+    "keys": ";",
+    "description": "Retarder Increase"
+  },
+  "retarder_decrease": {
+    "keys": "'",
+    "description": "Retarder Decrease"
+  },
+  "lift_drop_axle": {
+    "keys": "u",
+    "description": "Lift/Drop Axle"
+  },
+  "hazard_warning": {
+    "keys": "f",
+    "description": "Hazard Warning"
+  },
+  "light_modes": {
+    "keys": "l",
+    "description": "Light Modes"
+  },
+  "high_beam_headlights": {
+    "keys": "k",
+    "description": "High Beam Headlights"
+  },
+  "beacon": {
+    "keys": "o",
+    "description": "Beacon"
+  },
+  "horn": {
+    "keys": "h",
+    "description": "Horn"
+  },
+  "air_horn": {
+    "keys": "n",
+    "description": "Air Horn"
+  },
+  "light_horn": {
+    "keys": "j",
+    "description": "Light Horn"
+  },
+  "wipers": {
+    "keys": "p",
+    "description": "Wipers"
+  },
+  "cruise_control": {
+    "keys": "c",
+    "description": "Cruise Control"
+  },
+  "dashboard_display_mode": {
+    "keys": "i",
+    "description": "Dashboard Display Mode"
+  },
+  "show_hide_side_mirrors_on_screen": {
+    "keys": "f2",
+    "description": "Show/Hide Side Mirrors On-Screen"
+  },
+  "route_advisor_modes": {
+    "keys": "f3",
+    "description": "Route Advisor Modes"
+  },
+  "truck_adjustment": {
+    "keys": "f4",
+    "description": "Truck Adjustment"
+  },
+  "route_advisor_mouse_control": {
+    "keys": "f1",
+    "description": "Route Advisor Mouse Control"
+  },
+  "route_advisor_mouse_control_hud_controls": {
+    "keys": "break",
+    "description": "Route Advisor Mouse Control "
+  },
+  "route_advisor_navigation_page": {
+    "keys": "f5",
+    "description": "Route Advisor Navigation Page"
+  },
+  "route_advisor_job_info_page": {
+    "keys": "f6",
+    "description": "Route Advisor Job Info Page"
+  },
+  "route_advisor_diagnostics_page": {
+    "keys": "f7",
+    "description": "Route Advisor Diagnostics Page"
+  },
+  "route_advisor_info_page": {
+    "keys": "f8",
+    "description": "Route Advisor Info Page"
+  },
+  "route_advisor_next_page": {
+    "keys": "num0",
+    "description": "Route Advisor Next Page"
+  },
+  "next_camera": {
+    "keys": "9",
+    "description": "Next Camera"
+  },
+  "interior_camera": {
+    "keys": "1",
+    "description": "Interior Camera"
+  },
+  "chasing_camera": {
+    "keys": "2",
+    "description": "Chasing Camera"
+  },
+  "top_down_camera": {
+    "keys": "3",
+    "description": "Top-Down Camera"
+  },
+  "roof_camera": {
+    "keys": "4",
+    "description": "Roof Camera"
+  },
+  "lean_out_camera": {
+    "keys": "5",
+    "description": "Lean Out Camera"
+  },
+  "bumper_camera": {
+    "keys": "6",
+    "description": "Bumper Camera"
+  },
+  "on_wheel_camera": {
+    "keys": "7",
+    "description": "On-Wheel Camera"
+  },
+  "drive_by_camera": {
+    "keys": "8",
+    "description": "Drive-By Camera"
+  },
+  "rotate_camera_in_mouse_control": {
+    "keys": "rmb",
+    "description": "Rotate Camera (in mouse control)"
+  },
+  "look_left": {
+    "keys": "num/",
+    "description": "Look Left"
+  },
+  "look_right": {
+    "keys": "num*",
+    "description": "Look Right"
+  },
+  "interior_look_forward": {
+    "keys": "num5",
+    "description": "Interior Look Forward"
+  },
+  "interior_look_up_right": {
+    "keys": "num9",
+    "description": "Interior Look Up Right"
+  },
+  "interior_look_up_left": {
+    "keys": "num7",
+    "description": "Interior Look Up Left"
+  },
+  "interior_look_right": {
+    "keys": "num6",
+    "description": "Interior Look Right"
+  },
+  "interior_look_left": {
+    "keys": "num4",
+    "description": "Interior Look Left"
+  },
+  "interior_look_up_middle": {
+    "keys": "num8",
+    "description": "Interior Look Up Middle"
+  },
+  "activate": {
+    "keys": "enter",
+    "description": "Activate"
+  },
+  "trailer_attach_detach": {
+    "keys": "t",
+    "description": "Trailer Attach/Detach"
+  },
+  "menu": {
+    "keys": "esc",
+    "description": "Menu"
+  },
+  "quick_save": {
+    "keys": "scroll_lock",
+    "description": "Quick Save"
+  },
+  "audio_player": {
+    "keys": "r",
+    "description": "Audio Player"
+  },
+  "audio_player_next_favourite": {
+    "keys": "pagedown",
+    "description": "Audio Player Next Favourite"
+  },
+  "audio_player_previous_favourite": {
+    "keys": "pageup",
+    "description": "Audio Player Previous Favourite"
+  },
+  "world_map": {
+    "keys": "m",
+    "description": "World Map"
+  },
+  "garage_manager": {
+    "keys": "g",
+    "description": "Garage Manager"
+  },
+  "screenshot": {
+    "keys": "f10",
+    "description": "Screenshot"
+  }
+}

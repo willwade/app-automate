@@ -8,6 +8,8 @@ from typer.testing import CliRunner
 from app_automate import cli
 from app_automate.accessibility.macos_ax import AXElement
 from app_automate.accessibility.windows_uia import UIAElement
+from app_automate.cli import _accessibility, _run, _shared
+from app_automate.config import validation
 
 runner = CliRunner()
 
@@ -25,9 +27,9 @@ def test_list_elements_command() -> None:
 
 
 def test_inspect_command() -> None:
-    cli_describe = cli._load_profile_describer
+    orig = _shared.load_profile_describer
     try:
-        cli._load_profile_describer = lambda: lambda loaded: "Profile: camera-demo"
+        _shared.load_profile_describer = lambda: lambda loaded: "Profile: camera-demo"
         result = runner.invoke(
             cli.app,
             [
@@ -36,7 +38,7 @@ def test_inspect_command() -> None:
             ],
         )
     finally:
-        cli._load_profile_describer = cli_describe
+        _shared.load_profile_describer = orig
 
     assert result.exit_code == 0
     assert "Profile: camera-demo" in result.stdout
@@ -61,16 +63,18 @@ def test_click_command_uses_action_adapter(monkeypatch) -> None:
             }
 
     monkeypatch.setattr(
-        cli,
-        "_runtime_context",
+        _run,
+        "runtime_context",
         lambda **_: SimpleNamespace(
-            profile=cli.load_profile(Path("examples/profiles/photo-booth/profile.json"))
+            profile=validation.load_profile(
+                Path("examples/profiles/photo-booth/profile.json")
+            )
         ),
     )
-    monkeypatch.setattr(cli, "_create_action_adapter", lambda: FakeAdapter())
+    monkeypatch.setattr(_run, "create_action_adapter", lambda: FakeAdapter())
     monkeypatch.setattr(
-        cli,
-        "_load_runtime_api",
+        _run,
+        "load_runtime_api",
         lambda: (
             None,
             None,
@@ -79,8 +83,8 @@ def test_click_command_uses_action_adapter(monkeypatch) -> None:
         ),
     )
     monkeypatch.setattr(
-        cli,
-        "_load_runner_actions",
+        _run,
+        "load_runner_actions",
         lambda: (
             lambda adapter, result: adapter.click(
                 result.model_dump()["x"], result.model_dump()["y"]
@@ -113,10 +117,10 @@ def test_click_command_uses_action_adapter(monkeypatch) -> None:
 
 def test_locate_anchors_command_uses_detected_context(monkeypatch) -> None:
     monkeypatch.setattr(
-        cli,
-        "_runtime_context",
+        _run,
+        "runtime_context",
         lambda **_: SimpleNamespace(
-            profile=cli.load_profile(
+            profile=validation.load_profile(
                 Path("examples/profiles/photo-booth/profile.json")
             ),
             live_primary=(522.0, 207.0),
@@ -127,8 +131,8 @@ def test_locate_anchors_command_uses_detected_context(monkeypatch) -> None:
         ),
     )
     monkeypatch.setattr(
-        cli,
-        "_load_runtime_api",
+        _run,
+        "load_runtime_api",
         lambda: (
             None,
             None,
@@ -163,10 +167,10 @@ def test_debug_target_writes_overlay(monkeypatch) -> None:
     screenshot_path.write_bytes(b"fake")
 
     monkeypatch.setattr(
-        cli,
-        "_runtime_context",
+        _run,
+        "runtime_context",
         lambda **_: SimpleNamespace(
-            profile=cli.load_profile(
+            profile=validation.load_profile(
                 Path("examples/profiles/photo-booth/profile.json")
             ),
             live_primary=(522.0, 207.0),
@@ -177,8 +181,8 @@ def test_debug_target_writes_overlay(monkeypatch) -> None:
         ),
     )
     monkeypatch.setattr(
-        cli,
-        "_load_runtime_api",
+        _run,
+        "load_runtime_api",
         lambda: (
             None,
             None,
@@ -201,7 +205,7 @@ def test_debug_target_writes_overlay(monkeypatch) -> None:
         written.extend([overlay, window])
         return overlay, window
 
-    monkeypatch.setattr(cli, "_write_debug_outputs", fake_write_debug_outputs)
+    monkeypatch.setattr(_run, "write_debug_outputs", fake_write_debug_outputs)
 
     result = runner.invoke(
         cli.app,
@@ -222,8 +226,8 @@ def test_debug_target_writes_overlay(monkeypatch) -> None:
 
 def test_ax_list_outputs_json(monkeypatch) -> None:
     monkeypatch.setattr(
-        cli,
-        "_load_macos_accessibility",
+        _accessibility,
+        "load_macos_accessibility",
         lambda: SimpleNamespace(
             list_app_ui_elements=lambda *args, **kwargs: [
                 AXElement(
@@ -263,8 +267,8 @@ def test_ax_list_outputs_json(monkeypatch) -> None:
 
 def test_ax_click_dry_run(monkeypatch) -> None:
     monkeypatch.setattr(
-        cli,
-        "_load_macos_accessibility",
+        _accessibility,
+        "load_macos_accessibility",
         lambda: SimpleNamespace(
             find_matching_elements=lambda *args, **kwargs: [
                 AXElement(
@@ -334,8 +338,8 @@ def test_ax_click_executes_drag(monkeypatch) -> None:
             calls.append((start_x, start_y, end_x, end_y))
 
     monkeypatch.setattr(
-        cli,
-        "_load_macos_accessibility",
+        _accessibility,
+        "load_macos_accessibility",
         lambda: SimpleNamespace(
             find_matching_elements=lambda *args, **kwargs: [
                 AXElement(
@@ -357,7 +361,7 @@ def test_ax_click_executes_drag(monkeypatch) -> None:
             ]
         ),
     )
-    monkeypatch.setattr(cli, "_create_action_adapter", lambda: FakeAdapter())
+    monkeypatch.setattr(_accessibility, "create_action_adapter", lambda: FakeAdapter())
 
     result = runner.invoke(
         cli.app,
@@ -384,8 +388,8 @@ def test_ax_click_executes_drag(monkeypatch) -> None:
 
 def test_uia_list_outputs_json(monkeypatch) -> None:
     monkeypatch.setattr(
-        cli,
-        "_load_windows_accessibility",
+        _accessibility,
+        "load_windows_accessibility",
         lambda: SimpleNamespace(
             list_app_ui_elements=lambda *args, **kwargs: [
                 UIAElement(
@@ -426,8 +430,8 @@ def test_uia_list_outputs_json(monkeypatch) -> None:
 
 def test_uia_click_dry_run(monkeypatch) -> None:
     monkeypatch.setattr(
-        cli,
-        "_load_windows_accessibility",
+        _accessibility,
+        "load_windows_accessibility",
         lambda: SimpleNamespace(
             find_matching_elements=lambda *args, **kwargs: [
                 UIAElement(
@@ -471,8 +475,8 @@ def test_uia_click_dry_run(monkeypatch) -> None:
 
 def test_uia_type_dry_run(monkeypatch) -> None:
     monkeypatch.setattr(
-        cli,
-        "_load_windows_accessibility",
+        _accessibility,
+        "load_windows_accessibility",
         lambda: SimpleNamespace(
             find_matching_elements=lambda *args, **kwargs: [
                 UIAElement(
@@ -550,8 +554,8 @@ def test_uia_type_executes(monkeypatch) -> None:
             calls.append(("hotkey", keys))
 
     monkeypatch.setattr(
-        cli,
-        "_load_windows_accessibility",
+        _accessibility,
+        "load_windows_accessibility",
         lambda: SimpleNamespace(
             find_matching_elements=lambda *args, **kwargs: [
                 UIAElement(
@@ -574,7 +578,7 @@ def test_uia_type_executes(monkeypatch) -> None:
             ]
         ),
     )
-    monkeypatch.setattr(cli, "_create_action_adapter", lambda: FakeAdapter())
+    monkeypatch.setattr(_accessibility, "create_action_adapter", lambda: FakeAdapter())
 
     result = runner.invoke(
         cli.app,

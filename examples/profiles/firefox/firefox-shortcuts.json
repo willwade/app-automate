@@ -1,0 +1,82 @@
+{
+  "new_tab": {
+    "keys": "ctrl+t",
+    "keys_macos": "cmd+t",
+    "description": "Open new tab",
+    "platform": null
+  },
+  "close_tab": {
+    "keys": "ctrl+w",
+    "keys_macos": "cmd+w",
+    "description": "Close current tab"
+  },
+  "new_window": {
+    "keys": "ctrl+n",
+    "keys_macos": "cmd+n",
+    "description": "Open new window"
+  },
+  "open_file": {
+    "keys": "ctrl+o",
+    "keys_macos": "cmd+o",
+    "description": "Open file"
+  },
+  "save_page": {
+    "keys": "ctrl+s",
+    "keys_macos": "cmd+s",
+    "description": "Save current page"
+  },
+  "find": {
+    "keys": "ctrl+f",
+    "keys_macos": "cmd+f",
+    "description": "Find in page"
+  },
+  "url_bar": {
+    "keys": "ctrl+l",
+    "keys_macos": "cmd+l",
+    "description": "Focus URL bar"
+  },
+  "reload": {
+    "keys": "f5",
+    "description": "Reload page"
+  },
+  "back": {
+    "keys": "alt+left",
+    "keys_macos": "ctrl+left",
+    "description": "Go back"
+  },
+  "forward": {
+    "keys": "alt+right",
+    "keys_macos": "ctrl+right",
+    "description": "Go forward"
+  },
+  "zoom_in": {
+    "keys": "ctrl+plus",
+    "keys_macos": "cmd+plus",
+    "description": "Zoom in"
+  },
+  "zoom_out": {
+    "keys": "ctrl+minus",
+    "keys_macos": "cmd+minus",
+    "description": "Zoom out"
+  },
+  "bookmark": {
+    "keys": "ctrl+d",
+    "keys_macos": "cmd+d",
+    "description": "Bookmark current page"
+  },
+  "history": {
+    "keys": "ctrl+h",
+    "keys_macos": "cmd+h",
+    "description": "Show history"
+  },
+  "downloads": {
+    "keys": "ctrl+j",
+    "keys_macos": "cmd+j",
+    "description": "Show downloads"
+  },
+  "quit": {
+    "keys": "ctrl+q",
+    "keys_macos": "cmd+q",
+    "description": "Quit Firefox"
+  }
+}
